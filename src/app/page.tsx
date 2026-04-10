@@ -16,6 +16,9 @@ import SearchBar from "@/components/SearchBar";
 import BookmarkButton, { useBookmarks } from "@/components/BookmarkButton";
 import ProgressDashboard from "@/components/ProgressDashboard";
 import Glossary from "@/components/Glossary";
+import { REALISTIC_CHARTS } from "@/components/RealisticCharts";
+import Flashcards from "@/components/Flashcards";
+import DailyTip from "@/components/DailyTip";
 import { DIAGRAMS } from "@/components/CandleDiagrams";
 import { useGamification, XPBar, StatsOverview, BadgesGrid, StreakDisplay, LevelUpNotification, BadgeNotification } from "@/components/GamificationSystem";
 
@@ -226,6 +229,11 @@ function HomeView({
             </div>
           ))}
         </div>
+      </div>
+
+      {/* DAILY TIP */}
+      <div className="mb-6">
+        <DailyTip />
       </div>
 
       {/* QUICK START GUIDE */}
@@ -738,7 +746,7 @@ function QuizView({
 // TOOLS VIEW (Calculator, Journal, Candle Practice, Simulator)
 // ============================================================================
 function ToolsView({ setView }: { setView: (v: View) => void }) {
-  const [tab, setTab] = useState<"simulator" | "calculator" | "journal" | "candles" | "diagrams" | "cheatsheets" | "projects" | "glossary">("simulator");
+  const [tab, setTab] = useState<"simulator" | "calculator" | "journal" | "candles" | "diagrams" | "charts" | "cheatsheets" | "projects" | "glossary" | "flashcards">("simulator");
 
   const tabs = [
     { id: "simulator" as const, label: "Simulador", icon: "📈" },
@@ -748,7 +756,9 @@ function ToolsView({ setView }: { setView: (v: View) => void }) {
     { id: "diagrams" as const, label: "Diagramas", icon: "📐" },
     { id: "cheatsheets" as const, label: "Cheat Sheets", icon: "📋" },
     { id: "projects" as const, label: "Proyectos", icon: "🎯" },
+    { id: "charts" as const, label: "Graficos", icon: "📊" },
     { id: "glossary" as const, label: "Glosario", icon: "📖" },
+    { id: "flashcards" as const, label: "Flashcards", icon: "🃏" },
   ];
 
   return (
@@ -798,7 +808,19 @@ function ToolsView({ setView }: { setView: (v: View) => void }) {
         </div>
       )}
       {tab === "projects" && <PracticalProjects />}
+      {tab === "charts" && (
+        <div>
+          <h3 className="text-xl font-bold text-white mb-2">Graficos Realistas Anotados</h3>
+          <p className="text-sm text-[#a0a0b8] mb-6">Graficos estilo TradingView con anotaciones profesionales</p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            {Object.entries(REALISTIC_CHARTS).map(([key, Chart]) => (
+              <Chart key={key} />
+            ))}
+          </div>
+        </div>
+      )}
       {tab === "glossary" && <Glossary />}
+      {tab === "flashcards" && <Flashcards />}
     </div>
   );
 }
