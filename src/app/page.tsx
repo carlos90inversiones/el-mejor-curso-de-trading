@@ -13,6 +13,8 @@ import PracticalProjects from "@/components/PracticalProjects";
 import AudioPlayer from "@/components/AudioPlayer";
 import LessonNotes from "@/components/LessonNotes";
 import SearchBar from "@/components/SearchBar";
+import BookmarkButton, { useBookmarks } from "@/components/BookmarkButton";
+import ProgressDashboard from "@/components/ProgressDashboard";
 import { DIAGRAMS } from "@/components/CandleDiagrams";
 import { useGamification, XPBar, StatsOverview, BadgesGrid, StreakDisplay, LevelUpNotification, BadgeNotification } from "@/components/GamificationSystem";
 
@@ -84,6 +86,7 @@ export default function TradingCourse() {
   const [view, setView] = useState<View>({ type: "home" });
   const progress = useProgress();
   const gamification = useGamification();
+  const { bookmarks, toggle: toggleBookmark } = useBookmarks();
 
   const totalLessons = useMemo(() => getTotalLessons(), []);
   const totalQuizzes = useMemo(() => getTotalQuizzes(), []);
@@ -137,6 +140,7 @@ export default function TradingCourse() {
             progressPercent={progressPercent}
             totalQuizzes={totalQuizzes}
             gamification={gamification}
+            bookmarks={bookmarks}
           />
         )}
         {view.type === "phase" && (
@@ -144,6 +148,8 @@ export default function TradingCourse() {
             phaseId={view.phaseId}
             setView={setView}
             progress={progress}
+            bookmarks={bookmarks}
+            toggleBookmark={toggleBookmark}
           />
         )}
         {view.type === "lesson" && (
@@ -179,7 +185,7 @@ export default function TradingCourse() {
 // HOME VIEW
 // ============================================================================
 function HomeView({
-  setView, progress, totalLessons, completedCount, progressPercent, totalQuizzes, gamification
+  setView, progress, totalLessons, completedCount, progressPercent, totalQuizzes, gamification, bookmarks
 }: {
   setView: (v: View) => void;
   progress: ReturnType<typeof useProgress>;
@@ -188,6 +194,7 @@ function HomeView({
   progressPercent: number;
   totalQuizzes: number;
   gamification: ReturnType<typeof useGamification>;
+  bookmarks: Set<string>;
 }) {
   return (
     <div>
@@ -244,11 +251,21 @@ function HomeView({
         </div>
       )}
 
-      {/* GAMIFICATION */}
-      <div className="mb-8 space-y-4">
-        <XPBar stats={gamification.stats} />
-        <StatsOverview stats={gamification.stats} />
-        <BadgesGrid stats={gamification.stats} />
+      {/* GAMIFICATION + DASHBOARD */}
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
+        <div className="lg:col-span-2 space-y-4">
+          <XPBar stats={gamification.stats} />
+          <ProgressDashboard
+            completed={progress.completed}
+            quizScores={progress.quizScores}
+            bookmarks={bookmarks}
+            onGoToLesson={(pId, mId, lId) => setView({ type: "lesson", phaseId: pId, moduleId: mId, lessonId: lId })}
+          />
+        </div>
+        <div className="space-y-4">
+          <StatsOverview stats={gamification.stats} />
+          <BadgesGrid stats={gamification.stats} />
+        </div>
       </div>
 
       {/* PHASES */}
@@ -309,11 +326,13 @@ function HomeView({
 // PHASE VIEW
 // ============================================================================
 function PhaseView({
-  phaseId, setView, progress
+  phaseId, setView, progress, bookmarks, toggleBookmark
 }: {
   phaseId: string;
   setView: (v: View) => void;
   progress: ReturnType<typeof useProgress>;
+  bookmarks: Set<string>;
+  toggleBookmark: (id: string) => void;
 }) {
   const phase = COURSE_DATA.find(p => p.id === phaseId);
   if (!phase) return <div className="text-center py-20 text-[#a0a0b8]">Fase no encontrada</div>;
@@ -374,6 +393,7 @@ function PhaseView({
                         Quiz: {quizScore}%
                       </span>
                     )}
+                    <BookmarkButton lessonId={lesson.id} bookmarks={bookmarks} toggle={toggleBookmark} />
                   </button>
                 );
               })}
