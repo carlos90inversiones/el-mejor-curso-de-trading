@@ -828,8 +828,9 @@ function ToolsView({ setView }: { setView: (v: View) => void }) {
           <h3 className="text-xl font-bold text-white mb-2">Video-Lecciones Animadas</h3>
           <p className="text-sm text-[#a0a0b8] mb-6">Graficos que se dibujan en tiempo real con narracion de voz. Dale a Reproducir.</p>
           <div className="space-y-8">
-            <VideoLesson {...VIDEO_LESSONS.supportResistance} />
-            <VideoLesson {...VIDEO_LESSONS.orderBlockTrade} />
+            {Object.entries(VIDEO_LESSONS).map(([key, lesson]) => (
+              <VideoLesson key={key} {...lesson} />
+            ))}
           </div>
         </div>
       )}
