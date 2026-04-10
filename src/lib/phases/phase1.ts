@@ -336,6 +336,89 @@ export const PHASE_1: Phase = {
           ]
         }
       ]
+    },
+    {
+      id: "mod-1-4",
+      title: "Primeros Pasos en el Mercado Real",
+      description: "Lo que necesitas saber antes de poner tu primer centimo",
+      icon: "🎓",
+      color: "#10B981",
+      lessons: [
+        {
+          id: "1-4-1",
+          title: "Los 10 Errores Mortales del Principiante",
+          duration: "20 min",
+          content: `
+<h2>Errores que DESTRUYEN al 90% de los Principiantes</h2>
+<div class="highlight-box red"><p>Estos errores son la razon por la que la mayoria pierde dinero. Leelos, memorizalos, y JURA que no los cometeras.</p></div>
+<div class="grid-cards">
+<div class="card red-border"><h4>1. Operar sin Stop Loss</h4><p>"Ya se va a recuperar..." NO. Una operacion sin SL puede destruir tu cuenta entera en minutos. SIEMPRE pon SL antes de entrar.</p></div>
+<div class="card red-border"><h4>2. Arriesgar demasiado por trade</h4><p>Principiantes arriesgan 10-20% por operacion. Con 5 perdidas seguidas (que PASARA), pierdes todo. Maximo 1-2%.</p></div>
+<div class="card red-border"><h4>3. Revenge Trading</h4><p>Perder → frustacion → operar mas para "recuperar" → perder mas. El ciclo destructivo #1. Si pierdes 2 seguidas, CIERRA la plataforma.</p></div>
+<div class="card red-border"><h4>4. No tener un plan de trading</h4><p>Operar "a ojo" es como navegar sin mapa. Necesitas reglas escritas ANTES de operar: que, cuando, cuanto, como.</p></div>
+<div class="card red-border"><h4>5. Operar en cuenta real demasiado pronto</h4><p>Minimo 3 meses en demo con resultados positivos. Si pierdes en demo, perderas 10x mas en real por las emociones.</p></div>
+<div class="card red-border"><h4>6. Seguir "senales" de otros</h4><p>Grupos de Telegram, "gurus" de Instagram... El 95% son estafas. Si supieran ganar, no venderian senales. Aprende TU.</p></div>
+<div class="card red-border"><h4>7. Cambiar de estrategia cada semana</h4><p>Una estrategia necesita al menos 30-50 trades para evaluarla. Si cambias cada 5 trades, nunca sabras si funciona.</p></div>
+<div class="card red-border"><h4>8. Sobreoperar (Overtrading)</h4><p>Mas trades ≠ mas dinero. Mas trades = mas comisiones + peores decisiones + mas estres. 1-3 buenos trades al dia es SUFICIENTE.</p></div>
+<div class="card red-border"><h4>9. Ignorar la gestion de riesgo</h4><p>El 80% del exito en trading es gestion de riesgo. No el mejor indicador, no la mejor estrategia. RIESGO.</p></div>
+<div class="card red-border"><h4>10. Expectativas irreales</h4><p>"Voy a duplicar mi cuenta en un mes." NO. Los mejores traders del mundo hacen 2-5% MENSUAL. Eso es excelente. Acepta la realidad.</p></div>
+</div>
+<div class="highlight-box green"><h4>La Buena Noticia</h4><p>Ahora que conoces estos errores, ya estas por delante del 90% de traders que nunca los aprenden (o los aprenden perdiendo todo su dinero). Graba estos 10 puntos en tu mente.</p></div>`,
+          keyPoints: [
+            "SIEMPRE Stop Loss, NUNCA arriesgar mas del 1-2%, NUNCA revenge trading",
+            "3 meses minimo en demo antes de dinero real",
+            "No sigas senales de otros - aprende tu mismo",
+            "Una estrategia necesita 30-50 trades para evaluarla",
+            "Expectativas realistas: 2-5% mensual es EXCELENTE"
+          ],
+          quiz: [
+            { question: "Cuantos trades necesitas como minimo para evaluar si una estrategia funciona?", options: ["5 trades", "10 trades", "30-50 trades", "200 trades"], correctIndex: 2, explanation: "30-50 trades es el minimo para tener una muestra estadisticamente relevante. Con menos, no puedes saber si los resultados son por la estrategia o por suerte." },
+            { question: "Cual es un retorno mensual REALISTA y excelente para un trader profesional?", options: ["50-100%", "20-30%", "2-5%", "0.5%"], correctIndex: 2, explanation: "2-5% mensual es lo que hacen los mejores. Suena poco pero es 24-60% anual, que supera a casi cualquier fondo de inversion del mundo." },
+            { question: "Por que no deberias seguir 'senales' de grupos de Telegram?", options: ["Porque Telegram no funciona bien", "Porque el 95% son estafas y si supieran ganar consistentemente no venderian senales", "Porque las senales llegan tarde", "Porque solo funcionan en Forex"], correctIndex: 1, explanation: "Si alguien pudiera ganar consistentemente en trading, no necesitaria vender senales a 20 euros/mes. La mayoria son estafas o traders mediocres que ganan mas vendiendo senales que operando." }
+          ]
+        },
+        {
+          id: "1-4-2",
+          title: "Tu Hoja de Ruta: De Principiante a Experto",
+          duration: "15 min",
+          content: `
+<h2>El Camino Completo: Tu Mapa de Aqui a Vivir del Trading</h2>
+<div class="analogy-box"><h3>El Viaje del Trading</h3><p>Aprender trading es como aprender a conducir. Primero estudias la teoria (este curso), luego practicas en un circuito cerrado (demo), luego conduces por la ciudad con cuidado (cuenta pequena/prop firm), y eventualmente conduces con confianza (trader profesional). No puedes saltarte pasos.</p></div>
+<h3>Las 5 Etapas del Trader</h3>
+<div class="strategy-box"><h4>Etapa 1: Incompetente Inconsciente (Mes 1)</h4><p>"No se lo que no se." Crees que el trading es facil. Haces trades aleatorios. Puedes ganar algo por suerte. Aqui es donde el 50% abandona.</p></div>
+<div class="strategy-box"><h4>Etapa 2: Incompetente Consciente (Meses 2-4)</h4><p>"Ahora se que no se nada." Empiezas a estudiar (este curso). Te das cuenta de la complejidad. Frustacion. Es NORMAL. No abandones aqui.</p></div>
+<div class="strategy-box"><h4>Etapa 3: Competente Consciente (Meses 5-9)</h4><p>"Puedo hacerlo si me concentro." Tu estrategia funciona cuando sigues tu plan. Pero todavia luchas con las emociones. Necesitas enfoque activo.</p></div>
+<div class="strategy-box"><h4>Etapa 4: Competente Inconsciente (Meses 10-18)</h4><p>"Lo hago sin pensar." Tu plan de trading es automatico. Tomas decisiones correctas naturalmente. Aqui empiezas a ser consistente.</p></div>
+<div class="strategy-box"><h4>Etapa 5: Maestria (18+ meses)</h4><p>"Adapto y evoluciono." Lees el mercado como un libro. Adaptas tu estrategia segun condiciones. Eres rentable consistentemente. Vives del trading.</p></div>
+<h3>Tu Plan de Accion Inmediato</h3>
+<div class="highlight-box green"><h4>Que hacer AHORA MISMO</h4><ol>
+<li><strong>Completa la Fase 1</strong> de este curso (ya casi estas)</li>
+<li><strong>Abre TradingView</strong> y familiarizate con la plataforma</li>
+<li><strong>NO pongas dinero real</strong> en ningun lado todavia</li>
+<li><strong>Sigue con la Fase 2</strong> (Analisis Tecnico) manana</li>
+<li><strong>Dedica 1-2 horas al dia</strong> al estudio y practica</li>
+<li><strong>Se paciente:</strong> esto es un maraton, no un sprint</li>
+</ol></div>
+<div class="warning-box"><h4>El Timeline Realista</h4><ul>
+<li><strong>Meses 1-3:</strong> Estudio + demo</li>
+<li><strong>Meses 4-6:</strong> Practica intensiva en demo</li>
+<li><strong>Meses 7-9:</strong> Primer challenge prop firm</li>
+<li><strong>Meses 10-12:</strong> Cuenta fondeada activa</li>
+<li><strong>Ano 2:</strong> Escalar cuentas + ingreso consistente</li>
+</ul><p>Cualquiera que te diga que puedes hacerlo en menos tiempo, te esta mintiendo.</p></div>`,
+          keyPoints: [
+            "5 etapas: incompetente inconsciente → competente inconsciente → maestria",
+            "El camino toma 12-18 meses minimo para ser consistente",
+            "Dedica 1-2 horas al dia al estudio y practica",
+            "Meses 1-6: estudio y demo. Meses 7-12: prop firms y cuenta real",
+            "Es un maraton, no un sprint. La paciencia gana."
+          ],
+          quiz: [
+            { question: "En que etapa empiezas a ser realmente consistente?", options: ["Etapa 1 - Incompetente inconsciente", "Etapa 2 - Incompetente consciente", "Etapa 4 - Competente inconsciente", "Desde el primer dia"], correctIndex: 2, explanation: "La consistencia llega en la Etapa 4 (Competente Inconsciente), cuando tu plan de trading se vuelve automatico y tomas decisiones correctas sin esfuerzo consciente." },
+            { question: "Cuanto tiempo toma de forma realista ser un trader consistente?", options: ["1-2 semanas", "1-2 meses", "12-18 meses", "5+ anos"], correctIndex: 2, explanation: "12-18 meses es un timeline realista para un trader dedicado que estudia y practica 1-2 horas al dia. Puede ser mas rapido con dedicacion completa, pero rara vez menos de 9 meses." }
+          ]
+        }
+      ]
     }
   ]
 };
