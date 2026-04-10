@@ -19,6 +19,7 @@ import Glossary from "@/components/Glossary";
 import { REALISTIC_CHARTS } from "@/components/RealisticCharts";
 import Flashcards from "@/components/Flashcards";
 import DailyTip from "@/components/DailyTip";
+import VideoLesson, { VIDEO_LESSONS } from "@/components/VideoLesson";
 import { DIAGRAMS } from "@/components/CandleDiagrams";
 import { useGamification, XPBar, StatsOverview, BadgesGrid, StreakDisplay, LevelUpNotification, BadgeNotification } from "@/components/GamificationSystem";
 
@@ -746,7 +747,7 @@ function QuizView({
 // TOOLS VIEW (Calculator, Journal, Candle Practice, Simulator)
 // ============================================================================
 function ToolsView({ setView }: { setView: (v: View) => void }) {
-  const [tab, setTab] = useState<"simulator" | "calculator" | "journal" | "candles" | "diagrams" | "charts" | "cheatsheets" | "projects" | "glossary" | "flashcards">("simulator");
+  const [tab, setTab] = useState<"simulator" | "calculator" | "journal" | "candles" | "diagrams" | "charts" | "cheatsheets" | "projects" | "glossary" | "flashcards" | "videos">("simulator");
 
   const tabs = [
     { id: "simulator" as const, label: "Simulador", icon: "📈" },
@@ -759,6 +760,7 @@ function ToolsView({ setView }: { setView: (v: View) => void }) {
     { id: "charts" as const, label: "Graficos", icon: "📊" },
     { id: "glossary" as const, label: "Glosario", icon: "📖" },
     { id: "flashcards" as const, label: "Flashcards", icon: "🃏" },
+    { id: "videos" as const, label: "Video-Lecciones", icon: "🎬" },
   ];
 
   return (
@@ -821,6 +823,16 @@ function ToolsView({ setView }: { setView: (v: View) => void }) {
       )}
       {tab === "glossary" && <Glossary />}
       {tab === "flashcards" && <Flashcards />}
+      {tab === "videos" && (
+        <div>
+          <h3 className="text-xl font-bold text-white mb-2">Video-Lecciones Animadas</h3>
+          <p className="text-sm text-[#a0a0b8] mb-6">Graficos que se dibujan en tiempo real con narracion de voz. Dale a Reproducir.</p>
+          <div className="space-y-8">
+            <VideoLesson {...VIDEO_LESSONS.supportResistance} />
+            <VideoLesson {...VIDEO_LESSONS.orderBlockTrade} />
+          </div>
+        </div>
+      )}
     </div>
   );
 }
