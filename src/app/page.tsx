@@ -20,6 +20,7 @@ import { REALISTIC_CHARTS } from "@/components/RealisticCharts";
 import Flashcards from "@/components/Flashcards";
 import DailyTip from "@/components/DailyTip";
 import VideoLesson, { VIDEO_LESSONS } from "@/components/VideoLesson";
+import InstructorPresenter, { INSTRUCTOR_CLIPS } from "@/components/InstructorPresenter";
 import { DIAGRAMS } from "@/components/CandleDiagrams";
 import { useGamification, XPBar, StatsOverview, BadgesGrid, StreakDisplay, LevelUpNotification, BadgeNotification } from "@/components/GamificationSystem";
 
@@ -230,6 +231,11 @@ function HomeView({
             </div>
           ))}
         </div>
+      </div>
+
+      {/* INSTRUCTOR WELCOME */}
+      <div className="mb-6">
+        <InstructorPresenter {...INSTRUCTOR_CLIPS[0]} />
       </div>
 
       {/* DAILY TIP */}
@@ -825,8 +831,18 @@ function ToolsView({ setView }: { setView: (v: View) => void }) {
       {tab === "flashcards" && <Flashcards />}
       {tab === "videos" && (
         <div>
-          <h3 className="text-xl font-bold text-white mb-2">Video-Lecciones Animadas</h3>
-          <p className="text-sm text-[#a0a0b8] mb-6">Graficos que se dibujan en tiempo real con narracion de voz. Dale a Reproducir.</p>
+          {/* Instructor Clips */}
+          <h3 className="text-xl font-bold text-white mb-2">Clases con tu Instructor</h3>
+          <p className="text-sm text-[#a0a0b8] mb-6">Explicaciones clave narradas por tu instructor personal</p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-10">
+            {INSTRUCTOR_CLIPS.map(clip => (
+              <InstructorPresenter key={clip.id} {...clip} />
+            ))}
+          </div>
+
+          {/* Animated Chart Videos */}
+          <h3 className="text-xl font-bold text-white mb-2">Video-Lecciones con Graficos Animados</h3>
+          <p className="text-sm text-[#a0a0b8] mb-6">Graficos que se dibujan en tiempo real con narracion de voz</p>
           <div className="space-y-8">
             {Object.entries(VIDEO_LESSONS).map(([key, lesson]) => (
               <VideoLesson key={key} {...lesson} />
