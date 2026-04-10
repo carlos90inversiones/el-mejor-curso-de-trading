@@ -1,26 +1,147 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg-primary: #0f1120;
+  --bg-secondary: #161830;
+  --bg-card: #1c1f3a;
+  --bg-card-hover: #252850;
+  --text-primary: #f0f0f5;
+  --text-secondary: #a0a0b8;
+  --accent-blue: #3b82f6;
+  --accent-purple: #8b5cf6;
+  --accent-green: #10b981;
+  --accent-red: #ef4444;
+  --accent-amber: #f59e0b;
+  --accent-pink: #ec4899;
+  --border-color: #2a2a40;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+}
+
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--bg-secondary); }
+::-webkit-scrollbar-thumb { background: #333355; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #444466; }
+
+/* LESSON CONTENT STYLES */
+.lesson-content h2 { font-size: 1.75rem; font-weight: 700; margin-bottom: 1rem; color: white; border-bottom: 2px solid var(--accent-blue); padding-bottom: 0.5rem; }
+.lesson-content h3 { font-size: 1.35rem; font-weight: 600; margin-top: 2rem; margin-bottom: 0.75rem; color: #e0e0f0; }
+.lesson-content h4 { font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem; color: #d0d0e0; }
+.lesson-content p { margin-bottom: 0.75rem; color: var(--text-secondary); line-height: 1.8; }
+.lesson-content ul, .lesson-content ol { margin-bottom: 1rem; padding-left: 1.5rem; color: var(--text-secondary); }
+.lesson-content li { margin-bottom: 0.4rem; line-height: 1.7; }
+.lesson-content strong { color: white; font-weight: 600; }
+
+.lesson-content .analogy-box { background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%); border: 1px solid #4338ca; border-radius: 12px; padding: 1.25rem; margin: 1.25rem 0; }
+.lesson-content .analogy-box h3 { color: #a5b4fc; margin-top: 0; font-size: 1.1rem; }
+.lesson-content .analogy-box p { color: #c7d2fe; }
+
+.lesson-content .grid-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin: 1rem 0; }
+.lesson-content .card { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; padding: 1rem; transition: transform 0.2s, border-color 0.2s; }
+.lesson-content .card:hover { transform: translateY(-2px); border-color: var(--accent-blue); }
+.lesson-content .card h4 { color: var(--accent-blue); margin-bottom: 0.5rem; }
+.lesson-content .card.green-border { border-left: 3px solid var(--accent-green); }
+.lesson-content .card.red-border { border-left: 3px solid var(--accent-red); }
+.lesson-content .card.yellow-border { border-left: 3px solid var(--accent-amber); }
+.lesson-content .card.purple-border { border-left: 3px solid var(--accent-purple); }
+
+.lesson-content .highlight-box { border-radius: 12px; padding: 1.25rem; margin: 1.25rem 0; border-left: 4px solid; }
+.lesson-content .highlight-box.green { background: rgba(16, 185, 129, 0.1); border-color: var(--accent-green); }
+.lesson-content .highlight-box.red { background: rgba(239, 68, 68, 0.1); border-color: var(--accent-red); }
+.lesson-content .highlight-box.blue { background: rgba(59, 130, 246, 0.1); border-color: var(--accent-blue); }
+.lesson-content .highlight-box.yellow { background: rgba(245, 158, 11, 0.1); border-color: var(--accent-amber); }
+.lesson-content .highlight-box.purple { background: rgba(139, 92, 246, 0.1); border-color: var(--accent-purple); }
+.lesson-content .highlight-box.gold { background: rgba(245, 158, 11, 0.15); border-color: #d4a017; }
+.lesson-content .highlight-box h4 { color: white; margin-bottom: 0.5rem; }
+
+.lesson-content .warning-box { background: rgba(239, 68, 68, 0.08); border: 1px solid rgba(239, 68, 68, 0.3); border-radius: 12px; padding: 1.25rem; margin: 1.25rem 0; }
+.lesson-content .warning-box h4 { color: var(--accent-red); }
+.lesson-content .warning-box p { color: #fca5a5; }
+
+.lesson-content .example-box { background: rgba(59, 130, 246, 0.08); border: 1px dashed rgba(59, 130, 246, 0.4); border-radius: 8px; padding: 0.75rem 1rem; margin: 0.75rem 0; }
+.lesson-content .example-box strong { color: var(--accent-blue); }
+
+.lesson-content .strategy-box { background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(59, 130, 246, 0.1) 100%); border: 1px solid rgba(16, 185, 129, 0.3); border-radius: 12px; padding: 1.25rem; margin: 1.25rem 0; }
+.lesson-content .strategy-box h4 { color: var(--accent-green); }
+.lesson-content .strategy-box ol, .lesson-content .strategy-box ul { color: var(--text-secondary); }
+
+.lesson-content .comparison-table { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1rem 0; }
+.lesson-content .comparison-col { background: var(--bg-card); border-radius: 12px; padding: 1rem; border: 1px solid var(--border-color); }
+
+.lesson-content .vocab-card { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.25rem; margin: 1rem 0; }
+.lesson-content .vocab-card h4 { color: var(--accent-purple); font-size: 1.1rem; }
+
+.lesson-content .market-card { background: var(--bg-card); border-radius: 12px; padding: 1.25rem; margin: 1rem 0; border-left: 4px solid; }
+.lesson-content .market-card.forex { border-color: var(--accent-blue); }
+.lesson-content .market-card.stocks { border-color: var(--accent-green); }
+.lesson-content .market-card.crypto { border-color: var(--accent-amber); }
+.lesson-content .market-card.indices { border-color: var(--accent-purple); }
+.lesson-content .market-card.commodities { border-color: var(--accent-pink); }
+.lesson-content .market-card .stats { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 0.75rem; }
+.lesson-content .market-card .stats span { font-size: 0.8rem; background: rgba(255,255,255,0.05); padding: 0.25rem 0.75rem; border-radius: 20px; color: var(--text-secondary); }
+
+.lesson-content .sessions-timeline { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 0.75rem; margin: 1rem 0; }
+.lesson-content .session { padding: 1rem; border-radius: 12px; text-align: center; }
+.lesson-content .session.sydney { background: rgba(100, 100, 200, 0.15); }
+.lesson-content .session.tokyo { background: rgba(239, 68, 68, 0.15); }
+.lesson-content .session.london { background: rgba(59, 130, 246, 0.2); }
+.lesson-content .session.newyork { background: rgba(16, 185, 129, 0.2); }
+.lesson-content .session h4 { color: white; margin-bottom: 0.25rem; }
+.lesson-content .session p { font-size: 0.85rem; margin-bottom: 0.2rem; }
+
+.lesson-content .step-by-step .step { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; padding: 1rem; margin: 0.75rem 0; }
+
+.lesson-content .calculation-box, .lesson-content .formula-box { background: rgba(99, 102, 241, 0.1); border: 1px solid rgba(99, 102, 241, 0.3); border-radius: 12px; padding: 1.25rem; margin: 1.25rem 0; }
+.lesson-content .calculation-box h4, .lesson-content .formula-box h4 { color: #a5b4fc; }
+
+.lesson-content .psychology-card { background: var(--bg-card); border-radius: 12px; padding: 1.25rem; margin: 1rem 0; border-left: 4px solid; }
+.lesson-content .psychology-card.fear { border-color: #fbbf24; }
+.lesson-content .psychology-card.greed { border-color: #f97316; }
+.lesson-content .psychology-card.revenge { border-color: #ef4444; }
+.lesson-content .psychology-card.fomo { border-color: #ec4899; }
+.lesson-content .psychology-card.overtrading { border-color: #8b5cf6; }
+.lesson-content .psychology-card.impatience { border-color: #6366f1; }
+.lesson-content .psychology-card.hope { border-color: #14b8a6; }
+
+.lesson-content .killzone-card { border-radius: 12px; padding: 1.25rem; margin: 1rem 0; border: 1px solid; }
+.lesson-content .killzone-card.asia { background: rgba(100,100,200,0.1); border-color: rgba(100,100,200,0.3); }
+.lesson-content .killzone-card.london { background: rgba(59,130,246,0.1); border-color: rgba(59,130,246,0.3); }
+.lesson-content .killzone-card.newyork { background: rgba(16,185,129,0.1); border-color: rgba(16,185,129,0.3); }
+
+.lesson-content .concept-card { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.25rem; margin: 1rem 0; }
+
+.lesson-content .fib-levels { display: flex; flex-direction: column; gap: 0.5rem; margin: 1rem 0; }
+.lesson-content .fib-level { padding: 0.75rem 1rem; border-radius: 8px; border-left: 4px solid; }
+.lesson-content .fib-level.low { background: rgba(100,200,100,0.05); border-color: #4ade80; }
+.lesson-content .fib-level.medium { background: rgba(100,150,200,0.05); border-color: #60a5fa; }
+.lesson-content .fib-level.important { background: rgba(200,150,50,0.1); border-color: #fbbf24; }
+.lesson-content .fib-level.key { background: rgba(245,158,11,0.15); border-color: #f59e0b; }
+.lesson-content .fib-level.deep { background: rgba(239,68,68,0.1); border-color: #ef4444; }
+
+.lesson-content .pattern-card, .lesson-content .pattern-section { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.25rem; margin: 1rem 0; }
+.lesson-content .indicator-card { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.25rem; margin: 1rem 0; }
+.lesson-content .metric-card { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 8px; padding: 1rem; margin: 0.75rem 0; }
+.lesson-content .rules-table .rule { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; padding: 1rem; margin: 0.75rem 0; }
+
+.lesson-content .code-block { background: #0d1117; border: 1px solid #30363d; border-radius: 12px; padding: 1.25rem; margin: 1.25rem 0; overflow-x: auto; }
+.lesson-content .code-block pre { margin: 0; }
+.lesson-content .code-block code { font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 0.85rem; color: #c9d1d9; line-height: 1.6; white-space: pre; }
+
+.lesson-content .candle-part { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 8px; padding: 0.75rem 1rem; margin: 0.5rem 0; }
+
+@media (max-width: 768px) {
+  .lesson-content .grid-cards { grid-template-columns: 1fr; }
+  .lesson-content .comparison-table { grid-template-columns: 1fr; }
+  .lesson-content .sessions-timeline { grid-template-columns: 1fr 1fr; }
+  .lesson-content h2 { font-size: 1.4rem; }
+  .lesson-content h3 { font-size: 1.15rem; }
 }
