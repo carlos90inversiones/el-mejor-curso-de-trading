@@ -21,6 +21,7 @@ import Flashcards from "@/components/Flashcards";
 import DailyTip from "@/components/DailyTip";
 import VideoLesson, { VIDEO_LESSONS } from "@/components/VideoLesson";
 import InstructorPresenter, { INSTRUCTOR_CLIPS } from "@/components/InstructorPresenter";
+import { ScrollReveal, AnimatedCounter, Confetti, GlowCard, Float, TypingText } from "@/components/Animations";
 import { DIAGRAMS } from "@/components/CandleDiagrams";
 import { useGamification, XPBar, StatsOverview, BadgesGrid, StreakDisplay, LevelUpNotification, BadgeNotification } from "@/components/GamificationSystem";
 
@@ -102,7 +103,8 @@ export default function TradingCourse() {
 
   return (
     <div className="min-h-screen" style={{ background: "#0c0e1a" }}>
-      {/* Gamification Notifications */}
+      {/* Gamification Notifications + Confetti */}
+      <Confetti active={gamification.showLevelUp || !!gamification.showBadge} />
       {gamification.showLevelUp && <LevelUpNotification level={gamification.stats.level} />}
       {gamification.showBadge && <BadgeNotification badge={gamification.showBadge} />}
       {/* TOP NAV */}
@@ -136,7 +138,7 @@ export default function TradingCourse() {
       </nav>
 
       {/* CONTENT */}
-      <main className="max-w-7xl mx-auto px-4 py-8">
+      <main className="max-w-7xl mx-auto px-4 py-8" key={view.type}>
         {view.type === "home" && (
           <HomeView
             setView={setView}
@@ -205,11 +207,13 @@ function HomeView({
   return (
     <div>
       {/* HERO */}
-      <div className="text-center py-12">
-        <div className="text-6xl mb-4">📊</div>
+      <div className="text-center py-12 animate-page">
+        <Float amplitude={6} duration={4}>
+          <div className="text-6xl mb-4">📊</div>
+        </Float>
         <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-4">
           El Mejor Curso de Trading<br />
-          <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">Del Mundo</span>
+          <span className="gradient-text-animated">Del Mundo</span>
         </h1>
         <p className="text-lg text-[#a0a0b8] max-w-2xl mx-auto mb-8">
           De cero absoluto a trader experto. 7 fases, {totalLessons} lecciones interactivas,
@@ -219,16 +223,20 @@ function HomeView({
         {/* Stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto mb-12">
           {[
-            { label: "Fases", value: "7", icon: "🎯" },
-            { label: "Lecciones", value: String(totalLessons), icon: "📚" },
-            { label: "Completadas", value: String(completedCount), icon: "✅" },
-            { label: "Progreso", value: `${progressPercent}%`, icon: "📈" },
-          ].map(s => (
-            <div key={s.label} className="bg-[#1a1a2e] border border-[#2a2a40] rounded-xl p-4 text-center">
-              <div className="text-2xl mb-1">{s.icon}</div>
-              <div className="text-2xl font-bold text-white">{s.value}</div>
-              <div className="text-sm text-[#a0a0b8]">{s.label}</div>
-            </div>
+            { label: "Fases", value: 7, numValue: true, icon: "🎯" },
+            { label: "Lecciones", value: totalLessons, numValue: true, icon: "📚" },
+            { label: "Completadas", value: completedCount, numValue: true, icon: "✅" },
+            { label: "Progreso", value: progressPercent, numValue: true, suffix: "%", icon: "📈" },
+          ].map((s, i) => (
+            <ScrollReveal key={s.label} delay={i * 0.1} direction="scale">
+              <div className="bg-[#1a1a2e] border border-[#2a2a40] rounded-xl p-4 text-center hover-lift hover-glow">
+                <div className="text-2xl mb-1">{s.icon}</div>
+                <div className="text-2xl font-bold text-white">
+                  <AnimatedCounter value={s.value} suffix={s.suffix || ""} />
+                </div>
+                <div className="text-sm text-[#a0a0b8]">{s.label}</div>
+              </div>
+            </ScrollReveal>
           ))}
         </div>
       </div>
@@ -292,13 +300,11 @@ function HomeView({
             t + m.lessons.filter(l => progress.completed.has(l.id)).length, 0);
           const phasePercent = phaseLessons > 0 ? Math.round((phaseCompleted / phaseLessons) * 100) : 0;
           return (
-            <button
-              key={phase.id}
-              onClick={() => setView({ type: "phase", phaseId: phase.id })}
-              className="w-full text-left rounded-2xl p-6 transition-all duration-300
-                hover:brightness-125 cursor-pointer"
-              style={{ background: `${phase.color}15`, border: `2px solid ${phase.color}55`, borderLeft: `5px solid ${phase.color}` }}
+            <ScrollReveal key={phase.id} delay={idx * 0.06} direction={idx % 2 === 0 ? "left" : "right"}>
+            <GlowCard color={phase.color} onClick={() => setView({ type: "phase", phaseId: phase.id })}
+              className="w-full text-left rounded-2xl p-6 transition-all duration-300 hover-lift"
             >
+            <div style={{ background: `${phase.color}12`, border: `2px solid ${phase.color}44`, borderLeft: `5px solid ${phase.color}`, borderRadius: 16, padding: 24 }}>
               <div className="flex items-start gap-5">
                 <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${phase.gradient} flex items-center justify-center text-2xl font-bold text-white shrink-0`}>
                   {phase.number}
@@ -320,7 +326,9 @@ function HomeView({
                   </div>
                 </div>
               </div>
-            </button>
+            </div>
+            </GlowCard>
+            </ScrollReveal>
           );
         })}
       </div>
