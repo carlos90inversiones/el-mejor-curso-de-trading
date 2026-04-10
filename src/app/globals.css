@@ -141,7 +141,39 @@ body {
 @media (max-width: 768px) {
   .lesson-content .grid-cards { grid-template-columns: 1fr; }
   .lesson-content .comparison-table { grid-template-columns: 1fr; }
-  .lesson-content .sessions-timeline { grid-template-columns: 1fr 1fr; }
-  .lesson-content h2 { font-size: 1.4rem; }
-  .lesson-content h3 { font-size: 1.15rem; }
+  .lesson-content .sessions-timeline { grid-template-columns: 1fr; }
+  .lesson-content h2 { font-size: 1.3rem; }
+  .lesson-content h3 { font-size: 1.1rem; }
+  .lesson-content h4 { font-size: 1rem; }
+  .lesson-content p { font-size: 0.9rem; line-height: 1.7; }
+  .lesson-content .highlight-box,
+  .lesson-content .warning-box,
+  .lesson-content .strategy-box,
+  .lesson-content .analogy-box,
+  .lesson-content .example-box,
+  .lesson-content .calculation-box,
+  .lesson-content .formula-box { padding: 1rem; }
+  .lesson-content .code-block { padding: 0.75rem; }
+  .lesson-content .code-block code { font-size: 0.75rem; }
+  .lesson-content .vocab-card,
+  .lesson-content .pattern-card,
+  .lesson-content .indicator-card,
+  .lesson-content .concept-card,
+  .lesson-content .market-card,
+  .lesson-content .psychology-card,
+  .lesson-content .killzone-card { padding: 1rem; }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .lesson-content h2 { font-size: 1.15rem; padding-bottom: 0.3rem; }
+  .lesson-content h3 { font-size: 1rem; margin-top: 1.5rem; }
+  .lesson-content .sessions-timeline { grid-template-columns: 1fr; }
+  .lesson-content .fib-levels .fib-level { padding: 0.5rem 0.75rem; font-size: 0.85rem; }
+}
+
+/* Tabs scrolling on mobile */
+@media (max-width: 640px) {
+  .tabs-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+  .tabs-scroll::-webkit-scrollbar { display: none; }
 }

@@ -760,7 +760,7 @@ function ToolsView({ setView }: { setView: (v: View) => void }) {
       <h2 className="text-2xl font-bold text-white mb-6">Herramientas del Trader</h2>
 
       {/* Tabs */}
-      <div className="flex gap-2 mb-6 overflow-x-auto pb-2">
+      <div className="flex gap-2 mb-6 overflow-x-auto pb-2 tabs-scroll">
         {tabs.map(t => (
           <button key={t.id} onClick={() => setTab(t.id)}
             className={`flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-medium whitespace-nowrap transition

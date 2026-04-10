@@ -597,6 +597,236 @@ result = mt5.order_send(request)
           ]
         }
       ]
+    },
+    {
+      id: "mod-6-3",
+      title: "Ciencia de Datos para Trading",
+      description: "APIs, Machine Learning y despliegue de bots",
+      icon: "🧬",
+      color: "#8B5CF6",
+      lessons: [
+        {
+          id: "6-3-1",
+          title: "APIs y Fuentes de Datos de Mercado",
+          duration: "25 min",
+          content: `
+<h2>Obteniendo Datos Reales del Mercado</h2>
+<div class="highlight-box blue"><h4>Sin datos, no hay trading algoritmico</h4><p>Todo bot necesita datos: precios historicos para backtest y precios en tiempo real para operar. Aqui aprendes de donde sacarlos.</p></div>
+<h3>Fuentes de Datos Gratuitas</h3>
+<div class="grid-cards">
+<div class="card"><h4>Yahoo Finance (yfinance)</h4><p>Datos historicos de acciones, indices, ETFs, cripto. Gratis, facil de usar. Limitado para Forex intraddia.</p>
+<div class="code-block"><pre><code>import yfinance as yf
+data = yf.download("EURUSD=X", period="1y", interval="1d")
+print(data.tail())</code></pre></div></div>
+<div class="card"><h4>OANDA API</h4><p>Datos Forex en tiempo real y historicos. Gratis con cuenta demo. Excelente para Forex.</p></div>
+<div class="card"><h4>Binance API</h4><p>Datos cripto en tiempo real. Gratis. La mejor fuente para criptomonedas.</p></div>
+<div class="card"><h4>Alpha Vantage</h4><p>Datos de acciones y Forex. API key gratuita con limite de 5 llamadas/minuto.</p></div>
+</div>
+<h3>Fuentes de Datos Profesionales (de pago)</h3>
+<div class="grid-cards">
+<div class="card"><h4>Polygon.io</h4><p>Datos tick-by-tick de acciones US. Desde 29$/mes. Calidad institucional.</p></div>
+<div class="card"><h4>Quandl / Nasdaq Data</h4><p>Datos economicos y financieros. Fundamental + precio. Desde 50$/mes.</p></div>
+</div>
+<h3>Almacenamiento de Datos</h3>
+<div class="strategy-box"><h4>Workflow Recomendado</h4><ol>
+<li><strong>Descarga:</strong> Usa yfinance/OANDA API para descargar historicos</li>
+<li><strong>Guarda en CSV/Parquet:</strong> No descargues cada vez, guarda localmente</li>
+<li><strong>Base de datos (avanzado):</strong> SQLite o PostgreSQL para datasets grandes</li>
+<li><strong>Actualiza incrementalmente:</strong> Solo descarga datos nuevos cada dia</li>
+</ol></div>
+<div class="code-block"><pre><code># Descargar y guardar datos
+import yfinance as yf
+import pandas as pd
+
+# Descargar 5 anos de datos diarios
+data = yf.download("SPY", period="5y", interval="1d")
+data.to_csv("spy_daily.csv")
+
+# Cargar despues sin re-descargar
+data = pd.read_csv("spy_daily.csv", index_col=0, parse_dates=True)
+print(f"Datos: {len(data)} dias desde {data.index[0]} hasta {data.index[-1]}")</code></pre></div>
+<h3>Datos en Tiempo Real</h3>
+<div class="highlight-box green"><h4>WebSockets para Tiempo Real</h4><p>Para datos en vivo, las APIs usan WebSockets (conexion permanente). Recibes cada tick/vela al instante.</p>
+<div class="code-block"><pre><code># Ejemplo con Binance WebSocket (cripto)
+import websocket
+import json
+
+def on_message(ws, message):
+    data = json.loads(message)
+    price = float(data['p'])
+    print(f"BTC/USDT: {price}")
+
+ws = websocket.WebSocketApp(
+    "wss://stream.binance.com:9443/ws/btcusdt@trade",
+    on_message=on_message
+)
+ws.run_forever()</code></pre></div></div>`,
+          keyPoints: [
+            "yfinance: datos gratuitos de acciones/indices/cripto (ideal para empezar)",
+            "OANDA API: la mejor fuente gratuita para datos Forex",
+            "Guarda datos localmente en CSV para no re-descargar cada vez",
+            "WebSockets para datos en tiempo real (tick by tick)",
+            "Para backtesting necesitas minimo 1-2 anos de datos historicos"
+          ],
+          quiz: [
+            { question: "Cual es la mejor fuente gratuita de datos Forex?", options: ["Yahoo Finance", "OANDA API (con cuenta demo)", "Google Finance", "Twitter"], correctIndex: 1, explanation: "OANDA ofrece datos Forex historicos y en tiempo real gratuitamente con una cuenta demo. Es la fuente estandar para Forex algoritmico." },
+            { question: "Porque deberias guardar los datos localmente en CSV?", options: ["Porque son mas bonitos", "Para no tener que re-descargar cada vez que ejecutas tu codigo (mas rapido y eficiente)", "Porque las APIs son de pago", "No necesitas guardarlos"], correctIndex: 1, explanation: "Descargar datos cada vez es lento y puede alcanzar limites de la API. Guardando en CSV, cargas en milisegundos." },
+            { question: "Que tecnologia se usa para recibir datos de precios en tiempo real?", options: ["HTTP requests cada segundo", "WebSockets (conexion permanente)", "Email", "FTP"], correctIndex: 1, explanation: "WebSockets mantienen una conexion abierta y reciben datos instantaneamente cuando hay un nuevo tick/trade." }
+          ]
+        },
+        {
+          id: "6-3-2",
+          title: "Machine Learning Basico para Trading",
+          duration: "30 min",
+          content: `
+<h2>Machine Learning Aplicado al Trading</h2>
+<div class="warning-box"><h4>Expectativas Realistas</h4><p>ML NO es una varita magica. La mayoria de modelos de ML en trading FALLAN en produccion. Usalo como herramienta complementaria, no como tu unica estrategia. El mercado es mas complejo que cualquier algoritmo.</p></div>
+<h3>Aplicaciones Reales de ML en Trading</h3>
+<div class="grid-cards">
+<div class="card green-border"><h4>Clasificacion de Regimenes</h4><p>Detectar si el mercado esta en tendencia, rango, o alta volatilidad para adaptar tu estrategia automaticamente.</p></div>
+<div class="card green-border"><h4>Deteccion de Patrones</h4><p>Identificar automaticamente patrones de velas, figuras chartistas, o setups de Price Action.</p></div>
+<div class="card yellow-border"><h4>Prediccion de Direccion</h4><p>Predecir si el precio subira o bajara. Funciona a corto plazo pero es MUY dificil de hacer bien.</p></div>
+<div class="card red-border"><h4>Prediccion de Precio Exacto</h4><p>Predecir el precio exacto futuro. CASI IMPOSIBLE con precision util. No pierdas tiempo en esto.</p></div>
+</div>
+<h3>Tu Primer Modelo: Random Forest para Clasificar Tendencia</h3>
+<div class="code-block"><pre><code>import pandas as pd
+import numpy as np
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import classification_report
+
+# Preparar features (indicadores como columnas)
+data = pd.read_csv("eurusd_daily.csv")
+data['SMA_20'] = data['Close'].rolling(20).mean()
+data['SMA_50'] = data['Close'].rolling(50).mean()
+data['RSI'] = compute_rsi(data['Close'], 14)  # funcion propia
+data['ATR'] = compute_atr(data, 14)
+
+# Target: precio sube (1) o baja (0) en los proximos 5 dias
+data['Target'] = (data['Close'].shift(-5) > data['Close']).astype(int)
+data = data.dropna()
+
+# Features y target
+features = ['SMA_20', 'SMA_50', 'RSI', 'ATR']
+X = data[features]
+y = data['Target']
+
+# Split 80/20
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.2, shuffle=False  # NO shuffle en time series!
+)
+
+# Entrenar modelo
+model = RandomForestClassifier(n_estimators=100, random_state=42)
+model.fit(X_train, y_train)
+
+# Evaluar
+predictions = model.predict(X_test)
+print(classification_report(y_test, predictions))</code></pre></div>
+<h3>Errores CRITICOS de ML en Trading</h3>
+<div class="grid-cards">
+<div class="card red-border"><h4>1. Look-ahead Bias</h4><p>Usar datos del futuro para predecir. Ej: calcular RSI con datos que incluyen el dia que intentas predecir. SIEMPRE usa shift().</p></div>
+<div class="card red-border"><h4>2. Overfitting</h4><p>El modelo "memoriza" datos pasados en vez de aprender patrones. Un Sharpe de 5.0 en backtest que pierde en real = overfitting.</p></div>
+<div class="card red-border"><h4>3. Shuffle en Time Series</h4><p>NUNCA hagas shuffle en datos de tiempo. El train set SIEMPRE debe ser anterior al test set cronologicamente.</p></div>
+<div class="card red-border"><h4>4. No incluir costes</h4><p>Si no incluyes spreads, comisiones y slippage, tu backtest sera irrealmente optimista.</p></div>
+</div>
+<div class="highlight-box blue"><h4>El Enfoque Pragmatico</h4><p>En vez de intentar que ML prediga el mercado, usalo para:</p>
+<ul>
+<li><strong>Filtrar:</strong> "De mis 10 setups diarios, cuales tienen mayor probabilidad segun historico?"</li>
+<li><strong>Optimizar:</strong> "Que parametros funcionan mejor para mi estrategia en diferentes condiciones?"</li>
+<li><strong>Clasificar:</strong> "Estamos en mercado trending o ranging? Adapto mi enfoque."</li>
+</ul>
+<p>Esto es MUCHO mas realista y util que intentar predecir el precio.</p></div>`,
+          keyPoints: [
+            "ML NO es magia - la mayoria de modelos fallan en produccion",
+            "Usos reales: clasificacion de regimenes, deteccion de patrones, optimizacion de parametros",
+            "NUNCA hagas shuffle en datos de tiempo (el train debe ser ANTES del test)",
+            "Overfitting es el enemigo #1 - un backtest perfecto que falla en real",
+            "Enfoque pragmatico: usar ML para filtrar y clasificar, no para predecir precios"
+          ],
+          quiz: [
+            { question: "Cual es el error mas comun al usar ML en trading?", options: ["Usar Python", "Overfitting - el modelo memoriza datos pasados y no funciona en real", "Usar demasiados datos", "No usar suficientes indicadores"], correctIndex: 1, explanation: "Overfitting ocurre cuando el modelo se ajusta demasiado a los datos de entrenamiento. Funciona perfecto en backtest pero pierde en real." },
+            { question: "Por que NUNCA debes hacer shuffle en datos de time series?", options: ["Porque es mas lento", "Porque mezclar datos temporales crea look-ahead bias - el modelo veria datos del futuro", "No hay razon, siempre se puede hacer shuffle", "Porque Python no lo permite"], correctIndex: 1, explanation: "En time series, shuffle mezcla pasado y futuro. El modelo entrenaria con datos de 2024 para predecir 2023, lo cual es trampa." },
+            { question: "Cual es el uso MAS realista y util de ML en trading?", options: ["Predecir el precio exacto del Bitcoin manana", "Clasificar el regimen de mercado (tendencia/rango) para adaptar la estrategia", "Reemplazar completamente al trader humano", "Hackear el mercado"], correctIndex: 1, explanation: "Clasificar si el mercado esta en tendencia o rango es un uso practico y realista de ML. Permite adaptar tu estrategia automaticamente segun las condiciones." }
+          ]
+        },
+        {
+          id: "6-3-3",
+          title: "Desplegando tu Bot 24/7 en la Nube",
+          duration: "25 min",
+          content: `
+<h2>Tu Bot Funcionando 24/7 sin tu PC Encendido</h2>
+<div class="analogy-box"><h3>El Empleado que Nunca Duerme</h3><p>Tu bot en la nube es como un empleado que trabaja 24/7 sin vacaciones, sin emociones, sin cansancio. Ejecuta tu estrategia perfectamente mientras tu duermes, comes o viajas.</p></div>
+<h3>Opciones de Hosting para tu Bot</h3>
+<div class="grid-cards">
+<div class="card"><h4>VPS (Servidor Privado Virtual)</h4><p>Un ordenador remoto que esta siempre encendido. Desde 5-20 euros/mes. La opcion mas popular para bots de trading.</p>
+<p><strong>Proveedores:</strong> DigitalOcean, Vultr, AWS Lightsail, Hetzner</p></div>
+<div class="card"><h4>AWS/Google Cloud (Funciones)</h4><p>Lambda functions que se ejecutan por horario. Pagas solo por uso. Ideal para bots que ejecutan pocas veces al dia.</p></div>
+<div class="card"><h4>Railway / Render</h4><p>Plataformas simples para desplegar apps Python. Gratis para proyectos pequenos. Facil de configurar.</p></div>
+<div class="card"><h4>Tu PC con cron/scheduler</h4><p>Si tu PC esta siempre encendido, puedes usar Task Scheduler (Windows) o cron (Linux/Mac). Gratis pero depende de tu PC.</p></div>
+</div>
+<h3>Setup de un Bot en VPS (Paso a Paso)</h3>
+<div class="strategy-box"><h4>Workflow Completo</h4><ol>
+<li><strong>Crea cuenta en DigitalOcean/Vultr</strong> (droplet de 5-10$/mes con Ubuntu)</li>
+<li><strong>Conecta por SSH:</strong> <code>ssh root@tu-ip-del-servidor</code></li>
+<li><strong>Instala Python:</strong> <code>apt update && apt install python3 python3-pip</code></li>
+<li><strong>Sube tu codigo:</strong> Usa git clone o scp para subir tu bot</li>
+<li><strong>Instala dependencias:</strong> <code>pip install -r requirements.txt</code></li>
+<li><strong>Configura cron:</strong> Para ejecutar cada hora: <code>crontab -e</code> → <code>0 * * * * cd /root/bot && python3 main.py</code></li>
+<li><strong>Monitorea:</strong> Logs, alertas por Telegram cuando abre/cierra trades</li>
+</ol></div>
+<h3>Alertas por Telegram (IMPRESCINDIBLE)</h3>
+<div class="highlight-box green"><h4>Tu Bot te Avisa de Todo</h4>
+<div class="code-block"><pre><code>import requests
+
+TELEGRAM_TOKEN = "tu-bot-token"
+CHAT_ID = "tu-chat-id"
+
+def send_alert(message):
+    url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
+    requests.post(url, json={
+        "chat_id": CHAT_ID,
+        "text": message,
+        "parse_mode": "HTML"
+    })
+
+# Ejemplos de uso:
+send_alert("LONG EUR/USD @ 1.0850 | SL: 1.0820 | TP: 1.0910")
+send_alert("Trade CERRADO: +45 pips | Balance: 10,450 USD")
+send_alert("ALERTA: Drawdown al 3.5% - revisad")</code></pre></div></div>
+<h3>Seguridad del Bot</h3>
+<div class="warning-box"><h4>Checklist de Seguridad OBLIGATORIO</h4>
+<ul>
+<li><strong>Max drawdown automatico:</strong> Si pierde X%, el bot se APAGA solo</li>
+<li><strong>Max trades por dia:</strong> Limitar a 3-5 para evitar loops</li>
+<li><strong>Kill switch:</strong> Poder apagar el bot remotamente (via Telegram o API)</li>
+<li><strong>API keys seguras:</strong> NUNCA en el codigo. Usa variables de entorno</li>
+<li><strong>Logs detallados:</strong> Registrar CADA accion del bot para poder auditar</li>
+<li><strong>Alertas de error:</strong> Si algo falla, que te avise inmediatamente</li>
+<li><strong>Revision diaria:</strong> Aunque sea automatico, REVISA los resultados cada dia</li>
+</ul></div>
+<div class="highlight-box blue"><h4>El Stack Completo del Algo Trader</h4>
+<p><strong>Desarrollo:</strong> Python + pandas + numpy + scikit-learn</p>
+<p><strong>Backtest:</strong> backtesting.py o Backtrader</p>
+<p><strong>Ejecucion:</strong> MT5 API o ccxt (cripto)</p>
+<p><strong>Hosting:</strong> VPS (DigitalOcean/Vultr) 10$/mes</p>
+<p><strong>Alertas:</strong> Bot de Telegram</p>
+<p><strong>Monitoreo:</strong> Logs + alertas automaticas</p>
+<p><strong>Coste total:</strong> ~10-20$/mes. Accesible para cualquiera.</strong></p></div>`,
+          keyPoints: [
+            "VPS (5-20 euros/mes) es la opcion mas popular para bots 24/7",
+            "Alertas por Telegram son IMPRESCINDIBLES para saber que hace tu bot",
+            "Seguridad: max drawdown automatico, kill switch, API keys en variables de entorno",
+            "Stack completo: Python + MT5/ccxt + VPS + Telegram = ~10-20$/mes",
+            "Aunque sea automatico, REVISA los resultados CADA DIA"
+          ],
+          quiz: [
+            { question: "Cual es la forma mas economica y popular de tener un bot 24/7?", options: ["Comprar un servidor fisico", "VPS (Servidor Privado Virtual) por 5-20 euros/mes", "Dejar tu PC encendido siempre", "Pagar un servicio de 500$/mes"], correctIndex: 1, explanation: "Un VPS es un servidor en la nube que cuesta 5-20 euros/mes y esta siempre encendido. Es la opcion estandar para bots de trading." },
+            { question: "Que es un 'kill switch' en un bot de trading?", options: ["Un indicador tecnico", "Mecanismo para APAGAR el bot remotamente en caso de emergencia", "Un tipo de orden", "Una estrategia de scalping"], correctIndex: 1, explanation: "Un kill switch permite apagar tu bot inmediatamente si algo sale mal, sin tener que acceder fisicamente al servidor." },
+            { question: "Donde NUNCA deberias poner tus API keys del broker?", options: ["En variables de entorno", "Directamente en el codigo fuente (hardcoded)", "En un archivo .env", "En un gestor de secretos"], correctIndex: 1, explanation: "Las API keys nunca deben estar en el codigo fuente. Si subes tu codigo a GitHub, cualquiera podria acceder a tu cuenta del broker." }
+          ]
+        }
+      ]
     }
   ]
 };

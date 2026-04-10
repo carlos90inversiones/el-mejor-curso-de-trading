@@ -420,7 +420,79 @@ export const PHASE_7: Phase = {
             { question: "Que porcentaje del exito en trading corresponde a psicologia y gestion de riesgo?", options: ["20%", "50%", "80%", "10%"], correctIndex: 2, explanation: "Aproximadamente el 80% del exito en trading depende de la psicologia (disciplina, control emocional) y la gestion de riesgo. La estrategia importa, pero sin la mentalidad correcta, ninguna estrategia funciona." },
             { question: "Por que es importante tener un accountability partner o mentor?", options: ["Para que te diga que trades tomar", "La responsabilidad mutua acelera el progreso y ayuda a mantener la disciplina", "Para copiar sus trades exactos", "No es importante, es mejor operar completamente solo"], correctIndex: 1, explanation: "Un accountability partner te ayuda a mantener la disciplina, revisar errores, y mantener la motivacion. La responsabilidad mutua acelera significativamente el proceso de aprendizaje." }
           ],
-          practicalExercise: "Crea tu Plan de Carrera completo en un documento: 1) Tu estrategia elegida (descrita en detalle). 2) Los pares que operaras y el timeframe. 3) Tu regla de riesgo por trade. 4) Tu horario de trading (dias y horas). 5) Tu timeline de los proximos 12 meses con objetivos especificos para cada fase. 6) Tu presupuesto (cuanto destinas a challenges, formacion, herramientas). 7) Como vas a documentar tu progreso (diario, metricas). 8) Tu compromiso firmado contigo mismo. Imprime este plan y ponlo donde lo veas cada dia."
+          practicalExercise: "Crea tu Plan de Carrera completo en un documento: 1) Tu estrategia elegida. 2) Pares y timeframe. 3) Riesgo por trade. 4) Horario. 5) Timeline 12 meses. 6) Presupuesto. 7) Como documentar progreso. 8) Compromiso firmado."
+        },
+        {
+          id: "7-1-3",
+          title: "Examen Avanzado: Escenarios de Trading Real",
+          duration: "30 min",
+          content: `
+<h2>Examen de Escenarios: Piensa como un Profesional</h2>
+<div class="highlight-box gold"><h4>Instrucciones</h4><p>Este examen presenta 10 escenarios REALES de trading. No hay respuestas "correctas" universales - hay respuestas que demuestran pensamiento profesional. Necesitas 80%+ para pasar.</p></div>
+<div class="warning-box"><p>Estas preguntas son mas dificiles que el examen anterior. Requieren COMBINAR conocimientos de multiples fases y tomar decisiones bajo presion simulada.</p></div>`,
+          keyPoints: [
+            "Escenarios basados en situaciones reales de trading",
+            "Requiere combinar multiples conceptos a la vez",
+            "Piensa como profesional: proceso > resultado",
+            "80% para pasar"
+          ],
+          quiz: [
+            { question: "Escenario: Es lunes 8:30 UTC. EUR/USD rangeaba en Asia entre 1.0820-1.0850. London acaba de abrir y el precio rompio por debajo a 1.0810 con una vela roja grande. Ves muchos SL activandose. Que haces?", options: ["Vendo inmediatamente porque la tendencia es bajista", "ESPERO - esto parece un liquidity sweep del rango asiatico. Busco confirmacion de giro alcista (BOS en M5/M15) para ir LONG", "Compro inmediatamente porque bajo mucho", "Cierro todo y no opero hoy"], correctIndex: 1, explanation: "Clasico AMD: Asia rangeaba, London rompe abajo para cazar liquidez. Esperar confirmacion de giro (BOS) y buscar LONG en el OB/FVG es la respuesta profesional." },
+            { question: "Escenario: Tienes un LONG abierto en GBP/USD con +80 pips. Tu TP original era 100 pips. El RSI muestra divergencia bajista en H1 y el precio esta en una resistencia de D1. Que haces?", options: ["Esperar a que llegue al TP de 100 pips", "Cerrar 50-70% de la posicion ahora y mover SL a profit para el resto", "Mover el TP a 200 pips porque 'va bien'", "Cerrar todo inmediatamente y abrir SHORT"], correctIndex: 1, explanation: "Con divergencia bajista + resistencia D1, hay riesgo de giro. Lo profesional es asegurar parte de la ganancia (cerrar parcial) y proteger el resto con trailing stop." },
+            { question: "Escenario: Llevas +6.5% en un challenge de FTMO (objetivo 8%). Quedan 5 dias. Tu riesgo normal es 1% por trade. Que ajustas?", options: ["Aumento a 2% para terminar rapido", "Reduzco a 0.25-0.5% para proteger ganancias. Solo necesito 1.5% mas en 5 dias = 0.3%/dia", "Mantengo 1% como siempre", "Dejo de operar y espero"], correctIndex: 1, explanation: "Cerca del objetivo, la prioridad es PROTEGER lo ganado. 0.25-0.5% de riesgo sigue siendo viable para alcanzar el 1.5% restante sin arriesgar las ganancias acumuladas." },
+            { question: "Escenario: NFP (Non-Farm Payrolls) sale en 30 minutos. Tienes un trade abierto con +25 pips y tu TP esta a +60 pips. Que haces?", options: ["Dejo el trade abierto, mi analisis tecnico dice que llegara al TP", "Cierro el trade o muevo SL a profit ANTES de la noticia. El NFP puede mover 100+ pips en segundos", "Abro otro trade en la misma direccion para maximizar", "Quito el SL para dar mas espacio"], correctIndex: 1, explanation: "El NFP es el dato mas volatil del mes. Puede invalidar todo tu analisis en segundos. Lo profesional es proteger las ganancias antes de la noticia." },
+            { question: "Escenario: Tu backtest muestra 55% win rate y 1:2 R:R en 200 trades. Pero en las ultimas 3 semanas en real llevas 35% win rate. Que concluyes?", options: ["Mi estrategia no funciona, la abandono", "3 semanas es muestra demasiado pequena. Reviso ejecucion (estoy siguiendo mi plan?) pero NO cambio la estrategia basado en 15-20 trades", "Necesito anadir mas indicadores", "El mercado cambio para siempre y nunca volvera a funcionar"], correctIndex: 1, explanation: "200 trades de backtest vs 15-20 trades en real: la muestra real es demasiado pequena. Revisa si estas siguiendo tu plan correctamente. No cambies una estrategia probada por una racha corta." },
+            { question: "Escenario: Ves un setup A+ en EUR/USD: OB + FVG + Fibonacci 61.8% + Killzone NY + BOS alcista en M15. PERO el DXY (Indice Dolar) esta en soporte fuerte y parece rebotar al alza. Que haces?", options: ["Entro LONG en EUR/USD porque tengo 5 confluencias", "NO entro. DXY rebotando al alza = USD se fortalece = EUR/USD deberia BAJAR. Las confluencias tecnicas contradicen el contexto macro", "Entro con doble de riesgo porque tengo muchas confluencias", "Ignoro el DXY, solo miro el grafico de EUR/USD"], correctIndex: 1, explanation: "DXY es la brujula del Forex. Si el DXY rebota al alza (USD fuerte), ir LONG en EUR/USD contradice el contexto macro. Las confluencias tecnicas son importantes pero el contexto fundamental puede invalidarlas." },
+            { question: "Escenario: Acabas de perder tu primera cuenta fondeada de 100K despues de 2 meses de operar. Te sientes devastado. Cual es la accion CORRECTA?", options: ["Compro otro challenge inmediatamente para 'recuperar'", "Pausa de 1-2 semanas. Analizo QUE salio mal (diario de trading). Vuelvo a demo 2-4 semanas. Solo entonces compro nuevo challenge.", "Abandono el trading para siempre", "Cambio completamente de estrategia y compro un bot"], correctIndex: 1, explanation: "Perder la primera cuenta es NORMAL. Lo profesional: pausa para procesar emocionalmente, analisis detallado de errores, practica en demo, y volver mejor preparado." },
+            { question: "Escenario: Un 'guru' de Instagram dice que EUR/USD va a subir a 1.1500 esta semana. Tu analisis dice lo contrario: tendencia bajista, resistencia fuerte en 1.0900. Que haces?", options: ["Sigo al guru, debe saber mas que yo", "SIEMPRE sigo mi propio analisis. Ningun guru conoce mi plan, mi riesgo, ni mis reglas. Mi analisis es mi responsabilidad.", "Hago mitad y mitad", "Espero a ver quien tiene razon"], correctIndex: 1, explanation: "Tu analisis es TU responsabilidad. Ningun guru en Instagram conoce tu contexto, plan de riesgo, ni responde por tus perdidas. La autonomia en tus decisiones es fundamental." },
+            { question: "Escenario: Tu diario de trading muestra que pierdes consistentemente los martes por la tarde y cuando operas USD/JPY. Que haces?", options: ["Ignoro los datos, probablemente es coincidencia", "Dejo de operar martes por la tarde y elimino USD/JPY de mis pares durante 1 mes. Luego reevaluo con datos", "Opero MAS los martes para 'arreglar' la estadistica", "Cambio completamente de estrategia"], correctIndex: 1, explanation: "El diario revelo un patron. Lo profesional: eliminar martes tarde y USD/JPY temporalmente, recopilar datos 1 mes, y decidir con evidencia. Los datos no mienten." },
+            { question: "Escenario: Un amigo te pide que le enseñes a hacer 'dinero facil' con trading en 1 semana. Que le dices?", options: ["Le enseno un par de trucos rapidos", "Le explico que trading NO es dinero facil: requiere minimo 6-12 meses de estudio y practica, le recomiendo este curso, y le advierto que el 70-90% pierde dinero", "Le paso senales de un grupo de Telegram", "Le digo que invierta en mi cuenta"], correctIndex: 1, explanation: "La honestidad es fundamental. Trading requiere educacion seria, practica y disciplina. Venderle la idea de 'dinero facil' seria irresponsable y le costaria dinero." }
+          ]
+        },
+        {
+          id: "7-1-4",
+          title: "El Trading como Estilo de Vida: Vision a Largo Plazo",
+          duration: "15 min",
+          content: `
+<h2>Mas Alla del Trading: Construyendo un Futuro</h2>
+<div class="highlight-box purple"><h4>Has Llegado al Final del Curso</h4><p>Si has completado las 7 fases, los quizzes, los proyectos, y el examen... tienes mas conocimiento que el 95% de los traders del mundo. Pero el conocimiento sin accion no vale nada. Aqui va tu ultima leccion.</p></div>
+<h3>El Trading NO es el Fin, es el Medio</h3>
+<div class="analogy-box"><p>El trading es una HERRAMIENTA para conseguir lo que realmente quieres: libertad financiera, tiempo, independencia. No te enamores del trading en si. Enamorate de la vida que te permite construir.</p></div>
+<h3>Los 5 Pilares del Trader Exitoso a Largo Plazo</h3>
+<div class="grid-cards">
+<div class="card"><h4>1. Salud Fisica</h4><p>Ejercicio, sueno, alimentacion. Un cuerpo sano toma mejores decisiones. Muchos traders de elite hacen ejercicio ANTES de operar.</p></div>
+<div class="card"><h4>2. Salud Mental</h4><p>Meditacion, desconexion, hobbies. El trading puede ser estresante. Necesitas valvulas de escape.</p></div>
+<div class="card"><h4>3. Relaciones</h4><p>No te aisles. Familia, amigos, comunidad de traders. El trading solitario lleva al burnout.</p></div>
+<div class="card"><h4>4. Diversificacion</h4><p>No pongas todos los huevos en una canasta. Trading + inversiones pasivas + inmobiliario + negocio. Multiples fuentes de ingreso.</p></div>
+<div class="card"><h4>5. Educacion Continua</h4><p>El mercado evoluciona. Lo que funciona hoy puede no funcionar en 5 anos. Nunca dejes de aprender.</p></div>
+</div>
+<h3>Tu Compromiso Final</h3>
+<div class="strategy-box"><h4>Firma este Contrato Contigo Mismo</h4>
+<p>Yo me comprometo a:</p>
+<ul>
+<li>Seguir mi plan de trading con disciplina de hierro</li>
+<li>Proteger mi capital por encima de todo</li>
+<li>Nunca dejar que las emociones controlen mis decisiones</li>
+<li>Registrar CADA trade en mi diario</li>
+<li>Revisar y mejorar mi proceso constantemente</li>
+<li>Ser honesto conmigo mismo sobre mis resultados</li>
+<li>Nunca arriesgar dinero que no puedo permitirme perder</li>
+<li>Tratar el trading como un negocio, no como un juego</li>
+</ul></div>
+<div class="highlight-box green"><h4>El Ultimo Secreto</h4>
+<p>Despues de estudiar miles de traders exitosos, hay UN factor que los separa del resto: <strong>NO SE RINDIERON</strong>. Pasaron por rachas perdedoras, challenges fallidos, momentos de duda. Pero siguieron adelante, ajustaron, aprendieron, y eventualmente llegaron. Tu tambien puedes. Ahora ve y hazlo.</p></div>`,
+          keyPoints: [
+            "El trading es un MEDIO para conseguir libertad, no un fin en si mismo",
+            "5 pilares: salud fisica, salud mental, relaciones, diversificacion, educacion continua",
+            "Nunca arriesgues dinero que no puedes perder",
+            "El factor #1 de los traders exitosos: NO SE RINDIERON",
+            "Trata el trading como un negocio, no como un juego"
+          ],
+          quiz: [
+            { question: "Cual es el factor #1 que separa a los traders exitosos del resto?", options: ["Tienen la mejor estrategia", "Tienen mas dinero", "No se rindieron - persistieron a pesar de las dificultades", "Tienen mejor software"], correctIndex: 2, explanation: "La persistencia es el factor clave. Todos los traders exitosos pasaron por momentos dificiles. La diferencia es que NO se rindieron." },
+            { question: "Porque es importante diversificar mas alla del trading?", options: ["No es importante", "Porque poner todo tu dinero y esperanza en una sola fuente de ingreso es un riesgo enorme", "Porque el trading no funciona", "Porque es la ley"], correctIndex: 1, explanation: "Diversificar ingresos (trading + inversiones + negocio) reduce el riesgo total y la presion sobre tu trading. Si dependes 100% del trading, la presion nubla las decisiones." },
+            { question: "Que deberia hacer un trader para su salud mental?", options: ["Operar 12 horas al dia", "Tener hobbies, hacer ejercicio, meditar, desconectar del mercado regularmente", "Solo pensar en trading", "Ignorar el estres"], correctIndex: 1, explanation: "El trading puede ser muy estresante. Ejercicio, hobbies, meditacion y desconexion son esenciales para mantener la claridad mental y tomar buenas decisiones." }
+          ]
         }
       ]
     }
