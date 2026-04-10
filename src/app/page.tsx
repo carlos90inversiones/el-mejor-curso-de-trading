@@ -15,6 +15,7 @@ import LessonNotes from "@/components/LessonNotes";
 import SearchBar from "@/components/SearchBar";
 import BookmarkButton, { useBookmarks } from "@/components/BookmarkButton";
 import ProgressDashboard from "@/components/ProgressDashboard";
+import Glossary from "@/components/Glossary";
 import { DIAGRAMS } from "@/components/CandleDiagrams";
 import { useGamification, XPBar, StatsOverview, BadgesGrid, StreakDisplay, LevelUpNotification, BadgeNotification } from "@/components/GamificationSystem";
 
@@ -737,7 +738,7 @@ function QuizView({
 // TOOLS VIEW (Calculator, Journal, Candle Practice, Simulator)
 // ============================================================================
 function ToolsView({ setView }: { setView: (v: View) => void }) {
-  const [tab, setTab] = useState<"simulator" | "calculator" | "journal" | "candles" | "diagrams" | "cheatsheets" | "projects">("simulator");
+  const [tab, setTab] = useState<"simulator" | "calculator" | "journal" | "candles" | "diagrams" | "cheatsheets" | "projects" | "glossary">("simulator");
 
   const tabs = [
     { id: "simulator" as const, label: "Simulador", icon: "📈" },
@@ -747,6 +748,7 @@ function ToolsView({ setView }: { setView: (v: View) => void }) {
     { id: "diagrams" as const, label: "Diagramas", icon: "📐" },
     { id: "cheatsheets" as const, label: "Cheat Sheets", icon: "📋" },
     { id: "projects" as const, label: "Proyectos", icon: "🎯" },
+    { id: "glossary" as const, label: "Glosario", icon: "📖" },
   ];
 
   return (
@@ -796,6 +798,7 @@ function ToolsView({ setView }: { setView: (v: View) => void }) {
         </div>
       )}
       {tab === "projects" && <PracticalProjects />}
+      {tab === "glossary" && <Glossary />}
     </div>
   );
 }

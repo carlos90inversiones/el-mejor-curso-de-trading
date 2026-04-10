@@ -416,6 +416,110 @@ export const PHASE_5: Phase = {
             { question: "Que porcentaje de tus ganancias deberias separar para impuestos?", options: ["5%", "10%", "25-30%", "50%"], correctIndex: 2, explanation: "Separar 25-30% desde el primer dia asegura que tendras cubierta la factura fiscal sin sorpresas." },
             { question: "Que documentos necesitas guardar para la declaracion fiscal?", options: ["Solo el balance final", "Registros de todas las operaciones + statements del broker", "Nada, el broker lo reporta automaticamente", "Solo las operaciones ganadoras"], correctIndex: 1, explanation: "Necesitas registros completos de todas las operaciones (ganadoras y perdedoras) mas los informes oficiales del broker." }
           ]
+        },
+        {
+          id: "5-2-2",
+          title: "Comparativa de Prop Firms: Cual Elegir",
+          duration: "25 min",
+          content: `
+<h2>Guia Comparativa de las Mejores Prop Firms</h2>
+<p>No todas las prop firms son iguales. Cada una tiene reglas, precios y condiciones diferentes. Aqui tienes una comparativa detallada para elegir la mejor para ti.</p>
+<h3>Criterios de Evaluacion</h3>
+<div class="grid-cards">
+<div class="card"><h4>Precio del Challenge</h4><p>Cuanto pagas por intentar la evaluacion. Varia de 100 a 1000+ segun el tamano de cuenta.</p></div>
+<div class="card"><h4>Reglas de Drawdown</h4><p>Maximo diario (4-5%) y total (8-12%). Algunas usan drawdown estatico, otras trailing.</p></div>
+<div class="card"><h4>Profit Target</h4><p>Cuanto necesitas ganar: Fase 1 (8-10%), Fase 2 (5%). Algunas tienen 1 sola fase.</p></div>
+<div class="card"><h4>Profit Split</h4><p>Cuanto te quedas: 70-90% segun la firma. Algunas escalan hasta 90% con buen rendimiento.</p></div>
+</div>
+<h3>Comparativa Detallada</h3>
+<div class="comparison-table">
+<div class="comparison-col">
+<h4>FTMO</h4>
+<ul>
+<li>Challenge 100K: ~500 euros</li>
+<li>2 fases: 10% + 5%</li>
+<li>DD Diario: 5% | Total: 10%</li>
+<li>Split: 80% (hasta 90%)</li>
+<li>Periodo: 30 + 60 dias</li>
+<li>Pago: 1-2 dias laborables</li>
+<li><strong>Pro:</strong> La mas respetada, buena reputacion</li>
+<li><strong>Con:</strong> Reglas estrictas, precio medio-alto</li>
+</ul></div>
+<div class="comparison-col">
+<h4>Funded Next</h4>
+<ul>
+<li>Challenge 100K: ~300-500 euros</li>
+<li>1 o 2 fases disponibles</li>
+<li>DD Diario: 5% | Total: 10%</li>
+<li>Split: 80% (hasta 90%)</li>
+<li>Periodo: ilimitado</li>
+<li>Pago: 3-5 dias</li>
+<li><strong>Pro:</strong> Precio competitivo, sin limite de tiempo</li>
+<li><strong>Con:</strong> Menos historia que FTMO</li>
+</ul></div>
+</div>
+<h3>Que Prop Firm Elegir Segun tu Perfil</h3>
+<div class="strategy-box"><h4>Recomendaciones</h4>
+<ul>
+<li><strong>Principiante (primer challenge):</strong> Empieza con cuenta de 10K-25K. Precio bajo, menos presion. Funded Next o similar.</li>
+<li><strong>Intermedio (ya pasaste algun challenge):</strong> Sube a 50K-100K. FTMO o The Funded Trader.</li>
+<li><strong>Avanzado (quieres escalar):</strong> Multiples cuentas de 100K-200K con trade copier.</li>
+</ul></div>
+<div class="warning-box"><h4>CUIDADO con Prop Firms Nuevas</h4>
+<p>Aparecen nuevas prop firms cada semana. Algunas desaparecen con tu dinero. Antes de pagar:</p>
+<ul>
+<li>Busca reviews en TrustPilot (minimo 4 estrellas, 100+ reviews)</li>
+<li>Verifica que paguen retiros (busca pruebas de pago en redes)</li>
+<li>Revisa cuanto tiempo llevan operando (minimo 1 ano)</li>
+<li>Evita las que tienen ofertas "demasiado buenas para ser verdad"</li>
+</ul></div>`,
+          keyPoints: [
+            "FTMO es la mas respetada pero no la mas barata",
+            "Empieza con cuentas pequenas (10K-25K) para tu primer challenge",
+            "Verifica reviews en TrustPilot y pruebas de pago antes de comprar",
+            "El profit split tipico es 80%, algunas escalan hasta 90%",
+            "Evita prop firms nuevas sin historial verificable"
+          ],
+          quiz: [
+            { question: "Que tamano de cuenta recomiendas para un primer challenge?", options: ["200K - ir a lo grande", "10K-25K - menos presion, menos riesgo financiero", "500K - maximizar ganancias", "No importa el tamano"], correctIndex: 1, explanation: "Para tu primer challenge, una cuenta de 10K-25K tiene un costo bajo (50-150 euros) y te permite aprender el proceso sin presion financiera excesiva." },
+            { question: "Que deberias verificar ANTES de pagar un challenge de una prop firm?", options: ["Solo el precio", "Reviews en TrustPilot, pruebas de pago reales, y cuanto tiempo llevan operando", "Nada, todas son iguales", "Solo si tienen Instagram"], correctIndex: 1, explanation: "Muchas prop firms nuevas desaparecen con tu dinero. Verifica reviews reales, pruebas de pago, y que lleven al menos 1 ano operando." }
+          ]
+        },
+        {
+          id: "5-2-3",
+          title: "Psicologia del Challenge: Como No Autodestruirte",
+          duration: "20 min",
+          content: `
+<h2>La Psicologia del Challenge: Tu Mayor Enemigo Eres Tu</h2>
+<div class="analogy-box"><h3>El Examen de Conducir</h3><p>Recuerdas tu examen de conducir? Sabias conducir, pero los nervios te hacian cometer errores que normalmente no cometirias. El challenge de una prop firm es EXACTAMENTE igual. Tu estrategia funciona en demo, pero la presion del challenge te sabotea.</p></div>
+<h3>Los 5 Momentos Criticos del Challenge</h3>
+<div class="psychology-card fear"><h4>1. El Primer Trade</h4><p>Nervios extremos. Tendencia a no entrar o entrar con tamano muy pequeno por miedo.</p>
+<p><strong>Solucion:</strong> Tu primer trade del challenge deberia ser IDENTICO a tus trades de demo. Mismo riesgo (0.5-1%), mismo setup. No es "especial" - es uno mas.</p></div>
+<div class="psychology-card greed"><h4>2. Llevas +3% Rapido</h4><p>Sensacion de invencibilidad. Tendencia a aumentar riesgo o sobreoperar. "Si sigo asi, paso en una semana!"</p>
+<p><strong>Solucion:</strong> Mantener EXACTAMENTE el mismo riesgo. Incluso considerar reducir a 0.5%. Las ganancias ya estan ahi, protegelas.</p></div>
+<div class="psychology-card revenge"><h4>3. Primera Racha Perdedora (-2%)</h4><p>Panico. "Estoy perdiendo el challenge!" Tendencia a revenge trading o quitar SL.</p>
+<p><strong>Solucion:</strong> -2% es NORMAL. Tienes 8% de margen hasta el drawdown total. PARA 1 dia, respira, y vuelve con calma.</p></div>
+<div class="psychology-card fomo"><h4>4. Ultimos Dias y Te Falta 2%</h4><p>Desesperacion. Tendencia a aumentar riesgo dramaticamente. "Necesito una operacion grande!"</p>
+<p><strong>Solucion:</strong> NUNCA aumentes riesgo al final. Es MEJOR no pasar y comprar otro challenge que violar el drawdown. Mantener disciplina.</p></div>
+<div class="psychology-card hope"><h4>5. Estas a 0.5% del Objetivo</h4><p>Ansiedad extrema. Cada pip cuenta. Tendencia a cerrar trades ganadores demasiado pronto.</p>
+<p><strong>Solucion:</strong> Trata este trade como cualquier otro. Pon TP normal. Si llega, genial. Si no, habra mas oportunidades.</p></div>
+<h3>El Mantra del Challenge</h3>
+<div class="highlight-box green"><h4>Repite esto antes de cada sesion de trading en el challenge:</h4>
+<p>"No estoy intentando pasar un challenge. Estoy ejecutando mi plan de trading. El resultado es una consecuencia del proceso. Mi unico objetivo es seguir mis reglas, trade por trade."</p></div>
+<div class="highlight-box blue"><h4>La Estadistica Clave</h4>
+<p>Solo el 10-15% de los traders pasan su primer challenge. PERO, de los que eventualmente pasan, el 80% lo hicieron en su segundo o tercer intento. Fallar el primero es NORMAL y parte del aprendizaje. No te rindas.</p></div>`,
+          keyPoints: [
+            "La presion del challenge te hace cometer errores que no cometirias en demo",
+            "5 momentos criticos: primer trade, racha positiva, racha negativa, ultimos dias, cerca del objetivo",
+            "NUNCA aumentes riesgo durante el challenge, especialmente al final",
+            "Solo 10-15% pasa el primer challenge - fallar es normal, no te rindas",
+            "Enfocate en el PROCESO (seguir tu plan) no en el RESULTADO (pasar el challenge)"
+          ],
+          quiz: [
+            { question: "Llevas +4% en tu challenge y quedan 2 semanas. Que haces?", options: ["Aumentas riesgo para llegar rapido al 8%", "Mantienes o reduces el riesgo para proteger las ganancias", "Dejas de operar y esperas", "Cambias de estrategia"], correctIndex: 1, explanation: "Con +4%, lo inteligente es proteger lo ganado. Mantener 0.5% de riesgo o incluso reducir a 0.25%. Es mejor tardar mas que arriesgar las ganancias." },
+            { question: "Que porcentaje de traders pasa su PRIMER challenge?", options: ["50%", "30%", "10-15%", "90%"], correctIndex: 2, explanation: "Solo el 10-15% pasa el primer intento. Pero el 80% de los que eventualmente pasan lo logran en el 2do o 3er intento. Fallar es parte del proceso." },
+            { question: "Cual deberia ser tu enfoque mental durante un challenge?", options: ["Ganar lo maximo posible lo mas rapido posible", "Ejecutar tu plan de trading correctamente, trade por trade", "Intentar estrategias nuevas para encontrar la mejor", "Copiar a otros traders que ya pasaron"], correctIndex: 1, explanation: "Enfocate en el PROCESO: ejecutar tu plan correctamente. El resultado (pasar el challenge) es una consecuencia natural de un buen proceso repetido." }
+          ]
         }
       ]
     }
