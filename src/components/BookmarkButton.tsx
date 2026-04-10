@@ -32,12 +32,13 @@ export default function BookmarkButton({ lessonId, bookmarks, toggle }: {
   const isBookmarked = bookmarks.has(lessonId);
 
   return (
-    <button
-      onClick={(e) => { e.stopPropagation(); toggle(lessonId); }}
-      className={`p-1.5 rounded-lg transition ${isBookmarked ? "text-amber-400 bg-amber-900/20" : "text-[#555] hover:text-amber-400"}`}
+    <span
+      role="button"
+      onClick={(e) => { e.stopPropagation(); e.preventDefault(); toggle(lessonId); }}
+      className={`p-1.5 rounded-lg transition cursor-pointer ${isBookmarked ? "text-amber-400 bg-amber-900/20" : "text-[#555] hover:text-amber-400"}`}
       title={isBookmarked ? "Quitar de favoritos" : "Agregar a favoritos"}
     >
       {isBookmarked ? "★" : "☆"}
-    </button>
+    </span>
   );
 }

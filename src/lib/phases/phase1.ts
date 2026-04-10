@@ -256,29 +256,114 @@ export const PHASE_1: Phase = {
           content: `
 <h2>Las Velas Japonesas: El ABC del Trader</h2>
 <div class="analogy-box"><h3>El Resumen de un Partido</h3><p>Cada vela es como el resumen de un partido de futbol: como empezo (apertura), que paso durante el partido (max/min), y como termino (cierre). El color dice quien gano: compradores (verde) o vendedores (rojo).</p></div>
+
 <h3>Anatomia de una Vela</h3>
-<div class="candle-anatomy"><p>Cada vela tiene 4 datos:</p><ul>
-<li><strong>APERTURA (Open):</strong> Precio al inicio del periodo</li>
-<li><strong>CIERRE (Close):</strong> Precio al final del periodo</li>
-<li><strong>MAXIMO (High):</strong> Precio mas alto alcanzado</li>
-<li><strong>MINIMO (Low):</strong> Precio mas bajo alcanzado</li>
-</ul></div>
-<div class="candle-part"><strong>Mecha Superior (Upper Shadow)</strong><p>Muestra hasta donde subieron los compradores antes de que los vendedores los empujaran de vuelta.</p></div>
-<div class="candle-part"><strong>Cuerpo (Body)</strong><p>Diferencia entre apertura y cierre. <strong>Verde</strong> = precio SUBIO. <strong>Rojo</strong> = precio BAJO.</p></div>
-<div class="candle-part"><strong>Mecha Inferior (Lower Shadow)</strong><p>Muestra hasta donde bajaron los vendedores antes de que los compradores los empujaran de vuelta.</p></div>
-<h3>Que Te Cuentan las Velas</h3>
-<div class="grid-cards">
-<div class="card green-border"><h4>Vela Verde Grande</h4><p>Compradores DOMINARON. Fuerte presion alcista.</p></div>
-<div class="card red-border"><h4>Vela Roja Grande</h4><p>Vendedores DOMINARON. Fuerte presion bajista.</p></div>
-<div class="card yellow-border"><h4>Cuerpo Pequeno</h4><p>Indecision. Ni compradores ni vendedores dominan.</p></div>
-<div class="card purple-border"><h4>Mechas Largas</h4><p>Hubo PELEA. Muestra rechazo de un nivel de precio.</p></div>
+<p>Cada vela tiene 4 datos. Mira esta imagen:</p>
+
+<div style="display:flex;justify-content:center;gap:40px;margin:24px 0;flex-wrap:wrap">
+<!-- VELA ALCISTA -->
+<div style="text-align:center">
+<svg width="160" height="240" viewBox="0 0 160 240">
+<text x="80" y="15" fill="#26a69a" font-size="12" text-anchor="middle" font-weight="bold">VELA ALCISTA</text>
+<line x1="80" y1="30" x2="80" y2="70" stroke="#26a69a" stroke-width="2"/>
+<rect x="55" y="70" width="50" height="80" rx="4" fill="#26a69a"/>
+<line x1="80" y1="150" x2="80" y2="200" stroke="#26a69a" stroke-width="2"/>
+<text x="140" y="35" fill="#a0a0b8" font-size="9" text-anchor="start">Maximo (High)</text><line x1="82" y1="30" x2="135" y2="32" stroke="#555" stroke-width="0.5"/>
+<text x="140" y="78" fill="#26a69a" font-size="9" text-anchor="start">Cierre (Close)</text><line x1="105" y1="75" x2="135" y2="75" stroke="#555" stroke-width="0.5"/>
+<text x="140" y="155" fill="#26a69a" font-size="9" text-anchor="start">Apertura (Open)</text><line x1="105" y1="150" x2="135" y2="152" stroke="#555" stroke-width="0.5"/>
+<text x="140" y="205" fill="#a0a0b8" font-size="9" text-anchor="start">Minimo (Low)</text><line x1="82" y1="200" x2="135" y2="202" stroke="#555" stroke-width="0.5"/>
+<text x="10" y="55" fill="#787b86" font-size="8">Mecha</text><text x="10" y="65" fill="#787b86" font-size="8">Superior</text>
+<text x="10" y="115" fill="#26a69a" font-size="9" font-weight="bold">CUERPO</text>
+<text x="10" y="180" fill="#787b86" font-size="8">Mecha</text><text x="10" y="190" fill="#787b86" font-size="8">Inferior</text>
+<text x="80" y="230" fill="#26a69a" font-size="10" text-anchor="middle">Cierre > Apertura = SUBIO</text>
+</svg>
 </div>
+<!-- VELA BAJISTA -->
+<div style="text-align:center">
+<svg width="160" height="240" viewBox="0 0 160 240">
+<text x="80" y="15" fill="#ef5350" font-size="12" text-anchor="middle" font-weight="bold">VELA BAJISTA</text>
+<line x1="80" y1="30" x2="80" y2="70" stroke="#ef5350" stroke-width="2"/>
+<rect x="55" y="70" width="50" height="80" rx="4" fill="#ef5350"/>
+<line x1="80" y1="150" x2="80" y2="200" stroke="#ef5350" stroke-width="2"/>
+<text x="140" y="78" fill="#ef5350" font-size="9" text-anchor="start">Apertura (Open)</text>
+<text x="140" y="155" fill="#ef5350" font-size="9" text-anchor="start">Cierre (Close)</text>
+<text x="80" y="230" fill="#ef5350" font-size="10" text-anchor="middle">Cierre < Apertura = BAJO</text>
+</svg>
+</div>
+</div>
+
+<h3>Que Te Cuentan las Velas</h3>
+<div style="display:flex;justify-content:center;gap:20px;margin:20px 0;flex-wrap:wrap">
+<div style="text-align:center">
+<svg width="80" height="120" viewBox="0 0 80 120">
+<line x1="40" y1="10" x2="40" y2="25" stroke="#26a69a" stroke-width="2"/><rect x="20" y="25" width="40" height="60" rx="3" fill="#26a69a"/><line x1="40" y1="85" x2="40" y2="95" stroke="#26a69a" stroke-width="2"/>
+<text x="40" y="115" fill="#26a69a" font-size="8" text-anchor="middle" font-weight="bold">Verde Grande</text>
+</svg>
+<p style="font-size:11px;color:#a0a0b8;max-width:90px">Compradores dominan</p>
+</div>
+<div style="text-align:center">
+<svg width="80" height="120" viewBox="0 0 80 120">
+<line x1="40" y1="10" x2="40" y2="25" stroke="#ef5350" stroke-width="2"/><rect x="20" y="25" width="40" height="60" rx="3" fill="#ef5350"/><line x1="40" y1="85" x2="40" y2="95" stroke="#ef5350" stroke-width="2"/>
+<text x="40" y="115" fill="#ef5350" font-size="8" text-anchor="middle" font-weight="bold">Roja Grande</text>
+</svg>
+<p style="font-size:11px;color:#a0a0b8;max-width:90px">Vendedores dominan</p>
+</div>
+<div style="text-align:center">
+<svg width="80" height="120" viewBox="0 0 80 120">
+<line x1="40" y1="20" x2="40" y2="45" stroke="#fbbf24" stroke-width="2"/><rect x="25" y="45" width="30" height="10" rx="2" fill="#fbbf24"/><line x1="40" y1="55" x2="40" y2="80" stroke="#fbbf24" stroke-width="2"/>
+<text x="40" y="115" fill="#fbbf24" font-size="8" text-anchor="middle" font-weight="bold">Doji</text>
+</svg>
+<p style="font-size:11px;color:#a0a0b8;max-width:90px">Indecision total</p>
+</div>
+<div style="text-align:center">
+<svg width="80" height="120" viewBox="0 0 80 120">
+<line x1="40" y1="10" x2="40" y2="30" stroke="#8b5cf6" stroke-width="2"/><rect x="25" y="30" width="30" height="15" rx="2" fill="#8b5cf6"/><line x1="40" y1="45" x2="40" y2="95" stroke="#8b5cf6" stroke-width="2"/>
+<text x="40" y="115" fill="#8b5cf6" font-size="8" text-anchor="middle" font-weight="bold">Mechas Largas</text>
+</svg>
+<p style="font-size:11px;color:#a0a0b8;max-width:90px">Rechazo fuerte</p>
+</div>
+</div>
+
 <h3>Los 5 Patrones de Vela MAS IMPORTANTES</h3>
-<div class="pattern-card"><h4>1. DOJI</h4><p>Apertura y cierre casi iguales. Cuerpo muy pequeno.</p><p><strong>Significado:</strong> INDECISION. Si aparece tras tendencia fuerte, posible giro.</p></div>
-<div class="pattern-card"><h4>2. MARTILLO (Hammer)</h4><p>Cuerpo pequeno arriba, mecha inferior larga (2x el cuerpo minimo).</p><p><strong>Significado:</strong> En tendencia bajista = SENAL ALCISTA. Los compradores rechazaron precios bajos.</p></div>
-<div class="pattern-card"><h4>3. ESTRELLA FUGAZ (Shooting Star)</h4><p>Cuerpo pequeno abajo, mecha superior larga. Martillo invertido.</p><p><strong>Significado:</strong> En tendencia alcista = SENAL BAJISTA. Los vendedores rechazaron precios altos.</p></div>
-<div class="pattern-card"><h4>4. ENVOLVENTE (Engulfing)</h4><p>Una vela "se come" completamente a la anterior.</p><p><strong>Envolvente Alcista:</strong> Verde grande envuelve roja = COMPRA</p><p><strong>Envolvente Bajista:</strong> Roja grande envuelve verde = VENTA</p></div>
-<div class="pattern-card"><h4>5. PIN BAR</h4><p>Mecha muy larga (2/3 del tamano total) y cuerpo pequeno en un extremo.</p><p><strong>La senal favorita de Price Action.</strong> Pin alcista = mecha larga abajo = LONG. Pin bajista = mecha larga arriba = SHORT.</p></div>
+
+<div class="pattern-card"><h4>1. DOJI</h4>
+<div style="display:flex;align-items:center;gap:20px;flex-wrap:wrap">
+<svg width="80" height="100" viewBox="0 0 80 100"><line x1="40" y1="10" x2="40" y2="38" stroke="#fbbf24" stroke-width="2"/><rect x="28" y="38" width="24" height="4" rx="2" fill="#fbbf24"/><line x1="40" y1="42" x2="40" y2="75" stroke="#fbbf24" stroke-width="2"/><text x="40" y="92" fill="#fbbf24" font-size="10" text-anchor="middle" font-weight="bold">DOJI</text></svg>
+<div><p>Apertura y cierre casi iguales. Cuerpo muy pequeno con mechas a ambos lados.</p><p><strong>Significado:</strong> INDECISION total. Si aparece tras tendencia fuerte, posible giro.</p></div>
+</div></div>
+
+<div class="pattern-card"><h4>2. MARTILLO (Hammer)</h4>
+<div style="display:flex;align-items:center;gap:20px;flex-wrap:wrap">
+<svg width="80" height="100" viewBox="0 0 80 100"><line x1="40" y1="15" x2="40" y2="25" stroke="#26a69a" stroke-width="2"/><rect x="28" y="25" width="24" height="15" rx="2" fill="#26a69a"/><line x1="40" y1="40" x2="40" y2="80" stroke="#26a69a" stroke-width="2"/><text x="40" y="95" fill="#26a69a" font-size="10" text-anchor="middle" font-weight="bold">MARTILLO</text></svg>
+<div><p>Cuerpo pequeno arriba, <strong>mecha inferior MUY larga</strong> (minimo 2x el cuerpo).</p><p><strong>Significado:</strong> En soporte/tendencia bajista = <span style="color:#26a69a;font-weight:bold">SENAL ALCISTA</span>. Los compradores rechazaron precios bajos con fuerza.</p></div>
+</div></div>
+
+<div class="pattern-card"><h4>3. ESTRELLA FUGAZ (Shooting Star)</h4>
+<div style="display:flex;align-items:center;gap:20px;flex-wrap:wrap">
+<svg width="80" height="100" viewBox="0 0 80 100"><line x1="40" y1="10" x2="40" y2="55" stroke="#ef5350" stroke-width="2"/><rect x="28" y="55" width="24" height="15" rx="2" fill="#ef5350"/><line x1="40" y1="70" x2="40" y2="78" stroke="#ef5350" stroke-width="2"/><text x="40" y="95" fill="#ef5350" font-size="9" text-anchor="middle" font-weight="bold">ESTRELLA FUGAZ</text></svg>
+<div><p>Cuerpo pequeno abajo, <strong>mecha superior MUY larga</strong>. Es un martillo invertido.</p><p><strong>Significado:</strong> En resistencia/tendencia alcista = <span style="color:#ef5350;font-weight:bold">SENAL BAJISTA</span>. Los vendedores rechazaron precios altos.</p></div>
+</div></div>
+
+<div class="pattern-card"><h4>4. ENVOLVENTE (Engulfing)</h4>
+<div style="display:flex;align-items:center;gap:20px;flex-wrap:wrap">
+<svg width="130" height="100" viewBox="0 0 130 100">
+<line x1="35" y1="20" x2="35" y2="30" stroke="#ef5350" stroke-width="1.5"/><rect x="25" y="30" width="20" height="30" rx="2" fill="#ef5350"/><line x1="35" y1="60" x2="35" y2="70" stroke="#ef5350" stroke-width="1.5"/>
+<line x1="80" y1="15" x2="80" y2="22" stroke="#26a69a" stroke-width="1.5"/><rect x="65" y="22" width="30" height="50" rx="3" fill="#26a69a"/><line x1="80" y1="72" x2="80" y2="80" stroke="#26a69a" stroke-width="1.5"/>
+<rect x="62" y="19" width="36" height="58" rx="4" fill="none" stroke="#26a69a" stroke-width="1.5" stroke-dasharray="4,3"/>
+<text x="65" y="95" fill="#26a69a" font-size="9" text-anchor="middle" font-weight="bold">ENVOLVENTE ALCISTA</text>
+</svg>
+<div><p>Una vela verde grande que <strong>"se come" completamente</strong> a la roja anterior.</p><p><strong>Envolvente Alcista:</strong> <span style="color:#26a69a">Verde envuelve roja = COMPRA</span></p><p><strong>Envolvente Bajista:</strong> <span style="color:#ef5350">Roja envuelve verde = VENTA</span></p></div>
+</div></div>
+
+<div class="pattern-card"><h4>5. PIN BAR</h4>
+<div style="display:flex;align-items:center;gap:20px;flex-wrap:wrap">
+<div style="display:flex;gap:15px">
+<svg width="60" height="100" viewBox="0 0 60 100"><line x1="30" y1="15" x2="30" y2="25" stroke="#26a69a" stroke-width="2"/><rect x="20" y="25" width="20" height="12" rx="2" fill="#26a69a"/><line x1="30" y1="37" x2="30" y2="82" stroke="#26a69a" stroke-width="2"/><text x="30" y="95" fill="#26a69a" font-size="8" text-anchor="middle" font-weight="bold">Pin Alcista</text></svg>
+<svg width="60" height="100" viewBox="0 0 60 100"><line x1="30" y1="10" x2="30" y2="60" stroke="#ef5350" stroke-width="2"/><rect x="20" y="60" width="20" height="12" rx="2" fill="#ef5350"/><line x1="30" y1="72" x2="30" y2="82" stroke="#ef5350" stroke-width="2"/><text x="30" y="95" fill="#ef5350" font-size="8" text-anchor="middle" font-weight="bold">Pin Bajista</text></svg>
+</div>
+<div><p>Mecha muy larga (2/3 del tamano total) y cuerpo pequeno en un extremo.</p><p><strong>Pin alcista</strong> = mecha larga abajo = <span style="color:#26a69a">LONG</span></p><p><strong>Pin bajista</strong> = mecha larga arriba = <span style="color:#ef5350">SHORT</span></p><p><strong>La senal favorita de Price Action.</strong></p></div>
+</div></div>
+
 <div class="warning-box"><h4>REGLA CRITICA</h4><p>Una vela SOLA no es suficiente. Siempre combina con el CONTEXTO: donde aparece (soporte/resistencia), tendencia, y otros factores. No operes por una sola vela aislada.</p></div>`,
           keyPoints: [
             "Cada vela: Apertura, Cierre, Maximo, Minimo",
