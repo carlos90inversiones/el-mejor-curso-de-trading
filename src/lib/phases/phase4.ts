@@ -1775,6 +1775,130 @@ export const PHASE_4: Phase = {
             { question: "Cual es la diferencia principal entre Gartley y Butterfly?", options: ["No hay diferencia", "En el Butterfly, el punto D extiende mas alla del punto X", "El Gartley tiene mas puntos", "El Butterfly solo aparece en Forex"], correctIndex: 1, explanation: "En Gartley, D esta dentro del rango XA (78.6%). En Butterfly, D va mas alla de X (127.2-161.8%). El Butterfly es mas agresivo." },
             { question: "Los patrones armonicos son de...", options: ["Alta frecuencia, baja precision", "Alta precision, baja frecuencia", "Baja precision, baja frecuencia", "Alta frecuencia, alta precision"], correctIndex: 1, explanation: "Los Harmonics no aparecen todos los dias (baja frecuencia), pero cuando se forman correctamente tienen alta tasa de exito (65-75%)." }
           ]
+        },
+        {
+          id: "4-4-4",
+          title: "Scalping Profesional: Operaciones de Alta Velocidad",
+          duration: "30 min",
+          content: `
+<h2>Scalping: El Arte de los Trades Rapidos</h2>
+<div class="analogy-box"><h3>El Francotirador vs la Ametralladora</h3><p>Un scalper NO es alguien que dispara sin parar. Es un francotirador que espera el momento PERFECTO, ejecuta con precision quirurgica, y desaparece. Muchos creen que scalping es "abrir muchos trades rapido". Eso es gambling. El scalping profesional es lo contrario.</p></div>
+<h3>Requisitos para Hacer Scalping</h3>
+<div class="grid-cards">
+<div class="card"><h4>Broker ECN</h4><p>Spread de 0.0-0.5 pips obligatorio. Con spreads altos, el scalping es imposible.</p></div>
+<div class="card"><h4>Ejecucion Rapida</h4><p>Latencia < 50ms. Cada milisegundo cuenta cuando tu TP es de 5-15 pips.</p></div>
+<div class="card"><h4>Capital Suficiente</h4><p>Minimo 5,000-10,000$ para que los profits tengan sentido despues de comisiones.</p></div>
+<div class="card"><h4>Concentracion Total</h4><p>0 distracciones. Ni telefono, ni TV, ni musica. Enfoque absoluto de 1-2 horas.</p></div>
+</div>
+<h3>Temporalidades para Scalping</h3>
+<div class="highlight-box blue"><h4>Multi-TF del Scalper</h4>
+<ul>
+<li><strong>H1/H4:</strong> Tendencia y niveles clave (sesgo direccional)</li>
+<li><strong>M5:</strong> Zona de entrada y estructura local</li>
+<li><strong>M1:</strong> Timing de entrada exacto y confirmacion</li>
+</ul></div>
+<h3>Estrategia de Scalping con SMC</h3>
+<div class="strategy-box"><h4>Setup de Scalping Institucional</h4><ol>
+<li><strong>H4:</strong> Identifica tendencia y sesgo (LONG o SHORT)</li>
+<li><strong>M5:</strong> Espera que el precio llegue a un Order Block o FVG alineado con H4</li>
+<li><strong>M1:</strong> Busca CHoCH (cambio de estructura) dentro del OB/FVG</li>
+<li><strong>Entrada:</strong> En el FVG del M1 con SL detras del OB</li>
+<li><strong>SL:</strong> 5-15 pips (MUY ajustado)</li>
+<li><strong>TP:</strong> 10-30 pips (R:R 1:2 o 1:3)</li>
+<li><strong>Duracion:</strong> 5-30 minutos por trade</li>
+</ol></div>
+<h3>Killzones para Scalping</h3>
+<div class="grid-cards">
+<div class="card green-border"><h4>London Open (08:00-10:00 UTC)</h4><p>Las primeras 2 horas de London son las MEJORES para scalping. Maxima volatilidad, setups claros.</p></div>
+<div class="card green-border"><h4>NY Open (13:00-15:00 UTC)</h4><p>Apertura de NY, datos economicos, alta volatilidad. Segundo mejor momento.</p></div>
+<div class="card red-border"><h4>EVITAR: Asia, almuerzo europeo</h4><p>Baja volatilidad = spreads mas altos + movimientos erraticos. No scalpes aqui.</p></div>
+</div>
+<div class="warning-box"><h4>Advertencia Seria sobre Scalping</h4>
+<p>El scalping es el estilo MAS DIFICIL de trading. Requiere:</p>
+<ul>
+<li>Reflejos rapidos y cero duda</li>
+<li>Control emocional extremo (decisiones en segundos)</li>
+<li>Comisiones bajas (con 2 pips de spread NO es viable)</li>
+<li>Minimo 6 meses de practica en demo antes de real</li>
+</ul>
+<p><strong>Recomendacion:</strong> Empieza con Swing Trading (mas facil). Solo pasa a Scalping cuando domines el analisis y la psicologia.</p></div>`,
+          keyPoints: [
+            "Scalping profesional = precision quirurgica, NO disparo rapido",
+            "Requisitos: broker ECN (spread 0.0-0.5), ejecucion < 50ms, concentracion total",
+            "Multi-TF: H4 para sesgo, M5 para zona, M1 para entrada",
+            "Mejores horas: London Open (08-10 UTC) y NY Open (13-15 UTC)",
+            "Es el estilo MAS DIFICIL - domina Swing Trading primero"
+          ],
+          quiz: [
+            { question: "Cual es el requisito MAS importante del broker para hacer scalping?", options: ["Que tenga app movil", "Spread bajo (0.0-0.5 pips) y ejecucion rapida", "Que ofrezca bonus de bienvenida", "Que permita apalancamiento 1:1000"], correctIndex: 1, explanation: "Con un TP de 5-15 pips, un spread de 2+ pips se come la mitad de tu ganancia. Spreads bajos y ejecucion rapida son obligatorios para scalping." },
+            { question: "En scalping con SMC, donde buscas la entrada exacta?", options: ["En H4 directamente", "En M1, buscando CHoCH dentro de un OB/FVG de M5", "En D1", "En cualquier temporalidad"], correctIndex: 1, explanation: "H4 da el sesgo, M5 identifica la zona (OB/FVG), y M1 da el timing exacto buscando un cambio de estructura (CHoCH) dentro de la zona." },
+            { question: "Cuando NO deberias hacer scalping?", options: ["London Open", "NY Open", "Sesion asiatica y almuerzo europeo (baja volatilidad)", "Nunca, siempre es buen momento"], correctIndex: 2, explanation: "Asia y el almuerzo europeo tienen baja volatilidad = spreads mas altos + movimientos erraticos sin direccion. No es viable para scalping." }
+          ]
+        },
+        {
+          id: "4-4-5",
+          title: "Swing Trading: La Estrategia del Trader Inteligente",
+          duration: "25 min",
+          content: `
+<h2>Swing Trading: Menos Estres, Mas Beneficio</h2>
+<div class="analogy-box"><h3>El Surfista</h3><p>Un swing trader es como un surfista: no intenta surfear cada ola del mar. Espera pacientemente en el agua hasta que viene una ola GRANDE, la monta, y se baja antes de que se rompa. Unas pocas buenas olas al dia/semana son suficientes.</p></div>
+<h3>Por Que Swing Trading es el Mejor Estilo para Empezar</h3>
+<div class="grid-cards">
+<div class="card green-border"><h4>Menos estres</h4><p>No necesitas estar pegado a la pantalla. Analizas por la manana, pones ordenes, y revisas al final del dia.</p></div>
+<div class="card green-border"><h4>Compatible con trabajo</h4><p>Puedes tradear con 1-2 horas al dia. Perfecto si tienes otro empleo.</p></div>
+<div class="card green-border"><h4>Mejores ratios R:R</h4><p>Trades de 50-200+ pips permiten ratios de 1:3, 1:5 o incluso 1:10.</p></div>
+<div class="card green-border"><h4>Menos comisiones</h4><p>5-10 trades a la semana vs 20-50 del day trader. Pagas mucho menos en spreads.</p></div>
+</div>
+<h3>Temporalidades del Swing Trader</h3>
+<div class="highlight-box blue"><h4>El Framework Multi-TF</h4>
+<ul>
+<li><strong>Semanal (W1):</strong> Contexto general, tendencia macro, niveles mayores</li>
+<li><strong>Diario (D1):</strong> Tendencia principal, soportes/resistencias clave, sesgo de la semana</li>
+<li><strong>H4:</strong> Setup de entrada, Order Blocks, FVG, Fibonacci</li>
+<li><strong>H1 (opcional):</strong> Refinar la entrada exacta</li>
+</ul></div>
+<h3>Estrategia de Swing Trading Completa</h3>
+<div class="strategy-box"><h4>Workflow del Domingo (20 min)</h4><ol>
+<li>Abre los 2-3 pares que operas en D1/W1</li>
+<li>Identifica la tendencia de cada uno</li>
+<li>Marca los niveles clave de S/R de la semana</li>
+<li>Define tu sesgo para la semana: LONG, SHORT, o ESPERAR</li>
+<li>Si hay sesgo, marca las zonas donde buscarias entrada (OB, FVG, Fib)</li>
+</ol></div>
+<div class="strategy-box"><h4>Workflow Diario (15 min, manana y noche)</h4><ol>
+<li><strong>Manana:</strong> Revisa si el precio se acerca a tus zonas. Si llega, busca confirmacion en H4/H1.</li>
+<li>Pon alertas de precio en TradingView para que te avise cuando llegue.</li>
+<li><strong>Si hay setup:</strong> Entra con SL y TP predefinidos. Deja que el trade trabaje.</li>
+<li><strong>Noche:</strong> Revisa trades abiertos. Mueve SL a break-even si ya gano 1R.</li>
+</ol></div>
+<h3>Gestion de Trades Abiertos</h3>
+<div class="grid-cards">
+<div class="card"><h4>Mover SL a Break-Even</h4><p>Cuando el trade gana 1R (ej: arriesgaste 30 pips y ya gano 30), mueve el SL al punto de entrada. Ya no puedes perder.</p></div>
+<div class="card"><h4>Trailing Stop Manual</h4><p>Cada vez que el precio haga un nuevo HH/HL (en LONG), mueve el SL debajo del ultimo HL. Proteges ganancias y dejas correr.</p></div>
+<div class="card"><h4>Take Profit Parcial</h4><p>Cierra 50% en TP1 (1:2 R:R), deja el otro 50% correr con trailing stop hacia TP2 (1:4 o mas).</p></div>
+</div>
+<div class="highlight-box green"><h4>El Secreto del Swing Trading</h4>
+<p>Los swing traders ganan dinero por la CALIDAD de sus trades, no por la cantidad. Un trade bien ejecutado de 150 pips con ratio 1:4 equivale a 12 scalps de 12.5 pips. Pero con mucho menos estres, menos comisiones, y menos desgaste emocional.</p></div>
+<div class="warning-box"><h4>Gestion del Fin de Semana</h4>
+<p>Si tienes trades abiertos el viernes por la noche, ten MUCHO cuidado con los gaps del fin de semana. Opciones:</p>
+<ul>
+<li>Cerrar todos los trades antes del cierre del viernes</li>
+<li>Reducir tamano de posicion a la mitad</li>
+<li>Solo mantener si el trade ya tiene SL en profit</li>
+</ul></div>`,
+          keyPoints: [
+            "Swing Trading = menos estres, compatible con trabajo, mejores R:R",
+            "Framework: W1 contexto → D1 tendencia → H4 setup → H1 entrada",
+            "Workflow: analisis dominical + revision diaria de 15 min",
+            "Mover SL a break-even cuando ganes 1R para eliminar riesgo",
+            "Take profit parcial: 50% en TP1, 50% con trailing stop",
+            "Cuidado con gaps del fin de semana - cerrar o reducir posiciones"
+          ],
+          quiz: [
+            { question: "Por que Swing Trading es el mejor estilo para empezar?", options: ["Porque es mas rapido", "Menos estres, compatible con trabajo, mejores R:R, menos comisiones", "Porque no necesitas analizar", "Porque siempre ganas"], correctIndex: 1, explanation: "Swing trading permite operar con 1-2 horas al dia, tiene menos estres que scalping/day trading, permite ratios R:R de 1:3 o mejores, y paga menos en comisiones." },
+            { question: "Cuando deberias mover tu SL a break-even en swing trading?", options: ["Inmediatamente despues de entrar", "Cuando el trade gana 1R (la misma distancia que tu SL)", "Nunca, dejar el SL original", "Solo si pierdes 3 trades seguidos"], correctIndex: 1, explanation: "Cuando el trade ha ganado 1R (ej: arriesgaste 30 pips y ya va +30 pips), mueves el SL al punto de entrada. Ya no puedes perder dinero en ese trade." },
+            { question: "Que haces con trades abiertos el viernes por la noche?", options: ["Los dejas sin preocuparte", "Los cierras o reduces posicion por riesgo de gap del fin de semana", "Abres mas posiciones", "Quitas el SL"], correctIndex: 1, explanation: "Los gaps del fin de semana pueden hacer que el precio abra muy lejos de donde cerro, saltandose tu SL. Lo seguro es cerrar o reducir antes del cierre del viernes." }
+          ]
         }
       ]
     }
