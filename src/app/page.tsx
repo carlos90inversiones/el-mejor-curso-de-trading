@@ -11,6 +11,8 @@ import CertificateGenerator from "@/components/CertificateGenerator";
 import { CandlePatternsCheatSheet, RiskManagementCheatSheet, SMCCheatSheet, PropFirmCheatSheet } from "@/components/CheatSheets";
 import PracticalProjects from "@/components/PracticalProjects";
 import AudioPlayer from "@/components/AudioPlayer";
+import LessonNotes from "@/components/LessonNotes";
+import SearchBar from "@/components/SearchBar";
 import { DIAGRAMS } from "@/components/CandleDiagrams";
 import { useGamification, XPBar, StatsOverview, BadgesGrid, StreakDisplay, LevelUpNotification, BadgeNotification } from "@/components/GamificationSystem";
 
@@ -104,7 +106,10 @@ export default function TradingCourse() {
               <p className="text-xs text-[#a0a0b8]">De Cero a Experto</p>
             </div>
           </button>
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3">
+            <div className="hidden md:block w-64">
+              <SearchBar onSelect={(pId, mId, lId) => setView({ type: "lesson", phaseId: pId, moduleId: mId, lessonId: lId })} />
+            </div>
             <div className="hidden sm:flex items-center gap-2 bg-[#1a1a2e] rounded-full px-4 py-2">
               <div className="w-32 h-2 bg-[#2a2a40] rounded-full overflow-hidden">
                 <div className="h-full bg-gradient-to-r from-blue-500 to-purple-500 rounded-full transition-all duration-500" style={{ width: `${progressPercent}%` }} />
@@ -149,6 +154,7 @@ export default function TradingCourse() {
             setView={setView}
             progress={progress}
             allIds={allIds}
+            gamification={gamification}
           />
         )}
         {view.type === "quiz" && (
@@ -158,6 +164,7 @@ export default function TradingCourse() {
             lessonId={view.lessonId}
             setView={setView}
             progress={progress}
+            gamification={gamification}
           />
         )}
         {view.type === "tools" && (
@@ -382,12 +389,13 @@ function PhaseView({
 // LESSON VIEW
 // ============================================================================
 function LessonView({
-  phaseId, moduleId, lessonId, setView, progress, allIds
+  phaseId, moduleId, lessonId, setView, progress, allIds, gamification
 }: {
   phaseId: string; moduleId: string; lessonId: string;
   setView: (v: View) => void;
   progress: ReturnType<typeof useProgress>;
   allIds: string[];
+  gamification: ReturnType<typeof useGamification>;
 }) {
   const phase = COURSE_DATA.find(p => p.id === phaseId);
   const mod = phase?.modules.find(m => m.id === moduleId);
@@ -412,7 +420,10 @@ function LessonView({
   };
 
   const handleComplete = () => {
-    progress.markComplete(lessonId);
+    if (!progress.completed.has(lessonId)) {
+      progress.markComplete(lessonId);
+      gamification.onLessonComplete();
+    }
   };
 
   return (
@@ -460,6 +471,11 @@ function LessonView({
                 <p className="text-[#a0a0b8]">{lesson.practicalExercise}</p>
               </div>
             )}
+
+            {/* Notes */}
+            <div className="mt-6">
+              <LessonNotes lessonId={lessonId} />
+            </div>
 
             {/* Actions */}
             <div className="mt-8 flex flex-wrap gap-3">
@@ -544,11 +560,12 @@ function LessonView({
 // QUIZ VIEW
 // ============================================================================
 function QuizView({
-  phaseId, moduleId, lessonId, setView, progress
+  phaseId, moduleId, lessonId, setView, progress, gamification
 }: {
   phaseId: string; moduleId: string; lessonId: string;
   setView: (v: View) => void;
   progress: ReturnType<typeof useProgress>;
+  gamification: ReturnType<typeof useGamification>;
 }) {
   const phase = COURSE_DATA.find(p => p.id === phaseId);
   const mod = phase?.modules.find(m => m.id === moduleId);
@@ -582,7 +599,10 @@ function QuizView({
     } else {
       const score = Math.round(((correct + (selected === q.correctIndex ? 0 : 0)) / quiz.length) * 100);
       progress.saveQuizScore(lessonId, score);
-      if (score >= 70) progress.markComplete(lessonId);
+      if (score >= 70) {
+        progress.markComplete(lessonId);
+        gamification.onQuizPass(score);
+      }
       setFinished(true);
     }
   };

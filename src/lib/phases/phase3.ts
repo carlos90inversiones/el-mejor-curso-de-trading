@@ -1539,6 +1539,64 @@ Tamano de Posicion = Riesgo en $ / (Distancia SL en pips x Valor por pip)
             { question: "Si tu check emocional da 2/5 en calma, que deberias hacer?", options: ["Operar con menos riesgo", "NO operar ese dia", "Operar solo cripto", "Ignorar y operar igual"], correctIndex: 1, explanation: "Si tu estado emocional esta por debajo de 3/5 en cualquier categoria, la decision correcta es NO operar. Tradear con emociones negativas lleva a malas decisiones." },
             { question: "Con que frecuencia deberias hacer una revision completa de tu rendimiento?", options: ["Cada trade", "Diariamente (breve) y semanalmente (completa)", "Solo al final del mes", "Nunca, los resultados hablan solos"], correctIndex: 1, explanation: "Revision diaria breve (15 min post-market) + revision semanal completa (30 min dominical). Esto te permite detectar patrones y mejorar constantemente." }
           ]
+        },
+        {
+          id: "3-2-5",
+          title: "Como Superar una Racha Perdedora",
+          duration: "20 min",
+          content: `
+<h2>Rachas Perdedoras: Todos las Tienen, Pocos las Sobreviven</h2>
+<div class="analogy-box"><h3>El Beisbol</h3><p>Hasta los mejores bateadores de beisbol fallan 7 de cada 10 veces. En trading es igual: incluso con una estrategia ganadora, tendras rachas de 5, 8, incluso 10 perdidas seguidas. La pregunta no es SI te pasara, sino CUANDO te pase, estaras preparado?</p></div>
+<h3>La Matematica de las Rachas Perdedoras</h3>
+<div class="calculation-box"><h4>Probabilidad de rachas consecutivas</h4>
+<p>Con un win rate del 50% (bastante normal):</p>
+<ul>
+<li><strong>3 perdidas seguidas:</strong> 12.5% de probabilidad (1 de cada 8 series)</li>
+<li><strong>5 perdidas seguidas:</strong> 3.1% (pasara cada ~32 series)</li>
+<li><strong>7 perdidas seguidas:</strong> 0.78% (pasara eventualmente)</li>
+<li><strong>10 perdidas seguidas:</strong> 0.1% (raro pero POSIBLE)</li>
+</ul>
+<p><strong>Con 200+ trades al ano, una racha de 5-7 perdidas es INEVITABLE.</strong></p></div>
+<h3>El Protocolo de Recuperacion de 5 Pasos</h3>
+<div class="strategy-box"><h4>Cuando llevas 3+ perdidas seguidas</h4><ol>
+<li><strong>PARA.</strong> Cierra la plataforma. No operes hoy. Punto.</li>
+<li><strong>RESPIRA.</strong> Haz ejercicio, sal a caminar, desconecta del mercado minimo 24 horas.</li>
+<li><strong>ANALIZA.</strong> Revisa los trades perdedores con la cabeza fria: seguiste tu plan? Los setups eran validos? El mercado estaba en condiciones favorables?</li>
+<li><strong>CLASIFICA.</strong> Las perdidas fueron por: a) Mala ejecucion (tu culpa), b) El mercado (condiciones adversas), c) Mala suerte (setups validos que no funcionaron).</li>
+<li><strong>AJUSTA.</strong> Si fue mala ejecucion: refuerza la disciplina. Si fue el mercado: cambia de par o espera mejores condiciones. Si fue mala suerte: no cambies NADA, sigue con tu plan.</li>
+</ol></div>
+<div class="highlight-box red"><h4>Lo que NO Debes Hacer en una Racha Perdedora</h4>
+<ul>
+<li>Aumentar el tamano de posicion para "recuperar rapido"</li>
+<li>Cambiar de estrategia</li>
+<li>Operar mas frecuentemente</li>
+<li>Quitar o mover el Stop Loss</li>
+<li>Operar con emociones (frustracion, desesperacion, rabia)</li>
+<li>Compararte con otros traders</li>
+</ul></div>
+<div class="highlight-box green"><h4>Lo que SI Debes Hacer</h4>
+<ul>
+<li>REDUCIR el tamano de posicion a la mitad temporalmente</li>
+<li>Volver a demo por 1-2 dias si es necesario</li>
+<li>Revisar tu diario de trading con calma</li>
+<li>Hablar con un mentor o accountability partner</li>
+<li>Recordar: una racha perdedora NO define tu capacidad como trader</li>
+<li>Confiar en el proceso: si tu backtest es positivo en 100+ trades, 5 perdidas no invalidan la estrategia</li>
+</ul></div>
+<div class="highlight-box blue"><h4>La Regla de Oro</h4>
+<p>Si tu estrategia es rentable en un backtest de 100+ trades, una racha de 5-10 perdidas es ESTADISTICAMENTE NORMAL. No cambies la estrategia. Cambia tu gestion emocional. El trader que sobrevive a la racha con la disciplina intacta es el que se convierte en profesional.</p></div>`,
+          keyPoints: [
+            "Con 50% win rate, una racha de 5-7 perdidas es INEVITABLE a lo largo del ano",
+            "Protocolo: PARA → RESPIRA → ANALIZA → CLASIFICA → AJUSTA",
+            "NUNCA aumentes riesgo ni cambies estrategia durante una racha perdedora",
+            "REDUCE el tamano de posicion a la mitad temporalmente",
+            "Si el backtest es positivo en 100+ trades, 5 perdidas no invalidan la estrategia"
+          ],
+          quiz: [
+            { question: "Con un win rate del 50%, cual es la probabilidad de tener 5 perdidas seguidas?", options: ["0% - imposible", "3.1% - raro pero inevitable con suficientes trades", "50% - muy probable", "25%"], correctIndex: 1, explanation: "Con 50% win rate, la probabilidad de 5 perdidas consecutivas es (0.5)^5 = 3.1%. Con 200+ trades al ano, pasara." },
+            { question: "Que deberias hacer PRIMERO cuando llevas 3+ perdidas seguidas?", options: ["Abrir mas operaciones para recuperar", "PARAR de operar y cerrar la plataforma", "Cambiar de estrategia", "Duplicar el riesgo"], correctIndex: 1, explanation: "Lo primero es PARAR. No puedes tomar buenas decisiones con las emociones alteradas. Desconecta y vuelve cuando estes calmado." },
+            { question: "Si tu backtest muestra 55% win rate en 200 trades pero llevas 6 perdidas seguidas, que haces?", options: ["Cambias de estrategia inmediatamente", "Reduces el tamano a la mitad pero sigues el plan - la racha es estadisticamente normal", "Dejas el trading", "Triplicas el riesgo"], correctIndex: 1, explanation: "Con 200 trades de backtest positivo, 6 perdidas seguidas es normal estadisticamente. Reduce el riesgo temporalmente pero NO cambies la estrategia." }
+          ]
         }
       ]
     }
