@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import AdvancedSimulator from "@/components/AdvancedSimulator";
 import PositionCalculator from "@/components/PositionCalculator";
 import TradingJournal from "@/components/TradingJournal";
@@ -91,6 +92,7 @@ export default function HerramientasPage() {
           </div>
         )}
       </main>
+      <Footer />
     </div>
   );
 }

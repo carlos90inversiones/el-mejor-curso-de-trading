@@ -2,6 +2,7 @@
 import { useMemo } from "react";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import { COURSE_DATA, getTotalLessons, getTotalQuizzes } from "@/lib/courseData";
 import { useGamification, XPBar, StatsOverview, BadgesGrid } from "@/components/GamificationSystem";
 import { ScrollReveal, GlowCard, AnimatedCounter } from "@/components/Animations";
@@ -80,6 +81,7 @@ export default function CursoPage() {
           })}
         </div>
       </main>
+      <Footer />
     </div>
   );
 }
