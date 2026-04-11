@@ -9,6 +9,7 @@ import { useGamification } from "@/components/GamificationSystem";
 import AudioPlayer from "@/components/AudioPlayer";
 import LessonNotes from "@/components/LessonNotes";
 import ShareButtons from "@/components/ShareButtons";
+import ReadingProgress from "@/components/ReadingProgress";
 
 function findLesson(lessonId: string) {
   for (const phase of COURSE_DATA) {
@@ -43,6 +44,7 @@ export default function LeccionPage({ params }: { params: Promise<{ lessonId: st
 
   return (
     <div className="min-h-screen">
+      <ReadingProgress />
       <Navbar />
       <main className="max-w-7xl mx-auto px-4 py-8">
         {/* Breadcrumbs */}

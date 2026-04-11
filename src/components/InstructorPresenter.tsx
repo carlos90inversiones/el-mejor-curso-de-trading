@@ -1,6 +1,6 @@
 "use client";
 import { useState, useRef, useEffect, useCallback } from "react";
-import { getMaleSpanishVoice } from "@/lib/voiceUtils";
+import { getMaleSpanishVoice, fixSpanishForTTS } from "@/lib/voiceUtils";
 
 interface PresenterProps {
   narration: string;
@@ -17,7 +17,7 @@ export default function InstructorPresenter({ narration, title, subtitle }: Pres
     if (typeof window === "undefined" || !window.speechSynthesis) return;
     window.speechSynthesis.cancel();
 
-    const utterance = new SpeechSynthesisUtterance(narration);
+    const utterance = new SpeechSynthesisUtterance(fixSpanishForTTS(narration));
     const maleVoice = getMaleSpanishVoice();
     if (maleVoice) utterance.voice = maleVoice;
     utterance.lang = "es-ES";
@@ -144,31 +144,31 @@ export const INSTRUCTOR_CLIPS = [
   {
     id: "welcome",
     title: "Bienvenida al Curso",
-    subtitle: "Introduccion",
-    narration: "Bienvenido al Mejor Curso de Trading del Mundo. Soy tu instructor y voy a acompanarte desde cero absoluto hasta convertirte en un trader profesional. No necesitas saber NADA de finanzas para empezar. Lo unico que necesitas es ganas de aprender y disciplina para seguir el proceso. Vamos a cubrir 7 fases: fundamentos, analisis tecnico, gestion de riesgo, estrategias avanzadas como Smart Money y ICT, cuentas fondeadas, y hasta trading algoritmico con Python. Cada leccion tiene quizzes, ejercicios practicos, y herramientas interactivas. Estas listo? Vamos alla.",
+    subtitle: "Introducción",
+    narration: "Bienvenido al Mejor Curso de Trading del Mundo. Soy tu instructor y voy a acompañarte desde cero absoluto hasta convertirte en un trader profesional. No necesitas saber NADA de finanzas para empezar. Lo único que necesitas es ganas de aprender y disciplina para seguir el proceso. Vamos a cubrir 7 fases: fundamentos, análisis técnico, gestión de riesgo, estrategias avanzadas como Smart Money y ICT, cuentas fondeadas, y hasta trading algorítmico con Python. Cada lección tiene quizzes, ejercicios prácticos, y herramientas interactivas. ¿Estás listo? Vamos allá.",
   },
   {
     id: "risk-intro",
-    title: "La Leccion Mas Importante",
-    subtitle: "Gestion de Riesgo",
-    narration: "Escuchame bien porque lo que voy a decirte es la leccion MAS IMPORTANTE de todo el curso. El 90 por ciento de los traders que pierden dinero NO es porque no sepan analisis tecnico. Es porque no gestionan el riesgo. NUNCA arriesgues mas del 1 al 2 por ciento de tu capital en una sola operacion. SIEMPRE pon Stop Loss. Y busca ratios de riesgo beneficio de al menos 1 a 2. Con estas tres reglas, aunque solo aciertes el 34 por ciento de tus operaciones, seras RENTABLE. Grabate esto: la gestion de riesgo es mas importante que cualquier indicador, patron o estrategia.",
+    title: "La Lección Más Importante",
+    subtitle: "Gestión de Riesgo",
+    narration: "Escúchame bien porque lo que voy a decirte es la lección MÁS IMPORTANTE de todo el curso. El 90 por ciento de los traders que pierden dinero NO es porque no sepan análisis técnico. Es porque no gestionan el riesgo. NUNCA arriesgues más del 1 al 2 por ciento de tu capital en una sola operación. SIEMPRE pon Stop Loss. Y busca ratios de riesgo beneficio de al menos 1 a 2. Con estas tres reglas, aunque solo aciertes el 34 por ciento de tus operaciones, serás RENTABLE. Grábate esto: la gestión de riesgo es más importante que cualquier indicador, patrón o estrategia.",
   },
   {
     id: "smc-intro",
     title: "Smart Money Concepts",
     subtitle: "Piensa como un Banco",
-    narration: "Ahora vamos a aprender a pensar como las instituciones. Los bancos y fondos de inversion mueven billones de dolares al dia. Para ejecutar sus ordenes gigantes, necesitan LIQUIDEZ. Y de donde sacan esa liquidez? De TUS Stop Loss. Cada vez que ves que el precio toca tu Stop Loss y luego se va en tu direccion... no es mala suerte. Es el mercado cazando liquidez. Smart Money Concepts te ensena a ver estas trampas ANTES de que ocurran, y a operar DEL LADO de las instituciones, no en su contra.",
+    narration: "Ahora vamos a aprender a pensar como las instituciones. Los bancos y fondos de inversión mueven billones de dólares al día. Para ejecutar sus órdenes gigantes, necesitan LIQUIDEZ. ¿Y de dónde sacan esa liquidez? De TUS Stop Loss. Cada vez que ves que el precio toca tu Stop Loss y luego se va en tu dirección... no es mala suerte. Es el mercado cazando liquidez. Smart Money Concepts te enseña a ver estas trampas ANTES de que ocurran, y a operar DEL LADO de las instituciones, no en su contra.",
   },
   {
     id: "propfirm-intro",
     title: "Cuentas Fondeadas",
     subtitle: "Opera el Dinero de Otros",
-    narration: "Quieres operar con 100,000 dolares sin arriesgar tu dinero? Las cuentas fondeadas te lo permiten. Una prop firm te da el capital y tu pones la habilidad. Pasas un examen demostrando que eres rentable, y luego operas su dinero quedandote el 80 por ciento de las ganancias. Con una cuenta de 100,000 al 3 por ciento mensual, son 3,000 dolares. Tu te quedas 2,400. Con varias cuentas puedes escalar a 5, 10, o 15 mil dolares al mes. Todo sin arriesgar tu propio capital. Eso si: la disciplina es obligatoria.",
+    narration: "¿Quieres operar con 100,000 dólares sin arriesgar tu dinero? Las cuentas fondeadas te lo permiten. Una prop firm te da el capital y tú pones la habilidad. Pasas un examen demostrando que eres rentable, y luego operas su dinero quedándote el 80 por ciento de las ganancias. Con una cuenta de 100,000 al 3 por ciento mensual, son 3,000 dólares. Tú te quedas 2,400. Con varias cuentas puedes escalar a 5, 10, o 15 mil dólares al mes. Todo sin arriesgar tu propio capital. Eso sí: la disciplina es obligatoria.",
   },
   {
     id: "final-message",
     title: "Mensaje Final",
-    subtitle: "El Secreto del Exito",
-    narration: "Has llegado al final del curso. Ahora tienes mas conocimiento que el 95 por ciento de los traders del mundo. Pero el conocimiento sin accion no vale nada. El secreto que separa a los traders exitosos del resto es simple: NO SE RINDIERON. Pasaron por rachas perdedoras, challenges fallidos, momentos de duda. Pero siguieron adelante. Ajustaron. Aprendieron. Y eventualmente llegaron. Tu tambien puedes. Empieza en demo, sigue tu plan, gestiona el riesgo, y se disciplinado. El trading no es dinero facil. Pero para el que se lo toma en serio, es una de las mejores profesiones del mundo. Ahora ve y hazlo. Te espero al otro lado.",
+    subtitle: "El Secreto del Éxito",
+    narration: "Has llegado al final del curso. Ahora tienes más conocimiento que el 95 por ciento de los traders del mundo. Pero el conocimiento sin acción no vale nada. El secreto que separa a los traders exitosos del resto es simple: NO SE RINDIERON. Pasaron por rachas perdedoras, challenges fallidos, momentos de duda. Pero siguieron adelante. Ajustaron. Aprendieron. Y eventualmente llegaron. Tú también puedes. Empieza en demo, sigue tu plan, gestiona el riesgo, y sé disciplinado. El trading no es dinero fácil. Pero para el que se lo toma en serio, es una de las mejores profesiones del mundo. Ahora ve y hazlo. Te espero al otro lado.",
   },
 ];

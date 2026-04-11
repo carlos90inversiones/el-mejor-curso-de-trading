@@ -1,6 +1,6 @@
 "use client";
 import { useState, useCallback, useRef, useEffect } from "react";
-import { getMaleSpanishVoice } from "@/lib/voiceUtils";
+import { getMaleSpanishVoice, fixSpanishForTTS } from "@/lib/voiceUtils";
 
 interface AudioPlayerProps {
   text: string;
@@ -46,7 +46,7 @@ export default function AudioPlayer({ text, title }: AudioPlayerProps) {
     }
 
     window.speechSynthesis.cancel();
-    const clean = cleanText(text);
+    const clean = fixSpanishForTTS(cleanText(text));
     const utterance = new SpeechSynthesisUtterance(clean);
 
     // Voz masculina en espanol
