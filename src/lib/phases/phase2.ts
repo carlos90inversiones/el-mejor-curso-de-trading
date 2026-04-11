@@ -38,7 +38,7 @@ export const PHASE_2: Phase = {
 
 <div class="warning-box">
 <h4>El Error Numero 1 de los Principiantes</h4>
-<p>Los traders nuevos dibujan una linea fina y esperan que el precio la toque al pip exacto. Los profesionales saben que soportes y resistencias son <strong>ZONAS</strong>, areas donde se concentra presión compradora o vendedora. Piensa en un rango de 10-30 pips, no en un número exacto.</p>
+<p>Los traders nuevos dibujan una línea fina y esperan que el precio la toque al pip exacto. Los profesionales saben que soportes y resistencias son <strong>ZONAS</strong>, areas donde se concentra presión compradora o vendedora. Piensa en un rango de 10-30 pips, no en un número exacto.</p>
 </div>
 
 <div class="highlight-box purple">
@@ -97,9 +97,9 @@ export const PHASE_2: Phase = {
 <div class="strategy-box">
 <h4>Metodo Profesional en 4 Pasos</h4>
 <ol>
-<li><strong>Empieza en timeframe alto (H4/Diario):</strong> Los niveles en timeframes altos son los más fuertes. Abre el gráfico diario y busca zonas donde el precio ha reaccionado multiples veces.</li>
+<li><strong>Empieza en timeframe alto (H4/Diario):</strong> Los niveles en timeframes altos son los más fuertes. Abre el gráfico diario y busca zonas donde el precio ha reaccionado múltiples veces.</li>
 <li><strong>Busca "clusters" de reacciones:</strong> No busques toques exactos. Busca ZONAS donde el precio ha dejado mechas, ha revertido, o ha consolidado. Cuantas más reacciones, más fuerte es la zona.</li>
-<li><strong>Dibuja un rectangulo, no una linea:</strong> En TradingView, usa la herramienta de rectangulo. El soporte no es 1.0800, es la zona de 1.0790 a 1.0815. Dale un ancho real.</li>
+<li><strong>Dibuja un rectangulo, no una línea:</strong> En TradingView, usa la herramienta de rectangulo. El soporte no es 1.0800, es la zona de 1.0790 a 1.0815. Dale un ancho real.</li>
 <li><strong>Valida con volumen:</strong> Si tienes Volume Profile, verifica que hay alto volumen en esa zona. Alto volumen = muchas ordenes ejecutadas = nivel importante.</li>
 </ol>
 </div>
@@ -175,7 +175,7 @@ export const PHASE_2: Phase = {
 <p>Cuantas más veces se testea un nivel, MAS DEBIL se vuelve (contraintuitivo). Si el precio toca un soporte 5-6 veces, probablemente lo va a romper. Es como golpear una pared: cada golpe la debilita un poco más. Los niveles más fuertes son los que se testean 2-3 veces y luego el precio se aleja con fuerza.</p>
 </div>`,
           keyPoints: [
-            "Soportes y resistencias son ZONAS (rectangulos), no lineas exactas",
+            "Soportes y resistencias son ZONAS (rectangulos), no líneas exactas",
             "Cambio de polaridad: soporte roto se convierte en resistencia y viceversa",
             "Los fakeouts son trampas - espera siempre al cierre de vela y al retest antes de entrar",
             "Los niveles de timeframes altos (H4/Diario) son los más fuertes y fiables",
@@ -184,18 +184,18 @@ export const PHASE_2: Phase = {
           ],
           quiz: [
             {
-              question: "Por que los profesionales dibujan zonas en vez de lineas para soportes y resistencias?",
+              question: "¿Por qué los profesionales dibujan zonas en vez de líneas para soportes y resistencias?",
               options: [
                 "Porque se ve más bonito en el gráfico",
                 "Porque el precio raramente reacciona al pip exacto - hay un rango de presión compradora/vendedora",
                 "Porque TradingView solo permite rectangulos",
-                "Porque las lineas confunden a otros traders"
+                "Porque las líneas confunden a otros traders"
               ],
               correctIndex: 1,
-              explanation: "El precio no reacciona en un punto matematico exacto. Las ordenes institucionales y los stop losses se distribuyen en una ZONA de precio, creando un area de soporte/resistencia, no una linea."
+              explanation: "El precio no reacciona en un punto matematico exacto. Las ordenes institucionales y los stop losses se distribuyen en una ZONA de precio, creando un area de soporte/resistencia, no una línea."
             },
             {
-              question: "Que es el cambio de polaridad (polarity flip)?",
+              question: "¿Qué es el cambio de polaridad (polarity flip)?",
               options: [
                 "Cuando cambias de operar Forex a Cripto",
                 "Cuando un soporte roto se convierte en resistencia o viceversa",
@@ -206,7 +206,7 @@ export const PHASE_2: Phase = {
               explanation: "El cambio de polaridad es uno de los conceptos más potentes: un soporte que se rompe se convierte en resistencia (y viceversa). Los traders que compraron en el soporte ahora quieren salir sin perdida cuando el precio vuelve."
             },
             {
-              question: "Que ocurre cuando un soporte se testea muchas veces (5-6 toques)?",
+              question: "¿Qué ocurre cuando un soporte se testea muchas veces (5-6 toques)?",
               options: [
                 "Se vuelve más fuerte con cada toque",
                 "Se mantiene igual de fuerte siempre",
@@ -217,7 +217,7 @@ export const PHASE_2: Phase = {
               explanation: "Contraintuitivamente, cada toque de un nivel lo debilita. Es como golpear una pared: eventualmente cede. Los niveles más fuertes son los que se testean 2-3 veces y luego el precio se aleja con fuerza."
             },
             {
-              question: "Como te proteges de un fakeout al tradear un breakout?",
+              question: "¿Cómo te proteges de un fakeout al tradear un breakout?",
               options: [
                 "Entras inmediatamente cuando el precio toca el nivel",
                 "Nunca tradeas breakouts",
@@ -228,7 +228,7 @@ export const PHASE_2: Phase = {
               explanation: "La proteccion contra fakeouts es la paciencia: espera a que la vela CIERRE por encima/debajo del nivel (no solo la mecha), y mejor aun, espera al retest donde el nivel roto cambia de polaridad."
             }
           ],
-          practicalExercise: "Abre TradingView con EUR/USD en gráfico Diario. Identifica las 3 zonas de soporte y las 3 zonas de resistencia más importantes de los ultimos 3 meses. Dibujalas con rectangulos (no lineas). Para cada zona, anota: cuantas veces el precio reacciono ahi, si hubo algun cambio de polaridad, y si coincide con un número redondo. Busca al menos un fakeout reciente."
+          practicalExercise: "Abre TradingView con EUR/USD en gráfico Diario. Identifica las 3 zonas de soporte y las 3 zonas de resistencia más importantes de los ultimos 3 meses. Dibujalas con rectangulos (no líneas). Para cada zona, anota: cuantas veces el precio reacciono ahi, si hubo algun cambio de polaridad, y si coincide con un número redondo. Busca al menos un fakeout reciente."
         },
         // --------------------------------------------------------------
         // LESSON 2-1-2: TENDENCIAS Y ESTRUCTURA
@@ -414,7 +414,7 @@ export const PHASE_2: Phase = {
           ],
           quiz: [
             {
-              question: "En una tendencia alcista, que secuencia de puntos forma el precio?",
+              question: "¿En una tendencia alcista, que secuencia de puntos forma el precio?",
               options: [
                 "Lower Highs y Lower Lows (LH/LL)",
                 "Higher Highs y Higher Lows (HH/HL)",
@@ -425,7 +425,7 @@ export const PHASE_2: Phase = {
               explanation: "Una tendencia alcista se define por maximos cada vez más altos (HH) y minimos cada vez más altos (HL). Es como subir escaleras: cada paso es más alto que el anterior."
             },
             {
-              question: "Cual es la diferencia entre BOS y CHoCH?",
+              question: "¿Cuál es la diferencia entre BOS y CHoCH?",
               options: [
                 "No hay diferencia, significan lo mismo",
                 "BOS confirma continuacion de tendencia; CHoCH indica posible cambio de tendencia",
@@ -436,7 +436,7 @@ export const PHASE_2: Phase = {
               explanation: "BOS (Break of Structure) confirma que la tendencia actual sigue viva rompiendo un nuevo HH o LL. CHoCH (Change of Character) es la primera señal de que la tendencia podría estar cambiando al romper un HL (en alcista) o un LH (en bajista)."
             },
             {
-              question: "En que fase del ciclo Wyckoff las instituciones compran silenciosamente mientras el sentimiento público es negativo?",
+              question: "¿En qué fase del ciclo Wyckoff las instituciones compran silenciosamente mientras el sentimiento público es negativo?",
               options: [
                 "Markup (Subida)",
                 "Distribucion",
@@ -447,7 +447,7 @@ export const PHASE_2: Phase = {
               explanation: "En la fase de Acumulacion, las instituciones compran grandes cantidades mientras el precio se mueve lateral. El público tiene miedo y no quiere comprar, lo cual permite a las instituciones acumular a buen precio."
             },
             {
-              question: "Que deberías hacer si el timeframe alto (Diario) muestra LH/LL pero en M15 ves un CHoCH alcista?",
+              question: "¿Qué deberías hacer si el timeframe alto (Diario) muestra LH/LL pero en M15 ves un CHoCH alcista?",
               options: [
                 "Comprar inmediatamente porque el CHoCH en M15 cambia todo",
                 "Ser cauteloso - el HTF bajista manda, el CHoCH en LTF puede ser solo un retroceso",
@@ -458,7 +458,7 @@ export const PHASE_2: Phase = {
               explanation: "El timeframe alto (HTF) siempre tiene prioridad. Un CHoCH en M15 dentro de una tendencia bajista en el Diario probablemente es solo un retroceso temporal, no un cambio de tendencia real. Mantente a favor del HTF."
             }
           ],
-          practicalExercise: "Abre EUR/USD en gráfico H4 en TradingView. Identifica la tendencia actual marcando todos los HH, HL, LH y LL de las ultimas 2 semanas. Marca cada BOS con una linea horizontal verde y cada CHoCH con una linea horizontal roja. Determina en que fase del ciclo Wyckoff crees que esta el mercado ahora y justifica tu respuesta."
+          practicalExercise: "Abre EUR/USD en gráfico H4 en TradingView. Identifica la tendencia actual marcando todos los HH, HL, LH y LL de las ultimas 2 semanas. Marca cada BOS con una línea horizontal verde y cada CHoCH con una línea horizontal roja. Determina en que fase del ciclo Wyckoff crees que esta el mercado ahora y justifica tu respuesta."
         },
         // --------------------------------------------------------------
         // LESSON 2-1-3: LINEAS DE TENDENCIA Y CANALES
@@ -472,7 +472,7 @@ export const PHASE_2: Phase = {
 
 <div class="analogy-box">
 <h3>La Analogia de los Rieles del Tren</h3>
-<p>Imagina que el precio es un tren. Las lineas de tendencia son los rieles que guian su dirección. Mientras el tren siga sobre los rieles, sabes hacia donde va. Cuando se sale de los rieles (rompe la linea de tendencia), algo esta cambiando. Los canales son como un tunel: el precio rebota entre el suelo y el techo del tunel.</p>
+<p>Imagina que el precio es un tren. Las líneas de tendencia son los rieles que guian su dirección. Mientras el tren siga sobre los rieles, sabes hacia donde va. Cuando se sale de los rieles (rompe la línea de tendencia), algo esta cambiando. Los canales son como un tunel: el precio rebota entre el suelo y el techo del tunel.</p>
 </div>
 
 <h3>Como Dibujar Lineas de Tendencia Correctamente</h3>
@@ -480,38 +480,38 @@ export const PHASE_2: Phase = {
 <div class="strategy-box">
 <h4>Las 3 Reglas de Oro</h4>
 <ol>
-<li><strong>Necesitas MINIMO 2 puntos de contacto</strong> para trazar una linea de tendencia, y 3 para confirmarla. Cuantos más toques, más fuerte es la linea.</li>
+<li><strong>Necesitas MINIMO 2 puntos de contacto</strong> para trazar una línea de tendencia, y 3 para confirmarla. Cuantos más toques, más fuerte es la línea.</li>
 <li><strong>Conecta las MECHAS (wicks), no los cuerpos.</strong> Las mechas representan el máximo rechazo del precio. En una tendencia alcista, conecta los minimos de las mechas inferiores (los HL). En bajista, los maximos de las mechas superiores (los LH).</li>
-<li><strong>No fuerces la linea.</strong> Si tienes que "torcer" la linea para que toque los puntos, probablemente no es válida. Una buena linea de tendencia debe verse natural y evidente.</li>
+<li><strong>No fuerces la línea.</strong> Si tienes que "torcer" la línea para que toque los puntos, probablemente no es válida. Una buena línea de tendencia debe verse natural y evidente.</li>
 </ol>
 </div>
 
 <div class="highlight-box green">
 <h4>Linea de Tendencia Alcista (Ascending Trendline)</h4>
-<p>Se dibuja conectando <strong>dos o más minimos ascendentes (HL)</strong>. La linea va de abajo-izquierda a arriba-derecha. Actua como un <strong>soporte dinámico</strong>: mientras el precio se mantenga POR ENCIMA de la linea, la tendencia alcista sigue intacta.</p>
-<p><strong>Trade:</strong> Cuando el precio retrocede y toca la linea de tendencia alcista, es una oportunidad de COMPRA con stop debajo de la linea.</p>
+<p>Se dibuja conectando <strong>dos o más minimos ascendentes (HL)</strong>. La línea va de abajo-izquierda a arriba-derecha. Actua como un <strong>soporte dinámico</strong>: mientras el precio se mantenga POR ENCIMA de la línea, la tendencia alcista sigue intacta.</p>
+<p><strong>Trade:</strong> Cuando el precio retrocede y toca la línea de tendencia alcista, es una oportunidad de COMPRA con stop debajo de la línea.</p>
 </div>
 
 <div class="highlight-box red">
 <h4>Linea de Tendencia Bajista (Descending Trendline)</h4>
-<p>Se dibuja conectando <strong>dos o más maximos descendentes (LH)</strong>. La linea va de arriba-izquierda a abajo-derecha. Actua como una <strong>resistencia dinámica</strong>: mientras el precio se mantenga POR DEBAJO, la tendencia bajista sigue intacta.</p>
-<p><strong>Trade:</strong> Cuando el precio sube y toca la linea de tendencia bajista, es una oportunidad de VENTA con stop por encima de la linea.</p>
+<p>Se dibuja conectando <strong>dos o más maximos descendentes (LH)</strong>. La línea va de arriba-izquierda a abajo-derecha. Actua como una <strong>resistencia dinámica</strong>: mientras el precio se mantenga POR DEBAJO, la tendencia bajista sigue intacta.</p>
+<p><strong>Trade:</strong> Cuando el precio sube y toca la línea de tendencia bajista, es una oportunidad de VENTA con stop por encima de la línea.</p>
 </div>
 
 <h3>Canales de Precio (Price Channels)</h3>
 
-<p>Un canal se forma cuando trazas <strong>dos lineas de tendencia paralelas</strong> que contienen el movimiento del precio. El precio "rebota" entre la linea superior y la inferior como una pelota de ping-pong.</p>
+<p>Un canal se forma cuando trazas <strong>dos líneas de tendencia paralelas</strong> que contienen el movimiento del precio. El precio "rebota" entre la línea superior y la inferior como una pelota de ping-pong.</p>
 
 <div class="grid-cards">
 <div class="card">
 <h4>Canal Ascendente</h4>
-<p>Ambas lineas apuntan hacia arriba. La linea inferior conecta los HL (soporte dinámico) y la superior conecta los HH (resistencia dinámica). El mercado es alcista pero se puede operar en ambas direcciones dentro del canal.</p>
-<p><strong>Compra:</strong> En la parte baja del canal (linea inferior). <strong>Venta parcial:</strong> En la parte alta (linea superior).</p>
+<p>Ambas líneas apuntan hacia arriba. La línea inferior conecta los HL (soporte dinámico) y la superior conecta los HH (resistencia dinámica). El mercado es alcista pero se puede operar en ambas direcciones dentro del canal.</p>
+<p><strong>Compra:</strong> En la parte baja del canal (línea inferior). <strong>Venta parcial:</strong> En la parte alta (línea superior).</p>
 </div>
 <div class="card">
 <h4>Canal Descendente</h4>
-<p>Ambas lineas apuntan hacia abajo. La linea superior conecta los LH y la inferior los LL. El mercado es bajista. Opera a favor de la tendencia principal (ventas).</p>
-<p><strong>Venta:</strong> En la parte alta del canal (linea superior). <strong>Compra parcial:</strong> Solo traders agresivos en la parte baja.</p>
+<p>Ambas líneas apuntan hacia abajo. La línea superior conecta los LH y la inferior los LL. El mercado es bajista. Opera a favor de la tendencia principal (ventas).</p>
+<p><strong>Venta:</strong> En la parte alta del canal (línea superior). <strong>Compra parcial:</strong> Solo traders agresivos en la parte baja.</p>
 </div>
 <div class="card">
 <h4>Canal Horizontal (Rango)</h4>
@@ -525,18 +525,18 @@ export const PHASE_2: Phase = {
 <div class="strategy-box">
 <h4>Estrategia de Canal en 5 Pasos</h4>
 <ol>
-<li><strong>Identifica el canal:</strong> Necesitas al menos 2 toques en cada linea (4 puntos total) para confirmar un canal válido.</li>
-<li><strong>Opera a favor de la tendencia:</strong> En canal ascendente, prioriza COMPRAS en la linea inferior. En descendente, prioriza VENTAS en la superior.</li>
-<li><strong>Entrada:</strong> Espera a que el precio toque una linea del canal + una vela de confirmación (pin bar, envolvente, etc.).</li>
-<li><strong>Stop Loss:</strong> Justo fuera del canal (10-20 pips más alla de la linea). Si el precio sale del canal, tu trade esta invalidado.</li>
-<li><strong>Take Profit:</strong> La linea opuesta del canal. Si compraste en la linea inferior, tu TP es la linea superior. El ratio R:R suele ser excelente (2:1 o mejor).</li>
+<li><strong>Identifica el canal:</strong> Necesitas al menos 2 toques en cada línea (4 puntos total) para confirmar un canal válido.</li>
+<li><strong>Opera a favor de la tendencia:</strong> En canal ascendente, prioriza COMPRAS en la línea inferior. En descendente, prioriza VENTAS en la superior.</li>
+<li><strong>Entrada:</strong> Espera a que el precio toque una línea del canal + una vela de confirmación (pin bar, envolvente, etc.).</li>
+<li><strong>Stop Loss:</strong> Justo fuera del canal (10-20 pips más alla de la línea). Si el precio sale del canal, tu trade esta invalidado.</li>
+<li><strong>Take Profit:</strong> La línea opuesta del canal. Si compraste en la línea inferior, tu TP es la línea superior. El ratio R:R suele ser excelente (2:1 o mejor).</li>
 </ol>
 </div>
 
 <div class="example-box">
 <h4>Ejemplo: Canal Ascendente en GBP/USD H4</h4>
-<p>El precio forma un canal ascendente claro con 3 toques en la linea inferior y 2 en la superior. El ancho del canal es de 150 pips. El precio acaba de tocar la linea inferior en 1.2650 con un martillo (hammer).</p>
-<p><strong>Entrada:</strong> Compra en 1.2660 (tras confirmar martillo). <strong>Stop Loss:</strong> 1.2620 (40 pips debajo de la linea). <strong>Take Profit:</strong> 1.2800 (linea superior del canal = 140 pips). <strong>R:R = 3.5:1.</strong></p>
+<p>El precio forma un canal ascendente claro con 3 toques en la línea inferior y 2 en la superior. El ancho del canal es de 150 pips. El precio acaba de tocar la línea inferior en 1.2650 con un martillo (hammer).</p>
+<p><strong>Entrada:</strong> Compra en 1.2660 (tras confirmar martillo). <strong>Stop Loss:</strong> 1.2620 (40 pips debajo de la línea). <strong>Take Profit:</strong> 1.2800 (línea superior del canal = 140 pips). <strong>R:R = 3.5:1.</strong></p>
 </div>
 
 <h3>Rupturas de Lineas de Tendencia y Canales</h3>
@@ -545,8 +545,8 @@ export const PHASE_2: Phase = {
 <h4>Cuando Se Rompe un Canal</h4>
 <p>Una ruptura de canal es una señal MUY potente porque indica que el equilibrio entre compradores y vendedores ha cambiado drasticamente.</p>
 <ul>
-<li><strong>Ruptura por arriba de canal ascendente:</strong> Aceleracion alcista. Movimiento explosivo al alza. Busca compras en pullback a la linea superior rota.</li>
-<li><strong>Ruptura por abajo de canal ascendente:</strong> Posible cambio de tendencia. Señal de venta fuerte. Busca ventas en pullback a la linea inferior rota.</li>
+<li><strong>Ruptura por arriba de canal ascendente:</strong> Aceleracion alcista. Movimiento explosivo al alza. Busca compras en pullback a la línea superior rota.</li>
+<li><strong>Ruptura por abajo de canal ascendente:</strong> Posible cambio de tendencia. Señal de venta fuerte. Busca ventas en pullback a la línea inferior rota.</li>
 <li><strong>Medida del movimiento:</strong> Despues de la ruptura, el precio suele moverse una distancia igual al ANCHO del canal. Si el canal media 100 pips, espera un movimiento de 100 pips desde el punto de ruptura.</li>
 </ul>
 </div>
@@ -554,23 +554,23 @@ export const PHASE_2: Phase = {
 <div class="warning-box">
 <h4>Errores Comunes con Lineas de Tendencia</h4>
 <ul>
-<li><strong>Dibujar demasiadas lineas:</strong> Si tu gráfico parece una telaraña, tienes demasiadas lineas. Mantente con las 2-3 más importantes.</li>
-<li><strong>Forzar lineas:</strong> Si necesitas "ajustar" la linea para que funcione, no es válida. Las buenas lineas son obvias.</li>
-<li><strong>Ignorar el timeframe:</strong> Una linea de tendencia en M5 no tiene la misma fuerza que una en Diario. Siempre prioriza lineas de timeframes altos.</li>
-<li><strong>No ajustar:</strong> Las lineas de tendencia se pueden redibujar. Si la tendencia se acelera o desacelera, ajusta tu linea a los nuevos puntos de contacto.</li>
+<li><strong>Dibujar demasiadas líneas:</strong> Si tu gráfico parece una telaraña, tienes demasiadas líneas. Mantente con las 2-3 más importantes.</li>
+<li><strong>Forzar líneas:</strong> Si necesitas "ajustar" la línea para que funcione, no es válida. Las buenas líneas son obvias.</li>
+<li><strong>Ignorar el timeframe:</strong> Una línea de tendencia en M5 no tiene la misma fuerza que una en Diario. Siempre prioriza líneas de timeframes altos.</li>
+<li><strong>No ajustar:</strong> Las líneas de tendencia se pueden redibujar. Si la tendencia se acelera o desacelera, ajusta tu línea a los nuevos puntos de contacto.</li>
 </ul>
 </div>`,
           keyPoints: [
-            "Las lineas de tendencia necesitan mínimo 2 puntos para dibujar y 3 para confirmar",
+            "Las líneas de tendencia necesitan mínimo 2 puntos para dibujar y 3 para confirmar",
             "Conecta las mechas (wicks), no los cuerpos de las velas",
-            "Los canales son dos lineas de tendencia paralelas donde el precio rebota entre ellas",
-            "En canal ascendente prioriza compras en la linea inferior; en descendente ventas en la superior",
+            "Los canales son dos líneas de tendencia paralelas donde el precio rebota entre ellas",
+            "En canal ascendente prioriza compras en la línea inferior; en descendente ventas en la superior",
             "Cuando un canal se rompe, el movimiento suele ser igual al ancho del canal",
-            "No fuerces lineas de tendencia - si no son obvias, no son validas"
+            "No fuerces líneas de tendencia - si no son obvias, no son validas"
           ],
           quiz: [
             {
-              question: "Cuantos puntos de contacto minimos necesitas para CONFIRMAR una linea de tendencia?",
+              question: "¿Cuántos puntos de contacto minimos necesitas para CONFIRMAR una línea de tendencia?",
               options: [
                 "1 punto",
                 "2 puntos",
@@ -578,10 +578,10 @@ export const PHASE_2: Phase = {
                 "5 puntos"
               ],
               correctIndex: 2,
-              explanation: "Con 2 puntos puedes DIBUJAR una linea, pero necesitas un tercer toque para CONFIRMAR que es una linea de tendencia válida que el mercado respeta."
+              explanation: "Con 2 puntos puedes DIBUJAR una línea, pero necesitas un tercer toque para CONFIRMAR que es una línea de tendencia válida que el mercado respeta."
             },
             {
-              question: "Al dibujar una linea de tendencia alcista, que puntos conectas?",
+              question: "¿Al dibujar una línea de tendencia alcista, que puntos conectas?",
               options: [
                 "Los maximos (Higher Highs)",
                 "Los minimos (Higher Lows) usando las mechas",
@@ -589,10 +589,10 @@ export const PHASE_2: Phase = {
                 "Cualquier punto que te convenga"
               ],
               correctIndex: 1,
-              explanation: "Una linea de tendencia alcista conecta los minimos ascendentes (Higher Lows) utilizando las mechas inferiores de las velas, ya que representan el máximo rechazo del precio."
+              explanation: "Una línea de tendencia alcista conecta los minimos ascendentes (Higher Lows) utilizando las mechas inferiores de las velas, ya que representan el máximo rechazo del precio."
             },
             {
-              question: "Despues de la ruptura de un canal de 120 pips de ancho, que movimiento se espera?",
+              question: "¿Despues de la ruptura de un canal de 120 pips de ancho, que movimiento se espera?",
               options: [
                 "Exactamente 60 pips (la mitad del canal)",
                 "Aproximadamente 120 pips desde el punto de ruptura",
@@ -603,7 +603,7 @@ export const PHASE_2: Phase = {
               explanation: "La regla de medida de canales dice que el precio suele moverse una distancia igual al ancho del canal desde el punto de ruptura. Un canal de 120 pips de ancho proyecta un movimiento de 120 pips."
             }
           ],
-          practicalExercise: "Abre GBP/USD en H4 en TradingView. Busca un canal de precio (ascendente, descendente o horizontal) de las ultimas 2-4 semanas. Dibuja las dos lineas del canal conectando al menos 2 puntos en cada linea. Mide el ancho del canal en pips. Si el precio esta cerca de una linea del canal, planifica un trade: donde entrarias, donde pondrias el stop loss y donde el take profit. Calcula tu ratio R:R."
+          practicalExercise: "Abre GBP/USD en H4 en TradingView. Busca un canal de precio (ascendente, descendente o horizontal) de las ultimas 2-4 semanas. Dibuja las dos líneas del canal conectando al menos 2 puntos en cada línea. Mide el ancho del canal en pips. Si el precio esta cerca de una línea del canal, planifica un trade: donde entrarias, donde pondrias el stop loss y donde el take profit. Calcula tu ratio R:R."
         }
       ]
     },
@@ -681,7 +681,7 @@ export const PHASE_2: Phase = {
 </div>
 <div class="card">
 <h4>SMA 200</h4>
-<p><strong>Largo plazo. LA MAS IMPORTANTE.</strong> La "linea de vida" del mercado. Si el precio esta encima: mercado alcista. Si esta debajo: mercado bajista. Es la media movil más observada del mundo.</p>
+<p><strong>Largo plazo. LA MAS IMPORTANTE.</strong> La "línea de vida" del mercado. Si el precio esta encima: mercado alcista. Si esta debajo: mercado bajista. Es la media movil más observada del mundo.</p>
 </div>
 </div>
 
@@ -775,7 +775,7 @@ export const PHASE_2: Phase = {
           ],
           quiz: [
             {
-              question: "Cual es la diferencia principal entre SMA y EMA?",
+              question: "¿Cuál es la diferencia principal entre SMA y EMA?",
               options: [
                 "La SMA es más precisa que la EMA",
                 "La EMA da más peso a los precios recientes, reacciona más rápido",
@@ -786,7 +786,7 @@ export const PHASE_2: Phase = {
               explanation: "La EMA (Exponential Moving Average) pondera más los precios recientes, haciendola más sensible a los cambios de precio. La SMA trata todos los precios por igual, haciendola más suave pero más lenta."
             },
             {
-              question: "Que indica un Golden Cross?",
+              question: "¿Qué indica un Golden Cross?",
               options: [
                 "Señal bajista - el precio va a caer",
                 "Señal alcista - la MA corta cruza por encima de la MA larga",
@@ -797,7 +797,7 @@ export const PHASE_2: Phase = {
               explanation: "El Golden Cross ocurre cuando la media movil de corto plazo (ej: SMA 50) cruza por encima de la de largo plazo (ej: SMA 200). Es una señal alcista historicamente asociada con rallies significativos."
             },
             {
-              question: "En que condicion de mercado las medias moviles dan PEORES señales?",
+              question: "¿En qué condicion de mercado las medias moviles dan PEORES señales?",
               options: [
                 "En tendencia alcista fuerte",
                 "En tendencia bajista fuerte",
@@ -808,7 +808,7 @@ export const PHASE_2: Phase = {
               explanation: "Las medias moviles son indicadores de TENDENCIA. En mercados laterales, el precio cruza las MAs constantemente generando señales falsas. Solo son utiles cuando hay una tendencia clara."
             },
             {
-              question: "Que indica un Moving Average Ribbon con las EMAs comprimidas y enredadas?",
+              question: "¿Qué indica un Moving Average Ribbon con las EMAs comprimidas y enredadas?",
               options: [
                 "Tendencia alcista muy fuerte",
                 "Tendencia bajista muy fuerte",
@@ -931,11 +931,11 @@ export const PHASE_2: Phase = {
 <div class="grid-cards">
 <div class="card">
 <h4>Señal de Compra MACD</h4>
-<p>La linea MACD cruza POR ENCIMA de la linea Signal. El histograma pasa de negativo a positivo. Especialmente potente cuando ocurre debajo de la linea cero (en territorio bajista cruzando a alcista).</p>
+<p>La línea MACD cruza POR ENCIMA de la línea Signal. El histograma pasa de negativo a positivo. Especialmente potente cuando ocurre debajo de la línea cero (en territorio bajista cruzando a alcista).</p>
 </div>
 <div class="card">
 <h4>Señal de Venta MACD</h4>
-<p>La linea MACD cruza POR DEBAJO de la linea Signal. El histograma pasa de positivo a negativo. Mas potente cuando ocurre encima de la linea cero.</p>
+<p>La línea MACD cruza POR DEBAJO de la línea Signal. El histograma pasa de positivo a negativo. Mas potente cuando ocurre encima de la línea cero.</p>
 </div>
 <div class="card">
 <h4>Divergencia MACD</h4>
@@ -951,7 +951,7 @@ export const PHASE_2: Phase = {
 
 <div class="highlight-box purple">
 <h4>El Estocastico: Velocidad del Precio</h4>
-<p>Mide donde esta el precio actual respecto a su rango de N periodos (default: 14). Tiene dos lineas: %K (rápida) y %D (lenta, media de %K).</p>
+<p>Mide donde esta el precio actual respecto a su rango de N periodos (default: 14). Tiene dos líneas: %K (rápida) y %D (lenta, media de %K).</p>
 <ul>
 <li><strong>Stochastic > 80:</strong> Sobrecompra. Pero en tendencia fuerte puede mantenerse ahi mucho tiempo.</li>
 <li><strong>Stochastic < 20:</strong> Sobreventa. Posible rebote pero no actues solo por esto.</li>
@@ -974,13 +974,13 @@ export const PHASE_2: Phase = {
             "RSI mide fuerza relativa (0-100): >70 sobrecompra, <30 sobreventa, pero NO vender/comprar solo por eso",
             "Divergencia regular: precio hace nuevo extremo pero RSI no - señal de posible reversa",
             "Divergencia oculta: señal de CONTINUACION de tendencia, favorita de traders profesionales",
-            "MACD tiene 3 componentes: linea MACD, Signal y Histograma - el histograma muestra aceleracion del momentum",
+            "MACD tiene 3 componentes: línea MACD, Signal y Histograma - el histograma muestra aceleracion del momentum",
             "Nunca uses un oscilador solo - combinalo siempre con estructura de mercado y acción del precio",
             "En tendencia fuerte, el RSI puede permanecer en sobrecompra/sobreventa durante semanas"
           ],
           quiz: [
             {
-              question: "El RSI de EUR/USD esta en 78 y el mercado esta en tendencia alcista fuerte. Que deberías hacer?",
+              question: "¿El RSI de EUR/USD esta en 78 y el mercado esta en tendencia alcista fuerte. Que deberías hacer?",
               options: [
                 "Vender inmediatamente porque esta en sobrecompra",
                 "Nada especial - en tendencia alcista fuerte el RSI puede mantenerse en sobrecompra mucho tiempo",
@@ -991,7 +991,7 @@ export const PHASE_2: Phase = {
               explanation: "En tendencia alcista fuerte, el RSI rutinariamente se mantiene entre 40 y 80. Un RSI de 78 no es señal de venta automática. Necesitas ver una divergencia, un CHoCH o una ruptura de estructura para considerar ventas."
             },
             {
-              question: "El precio hace un nuevo mínimo (LL) pero el RSI hace un mínimo más alto (HL). Que tipo de divergencia es?",
+              question: "¿El precio hace un nuevo mínimo (LL) pero el RSI hace un mínimo más alto (HL). Que tipo de divergencia es?",
               options: [
                 "Divergencia regular bajista",
                 "Divergencia oculta alcista",
@@ -1002,7 +1002,7 @@ export const PHASE_2: Phase = {
               explanation: "Divergencia regular alcista: precio hace LL pero RSI hace HL. La fuerza vendedora se debilita. El precio baja pero el momentum no acompaña. Señal de posible reversa alcista."
             },
             {
-              question: "En el MACD, que indica un histograma que pasa de barras crecientes a barras decrecientes (aun siendo positivo)?",
+              question: "¿En el MACD, que indica un histograma que pasa de barras crecientes a barras decrecientes (aun siendo positivo)?",
               options: [
                 "La tendencia alcista se esta acelerando",
                 "No indica nada relevante",
@@ -1013,7 +1013,7 @@ export const PHASE_2: Phase = {
               explanation: "Un histograma MACD decreciente (aunque siga positivo) indica que el momentum se esta desacelerando. Es una alerta temprana de que el movimiento puede estar agotandose, antes de que se produzca el cruce MACD/Signal."
             },
             {
-              question: "Que tipo de divergencia indica CONTINUACION de la tendencia existente?",
+              question: "¿Qué tipo de divergencia indica CONTINUACION de la tendencia existente?",
               options: [
                 "Divergencia regular",
                 "Divergencia oculta",
@@ -1079,7 +1079,7 @@ export const PHASE_2: Phase = {
 
 <div class="highlight-box blue">
 <h4>El Indicador que Anticipa Movimientos</h4>
-<p>El OBV es un indicador acumulativo: si la vela cierra alcista, su volumen se SUMA al total. Si cierra bajista, se RESTA. El resultado es una linea que muestra el flujo acumulado de volumen.</p>
+<p>El OBV es un indicador acumulativo: si la vela cierra alcista, su volumen se SUMA al total. Si cierra bajista, se RESTA. El resultado es una línea que muestra el flujo acumulado de volumen.</p>
 <p><strong>La clave:</strong> Si el OBV sube pero el precio esta lateral, las instituciones estan acumulando. Cuando el precio "alcance" al OBV, habra un breakout alcista. Y viceversa para bajista.</p>
 </div>
 
@@ -1098,7 +1098,7 @@ export const PHASE_2: Phase = {
 <div class="grid-cards">
 <div class="card">
 <h4>POC (Point of Control)</h4>
-<p>El nivel de precio con MAYOR volumen. Es donde más contratos se intercambiaron. Actua como un iman: el precio tiende a volver al POC. Es el "precio justo" segun el mercado. Los institucionales colocan muchas ordenes aquí.</p>
+<p>El nivel de precio con MAYOR volumen. Es donde más contratos se intercambiaron. Actua como un iman: el precio tiende a volver al POC. Es el "precio justo" según el mercado. Los institucionales colocan muchas ordenes aquí.</p>
 </div>
 <div class="card">
 <h4>Value Area (VA)</h4>
@@ -1145,7 +1145,7 @@ export const PHASE_2: Phase = {
           ],
           quiz: [
             {
-              question: "El precio rompe una resistencia importante pero el volumen es muy bajo. Que significa?",
+              question: "¿El precio rompe una resistencia importante pero el volumen es muy bajo. Que significa?",
               options: [
                 "Es un breakout fuerte y fiable",
                 "Es sospechoso - un breakout sin volumen puede ser un fakeout",
@@ -1156,7 +1156,7 @@ export const PHASE_2: Phase = {
               explanation: "Un breakout necesita volumen para ser válido. Un breakout con bajo volumen indica que pocos participantes estan convencidos, lo que aumenta drasticamente la probabilidad de un fakeout."
             },
             {
-              question: "Que es el POC (Point of Control) en Volume Profile?",
+              question: "¿Qué es el POC (Point of Control) en Volume Profile?",
               options: [
                 "El precio más alto del dia",
                 "El precio de cierre",
@@ -1164,10 +1164,10 @@ export const PHASE_2: Phase = {
                 "El promedio de todos los precios"
               ],
               correctIndex: 2,
-              explanation: "El POC es el nivel de precio con mayor volumen operado. Representa el 'precio justo' segun el mercado y actua como un iman que atrae al precio. Es un soporte/resistencia muy fuerte."
+              explanation: "El POC es el nivel de precio con mayor volumen operado. Representa el 'precio justo' según el mercado y actua como un iman que atrae al precio. Es un soporte/resistencia muy fuerte."
             },
             {
-              question: "El OBV esta subiendo pero el precio se mantiene lateral. Que esta ocurriendo?",
+              question: "¿El OBV esta subiendo pero el precio se mantiene lateral. Que esta ocurriendo?",
               options: [
                 "No esta pasando nada importante",
                 "Las instituciones estan vendiendo",
@@ -1178,7 +1178,7 @@ export const PHASE_2: Phase = {
               explanation: "Cuando el OBV sube mientras el precio esta lateral, significa que el volumen en los dias alcistas es mayor que en los bajistas. Las instituciones estan comprando sin mover el precio. Cuando la acumulación se complete, el precio rompera al alza."
             }
           ],
-          practicalExercise: "En TradingView, abre NAS100 o S&P500 en H1. Agrega el indicador Volume Profile (Visible Range). Identifica: 1) El POC - marca con una linea horizontal. 2) El Value Area High y Low. 3) Busca los LVN (huecos en el perfil) donde el precio viajaria rápido. 4) Agrega el OBV y compara si confirma o contradice la dirección del precio. 5) En las ultimas 5 velas, verifica si el volumen confirma el movimiento del precio."
+          practicalExercise: "En TradingView, abre NAS100 o S&P500 en H1. Agrega el indicador Volume Profile (Visible Range). Identifica: 1) El POC - marca con una línea horizontal. 2) El Value Area High y Low. 3) Busca los LVN (huecos en el perfil) donde el precio viajaria rápido. 4) Agrega el OBV y compara si confirma o contradice la dirección del precio. 5) En las ultimas 5 velas, verifica si el volumen confirma el movimiento del precio."
         }
       ]
     },
@@ -1282,7 +1282,7 @@ export const PHASE_2: Phase = {
 <li><strong>En TradingView:</strong> Selecciona la herramienta "Fibonacci Retracement" (en la barra lateral izquierda).</li>
 <li><strong>Para impulso ALCISTA:</strong> Haz clic en el MINIMO del impulso y arrastra hasta el MAXIMO. El 0% estará arriba (el máximo) y el 100% abajo (el mínimo).</li>
 <li><strong>Para impulso BAJISTA:</strong> Haz clic en el MAXIMO y arrastra hasta el MINIMO. El 0% abajo y el 100% arriba.</li>
-<li><strong>Busca confluencia:</strong> Los mejores trades ocurren cuando un nivel Fibonacci coincide con otra señal: soporte/resistencia horizontal, media movil, linea de tendencia. Cuanta más confluencia, mejor.</li>
+<li><strong>Busca confluencia:</strong> Los mejores trades ocurren cuando un nivel Fibonacci coincide con otra señal: soporte/resistencia horizontal, media movil, línea de tendencia. Cuanta más confluencia, mejor.</li>
 </ol>
 </div>
 
@@ -1347,7 +1347,7 @@ export const PHASE_2: Phase = {
           ],
           quiz: [
             {
-              question: "Cual es el nivel de retroceso de Fibonacci MAS importante y observado?",
+              question: "¿Cuál es el nivel de retroceso de Fibonacci MAS importante y observado?",
               options: [
                 "23.6%",
                 "38.2%",
@@ -1358,7 +1358,7 @@ export const PHASE_2: Phase = {
               explanation: "El 61.8% es el ratio dorado (derivado de la secuencia de Fibonacci) y es el nivel de retroceso más importante y observado en todos los mercados. Es la base de la OTE Zone."
             },
             {
-              question: "Que es la OTE Zone (Optimal Trade Entry)?",
+              question: "¿Qué es la OTE Zone (Optimal Trade Entry)?",
               options: [
                 "La zona entre 0% y 23.6%",
                 "La zona entre 38.2% y 50%",
@@ -1369,7 +1369,7 @@ export const PHASE_2: Phase = {
               explanation: "La OTE Zone esta entre el 61.8% y 78.6% del retroceso de Fibonacci. Ofrece el mejor ratio riesgo/recompensa porque el stop es relativamente corto (debajo del 100%) y el target es amplio."
             },
             {
-              question: "Para dibujar Fibonacci en un impulso ALCISTA, de donde a donde dibujas?",
+              question: "¿Para dibujar Fibonacci en un impulso ALCISTA, de donde a donde dibujas?",
               options: [
                 "Del máximo al mínimo",
                 "Del mínimo (inicio del impulso) al máximo (final del impulso)",
@@ -1380,7 +1380,7 @@ export const PHASE_2: Phase = {
               explanation: "Para un impulso alcista, dibujas Fibonacci del punto más bajo (swing low, inicio del impulso) al punto más alto (swing high, final del impulso). El 0% queda arriba y el 100% abajo."
             },
             {
-              question: "El precio retrocede y toca el 61.8% de Fibonacci. Este nivel coincide con un soporte horizontal y la EMA 50. Que significa?",
+              question: "¿El precio retrocede y toca el 61.8% de Fibonacci. Este nivel coincide con un soporte horizontal y la EMA 50. Que significa?",
               options: [
                 "Demasiadas confluencias - es confuso",
                 "Es una zona de entrada de ALTA probabilidad por la triple confluencia",
@@ -1447,7 +1447,7 @@ export const PHASE_2: Phase = {
 </div>
 
 <div class="highlight-box red">
-<h4>Doble Techo (Double Top) - Patron Bajista</h4>
+<h4>Doble Techo (Double Top) - Patrón Bajista</h4>
 <p>El precio sube y toca una resistencia, retrocede, vuelve a subir al MISMO nivel y vuelve a ser rechazado. Forma una "M" en el gráfico. Indica que los compradores no pudieron romper la resistencia en dos intentos.</p>
 <ul>
 <li><strong>Confirmacion:</strong> El precio rompe por debajo del "neckline" (el mínimo entre los dos techos) con volumen.</li>
@@ -1457,7 +1457,7 @@ export const PHASE_2: Phase = {
 </div>
 
 <div class="highlight-box green">
-<h4>Doble Suelo (Double Bottom) - Patron Alcista</h4>
+<h4>Doble Suelo (Double Bottom) - Patrón Alcista</h4>
 <p>El opuesto del doble techo. El precio cae a un soporte, rebota, vuelve a caer al MISMO nivel y vuelve a rebotar. Forma una "W" en el gráfico. Los vendedores no pudieron romper el soporte.</p>
 <ul>
 <li><strong>Confirmacion:</strong> Ruptura por encima del neckline (máximo entre los dos suelos) con volumen.</li>
@@ -1467,7 +1467,7 @@ export const PHASE_2: Phase = {
 </div>
 
 <div class="pattern-card">
-<h4>Head and Shoulders (Cabeza y Hombros) - El Patron Mas Fiable</h4>
+<h4>Head and Shoulders (Cabeza y Hombros) - El Patrón Más Fiable</h4>
 <p>Considerado el patrón de reversión más fiable del análisis técnico. Tiene 3 picos: hombro izquierdo, cabeza (el pico más alto) y hombro derecho (mas bajo que la cabeza). Los tres picos estan conectados por un "neckline" en los minimos.</p>
 <div class="grid-cards">
 <div class="card">
@@ -1488,18 +1488,18 @@ export const PHASE_2: Phase = {
 <div class="grid-cards">
 <div class="card">
 <h4>Triangulo Simetrico</h4>
-<p>Las lineas de tendencia superior e inferior convergen formando un triangulo. El precio comprime entre maximos cada vez más bajos y minimos cada vez más altos. Puede romper en cualquier dirección, pero generalmente continua la tendencia previa.</p>
+<p>Las líneas de tendencia superior e inferior convergen formando un triangulo. El precio comprime entre maximos cada vez más bajos y minimos cada vez más altos. Puede romper en cualquier dirección, pero generalmente continua la tendencia previa.</p>
 <p><strong>Trade:</strong> Espera la ruptura con volumen. Target = altura del triangulo en su parte más ancha.</p>
 </div>
 <div class="card">
 <h4>Triangulo Ascendente (Bullish)</h4>
 <p>Resistencia horizontal + minimos ascendentes. Los compradores son cada vez más agresivos (compran más caro cada vez) contra una resistencia fija. Alta probabilidad de ruptura ALCISTA.</p>
-<p><strong>Trade:</strong> Compra en ruptura de la resistencia o compra en la linea de tendencia inferior con SL debajo.</p>
+<p><strong>Trade:</strong> Compra en ruptura de la resistencia o compra en la línea de tendencia inferior con SL debajo.</p>
 </div>
 <div class="card">
 <h4>Triangulo Descendente (Bearish)</h4>
 <p>Soporte horizontal + maximos descendentes. Los vendedores son cada vez más agresivos contra un soporte fijo. Alta probabilidad de ruptura BAJISTA.</p>
-<p><strong>Trade:</strong> Vende en ruptura del soporte o vende en la linea de tendencia superior con SL encima.</p>
+<p><strong>Trade:</strong> Vende en ruptura del soporte o vende en la línea de tendencia superior con SL encima.</p>
 </div>
 </div>
 
@@ -1512,16 +1512,16 @@ export const PHASE_2: Phase = {
 <div class="card">
 <h4>Bandera Bajista (Bear Flag)</h4>
 <p>Lo opuesto: impulso bajista fuerte, luego consolidacion en canal ascendente. El precio descansa antes de continuar bajando. Muy comun en tendencias bajistas fuertes.</p>
-<p><strong>Nota:</strong> Las banderas son de los patrones más fiables. En tendencias fuertes, aparecen multiples banderas seguidas.</p>
+<p><strong>Nota:</strong> Las banderas son de los patrones más fiables. En tendencias fuertes, aparecen múltiples banderas seguidas.</p>
 </div>
 <div class="card">
 <h4>Cuña Ascendente (Rising Wedge) - Bajista</h4>
-<p>Similar a un triangulo pero ambas lineas apuntan HACIA ARRIBA. Los maximos suben pero cada vez menos. Los minimos suben pero cada vez menos. La tendencia se agota. Ruptura tipicamente BAJISTA.</p>
+<p>Similar a un triangulo pero ambas líneas apuntan HACIA ARRIBA. Los maximos suben pero cada vez menos. Los minimos suben pero cada vez menos. La tendencia se agota. Ruptura tipicamente BAJISTA.</p>
 <p><strong>Engaño:</strong> Parece alcista (el precio sube) pero la compresión indica agotamiento. Es una trampa para compradores.</p>
 </div>
 <div class="card">
 <h4>Cuña Descendente (Falling Wedge) - Alcista</h4>
-<p>Ambas lineas apuntan HACIA ABAJO pero convergen. Parece bajista pero es alcista. Los vendedores pierden fuerza progresivamente. Ruptura tipicamente ALCISTA.</p>
+<p>Ambas líneas apuntan HACIA ABAJO pero convergen. Parece bajista pero es alcista. Los vendedores pierden fuerza progresivamente. Ruptura tipicamente ALCISTA.</p>
 <p><strong>Nota:</strong> Las cuñas pueden ser de reversión (al final de tendencia) o de continuacion (como pausa en una tendencia).</p>
 </div>
 </div>
@@ -1542,7 +1542,7 @@ export const PHASE_2: Phase = {
 <div class="warning-box">
 <h4>Reglas Criticas para Patrones</h4>
 <ul>
-<li><strong>Siempre espera la CONFIRMACION (ruptura).</strong> Un patrón no esta "completo" hasta que rompe el neckline o la linea clave. Muchos patrones fallan.</li>
+<li><strong>Siempre espera la CONFIRMACION (ruptura).</strong> Un patrón no esta "completo" hasta que rompe el neckline o la línea clave. Muchos patrones fallan.</li>
 <li><strong>Volumen es tu aliado:</strong> La ruptura debe venir con volumen creciente. Sin volumen, desconfia.</li>
 <li><strong>No busques patrones donde no hay:</strong> Si tienes que forzar la interpretacion, probablemente no es un patrón válido. Los buenos patrones son OBVIOS.</li>
 <li><strong>Contexto importa:</strong> Un doble techo en una tendencia alcista fuerte de HTF puede fallar. Los patrones funcionan mejor cuando van A FAVOR de la tendencia del timeframe superior.</li>
@@ -1558,7 +1558,7 @@ export const PHASE_2: Phase = {
           ],
           quiz: [
             {
-              question: "Un doble techo tiene sus maximos en 1.3500 y el neckline en 1.3400. Si se confirma, cual es el target?",
+              question: "¿Un doble techo tiene sus maximos en 1.3500 y el neckline en 1.3400. Si se confirma, cual es el target?",
               options: [
                 "1.3300 (100 pips debajo del neckline)",
                 "1.3600 (100 pips encima del techo)",
@@ -1569,7 +1569,7 @@ export const PHASE_2: Phase = {
               explanation: "Altura del patrón = 1.3500 - 1.3400 = 100 pips. Se proyecta esa distancia hacia ABAJO desde el punto de ruptura (neckline): 1.3400 - 100 = 1.3300."
             },
             {
-              question: "Una cuña ascendente (rising wedge) es un patrón de que tipo?",
+              question: "¿Una cuña ascendente (rising wedge) es un patrón de que tipo?",
               options: [
                 "Alcista - porque el precio sube",
                 "Bajista - indica agotamiento de la tendencia alcista",
@@ -1577,10 +1577,10 @@ export const PHASE_2: Phase = {
                 "Solo aparece en mercados de cripto"
               ],
               correctIndex: 1,
-              explanation: "Aunque parece alcista (el precio sube), la cuña ascendente es un patrón BAJISTA. Las dos lineas convergentes hacia arriba indican que los compradores pierden fuerza progresivamente. La ruptura típica es hacia abajo."
+              explanation: "Aunque parece alcista (el precio sube), la cuña ascendente es un patrón BAJISTA. Las dos líneas convergentes hacia arriba indican que los compradores pierden fuerza progresivamente. La ruptura típica es hacia abajo."
             },
             {
-              question: "Que patrón de gráfico se forma despues de un impulso fuerte al alza seguido de una consolidacion en canal descendente estrecho?",
+              question: "¿Qué patrón de gráfico se forma despues de un impulso fuerte al alza seguido de una consolidacion en canal descendente estrecho?",
               options: [
                 "Doble techo",
                 "Triangulo simetrico",
@@ -1591,7 +1591,7 @@ export const PHASE_2: Phase = {
               explanation: "Una bandera alcista (bull flag) se forma cuando hay un impulso fuerte al alza (el 'asta'), seguido de una consolidacion en un canal descendente estrecho (la 'bandera'). Es un patrón de continuacion que indica que la tendencia alcista probablemente continuara."
             },
             {
-              question: "Cual es la señal de CONFIRMACION para un Head and Shoulders?",
+              question: "¿Cuál es la señal de CONFIRMACION para un Head and Shoulders?",
               options: [
                 "Cuando se forma el hombro derecho",
                 "Cuando el precio rompe el neckline con volumen",
@@ -1599,10 +1599,10 @@ export const PHASE_2: Phase = {
                 "Cuando el volumen es alto en el hombro izquierdo"
               ],
               correctIndex: 1,
-              explanation: "Un H&S no esta confirmado hasta que el precio rompe el neckline (la linea que conecta los minimos entre los hombros) con volumen significativo. Antes de eso, el patrón puede fallar."
+              explanation: "Un H&S no esta confirmado hasta que el precio rompe el neckline (la línea que conecta los minimos entre los hombros) con volumen significativo. Antes de eso, el patrón puede fallar."
             }
           ],
-          practicalExercise: "En TradingView, abre 4 gráficos diferentes (EUR/USD, GBP/USD, BTCUSD, NAS100) en H4 o Diario. Busca al menos 1 patrón de cada tipo: 1) Un doble techo o doble suelo. 2) Un triangulo (simetrico, ascendente o descendente). 3) Una bandera (bull flag o bear flag). 4) Una cuña (ascendente o descendente). Para cada patron: marca los puntos clave, dibuja el neckline o lineas de ruptura, y calcula el target proyectado."
+          practicalExercise: "En TradingView, abre 4 gráficos diferentes (EUR/USD, GBP/USD, BTCUSD, NAS100) en H4 o Diario. Busca al menos 1 patrón de cada tipo: 1) Un doble techo o doble suelo. 2) Un triangulo (simetrico, ascendente o descendente). 3) Una bandera (bull flag o bear flag). 4) Una cuña (ascendente o descendente). Para cada patron: marca los puntos clave, dibuja el neckline o líneas de ruptura, y calcula el target proyectado."
         },
         // --------------------------------------------------------------
         // LESSON 2-3-3: MULTI-TIMEFRAME ANALYSIS
@@ -1741,7 +1741,7 @@ export const PHASE_2: Phase = {
           ],
           quiz: [
             {
-              question: "El gráfico diario de EUR/USD muestra tendencia bajista (LH/LL). En M15 ves un CHoCH alcista. Que haces?",
+              question: "¿El gráfico diario de EUR/USD muestra tendencia bajista (LH/LL). En M15 ves un CHoCH alcista. Que haces?",
               options: [
                 "Compras inmediatamente - el CHoCH en M15 indica cambio de tendencia",
                 "Ignoras el CHoCH en M15 - probablemente es solo un retroceso dentro de la tendencia bajista del diario",
@@ -1752,7 +1752,7 @@ export const PHASE_2: Phase = {
               explanation: "El HTF SIEMPRE manda. Un CHoCH en M15 dentro de una tendencia bajista en el Diario es muy probablemente solo un retroceso temporal (la onda correctiva). Deberias buscar VENTAS cuando ese retroceso alcista termine, no compras."
             },
             {
-              question: "Cual es la combinación de timeframes recomendada para day trading?",
+              question: "¿Cuál es la combinación de timeframes recomendada para day trading?",
               options: [
                 "Semanal - Diario - H4",
                 "Diario - H1 - M15/M5",
@@ -1763,7 +1763,7 @@ export const PHASE_2: Phase = {
               explanation: "Para day trading, la combinación ideal es: Diario (tendencia general), H1 (zonas de interes e identificacion de niveles) y M15/M5 (entrada precisa y trigger). Esto mantiene la relación 4-6x entre timeframes."
             },
             {
-              question: "En el framework de 3 pantallas, para que usas el timeframe MEDIO (MTF)?",
+              question: "¿En el framework de 3 pantallas, para que usas el timeframe MEDIO (MTF)?",
               options: [
                 "Para determinar la tendencia general",
                 "Para encontrar el trigger exacto de entrada",
@@ -1774,7 +1774,7 @@ export const PHASE_2: Phase = {
               explanation: "El MTF (timeframe medio) sirve para identificar las ZONAS de interes donde buscas entrar: niveles de Fibonacci, soportes/resistencias, confluencias. No defines tendencia (eso es HTF) ni buscas entrada exacta (eso es LTF)."
             },
             {
-              question: "Por que NO deberías saltar directamente del gráfico Semanal al M5?",
+              question: "¿Por qué NO deberías saltar directamente del gráfico Semanal al M5?",
               options: [
                 "Porque TradingView no lo permite",
                 "Porque la diferencia es demasiado grande y pierdes el contexto intermedio",
@@ -1805,7 +1805,7 @@ export const PHASE_2: Phase = {
           duration: "30 min",
           content: `
 <h2>Analisis Fundamental para Traders</h2>
-<div class="analogy-box"><h3>El Analisis Fundamental es el PORQUE</h3><p>El análisis técnico te dice DONDE puede ir el precio. El fundamental te dice POR QUE. Imagina que ves nubes negras (fundamental) y miras la app del tiempo (técnico). Ambos te dan información util. Juntos, son poderosos.</p></div>
+<div class="analogy-box"><h3>El Analisis Fundamental es el PORQUE</h3><p>El análisis técnico te dice DONDE puede ir el precio. El fundamental te dice POR QUE. Imagina que ves nubes negras (fundamental) y miras la app del tiempo (técnico). Ambos te dan información útil. Juntos, son poderosos.</p></div>
 <h3>Los 5 Eventos Economicos que MAS Mueven el Mercado</h3>
 <div class="grid-cards">
 <div class="card"><h4>1. NFP (Non-Farm Payrolls)</h4><p>Primer viernes de cada mes. Empleo en EEUU. El dato MAS importante del mes. El dolar se mueve 50-100 pips en minutos.</p><p class="text-xs mt-1" style="color:#f59e0b">Impacto: EXTREMO</p></div>
@@ -1841,9 +1841,9 @@ export const PHASE_2: Phase = {
             "Risk-On = optimismo (acciones suben), Risk-Off = miedo (oro y JPY suben)"
           ],
           quiz: [
-            { question: "Que pasa con el USD si la Fed sube los tipos de interes?", options: ["USD se debilita", "USD se fortalece", "No tiene efecto", "Solo afecta al oro"], correctIndex: 1, explanation: "Tipos de interes más altos atraen capital extranjero buscando mayor rendimiento, fortaleciendo la moneda." },
-            { question: "Si el NFP sale mucho peor de lo esperado, que pasa con EUR/USD?", options: ["EUR/USD baja", "EUR/USD sube (el USD se debilita)", "No se mueve", "El mercado cierra"], correctIndex: 1, explanation: "Datos de empleo malos debilitan al USD. Si el USD se debilita, EUR/USD sube." },
-            { question: "Cual es la regla para tradear noticias como principiante?", options: ["Entrar justo antes de la noticia", "No tradear noticias - esperar 15-30 min despues", "Poner el máximo apalancamiento", "Solo operar criptomonedas"], correctIndex: 1, explanation: "La volatilidad extrema durante noticias puede activar SL instantaneamente. Espera a que el polvo se asiente." }
+            { question: "¿Qué pasa con el USD si la Fed sube los tipos de interes?", options: ["USD se debilita", "USD se fortalece", "No tiene efecto", "Solo afecta al oro"], correctIndex: 1, explanation: "Tipos de interes más altos atraen capital extranjero buscando mayor rendimiento, fortaleciendo la moneda." },
+            { question: "¿Si el NFP sale mucho peor de lo esperado, que pasa con EUR/USD?", options: ["EUR/USD baja", "EUR/USD sube (el USD se debilita)", "No se mueve", "El mercado cierra"], correctIndex: 1, explanation: "Datos de empleo malos debilitan al USD. Si el USD se debilita, EUR/USD sube." },
+            { question: "¿Cuál es la regla para tradear noticias como principiante?", options: ["Entrar justo antes de la noticia", "No tradear noticias - esperar 15-30 min despues", "Poner el máximo apalancamiento", "Solo operar criptomonedas"], correctIndex: 1, explanation: "La volatilidad extrema durante noticias puede activar SL instantaneamente. Espera a que el polvo se asiente." }
           ],
           practicalExercise: "Ve a forexfactory.com. Identifica las 3 noticias de alto impacto de esta semana para USD. Anota fecha, hora y dato esperado. Observa que pasa con EUR/USD cuando se publica cada una (sin operar, solo observar)."
         },
@@ -1882,9 +1882,9 @@ export const PHASE_2: Phase = {
             "S&P 500 sube = Risk-On = monedas de riesgo (AUD, NZD) suben"
           ],
           quiz: [
-            { question: "Si el DXY esta en una fuerte tendencia alcista, que operación buscarias en EUR/USD?", options: ["LONG (compra)", "SHORT (venta)", "Ambas", "Ninguna"], correctIndex: 1, explanation: "DXY alcista = dolar fuerte. Si el dolar se fortalece, EUR/USD baja, así que buscas SHORT." },
-            { question: "Si tienes un LONG en EUR/USD, por que NO deberías abrir un LONG en GBP/USD al mismo tiempo?", options: ["Porque ambos pares se mueven juntos y estarias duplicando riesgo, no diversificando", "Porque GBP/USD es más volatil", "Porque el broker no lo permite", "No hay problema en hacerlo"], correctIndex: 0, explanation: "EUR/USD y GBP/USD tienen correlacion positiva ~80%. Abrir ambos en la misma dirección es como duplicar el mismo trade." },
-            { question: "Si el petroleo esta subiendo fuertemente, que podrias esperar del USD/CAD?", options: ["Que suba", "Que baje (CAD se fortalece)", "Que no se mueva", "Que el mercado cierre"], correctIndex: 1, explanation: "Canada exporta petroleo. Petroleo sube → economía canadiense se beneficia → CAD se fortalece → USD/CAD baja." }
+            { question: "¿Si el DXY esta en una fuerte tendencia alcista, que operación buscarias en EUR/USD?", options: ["LONG (compra)", "SHORT (venta)", "Ambas", "Ninguna"], correctIndex: 1, explanation: "DXY alcista = dolar fuerte. Si el dolar se fortalece, EUR/USD baja, así que buscas SHORT." },
+            { question: "¿Si tienes un LONG en EUR/USD, por que NO deberías abrir un LONG en GBP/USD al mismo tiempo?", options: ["Porque ambos pares se mueven juntos y estarias duplicando riesgo, no diversificando", "Porque GBP/USD es más volatil", "Porque el broker no lo permite", "No hay problema en hacerlo"], correctIndex: 0, explanation: "EUR/USD y GBP/USD tienen correlacion positiva ~80%. Abrir ambos en la misma dirección es como duplicar el mismo trade." },
+            { question: "¿Si el petroleo esta subiendo fuertemente, que podrias esperar del USD/CAD?", options: ["Que suba", "Que baje (CAD se fortalece)", "Que no se mueva", "Que el mercado cierre"], correctIndex: 1, explanation: "Canada exporta petroleo. Petroleo sube → economía canadiense se beneficia → CAD se fortalece → USD/CAD baja." }
           ]
         }
       ]
