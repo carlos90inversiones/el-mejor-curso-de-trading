@@ -1012,6 +1012,8 @@ export const PHASE_4: Phase = {
           content: `
 <h2>Price Action: El Arte de Leer el Precio Desnudo</h2>
 
+<div style="display:flex;justify-content:center;margin:20px 0"><svg width="460" height="120" viewBox="0 0 460 120" style="background:#131722;border-radius:12px;border:1px solid #2a2a40"><text x="230" y="16" fill="white" font-size="10" text-anchor="middle" font-weight="bold">SUPPLY &amp; DEMAND: ZONAS DE OFERTA Y DEMANDA</text><rect x="20" y="28" width="420" height="22" rx="4" fill="#ef535012" stroke="#ef535030" stroke-dasharray="5,4"/><text x="230" y="42" fill="#ef5350" font-size="9" text-anchor="middle" font-weight="bold">ZONA DE SUPPLY (Oferta) - Vendedores esperando</text><rect x="20" y="80" width="420" height="22" rx="4" fill="#26a69a12" stroke="#26a69a30" stroke-dasharray="5,4"/><text x="230" y="94" fill="#26a69a" font-size="9" text-anchor="middle" font-weight="bold">ZONA DE DEMAND (Demanda) - Compradores esperando</text><polyline points="50,72 100,35 140,40 180,88 220,82 260,32 300,38 340,85 380,78 420,55" fill="none" stroke="#8b5cf6" stroke-width="2"/><text x="230" y="112" fill="#787b86" font-size="8" text-anchor="middle">El precio rebota entre zonas de Supply (arriba) y Demand (abajo)</text></svg></div>
+
 <div class="analogy-box">
 <h3>La Analogia del Detective</h3>
 <p>Un buen detective no necesita que el criminal le diga donde esta. Lee las pistas: huellas, marcas, patrones de comportamiento. El precio deja pistas EXACTAMENTE igual. Cada vela, cada mecha, cada patron te cuenta una historia. Los indicadores son como leer el informe de otro detective: llega tarde y puede estar equivocado. El price action es como estar en la escena del crimen en tiempo real. <strong>El precio es el único indicador que NO miente y NO tiene retraso.</strong></p>
@@ -1972,7 +1974,9 @@ export const PHASE_4: Phase = {
           title: "Scalping Profesional: Operaciones de Alta Velocidad",
           duration: "30 min",
           content: `
-<h2>Scalping: El Arte de los Trades Rapidos</h2>
+<h2>Scalping: El Arte de los Trades Rápidos</h2>
+
+<div style="display:flex;justify-content:center;margin:20px 0"><svg width="400" height="90" viewBox="0 0 400 90" style="background:#131722;border-radius:10px;border:1px solid #2a2a40"><text x="200" y="15" fill="white" font-size="9" text-anchor="middle" font-weight="bold">MULTI-TF DEL SCALPER</text><rect x="10" y="28" width="115" height="35" rx="6" fill="#3b82f615" stroke="#3b82f6"/><text x="67" y="44" fill="#3b82f6" font-size="8" text-anchor="middle" font-weight="bold">H1/H4: SESGO</text><text x="67" y="56" fill="#787b86" font-size="7" text-anchor="middle">Tendencia general</text><text x="132" y="48" fill="#555" font-size="10">→</text><rect x="140" y="28" width="115" height="35" rx="6" fill="#f59e0b15" stroke="#f59e0b"/><text x="197" y="44" fill="#f59e0b" font-size="8" text-anchor="middle" font-weight="bold">M5: ZONA</text><text x="197" y="56" fill="#787b86" font-size="7" text-anchor="middle">OB/FVG de entrada</text><text x="262" y="48" fill="#555" font-size="10">→</text><rect x="270" y="28" width="120" height="35" rx="6" fill="#26a69a15" stroke="#26a69a"/><text x="330" y="44" fill="#26a69a" font-size="8" text-anchor="middle" font-weight="bold">M1: ENTRADA</text><text x="330" y="56" fill="#787b86" font-size="7" text-anchor="middle">CHoCH + timing exacto</text><text x="200" y="80" fill="#ef5350" font-size="8" text-anchor="middle" font-weight="bold">SL: 5-15 pips | TP: 10-30 pips | Duración: 5-30 min</text></svg></div>
 <div class="analogy-box"><h3>El Francotirador vs la Ametralladora</h3><p>Un scalper NO es alguien que dispara sin parar. Es un francotirador que espera el momento PERFECTO, ejecuta con precision quirurgica, y desaparece. Muchos creen que scalping es "abrir muchos trades rápido". Eso es gambling. El scalping profesional es lo contrario.</p></div>
 <h3>Requisitos para Hacer Scalping</h3>
 <div class="grid-cards">
