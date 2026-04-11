@@ -1768,6 +1768,31 @@ export const PHASE_4: Phase = {
 <h2>Teoria de Ondas de Elliott</h2>
 <div class="analogy-box"><h3>Las Olas del Mar</h3><p>El mercado se mueve en ondas, como el mar. Hay olas grandes que van hacia la playa (impulso) y olas que retroceden (correccion). Dentro de cada ola grande hay olas mas pequenas. Elliott descubrio que estas olas siguen un patron repetitivo de 5+3.</p></div>
 <h3>El Patron Basico: 5-3</h3>
+
+<div style="display:flex;justify-content:center;margin:20px 0">
+<svg width="460" height="200" viewBox="0 0 460 200" style="background:#131722;border-radius:12px;border:1px solid #2a2a40">
+<text x="230" y="18" fill="white" font-size="11" text-anchor="middle" font-weight="bold">ONDAS DE ELLIOTT: 5 Impulsivas + 3 Correctivas</text>
+<!-- 5 ondas impulsivas -->
+<polyline points="30,160 70,120 90,140 170,35 200,75 260,25" fill="none" stroke="#26a69a" stroke-width="2.5"/>
+<!-- Labels ondas 1-5 -->
+<circle cx="30" cy="160" r="3" fill="#787b86"/><text x="25" y="175" fill="#787b86" font-size="8">0</text>
+<circle cx="70" cy="120" r="4" fill="#26a69a"/><text x="70" y="112" fill="#26a69a" font-size="10" text-anchor="middle" font-weight="bold">1</text>
+<circle cx="90" cy="140" r="4" fill="#42a5f5"/><text x="90" y="155" fill="#42a5f5" font-size="10" text-anchor="middle" font-weight="bold">2</text>
+<circle cx="170" cy="35" r="5" fill="#26a69a"/><text x="170" y="28" fill="#26a69a" font-size="11" text-anchor="middle" font-weight="bold">3</text>
+<text x="178" y="48" fill="#26a69a" font-size="7">(la mas fuerte!)</text>
+<circle cx="200" cy="75" r="4" fill="#42a5f5"/><text x="200" y="90" fill="#42a5f5" font-size="10" text-anchor="middle" font-weight="bold">4</text>
+<circle cx="260" cy="25" r="4" fill="#26a69a"/><text x="260" y="18" fill="#26a69a" font-size="10" text-anchor="middle" font-weight="bold">5</text>
+<!-- 3 ondas correctivas (A-B-C) -->
+<polyline points="260,25 310,90 340,55 400,140" fill="none" stroke="#ef5350" stroke-width="2.5"/>
+<circle cx="310" cy="90" r="4" fill="#ef5350"/><text x="310" y="105" fill="#ef5350" font-size="10" text-anchor="middle" font-weight="bold">A</text>
+<circle cx="340" cy="55" r="4" fill="#ff9800"/><text x="340" y="48" fill="#ff9800" font-size="10" text-anchor="middle" font-weight="bold">B</text>
+<circle cx="400" cy="140" r="4" fill="#ef5350"/><text x="400" y="155" fill="#ef5350" font-size="10" text-anchor="middle" font-weight="bold">C</text>
+<!-- Legend -->
+<rect x="30" y="180" width="100" height="14" rx="3" fill="#26a69a15"/><text x="80" y="191" fill="#26a69a" font-size="8" text-anchor="middle">5 ondas impulso</text>
+<rect x="140" y="180" width="100" height="14" rx="3" fill="#ef535015"/><text x="190" y="191" fill="#ef5350" font-size="8" text-anchor="middle">3 ondas correccion</text>
+<text x="340" y="191" fill="#fbbf24" font-size="8" text-anchor="middle">Onda 3 = la mas rentable</text>
+</svg>
+</div>
 <div class="highlight-box blue"><h4>Fase Impulsiva: 5 Ondas</h4>
 <ul>
 <li><strong>Onda 1:</strong> El inicio del movimiento. Pocos lo ven. Suele ser debil.</li>

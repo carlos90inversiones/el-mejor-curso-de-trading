@@ -27,6 +27,36 @@ export const PHASE_5: Phase = {
 <p>Imagina que quieres ser piloto de avion. No necesitas comprar un Boeing 737 — una aerolinea te da el avion, tu demuestras que sabes pilotear, y te pagan por volar. Las <strong>Prop Firms</strong> funcionan igual: te dan el capital, tu demuestras que sabes tradear, y te quedas con un porcentaje de las ganancias.</p>
 </div>
 
+<div style="display:flex;justify-content:center;margin:20px 0">
+<svg width="460" height="160" viewBox="0 0 460 160" style="background:#131722;border-radius:12px;border:1px solid #2a2a40">
+<text x="230" y="18" fill="white" font-size="11" text-anchor="middle" font-weight="bold">REGLAS TIPICAS DE UN CHALLENGE (100K)</text>
+<!-- Objetivo -->
+<rect x="20" y="35" width="130" height="50" rx="8" fill="#26a69a15" stroke="#26a69a"/>
+<text x="85" y="55" fill="#26a69a" font-size="9" text-anchor="middle" font-weight="bold">OBJETIVO</text>
+<text x="85" y="72" fill="#26a69a" font-size="14" text-anchor="middle" font-weight="bold">+8%</text>
+<text x="85" y="82" fill="#787b86" font-size="7" text-anchor="middle">(8,000$)</text>
+<!-- DD Diario -->
+<rect x="165" y="35" width="130" height="50" rx="8" fill="#ef535015" stroke="#ef5350"/>
+<text x="230" y="55" fill="#ef5350" font-size="9" text-anchor="middle" font-weight="bold">DD DIARIO MAX</text>
+<text x="230" y="72" fill="#ef5350" font-size="14" text-anchor="middle" font-weight="bold">-5%</text>
+<text x="230" y="82" fill="#787b86" font-size="7" text-anchor="middle">(5,000$/dia)</text>
+<!-- DD Total -->
+<rect x="310" y="35" width="130" height="50" rx="8" fill="#ff980015" stroke="#ff9800"/>
+<text x="375" y="55" fill="#ff9800" font-size="9" text-anchor="middle" font-weight="bold">DD TOTAL MAX</text>
+<text x="375" y="72" fill="#ff9800" font-size="14" text-anchor="middle" font-weight="bold">-10%</text>
+<text x="375" y="82" fill="#787b86" font-size="7" text-anchor="middle">(10,000$ total)</text>
+<!-- Timeline -->
+<rect x="20" y="100" width="200" height="35" rx="6" fill="#3b82f612" stroke="#3b82f644"/>
+<text x="120" y="115" fill="#3b82f6" font-size="9" text-anchor="middle" font-weight="bold">Fase 1: 30 dias | Fase 2: 60 dias</text>
+<text x="120" y="128" fill="#787b86" font-size="7" text-anchor="middle">Min 4-5 dias operados</text>
+<!-- Split -->
+<rect x="235" y="100" width="205" height="35" rx="6" fill="#8b5cf612" stroke="#8b5cf644"/>
+<text x="337" y="115" fill="#8b5cf6" font-size="9" text-anchor="middle" font-weight="bold">Profit Split: 80% para ti</text>
+<text x="337" y="128" fill="#787b86" font-size="7" text-anchor="middle">Escalable hasta 90%</text>
+<text x="230" y="152" fill="#fbbf24" font-size="9" text-anchor="middle">Riesgo recomendado: 0.5% por trade | R:R minimo 1:2</text>
+</svg>
+</div>
+
 <h3>Que es una Proprietary Trading Firm (Prop Firm)?</h3>
 <p>Una Prop Firm es una <strong>empresa que proporciona capital a traders</strong> para que operen en los mercados financieros. El trader no arriesga su propio dinero (mas alla de la tarifa del challenge). A cambio, la prop firm se queda con un porcentaje de las ganancias.</p>
 

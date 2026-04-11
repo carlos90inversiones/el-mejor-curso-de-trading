@@ -189,7 +189,24 @@ export const PHASE_1: Phase = {
 </div>
 <div class="vocab-section">
 <h3>Gestion de Riesgo</h3>
-<div class="vocab-card"><h4>APALANCAMIENTO (Leverage)</h4><p>El broker te presta dinero para operar con mas capital.</p><div class="example-box"><strong>Ejemplo:</strong> 1,000$ con apalancamiento 1:100 = operas como si tuvieras 100,000$. Las ganancias Y perdidas se multiplican.</div><div class="warning-box"><p>El apalancamiento es una espada de doble filo. Puede multiplicar ganancias Y perdidas. Usa siempre el minimo necesario.</p></div></div>
+<div class="vocab-card"><h4>APALANCAMIENTO (Leverage)</h4><p>El broker te presta dinero para operar con mas capital.</p>
+<div style="display:flex;justify-content:center;margin:15px 0">
+<svg width="380" height="120" viewBox="0 0 380 120" style="background:#131722;border-radius:10px;border:1px solid #2a2a40">
+<text x="190" y="18" fill="white" font-size="10" text-anchor="middle" font-weight="bold">APALANCAMIENTO 1:100</text>
+<!-- Tu dinero -->
+<rect x="20" y="40" width="60" height="50" rx="6" fill="#3b82f622" stroke="#3b82f6"/>
+<text x="50" y="60" fill="#3b82f6" font-size="9" text-anchor="middle" font-weight="bold">TU</text>
+<text x="50" y="78" fill="#3b82f6" font-size="11" text-anchor="middle" font-weight="bold">1,000$</text>
+<!-- Flecha -->
+<text x="100" y="70" fill="#fbbf24" font-size="16">→ x100 →</text>
+<!-- Poder de compra -->
+<rect x="190" y="35" width="170" height="60" rx="6" fill="#26a69a15" stroke="#26a69a"/>
+<text x="275" y="55" fill="#26a69a" font-size="9" text-anchor="middle" font-weight="bold">OPERAS COMO SI TUVIERAS</text>
+<text x="275" y="78" fill="#26a69a" font-size="16" text-anchor="middle" font-weight="bold">100,000$</text>
+<text x="190" y="112" fill="#ef5350" font-size="9" text-anchor="middle" font-weight="bold">CUIDADO: ganancias Y perdidas se multiplican x100</text>
+</svg>
+</div>
+<div class="warning-box"><p>El apalancamiento es una espada de doble filo. Puede multiplicar ganancias Y perdidas. Usa siempre el minimo necesario.</p></div></div>
 <div class="vocab-card"><h4>DRAWDOWN</h4><p>La caida maxima de tu cuenta desde su punto mas alto. Cuenta llego a 10,000$ y ahora tiene 8,000$ = drawdown del 20%. <strong>Prop firms limitan a 5-10%.</strong></p></div>
 <div class="vocab-card"><h4>RATIO RIESGO/BENEFICIO (R:R)</h4><p>Relacion entre lo que arriesgas y lo que puedes ganar.</p><div class="example-box"><strong>Ejemplo:</strong> Arriesgas 50$ (SL) para ganar 150$ (TP) = Ratio 1:3. Aunque pierdas 2 de cada 3 operaciones, sigues siendo rentable.</div></div>
 <div class="vocab-card"><h4>EQUITY vs BALANCE</h4><p><strong>Balance:</strong> Dinero en tu cuenta SIN contar operaciones abiertas.</p><p><strong>Equity:</strong> Balance + ganancias/perdidas de operaciones abiertas. Es tu dinero REAL en este momento.</p></div>

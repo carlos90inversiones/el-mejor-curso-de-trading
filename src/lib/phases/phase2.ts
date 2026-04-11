@@ -1408,6 +1408,42 @@ export const PHASE_2: Phase = {
 
 <h3>Patrones de Reversion (Cambio de Tendencia)</h3>
 
+<div style="display:flex;justify-content:center;gap:20px;margin:20px 0;flex-wrap:wrap">
+<!-- DOBLE TECHO -->
+<svg width="220" height="160" viewBox="0 0 220 160" style="background:#131722;border-radius:10px;border:1px solid #2a2a40">
+<text x="110" y="16" fill="#ef5350" font-size="9" text-anchor="middle" font-weight="bold">DOBLE TECHO (M) - BAJISTA</text>
+<polyline points="20,120 50,90 80,40 100,80 130,42 160,95 190,130" fill="none" stroke="#ef5350" stroke-width="2"/>
+<circle cx="80" cy="40" r="3" fill="#ef5350"/><circle cx="130" cy="42" r="3" fill="#ef5350"/>
+<line x1="60" y1="40" x2="150" y2="40" stroke="#ef535055" stroke-width="1" stroke-dasharray="3,3"/>
+<text x="105" y="35" fill="#ef5350" font-size="7" text-anchor="middle">Resistencia</text>
+<line x1="40" y1="80" x2="170" y2="80" stroke="#ff9800" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="175" y="83" fill="#ff9800" font-size="7">Neckline</text>
+<text x="110" y="150" fill="#787b86" font-size="8" text-anchor="middle">Forma de "M"</text>
+</svg>
+<!-- DOBLE SUELO -->
+<svg width="220" height="160" viewBox="0 0 220 160" style="background:#131722;border-radius:10px;border:1px solid #2a2a40">
+<text x="110" y="16" fill="#26a69a" font-size="9" text-anchor="middle" font-weight="bold">DOBLE SUELO (W) - ALCISTA</text>
+<polyline points="20,40 50,70 80,125 100,80 130,122 160,65 190,30" fill="none" stroke="#26a69a" stroke-width="2"/>
+<circle cx="80" cy="125" r="3" fill="#26a69a"/><circle cx="130" cy="122" r="3" fill="#26a69a"/>
+<line x1="60" y1="125" x2="150" y2="125" stroke="#26a69a55" stroke-width="1" stroke-dasharray="3,3"/>
+<text x="105" y="138" fill="#26a69a" font-size="7" text-anchor="middle">Soporte</text>
+<line x1="40" y1="80" x2="170" y2="80" stroke="#ff9800" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="175" y="83" fill="#ff9800" font-size="7">Neckline</text>
+<text x="110" y="150" fill="#787b86" font-size="8" text-anchor="middle">Forma de "W"</text>
+</svg>
+<!-- HEAD & SHOULDERS -->
+<svg width="220" height="160" viewBox="0 0 220 160" style="background:#131722;border-radius:10px;border:1px solid #2a2a40">
+<text x="110" y="16" fill="#ef5350" font-size="9" text-anchor="middle" font-weight="bold">CABEZA Y HOMBROS - BAJISTA</text>
+<polyline points="15,110 35,85 55,60 65,85 85,65 105,25 120,65 140,85 155,55 175,85 195,115" fill="none" stroke="#ef5350" stroke-width="2"/>
+<text x="55" y="55" fill="#787b86" font-size="7" text-anchor="middle">Hombro</text>
+<text x="105" y="20" fill="#ef5350" font-size="7" text-anchor="middle">Cabeza</text>
+<text x="155" y="50" fill="#787b86" font-size="7" text-anchor="middle">Hombro</text>
+<line x1="35" y1="85" x2="175" y2="85" stroke="#ff9800" stroke-width="1.5" stroke-dasharray="4,3"/>
+<text x="185" y="88" fill="#ff9800" font-size="7">Neckline</text>
+<text x="110" y="150" fill="#787b86" font-size="8" text-anchor="middle">Cambio de tendencia</text>
+</svg>
+</div>
+
 <div class="highlight-box red">
 <h4>Doble Techo (Double Top) - Patron Bajista</h4>
 <p>El precio sube y toca una resistencia, retrocede, vuelve a subir al MISMO nivel y vuelve a ser rechazado. Forma una "M" en el grafico. Indica que los compradores no pudieron romper la resistencia en dos intentos.</p>
