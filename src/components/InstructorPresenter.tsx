@@ -1,5 +1,6 @@
 "use client";
 import { useState, useRef, useEffect, useCallback } from "react";
+import { getMaleSpanishVoice } from "@/lib/voiceUtils";
 
 interface PresenterProps {
   narration: string;
@@ -17,11 +18,11 @@ export default function InstructorPresenter({ narration, title, subtitle }: Pres
     window.speechSynthesis.cancel();
 
     const utterance = new SpeechSynthesisUtterance(narration);
-    const voices = window.speechSynthesis.getVoices();
-    const esVoice = voices.find(v => v.lang.startsWith("es"));
-    if (esVoice) utterance.voice = esVoice;
+    const maleVoice = getMaleSpanishVoice();
+    if (maleVoice) utterance.voice = maleVoice;
     utterance.lang = "es-ES";
     utterance.rate = 0.95;
+    utterance.pitch = 0.9;
 
     const totalLen = narration.length;
     let startTime = Date.now();

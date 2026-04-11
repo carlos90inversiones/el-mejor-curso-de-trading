@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect, useRef, useCallback } from "react";
+import { getMaleSpanishVoice } from "@/lib/voiceUtils";
 
 // ============================================================================
 // VIDEO LESSON: Animated SVG chart + TTS narration synchronized
@@ -184,11 +185,11 @@ export default function VideoLesson({ title, steps, pair = "EUR/USD", timeframe 
     if (typeof window !== "undefined" && window.speechSynthesis) {
       window.speechSynthesis.cancel();
       const utterance = new SpeechSynthesisUtterance(s.narration);
-      const voices = window.speechSynthesis.getVoices();
-      const esVoice = voices.find(v => v.lang.startsWith("es"));
-      if (esVoice) utterance.voice = esVoice;
+      const maleVoice = getMaleSpanishVoice();
+      if (maleVoice) utterance.voice = maleVoice;
       utterance.lang = "es-ES";
       utterance.rate = 0.9;
+      utterance.pitch = 0.9;
       speechRef.current = utterance;
       window.speechSynthesis.speak(utterance);
     }

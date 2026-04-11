@@ -1,19 +1,34 @@
 "use client";
 import { useState } from "react";
+import dynamic from "next/dynamic";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import AdvancedSimulator from "@/components/AdvancedSimulator";
-import PositionCalculator from "@/components/PositionCalculator";
-import TradingJournal from "@/components/TradingJournal";
-import CandlePractice from "@/components/CandlePractice";
+
+// Lazy load heavy components for better performance
+const AdvancedSimulator = dynamic(() => import("@/components/AdvancedSimulator"), { loading: () => <LoadingPlaceholder /> });
+const PositionCalculator = dynamic(() => import("@/components/PositionCalculator"), { loading: () => <LoadingPlaceholder /> });
+const TradingJournal = dynamic(() => import("@/components/TradingJournal"), { loading: () => <LoadingPlaceholder /> });
+const CandlePractice = dynamic(() => import("@/components/CandlePractice"), { loading: () => <LoadingPlaceholder /> });
+const PracticalProjects = dynamic(() => import("@/components/PracticalProjects"), { loading: () => <LoadingPlaceholder /> });
+const Glossary = dynamic(() => import("@/components/Glossary"), { loading: () => <LoadingPlaceholder /> });
+const Flashcards = dynamic(() => import("@/components/Flashcards"), { loading: () => <LoadingPlaceholder /> });
+
 import { DIAGRAMS } from "@/components/CandleDiagrams";
 import { REALISTIC_CHARTS } from "@/components/RealisticCharts";
 import { CandlePatternsCheatSheet, RiskManagementCheatSheet, SMCCheatSheet, PropFirmCheatSheet } from "@/components/CheatSheets";
-import PracticalProjects from "@/components/PracticalProjects";
-import Glossary from "@/components/Glossary";
-import Flashcards from "@/components/Flashcards";
 import VideoLesson, { VIDEO_LESSONS } from "@/components/VideoLesson";
 import InstructorPresenter, { INSTRUCTOR_CLIPS } from "@/components/InstructorPresenter";
+
+function LoadingPlaceholder() {
+  return (
+    <div className="bg-[#1a1a2e] border border-[#2a2a40] rounded-2xl p-8 flex items-center justify-center min-h-[200px]">
+      <div className="flex items-center gap-3">
+        <div className="w-5 h-5 border-2 border-blue-500 border-t-transparent rounded-full animate-spin" />
+        <span className="text-[#a0a0b8] text-sm">Cargando...</span>
+      </div>
+    </div>
+  );
+}
 
 type Tab = "simulator" | "calculator" | "journal" | "candles" | "diagrams" | "charts" | "cheatsheets" | "projects" | "glossary" | "flashcards" | "videos";
 

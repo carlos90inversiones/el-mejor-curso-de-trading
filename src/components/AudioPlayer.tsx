@@ -1,5 +1,6 @@
 "use client";
 import { useState, useCallback, useRef, useEffect } from "react";
+import { getMaleSpanishVoice } from "@/lib/voiceUtils";
 
 interface AudioPlayerProps {
   text: string;
@@ -48,14 +49,12 @@ export default function AudioPlayer({ text, title }: AudioPlayerProps) {
     const clean = cleanText(text);
     const utterance = new SpeechSynthesisUtterance(clean);
 
-    // Try to get Spanish voice
-    const voices = window.speechSynthesis.getVoices();
-    const spanishVoice = voices.find(v => v.lang.startsWith("es")) || voices[0];
-    if (spanishVoice) utterance.voice = spanishVoice;
-
+    // Voz masculina en espanol
+    const maleVoice = getMaleSpanishVoice();
+    if (maleVoice) utterance.voice = maleVoice;
     utterance.lang = "es-ES";
     utterance.rate = speed;
-    utterance.pitch = 1;
+    utterance.pitch = 0.9;
 
     const totalLength = clean.length;
     let startTime = Date.now();

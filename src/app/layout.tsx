@@ -59,6 +59,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col" style={{ background: "#0c0e1a", color: "#f0f0f5" }}>
         {children}
+        <script dangerouslySetInnerHTML={{ __html: `if(window.speechSynthesis){window.speechSynthesis.getVoices();window.speechSynthesis.addEventListener('voiceschanged',function(){window.speechSynthesis.getVoices()})}` }} />
       </body>
     </html>
   );
