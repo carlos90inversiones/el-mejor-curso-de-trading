@@ -1612,6 +1612,22 @@ export const PHASE_2: Phase = {
           content: `
 <h2>Multi-Timeframe Analysis (MTA): Ver el Bosque Y los Arboles</h2>
 
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin:16px 0">
+<div style="border-radius:8px;overflow:hidden;border:1px solid #2a2a40">
+<img src="/charts/chart-eurusd-d1.png" alt="EUR/USD Diario" style="width:100%;display:block" />
+<div style="padding:6px;background:#131722;text-align:center"><span style="color:#ef5350;font-size:10px;font-weight:bold">D1 - Tendencia</span></div>
+</div>
+<div style="border-radius:8px;overflow:hidden;border:1px solid #2a2a40">
+<img src="/charts/chart-eurusd-h4.png" alt="EUR/USD H4" style="width:100%;display:block" />
+<div style="padding:6px;background:#131722;text-align:center"><span style="color:#f59e0b;font-size:10px;font-weight:bold">H4 - Setup</span></div>
+</div>
+<div style="border-radius:8px;overflow:hidden;border:1px solid #2a2a40">
+<img src="/charts/chart-eurusd-h1.png" alt="EUR/USD H1" style="width:100%;display:block" />
+<div style="padding:6px;background:#131722;text-align:center"><span style="color:#26a69a;font-size:10px;font-weight:bold">H1 - Entrada</span></div>
+</div>
+</div>
+<p style="text-align:center;color:#555;font-size:10px;margin-bottom:12px">EUR/USD en 3 temporalidades - Capturas reales de TradingView</p>
+
 <div class="analogy-box">
 <h3>La Analogia de Google Maps</h3>
 <p>Cuando usas Google Maps, primero miras el mapa grande para ver la dirección general (norte, sur). Luego haces zoom para ver las calles. Y finalmente más zoom para encontrar la entrada exacta del edificio. El análisis multi-timeframe es igual: el <strong>timeframe alto</strong> te da la dirección, el <strong>medio</strong> te da la zona, y el <strong>bajo</strong> te da la entrada precisa.</p>

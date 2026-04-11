@@ -81,6 +81,26 @@ export const PHASE_1: Phase = {
 <h2>Los Mercados Financieros</h2>
 <div class="analogy-box"><h3>Piensa en un Centro Comercial</h3><p>Un centro comercial tiene muchas tiendas: ropa, electronica, comida... Los mercados financieros son igual: hay diferentes "tiendas" donde se compran y venden diferentes cosas.</p></div>
 <h3>Los 5 Mercados Principales</h3>
+
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:20px 0">
+<div style="border-radius:12px;overflow:hidden;border:1px solid #2a2a40">
+<img src="/charts/chart-eurusd-h4.png" alt="EUR/USD H4 en TradingView" style="width:100%;display:block" />
+<div style="padding:8px;background:#131722;text-align:center"><span style="color:#26a69a;font-size:11px;font-weight:bold">EUR/USD H4 - Forex</span></div>
+</div>
+<div style="border-radius:12px;overflow:hidden;border:1px solid #2a2a40">
+<img src="/charts/chart-btcusdt-d1.png" alt="BTC/USDT Diario en TradingView" style="width:100%;display:block" />
+<div style="padding:8px;background:#131722;text-align:center"><span style="color:#f59e0b;font-size:11px;font-weight:bold">BTC/USDT Diario - Crypto</span></div>
+</div>
+<div style="border-radius:12px;overflow:hidden;border:1px solid #2a2a40">
+<img src="/charts/chart-spx-d1.png" alt="S&P 500 Diario en TradingView" style="width:100%;display:block" />
+<div style="padding:8px;background:#131722;text-align:center"><span style="color:#8b5cf6;font-size:11px;font-weight:bold">S&P 500 Diario - Índice</span></div>
+</div>
+<div style="border-radius:12px;overflow:hidden;border:1px solid #2a2a40">
+<img src="/charts/chart-xauusd-d1.png" alt="Oro XAUUSD Diario en TradingView" style="width:100%;display:block" />
+<div style="padding:8px;background:#131722;text-align:center"><span style="color:#f59e0b;font-size:11px;font-weight:bold">Oro (XAUUSD) Diario - Materia Prima</span></div>
+</div>
+</div>
+<p style="text-align:center;color:#555;font-size:11px;margin-bottom:16px">Capturas reales de TradingView - Abril 2026</p>
 <div class="market-card forex"><h4>1. FOREX (Foreign Exchange) - Divisas</h4><div class="stats"><span>Volumen diario: 7.5 BILLONES $</span><span>24h Lunes a Viernes</span><span>Apalancamiento: 1:30 a 1:500</span></div><p>El mercado más grande del mundo. Compras/vendes monedas: EUR/USD, GBP/USD, USD/JPY. <strong>Ideal para principiantes y cuentas fondeadas.</strong></p>
 <div class="highlight-box blue"><h4>Pares Principales (Majors) - Los más tradeados</h4><ul><li><strong>EUR/USD</strong> - Euro vs Dolar (el más liquido del mundo)</li><li><strong>GBP/USD</strong> - Libra vs Dolar (muy volatil)</li><li><strong>USD/JPY</strong> - Dolar vs Yen (movido por Bank of Japan)</li><li><strong>USD/CHF</strong> - Dolar vs Franco Suizo (refugio seguro)</li><li><strong>AUD/USD, NZD/USD, USD/CAD</strong> - Pares de commodities</li></ul></div></div>
 <div class="market-card indices"><h4>2. Indices Bursatiles</h4><div class="stats"><span>Principales: S&P 500, NASDAQ, DAX</span><span>Horario: 9:30-16:00 ET + futuros</span></div><p>Un indice es una "canasta" de acciones. El S&P 500 = las 500 empresas más grandes de EE.UU. Si la economía va bien, sube. <strong>Muy popular en prop firms.</strong></p>
