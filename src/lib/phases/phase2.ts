@@ -1888,6 +1888,994 @@ export const PHASE_2: Phase = {
           ]
         }
       ]
+    },
+    // ================================================================
+    // MODULE 2-5: MERCADOS Y PRODUCTOS AVANZADOS
+    // ================================================================
+    {
+      id: "mod-2-5",
+      title: "Mercados y Productos Avanzados",
+      description: "Domina derivados, acciones, trading de noticias, gaps e intermarket analysis",
+      icon: "🔬",
+      color: "#14B8A6",
+      lessons: [
+        // --------------------------------------------------------------
+        // LESSON 2-5-1: OPCIONES Y FUTUROS
+        // --------------------------------------------------------------
+        {
+          id: "2-5-1",
+          title: "Opciones y Futuros: Los Derivados Financieros",
+          duration: "30 min",
+          content: `
+<h2>Opciones y Futuros: Instrumentos que los Profesionales Usan a Diario</h2>
+
+<div class="analogy-box">
+<h3>La Analogía del Seguro de Coche</h3>
+<p>Una <strong>opción</strong> funciona exactamente como un seguro de coche. Pagas una <strong>prima</strong> (precio de la opción) para tener el <strong>derecho</strong> (no la obligación) de comprar o vender un activo a un precio determinado. Si no necesitas usarlo, pierdes la prima. Si lo necesitas, te salva de una pérdida catastrófica. Los <strong>futuros</strong>, en cambio, son como un contrato de compraventa firmado: <strong>ambas partes están obligadas</strong> a cumplir.</p>
+</div>
+
+<h3>¿Qué Son los Derivados Financieros?</h3>
+
+<div class="highlight-box purple">
+<h4>Definición Clave</h4>
+<p>Un <strong>derivado</strong> es un instrumento financiero cuyo valor <strong>deriva</strong> (de ahí el nombre) de otro activo subyacente: una acción, un índice, una divisa, una materia prima, etc. No compras el activo directamente, sino un <strong>contrato</strong> que se basa en su precio. Los derivados más comunes son las <strong>opciones</strong> y los <strong>futuros</strong>.</p>
+</div>
+
+<h3>Opciones: Calls y Puts Explicados de Forma Simple</h3>
+
+<div class="grid-cards">
+<div class="card">
+<h4>📈 CALL (Opción de Compra)</h4>
+<p>Te da el <strong>derecho a COMPRAR</strong> un activo a un precio fijo (strike price) antes de una fecha de vencimiento. Compras un Call cuando crees que el precio va a <strong>SUBIR</strong>.</p>
+<p><strong>Ejemplo:</strong> Apple cotiza a $170. Compras un Call con strike $175 por $3 de prima. Si Apple sube a $185, ejerces tu derecho: compras a $175, el mercado está a $185 → ganancia de $10 - $3 prima = $7 por acción.</p>
+</div>
+<div class="card">
+<h4>📉 PUT (Opción de Venta)</h4>
+<p>Te da el <strong>derecho a VENDER</strong> un activo a un precio fijo antes de una fecha de vencimiento. Compras un Put cuando crees que el precio va a <strong>BAJAR</strong>.</p>
+<p><strong>Ejemplo:</strong> Apple cotiza a $170. Compras un Put con strike $165 por $2.50 de prima. Si Apple baja a $155, ejerces tu derecho: vendes a $165 cuando el mercado está a $155 → ganancia de $10 - $2.50 prima = $7.50 por acción.</p>
+</div>
+</div>
+
+<h3>Futuros: Contratos con Obligación</h3>
+
+<div class="highlight-box blue">
+<h4>¿Qué es un Contrato de Futuros?</h4>
+<p>Un <strong>futuro</strong> es un acuerdo para comprar o vender un activo a un precio determinado en una <strong>fecha futura</strong>. A diferencia de las opciones, aquí <strong>ambas partes están obligadas</strong>. Los futuros se usan mucho en petróleo, oro, índices (ES para S&P 500, NQ para Nasdaq) y divisas.</p>
+</div>
+
+<div class="comparison-table">
+<div class="comparison-col">
+<h4>Opciones</h4>
+<ul>
+<li>Derecho, NO obligación</li>
+<li>Pagas una prima por adelantado</li>
+<li>Pérdida máxima = la prima</li>
+<li>Ganancia potencialmente ilimitada</li>
+<li>Afectadas por tiempo y volatilidad</li>
+</ul>
+</div>
+<div class="comparison-col">
+<h4>Futuros</h4>
+<ul>
+<li>Obligación para ambas partes</li>
+<li>No hay prima, solo margen</li>
+<li>Pérdida potencialmente ilimitada</li>
+<li>Ganancia potencialmente ilimitada</li>
+<li>Relación más directa con el subyacente</li>
+</ul>
+</div>
+</div>
+
+<h3>¿En Qué se Diferencian de los CFDs y el Spot?</h3>
+
+<div class="grid-cards">
+<div class="card">
+<h4>CFD (Contract for Difference)</h4>
+<p>Contrato con tu broker para intercambiar la diferencia de precio. No tiene fecha de expiración fija. No se negocia en bolsa regulada (OTC). Más accesible para retail.</p>
+</div>
+<div class="card">
+<h4>Spot (Contado)</h4>
+<p>Compraventa inmediata del activo real. En Forex, liquidación en T+2. En cripto, tienes el activo directamente. Sin apalancamiento natural.</p>
+</div>
+<div class="card">
+<h4>Futuros</h4>
+<p>Se negocian en bolsas reguladas (CME, CBOE). Tienen fecha de vencimiento. Estandarizados. Más transparentes que CFDs. Usados por instituciones.</p>
+</div>
+<div class="card">
+<h4>Opciones</h4>
+<p>Bolsas reguladas. Fecha de vencimiento + strike price. Riesgo limitado para el comprador. Permiten estrategias que ningún otro instrumento permite.</p>
+</div>
+</div>
+
+<h3>¿Por Qué los Traders Usan Derivados?</h3>
+
+<div class="grid-cards">
+<div class="card">
+<h4>🛡️ Hedging (Cobertura)</h4>
+<p>Tienes acciones de Apple y temes una caída. Compras Puts para protegerte. Si Apple cae, el Put sube y compensa tu pérdida. Es como un seguro de cartera.</p>
+</div>
+<div class="card">
+<h4>⚡ Apalancamiento</h4>
+<p>Con $300 de prima puedes controlar $17,000 en acciones de Apple (100 acciones × $170). El apalancamiento de opciones es enorme, pero tu pérdida máxima es la prima.</p>
+</div>
+<div class="card">
+<h4>🎯 Especulación</h4>
+<p>Crees que el mercado va a moverse fuerte pero no sabes la dirección. Puedes usar estrategias de opciones que ganan con <strong>cualquier</strong> movimiento grande (straddle).</p>
+</div>
+</div>
+
+<h3>Estrategias Básicas de Opciones</h3>
+
+<div class="strategy-box">
+<h4>Las 3 Estrategias Fundamentales</h4>
+<ol>
+<li><strong>Long Call:</strong> Compras un Call cuando esperas que el precio SUBA. Riesgo máximo = prima pagada. Ganancia = ilimitada.</li>
+<li><strong>Long Put:</strong> Compras un Put cuando esperas que el precio BAJE. Riesgo máximo = prima pagada. Ganancia = hasta que el activo llegue a cero.</li>
+<li><strong>Covered Call:</strong> Ya tienes las acciones y VENDES un Call. Cobras la prima como ingreso extra. Si el precio sube mucho, entregas las acciones al strike. Ideal para generar ingresos recurrentes en posiciones que ya tienes.</li>
+</ol>
+</div>
+
+<h3>Las Greeks Simplificadas: Delta y Theta</h3>
+
+<div class="highlight-box green">
+<h4>Delta (Δ) - Sensibilidad al Precio</h4>
+<p><strong>Delta mide cuánto cambia el precio de la opción por cada $1 que se mueve el subyacente.</strong> Un Call con Delta 0.50 sube $0.50 cuando la acción sube $1. Un Put tiene Delta negativo. Delta cerca de 1.0 = la opción se mueve casi como la acción. Delta cerca de 0 = la opción apenas reacciona.</p>
+</div>
+
+<div class="highlight-box red">
+<h4>Theta (Θ) - Deterioro Temporal</h4>
+<p><strong>Theta mide cuánto valor pierde la opción cada día que pasa.</strong> Las opciones tienen fecha de vencimiento, y cada día que pasa sin movimiento, pierden valor. Theta es el enemigo del comprador de opciones y el amigo del vendedor. Por eso los profesionales dicen: "las opciones son un activo que se derrite".</p>
+</div>
+
+<h3>¿Cuándo Considerar Opciones vs. Trading Spot?</h3>
+
+<div class="grid-cards">
+<div class="card">
+<h4>Usa Opciones Cuando...</h4>
+<ul>
+<li>Quieres riesgo limitado y definido</li>
+<li>Esperas un evento binario (earnings, FOMC)</li>
+<li>Quieres generar ingresos extra en posiciones existentes</li>
+<li>Quieres apostar a la volatilidad, no la dirección</li>
+</ul>
+</div>
+<div class="card">
+<h4>Usa Spot/CFD Cuando...</h4>
+<ul>
+<li>Quieres simplicidad (dirección pura)</li>
+<li>No quieres preocuparte por vencimientos</li>
+<li>Operas intradía con entradas/salidas rápidas</li>
+<li>Tu capital es pequeño y las comisiones de opciones son altas</li>
+</ul>
+</div>
+</div>
+
+<div style="display:flex;justify-content:center;margin:24px 0">
+<svg width="520" height="280" viewBox="0 0 520 280" style="background:#131722;border-radius:12px;border:1px solid #2a2a40">
+<text x="260" y="22" fill="white" font-size="12" text-anchor="middle" font-weight="bold">DIAGRAMA DE GANANCIA/PÉRDIDA: LONG CALL</text>
+<line x1="60" y1="180" x2="480" y2="180" stroke="#555" stroke-width="1"/>
+<line x1="200" y1="40" x2="200" y2="250" stroke="#555" stroke-width="1"/>
+<text x="490" y="184" fill="#a0a0b8" font-size="9">Precio</text>
+<text x="204" y="36" fill="#a0a0b8" font-size="9">Ganancia</text>
+<text x="204" y="260" fill="#a0a0b8" font-size="9">Pérdida</text>
+<line x1="80" y1="210" x2="300" y2="210" stroke="#ef5350" stroke-width="2.5"/>
+<line x1="300" y1="210" x2="460" y2="80" stroke="#26a69a" stroke-width="2.5"/>
+<circle cx="300" cy="210" r="5" fill="#f59e0b"/>
+<text x="300" y="234" fill="#f59e0b" font-size="10" text-anchor="middle" font-weight="bold">Strike Price</text>
+<line x1="80" y1="210" x2="80" y2="180" stroke="#ef5350" stroke-width="1" stroke-dasharray="3,3"/>
+<text x="160" y="226" fill="#ef5350" font-size="9" text-anchor="middle">Pérdida máx = Prima</text>
+<circle cx="350" cy="180" r="4" fill="#26a69a"/>
+<text x="355" y="174" fill="#26a69a" font-size="9">Break-even</text>
+<text x="430" y="96" fill="#26a69a" font-size="9">Ganancia</text>
+<text x="430" y="108" fill="#26a69a" font-size="9">ilimitada ↑</text>
+<rect x="70" y="180" width="230" height="30" fill="#ef535010" rx="2"/>
+<text x="185" y="200" fill="#ef5350" font-size="8" text-anchor="middle">ZONA DE PÉRDIDA (máximo = prima pagada)</text>
+<rect x="350" y="80" width="110" height="100" fill="#26a69a10" rx="2"/>
+<text x="405" y="150" fill="#26a69a" font-size="8" text-anchor="middle">ZONA DE</text>
+<text x="405" y="162" fill="#26a69a" font-size="8" text-anchor="middle">GANANCIA</text>
+</svg>
+</div>
+
+<div class="warning-box">
+<h4>⚠️ Advertencia para Principiantes</h4>
+<p>Las opciones son instrumentos complejos. Antes de operar con dinero real: (1) practica en paper trading, (2) entiende perfectamente cómo funciona Theta (el tiempo te va en contra), (3) nunca VENDAS opciones descubiertas (riesgo ilimitado), y (4) empieza con posiciones pequeñas. Muchos traders profesionales tardaron años en dominar opciones.</p>
+</div>`,
+          keyPoints: [
+            "Una opción da el DERECHO (no obligación) de comprar/vender a un precio fijo; un futuro es una OBLIGACIÓN",
+            "Call = derecho a comprar (apuestas a subida), Put = derecho a vender (apuestas a bajada)",
+            "Delta mide cuánto se mueve la opción por cada $1 del subyacente; Theta mide cuánto valor pierde por día",
+            "La pérdida máxima al COMPRAR opciones es la prima pagada; al VENDER puede ser ilimitada",
+            "Covered Call: vender un Call sobre acciones que ya tienes para generar ingresos recurrentes"
+          ],
+          quiz: [
+            {
+              question: "¿Cuál es la diferencia fundamental entre una opción y un futuro?",
+              options: [
+                "Las opciones son más baratas",
+                "La opción da un derecho sin obligación, el futuro obliga a ambas partes",
+                "Los futuros no tienen fecha de vencimiento",
+                "Las opciones solo existen para acciones"
+              ],
+              correctIndex: 1,
+              explanation: "La diferencia clave es que la opción te da el DERECHO (puedes decidir no ejercerla y solo pierdes la prima), mientras que el futuro es un contrato OBLIGATORIO para ambas partes."
+            },
+            {
+              question: "¿Qué mide Theta (Θ) en opciones y por qué es importante?",
+              options: [
+                "Mide la volatilidad del mercado",
+                "Mide cuánto valor pierde la opción cada día que pasa sin movimiento",
+                "Mide la sensibilidad al precio del subyacente",
+                "Mide el volumen de operaciones"
+              ],
+              correctIndex: 1,
+              explanation: "Theta mide el deterioro temporal: las opciones pierden valor cada día que pasa. Es el 'enemigo' del comprador de opciones porque su posición se 'derrite' con el tiempo si el precio no se mueve a su favor."
+            },
+            {
+              question: "¿Qué estrategia usarías si ya tienes acciones y quieres generar ingresos extra?",
+              options: [
+                "Long Call",
+                "Long Put",
+                "Covered Call (vender un Call sobre tus acciones)",
+                "Comprar más acciones"
+              ],
+              correctIndex: 2,
+              explanation: "El Covered Call consiste en vender un Call sobre acciones que ya posees. Cobras la prima como ingreso. Si el precio no sube hasta el strike, te quedas con la prima y las acciones. Es la estrategia más conservadora de opciones."
+            }
+          ],
+          practicalExercise: "Abre un simulador de opciones gratuito (OptionsProfit Calculator o similar). Elige Apple (AAPL) y simula: (1) Comprar un Call con strike 5% por encima del precio actual, vencimiento 30 días. Anota la prima, el Delta y Theta. (2) Comprar un Put con strike 5% por debajo del precio actual, misma expiración. Compara ambas primas. (3) Calcula: ¿cuánto tiene que moverse Apple para que tu Call sea rentable después de pagar la prima (break-even)?"
+        },
+        // --------------------------------------------------------------
+        // LESSON 2-5-2: TRADING DE ACCIONES
+        // --------------------------------------------------------------
+        {
+          id: "2-5-2",
+          title: "Trading de Acciones: Análisis Fundamental de Empresas",
+          duration: "25 min",
+          content: `
+<h2>Análisis Fundamental de Acciones: Más Allá de los Gráficos</h2>
+
+<div class="analogy-box">
+<h3>La Analogía del Comprador de Casas</h3>
+<p>Cuando compras una casa, no solo miras la fachada (el gráfico). Revisas los cimientos, la fontanería, el tejado, el barrio, los impuestos. El <strong>análisis fundamental</strong> es exactamente eso: mirar "dentro" de la empresa para saber si su acción es una buena compra al precio actual. El gráfico te dice CUÁNDO comprar; el fundamental te dice QUÉ comprar.</p>
+</div>
+
+<h3>Las Métricas Clave que Todo Trader de Acciones Debe Conocer</h3>
+
+<div style="display:flex;justify-content:center;margin:24px 0">
+<svg width="480" height="200" viewBox="0 0 480 200" style="background:#131722;border-radius:12px;border:1px solid #2a2a40">
+<text x="240" y="22" fill="white" font-size="12" text-anchor="middle" font-weight="bold">CÁLCULO DEL P/E RATIO</text>
+<rect x="40" y="45" width="160" height="55" rx="8" fill="#8b5cf620" stroke="#8b5cf6" stroke-width="1.5"/>
+<text x="120" y="68" fill="#8b5cf6" font-size="11" text-anchor="middle" font-weight="bold">Precio de la Acción</text>
+<text x="120" y="88" fill="white" font-size="18" text-anchor="middle" font-weight="bold">$150</text>
+<text x="230" y="78" fill="#f59e0b" font-size="24" text-anchor="middle" font-weight="bold">÷</text>
+<rect x="270" y="45" width="180" height="55" rx="8" fill="#26a69a20" stroke="#26a69a" stroke-width="1.5"/>
+<text x="360" y="68" fill="#26a69a" font-size="11" text-anchor="middle" font-weight="bold">Ganancia por Acción (EPS)</text>
+<text x="360" y="88" fill="white" font-size="18" text-anchor="middle" font-weight="bold">$6.00</text>
+<text x="240" y="130" fill="#f59e0b" font-size="18" text-anchor="middle" font-weight="bold">=</text>
+<rect x="140" y="140" width="200" height="50" rx="8" fill="#f59e0b20" stroke="#f59e0b" stroke-width="1.5"/>
+<text x="240" y="162" fill="#f59e0b" font-size="11" text-anchor="middle" font-weight="bold">P/E Ratio</text>
+<text x="240" y="182" fill="white" font-size="18" text-anchor="middle" font-weight="bold">25x</text>
+</svg>
+</div>
+
+<div class="vocab-card">
+<h4>P/E Ratio (Price to Earnings)</h4>
+<p><strong>Precio de la acción ÷ Ganancia por acción (EPS).</strong> Es la métrica más usada. Un P/E de 25 significa que estás pagando $25 por cada $1 de ganancia. P/E alto = expectativas de crecimiento alto (o acción cara). P/E bajo = empresa infravalorada (o con problemas). El P/E promedio del S&P 500 históricamente es ~20-22.</p>
+</div>
+
+<div class="vocab-card">
+<h4>Revenue (Ingresos) y Earnings (Ganancias)</h4>
+<p><strong>Revenue</strong> es TODO el dinero que entra a la empresa (ventas totales). <strong>Earnings (Net Income)</strong> es lo que queda después de restar costos, impuestos, etc. Una empresa puede tener revenue enorme pero earnings negativos (pierde dinero). Amazon fue así durante años.</p>
+</div>
+
+<div class="vocab-card">
+<h4>EPS (Earnings Per Share - Ganancia por Acción)</h4>
+<p><strong>Ganancia neta ÷ número de acciones.</strong> Si la empresa ganó $6 mil millones y tiene 1,000 millones de acciones, el EPS es $6.00. Trimestre a trimestre, el mercado compara el EPS real vs. el esperado por los analistas (consensus). Superar expectativas = acción sube. Decepcionar = acción cae.</p>
+</div>
+
+<div class="vocab-card">
+<h4>Market Cap (Capitalización de Mercado)</h4>
+<p><strong>Precio de acción × número total de acciones.</strong> Es el "tamaño" de la empresa. Mega cap: >$200B (Apple, Microsoft). Large cap: $10B-$200B. Mid cap: $2B-$10B. Small cap: <$2B. Las small caps son más volátiles y arriesgadas, las mega caps son más estables.</p>
+</div>
+
+<h3>Balance Sheet Básico: Lo Esencial</h3>
+
+<div class="grid-cards">
+<div class="card">
+<h4>Activos (Assets)</h4>
+<p>Todo lo que la empresa posee: efectivo, propiedades, inventario, patentes. El efectivo disponible (Cash & Equivalents) es crucial - una empresa con mucho cash puede sobrevivir crisis.</p>
+</div>
+<div class="card">
+<h4>Pasivos (Liabilities)</h4>
+<p>Todo lo que la empresa debe: deudas, préstamos, obligaciones. Una empresa con deuda excesiva es arriesgada. Mira el ratio Deuda/Equity: mayor a 2 es señal de alerta.</p>
+</div>
+<div class="card">
+<h4>Equity (Patrimonio Neto)</h4>
+<p>Activos - Pasivos = Equity. Es lo que realmente "vale" la empresa para los accionistas. Si los pasivos superan los activos, la empresa tiene equity negativo (peligro).</p>
+</div>
+</div>
+
+<h3>Earnings Reports: Cómo Mueven las Acciones</h3>
+
+<div class="highlight-box yellow">
+<h4>Los Earnings son el Evento Más Importante para una Acción</h4>
+<p>Cada trimestre, las empresas publican sus resultados financieros. El mercado reacciona violentamente comparando los resultados REALES vs. las EXPECTATIVAS de los analistas (consensus). No importa si la empresa ganó mucho dinero; importa si ganó MÁS o MENOS de lo que se esperaba.</p>
+</div>
+
+<div class="example-box">
+<h4>Ejemplo: Apple reporta Earnings</h4>
+<p><strong>Expectativa de analistas:</strong> EPS $1.50, Revenue $90B. <strong>Resultado real:</strong> EPS $1.65, Revenue $94B. Apple SUPERÓ expectativas → la acción sube 3-5% after-hours. Pero si Apple reporta EPS $1.45, Revenue $88B → DECEPCIONÓ → la acción puede caer 5-8% incluso si ganó miles de millones.</p>
+</div>
+
+<h3>Pre-Market y After-Hours: Trading Fuera de Horario</h3>
+
+<div class="highlight-box blue">
+<h4>Horarios Extendidos</h4>
+<p><strong>Pre-market:</strong> 4:00 AM - 9:30 AM ET. Los earnings se publican aquí frecuentemente. Volumen bajo, spreads amplios, movimientos exagerados. <strong>After-hours:</strong> 4:00 PM - 8:00 PM ET. Los resultados trimestrales suelen salir justo después del cierre (4:05-4:15 PM). Los movimientos after-hours pueden revertirse al día siguiente cuando entra más volumen.</p>
+</div>
+
+<div class="warning-box">
+<h4>⚠️ Cuidado con el Trading Fuera de Horario</h4>
+<p>El volumen en pre-market y after-hours es muy bajo. Los spreads son amplios, la liquidez escasa, y los movimientos pueden ser exagerados. Un gap de -5% after-hours puede convertirse en solo -2% al abrir el mercado regular cuando entra más volumen. No tomes decisiones precipitadas basándote solo en movimientos fuera de horario.</p>
+</div>
+
+<h3>Análisis por Sectores</h3>
+
+<div class="grid-cards">
+<div class="card">
+<h4>Tecnología (XLK)</h4>
+<p>Alto crecimiento, P/E elevados. Sensibles a tasas de interés (tasas altas = tech baja). FAANG/Magnificent 7 dominan el S&P 500.</p>
+</div>
+<div class="card">
+<h4>Financiero (XLF)</h4>
+<p>Bancos se benefician de tasas de interés altas (mayor margen de préstamos). Sensibles a la curva de rendimientos.</p>
+</div>
+<div class="card">
+<h4>Energía (XLE)</h4>
+<p>Ligado al precio del petróleo. Ciclo económico lo afecta mucho. Alta volatilidad.</p>
+</div>
+<div class="card">
+<h4>Salud/Defensivo (XLV)</h4>
+<p>Menos volátil, considerado defensivo. La gente necesita medicinas sin importar la economía. Buen sector en recesiones.</p>
+</div>
+</div>
+
+<h3>Combinando Fundamental + Técnico para Acciones</h3>
+
+<div class="strategy-box">
+<h4>El Método Dual: Fundamental para Seleccionar, Técnico para el Timing</h4>
+<ol>
+<li><strong>Filtra con fundamentales:</strong> Busca acciones con earnings crecientes, P/E razonable para su sector, deuda manejable, y revenue en aumento.</li>
+<li><strong>Identifica el sesgo:</strong> ¿La empresa está en tendencia fundamental positiva (crecimiento) o negativa (declive)?</li>
+<li><strong>Usa el técnico para la entrada:</strong> Espera a que el gráfico te dé un setup: pullback a soporte, rotura de resistencia con volumen, patrón de vela de reversión.</li>
+<li><strong>Confirma con earnings:</strong> No abras posiciones grandes justo antes de un reporte de earnings (riesgo de gap enorme). Espera después del reporte para ver la reacción.</li>
+</ol>
+</div>`,
+          keyPoints: [
+            "P/E Ratio = Precio ÷ EPS; un P/E alto significa altas expectativas de crecimiento (o acción cara)",
+            "Los earnings reports mueven acciones violentamente: importa si superan o decepcionan vs. las EXPECTATIVAS, no el resultado absoluto",
+            "Pre-market y after-hours tienen bajo volumen y spreads amplios; los movimientos pueden revertirse en sesión regular",
+            "Market Cap define el tamaño: Mega cap (>$200B) es estable, Small cap (<$2B) es volátil",
+            "Combina fundamental (QUÉ comprar) con técnico (CUÁNDO comprar) para máxima efectividad"
+          ],
+          quiz: [
+            {
+              question: "¿Qué significa un P/E Ratio de 30 para una acción?",
+              options: [
+                "La acción ha subido 30% este año",
+                "Estás pagando $30 por cada $1 de ganancia de la empresa",
+                "La empresa tiene 30 empleados",
+                "La acción cuesta $30"
+              ],
+              correctIndex: 1,
+              explanation: "P/E = Precio ÷ Earnings Per Share. Un P/E de 30 significa que pagas $30 por cada $1 que la empresa gana. Esto puede indicar altas expectativas de crecimiento futuro o que la acción está sobrevalorada."
+            },
+            {
+              question: "¿Por qué una acción puede CAER después de reportar ganancias récord?",
+              options: [
+                "Porque el mercado es irracional",
+                "Porque las ganancias fueron altas pero MENORES a lo que los analistas esperaban",
+                "Porque los traders siempre venden después de earnings",
+                "Porque la bolsa cierra después del reporte"
+              ],
+              correctIndex: 1,
+              explanation: "Lo que mueve la acción no es el resultado absoluto sino la comparación con las EXPECTATIVAS (consensus). Si los analistas esperaban EPS de $2.00 y la empresa reporta $1.80, la acción cae aunque $1.80 sea un récord histórico."
+            },
+            {
+              question: "¿Cuál es la forma más segura de usar análisis fundamental y técnico juntos?",
+              options: [
+                "Solo usar fundamental e ignorar gráficos",
+                "Solo usar técnico e ignorar los números de la empresa",
+                "Usar fundamental para seleccionar QUÉ comprar y técnico para decidir CUÁNDO entrar",
+                "Alternar entre uno y otro cada semana"
+              ],
+              correctIndex: 2,
+              explanation: "El método más efectivo combina ambos: los fundamentales te dicen qué empresas son sólidas, y el análisis técnico te da el timing óptimo de entrada con soportes, resistencias y patrones de precio."
+            }
+          ],
+          practicalExercise: "Ve a Yahoo Finance o Finviz.com. Elige 3 acciones del S&P 500 de sectores diferentes. Para cada una, anota: (1) P/E Ratio actual y compáralo con el promedio del sector. (2) EPS del último trimestre: ¿superó o decepcionó las expectativas? (3) Revenue: ¿está creciendo trimestre a trimestre? (4) Deuda total vs. Cash disponible. Luego abre el gráfico de cada una en TradingView y marca los niveles de soporte/resistencia clave. ¿Alguna está en un buen nivel técnico para entrar?"
+        },
+        // --------------------------------------------------------------
+        // LESSON 2-5-3: TRADING DE NOTICIAS
+        // --------------------------------------------------------------
+        {
+          id: "2-5-3",
+          title: "Trading de Noticias: NFP, CPI y FOMC Paso a Paso",
+          duration: "30 min",
+          content: `
+<h2>Trading de Noticias: Cómo Operar los 3 Eventos que Más Mueven el Mercado</h2>
+
+<div class="analogy-box">
+<h3>La Analogía del Terremoto</h3>
+<p>Los datos económicos son como terremotos en el mercado. El <strong>NFP</strong> es un terremoto de magnitud 8: mueve TODO. El <strong>CPI</strong> es magnitud 7: sacude fuerte. El <strong>FOMC</strong> es magnitud 9: puede cambiar la dirección del mercado durante meses. No intentas predecir el terremoto; te preparas para REACCIONAR cuando ocurra.</p>
+</div>
+
+<div class="warning-box">
+<h4>🚨 REGLA DE ORO: NUNCA Operes DENTRO de la Noticia</h4>
+<p>El error más caro de los traders novatos es intentar "adivinar" el resultado del dato y abrir una posición ANTES de la publicación. Esto es <strong>apostar, no tradear</strong>. El spread se amplía enormemente (de 1 pip a 20+ pips en EUR/USD), los slippages son brutales, y las mechas pueden activar tu stop loss en ambas direcciones en segundos. <strong>La regla profesional: opera la REACCIÓN, no la noticia.</strong></p>
+</div>
+
+<h3>1. NFP (Non-Farm Payrolls) - El Dato Rey del Forex</h3>
+
+<div class="highlight-box purple">
+<h4>¿Qué es el NFP?</h4>
+<p>El informe de empleo no agrícola de Estados Unidos. Mide cuántos empleos se crearon o perdieron en el mes anterior (excluyendo el sector agrícola). Se publica el <strong>primer viernes de cada mes a las 8:30 AM ET</strong>. Es el dato de empleo más importante del mundo porque el empleo es uno de los dos mandatos de la Fed (empleo máximo + estabilidad de precios).</p>
+</div>
+
+<div class="grid-cards">
+<div class="card">
+<h4>NFP Mejor de lo Esperado (más empleos)</h4>
+<p>Economía fuerte → Fed puede subir tasas → USD se fortalece → EUR/USD baja, GBP/USD baja, Oro baja, Índices pueden subir o bajar (depende del contexto de tasas).</p>
+</div>
+<div class="card">
+<h4>NFP Peor de lo Esperado (menos empleos)</h4>
+<p>Economía débil → Fed puede bajar tasas → USD se debilita → EUR/USD sube, GBP/USD sube, Oro sube, Índices pueden bajar.</p>
+</div>
+</div>
+
+<h3>2. CPI (Consumer Price Index) - El Dato de la Inflación</h3>
+
+<div class="highlight-box blue">
+<h4>¿Qué es el CPI?</h4>
+<p>El Índice de Precios al Consumidor mide la inflación: cuánto suben los precios de bienes y servicios. Se publica <strong>el segundo martes de cada mes a las 8:30 AM ET</strong> (aproximadamente). Hay dos versiones: CPI general (incluye alimentos y energía) y <strong>Core CPI</strong> (excluye alimentos y energía, más importante para la Fed).</p>
+</div>
+
+<div class="grid-cards">
+<div class="card">
+<h4>CPI Mayor de lo Esperado (más inflación)</h4>
+<p>Inflación alta → Fed sube tasas o las mantiene altas → USD sube, Bonos bajan, Tech baja, Oro reacciona mixto (inflación positiva pero USD fuerte es negativo).</p>
+</div>
+<div class="card">
+<h4>CPI Menor de lo Esperado (menos inflación)</h4>
+<p>Inflación cediendo → Fed puede bajar tasas → USD baja, Bonos suben, Tech sube, S&P 500 sube, Oro sube.</p>
+</div>
+</div>
+
+<h3>3. FOMC (Federal Open Market Committee) - La Decisión de Tasas</h3>
+
+<div class="highlight-box green">
+<h4>¿Qué es el FOMC?</h4>
+<p>El comité de la Reserva Federal que decide las tasas de interés de EE.UU. Se reúne <strong>8 veces al año</strong>. La decisión se publica a las <strong>2:00 PM ET</strong>, seguida de una <strong>conferencia de prensa de Jerome Powell a las 2:30 PM ET</strong>. La conferencia de prensa a menudo mueve más que la decisión misma porque revela las intenciones futuras de la Fed.</p>
+</div>
+
+<div class="vocab-card">
+<h4>Dot Plot (Gráfico de Puntos)</h4>
+<p>Se publica cada 3 meses (marzo, junio, septiembre, diciembre). Muestra las proyecciones individuales de cada miembro del FOMC sobre dónde estarán las tasas en el futuro. Es clave porque revela si la Fed planea subir, mantener o bajar tasas.</p>
+</div>
+
+<h3>Protocolo de Trading de Noticias: Paso a Paso</h3>
+
+<div style="display:flex;justify-content:center;margin:24px 0">
+<svg width="540" height="300" viewBox="0 0 540 300" style="background:#131722;border-radius:12px;border:1px solid #2a2a40">
+<text x="270" y="22" fill="white" font-size="12" text-anchor="middle" font-weight="bold">PROTOCOLO DE TRADING: NFP (Ejemplo)</text>
+<rect x="20" y="40" width="150" height="80" rx="8" fill="#ef535020" stroke="#ef5350" stroke-width="1.5"/>
+<text x="95" y="58" fill="#ef5350" font-size="10" text-anchor="middle" font-weight="bold">ANTES (30 min)</text>
+<text x="95" y="75" fill="#a0a0b8" font-size="8" text-anchor="middle">• Cierra trades abiertos</text>
+<text x="95" y="87" fill="#a0a0b8" font-size="8" text-anchor="middle">• Marca S/R en M15 y H1</text>
+<text x="95" y="99" fill="#a0a0b8" font-size="8" text-anchor="middle">• Reduce tamaño de posición</text>
+<text x="95" y="111" fill="#a0a0b8" font-size="8" text-anchor="middle">• NO abras nuevos trades</text>
+<line x1="170" y1="80" x2="190" y2="80" stroke="#f59e0b" stroke-width="2" marker-end="url(#arrowhead)"/>
+<rect x="195" y="40" width="150" height="80" rx="8" fill="#f59e0b20" stroke="#f59e0b" stroke-width="1.5"/>
+<text x="270" y="58" fill="#f59e0b" font-size="10" text-anchor="middle" font-weight="bold">DURANTE (0-15 min)</text>
+<text x="270" y="75" fill="#a0a0b8" font-size="8" text-anchor="middle">• NO operes - solo observa</text>
+<text x="270" y="87" fill="#a0a0b8" font-size="8" text-anchor="middle">• Spread amplísimo (20+ pips)</text>
+<text x="270" y="99" fill="#a0a0b8" font-size="8" text-anchor="middle">• Mechas falsas enormes</text>
+<text x="270" y="111" fill="#a0a0b8" font-size="8" text-anchor="middle">• Slippage brutal</text>
+<line x1="345" y1="80" x2="365" y2="80" stroke="#f59e0b" stroke-width="2" marker-end="url(#arrowhead2)"/>
+<rect x="370" y="40" width="150" height="80" rx="8" fill="#26a69a20" stroke="#26a69a" stroke-width="1.5"/>
+<text x="445" y="58" fill="#26a69a" font-size="10" text-anchor="middle" font-weight="bold">DESPUÉS (15-60 min)</text>
+<text x="445" y="75" fill="#a0a0b8" font-size="8" text-anchor="middle">• Espera que el spread se</text>
+<text x="445" y="87" fill="#a0a0b8" font-size="8" text-anchor="middle">  normalice (15-30 min)</text>
+<text x="445" y="99" fill="#a0a0b8" font-size="8" text-anchor="middle">• Busca retest de niveles</text>
+<text x="445" y="111" fill="#a0a0b8" font-size="8" text-anchor="middle">• Entra en la REACCIÓN</text>
+<defs>
+<marker id="arrowhead" markerWidth="6" markerHeight="4" refX="6" refY="2" orient="auto"><polygon points="0 0, 6 2, 0 4" fill="#f59e0b"/></marker>
+<marker id="arrowhead2" markerWidth="6" markerHeight="4" refX="6" refY="2" orient="auto"><polygon points="0 0, 6 2, 0 4" fill="#f59e0b"/></marker>
+</defs>
+<rect x="20" y="150" width="500" height="130" rx="8" fill="#14b8a610" stroke="#14b8a6" stroke-width="1"/>
+<text x="270" y="172" fill="#14b8a6" font-size="11" text-anchor="middle" font-weight="bold">SETUP POST-NFP (la estrategia profesional)</text>
+<text x="40" y="195" fill="#a0a0b8" font-size="9">1. Espera 15-30 minutos después de la publicación a que se calme la volatilidad inicial</text>
+<text x="40" y="212" fill="#a0a0b8" font-size="9">2. Identifica la DIRECCIÓN DOMINANTE: ¿el precio se estabilizó arriba o abajo del nivel pre-noticia?</text>
+<text x="40" y="229" fill="#a0a0b8" font-size="9">3. Espera un PULLBACK (retroceso) hacia una zona de soporte/resistencia clave en M15</text>
+<text x="40" y="246" fill="#a0a0b8" font-size="9">4. Busca una vela de confirmación (engulfing, pin bar) en la zona de S/R</text>
+<text x="40" y="263" fill="#a0a0b8" font-size="9">5. Entra con stop loss por debajo/encima de la zona. Target: siguiente nivel de S/R o 1:2 R:R</text>
+</svg>
+</div>
+
+<div class="strategy-box">
+<h4>Calendario Económico: Tu Herramienta Esencial</h4>
+<ol>
+<li><strong>Usa ForexFactory.com o Investing.com:</strong> Filtra solo los eventos de impacto ALTO (bandera roja).</li>
+<li><strong>Anota los 3 datos clave del mes:</strong> NFP (primer viernes), CPI (segundo martes aprox.), FOMC (fechas fijas).</li>
+<li><strong>Revisa el CONSENSUS (expectativa):</strong> Antes de cada dato, los analistas publican su expectativa. Lo que importa es la DESVIACIÓN entre el dato real y el consensus.</li>
+<li><strong>Mira el dato anterior:</strong> Una sorpresa grande respecto al dato anterior amplifica la reacción.</li>
+</ol>
+</div>
+
+<div class="example-box">
+<h4>Ejemplo Real: Trading Post-NFP en EUR/USD</h4>
+<p><strong>Consensus:</strong> 200K empleos. <strong>Resultado:</strong> 280K (mucho mejor). Reacción inmediata: EUR/USD cae 70 pips en 5 minutos (USD se fortalece). Spread pasa de 1 pip a 15 pips. Después de 20 minutos, el spread vuelve a 2 pips. EUR/USD retrocede (pullback) 30 pips hacia arriba, tocando una resistencia rota que ahora es soporte. Pin bar bajista en M15 en esa zona → ENTRY SHORT. Stop loss: 20 pips arriba de la zona. Target: mínimo del spike inicial. Resultado: +50 pips con 1:2.5 R:R.</p>
+</div>
+
+<div class="warning-box">
+<h4>⚠️ FOMC: Cuidado con la Conferencia de Prensa</h4>
+<p>La decisión de tasas a las 2:00 PM ET puede mover el mercado en una dirección, y la conferencia de prensa de Powell a las 2:30 PM puede REVERTIR todo el movimiento. No pongas targets agresivos entre las 2:00 y las 3:00 PM en días de FOMC. Espera a que termine la conferencia de prensa para operar con más claridad.</p>
+</div>`,
+          keyPoints: [
+            "NUNCA operes DENTRO de la noticia: opera la REACCIÓN 15-30 minutos después cuando el spread se normaliza",
+            "NFP (primer viernes, 8:30 AM ET): dato de empleo más importante; mejor de lo esperado = USD fuerte",
+            "CPI: dato de inflación; Core CPI es el más importante para la Fed y afecta expectativas de tasas",
+            "FOMC: la conferencia de prensa de Powell (2:30 PM) puede revertir la reacción a la decisión de tasas (2:00 PM)",
+            "Siempre revisa el CONSENSUS antes del dato: lo que importa es la DESVIACIÓN entre lo real y lo esperado"
+          ],
+          quiz: [
+            {
+              question: "¿Cuál es la regla más importante al tradear noticias como el NFP?",
+              options: [
+                "Abrir la posición 5 minutos antes del dato para anticipar",
+                "Usar el máximo apalancamiento para aprovechar la volatilidad",
+                "Nunca operar DENTRO del dato; esperar 15-30 min y operar la REACCIÓN",
+                "Cerrar todas las posiciones y no operar ese día"
+              ],
+              correctIndex: 2,
+              explanation: "La regla de oro es operar la REACCIÓN, no la noticia. Durante la publicación, el spread se amplía enormemente, hay slippage brutal y mechas falsas. Los profesionales esperan 15-30 minutos a que se calme y luego buscan un setup en la dirección dominante."
+            },
+            {
+              question: "¿Qué pasa generalmente con EUR/USD si el NFP sale MUCHO MEJOR de lo esperado?",
+              options: [
+                "EUR/USD sube porque la economía está fuerte",
+                "EUR/USD baja porque un NFP fuerte fortalece el USD",
+                "No tiene efecto en EUR/USD",
+                "Depende del color de la vela anterior"
+              ],
+              correctIndex: 1,
+              explanation: "NFP mejor de lo esperado = economía fuerte = la Fed puede subir o mantener tasas altas = USD se fortalece. Como EUR/USD es euro contra dólar, si el dólar sube, EUR/USD baja."
+            },
+            {
+              question: "¿Por qué es peligroso operar durante la decisión del FOMC sin esperar a la conferencia de prensa?",
+              options: [
+                "Porque el mercado cierra durante la conferencia",
+                "Porque la conferencia de prensa puede REVERTIR toda la reacción inicial a la decisión de tasas",
+                "Porque la decisión siempre es la esperada",
+                "Porque los brokers bloquean las operaciones"
+              ],
+              correctIndex: 1,
+              explanation: "La decisión de tasas a las 2:00 PM puede mover el mercado en una dirección, pero la conferencia de prensa de Powell a las 2:30 PM, donde revela intenciones futuras, puede REVERTIR completamente ese movimiento. Los profesionales esperan hasta después de las 3:00 PM."
+            },
+            {
+              question: "¿Qué es el Core CPI y por qué es más importante que el CPI general?",
+              options: [
+                "Incluye más categorías de productos",
+                "Es más barato de calcular",
+                "Excluye alimentos y energía (volátiles) y refleja mejor la tendencia inflacionaria subyacente que la Fed monitorea",
+                "Solo mide precios en las ciudades principales"
+              ],
+              correctIndex: 2,
+              explanation: "El Core CPI excluye alimentos y energía porque sus precios son muy volátiles (petróleo, clima). La Fed prefiere el Core CPI porque muestra la tendencia de inflación 'subyacente' sin el ruido de factores temporales."
+            }
+          ],
+          practicalExercise: "Abre ForexFactory.com y encuentra las fechas de los próximos NFP, CPI y FOMC. Para cada uno: (1) Anota el consensus (expectativa) cuando esté disponible. (2) Después de la publicación, observa EUR/USD en M15 durante los primeros 60 minutos SIN operar. Anota: cuánto se movió en los primeros 5 minutos, cuánto se amplió el spread, cuándo se normalizó el spread, y si hubo un pullback tradeable después. (3) Marca en el gráfico dónde habrías entrado usando el protocolo post-noticia."
+        },
+        // --------------------------------------------------------------
+        // LESSON 2-5-4: TRADING DE GAPS
+        // --------------------------------------------------------------
+        {
+          id: "2-5-4",
+          title: "Trading de Gaps: Gap Fill, Gap and Go, Exhaustion Gaps",
+          duration: "20 min",
+          content: `
+<h2>Trading de Gaps: Cómo Aprovechar los Saltos del Precio</h2>
+
+<div class="analogy-box">
+<h3>La Analogía del Ascensor</h3>
+<p>Normalmente, el precio se mueve como una persona subiendo escaleras: un paso a la vez. Un <strong>gap</strong> es cuando el precio toma un ascensor: salta de un piso a otro sin pasar por los pisos intermedios. Esto deja un "hueco" en el gráfico donde no hubo transacciones. Entender POR QUÉ se produjo el gap y QUÉ TIPO de gap es te dice si el precio va a volver a "llenar" ese hueco o si va a seguir en la misma dirección.</p>
+</div>
+
+<div class="highlight-box purple">
+<h4>¿Qué es un Gap?</h4>
+<p>Un <strong>gap</strong> (hueco) ocurre cuando el precio de apertura de una sesión es significativamente diferente al precio de cierre de la sesión anterior. No hay velas ni transacciones en ese rango de precio. Los gaps ocurren por noticias fuera de horario, earnings after-hours, eventos geopolíticos de fin de semana, o cambios drásticos en el sentimiento del mercado.</p>
+</div>
+
+<h3>Los 4 Tipos de Gaps</h3>
+
+<div style="display:flex;justify-content:center;margin:24px 0">
+<svg width="540" height="400" viewBox="0 0 540 400" style="background:#131722;border-radius:12px;border:1px solid #2a2a40">
+<text x="270" y="22" fill="white" font-size="12" text-anchor="middle" font-weight="bold">LOS 4 TIPOS DE GAPS</text>
+
+<rect x="15" y="40" width="245" height="160" rx="8" fill="#78909c15" stroke="#78909c" stroke-width="1"/>
+<text x="137" y="60" fill="#78909c" font-size="10" text-anchor="middle" font-weight="bold">1. COMMON GAP (Ordinario)</text>
+<rect x="35" y="100" width="14" height="30" rx="2" fill="#26a69a"/>
+<rect x="55" y="90" width="14" height="35" rx="2" fill="#26a69a"/>
+<rect x="75" y="95" width="14" height="25" rx="2" fill="#ef5350"/>
+<rect x="95" y="85" width="14" height="30" rx="2" fill="#26a69a"/>
+<rect x="130" y="110" width="14" height="25" rx="2" fill="#ef5350"/>
+<line x1="109" y1="105" x2="130" y2="110" stroke="#f59e0b" stroke-width="1" stroke-dasharray="3,2"/>
+<rect x="109" y="105" width="21" height="5" fill="#f59e0b20"/>
+<text x="120" y="103" fill="#f59e0b" font-size="7">gap</text>
+<rect x="150" y="95" width="14" height="30" rx="2" fill="#26a69a"/>
+<rect x="170" y="100" width="14" height="25" rx="2" fill="#26a69a"/>
+<polyline points="155,105 165,100 180,107" fill="none" stroke="#78909c" stroke-width="1" stroke-dasharray="2,2"/>
+<text x="137" y="155" fill="#78909c" font-size="8" text-anchor="middle">Se llena rápidamente</text>
+<text x="137" y="168" fill="#78909c" font-size="8" text-anchor="middle">Sin significado especial</text>
+<text x="137" y="181" fill="#78909c" font-size="8" text-anchor="middle">Bajo volumen, dentro de rango</text>
+<text x="137" y="194" fill="#26a69a" font-size="8" text-anchor="middle" font-weight="bold">→ Tradea el GAP FILL</text>
+
+<rect x="280" y="40" width="245" height="160" rx="8" fill="#26a69a15" stroke="#26a69a" stroke-width="1"/>
+<text x="402" y="60" fill="#26a69a" font-size="10" text-anchor="middle" font-weight="bold">2. BREAKAWAY GAP (Ruptura)</text>
+<rect x="300" y="130" width="14" height="25" rx="2" fill="#ef5350"/>
+<rect x="320" y="125" width="14" height="30" rx="2" fill="#ef5350"/>
+<rect x="340" y="120" width="14" height="28" rx="2" fill="#26a69a"/>
+<rect x="375" y="80" width="14" height="30" rx="2" fill="#26a69a"/>
+<line x1="354" y1="120" x2="375" y2="110" stroke="#f59e0b" stroke-width="1" stroke-dasharray="3,2"/>
+<rect x="354" y="110" width="21" height="10" fill="#f59e0b20"/>
+<text x="365" y="108" fill="#f59e0b" font-size="7">GAP</text>
+<rect x="395" y="75" width="14" height="35" rx="2" fill="#26a69a"/>
+<rect x="415" y="70" width="14" height="30" rx="2" fill="#26a69a"/>
+<rect x="435" y="65" width="14" height="35" rx="2" fill="#26a69a"/>
+<line x1="300" y1="135" x2="360" y2="135" stroke="#78909c" stroke-width="1" stroke-dasharray="3,2"/>
+<text x="330" y="147" fill="#78909c" font-size="7">Rango previo</text>
+<text x="402" y="155" fill="#26a69a" font-size="8" text-anchor="middle">Rompe una consolidación</text>
+<text x="402" y="168" fill="#26a69a" font-size="8" text-anchor="middle">Alto volumen</text>
+<text x="402" y="181" fill="#26a69a" font-size="8" text-anchor="middle">Inicio de nueva tendencia</text>
+<text x="402" y="194" fill="#26a69a" font-size="8" text-anchor="middle" font-weight="bold">→ Tradea en dirección del gap</text>
+
+<rect x="15" y="220" width="245" height="160" rx="8" fill="#8b5cf615" stroke="#8b5cf6" stroke-width="1"/>
+<text x="137" y="240" fill="#8b5cf6" font-size="10" text-anchor="middle" font-weight="bold">3. RUNAWAY GAP (Continuación)</text>
+<rect x="35" y="310" width="14" height="25" rx="2" fill="#26a69a"/>
+<rect x="55" y="300" width="14" height="30" rx="2" fill="#26a69a"/>
+<rect x="75" y="290" width="14" height="28" rx="2" fill="#26a69a"/>
+<rect x="95" y="280" width="14" height="30" rx="2" fill="#26a69a"/>
+<rect x="130" y="258" width="14" height="30" rx="2" fill="#26a69a"/>
+<line x1="109" y1="280" x2="130" y2="288" stroke="#f59e0b" stroke-width="1" stroke-dasharray="3,2"/>
+<rect x="109" y="278" width="21" height="10" fill="#f59e0b20"/>
+<text x="120" y="276" fill="#f59e0b" font-size="7">GAP</text>
+<rect x="150" y="248" width="14" height="30" rx="2" fill="#26a69a"/>
+<rect x="170" y="240" width="14" height="28" rx="2" fill="#26a69a"/>
+<rect x="190" y="260" width="14" height="20" rx="2" fill="#26a69a"/>
+<text x="137" y="340" fill="#8b5cf6" font-size="8" text-anchor="middle">Ocurre EN MEDIO de tendencia</text>
+<text x="137" y="353" fill="#8b5cf6" font-size="8" text-anchor="middle">Señal de fuerza y momentum</text>
+<text x="137" y="366" fill="#8b5cf6" font-size="8" text-anchor="middle" font-weight="bold">→ Tradea en dirección del gap</text>
+
+<rect x="280" y="220" width="245" height="160" rx="8" fill="#ef535015" stroke="#ef5350" stroke-width="1"/>
+<text x="402" y="240" fill="#ef5350" font-size="10" text-anchor="middle" font-weight="bold">4. EXHAUSTION GAP (Agotamiento)</text>
+<rect x="300" y="320" width="14" height="25" rx="2" fill="#26a69a"/>
+<rect x="320" y="310" width="14" height="30" rx="2" fill="#26a69a"/>
+<rect x="340" y="295" width="14" height="28" rx="2" fill="#26a69a"/>
+<rect x="360" y="285" width="14" height="30" rx="2" fill="#26a69a"/>
+<rect x="395" y="265" width="14" height="25" rx="2" fill="#26a69a"/>
+<line x1="374" y1="285" x2="395" y2="290" stroke="#f59e0b" stroke-width="1" stroke-dasharray="3,2"/>
+<rect x="374" y="282" width="21" height="8" fill="#f59e0b20"/>
+<text x="385" y="280" fill="#f59e0b" font-size="7">GAP</text>
+<rect x="415" y="280" width="14" height="25" rx="2" fill="#ef5350"/>
+<rect x="435" y="290" width="14" height="30" rx="2" fill="#ef5350"/>
+<rect x="455" y="305" width="14" height="28" rx="2" fill="#ef5350"/>
+<text x="402" y="346" fill="#ef5350" font-size="8" text-anchor="middle">Ocurre al FINAL de tendencia</text>
+<text x="402" y="359" fill="#ef5350" font-size="8" text-anchor="middle">Seguido de reversión</text>
+<text x="402" y="372" fill="#ef5350" font-size="8" text-anchor="middle">Volumen alto pero se llena rápido</text>
+<text x="402" y="385" fill="#ef5350" font-size="8" text-anchor="middle" font-weight="bold">→ Tradea el GAP FILL (reversión)</text>
+</svg>
+</div>
+
+<h3>Estrategia 1: Gap Fill (70% de los Gaps se Llenan)</h3>
+
+<div class="strategy-box">
+<h4>Gap Fill: La Estrategia de Mayor Probabilidad</h4>
+<p>Estadísticamente, <strong>aproximadamente el 70% de los gaps se llenan</strong> (el precio vuelve al nivel pre-gap). Esta estrategia aprovecha esa probabilidad:</p>
+<ol>
+<li><strong>Identifica el gap:</strong> El precio abre significativamente arriba o abajo del cierre anterior.</li>
+<li><strong>Determina el tipo:</strong> Los Common Gaps y Exhaustion Gaps se llenan con mayor frecuencia. Los Breakaway Gaps a menudo NO se llenan.</li>
+<li><strong>Espera confirmación:</strong> No entres inmediatamente. Espera los primeros 15-30 minutos para ver si el precio empieza a revertir hacia el gap.</li>
+<li><strong>Entrada:</strong> Entra en dirección contraria al gap (si el gap fue al alza, ve SHORT; si fue a la baja, ve LONG).</li>
+<li><strong>Target:</strong> El cierre de la sesión anterior (el nivel donde "se llena" el gap).</li>
+<li><strong>Stop loss:</strong> Por encima/debajo del extremo del gap.</li>
+</ol>
+</div>
+
+<h3>Estrategia 2: Gap and Go (Cuando el Gap NO se Llena)</h3>
+
+<div class="strategy-box">
+<h4>Gap and Go: Siguiendo el Momentum</h4>
+<p>Cuando el gap tiene fuerza (Breakaway o Runaway), el precio NO se llena y continúa en la dirección del gap:</p>
+<ol>
+<li><strong>Identifica un gap con volumen alto:</strong> El volumen en la apertura es 2-3x el promedio.</li>
+<li><strong>Espera 15-30 minutos:</strong> Si el precio NO intenta llenar el gap y se mantiene o sigue en la dirección del gap...</li>
+<li><strong>Entrada:</strong> En la dirección del gap, en un mini-pullback dentro de la nueva tendencia.</li>
+<li><strong>Stop loss:</strong> En el punto medio del gap (si se llena hasta la mitad, la tesis está rota).</li>
+<li><strong>Target:</strong> Extensión del movimiento usando Fibonacci o niveles de S/R previos.</li>
+</ol>
+</div>
+
+<h3>Weekend Gaps en Forex</h3>
+
+<div class="highlight-box yellow">
+<h4>Gaps de Fin de Semana en Forex</h4>
+<p>El Forex cierra el viernes a las 5:00 PM ET y reabre el domingo a las 5:00 PM ET. Si ocurre algo importante durante el fin de semana (elecciones, crisis geopolítica, reunión del G7), el precio puede abrir el domingo con un gap significativo. La estadística: <strong>la mayoría de los weekend gaps en Forex se llenan durante la semana siguiente</strong>. Estrategia: si el gap no es por un evento fundamental masivo, busca el gap fill durante las siguientes 24-48 horas.</p>
+</div>
+
+<h3>¿Cómo Identificar el Tipo de Gap?</h3>
+
+<div class="grid-cards">
+<div class="card">
+<h4>¿Es un Common Gap?</h4>
+<p>Ocurre dentro de un rango de consolidación. Sin catalizador de noticias obvio. Volumen normal o bajo. Se llena en pocas horas.</p>
+</div>
+<div class="card">
+<h4>¿Es un Breakaway Gap?</h4>
+<p>Rompe una consolidación o rango claro. Catalizador de noticias presente. Volumen muy alto. El precio no vuelve al gap.</p>
+</div>
+<div class="card">
+<h4>¿Es un Runaway Gap?</h4>
+<p>Ocurre en medio de una tendencia fuerte ya establecida. Señal de aceleración del momentum. No tiene por qué haber noticia nueva.</p>
+</div>
+<div class="card">
+<h4>¿Es un Exhaustion Gap?</h4>
+<p>Ocurre después de una tendencia larga/extendida. Volumen alto al inicio pero se revierte rápidamente. Señal de que la tendencia está agotada.</p>
+</div>
+</div>
+
+<div class="warning-box">
+<h4>⚠️ Precaución con los Gaps</h4>
+<p>Nunca asumas automáticamente que un gap se va a llenar. Identifica primero el tipo de gap. Los Breakaway Gaps pueden tardar MESES en llenarse (o nunca hacerlo). Y ten cuidado con el tamaño de posición: los gaps generan movimientos rápidos y tu stop loss puede sufrir slippage.</p>
+</div>`,
+          keyPoints: [
+            "Un gap es un salto en el precio donde no hubo transacciones; ocurre por noticias fuera de horario, earnings o eventos de fin de semana",
+            "4 tipos de gaps: Common (se llena rápido), Breakaway (inicio de tendencia), Runaway (continuación), Exhaustion (fin de tendencia)",
+            "Aproximadamente el 70% de los gaps se llenan; los Common y Exhaustion se llenan más frecuentemente que los Breakaway",
+            "Gap Fill: opera en CONTRA del gap esperando que se llene; Gap and Go: opera A FAVOR si el volumen es alto y no se llena",
+            "Los weekend gaps en Forex suelen llenarse durante la semana siguiente salvo eventos fundamentales masivos"
+          ],
+          quiz: [
+            {
+              question: "¿Qué tipo de gap tiene la MAYOR probabilidad de llenarse rápidamente?",
+              options: [
+                "Breakaway Gap (ruptura)",
+                "Runaway Gap (continuación)",
+                "Common Gap (ordinario)",
+                "Todos tienen la misma probabilidad"
+              ],
+              correctIndex: 2,
+              explanation: "El Common Gap (ordinario) es el que se llena más rápido y con mayor frecuencia. Ocurre dentro de rangos de consolidación, sin catalizador fundamental importante, y el precio suele volver al nivel pre-gap en pocas horas."
+            },
+            {
+              question: "¿Cuándo usarías la estrategia 'Gap and Go' en vez de esperar el gap fill?",
+              options: [
+                "Cuando el gap es pequeño y sin volumen",
+                "Cuando el gap tiene volumen alto, rompe una consolidación y no intenta llenarse en los primeros 15-30 minutos",
+                "Siempre, porque es más rentable",
+                "Solo en criptomonedas"
+              ],
+              correctIndex: 1,
+              explanation: "Gap and Go se usa cuando el gap tiene fuerza real: volumen 2-3x el promedio, rompe un nivel clave (Breakaway Gap), y en los primeros 15-30 minutos el precio no intenta volver al nivel anterior. Esto indica momentum real."
+            },
+            {
+              question: "¿Qué señala un Exhaustion Gap y cómo se tradea?",
+              options: [
+                "Inicio de tendencia; compra en dirección del gap",
+                "Continuación de tendencia; mantén posiciones",
+                "Final de tendencia; busca el gap fill porque el precio probablemente revertirá",
+                "No se puede tradear"
+              ],
+              correctIndex: 2,
+              explanation: "El Exhaustion Gap ocurre al final de una tendencia extendida. Es la 'última boqueada' del movimiento. Se identifica porque ocurre después de una subida/bajada prolongada y se llena rápidamente. Se tradea esperando el gap fill (reversión)."
+            }
+          ],
+          practicalExercise: "Abre TradingView con el S&P 500 (SPY o ES1!) en gráfico diario. Busca los últimos 10 gaps visibles en los últimos 3 meses. Para cada gap: (1) Clasifícalo como Common, Breakaway, Runaway o Exhaustion. (2) Anota si se llenó y cuánto tardó. (3) Mide el tamaño del gap en puntos/porcentaje. (4) Identifica si hubo una noticia asociada. Luego busca un weekend gap reciente en EUR/USD (gráfico H1): ¿se llenó durante la semana? ¿Cuántas horas tardó?"
+        },
+        // --------------------------------------------------------------
+        // LESSON 2-5-5: INTERMARKET ANALYSIS
+        // --------------------------------------------------------------
+        {
+          id: "2-5-5",
+          title: "Intermarket Analysis: Cómo Todo Está Conectado",
+          duration: "25 min",
+          content: `
+<h2>Análisis Intermarket: El Mapa de Conexiones del Mercado Global</h2>
+
+<div class="analogy-box">
+<h3>La Analogía del Ecosistema</h3>
+<p>Los mercados financieros son como un ecosistema. Si llueve más (bajan las tasas de interés), ciertos animales prosperan (acciones tech, oro) y otros sufren (el dólar, los bancos). Si hay sequía (suben las tasas), ocurre lo contrario. Nada se mueve en aislamiento. Entender estas conexiones es lo que separa a un trader competente de uno que solo mira un gráfico sin contexto.</p>
+</div>
+
+<h3>Las Relaciones Intermarket Fundamentales</h3>
+
+<div style="display:flex;justify-content:center;margin:24px 0">
+<svg width="520" height="420" viewBox="0 0 520 420" style="background:#131722;border-radius:12px;border:1px solid #2a2a40">
+<text x="260" y="22" fill="white" font-size="12" text-anchor="middle" font-weight="bold">RED DE CONEXIONES INTERMARKET</text>
+
+<circle cx="260" cy="110" r="38" fill="#ef535025" stroke="#ef5350" stroke-width="2"/>
+<text x="260" y="106" fill="#ef5350" font-size="11" text-anchor="middle" font-weight="bold">USD</text>
+<text x="260" y="120" fill="#ef5350" font-size="8" text-anchor="middle">(Dólar)</text>
+
+<circle cx="100" cy="200" r="35" fill="#f59e0b25" stroke="#f59e0b" stroke-width="2"/>
+<text x="100" y="196" fill="#f59e0b" font-size="11" text-anchor="middle" font-weight="bold">ORO</text>
+<text x="100" y="210" fill="#f59e0b" font-size="8" text-anchor="middle">(XAUUSD)</text>
+
+<circle cx="420" cy="200" r="35" fill="#26a69a25" stroke="#26a69a" stroke-width="2"/>
+<text x="420" y="196" fill="#26a69a" font-size="11" text-anchor="middle" font-weight="bold">BONOS</text>
+<text x="420" y="210" fill="#26a69a" font-size="8" text-anchor="middle">(Treasuries)</text>
+
+<circle cx="100" cy="330" r="35" fill="#8b5cf625" stroke="#8b5cf6" stroke-width="2"/>
+<text x="100" y="326" fill="#8b5cf6" font-size="11" text-anchor="middle" font-weight="bold">ACCIONES</text>
+<text x="100" y="340" fill="#8b5cf6" font-size="8" text-anchor="middle">(S&P 500)</text>
+
+<circle cx="260" cy="330" r="35" fill="#78909c25" stroke="#78909c" stroke-width="2"/>
+<text x="260" y="326" fill="#78909c" font-size="11" text-anchor="middle" font-weight="bold">PETRÓLEO</text>
+<text x="260" y="340" fill="#78909c" font-size="8" text-anchor="middle">(WTI/Brent)</text>
+
+<circle cx="420" cy="330" r="35" fill="#e91e6325" stroke="#e91e63" stroke-width="2"/>
+<text x="420" y="326" fill="#e91e63" font-size="11" text-anchor="middle" font-weight="bold">VIX</text>
+<text x="420" y="340" fill="#e91e63" font-size="8" text-anchor="middle">(Volatilidad)</text>
+
+<line x1="225" y1="130" x2="130" y2="180" stroke="#ef5350" stroke-width="1.5"/>
+<text x="160" y="148" fill="#ef5350" font-size="8" transform="rotate(-25,160,148)">INVERSO</text>
+
+<line x1="295" y1="130" x2="390" y2="180" stroke="#ef5350" stroke-width="1.5"/>
+<text x="355" y="148" fill="#ef5350" font-size="8" transform="rotate(25,355,148)">INVERSO*</text>
+
+<line x1="240" y1="145" x2="120" y2="300" stroke="#26a69a" stroke-width="1.5" stroke-dasharray="4,3"/>
+<text x="160" y="228" fill="#26a69a" font-size="8" transform="rotate(-50,160,228)">VARIABLE</text>
+
+<line x1="260" y1="148" x2="260" y2="295" stroke="#ef5350" stroke-width="1.5"/>
+<text x="274" y="225" fill="#ef5350" font-size="8">INVERSO</text>
+
+<line x1="130" y1="320" x2="225" y2="330" stroke="#78909c" stroke-width="1.5" stroke-dasharray="4,3"/>
+<text x="178" y="315" fill="#78909c" font-size="7">Crecimiento</text>
+
+<line x1="135" y1="330" x2="385" y2="330" stroke="#ef5350" stroke-width="1.5"/>
+<text x="260" y="320" fill="#ef5350" font-size="8" text-anchor="middle">INVERSO</text>
+
+<line x1="390" y1="215" x2="135" y2="310" stroke="#26a69a" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+<text x="260" y="395" fill="#a0a0b8" font-size="9" text-anchor="middle">* Cuando las tasas de interés suben (yields suben), precios de bonos bajan</text>
+<text x="260" y="410" fill="#a0a0b8" font-size="9" text-anchor="middle">Las líneas rojas sólidas indican relación inversa; las verdes punteadas, variable</text>
+</svg>
+</div>
+
+<h3>Relación 1: Bonos vs. Acciones</h3>
+
+<div class="highlight-box red">
+<h4>Bonos y Acciones: Relación Inversa (Cuando las Tasas Suben)</h4>
+<p>Cuando la Fed sube las tasas de interés, los <strong>rendimientos de bonos (yields) suben</strong> y los <strong>precios de bonos bajan</strong> (relación inversa entre precio y yield). Las acciones sufren porque: (1) las empresas pagan más por préstamos, (2) los inversores prefieren bonos seguros con alto rendimiento, (3) el descuento de flujos futuros aumenta. Cuando la Fed baja tasas → bonos suben, acciones suben.</p>
+</div>
+
+<h3>Relación 2: USD vs. Commodities</h3>
+
+<div class="highlight-box purple">
+<h4>Dólar Fuerte = Commodities Débiles</h4>
+<p>La mayoría de las materias primas (petróleo, oro, cobre, soja) se cotizan en dólares. Cuando el dólar se fortalece, se necesitan MENOS dólares para comprar la misma cantidad de commodity → el precio baja. Cuando el dólar se debilita, se necesitan MÁS dólares → el precio sube. Esta relación inversa es una de las más consistentes del mercado.</p>
+</div>
+
+<h3>Relación 3: Petróleo y Divisas (CAD, NOK)</h3>
+
+<div class="grid-cards">
+<div class="card">
+<h4>🛢️ Petróleo y CAD (Dólar Canadiense)</h4>
+<p>Canadá es uno de los mayores exportadores de petróleo del mundo. Cuando el petróleo sube, la economía canadiense se beneficia → CAD se fortalece → USD/CAD baja. <strong>Correlación: Petróleo ↑ = USD/CAD ↓</strong></p>
+</div>
+<div class="card">
+<h4>🇳🇴 Petróleo y NOK (Corona Noruega)</h4>
+<p>Noruega es gran exportador de petróleo y gas. Cuando el petróleo sube, la NOK se fortalece → USD/NOK baja. Similar al CAD pero con menor liquidez.</p>
+</div>
+</div>
+
+<h3>Relación 4: Oro vs. Rendimientos Reales</h3>
+
+<div class="highlight-box yellow">
+<h4>Oro y Yields Reales: La Relación que Pocos Conocen</h4>
+<p>El oro NO paga intereses. Los bonos SÍ. Cuando los <strong>rendimientos reales</strong> (yield del bono - inflación) son altos y positivos, los inversores prefieren bonos al oro → oro baja. Cuando los rendimientos reales son bajos o negativos (inflación mayor que el yield), el oro es más atractivo → oro sube. <strong>Sigue los TIPS (Treasury Inflation-Protected Securities) para ver yields reales.</strong></p>
+</div>
+
+<h3>Relación 5: VIX vs. S&P 500</h3>
+
+<div class="highlight-box red">
+<h4>VIX: El "Índice del Miedo"</h4>
+<p>El <strong>VIX</strong> mide la volatilidad esperada del S&P 500 en los próximos 30 días. Tiene una relación <strong>fuertemente inversa</strong> con el S&P 500. Cuando las acciones caen fuerte, el miedo sube → VIX se dispara. Cuando el mercado está tranquilo y alcista → VIX baja. Niveles clave: VIX <15 = complacencia. VIX 20-30 = miedo moderado. VIX >30 = pánico (posible oportunidad de compra contrarian).</p>
+</div>
+
+<h3>Relación 6: Cobre como Indicador Económico</h3>
+
+<div class="vocab-card">
+<h4>🔴 Dr. Copper: El Metal con Doctorado en Economía</h4>
+<p>El cobre se usa en construcción, electrónica, infraestructura... en casi TODO. Por eso se le llama "Dr. Copper": porque <strong>predice</strong> la salud económica. Cobre subiendo = demanda industrial fuerte = economía creciendo. Cobre bajando = demanda industrial débil = posible desaceleración económica. Si el cobre diverge de las acciones (cobre baja pero acciones suben), es una señal de advertencia.</p>
+</div>
+
+<h3>La Curva de Rendimientos: El Predictor de Recesiones</h3>
+
+<div class="highlight-box blue">
+<h4>Inversión de la Curva de Rendimientos</h4>
+<p>Normalmente, los bonos a largo plazo (10 años) pagan MÁS que los de corto plazo (2 años). Cuando el bono de 2 años paga MÁS que el de 10 años, la curva se <strong>invierte</strong>. Una inversión de la curva ha predicho TODAS las recesiones de los últimos 50 años (con 6-18 meses de anticipación). Sigue el spread 10Y-2Y: cuando se vuelve negativo, prepárate para un posible entorno de recesión.</p>
+</div>
+
+<h3>Tu Dashboard Intermarket Diario</h3>
+
+<div class="strategy-box">
+<h4>Checklist Intermarket: 5 Minutos Cada Mañana</h4>
+<ol>
+<li><strong>DXY (Índice del Dólar):</strong> ¿Tendencia alcista o bajista? Esto define el sesgo para Forex y commodities.</li>
+<li><strong>US10Y (Rendimiento del Bono a 10 Años):</strong> ¿Subiendo o bajando? Impacta acciones, especialmente tech.</li>
+<li><strong>VIX:</strong> ¿Por debajo de 15 (calma) o por encima de 25 (miedo)? Define el apetito de riesgo del mercado.</li>
+<li><strong>Petróleo (WTI):</strong> ¿Subiendo o bajando? Impacta CAD, NOK, sector energía e inflación.</li>
+<li><strong>S&P 500 Futuros (ES):</strong> ¿Risk-on (alcista) o risk-off (bajista)? Define si las divisas de riesgo (AUD, NZD) se fortalecen o debilitan.</li>
+<li><strong>Oro (XAUUSD):</strong> ¿Subiendo como refugio o bajando por USD fuerte? Confirma o contradice tu lectura del DXY.</li>
+</ol>
+</div>
+
+<div class="example-box">
+<h4>Ejemplo de Lectura Intermarket Completa</h4>
+<p><strong>Escenario:</strong> DXY bajando, US10Y bajando, VIX en 12, Petróleo subiendo, S&P 500 en máximos, Oro subiendo levemente.</p>
+<p><strong>Lectura:</strong> Entorno Risk-On claro. USD débil beneficia a EUR/USD y GBP/USD (buscar LONG). Petróleo al alza beneficia a CAD (buscar SHORT USD/CAD). VIX bajo indica complacencia (posible corrección eventual, pero no inmediata). Oro subiendo a pesar de Risk-On puede indicar preocupaciones inflacionarias de fondo.</p>
+<p><strong>Sesgo operativo:</strong> Buscar operaciones CONTRA el dólar (short USD). Favorecer pares de riesgo (AUD, NZD, CAD al alza). Ser cauto con posiciones a largo plazo en acciones porque VIX muy bajo históricamente precede a correcciones.</p>
+</div>
+
+<div class="warning-box">
+<h4>⚠️ Las Correlaciones Cambian</h4>
+<p>Las correlaciones intermarket no son estáticas. En ciertos regímenes de mercado (como una crisis), las correlaciones normales se rompen: todo puede bajar junto (acciones, bonos, oro) en una liquidación de pánico. Usa el intermarket analysis como CONTEXTO y FILTRO, no como la única razón para un trade. Siempre confirma con el gráfico del activo que vas a operar.</p>
+</div>`,
+          keyPoints: [
+            "Bonos vs. acciones: cuando las tasas suben, los yields de bonos suben y las acciones tienden a caer (relación inversa)",
+            "USD fuerte = commodities débiles (petróleo, oro, cobre cotizan en dólares); USD débil = commodities al alza",
+            "VIX y S&P 500 tienen relación fuertemente inversa: VIX >30 = pánico (posible oportunidad contrarian de compra)",
+            "Inversión de la curva de rendimientos (2Y > 10Y) ha predicho TODAS las recesiones de los últimos 50 años",
+            "Construye un dashboard diario: DXY, US10Y, VIX, Petróleo, S&P 500 futuros y Oro para leer el contexto global"
+          ],
+          quiz: [
+            {
+              question: "¿Por qué un dólar fuerte generalmente hace que el precio del oro baje?",
+              options: [
+                "Porque el oro pierde calidad cuando el dólar sube",
+                "Porque el oro cotiza en dólares: USD fuerte = menos dólares necesarios para comprar la misma cantidad de oro",
+                "Porque los mineros producen menos oro",
+                "No hay relación entre el dólar y el oro"
+              ],
+              correctIndex: 1,
+              explanation: "El oro cotiza en USD. Si el dólar se fortalece, se necesitan MENOS dólares para comprar la misma onza de oro, así que el precio en dólares baja. Además, un dólar fuerte suele venir con tasas altas, lo que hace que los bonos sean más atractivos que el oro (que no paga intereses)."
+            },
+            {
+              question: "¿Qué señala una inversión de la curva de rendimientos (bono 2Y paga más que el 10Y)?",
+              options: [
+                "Que la economía está creciendo rápidamente",
+                "Que es un buen momento para comprar acciones tech",
+                "Que históricamente ha precedido TODAS las recesiones de los últimos 50 años (con 6-18 meses de anticipación)",
+                "Que los bonos a corto plazo son más seguros"
+              ],
+              correctIndex: 2,
+              explanation: "La inversión de la curva (2Y yield > 10Y yield) indica que los inversores ven más riesgo a corto plazo que a largo plazo. Ha precedido todas las recesiones de los últimos 50 años, aunque el timing varía entre 6 y 18 meses."
+            },
+            {
+              question: "¿Por qué al cobre se le llama 'Dr. Copper'?",
+              options: [
+                "Porque fue descubierto por un doctor",
+                "Porque se usa en hospitales",
+                "Porque su precio predice la salud económica global al usarse en construcción, electrónica e infraestructura",
+                "Porque cura enfermedades"
+              ],
+              correctIndex: 2,
+              explanation: "El cobre se usa en casi toda actividad industrial: construcción, electrónica, infraestructura, manufactura. Por eso su precio refleja la demanda industrial real. Si el cobre sube, la economía está activa. Si baja, la demanda industrial se está debilitando."
+            }
+          ],
+          practicalExercise: "Abre TradingView y crea un layout con 6 gráficos: DXY, US10Y, VIX, Petróleo WTI (CL1!), S&P 500 (SPY o ES1!) y Oro (XAUUSD). Todos en gráfico diario. Analiza la situación actual: (1) ¿El DXY está en tendencia alcista o bajista? (2) ¿Los yields están subiendo o bajando? (3) ¿El VIX está en zona de complacencia (<15) o miedo (>25)? (4) Escribe una 'lectura intermarket' como la del ejemplo: ¿estamos en Risk-On o Risk-Off? ¿Qué pares de Forex y qué dirección favorece este contexto? Repite este ejercicio cada mañana durante una semana."
+        }
+      ]
     }
   ]
 };

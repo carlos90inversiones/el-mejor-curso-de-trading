@@ -2099,6 +2099,1071 @@ export const PHASE_4: Phase = {
           ]
         }
       ]
+    },
+    // ========================================================================
+    // MODULE 4-5: ESTRATEGIAS ESPECIALIZADAS
+    // ========================================================================
+    {
+      id: "mod-4-5",
+      title: "Estrategias Especializadas",
+      description: "Market Profile, Tape Reading, gestión multi-posición, mean reversion y trading estacional",
+      icon: "🎯",
+      color: "#F97316",
+      lessons: [
+        // --------------------------------------------------------------------
+        // LESSON 4-5-1: MARKET PROFILE Y TPO CHARTS
+        // --------------------------------------------------------------------
+        {
+          id: "4-5-1",
+          title: "Market Profile y TPO Charts",
+          duration: "25 min",
+          content: `
+<h2>Market Profile y TPO Charts: Entiende la Subasta del Mercado</h2>
+
+<div class="analogy-box">
+<h3>La Analogía del Mercado de Frutas</h3>
+<p>Imagina un mercado callejero de frutas. Al principio del día, los vendedores prueban precios altos. Si nadie compra, bajan el precio. Si hay mucha demanda, lo suben. Al final del día, la mayoría de transacciones ocurrieron en un rango de precio "justo" — ni muy caro ni muy barato. Ese rango donde TODOS estaban cómodos comprando y vendiendo es exactamente lo que el <strong>Market Profile</strong> te muestra en un gráfico: <strong>dónde se concentró el tiempo y el volumen</strong>.</p>
+</div>
+
+<h3>¿Qué es Market Profile?</h3>
+<p>Market Profile es una técnica de análisis desarrollada por <strong>J. Peter Steidlmayer</strong> en los años 80 para el CBOT (Chicago Board of Trade). A diferencia del Volume Profile (que mide cuánto volumen se negoció a cada precio), el Market Profile mide <strong>cuánto TIEMPO pasó el precio en cada nivel</strong>. Cada período de 30 minutos se representa con una letra llamada <strong>TPO (Time Price Opportunity)</strong>.</p>
+
+<div class="highlight-box blue">
+<h4>Market Profile vs Volume Profile: ¿Cuál es la Diferencia?</h4>
+<p><strong>Volume Profile:</strong> Muestra cuántos contratos/lotes se negociaron en cada nivel de precio. Refleja la actividad real de compra/venta.</p>
+<p><strong>Market Profile:</strong> Muestra cuánto TIEMPO pasó el precio en cada nivel. Cada bloque de 30 minutos es un TPO. Refleja la aceptación del precio por el mercado.</p>
+<p>Ambos son complementarios. El Volume Profile te dice DÓNDE hubo más actividad; el Market Profile te dice DÓNDE el mercado estuvo más cómodo.</p>
+</div>
+
+<h3>Componentes del Market Profile</h3>
+
+<div class="grid-cards">
+<div class="card">
+<h4>TPO (Time Price Opportunity)</h4>
+<p>Cada letra en el gráfico representa un período de 30 minutos. La primera media hora es "A", la segunda "B", la tercera "C", etc. Donde se acumulan más letras, más tiempo pasó el precio allí — el mercado consideró ese precio "justo".</p>
+</div>
+<div class="card">
+<h4>Initial Balance (IB)</h4>
+<p>Es el rango de precios de la <strong>primera hora de trading</strong> (letras A y B). Define el "campo de juego" inicial del día. Si el precio rompe el IB hacia arriba o abajo, indica que una fuerza directional (institucional) está empujando. Un IB estrecho sugiere un día de tendencia; un IB amplio sugiere un día de rango.</p>
+</div>
+<div class="card">
+<h4>Value Area (VA)</h4>
+<p>El rango de precios donde se concentró el <strong>70% de los TPOs</strong> (o del volumen). Representa donde el mercado encontró "valor justo". Si el precio está dentro del VA, el mercado está en equilibrio. Si sale del VA, busca nuevo valor.</p>
+</div>
+<div class="card">
+<h4>Point of Control (POC)</h4>
+<p>El nivel de precio con la <strong>mayor concentración de TPOs</strong> — donde el precio pasó más tiempo. Es el precio "más justo" del día. Actúa como imán: el precio tiende a volver al POC. Es un nivel clave de soporte/resistencia.</p>
+</div>
+</div>
+
+<div style="display:flex;justify-content:center;margin:24px 0">
+<svg width="500" height="340" viewBox="0 0 500 340" style="background:#131722;border-radius:12px;border:1px solid #2a2a40">
+<text x="250" y="20" fill="white" font-size="12" text-anchor="middle" font-weight="bold">TPO CHART — Market Profile</text>
+<!-- Price scale -->
+<text x="30" y="55" fill="#787b86" font-size="9" text-anchor="end">1.1080</text>
+<text x="30" y="80" fill="#787b86" font-size="9" text-anchor="end">1.1070</text>
+<text x="30" y="105" fill="#787b86" font-size="9" text-anchor="end">1.1060</text>
+<text x="30" y="130" fill="#787b86" font-size="9" text-anchor="end">1.1050</text>
+<text x="30" y="155" fill="#787b86" font-size="9" text-anchor="end">1.1040</text>
+<text x="30" y="180" fill="#787b86" font-size="9" text-anchor="end">1.1030</text>
+<text x="30" y="205" fill="#787b86" font-size="9" text-anchor="end">1.1020</text>
+<text x="30" y="230" fill="#787b86" font-size="9" text-anchor="end">1.1010</text>
+<text x="30" y="255" fill="#787b86" font-size="9" text-anchor="end">1.1000</text>
+<!-- TPO letters - building bell curve shape -->
+<!-- Row 1.1080 -->
+<text x="45" y="55" fill="#ef5350" font-size="10" font-family="monospace">E</text>
+<!-- Row 1.1070 -->
+<text x="45" y="80" fill="#ef5350" font-size="10" font-family="monospace">D E</text>
+<!-- Row 1.1060 -->
+<text x="45" y="105" fill="#26a69a" font-size="10" font-family="monospace">C D E F</text>
+<!-- Row 1.1050 - IB top -->
+<text x="45" y="130" fill="#26a69a" font-size="10" font-family="monospace">B C D E F G H</text>
+<!-- Row 1.1040 - POC -->
+<text x="45" y="155" fill="#ff9800" font-size="10" font-family="monospace">A B C D E F G H I J</text>
+<text x="175" y="155" fill="#ff9800" font-size="9" font-weight="bold">← POC</text>
+<!-- Row 1.1030 -->
+<text x="45" y="180" fill="#26a69a" font-size="10" font-family="monospace">A B C D F G H I</text>
+<!-- Row 1.1020 - IB bottom -->
+<text x="45" y="205" fill="#26a69a" font-size="10" font-family="monospace">A B C G I</text>
+<!-- Row 1.1010 -->
+<text x="45" y="230" fill="#ef5350" font-size="10" font-family="monospace">A B</text>
+<!-- Row 1.1000 -->
+<text x="45" y="255" fill="#ef5350" font-size="10" font-family="monospace">A</text>
+<!-- Value Area bracket -->
+<line x1="210" y1="100" x2="210" y2="210" stroke="#42a5f5" stroke-width="2"/>
+<line x1="205" y1="100" x2="215" y2="100" stroke="#42a5f5" stroke-width="2"/>
+<line x1="205" y1="210" x2="215" y2="210" stroke="#42a5f5" stroke-width="2"/>
+<text x="225" y="155" fill="#42a5f5" font-size="9">Value Area</text>
+<text x="225" y="167" fill="#42a5f5" font-size="8">(70% TPOs)</text>
+<!-- IB bracket -->
+<line x1="250" y1="125" x2="250" y2="210" stroke="#ab47bc" stroke-width="1.5" stroke-dasharray="4,3"/>
+<line x1="245" y1="125" x2="255" y2="125" stroke="#ab47bc" stroke-width="1.5"/>
+<line x1="245" y1="210" x2="255" y2="210" stroke="#ab47bc" stroke-width="1.5"/>
+<text x="265" y="168" fill="#ab47bc" font-size="9">Initial Balance</text>
+<text x="265" y="180" fill="#ab47bc" font-size="8">(Primera hora: A,B)</text>
+<!-- Single prints annotation -->
+<rect x="40" y="67" width="70" height="16" fill="#ef535020" rx="3"/>
+<text x="120" y="78" fill="#ef5350" font-size="8">← Single prints (poca rotación)</text>
+<!-- Labels -->
+<text x="250" y="290" fill="#787b86" font-size="9" text-anchor="middle">Forma de campana = Día de balance (rotacional)</text>
+<text x="250" y="305" fill="#787b86" font-size="8" text-anchor="middle">Más letras en un nivel = Más tiempo = Precio "justo"</text>
+<text x="250" y="325" fill="#42a5f5" font-size="8" text-anchor="middle">VAH = Value Area High | VAL = Value Area Low</text>
+</svg>
+</div>
+
+<h3>Single Prints y su Significado</h3>
+
+<div class="highlight-box yellow">
+<h4>¿Qué son los Single Prints?</h4>
+<p>Los <strong>single prints</strong> son niveles de precio donde solo aparece UNA letra (un solo período de 30 minutos). Indican que el precio pasó rápidamente por ese nivel — no hubo negociación significativa. Son zonas de <strong>desequilibrio</strong> donde una parte (compradores o vendedores) dominó completamente. Los single prints frecuentemente actúan como soporte/resistencia porque representan zonas donde el precio "no tuvo oportunidad" de negociar, y el mercado puede volver a llenar ese vacío.</p>
+</div>
+
+<h3>Poor Highs y Poor Lows</h3>
+
+<div class="grid-cards">
+<div class="card">
+<h4>Poor High</h4>
+<p>Un máximo del día con múltiples TPOs al mismo nivel (plano, sin punta). Indica que el mercado no rechazó ese precio con convicción. Es probable que el precio <strong>vuelva a visitar</strong> ese nivel para buscar más liquidez. Los poor highs son objetivos alcistas.</p>
+</div>
+<div class="card">
+<h4>Poor Low</h4>
+<p>Un mínimo del día con múltiples TPOs al mismo nivel (plano). Indica falta de rechazo convincente. Es probable que el precio <strong>vuelva a visitar</strong> ese nivel. Los poor lows son objetivos bajistas.</p>
+</div>
+</div>
+
+<h3>Tipos de Días según Market Profile</h3>
+
+<div class="grid-cards">
+<div class="card">
+<h4>Día de Balance (Normal)</h4>
+<p>Forma de campana clásica. El precio rota dentro de un rango definido. El 70% del tiempo se concentra en el Value Area. Ideal para <strong>estrategias de reversión a la media</strong>: comprar en VAL, vender en VAH.</p>
+</div>
+<div class="card">
+<h4>Día de Tendencia</h4>
+<p>Perfil elongado, sin forma de campana clara. El IB es estrecho y el precio lo rompe rápidamente. Los TPOs se extienden en una dirección. Indica <strong>fuerza directional institucional</strong>. Operar en la dirección de la tendencia, no contra ella.</p>
+</div>
+<div class="card">
+<h4>Día de Doble Distribución</h4>
+<p>Se forman DOS áreas de valor separadas (dos jorobas). Indica que hubo un <strong>cambio de percepción</strong> durante la sesión. Un evento o noticia cambió el equilibrio. Buscar trades en la dirección del segundo cluster.</p>
+</div>
+</div>
+
+<div class="strategy-box">
+<h4>Combinando Market Profile con SMC</h4>
+<p>El verdadero poder aparece al combinar Market Profile con Smart Money Concepts:</p>
+<ul>
+<li><strong>POC + Order Block:</strong> Si un Order Block coincide con el POC del día anterior, es una zona de reacción de altísima probabilidad.</li>
+<li><strong>Single Prints + FVG:</strong> Los single prints frecuentemente coinciden con Fair Value Gaps — ambos representan desequilibrio.</li>
+<li><strong>IB Break + BOS:</strong> Una rotura del Initial Balance que coincide con un Break of Structure confirma entrada institucional.</li>
+<li><strong>Poor High/Low + Liquidez:</strong> Un poor high es liquidez sin tomar — las instituciones probablemente volverán a barrerlo.</li>
+</ul>
+</div>
+
+<div class="example-box">
+<h4>Ejemplo Práctico: Trade con Market Profile + SMC</h4>
+<p><strong>Contexto:</strong> ES (S&P 500 futuros), sesión de NY.</p>
+<p><strong>Paso 1:</strong> El POC del día anterior está en 4,520. Coincide con un OB alcista en H1.</p>
+<p><strong>Paso 2:</strong> Hoy, el IB se forma entre 4,530-4,545 (estrecho = posible día de tendencia).</p>
+<p><strong>Paso 3:</strong> El precio rompe el IB por abajo, baja hasta el POC de ayer en 4,520.</p>
+<p><strong>Paso 4:</strong> En M15, ves un liquidity sweep del mínimo de ayer + reacción en el OB + el precio toca el POC.</p>
+<p><strong>Paso 5:</strong> Entras LONG con 3 confluencias (POC + OB + sweep). SL debajo del OB. TP en VAH del día anterior.</p>
+<p><strong>Resultado:</strong> 15 puntos de ganancia con 5 de riesgo = 3:1 R:R.</p>
+</div>
+
+<div class="warning-box">
+<h4>¡Importante sobre Market Profile!</h4>
+<p>Market Profile es más útil en <strong>futuros e índices</strong> (ES, NQ, CL) que en forex spot, porque los futuros tienen datos de volumen centralizados y horarios de sesión definidos. En forex, puedes usar Volume Profile como sustituto. Plataformas recomendadas: Sierra Chart, NinjaTrader, TradingView (con indicador de Market Profile).</p>
+</div>`,
+          keyPoints: [
+            "Market Profile mide TIEMPO en cada precio (TPO), no volumen — muestra dónde el mercado estuvo cómodo",
+            "Initial Balance (primera hora) define el tono del día: estrecho = tendencia, amplio = rango",
+            "Value Area (70% TPOs) = zona de valor justo; POC = precio más justo del día",
+            "Single prints = desequilibrio rápido; poor highs/lows = objetivos probables de revisita",
+            "Combinar POC + Order Block o Single Prints + FVG multiplica la probabilidad de éxito"
+          ],
+          quiz: [
+            {
+              question: "¿Qué representa cada letra (TPO) en un gráfico de Market Profile?",
+              options: [
+                "Un volumen específico de contratos",
+                "Un período de 30 minutos donde el precio tocó ese nivel",
+                "Una orden institucional pendiente",
+                "Un nivel de soporte o resistencia fijo"
+              ],
+              correctIndex: 1,
+              explanation: "Cada TPO (Time Price Opportunity) representa un período de 30 minutos. La letra A es la primera media hora, B la segunda, etc. Donde se acumulan más letras, más tiempo pasó el precio — indicando aceptación de ese precio."
+            },
+            {
+              question: "¿Qué indica un Initial Balance estrecho en Market Profile?",
+              options: [
+                "Que el día será aburrido sin movimiento",
+                "Que probablemente sea un día de tendencia con rotura directional",
+                "Que el mercado está cerrado",
+                "Que no hay liquidez disponible"
+              ],
+              correctIndex: 1,
+              explanation: "Un Initial Balance estrecho indica que la primera hora tuvo poco rango, lo que sugiere que una fuerza directional (generalmente institucional) está por empujar el precio fuera de ese rango, creando un día de tendencia."
+            },
+            {
+              question: "¿Cómo se combinan el POC del Market Profile con los Order Blocks de SMC?",
+              options: [
+                "No se pueden combinar, son sistemas incompatibles",
+                "Si el POC coincide con un Order Block, la zona tiene altísima probabilidad de reacción",
+                "El POC reemplaza completamente a los Order Blocks",
+                "Solo se combinan en timeframes semanales"
+              ],
+              correctIndex: 1,
+              explanation: "Cuando el POC (precio donde más tiempo pasó el mercado) coincide con un Order Block (zona de acumulación institucional), la confluencia es muy fuerte. Ambos indican interés institucional en ese nivel, aumentando la probabilidad de reacción."
+            }
+          ],
+          practicalExercise: "Abre un gráfico de futuros del S&P 500 (ES) o Nasdaq (NQ) en TradingView. Activa el indicador de Market Profile (o TPO). Identifica: 1) El POC del día anterior. 2) El Value Area (VAH y VAL). 3) El Initial Balance de hoy. 4) ¿Hay single prints? ¿Dónde? 5) ¿Es un día de balance o de tendencia? Ahora busca si el POC coincide con algún Order Block o FVG en H1. Si encuentras confluencia, anota el setup y observa qué pasa cuando el precio llega a esa zona."
+        },
+        // --------------------------------------------------------------------
+        // LESSON 4-5-2: TAPE READING Y LEVEL 2
+        // --------------------------------------------------------------------
+        {
+          id: "4-5-2",
+          title: "Tape Reading y Level 2: Lee el Libro de Órdenes en Vivo",
+          duration: "25 min",
+          content: `
+<h2>Tape Reading y Level 2: La Ventana al Flujo de Órdenes en Tiempo Real</h2>
+
+<div class="analogy-box">
+<h3>La Analogía de la Subasta en Vivo</h3>
+<p>Imagina que estás en una subasta de arte. No puedes ver quién está pujando (las instituciones se esconden), pero puedes ver <strong>las pujas entrando en tiempo real</strong>: "$10,000... $11,000... $11,000... $11,000... $12,000..." Si ves que alguien sigue pujando $11,000 una y otra vez sin subir, sabes que hay un comprador gigante absorbiendo todas las ventas a ese nivel. Eso es <strong>absorción</strong>. El Level 2 y el Tape te permiten "ver" esta subasta del mercado en tiempo real.</p>
+</div>
+
+<h3>¿Qué es el Level 2 / DOM (Depth of Market)?</h3>
+<p>El <strong>Level 2</strong> o <strong>DOM (Depth of Market)</strong> es una ventana que muestra las órdenes <strong>limitadas pendientes</strong> a cada nivel de precio, tanto de compradores (bid) como de vendedores (ask). Es literalmente el "libro de órdenes" del mercado — puedes ver cuántos contratos/lotes están esperando ser ejecutados en cada precio.</p>
+
+<div class="highlight-box green">
+<h4>Estructura del Libro de Órdenes</h4>
+<p>El DOM tiene dos lados:</p>
+<ul>
+<li><strong>Bid (Compradores):</strong> Órdenes limitadas de COMPRA por debajo del precio actual. Cuanto más grande el bid en un nivel, más compradores esperando allí.</li>
+<li><strong>Ask (Vendedores):</strong> Órdenes limitadas de VENTA por encima del precio actual. Cuanto más grande el ask, más vendedores esperando.</li>
+<li><strong>Spread:</strong> La diferencia entre el mejor bid y el mejor ask. Un spread estrecho indica alta liquidez.</li>
+</ul>
+</div>
+
+<div style="display:flex;justify-content:center;margin:24px 0">
+<svg width="460" height="360" viewBox="0 0 460 360" style="background:#131722;border-radius:12px;border:1px solid #2a2a40">
+<text x="230" y="22" fill="white" font-size="12" text-anchor="middle" font-weight="bold">DOM / LEVEL 2 — Libro de Órdenes</text>
+<!-- Headers -->
+<text x="80" y="50" fill="#26a69a" font-size="10" text-anchor="middle" font-weight="bold">BID (Compradores)</text>
+<text x="230" y="50" fill="white" font-size="10" text-anchor="middle" font-weight="bold">PRECIO</text>
+<text x="380" y="50" fill="#ef5350" font-size="10" text-anchor="middle" font-weight="bold">ASK (Vendedores)</text>
+<!-- Divider -->
+<line x1="155" y1="38" x2="155" y2="330" stroke="#2a2a40" stroke-width="1"/>
+<line x1="305" y1="38" x2="305" y2="330" stroke="#2a2a40" stroke-width="1"/>
+<!-- Ask side (sellers above) -->
+<text x="230" y="75" fill="#ef5350" font-size="11" text-anchor="middle">1.10550</text>
+<rect x="310" y="62" width="35" height="16" fill="#ef535030" rx="2"/>
+<text x="380" y="75" fill="#ef5350" font-size="11" text-anchor="middle">15</text>
+<text x="230" y="100" fill="#ef5350" font-size="11" text-anchor="middle">1.10540</text>
+<rect x="310" y="87" width="55" height="16" fill="#ef535030" rx="2"/>
+<text x="380" y="100" fill="#ef5350" font-size="11" text-anchor="middle">28</text>
+<text x="230" y="125" fill="#ef5350" font-size="11" text-anchor="middle">1.10530</text>
+<rect x="310" y="112" width="90" height="16" fill="#ef535030" rx="2"/>
+<text x="380" y="125" fill="#ef5350" font-size="11" text-anchor="middle">52</text>
+<text x="230" y="150" fill="#ef5350" font-size="11" text-anchor="middle">1.10520</text>
+<rect x="310" y="137" width="130" height="16" fill="#ef535050" rx="2"/>
+<text x="380" y="150" fill="#ff9800" font-size="11" text-anchor="middle" font-weight="bold">245</text>
+<text x="445" y="150" fill="#ff9800" font-size="8">← MURO</text>
+<!-- Spread -->
+<rect x="160" y="163" width="140" height="20" fill="#42a5f520" rx="4"/>
+<text x="230" y="178" fill="#42a5f5" font-size="10" text-anchor="middle" font-weight="bold">SPREAD: 1 pip</text>
+<!-- Bid side (buyers below) -->
+<text x="230" y="205" fill="#26a69a" font-size="11" text-anchor="middle">1.10510</text>
+<rect x="80" y="192" width="70" height="16" fill="#26a69a50" rx="2"/>
+<text x="80" y="205" fill="#ff9800" font-size="11" text-anchor="middle" font-weight="bold">180</text>
+<text x="15" y="205" fill="#ff9800" font-size="8">SOPORTE →</text>
+<text x="230" y="230" fill="#26a69a" font-size="11" text-anchor="middle">1.10500</text>
+<rect x="100" y="217" width="50" height="16" fill="#26a69a30" rx="2"/>
+<text x="80" y="230" fill="#26a69a" font-size="11" text-anchor="middle">45</text>
+<text x="230" y="255" fill="#26a69a" font-size="11" text-anchor="middle">1.10490</text>
+<rect x="110" y="242" width="40" height="16" fill="#26a69a30" rx="2"/>
+<text x="80" y="255" fill="#26a69a" font-size="11" text-anchor="middle">22</text>
+<text x="230" y="280" fill="#26a69a" font-size="11" text-anchor="middle">1.10480</text>
+<rect x="120" y="267" width="30" height="16" fill="#26a69a30" rx="2"/>
+<text x="80" y="280" fill="#26a69a" font-size="11" text-anchor="middle">10</text>
+<!-- Annotations -->
+<text x="230" y="310" fill="#787b86" font-size="9" text-anchor="middle">Los números = contratos/lotes esperando ser ejecutados</text>
+<text x="230" y="325" fill="#787b86" font-size="8" text-anchor="middle">Muros grandes = posible soporte/resistencia temporal</text>
+<text x="230" y="340" fill="#ff9800" font-size="8" text-anchor="middle">⚠ Las órdenes pueden ser falsas (spoofing) — siempre confirma con el tape</text>
+</svg>
+</div>
+
+<h3>Conceptos Clave del Tape Reading</h3>
+
+<div class="grid-cards">
+<div class="card">
+<h4>Absorción</h4>
+<p>Ocurre cuando hay un muro de órdenes limitadas en un nivel (ej: 500 lotes en el bid a 1.1050), y las órdenes de mercado (ventas agresivas) golpean ese muro repetidamente pero <strong>NO logran moverlo</strong>. El muro "absorbe" toda la presión vendedora. Es señal de un <strong>comprador institucional gigante</strong> defendiendo ese nivel. Después de la absorción, el precio suele explotar en la dirección del absorbedor.</p>
+</div>
+<div class="card">
+<h4>Spoofing (Órdenes Falsas)</h4>
+<p>El <strong>spoofing</strong> es cuando un participante grande coloca una orden enorme en el DOM para crear la ilusión de soporte/resistencia, pero la cancela antes de que se ejecute. Ejemplo: pone 1,000 lotes en el ask a 1.1060 para asustar compradores, pero cuando el precio se acerca, retira la orden. Es <strong>ilegal</strong> pero aún ocurre. Aprende a identificarlo: si un muro aparece y desaparece repetidamente, probablemente es spoofing.</p>
+</div>
+<div class="card">
+<h4>Iceberg Orders</h4>
+<p>Las <strong>órdenes iceberg</strong> son órdenes institucionales divididas en pedazos pequeños para no ser detectadas en el DOM. Ves 10 lotes en el bid, se ejecutan, e inmediatamente aparecen otros 10, una y otra vez. Solo puedes detectarlas viendo el <strong>Time & Sales</strong> — si un nivel sigue ejecutando volumen mucho mayor al visible en el DOM, hay un iceberg escondido.</p>
+</div>
+<div class="card">
+<h4>Time & Sales (El Tape)</h4>
+<p>El <strong>Time & Sales</strong> o "tape" es el registro en vivo de CADA transacción ejecutada: precio, tamaño, hora exacta, y si fue al bid o al ask. Es la herramienta más honesta del trading — no puedes falsificar una transacción ejecutada. Un flujo constante de transacciones grandes al ask = compradores agresivos. Al bid = vendedores agresivos.</p>
+</div>
+</div>
+
+<div class="highlight-box purple">
+<h4>Cómo Leer el Tape para Detectar Momentum</h4>
+<ol>
+<li><strong>Velocidad del tape:</strong> Si las transacciones pasan muy rápido, hay alta actividad. Si es lento, el mercado está tranquilo.</li>
+<li><strong>Tamaño de las órdenes:</strong> Transacciones de 1-5 lotes = retail. De 50-500+ lotes = institucional. Sigue el dinero grande.</li>
+<li><strong>Color/dirección:</strong> Transacciones al ASK (verde) = compras agresivas. Al BID (rojo) = ventas agresivas. Busca el desequilibrio.</li>
+<li><strong>Clusters:</strong> Si ves 10 transacciones grandes al ask en rápida sucesión, hay un comprador institucional agresivo entrando. El precio subirá.</li>
+</ol>
+</div>
+
+<h3>Plataformas para DOM Trading</h3>
+
+<div class="grid-cards">
+<div class="card">
+<h4>Sierra Chart</h4>
+<p>La plataforma preferida de traders profesionales de futuros. DOM avanzado, footprint charts, y datos de CME en tiempo real. Curva de aprendizaje alta, pero poder ilimitado. Precio: ~$26/mes.</p>
+</div>
+<div class="card">
+<h4>Bookmap</h4>
+<p>Visualiza el DOM como un mapa de calor en tiempo real. Puedes ver dónde se acumulan y desaparecen las órdenes. Excelente para detectar spoofing y absorción visualmente. Precio: ~$49/mes.</p>
+</div>
+<div class="card">
+<h4>ATAS (Order Flow Trading)</h4>
+<p>Plataforma completa con DOM, footprint, cluster charts y análisis de flujo de órdenes. Muy popular en Europa y Latam. Interfaz más amigable que Sierra Chart. Precio: ~$69/mes.</p>
+</div>
+</div>
+
+<div class="example-box">
+<h4>Ejemplo Práctico: Trade con DOM + Tape</h4>
+<p><strong>Contexto:</strong> Futuros NQ (Nasdaq), sesión de NY Open.</p>
+<p><strong>Paso 1:</strong> Ves un muro de 800 lotes en el bid a 15,200 en el DOM.</p>
+<p><strong>Paso 2:</strong> El tape muestra que vendedores agresivos están golpeando ese bid — ejecutan 200, 300, 500 lotes... pero el muro no cae. Se sigue rellenando.</p>
+<p><strong>Paso 3:</strong> Eso es ABSORCIÓN. Un comprador institucional masivo está defendiendo 15,200.</p>
+<p><strong>Paso 4:</strong> El tape cambia: ahora ves ráfagas de compras agresivas al ask. 100, 200, 150 lotes comprando agresivamente.</p>
+<p><strong>Paso 5:</strong> Entras LONG en 15,205. SL debajo del muro absorbido (15,195). TP en el siguiente nivel de resistencia del DOM (15,250).</p>
+<p><strong>Resultado:</strong> 45 puntos de ganancia con 10 de riesgo = 4.5:1 R:R.</p>
+</div>
+
+<div class="warning-box">
+<h4>Limitaciones del DOM en Forex</h4>
+<p>El mercado forex es descentralizado (OTC), lo que significa que NO hay un libro de órdenes centralizado. El DOM que ves en tu broker de forex solo muestra las órdenes de ESE broker, no del mercado global. Para DOM trading serio, necesitas operar <strong>futuros</strong> (CME) donde el libro de órdenes es real y centralizado. Los futuros de divisas (6E para EUR, 6B para GBP, etc.) ofrecen el DOM más transparente para pares de forex.</p>
+</div>`,
+          keyPoints: [
+            "Level 2/DOM muestra las órdenes limitadas pendientes a cada precio — el libro de órdenes del mercado",
+            "Absorción = muro de órdenes que no se rompe pese a presión agresiva — indica comprador/vendedor institucional",
+            "Spoofing = órdenes falsas que aparecen y desaparecen; icebergs = órdenes ocultas que se recargan constantemente",
+            "Time & Sales es la herramienta más honesta: muestra cada transacción real ejecutada en vivo",
+            "Para DOM trading serio necesitas futuros (CME) — el DOM de forex broker no es centralizado"
+          ],
+          quiz: [
+            {
+              question: "¿Qué es la absorción en el contexto del DOM/Tape Reading?",
+              options: [
+                "Cuando una orden grande se ejecuta de inmediato",
+                "Cuando un muro de órdenes limitadas resiste repetidos ataques de órdenes de mercado sin romperse",
+                "Cuando el spread se amplía repentinamente",
+                "Cuando no hay órdenes en el libro"
+              ],
+              correctIndex: 1,
+              explanation: "La absorción ocurre cuando hay un muro de órdenes limitadas en un nivel que absorbe toda la presión agresiva del lado opuesto sin ceder. Indica un participante institucional gigante defendiendo ese nivel."
+            },
+            {
+              question: "¿Por qué el DOM de un broker de forex no es confiable para tape reading?",
+              options: [
+                "Porque los brokers manipulan los datos",
+                "Porque el forex es descentralizado (OTC) y el DOM solo muestra las órdenes de ese broker, no del mercado global",
+                "Porque el forex no tiene órdenes limitadas",
+                "Porque el tape reading solo funciona con acciones"
+              ],
+              correctIndex: 1,
+              explanation: "El mercado forex es over-the-counter (descentralizado). No hay un libro de órdenes central. El DOM de tu broker solo muestra SUS órdenes internas. Para DOM real, necesitas futuros en exchanges centralizados como el CME."
+            },
+            {
+              question: "¿Cómo detectas una orden iceberg en el Time & Sales?",
+              options: [
+                "Aparece como una orden gigante visible en el DOM",
+                "El tape muestra que un nivel ejecuta mucho más volumen del visible en el DOM, recargándose constantemente",
+                "El spread se cierra a cero",
+                "Las velas se hacen más grandes en el gráfico"
+              ],
+              correctIndex: 1,
+              explanation: "Las órdenes iceberg se dividen en pedazos pequeños para no ser visibles. En el DOM ves 10 lotes, se ejecutan, y aparecen otros 10 inmediatamente. Solo el Time & Sales revela que el volumen ejecutado en ese nivel es mucho mayor al mostrado."
+            }
+          ],
+          practicalExercise: "Si tienes acceso a una plataforma con DOM (Sierra Chart, Bookmap, ATAS, o incluso el DOM de tu broker de futuros), abre el contrato de futuros ES o NQ durante la sesión de NY (9:30-11:00 AM EST). Observa durante 30 minutos sin operar: 1) Identifica al menos 2 muros de órdenes grandes. 2) ¿Son reales (se mantienen) o spoofing (desaparecen)? 3) Busca absorción: un nivel que resiste presión agresiva. 4) En el tape, identifica al menos 3 transacciones de 100+ lotes y anota si fueron al bid o al ask. Documenta todo con capturas de pantalla."
+        },
+        // --------------------------------------------------------------------
+        // LESSON 4-5-3: GESTIÓN DE MÚLTIPLES POSICIONES
+        // --------------------------------------------------------------------
+        {
+          id: "4-5-3",
+          title: "Gestión de Múltiples Posiciones Simultáneas",
+          duration: "20 min",
+          content: `
+<h2>Gestión de Múltiples Posiciones: Cómo Manejar 2-4 Trades Abiertos sin Perder el Control</h2>
+
+<div class="analogy-box">
+<h3>La Analogía del Malabarista</h3>
+<p>Un malabarista experto puede mantener 3-4 pelotas en el aire. ¿La clave? No intenta mirar todas a la vez — tiene un <strong>sistema</strong>: lanza, atrapa, lanza, atrapa, en un ritmo predecible. Si intenta lanzar 7 pelotas sin sistema, se le caen todas. Lo mismo con los trades: puedes manejar múltiples posiciones, pero SOLO con un sistema claro de priorización, gestión de riesgo total, y reglas de correlación.</p>
+</div>
+
+<h3>¿Por qué Tener Múltiples Posiciones?</h3>
+
+<div class="highlight-box green">
+<h4>Ventajas (Cuando se Hace Bien)</h4>
+<ul>
+<li><strong>Diversificación:</strong> No dependes de un solo trade. Si uno falla, otros pueden compensar.</li>
+<li><strong>Más oportunidades:</strong> El mercado ofrece setups en diferentes pares/instrumentos simultáneamente.</li>
+<li><strong>Mejor uso del capital:</strong> Tu dinero trabaja en múltiples frentes en lugar de estar ocioso.</li>
+</ul>
+</div>
+
+<div class="warning-box">
+<h4>El Peligro #1: Riesgo de Correlación</h4>
+<p>Si abres LONG en EUR/USD y LONG en GBP/USD al mismo tiempo, NO tienes 2 trades independientes. Tienes <strong>DOBLE exposición al USD débil</strong>. Si el dólar sube, AMBOS trades pierden. Correlación positiva alta entre EUR/USD y GBP/USD (~0.85) significa que se mueven juntos el 85% del tiempo. Abrir ambos en la misma dirección es como poner el doble de riesgo en un solo trade.</p>
+</div>
+
+<h3>Mapa de Correlaciones que DEBES Conocer</h3>
+
+<div class="grid-cards">
+<div class="card">
+<h4>Correlación Positiva Alta (+0.80 a +1.00)</h4>
+<p><strong>EUR/USD y GBP/USD:</strong> Se mueven juntos. NO abrir en la misma dirección simultáneamente.</p>
+<p><strong>AUD/USD y NZD/USD:</strong> Ambos son "divisas commodity". Misma advertencia.</p>
+<p><strong>S&P 500 y Nasdaq:</strong> Índices correlacionados. Doble exposición si vas long en ambos.</p>
+</div>
+<div class="card">
+<h4>Correlación Negativa Alta (-0.80 a -1.00)</h4>
+<p><strong>EUR/USD y USD/CHF:</strong> Se mueven en dirección opuesta. Ir LONG en ambos = cobertura (hedging), no doble ganancia.</p>
+<p><strong>Gold y USD Index (DXY):</strong> Generalmente inversos. Long gold + long USD = posiciones que se cancelan.</p>
+</div>
+<div class="card">
+<h4>Baja Correlación (±0.30)</h4>
+<p><strong>EUR/USD y USD/JPY:</strong> Baja correlación. Puedes tener ambos abiertos con menos riesgo de doble exposición.</p>
+<p><strong>Gold y S&P 500:</strong> Correlación variable. A veces se mueven juntos, a veces opuestos.</p>
+</div>
+</div>
+
+<h3>Portfolio Heat: Tu Métrica de Riesgo Total</h3>
+
+<div class="calculation-box">
+<h4>Cálculo de Portfolio Heat</h4>
+<p>El <strong>Portfolio Heat</strong> es el riesgo total combinado de todas tus posiciones abiertas. Regla de oro: <strong>nunca superar 3-5% de portfolio heat</strong>.</p>
+<p><strong>Fórmula:</strong> Portfolio Heat = Σ (Riesgo de cada posición abierta)</p>
+<p><strong>Ejemplo con cuenta de $10,000:</strong></p>
+<ul>
+<li>Trade 1 (EUR/USD): Riesgo 1% = $100</li>
+<li>Trade 2 (Gold): Riesgo 1.5% = $150</li>
+<li>Trade 3 (NQ): Riesgo 1% = $100</li>
+</ul>
+<p><strong>Portfolio Heat = 1% + 1.5% + 1% = 3.5%</strong> ✅ Dentro del límite</p>
+<p>Si quisieras abrir un 4to trade con 2% de riesgo, tu heat sería 5.5% ❌ Demasiado.</p>
+</div>
+
+<div style="display:flex;justify-content:center;margin:24px 0">
+<svg width="460" height="260" viewBox="0 0 460 260" style="background:#131722;border-radius:12px;border:1px solid #2a2a40">
+<text x="230" y="22" fill="white" font-size="12" text-anchor="middle" font-weight="bold">PORTFOLIO HEAT — Visualización de Riesgo Total</text>
+<!-- Account bar background -->
+<rect x="30" y="50" width="400" height="40" fill="#1e1e2f" rx="6" stroke="#2a2a40" stroke-width="1"/>
+<text x="230" y="45" fill="#787b86" font-size="9" text-anchor="middle">Cuenta: $10,000 — Máximo Heat: 5% ($500)</text>
+<!-- Trade 1 -->
+<rect x="30" y="50" width="80" height="40" fill="#26a69a80" rx="6"/>
+<text x="70" y="73" fill="white" font-size="9" text-anchor="middle" font-weight="bold">EUR/USD</text>
+<text x="70" y="85" fill="white" font-size="8" text-anchor="middle">1% ($100)</text>
+<!-- Trade 2 -->
+<rect x="110" y="50" width="120" height="40" fill="#42a5f580" rx="0"/>
+<text x="170" y="73" fill="white" font-size="9" text-anchor="middle" font-weight="bold">GOLD</text>
+<text x="170" y="85" fill="white" font-size="8" text-anchor="middle">1.5% ($150)</text>
+<!-- Trade 3 -->
+<rect x="230" y="50" width="80" height="40" fill="#ab47bc80" rx="0"/>
+<text x="270" y="73" fill="white" font-size="9" text-anchor="middle" font-weight="bold">NQ</text>
+<text x="270" y="85" fill="white" font-size="8" text-anchor="middle">1% ($100)</text>
+<!-- Used heat -->
+<text x="160" y="110" fill="#ff9800" font-size="10" text-anchor="middle" font-weight="bold">Heat Usado: 3.5% ($350)</text>
+<!-- Remaining capacity -->
+<rect x="310" y="50" width="120" height="40" fill="#26a69a15" rx="6" stroke="#26a69a40" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="370" y="73" fill="#26a69a" font-size="9" text-anchor="middle">Disponible</text>
+<text x="370" y="85" fill="#26a69a" font-size="8" text-anchor="middle">1.5% ($150)</text>
+<!-- Max heat line -->
+<line x1="430" y1="42" x2="430" y2="96" stroke="#ef5350" stroke-width="2" stroke-dasharray="4,3"/>
+<text x="445" y="72" fill="#ef5350" font-size="8" transform="rotate(90,445,72)">MAX 5%</text>
+<!-- Scale -->
+<text x="30" y="135" fill="#787b86" font-size="8">0%</text>
+<text x="110" y="135" fill="#787b86" font-size="8">1%</text>
+<text x="190" y="135" fill="#787b86" font-size="8">2.5%</text>
+<text x="310" y="135" fill="#787b86" font-size="8">3.5%</text>
+<text x="425" y="135" fill="#ef5350" font-size="8">5%</text>
+<!-- Rules -->
+<text x="230" y="165" fill="white" font-size="10" text-anchor="middle" font-weight="bold">Reglas de Portfolio Heat</text>
+<text x="230" y="182" fill="#26a69a" font-size="9" text-anchor="middle">✓ 0-3%: Zona segura — puedes añadir posiciones</text>
+<text x="230" y="198" fill="#ff9800" font-size="9" text-anchor="middle">⚠ 3-5%: Zona de precaución — solo añadir si hay A+ setup</text>
+<text x="230" y="214" fill="#ef5350" font-size="9" text-anchor="middle">✗ >5%: PROHIBIDO — cierra algo antes de abrir nuevo trade</text>
+<text x="230" y="240" fill="#787b86" font-size="8" text-anchor="middle">Ajustar para correlación: trades correlacionados cuentan 1.5x su riesgo individual</text>
+</svg>
+</div>
+
+<h3>Sistema de Priorización de Trades</h3>
+
+<div class="highlight-box blue">
+<h4>¿Cuál Trade Gestionar Primero?</h4>
+<p>Cuando tienes 3-4 trades abiertos y el mercado se mueve rápido, necesitas un sistema de priorización:</p>
+<ol>
+<li><strong>Prioridad 1 — Trade en pérdida acercándose al SL:</strong> Evalúa si la tesis sigue válida. Si no, cierra manualmente antes del SL.</li>
+<li><strong>Prioridad 2 — Trade llegando a TP o nivel clave:</strong> Decide si tomar ganancias parciales o mover SL a break-even.</li>
+<li><strong>Prioridad 3 — Trade nuevo que acabas de abrir:</strong> Verifica que la entrada fue correcta en los primeros 15-30 minutos.</li>
+<li><strong>Prioridad 4 — Trade en profit corriendo bien:</strong> Solo necesita un vistazo rápido. "Let it run."</li>
+</ol>
+</div>
+
+<h3>Scaling In y Scaling Out</h3>
+
+<div class="grid-cards">
+<div class="card">
+<h4>Scaling In (Añadir a Posición Ganadora)</h4>
+<p>Cuando tu trade va a favor y el mercado confirma tu tesis, puedes añadir tamaño. Reglas: 1) Solo añadir a trades ganadores, NUNCA a perdedores. 2) La nueva entrada debe tener su propio SL válido. 3) El portfolio heat total debe seguir bajo 5%. 4) Máximo 2-3 adiciones por trade.</p>
+</div>
+<div class="card">
+<h4>Scaling Out (Cerrar Parcialmente)</h4>
+<p>Cierra parte de tu posición en niveles clave de TP. Ejemplo: cierra 50% en TP1 (1:2 R:R), mueve SL a break-even, deja el otro 50% correr hacia TP2 (1:4+). Reduces riesgo, aseguras ganancias, y mantienes exposición al movimiento grande.</p>
+</div>
+</div>
+
+<h3>Hedging con Pares Correlacionados</h3>
+
+<div class="strategy-box">
+<h4>Estrategia de Hedging Parcial</h4>
+<p>Si estás LONG EUR/USD con buen profit pero sale una noticia de riesgo, puedes cubrir parcialmente abriendo un SHORT GBP/USD pequeño (correlación positiva). Si el USD sube, tu short GBP/USD compensa parte de la pérdida en EUR/USD. No es cobertura perfecta, pero reduce la volatilidad de tu P&L.</p>
+<p><strong>Regla:</strong> El hedge debe ser MÁS PEQUEÑO que la posición original (ej: 30-50% del tamaño). Si el hedge es igual, estás neutralizando toda la posición y pagando spread por nada.</p>
+</div>
+
+<div class="example-box">
+<h4>Ejemplo: Tracker de Posiciones</h4>
+<p>Crea una hoja de cálculo (Excel/Google Sheets) con estas columnas:</p>
+<p><strong>Par | Dirección | Tamaño | Entrada | SL | TP1 | TP2 | Riesgo $ | Riesgo % | Correlación con otros trades | Estado</strong></p>
+<p>Ejemplo:</p>
+<ul>
+<li>EUR/USD | LONG | 0.5 lotes | 1.1020 | 1.0990 | 1.1060 | 1.1100 | $150 | 1.5% | Correlación con GBP/USD | Activo ✅</li>
+<li>Gold | LONG | 0.3 lotes | 2,340 | 2,330 | 2,360 | 2,380 | $100 | 1% | Baja correlación | Activo ✅</li>
+<li>NQ | SHORT | 1 contrato | 18,500 | 18,530 | 18,440 | 18,380 | $100 | 1% | Inverso a Gold | Activo ✅</li>
+</ul>
+<p><strong>Portfolio Heat Total: 3.5%</strong> — Dentro del límite.</p>
+</div>`,
+          keyPoints: [
+            "Correlación es el riesgo oculto: EUR/USD + GBP/USD en misma dirección = doble exposición al USD",
+            "Portfolio Heat = suma del riesgo de todas las posiciones — máximo 3-5% del capital total",
+            "Priorizar gestión: primero trades en pérdida, luego los que llegan a TP, después los nuevos",
+            "Scaling in solo en trades ganadores; scaling out en TP parciales para asegurar ganancias",
+            "Usa un tracker de posiciones con correlación, riesgo % y estado de cada trade"
+          ],
+          quiz: [
+            {
+              question: "¿Por qué es peligroso abrir LONG en EUR/USD y LONG en GBP/USD simultáneamente?",
+              options: [
+                "Porque son pares de diferentes continentes",
+                "Porque tienen correlación positiva alta (~0.85), creando doble exposición al USD",
+                "Porque los spreads se duplican",
+                "Porque solo puedes tener un trade abierto a la vez"
+              ],
+              correctIndex: 1,
+              explanation: "EUR/USD y GBP/USD tienen correlación positiva de ~0.85, lo que significa que se mueven en la misma dirección el 85% del tiempo. Ir long en ambos es esencialmente duplicar tu exposición a un dólar débil."
+            },
+            {
+              question: "¿Cuál es el límite recomendado de Portfolio Heat?",
+              options: [
+                "10-15% del capital total",
+                "3-5% del capital total sumando el riesgo de todas las posiciones abiertas",
+                "1% por cada trade sin importar cuántos tengas",
+                "No hay límite si los trades son buenos"
+              ],
+              correctIndex: 1,
+              explanation: "El Portfolio Heat no debe superar 3-5% del capital total. Esto incluye la suma de riesgo de TODAS las posiciones abiertas. Si tienes 3 trades con 1.5% de riesgo cada uno, tu heat es 4.5% — cerca del límite."
+            },
+            {
+              question: "¿Cuándo es correcto hacer scaling in (añadir a una posición)?",
+              options: [
+                "Cuando el trade está perdiendo para promediar el precio",
+                "Solo cuando el trade va a favor, con SL propio, y el portfolio heat sigue bajo 5%",
+                "Siempre que quieras, sin reglas",
+                "Solo al inicio del trade antes de que se mueva"
+              ],
+              correctIndex: 1,
+              explanation: "Scaling in solo se hace en trades ganadores que confirman tu tesis. La nueva entrada necesita su propio SL válido y el portfolio heat total debe seguir dentro del 5%. NUNCA añadas a posiciones perdedoras."
+            }
+          ],
+          practicalExercise: "Crea una hoja de cálculo de tracker de posiciones con las columnas: Par, Dirección, Tamaño, Entrada, SL, TP1, TP2, Riesgo $, Riesgo %, Correlación, Estado. Ahora simula 3 trades simultáneos con una cuenta de $10,000 (máximo 1.5% de riesgo por trade). Calcula el Portfolio Heat total. Luego añade un 4to trade hipotético y verifica si excede el 5%. Investiga la correlación actual entre EUR/USD y GBP/USD en myfxbook.com/forex-market/correlation y anótala."
+        },
+        // --------------------------------------------------------------------
+        // LESSON 4-5-4: MEAN REVERSION
+        // --------------------------------------------------------------------
+        {
+          id: "4-5-4",
+          title: "Mean Reversion: Estrategia Completa de Reversión a la Media",
+          duration: "25 min",
+          content: `
+<h2>Mean Reversion: El Precio Siempre Vuelve a su Media</h2>
+
+<div class="analogy-box">
+<h3>La Analogía de la Liga Elástica</h3>
+<p>Imagina una liga elástica atada a un poste (la media). Puedes estirarla hacia arriba o hacia abajo, pero cuanto más la estiras, <strong>más fuerza hace para volver al centro</strong>. Si la estiras demasiado, SNAP — regresa violentamente. Los precios se comportan igual: pueden alejarse de su media (SMA 20, SMA 50), pero estadísticamente <strong>tienden a volver</strong>. Cuanto más lejos están, más probable es el regreso. Eso es <strong>mean reversion</strong>.</p>
+</div>
+
+<h3>¿Qué es Mean Reversion?</h3>
+<p>Mean reversion (reversión a la media) es la teoría estadística de que los precios tienden a <strong>regresar a su promedio histórico</strong> después de desviarse significativamente. No es magia — es la naturaleza del mercado: los excesos de optimismo y pesimismo eventualmente se corrigen.</p>
+
+<div class="highlight-box yellow">
+<h4>¿Cuándo Funciona y Cuándo NO?</h4>
+<p><strong>FUNCIONA en mercados en rango (ranging):</strong> Cuando el precio oscila entre soporte y resistencia sin tendencia clara, la reversión a la media es extremadamente efectiva.</p>
+<p><strong>NO FUNCIONA en tendencias fuertes:</strong> Si el mercado está en una tendencia directional fuerte (ej: subiendo 500 pips en línea recta), la media se mueve CON el precio. Intentar vender "porque está muy alto" te destruye. Las tendencias pueden extenderse mucho más de lo que esperas.</p>
+</div>
+
+<h3>Herramientas para Mean Reversion</h3>
+
+<div class="grid-cards">
+<div class="card">
+<h4>Bollinger Bands</h4>
+<p>Las Bandas de Bollinger miden la volatilidad alrededor de una SMA (generalmente SMA 20). Las bandas superior e inferior están a ±2 desviaciones estándar. Estadísticamente, el precio permanece dentro de las bandas el <strong>95% del tiempo</strong>. Cuando toca la banda inferior, está "sobreextendido" hacia abajo. Cuando toca la superior, hacia arriba.</p>
+</div>
+<div class="card">
+<h4>RSI (Relative Strength Index)</h4>
+<p>RSI mide la velocidad y magnitud de los cambios de precio. En mean reversion usamos: <strong>RSI < 20 = extremadamente sobrevendido</strong> (oportunidad de compra). <strong>RSI > 80 = extremadamente sobrecomprado</strong> (oportunidad de venta). En rango, estos extremos son muy confiables.</p>
+</div>
+<div class="card">
+<h4>Keltner Channels</h4>
+<p>Similar a Bollinger Bands pero usa ATR en lugar de desviación estándar. Más suave y menos sensible a spikes. Cuando el precio sale de los Keltner Channels, está en territorio de sobreextensión. Útil como filtro adicional a Bollinger.</p>
+</div>
+<div class="card">
+<h4>Z-Score</h4>
+<p>El <strong>Z-Score</strong> mide cuántas desviaciones estándar está el precio actual de su media. Z-Score de +2 = 2 desviaciones por encima (muy sobreextendido). Z-Score de -2 = 2 desviaciones por debajo. Es la base matemática de Bollinger Bands pero más preciso.</p>
+</div>
+</div>
+
+<div style="display:flex;justify-content:center;margin:24px 0">
+<svg width="500" height="280" viewBox="0 0 500 280" style="background:#131722;border-radius:12px;border:1px solid #2a2a40">
+<text x="250" y="20" fill="white" font-size="12" text-anchor="middle" font-weight="bold">MEAN REVERSION — Concepto Visual</text>
+<!-- SMA 20 (mean) -->
+<line x1="30" y1="140" x2="470" y2="140" stroke="#ff9800" stroke-width="2" stroke-dasharray="6,4"/>
+<text x="475" y="143" fill="#ff9800" font-size="8">SMA 20</text>
+<!-- Upper Bollinger Band -->
+<path d="M30,80 Q80,75 130,70 Q180,65 230,72 Q280,78 330,68 Q380,62 430,70 L470,74" fill="none" stroke="#42a5f5" stroke-width="1.5" stroke-dasharray="4,3"/>
+<text x="475" y="74" fill="#42a5f5" font-size="7">BB Sup</text>
+<!-- Lower Bollinger Band -->
+<path d="M30,200 Q80,205 130,210 Q180,215 230,208 Q280,202 330,212 Q380,218 430,210 L470,206" fill="none" stroke="#42a5f5" stroke-width="1.5" stroke-dasharray="4,3"/>
+<text x="475" y="210" fill="#42a5f5" font-size="7">BB Inf</text>
+<!-- Price action showing mean reversion -->
+<polyline points="40,135 70,110 100,85 130,72" fill="none" stroke="#8b5cf6" stroke-width="2"/>
+<!-- Arrow showing price touching upper band -->
+<circle cx="130" cy="72" r="5" fill="none" stroke="#ef5350" stroke-width="2"/>
+<text x="140" y="55" fill="#ef5350" font-size="9" font-weight="bold">VENTA</text>
+<text x="140" y="65" fill="#ef5350" font-size="7">(RSI > 80)</text>
+<!-- Price returning to mean -->
+<polyline points="130,72 160,95 190,120 220,138" fill="none" stroke="#ef5350" stroke-width="2"/>
+<!-- Arrow at mean -->
+<text x="225" y="133" fill="#ff9800" font-size="8">Regresa a la media</text>
+<!-- Price continuing down to lower band -->
+<polyline points="220,138 250,160 280,185 310,210" fill="none" stroke="#8b5cf6" stroke-width="2"/>
+<!-- Arrow showing price touching lower band -->
+<circle cx="310" cy="210" r="5" fill="none" stroke="#26a69a" stroke-width="2"/>
+<text x="320" y="225" fill="#26a69a" font-size="9" font-weight="bold">COMPRA</text>
+<text x="320" y="235" fill="#26a69a" font-size="7">(RSI < 20)</text>
+<!-- Price returning to mean again -->
+<polyline points="310,210 340,190 370,165 400,142" fill="none" stroke="#26a69a" stroke-width="2"/>
+<text x="405" y="137" fill="#ff9800" font-size="8">Regresa a la media</text>
+<!-- Price continuing up -->
+<polyline points="400,142 430,125 460,110" fill="none" stroke="#8b5cf6" stroke-width="2"/>
+<!-- Labels -->
+<text x="250" y="260" fill="#787b86" font-size="9" text-anchor="middle">El precio se estira → toca la banda → regresa a la SMA 20</text>
+<text x="250" y="275" fill="#42a5f5" font-size="8" text-anchor="middle">95% del tiempo el precio permanece dentro de las Bollinger Bands (±2σ)</text>
+</svg>
+</div>
+
+<h3>Reglas de Entrada para Mean Reversion</h3>
+
+<div class="strategy-box">
+<h4>Setup de Compra (Long) — Mean Reversion</h4>
+<ol>
+<li><strong>Confirmar rango:</strong> El mercado NO está en tendencia fuerte. ADX < 25 o precio oscilando entre soporte/resistencia claros.</li>
+<li><strong>RSI < 20:</strong> Extremadamente sobrevendido (no solo < 30, queremos extremo).</li>
+<li><strong>Precio en la Banda de Bollinger inferior:</strong> Tocando o perforando la banda inferior.</li>
+<li><strong>Soporte técnico:</strong> El precio está en un nivel de soporte, demand zone, o Order Block.</li>
+<li><strong>Vela de rechazo:</strong> Pin bar, hammer, o envolvente alcista en el nivel.</li>
+<li><strong>Entrada:</strong> Al cierre de la vela de rechazo o en retroceso al 50% de esa vela.</li>
+</ol>
+</div>
+
+<div class="strategy-box">
+<h4>Setup de Venta (Short) — Mean Reversion</h4>
+<ol>
+<li><strong>Confirmar rango:</strong> ADX < 25 o mercado lateral.</li>
+<li><strong>RSI > 80:</strong> Extremadamente sobrecomprado.</li>
+<li><strong>Precio en la Banda de Bollinger superior:</strong> Tocando o perforando.</li>
+<li><strong>Resistencia técnica:</strong> Supply zone, Order Block, o nivel de resistencia.</li>
+<li><strong>Vela de rechazo bajista:</strong> Shooting star, bearish engulfing en el nivel.</li>
+<li><strong>Entrada:</strong> Al cierre de la vela de rechazo.</li>
+</ol>
+</div>
+
+<h3>Reglas de Salida y Risk Management</h3>
+
+<div class="highlight-box red">
+<h4>Stop Loss en Mean Reversion: Más Ajustado que Trend Following</h4>
+<p>En mean reversion, tu SL debe ser <strong>más ajustado</strong> que en estrategias de tendencia. ¿Por qué? Porque si el precio no revierte rápidamente, probablemente has entrado en una tendencia y la tesis está mal.</p>
+<ul>
+<li><strong>SL:</strong> Debajo del mínimo de la vela de rechazo + unos pips de buffer (para longs). Encima del máximo + buffer (para shorts).</li>
+<li><strong>TP:</strong> La SMA 20 (la media). Es el objetivo natural — el precio "vuelve a casa".</li>
+<li><strong>R:R típico:</strong> 1:1.5 a 1:2.5. No esperes ratios de 1:4+ como en tendencia.</li>
+</ul>
+</div>
+
+<h3>Z-Score: El Enfoque Cuantitativo</h3>
+
+<div class="calculation-box">
+<h4>Cálculo del Z-Score</h4>
+<p><strong>Z-Score = (Precio Actual - Media) / Desviación Estándar</strong></p>
+<p>Ejemplo: SMA 20 de EUR/USD = 1.1000. Desviación estándar = 0.0030. Precio actual = 1.1065.</p>
+<p><strong>Z-Score = (1.1065 - 1.1000) / 0.0030 = 2.17</strong></p>
+<p>Interpretación: El precio está 2.17 desviaciones estándar por encima de la media. Solo el ~1.5% del tiempo el precio está tan lejos. Alta probabilidad de reversión.</p>
+<p><strong>Regla:</strong> Z-Score > +2.0 = buscar shorts. Z-Score < -2.0 = buscar longs.</p>
+</div>
+
+<div class="warning-box">
+<h4>¡NUNCA Uses Mean Reversion en Tendencias Fuertes!</h4>
+<p>El error más mortífero: intentar vender "porque el RSI está en 80" durante un rally masivo. En tendencias fuertes, el RSI puede estar en 80+ durante SEMANAS. Las Bollinger Bands se expanden. La media se mueve. Si vendes, el precio te pasa por encima.</p>
+<p><strong>Filtros para evitar este error:</strong></p>
+<ul>
+<li>ADX > 25 = tendencia fuerte → NO hagas mean reversion</li>
+<li>Bandas de Bollinger expandiéndose = volatilidad creciente → peligro</li>
+<li>Precio haciendo HH/HL consistentes = tendencia alcista → no vendas</li>
+<li>Noticias de alto impacto = movimientos directionales → no operar mean reversion</li>
+</ul>
+</div>
+
+<div class="example-box">
+<h4>Ejemplo Completo: Trade de Mean Reversion</h4>
+<p><strong>Par:</strong> EUR/USD H4. <strong>Contexto:</strong> Mercado en rango entre 1.0950 y 1.1050 desde hace 2 semanas.</p>
+<p><strong>Paso 1:</strong> Precio baja a 1.0945 — toca la Bollinger Band inferior. RSI en 18. ADX en 19 (sin tendencia).</p>
+<p><strong>Paso 2:</strong> Se forma un hammer en H4 con mecha inferior larga tocando 1.0940.</p>
+<p><strong>Paso 3:</strong> Entras LONG en 1.0950. SL en 1.0930 (debajo del hammer). TP en SMA 20 = 1.1000.</p>
+<p><strong>Resultado:</strong> Riesgo = 20 pips. Ganancia = 50 pips. R:R = 1:2.5. El precio vuelve a la media en 3 días.</p>
+</div>`,
+          keyPoints: [
+            "Mean reversion = el precio tiende a volver a su media después de desviarse significativamente",
+            "Solo funciona en mercados en rango (ADX < 25) — NUNCA en tendencias fuertes",
+            "Setup largo: RSI < 20 + precio en Bollinger inferior + soporte + vela de rechazo",
+            "SL más ajustado que en trend following; TP en la SMA 20 (la media); R:R típico 1:1.5 a 1:2.5",
+            "Z-Score > +2.0 = buscar shorts; Z-Score < -2.0 = buscar longs — base estadística de la estrategia"
+          ],
+          quiz: [
+            {
+              question: "¿Cuándo es el PEOR momento para usar una estrategia de mean reversion?",
+              options: [
+                "Cuando el mercado está en rango lateral",
+                "Cuando hay una tendencia fuerte y directional (ADX > 25, HH/HL consistentes)",
+                "Cuando el RSI está por debajo de 20",
+                "Cuando el precio toca la Bollinger Band inferior"
+              ],
+              correctIndex: 1,
+              explanation: "Mean reversion falla catastróficamente en tendencias fuertes. Si el ADX es mayor a 25 y el precio hace Higher Highs / Higher Lows consistentes, la media se mueve con el precio y vender contra la tendencia causa pérdidas severas."
+            },
+            {
+              question: "¿Cuál es el take profit natural en una estrategia de mean reversion?",
+              options: [
+                "La Bollinger Band opuesta",
+                "La SMA 20 (la media), ya que el precio tiende a regresar a ella",
+                "Un ratio fijo de 1:5",
+                "El máximo del año anterior"
+              ],
+              correctIndex: 1,
+              explanation: "En mean reversion, el objetivo natural es la media (SMA 20). El concepto es que el precio se desvió y vuelve a su promedio. Intentar ir más allá de la media requiere una tesis diferente (trend following)."
+            },
+            {
+              question: "¿Qué indica un Z-Score de -2.3?",
+              options: [
+                "El precio está 2.3 desviaciones estándar por encima de la media",
+                "El precio está 2.3 desviaciones estándar por debajo de la media — extremadamente sobrevendido",
+                "El volumen es 2.3 veces lo normal",
+                "El RSI está en 23"
+              ],
+              correctIndex: 1,
+              explanation: "Un Z-Score de -2.3 significa que el precio actual está 2.3 desviaciones estándar POR DEBAJO de su media. Estadísticamente, esto solo ocurre ~1% del tiempo, indicando una condición extrema de sobreventa con alta probabilidad de reversión."
+            }
+          ],
+          practicalExercise: "En TradingView, abre EUR/USD en H4. Añade: Bollinger Bands (20, 2), RSI (14), y ADX (14). Busca los últimos 10 momentos donde el RSI bajó de 20 O subió de 80 MIENTRAS el ADX estaba bajo 25. ¿Cuántas veces el precio regresó a la SMA 20 después? Calcula el win rate. Ahora busca 3 momentos donde el RSI estaba en extremo PERO el ADX era mayor a 30. ¿Funcionó la reversión o el precio siguió en tendencia? Este ejercicio te enseñará CUÁNDO usar y cuándo NO usar mean reversion."
+        },
+        // --------------------------------------------------------------------
+        // LESSON 4-5-5: TRADING ESTACIONAL
+        // --------------------------------------------------------------------
+        {
+          id: "4-5-5",
+          title: "Trading Estacional: Estrategias Basadas en el Calendario",
+          duration: "25 min",
+          content: `
+<h2>Trading Estacional: Usa el Calendario como Ventaja</h2>
+
+<div class="analogy-box">
+<h3>La Analogía de las Estaciones del Año</h3>
+<p>Así como un agricultor sabe que la primavera es para sembrar y el otoño para cosechar, los mercados financieros tienen sus propias "estaciones". No son perfectas como el clima, pero <strong>los patrones se repiten con suficiente consistencia</strong> como para darte una ventaja estadística. No operas SOLO por la estación, pero si tu análisis técnico coincide con un sesgo estacional favorable, tu probabilidad de éxito aumenta significativamente.</p>
+</div>
+
+<h3>¿Qué es el Trading Estacional?</h3>
+<p>El trading estacional se basa en patrones históricos que se repiten en <strong>ciertos meses, semanas, o días del año</strong> de forma consistente. Estos patrones existen por razones fundamentales: flujos fiscales, rebalanceo de fondos, vacaciones, y comportamiento humano cíclico. No son garantía, pero proporcionan un <strong>sesgo probabilístico adicional</strong> para tus decisiones.</p>
+
+<h3>Estacionalidad Mensual de los Principales Mercados</h3>
+
+<div style="display:flex;justify-content:center;margin:24px 0">
+<svg width="500" height="320" viewBox="0 0 500 320" style="background:#131722;border-radius:12px;border:1px solid #2a2a40">
+<text x="250" y="20" fill="white" font-size="12" text-anchor="middle" font-weight="bold">RENDIMIENTO MENSUAL PROMEDIO — S&P 500 (20 años)</text>
+<!-- Axis -->
+<line x1="45" y1="250" x2="485" y2="250" stroke="#2a2a40" stroke-width="1"/>
+<line x1="45" y1="50" x2="45" y2="250" stroke="#2a2a40" stroke-width="1"/>
+<!-- Y-axis labels -->
+<text x="40" y="80" fill="#787b86" font-size="8" text-anchor="end">+2.0%</text>
+<line x1="45" y1="80" x2="485" y2="80" stroke="#2a2a4050" stroke-width="0.5"/>
+<text x="40" y="130" fill="#787b86" font-size="8" text-anchor="end">+1.0%</text>
+<line x1="45" y1="130" x2="485" y2="130" stroke="#2a2a4050" stroke-width="0.5"/>
+<text x="40" y="180" fill="#787b86" font-size="8" text-anchor="end">+0.0%</text>
+<line x1="45" y1="180" x2="485" y2="180" stroke="#ff980050" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="40" y="220" fill="#787b86" font-size="8" text-anchor="end">-1.0%</text>
+<line x1="45" y1="220" x2="485" y2="220" stroke="#2a2a4050" stroke-width="0.5"/>
+<!-- Monthly bars -->
+<!-- Jan: +1.0% -->
+<rect x="55" y="130" width="28" height="50" fill="#26a69a" rx="2"/>
+<text x="69" y="125" fill="#26a69a" font-size="7" text-anchor="middle">+1.0%</text>
+<text x="69" y="265" fill="#787b86" font-size="8" text-anchor="middle">Ene</text>
+<!-- Feb: -0.2% -->
+<rect x="92" y="180" width="28" height="14" fill="#ef5350" rx="2"/>
+<text x="106" y="200" fill="#ef5350" font-size="7" text-anchor="middle">-0.2%</text>
+<text x="106" y="265" fill="#787b86" font-size="8" text-anchor="middle">Feb</text>
+<!-- Mar: +1.2% -->
+<rect x="129" y="120" width="28" height="60" fill="#26a69a" rx="2"/>
+<text x="143" y="115" fill="#26a69a" font-size="7" text-anchor="middle">+1.2%</text>
+<text x="143" y="265" fill="#787b86" font-size="8" text-anchor="middle">Mar</text>
+<!-- Apr: +1.5% -->
+<rect x="166" y="105" width="28" height="75" fill="#26a69a" rx="2"/>
+<text x="180" y="100" fill="#26a69a" font-size="7" text-anchor="middle">+1.5%</text>
+<text x="180" y="265" fill="#787b86" font-size="8" text-anchor="middle">Abr</text>
+<!-- May: +0.2% -->
+<rect x="203" y="170" width="28" height="10" fill="#26a69a60" rx="2"/>
+<text x="217" y="165" fill="#26a69a" font-size="7" text-anchor="middle">+0.2%</text>
+<text x="217" y="265" fill="#787b86" font-size="8" text-anchor="middle">May</text>
+<!-- Jun: -0.1% -->
+<rect x="240" y="180" width="28" height="7" fill="#ef535060" rx="2"/>
+<text x="254" y="196" fill="#ef5350" font-size="7" text-anchor="middle">-0.1%</text>
+<text x="254" y="265" fill="#787b86" font-size="8" text-anchor="middle">Jun</text>
+<!-- Jul: +1.3% -->
+<rect x="277" y="115" width="28" height="65" fill="#26a69a" rx="2"/>
+<text x="291" y="110" fill="#26a69a" font-size="7" text-anchor="middle">+1.3%</text>
+<text x="291" y="265" fill="#787b86" font-size="8" text-anchor="middle">Jul</text>
+<!-- Aug: -0.3% -->
+<rect x="314" y="180" width="28" height="21" fill="#ef5350" rx="2"/>
+<text x="328" y="210" fill="#ef5350" font-size="7" text-anchor="middle">-0.3%</text>
+<text x="328" y="265" fill="#787b86" font-size="8" text-anchor="middle">Ago</text>
+<!-- Sep: -0.7% -->
+<rect x="351" y="180" width="28" height="49" fill="#ef5350" rx="2"/>
+<text x="365" y="237" fill="#ef5350" font-size="7" text-anchor="middle">-0.7%</text>
+<text x="365" y="265" fill="#ef5350" font-size="8" text-anchor="middle" font-weight="bold">Sep</text>
+<!-- Oct: +0.8% -->
+<rect x="388" y="140" width="28" height="40" fill="#26a69a" rx="2"/>
+<text x="402" y="135" fill="#26a69a" font-size="7" text-anchor="middle">+0.8%</text>
+<text x="402" y="265" fill="#787b86" font-size="8" text-anchor="middle">Oct</text>
+<!-- Nov: +1.7% -->
+<rect x="425" y="95" width="28" height="85" fill="#26a69a" rx="2"/>
+<text x="439" y="90" fill="#26a69a" font-size="7" text-anchor="middle">+1.7%</text>
+<text x="439" y="265" fill="#26a69a" font-size="8" text-anchor="middle" font-weight="bold">Nov</text>
+<!-- Dec: +1.4% -->
+<rect x="462" y="110" width="28" height="70" fill="#26a69a" rx="2"/>
+<text x="476" y="105" fill="#26a69a" font-size="7" text-anchor="middle">+1.4%</text>
+<text x="476" y="265" fill="#26a69a" font-size="8" text-anchor="middle" font-weight="bold">Dic</text>
+<!-- Annotations -->
+<text x="365" y="290" fill="#ef5350" font-size="8" text-anchor="middle">↑ Septiembre: el peor mes históricamente</text>
+<text x="457" y="290" fill="#26a69a" font-size="8" text-anchor="middle">↑ Nov-Dic: Santa Rally</text>
+<text x="250" y="310" fill="#787b86" font-size="8" text-anchor="middle">Datos promedio de 20 años. Rendimiento pasado NO garantiza rendimiento futuro.</text>
+</svg>
+</div>
+
+<h3>Patrones Estacionales Clave</h3>
+
+<div class="grid-cards">
+<div class="card">
+<h4>S&P 500 / Índices USA</h4>
+<ul>
+<li><strong>Mejores meses:</strong> Noviembre, Abril, Diciembre (Santa Rally)</li>
+<li><strong>Peor mes:</strong> Septiembre (históricamente el más bajista)</li>
+<li><strong>"Sell in May and Go Away":</strong> Mayo-Octubre históricamente rinde menos que Noviembre-Abril</li>
+<li><strong>Efecto enero:</strong> Las acciones small-cap tienden a subir en enero por rebalanceo fiscal</li>
+</ul>
+</div>
+<div class="card">
+<h4>EUR/USD</h4>
+<ul>
+<li><strong>Fortaleza EUR:</strong> Enero-Marzo (repatriación de flujos europeos, cierre fiscal)</li>
+<li><strong>Debilidad EUR:</strong> Julio-Agosto (verano europeo, baja liquidez)</li>
+<li><strong>Septiembre-Octubre:</strong> Alta volatilidad, movimientos grandes sin dirección clara</li>
+<li><strong>Fin de año:</strong> El USD tiende a debilitarse en diciembre (window dressing)</li>
+</ul>
+</div>
+<div class="card">
+<h4>Oro (Gold / XAU/USD)</h4>
+<ul>
+<li><strong>Mejores meses:</strong> Enero-Febrero (demanda asiática, Año Nuevo Chino), Agosto-Septiembre (demanda india, temporada de bodas)</li>
+<li><strong>Débil:</strong> Marzo-Junio (históricamente plano o bajista)</li>
+<li><strong>Septiembre-Octubre:</strong> Rally estacional frecuente por demanda de joyería india</li>
+</ul>
+</div>
+</div>
+
+<h3>Patrones de Día de la Semana</h3>
+
+<div class="grid-cards">
+<div class="card">
+<h4>Turnaround Tuesday</h4>
+<p>Si el mercado tuvo un día fuerte el lunes (subida o bajada), estadísticamente tiende a <strong>revertir parcialmente el martes</strong>. No es para operar a ciegas, pero si tu análisis técnico sugiere un retroceso el martes después de un lunes fuerte, el sesgo estacional lo apoya.</p>
+</div>
+<div class="card">
+<h4>Witching Friday (Triple/Cuádruple Vencimiento)</h4>
+<p>El tercer viernes de marzo, junio, septiembre y diciembre vencen contratos de opciones y futuros simultáneamente. Esto causa <strong>volatilidad extrema y movimientos erráticos</strong>. No es buen día para operar setups normales. Si operas, reduce tu tamaño de posición a la mitad.</p>
+</div>
+<div class="card">
+<h4>Efecto Turn-of-Month</h4>
+<p>Los últimos 2 días del mes y los primeros 3 días del mes siguiente tienden a ser <strong>alcistas en índices</strong>. Razón: flujos de fondos de pensiones y fondos mutuos que reciben capital nuevo al inicio de cada mes y lo invierten en el mercado.</p>
+</div>
+<div class="card">
+<h4>Efecto Festivos</h4>
+<p>Los días previos a festivos importantes (Thanksgiving, Navidad, 4 de julio) tienden a ser <strong>alcistas y de baja volatilidad</strong>. Los traders institucionales cierran posiciones y toman ganancias antes de vacaciones, creando un sesgo comprador tranquilo.</p>
+</div>
+</div>
+
+<h3>Cómo Combinar Estacionalidad con Análisis Técnico</h3>
+
+<div class="highlight-box green">
+<h4>La Regla de Oro: Estacionalidad como FILTRO, No como Señal</h4>
+<p>NUNCA operes solo por estacionalidad. Úsala como un <strong>filtro de confluencia adicional</strong>:</p>
+<ol>
+<li><strong>Tu análisis técnico dice LONG</strong> (OB + FVG + estructura alcista) ✅</li>
+<li><strong>La estacionalidad confirma:</strong> Estamos en noviembre (históricamente alcista para SPX) ✅</li>
+<li><strong>Resultado:</strong> Mayor confianza en el trade. Quizás aumentas tamaño ligeramente.</li>
+</ol>
+<p>Si tu análisis técnico dice SHORT pero la estacionalidad dice LONG → <strong>el técnico manda</strong>. La estacionalidad solo añade o resta confianza, nunca decide sola.</p>
+</div>
+
+<h3>Herramientas para Análisis Estacional</h3>
+
+<div class="grid-cards">
+<div class="card">
+<h4>SeasonalCharts.com</h4>
+<p>Herramienta gratuita que muestra patrones estacionales de forex, commodities e índices basados en promedios históricos de 5, 10, 15 y 20 años. Visualización clara con gráficos overlay.</p>
+</div>
+<div class="card">
+<h4>EquityClock.com</h4>
+<p>Especializado en acciones y ETFs. Muestra el patrón estacional de cada instrumento con datos de décadas. Incluye estadísticas de probabilidad por mes.</p>
+</div>
+<div class="card">
+<h4>TradingView (Indicadores)</h4>
+<p>Busca indicadores como "Seasonal Tendency" o "Monthly Returns" en TradingView. Algunos son gratuitos y superponen el patrón estacional sobre tu gráfico actual.</p>
+</div>
+</div>
+
+<h3>Construye tu Calendario de Trading Estacional</h3>
+
+<div class="strategy-box">
+<h4>Plantilla de Calendario Estacional</h4>
+<p>Crea una hoja con esta estructura para cada mes:</p>
+<ul>
+<li><strong>Mes:</strong> [Enero, Febrero, etc.]</li>
+<li><strong>S&P 500:</strong> Alcista/Bajista/Neutral + rendimiento promedio</li>
+<li><strong>EUR/USD:</strong> Sesgo + razón fundamental</li>
+<li><strong>Gold:</strong> Sesgo + catalizador (demanda asiática, joyería india, etc.)</li>
+<li><strong>Eventos clave:</strong> NFP, FOMC, vencimientos, festivos</li>
+<li><strong>Estrategia recomendada:</strong> Trend following / Mean reversion / Reducir exposición</li>
+</ul>
+<p>Ejemplo para <strong>Septiembre:</strong> SPX bajista (-0.7% promedio), alta volatilidad, vencimiento trimestral el tercer viernes, Gold potencial rally estacional. Estrategia: reducir tamaño, buscar shorts en SPX si técnico confirma, watchlist de gold longs.</p>
+</div>
+
+<h3>Backtesting de Estrategias Estacionales</h3>
+
+<div class="highlight-box purple">
+<h4>Cómo Validar un Patrón Estacional</h4>
+<ol>
+<li><strong>Muestra suficiente:</strong> Usa al menos 10-20 años de datos. Menos de 10 años no es estadísticamente significativo.</li>
+<li><strong>Consistencia:</strong> El patrón debe funcionar en al menos 60-65% de los años para ser útil.</li>
+<li><strong>Magnitud:</strong> El movimiento promedio debe ser suficientemente grande para cubrir spread y comisiones.</li>
+<li><strong>Razón fundamental:</strong> ¿Hay una explicación lógica? (Flujos fiscales, rebalanceo, demanda estacional). Si no la hay, puede ser coincidencia.</li>
+<li><strong>Combinación:</strong> Combina con al menos 1 señal técnica. Estacionalidad sola = base débil.</li>
+</ol>
+</div>
+
+<div class="example-box">
+<h4>Ejemplo Completo: Trade Estacional + Técnico</h4>
+<p><strong>Setup:</strong> Es finales de octubre. La estacionalidad dice que noviembre es el mejor mes para el S&P 500 (+1.7% promedio en 20 años).</p>
+<p><strong>Análisis técnico:</strong> En el gráfico diario del S&P 500, hay un Order Block alcista sin mitigar en 4,350. El RSI está en 42 (neutral, no sobrecomprado). La estructura en H4 muestra un BOS alcista reciente.</p>
+<p><strong>Confluencia:</strong> Estacionalidad alcista + OB sin mitigar + estructura alcista + RSI neutral = setup de alta confianza.</p>
+<p><strong>Ejecución:</strong> Compra en 4,350 (al llegar al OB). SL en 4,320. TP1 en 4,420 (1:2.3). TP2 en 4,480 si el rally de noviembre se desarrolla.</p>
+<p><strong>Gestión:</strong> Si a mediados de noviembre el trade sigue en profit, considerar mantener hasta finales de mes cuando históricamente el rally se extiende hacia diciembre (Santa Rally).</p>
+</div>
+
+<div class="warning-box">
+<h4>Limitaciones del Trading Estacional</h4>
+<p>Los patrones estacionales son <strong>promedios históricos, no garantías</strong>. Pueden fallar espectacularmente cuando:</p>
+<ul>
+<li><strong>Eventos macro extraordinarios:</strong> Pandemias, guerras, crisis financieras rompen toda estacionalidad.</li>
+<li><strong>Cambios de política monetaria:</strong> Una subida de tasas inesperada puede revertir cualquier sesgo estacional.</li>
+<li><strong>Años de transición:</strong> Elecciones, cambios de gobierno, reformas fiscales alteran los flujos normales.</li>
+</ul>
+<p><strong>Regla final:</strong> La estacionalidad te da el VIENTO a favor. Pero si hay un huracán (evento macro), el viento estacional no importa. Siempre prioriza el contexto actual sobre el patrón histórico.</p>
+</div>`,
+          keyPoints: [
+            "Estacionalidad = patrones históricos que se repiten por flujos fiscales, rebalanceo de fondos y comportamiento cíclico",
+            "Septiembre es históricamente el peor mes para índices; Nov-Dic los mejores (Santa Rally)",
+            "Turnaround Tuesday, efecto turn-of-month y witching Friday son patrones intra-mes documentados",
+            "NUNCA operar solo por estacionalidad — úsala como filtro de confluencia con análisis técnico",
+            "Validar patrones con +10 años de datos, consistencia >60%, y una razón fundamental que los explique"
+          ],
+          quiz: [
+            {
+              question: "¿Cuál es históricamente el peor mes para el S&P 500?",
+              options: [
+                "Enero, por el efecto de resaca de fin de año",
+                "Septiembre, con un rendimiento promedio negativo de -0.7% en 20 años",
+                "Diciembre, por el cierre fiscal",
+                "Julio, por las vacaciones de verano"
+              ],
+              correctIndex: 1,
+              explanation: "Septiembre es históricamente el peor mes para el S&P 500 con un rendimiento promedio de -0.7% en los últimos 20 años. Las teorías incluyen: rebalanceo de fondos después del verano, ventas fiscales, y ajustes de cartera post-vacaciones."
+            },
+            {
+              question: "¿Cómo debes usar la estacionalidad en tu trading?",
+              options: [
+                "Como la señal principal para abrir trades",
+                "Como un filtro de confluencia adicional que acompaña tu análisis técnico",
+                "Ignorarla completamente porque es irrelevante",
+                "Solo en forex, no en índices"
+              ],
+              correctIndex: 1,
+              explanation: "La estacionalidad NUNCA debe ser la señal principal. Se usa como filtro de confluencia adicional: si tu análisis técnico y la estacionalidad apuntan en la misma dirección, aumentas la confianza. Si se contradicen, el técnico manda."
+            },
+            {
+              question: "¿Qué es el efecto 'Turn-of-Month' y por qué ocurre?",
+              options: [
+                "Es un patrón bajista el último día del mes",
+                "Los últimos 2 días del mes y primeros 3 del siguiente son alcistas en índices, por flujos de fondos de pensiones",
+                "Es cuando cambian las tasas de interés mensualmente",
+                "Es un patrón exclusivo del mercado de bonos"
+              ],
+              correctIndex: 1,
+              explanation: "El efecto turn-of-month muestra que los últimos 2 días del mes y los primeros 3 del siguiente tienden a ser alcistas. Esto se debe a que fondos de pensiones y fondos mutuos reciben capital nuevo al inicio de cada mes y lo invierten, creando presión compradora."
+            }
+          ],
+          practicalExercise: "Construye tu calendario de trading estacional personal. 1) Ve a SeasonalCharts.com y busca los patrones estacionales de: EUR/USD, S&P 500, y Gold para cada mes. 2) Crea una hoja de cálculo con 12 filas (una por mes) y columnas para cada instrumento con su sesgo (alcista/bajista/neutral). 3) Añade una columna de 'eventos clave' (NFP, FOMC, vencimientos trimestrales). 4) Ahora verifica: ¿el mes actual coincide con el sesgo estacional? Busca un setup técnico en un instrumento donde la estacionalidad apoye tu dirección y documenta el trade (sin ejecutarlo aún, solo en demo o papel)."
+        }
+      ]
     }
   ]
 };
