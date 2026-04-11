@@ -40,8 +40,8 @@ export default function LandingPage() {
         <div className="max-w-5xl mx-auto px-4 py-6">
           <div className="grid grid-cols-4 gap-4 text-center">
             {[
-              { value: 63, label: "Lecciones" },
-              { value: 227, label: "Preguntas" },
+              { value: 72, label: "Lecciones" },
+              { value: 252, label: "Preguntas" },
               { value: 8, label: "Fases" },
               { value: 12, label: "Herramientas" },
             ].map(s => (
@@ -63,7 +63,7 @@ export default function LandingPage() {
         </ScrollReveal>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {[
-            { step: "1", icon: "📚", title: "Aprende", desc: "63 lecciones con explicaciones claras, diagramas visuales y analogías simples. Desde cero absoluto." },
+            { step: "1", icon: "📚", title: "Aprende", desc: "72 lecciones con explicaciones claras, diagramas visuales y analogías simples. Desde cero absoluto." },
             { step: "2", icon: "🎯", title: "Practica", desc: "Simulador con datos reales, quizzes interactivos, flashcards y proyectos prácticos guiados." },
             { step: "3", icon: "💰", title: "Opera", desc: "Estrategias profesionales, preparación para cuentas fondeadas y trading algorítmico con Python." },
           ].map((s, i) => (
@@ -191,9 +191,9 @@ export default function LandingPage() {
         </ScrollReveal>
         <div className="space-y-3">
           {[
-            { q: "¿Es realmente 100% gratis?", a: "Sí. No hay pagos ocultos, no hay versión premium. Todo el contenido (63 lecciones, 227 quizzes, simulador, herramientas) está disponible sin pagar nada." },
+            { q: "¿Es realmente 100% gratis?", a: "Sí. No hay pagos ocultos, no hay versión premium. Todo el contenido (72 lecciones, 252 quizzes, simulador, herramientas) está disponible sin pagar nada." },
             { q: "¿Necesito saber algo de finanzas?", a: "No. El curso empieza desde CERO absoluto. La Fase 1 te explica qué es el trading como si tuvieras 5 años." },
-            { q: "¿Cuánto tiempo necesito?", a: "Dedicando 1-2 horas al día, puedes completar las 63 lecciones en 4-6 semanas. Recomendamos 3-6 meses de práctica en demo antes de dinero real." },
+            { q: "¿Cuánto tiempo necesito?", a: "Dedicando 1-2 horas al día, puedes completar las 72 lecciones en 4-6 semanas. Recomendamos 3-6 meses de práctica en demo antes de dinero real." },
             { q: "¿Puedo vivir del trading?", a: "Sí, pero requiere educación, práctica (3-6 meses demo) y disciplina. Con cuentas fondeadas de 100K+ al 3% mensual, puede ser un ingreso serio." },
           ].map((faq, i) => (
             <ScrollReveal key={i} delay={i * 0.05}>

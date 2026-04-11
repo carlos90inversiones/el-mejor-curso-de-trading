@@ -495,6 +495,177 @@ export const PHASE_7: Phase = {
           ]
         }
       ]
+    },
+    {
+      id: "mod-7-2",
+      title: "Resumen y Recursos Finales",
+      description: "Todo lo que necesitas para seguir creciendo",
+      icon: "📋",
+      color: "#F59E0B",
+      lessons: [
+        {
+          id: "7-2-1",
+          title: "Resumen de las 8 Fases: Tu Checklist Final",
+          duration: "25 min",
+          content: `
+<h2>Checklist Final: ¿Dominas Cada Fase?</h2>
+
+<div class="highlight-box blue">
+<h4>Cómo Usar Esta Lección</h4>
+<p>Repasa cada fase y marca honestamente si dominas cada concepto. Si hay algo que no recuerdas o no entiendes, vuelve a esa lección. No avances hasta que puedas decir SÍ a todo.</p>
+</div>
+
+<h3>Fase 1: Fundamentos</h3>
+<div class="strategy-box">
+<ul>
+<li>□ Sé qué es trading, la diferencia con inversión, y los 4 estilos (scalping, day, swing, position)</li>
+<li>□ Conozco los 5 mercados principales y sus horarios</li>
+<li>□ Domino la terminología: pip, spread, lote, apalancamiento, margen, drawdown, R:R</li>
+<li>□ Tengo TradingView configurado con EMA 21/50 y RSI 14</li>
+<li>□ Puedo leer velas japonesas e identificar los 5 patrones principales</li>
+<li>□ Sé cómo elegir un broker y detectar estafas</li>
+</ul>
+</div>
+
+<h3>Fase 2: Análisis Técnico</h3>
+<div class="strategy-box">
+<ul>
+<li>□ Sé identificar soportes, resistencias y zonas de cambio de polaridad</li>
+<li>□ Puedo leer la estructura del mercado (HH/HL, LH/LL, BOS, CHoCH)</li>
+<li>□ Uso medias móviles, RSI y volumen correctamente</li>
+<li>□ Aplico Fibonacci y conozco la zona OTE (61.8%-78.6%)</li>
+<li>□ Identifico patrones de gráfico (doble techo/suelo, H&S, triángulos)</li>
+<li>□ Hago análisis multi-temporalidad (top-down)</li>
+<li>□ Entiendo el análisis fundamental básico y las correlaciones</li>
+</ul>
+</div>
+
+<h3>Fase 3: Gestión de Riesgo</h3>
+<div class="strategy-box">
+<ul>
+<li>□ NUNCA opero sin Stop Loss</li>
+<li>□ Arriesgo máximo 1-2% por trade</li>
+<li>□ Calculo el position sizing ANTES de cada trade</li>
+<li>□ Busco R:R mínimo de 1:2</li>
+<li>□ Tengo un plan de trading escrito</li>
+<li>□ Registro CADA trade en mi diario</li>
+<li>□ Conozco mis enemigos psicológicos y tengo reglas para cada uno</li>
+<li>□ Tengo una rutina diaria (pre-market, trading, post-market)</li>
+</ul>
+</div>
+
+<h3>Fase 4: Estrategias Avanzadas</h3>
+<div class="strategy-box">
+<ul>
+<li>□ Entiendo la liquidez y cómo las instituciones cazan Stop Loss</li>
+<li>□ Identifico Order Blocks y Fair Value Gaps</li>
+<li>□ Conozco las Killzones y el Power of 3 (AMD)</li>
+<li>□ Aplico Premium/Discount correctamente</li>
+<li>□ Conozco el método Wyckoff (4 fases + Spring/Upthrust)</li>
+<li>□ Entiendo Elliott Wave básico (5+3 ondas)</li>
+<li>□ Tengo un sistema de confluencias con puntuación</li>
+</ul>
+</div>
+
+<h3>Fases 5-6: Prop Firms y Algo Trading</h3>
+<div class="strategy-box">
+<ul>
+<li>□ Conozco las principales prop firms y sus reglas</li>
+<li>□ Tengo una estrategia específica para challenges</li>
+<li>□ Sé cómo escalar con múltiples cuentas</li>
+<li>□ Entiendo la fiscalidad básica del trading</li>
+<li>□ Puedo hacer backtesting manual y con Python</li>
+<li>□ Conozco Pine Script para crear indicadores custom</li>
+</ul>
+</div>
+
+<div class="highlight-box green">
+<h4>Si marcaste todo con ✅</h4>
+<p>Estás en el top 5% de traders en cuanto a conocimiento. Ahora todo depende de la PRÁCTICA y la DISCIPLINA. Ve a la Fase 8 y empieza tu plan de 8 semanas.</p>
+</div>
+
+<div class="warning-box">
+<h4>Si hay □ sin marcar</h4>
+<p>Vuelve a la fase correspondiente y repasa. No hay prisa. Es mejor dominar cada concepto que avanzar sin base sólida.</p>
+</div>`,
+          keyPoints: [
+            "Checklist de autoevaluación para cada una de las 8 fases",
+            "Si no dominas algo, vuelve a esa lección antes de avanzar",
+            "Marcar todo = top 5% en conocimiento, ahora falta práctica",
+            "Es mejor dominar cada concepto que avanzar rápido sin base",
+            "La Fase 8 (práctica) es donde conviertes conocimiento en habilidad"
+          ],
+          quiz: [
+            { question: "¿Qué deberías hacer si no recuerdas cómo identificar un Order Block?", options: ["Ignorarlo y seguir adelante", "Volver a la Fase 4 y repasar la lección de Order Blocks", "Buscar en YouTube", "Preguntar en un grupo de Telegram"], correctIndex: 1, explanation: "Vuelve a la lección correspondiente. No avances con lagunas de conocimiento." },
+            { question: "¿Cuántos conceptos de la checklist deberías dominar antes de empezar la Fase 8?", options: ["El 50%", "El 70%", "TODOS (100%)", "No importa"], correctIndex: 2, explanation: "Deberías dominar el 100% de la checklist. Cada concepto se construye sobre los anteriores." }
+          ]
+        },
+        {
+          id: "7-2-2",
+          title: "Recursos y Herramientas para Seguir Creciendo",
+          duration: "20 min",
+          content: `
+<h2>Tu Kit de Herramientas del Trader Profesional</h2>
+
+<div class="highlight-box blue">
+<h4>Completar este curso NO es el final</h4>
+<p>Es el PRINCIPIO. El mercado evoluciona, las estrategias se adaptan, y tú debes seguir aprendiendo. Aquí tienes todos los recursos que necesitas para continuar.</p>
+</div>
+
+<h3>Herramientas Esenciales (Gratuitas)</h3>
+<div class="grid-cards">
+<div class="card"><h4>TradingView</h4><p>Gráficos y análisis. La versión gratuita es suficiente para empezar. Plan Plus si quieres más indicadores simultáneos.</p></div>
+<div class="card"><h4>MetaTrader 4/5</h4><p>Ejecución de trades. Descarga gratis desde cualquier broker regulado. MT5 es más moderno.</p></div>
+<div class="card"><h4>Forex Factory</h4><p>Calendario económico. Revísalo CADA DÍA antes de operar. Filtra por noticias de alto impacto.</p></div>
+<div class="card"><h4>MyFXBook</h4><p>Tracking de rendimiento. Conecta tu cuenta MT4/MT5 y ve tus estadísticas detalladas.</p></div>
+</div>
+
+<h3>Para Seguir Aprendiendo</h3>
+<div class="grid-cards">
+<div class="card"><h4>Libros Recomendados</h4>
+<ul>
+<li>"Trading in the Zone" - Mark Douglas (psicología)</li>
+<li>"Technical Analysis of the Financial Markets" - John Murphy</li>
+<li>"The Art and Science of Technical Analysis" - Adam Grimes</li>
+<li>"Market Wizards" - Jack Schwager (entrevistas a traders)</li>
+</ul></div>
+<div class="card"><h4>Práctica Continua</h4>
+<ul>
+<li>Backtesting semanal de tu estrategia</li>
+<li>Revisión mensual de tu diario de trading</li>
+<li>Actualizar tu plan de trading cada trimestre</li>
+<li>Seguir operando en demo cuando pruebes algo nuevo</li>
+</ul></div>
+</div>
+
+<h3>Calendario del Trader</h3>
+<div class="strategy-box">
+<h4>Rutina Mensual Recomendada</h4>
+<ul>
+<li><strong>Diario:</strong> Pre-market (30 min) + Trading (2-3h) + Post-market (15 min)</li>
+<li><strong>Semanal (domingo):</strong> Revisión semanal del diario (30 min) + análisis de la semana que viene</li>
+<li><strong>Mensual:</strong> Revisión de métricas (win rate, R:R, drawdown), ajustes al plan</li>
+<li><strong>Trimestral:</strong> Evaluar si tu estrategia sigue funcionando, considerar ajustes</li>
+</ul>
+</div>
+
+<div class="highlight-box green">
+<h4>El Último Consejo</h4>
+<p>El trading es un maratón, no un sprint. Los que sobreviven los primeros 12 meses con disciplina son los que eventualmente viven de esto. No busques atajos. Sigue el proceso. Confía en los datos de tu diario. Y nunca dejes de aprender. Nos vemos en el mercado. 📈</p>
+</div>`,
+          keyPoints: [
+            "TradingView + MetaTrader + Forex Factory + MyFXBook = kit esencial gratuito",
+            "Libros clave: Trading in the Zone, Technical Analysis, Market Wizards",
+            "Rutina: diaria (pre/post market), semanal (revisión), mensual (métricas), trimestral (ajustes)",
+            "El trading es un maratón, no un sprint. Los primeros 12 meses son los más duros",
+            "Nunca dejes de aprender. El mercado evoluciona constantemente."
+          ],
+          quiz: [
+            { question: "¿Con qué frecuencia deberías revisar si tu estrategia sigue funcionando?", options: ["Cada día", "Cada semana", "Cada trimestre (3 meses)", "Nunca, una buena estrategia funciona siempre"], correctIndex: 2, explanation: "Revisión trimestral es la frecuencia correcta. Los mercados cambian y tu estrategia puede necesitar ajustes." },
+            { question: "¿Qué herramienta deberías revisar CADA DÍA antes de operar?", options: ["Instagram de traders", "Forex Factory (calendario económico)", "TikTok", "Solo TradingView"], correctIndex: 1, explanation: "Forex Factory te muestra las noticias de alto impacto del día. No operes sin saber qué noticias hay." }
+          ]
+        }
+      ]
     }
   ]
 };

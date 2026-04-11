@@ -879,6 +879,21 @@ export const PHASE_5: Phase = {
 <p>Imagina que abres un restaurante exitoso. ¿Qué haces después? Abres otro. Y otro. Cada restaurante usa la misma receta, el mismo menú, el mismo sistema. Escalar cuentas fondeadas es exactamente igual: una vez que tienes un sistema que funciona, lo <strong>replicas</strong> en múltiples cuentas para multiplicar tus ingresos.</p>
 </div>
 
+<div style="display:flex;justify-content:center;margin:20px 0">
+<svg width="460" height="160" viewBox="0 0 460 160" style="background:#131722;border-radius:12px;border:1px solid #2a2a40">
+<text x="230" y="18" fill="white" font-size="11" text-anchor="middle" font-weight="bold">ESCALADO DE CUENTAS FONDEADAS</text>
+<rect x="20" y="35" width="90" height="50" rx="8" fill="#26a69a20" stroke="#26a69a"/><text x="65" y="55" fill="#26a69a" font-size="9" text-anchor="middle" font-weight="bold">100K</text><text x="65" y="72" fill="#787b86" font-size="8" text-anchor="middle">3% = 2,400$</text>
+<text x="125" y="65" fill="#555" font-size="14">→</text>
+<rect x="140" y="30" width="90" height="55" rx="8" fill="#3b82f620" stroke="#3b82f6"/><text x="185" y="50" fill="#3b82f6" font-size="9" text-anchor="middle" font-weight="bold">2 x 100K</text><text x="185" y="67" fill="#787b86" font-size="8" text-anchor="middle">3% = 4,800$</text>
+<text x="245" y="62" fill="#555" font-size="14">→</text>
+<rect x="260" y="28" width="90" height="58" rx="8" fill="#8b5cf620" stroke="#8b5cf6"/><text x="305" y="48" fill="#8b5cf6" font-size="9" text-anchor="middle" font-weight="bold">3 x 100K</text><text x="305" y="65" fill="#787b86" font-size="8" text-anchor="middle">3% = 7,200$</text>
+<text x="365" y="60" fill="#555" font-size="14">→</text>
+<rect x="380" y="25" width="70" height="62" rx="8" fill="#f59e0b20" stroke="#f59e0b"/><text x="415" y="45" fill="#f59e0b" font-size="9" text-anchor="middle" font-weight="bold">400K</text><text x="415" y="62" fill="#f59e0b" font-size="8" text-anchor="middle">3% = 9,600$</text><text x="415" y="78" fill="#f59e0b" font-size="7" text-anchor="middle">/mes</text>
+<text x="230" y="115" fill="#787b86" font-size="9" text-anchor="middle">Trade Copier: replica el MISMO trade en todas las cuentas</text>
+<text x="230" y="135" fill="#26a69a" font-size="10" text-anchor="middle" font-weight="bold">Mismo esfuerzo, ingresos multiplicados x4</text>
+</svg>
+</div>
+
 <h3>La Estrategia Multi-Cuenta</h3>
 <div class="highlight-box green">
 <h4>¿Por Qué Múltiples Cuentas?</h4>
