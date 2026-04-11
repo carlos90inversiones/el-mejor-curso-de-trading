@@ -106,6 +106,32 @@ export const PHASE_3: Phase = {
 
 <h3>REGLA #3: Ratio Riesgo/Beneficio minimo 1:2</h3>
 
+<div style="display:flex;justify-content:center;margin:20px 0">
+<svg width="420" height="200" viewBox="0 0 420 200" style="background:#131722;border-radius:12px;border:1px solid #2a2a40">
+<text x="210" y="20" fill="white" font-size="11" text-anchor="middle" font-weight="bold">VISUALIZACION DEL RATIO RIESGO/BENEFICIO</text>
+<!-- Entrada -->
+<line x1="60" y1="120" x2="360" y2="120" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="4,4"/>
+<text x="370" y="123" fill="#3b82f6" font-size="9">Entrada</text>
+<circle cx="60" cy="120" r="5" fill="#3b82f6"/>
+<!-- SL -->
+<line x1="60" y1="155" x2="200" y2="155" stroke="#ef5350" stroke-width="1.5"/>
+<rect x="60" y="122" width="140" height="33" fill="#ef535010" stroke="#ef535030"/>
+<text x="130" y="142" fill="#ef5350" font-size="10" text-anchor="middle" font-weight="bold">RIESGO: -100$</text>
+<text x="130" y="170" fill="#ef5350" font-size="9" text-anchor="middle">Stop Loss (30 pips)</text>
+<!-- TP -->
+<line x1="60" y1="50" x2="360" y2="50" stroke="#26a69a" stroke-width="1.5"/>
+<rect x="60" y="50" width="300" height="70" fill="#26a69a08" stroke="#26a69a30"/>
+<text x="210" y="78" fill="#26a69a" font-size="12" text-anchor="middle" font-weight="bold">BENEFICIO: +200$</text>
+<text x="210" y="93" fill="#26a69a" font-size="9" text-anchor="middle">Take Profit (60 pips) = RATIO 1:2</text>
+<!-- Flechas -->
+<text x="30" y="90" fill="#26a69a" font-size="20">↑</text>
+<text x="25" y="80" fill="#26a69a" font-size="8">2R</text>
+<text x="30" y="145" fill="#ef5350" font-size="16">↓</text>
+<text x="25" y="152" fill="#ef5350" font-size="8">1R</text>
+<text x="210" y="195" fill="#fbbf24" font-size="10" text-anchor="middle" font-weight="bold">Con 1:2, solo necesitas 34% de acierto para ser rentable</text>
+</svg>
+</div>
+
 <div class="strategy-box">
 <h4>El Poder del Ratio 1:2</h4>
 <p>Si arriesgas 100$ para ganar 200$, con SOLO el 40% de acierto eres rentable:</p>

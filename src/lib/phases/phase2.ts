@@ -51,6 +51,23 @@ export const PHASE_2: Phase = {
 <p>Una <strong>zona de precio donde hay suficiente oferta (vendedores)</strong> para detener la subida del precio y potencialmente hacerlo bajar. Es un "techo" temporal. Los vendedores entran con fuerza porque perciben que el activo esta "caro".</p>
 </div>
 
+<div style="display:flex;justify-content:center;margin:24px 0">
+<svg width="500" height="220" viewBox="0 0 500 220" style="background:#131722;border-radius:12px;border:1px solid #2a2a40">
+<rect x="20" y="35" width="460" height="22" rx="4" fill="#ef535012" stroke="#ef535030" stroke-dasharray="5,4"/>
+<text x="30" y="50" fill="#ef5350" font-size="11" font-weight="bold">RESISTENCIA (techo)</text>
+<rect x="20" y="150" width="460" height="22" rx="4" fill="#26a69a12" stroke="#26a69a30" stroke-dasharray="5,4"/>
+<text x="30" y="165" fill="#26a69a" font-size="11" font-weight="bold">SOPORTE (suelo)</text>
+<polyline points="50,120 80,50 110,58 140,155 170,160 200,52 230,48 260,158 290,150 320,50 350,55 380,155 410,148 450,90" fill="none" stroke="#8b5cf6" stroke-width="2"/>
+<circle cx="80" cy="50" r="4" fill="#ef5350"/><text x="85" y="30" fill="#ef5350" font-size="8">Rechazo</text>
+<circle cx="200" cy="52" r="4" fill="#ef5350"/>
+<circle cx="140" cy="155" r="4" fill="#26a69a"/><text x="145" y="180" fill="#26a69a" font-size="8">Rebote</text>
+<circle cx="260" cy="158" r="4" fill="#26a69a"/>
+<circle cx="320" cy="50" r="4" fill="#ef5350"/>
+<circle cx="380" cy="155" r="4" fill="#26a69a"/>
+<text x="250" y="210" fill="#a0a0b8" font-size="10" text-anchor="middle">El precio REBOTA entre soporte y resistencia</text>
+</svg>
+</div>
+
 <h3>Por Que Funcionan los Soportes y Resistencias</h3>
 
 <p>No es magia ni profecia autocumplida. Los S/R funcionan por <strong>psicologia del mercado</strong> y <strong>ordenes institucionales</strong>:</p>
@@ -246,6 +263,33 @@ export const PHASE_2: Phase = {
 <h4>LL - Lower Low</h4>
 <p><strong>Minimo mas bajo.</strong> El precio rompe por debajo del minimo anterior. Los vendedores dominan completamente. Confirma tendencia bajista.</p>
 </div>
+</div>
+
+<div style="display:flex;justify-content:center;gap:20px;margin:24px 0;flex-wrap:wrap">
+<!-- TENDENCIA ALCISTA -->
+<svg width="240" height="180" viewBox="0 0 240 180" style="background:#131722;border-radius:10px;border:1px solid #2a2a40">
+<text x="120" y="18" fill="#26a69a" font-size="11" text-anchor="middle" font-weight="bold">TENDENCIA ALCISTA</text>
+<polyline points="20,140 50,100 70,118 110,70 130,90 170,40 200,55 230,20" fill="none" stroke="#26a69a" stroke-width="2.5"/>
+<circle cx="50" cy="100" r="3" fill="#26a69a"/><text x="50" y="95" fill="#26a69a" font-size="8" text-anchor="middle">HH</text>
+<circle cx="110" cy="70" r="3" fill="#26a69a"/><text x="110" y="65" fill="#26a69a" font-size="8" text-anchor="middle">HH</text>
+<circle cx="170" cy="40" r="3" fill="#26a69a"/><text x="170" y="35" fill="#26a69a" font-size="8" text-anchor="middle">HH</text>
+<circle cx="70" cy="118" r="3" fill="#42a5f5"/><text x="70" y="133" fill="#42a5f5" font-size="8" text-anchor="middle">HL</text>
+<circle cx="130" cy="90" r="3" fill="#42a5f5"/><text x="130" y="105" fill="#42a5f5" font-size="8" text-anchor="middle">HL</text>
+<circle cx="200" cy="55" r="3" fill="#42a5f5"/><text x="200" y="70" fill="#42a5f5" font-size="8" text-anchor="middle">HL</text>
+<text x="120" y="170" fill="#787b86" font-size="9" text-anchor="middle">Maximos y minimos SUBEN</text>
+</svg>
+<!-- TENDENCIA BAJISTA -->
+<svg width="240" height="180" viewBox="0 0 240 180" style="background:#131722;border-radius:10px;border:1px solid #2a2a40">
+<text x="120" y="18" fill="#ef5350" font-size="11" text-anchor="middle" font-weight="bold">TENDENCIA BAJISTA</text>
+<polyline points="20,20 50,60 70,42 110,100 130,78 170,135 200,118 230,160" fill="none" stroke="#ef5350" stroke-width="2.5"/>
+<circle cx="70" cy="42" r="3" fill="#ff9800"/><text x="70" y="37" fill="#ff9800" font-size="8" text-anchor="middle">LH</text>
+<circle cx="130" cy="78" r="3" fill="#ff9800"/><text x="130" y="73" fill="#ff9800" font-size="8" text-anchor="middle">LH</text>
+<circle cx="200" cy="118" r="3" fill="#ff9800"/><text x="200" y="113" fill="#ff9800" font-size="8" text-anchor="middle">LH</text>
+<circle cx="50" cy="60" r="3" fill="#ef5350"/><text x="50" y="75" fill="#ef5350" font-size="8" text-anchor="middle">LL</text>
+<circle cx="110" cy="100" r="3" fill="#ef5350"/><text x="110" y="115" fill="#ef5350" font-size="8" text-anchor="middle">LL</text>
+<circle cx="170" cy="135" r="3" fill="#ef5350"/><text x="170" y="150" fill="#ef5350" font-size="8" text-anchor="middle">LL</text>
+<text x="120" y="170" fill="#787b86" font-size="9" text-anchor="middle">Maximos y minimos BAJAN</text>
+</svg>
 </div>
 
 <h3>Las 3 Fases del Mercado</h3>

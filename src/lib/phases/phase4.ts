@@ -227,6 +227,35 @@ export const PHASE_4: Phase = {
 <p>Las instituciones no pueden llenar todas sus ordenes de una sola vez. Colocan una parte de su posicion, mueven el precio, y luego NECESITAN que el precio vuelva a esa zona para llenar el resto de su posicion. Es por esto que el precio tiende a volver a los Order Blocks: <strong>hay ordenes institucionales pendientes esperando ser ejecutadas</strong>.</p>
 </div>
 
+<div style="display:flex;justify-content:center;margin:24px 0">
+<svg width="500" height="220" viewBox="0 0 500 220" style="background:#131722;border-radius:12px;border:1px solid #2a2a40">
+<text x="250" y="18" fill="white" font-size="12" text-anchor="middle" font-weight="bold">ORDER BLOCK ALCISTA - Ejemplo Visual</text>
+<!-- Bajada previa -->
+<rect x="40" y="55" width="14" height="30" rx="2" fill="#ef5350"/><line x1="47" y1="50" x2="47" y2="55" stroke="#ef5350" stroke-width="1.5"/><line x1="47" y1="85" x2="47" y2="92" stroke="#ef5350" stroke-width="1.5"/>
+<rect x="65" y="70" width="14" height="28" rx="2" fill="#ef5350"/><line x1="72" y1="65" x2="72" y2="70" stroke="#ef5350" stroke-width="1.5"/><line x1="72" y1="98" x2="72" y2="105" stroke="#ef5350" stroke-width="1.5"/>
+<rect x="90" y="85" width="14" height="25" rx="2" fill="#ef5350"/><line x1="97" y1="80" x2="97" y2="85" stroke="#ef5350" stroke-width="1.5"/><line x1="97" y1="110" x2="97" y2="118" stroke="#ef5350" stroke-width="1.5"/>
+<!-- ORDER BLOCK CANDLE -->
+<rect x="112" y="95" width="20" height="35" rx="3" fill="#ef5350" stroke="#2962ff" stroke-width="2"/><line x1="122" y1="88" x2="122" y2="95" stroke="#ef5350" stroke-width="1.5"/><line x1="122" y1="130" x2="122" y2="140" stroke="#ef5350" stroke-width="1.5"/>
+<rect x="112" y="93" width="300" height="40" rx="4" fill="#2962ff10" stroke="#2962ff" stroke-width="1.5" stroke-dasharray="6,3"/>
+<text x="270" y="118" fill="#2962ff" font-size="10" font-weight="bold">← ORDER BLOCK (ultima roja antes del impulso)</text>
+<!-- Impulso alcista (displacement) -->
+<rect x="145" y="70" width="18" height="55" rx="2" fill="#26a69a"/><line x1="154" y1="68" x2="154" y2="70" stroke="#26a69a" stroke-width="1.5"/><line x1="154" y1="125" x2="154" y2="130" stroke="#26a69a" stroke-width="1.5"/>
+<rect x="175" y="38" width="18" height="40" rx="2" fill="#26a69a"/><line x1="184" y1="35" x2="184" y2="38" stroke="#26a69a" stroke-width="1.5"/><line x1="184" y1="78" x2="184" y2="82" stroke="#26a69a" stroke-width="1.5"/>
+<text x="175" y="30" fill="#26a69a" font-size="9" font-weight="bold">Displacement!</text>
+<!-- Retorno al OB -->
+<rect x="205" y="42" width="14" height="20" rx="2" fill="#ef5350"/><line x1="212" y1="40" x2="212" y2="42" stroke="#ef5350" stroke-width="1.5"/><line x1="212" y1="62" x2="212" y2="68" stroke="#ef5350" stroke-width="1.5"/>
+<rect x="228" y="55" width="14" height="25" rx="2" fill="#ef5350"/><line x1="235" y1="52" x2="235" y2="55" stroke="#ef5350" stroke-width="1.5"/><line x1="235" y1="80" x2="235" y2="88" stroke="#ef5350" stroke-width="1.5"/>
+<rect x="251" y="72" width="14" height="30" rx="2" fill="#ef5350"/><line x1="258" y1="68" x2="258" y2="72" stroke="#ef5350" stroke-width="1.5"/><line x1="258" y1="102" x2="258" y2="110" stroke="#ef5350" stroke-width="1.5"/>
+<!-- Rebote en OB -->
+<circle cx="258" cy="108" r="5" fill="#26a69a"/>
+<text x="268" y="112" fill="#26a69a" font-size="9" font-weight="bold">ENTRADA</text>
+<rect x="275" y="60" width="18" height="45" rx="2" fill="#26a69a"/><line x1="284" y1="55" x2="284" y2="60" stroke="#26a69a" stroke-width="1.5"/><line x1="284" y1="105" x2="284" y2="110" stroke="#26a69a" stroke-width="1.5"/>
+<rect x="305" y="35" width="18" height="35" rx="2" fill="#26a69a"/><line x1="314" y1="30" x2="314" y2="35" stroke="#26a69a" stroke-width="1.5"/><line x1="314" y1="70" x2="314" y2="75" stroke="#26a69a" stroke-width="1.5"/>
+<text x="250" y="160" fill="#787b86" font-size="9" text-anchor="middle">Precio cae → OB → Rebota con fuerza = Entrada LONG</text>
+<text x="250" y="175" fill="#26a69a" font-size="10" text-anchor="middle" font-weight="bold">El precio SIEMPRE tiende a volver al Order Block</text>
+</svg>
+</div>
+
 <h3>Tipos de Order Blocks</h3>
 
 <div class="grid-cards">
