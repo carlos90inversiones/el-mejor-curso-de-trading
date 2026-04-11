@@ -98,6 +98,7 @@ export const PHASE_8: Phase = {
           duration: "45 min + práctica diaria",
           content: `
 <h2>Semana 2: Identificando Estructura en Tiempo Real</h2>
+<div style="display:flex;justify-content:center;margin:20px 0"><svg width="400" height="80" viewBox="0 0 400 80" style="background:#131722;border-radius:10px;border:1px solid #2a2a40"><text x="200" y="14" fill="white" font-size="9" text-anchor="middle" font-weight="bold">CHECKLIST DE CONFLUENCIAS (Min 3 para entrar)</text><rect x="5" y="24" width="55" height="28" rx="4" fill="#26a69a15" stroke="#26a69a"/><text x="32" y="42" fill="#26a69a" font-size="6" text-anchor="middle">S/R</text><rect x="63" y="24" width="50" height="28" rx="4" fill="#3b82f615" stroke="#3b82f6"/><text x="88" y="42" fill="#3b82f6" font-size="6" text-anchor="middle">OB</text><rect x="116" y="24" width="50" height="28" rx="4" fill="#8b5cf615" stroke="#8b5cf6"/><text x="141" y="42" fill="#8b5cf6" font-size="6" text-anchor="middle">FVG</text><rect x="169" y="24" width="50" height="28" rx="4" fill="#f59e0b15" stroke="#f59e0b"/><text x="194" y="42" fill="#f59e0b" font-size="6" text-anchor="middle">Fibo</text><rect x="222" y="24" width="50" height="28" rx="4" fill="#26a69a15" stroke="#26a69a"/><text x="247" y="42" fill="#26a69a" font-size="6" text-anchor="middle">BOS</text><rect x="275" y="24" width="60" height="28" rx="4" fill="#ec489915" stroke="#ec4899"/><text x="305" y="42" fill="#ec4899" font-size="6" text-anchor="middle">Killzone</text><rect x="338" y="24" width="57" height="28" rx="4" fill="#14b8a615" stroke="#14b8a6"/><text x="366" y="42" fill="#14b8a6" font-size="6" text-anchor="middle">P/D</text><text x="200" y="68" fill="#f59e0b" font-size="8" text-anchor="middle" font-weight="bold">3 = válido | 5+ = setup A+</text></svg></div>
 
 <div class="highlight-box green">
 <h4>Objetivo de la Semana</h4>
@@ -227,6 +228,7 @@ export const PHASE_8: Phase = {
           duration: "45 min + práctica diaria",
           content: `
 <h2>Semana 4: Dominando el Ciclo Diario</h2>
+<div style="display:flex;justify-content:center;margin:20px 0"><svg width="380" height="80" viewBox="0 0 380 80" style="background:#131722;border-radius:10px;border:1px solid #2a2a40"><text x="190" y="14" fill="white" font-size="9" text-anchor="middle" font-weight="bold">OBJETIVO SEMANAS 5-6</text><rect x="10" y="26" width="170" height="30" rx="6" fill="#26a69a15" stroke="#26a69a"/><text x="95" y="44" fill="#26a69a" font-size="9" text-anchor="middle" font-weight="bold">SEMANA 5: Positiva ✅</text><text x="192" y="44" fill="#f59e0b" font-size="12">+</text><rect x="200" y="26" width="170" height="30" rx="6" fill="#26a69a15" stroke="#26a69a"/><text x="285" y="44" fill="#26a69a" font-size="9" text-anchor="middle" font-weight="bold">SEMANA 6: Positiva ✅</text><text x="190" y="70" fill="#f59e0b" font-size="9" text-anchor="middle" font-weight="bold">= 2 semanas consecutivas positivas → LISTO para challenge</text></svg></div>
 
 <div class="highlight-box green">
 <h4>Objetivo de la Semana</h4>
