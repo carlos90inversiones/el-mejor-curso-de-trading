@@ -287,3 +287,28 @@ body {
   .tabs-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
   .tabs-scroll::-webkit-scrollbar { display: none; }
 }
+
+/* Print styles */
+@media print {
+  nav, footer, .no-print, button, [class*="sticky"] {
+    display: none !important;
+  }
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .lesson-content {
+    color: #333 !important;
+  }
+  .lesson-content h2, .lesson-content h3, .lesson-content h4 {
+    color: #000 !important;
+  }
+  .lesson-content p, .lesson-content li {
+    color: #333 !important;
+  }
+  .lesson-content .highlight-box, .lesson-content .warning-box,
+  .lesson-content .strategy-box, .lesson-content .analogy-box {
+    border-color: #ccc !important;
+    background: #f5f5f5 !important;
+  }
+}

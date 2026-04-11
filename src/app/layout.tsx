@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import ScrollToTopClient from "@/components/ScrollToTop";
 import BackToTop from "@/components/BackToTop";
+import KeyboardShortcuts from "@/components/KeyboardShortcuts";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -63,6 +64,7 @@ export default function RootLayout({
         <ScrollToTopClient />
         {children}
         <BackToTop />
+        <KeyboardShortcuts />
         <script dangerouslySetInnerHTML={{ __html: `if(window.speechSynthesis){window.speechSynthesis.getVoices();window.speechSynthesis.addEventListener('voiceschanged',function(){window.speechSynthesis.getVoices()})}` }} />
       </body>
     </html>

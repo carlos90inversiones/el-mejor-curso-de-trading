@@ -8,6 +8,7 @@ import { COURSE_DATA, getTotalLessons, getTotalQuizzes } from "@/lib/courseData"
 import { useGamification, XPBar, StatsOverview, BadgesGrid } from "@/components/GamificationSystem";
 import { ScrollReveal, GlowCard, AnimatedCounter } from "@/components/Animations";
 import ProgressDashboard from "@/components/ProgressDashboard";
+import ExportProgress from "@/components/ExportProgress";
 import { useBookmarks } from "@/components/BookmarkButton";
 import { useProgress } from "@/lib/useProgress";
 
@@ -24,7 +25,10 @@ export default function CursoPage() {
     <div className="min-h-screen">
       <Navbar />
       <main className="max-w-7xl mx-auto px-4 py-8">
-        <h1 className="text-3xl font-extrabold text-white mb-2">Tu Curso</h1>
+        <div className="flex items-center justify-between mb-2">
+          <h1 className="text-3xl font-extrabold text-white">Tu Curso</h1>
+          <ExportProgress completed={progress.completed} quizScores={progress.quizScores} />
+        </div>
         <p className="text-[#a0a0b8] mb-8">Progreso: {completedCount}/{totalLessons} lecciones ({progressPercent}%)</p>
 
         {/* Gamification */}

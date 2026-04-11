@@ -9,6 +9,7 @@ import { useGamification } from "@/components/GamificationSystem";
 import AudioPlayer from "@/components/AudioPlayer";
 import LessonNotes from "@/components/LessonNotes";
 import ShareButtons from "@/components/ShareButtons";
+import PrintButton from "@/components/PrintButton";
 import ReadingProgress from "@/components/ReadingProgress";
 import ReadingTime from "@/components/ReadingTime";
 
@@ -120,7 +121,10 @@ export default function LeccionPage({ params }: { params: Promise<{ lessonId: st
 
               {/* Share */}
               <div className="mt-6">
-                <ShareButtons title={lesson.title} lessonId={lessonId} />
+                <div className="flex items-center justify-between flex-wrap gap-2">
+                  <ShareButtons title={lesson.title} lessonId={lessonId} />
+                  <PrintButton />
+                </div>
               </div>
 
               <div className="mt-6 flex justify-between items-center border-t border-[#2a2a40] pt-6">
