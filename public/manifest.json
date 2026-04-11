@@ -1,7 +1,7 @@
 {
-  "name": "El Mejor Curso de Trading del Mundo",
-  "short_name": "Trading Course",
-  "description": "De cero absoluto a trader experto. 57 lecciones interactivas.",
+  "name": "Trading Pro - El Mejor Curso de Trading del Mundo",
+  "short_name": "Trading Pro",
+  "description": "Trading Pro: 57 lecciones, 216 quizzes, simulador, herramientas. De cero a trader experto. GRATIS.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0c0e1a",
