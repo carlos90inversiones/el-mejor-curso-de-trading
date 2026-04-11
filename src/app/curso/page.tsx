@@ -77,7 +77,7 @@ export default function CursoPage() {
                     <span className="text-xl">💡</span>
                     <div>
                       <p className="text-white text-sm font-medium mb-1">No necesitas saber NADA de trading</p>
-                      <p className="text-[#a0a0b8] text-xs">La primera lección te lo explica todo desde cero, como si tuvieras 5 años. Solo necesitas saber leer. En serio.</p>
+                      <p className="text-[#a0a0b8] text-xs">La primera lección te lo explica todo desde cero absoluto. No necesitas conocimientos previos de ningún tipo.</p>
                     </div>
                   </div>
                 </div>

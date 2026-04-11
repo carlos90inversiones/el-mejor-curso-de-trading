@@ -11,6 +11,7 @@ export default function Navbar() {
   const [searchOpen, setSearchOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [progressPct, setProgressPct] = useState(0);
+  const [nextLessonId, setNextLessonId] = useState<string | null>("1-1-1");
 
   // Read progress from localStorage
   useEffect(() => {
@@ -21,9 +22,23 @@ export default function Navbar() {
         const completed = new Set(data.completed || []);
         const total = getTotalLessons();
         setProgressPct(total > 0 ? Math.round((completed.size / total) * 100) : 0);
+
+        // Find next incomplete lesson
+        let found = false;
+        for (const phase of COURSE_DATA) {
+          for (const mod of phase.modules) {
+            for (const lesson of mod.lessons) {
+              if (!completed.has(lesson.id) && !found) {
+                setNextLessonId(lesson.id);
+                found = true;
+              }
+            }
+          }
+        }
+        if (!found) setNextLessonId(null); // All completed
       }
     } catch {/* */}
-  }, [pathname]); // re-check on navigation
+  }, [pathname]);
 
   const searchResults = useMemo(() => {
     if (searchQuery.length < 2) return [];
@@ -97,8 +112,8 @@ export default function Navbar() {
                 <span className="text-[10px] text-[#a0a0b8]">{progressPct}%</span>
               </div>
             )}
-            <Link href="/curso" className="bg-gradient-to-r from-blue-600 to-purple-600 text-white text-xs px-3 py-1.5 rounded-lg hover:opacity-90 transition font-medium ml-1">
-              Empezar
+            <Link href={nextLessonId ? `/leccion/${nextLessonId}` : "/curso"} className="bg-gradient-to-r from-blue-600 to-purple-600 text-white text-xs px-3 py-1.5 rounded-lg hover:opacity-90 transition font-medium ml-1">
+              {nextLessonId ? "Continuar" : "Curso"}
             </Link>
           </div>
 
@@ -140,9 +155,9 @@ export default function Navbar() {
                 <span className="text-xs text-[#a0a0b8]">{progressPct}%</span>
               </div>
             )}
-            <Link href="/curso" onClick={() => setMobileMenuOpen(false)}
+            <Link href={nextLessonId ? `/leccion/${nextLessonId}` : "/curso"} onClick={() => setMobileMenuOpen(false)}
               className="block text-center bg-gradient-to-r from-blue-600 to-purple-600 text-white text-sm px-4 py-3 rounded-lg font-medium">
-              Empezar Gratis
+              {nextLessonId ? "▶ Continuar Lección" : "Ver Curso"}
             </Link>
           </div>
         )}

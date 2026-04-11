@@ -18,7 +18,7 @@ export const PHASE_1: Phase = {
       lessons: [
         {
           id: "1-1-1",
-          title: "Trading explicado como si tuvieras 5 años",
+          title: "Trading Explicado Desde Cero Absoluto",
           duration: "15 min",
           content: `
 <h2>Bienvenido al Mundo del Trading</h2>

@@ -193,7 +193,7 @@ export default function LandingPage() {
         <div className="space-y-3">
           {[
             { q: "¿Es realmente 100% gratis?", a: "Sí. No hay pagos ocultos, no hay versión premium. Todo el contenido (76 lecciones, 282 quizzes, simulador, herramientas) está disponible sin pagar nada." },
-            { q: "¿Necesito saber algo de finanzas?", a: "No. El curso empieza desde CERO absoluto. La Fase 1 te explica qué es el trading como si tuvieras 5 años." },
+            { q: "¿Necesito saber algo de finanzas?", a: "No. El curso empieza desde CERO absoluto. La Fase 1 te explica qué es el trading desde cero absoluto. No necesitas conocimientos previos." },
             { q: "¿Cuánto tiempo necesito?", a: "Dedicando 1-2 horas al día, puedes completar las 76 lecciones en 4-6 semanas. Recomendamos 3-6 meses de práctica en demo antes de dinero real." },
             { q: "¿Puedo vivir del trading?", a: "Sí, pero requiere educación, práctica (3-6 meses demo) y disciplina. Con cuentas fondeadas de 100K+ al 3% mensual, puede ser un ingreso serio." },
           ].map((faq, i) => (
