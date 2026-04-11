@@ -47,10 +47,47 @@ export default function CursoPage() {
 
           if (completedCount === 0) {
             return (
-              <Link href="/leccion/1-1-1"
-                className="block w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white text-center text-xl py-5 rounded-2xl font-bold mb-8 hover:opacity-90 transition shadow-lg shadow-blue-500/20 hover-lift">
-                🚀 Empezar el Curso →
-              </Link>
+              <div className="bg-[#1a1a2e] border border-[#2a2a40] rounded-2xl p-6 md:p-8 mb-8">
+                <div className="text-center mb-6">
+                  <div className="text-5xl mb-4">👋</div>
+                  <h2 className="text-2xl font-bold text-white mb-2">¡Bienvenido a Trading Pro!</h2>
+                  <p className="text-[#a0a0b8] max-w-xl mx-auto">Es tu primera vez aquí. No te preocupes, te explicamos cómo funciona todo en 30 segundos.</p>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+                  <div className="bg-[#0d0d15] rounded-xl p-4 text-center">
+                    <div className="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold mx-auto mb-3">1</div>
+                    <h3 className="text-white font-bold text-sm mb-1">Lee la lección</h3>
+                    <p className="text-[#555] text-xs">Cada lección tiene texto, imágenes y explicaciones simples. Lee a tu ritmo. También puedes escucharla con el botón de audio.</p>
+                  </div>
+                  <div className="bg-[#0d0d15] rounded-xl p-4 text-center">
+                    <div className="w-10 h-10 rounded-full bg-purple-600 flex items-center justify-center text-white font-bold mx-auto mb-3">2</div>
+                    <h3 className="text-white font-bold text-sm mb-1">Haz el quiz</h3>
+                    <p className="text-[#555] text-xs">Al final de cada lección hay un quiz para comprobar que lo entendiste. Si fallas, no pasa nada: puedes repetirlo.</p>
+                  </div>
+                  <div className="bg-[#0d0d15] rounded-xl p-4 text-center">
+                    <div className="w-10 h-10 rounded-full bg-green-600 flex items-center justify-center text-white font-bold mx-auto mb-3">3</div>
+                    <h3 className="text-white font-bold text-sm mb-1">Marca como completada</h3>
+                    <p className="text-[#555] text-xs">Cuando termines, dale al botón verde. Tu progreso se guarda automáticamente. Ganarás XP y desbloquearás logros.</p>
+                  </div>
+                </div>
+
+                <div className="bg-gradient-to-r from-blue-900/20 to-purple-900/20 border border-blue-800/30 rounded-xl p-4 mb-6">
+                  <div className="flex items-start gap-3">
+                    <span className="text-xl">💡</span>
+                    <div>
+                      <p className="text-white text-sm font-medium mb-1">No necesitas saber NADA de trading</p>
+                      <p className="text-[#a0a0b8] text-xs">La primera lección te lo explica todo desde cero, como si tuvieras 5 años. Solo necesitas saber leer. En serio.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <Link href="/leccion/1-1-1"
+                  className="block w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white text-center text-xl py-5 rounded-xl font-bold hover:opacity-90 transition shadow-lg shadow-blue-500/25 hover-lift">
+                  🚀 Empezar Mi Primera Lección →
+                </Link>
+                <p className="text-center text-[#555] text-xs mt-3">Tiempo estimado: 15 minutos. Puedes parar cuando quieras y continuar después.</p>
+              </div>
             );
           }
 
