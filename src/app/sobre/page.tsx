@@ -62,10 +62,10 @@ export default function SobrePage() {
           <h2 className="text-2xl font-bold text-white mb-6 text-center">Trading Pro en Numeros</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
             {[
-              { value: "57", label: "Lecciones" },
-              { value: "216", label: "Preguntas Quiz" },
+              { value: "63", label: "Lecciones" },
+              { value: "227", label: "Preguntas Quiz" },
               { value: "35", label: "Diagramas SVG" },
-              { value: "7", label: "Fases" },
+              { value: "8", label: "Fases" },
               { value: "10", label: "Video-Lecciones" },
               { value: "102", label: "Terminos Glosario" },
               { value: "30", label: "Flashcards" },

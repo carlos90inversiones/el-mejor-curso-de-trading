@@ -552,6 +552,623 @@ export const PHASE_5: Phase = {
           ]
         }
       ]
+    },
+    {
+      id: "mod-5-3",
+      title: "Trading Profesional con Cuentas Fondeadas",
+      description: "Domina las reglas, evita errores fatales, escala tus cuentas y lleva un diario profesional",
+      icon: "🏅",
+      color: "#10B981",
+      lessons: [
+        {
+          id: "5-3-1",
+          title: "Reglas Específicas de Cada Prop Firm",
+          duration: "25 min",
+          content: `
+<h2>Reglas Específicas de Cada Prop Firm: Guía Completa</h2>
+<div class="analogy-box">
+<h3>La Analogía del Contrato de Alquiler</h3>
+<p>Cada prop firm es como un propietario de apartamentos: todos te dan un lugar para vivir (capital para operar), pero cada contrato tiene cláusulas distintas. Si no lees la letra pequeña, puedes perder tu depósito (tu cuenta fondeada) por una regla que ni sabías que existía. <strong>Conocer las reglas NO es opcional — es supervivencia.</strong></p>
+</div>
+
+<h3>Comparativa Detallada: Las 4 Grandes</h3>
+<div class="comparison-table">
+<div class="comparison-col">
+<h4>FTMO</h4>
+<ul>
+<li><strong>Fases:</strong> 2 (Challenge + Verification)</li>
+<li><strong>Profit Target:</strong> Fase 1: 10% | Fase 2: 5%</li>
+<li><strong>DD Diario:</strong> 5% (balance o equity, el mayor)</li>
+<li><strong>DD Total:</strong> 10% (desde balance inicial)</li>
+<li><strong>Días mínimos:</strong> 4 días de trading por fase</li>
+<li><strong>Tiempo límite:</strong> 30 días (F1) + 60 días (F2)</li>
+<li><strong>Split:</strong> 80% → 90% tras primer retiro</li>
+<li><strong>Noticias:</strong> Prohibido operar 2 min antes/después de noticias rojas</li>
+<li><strong>Fin de semana:</strong> No se pueden mantener posiciones</li>
+<li><strong>Scaling:</strong> +25% capital cada 4 meses con 10%+ profit</li>
+</ul>
+</div>
+<div class="comparison-col">
+<h4>MyFundedFX</h4>
+<ul>
+<li><strong>Fases:</strong> 1 o 2 (según plan elegido)</li>
+<li><strong>Profit Target:</strong> 1 fase: 10% | 2 fases: 8% + 5%</li>
+<li><strong>DD Diario:</strong> 5% (basado en balance)</li>
+<li><strong>DD Total:</strong> 8-10% (según plan)</li>
+<li><strong>Días mínimos:</strong> 5 días de trading</li>
+<li><strong>Tiempo límite:</strong> Ilimitado</li>
+<li><strong>Split:</strong> 80% estándar</li>
+<li><strong>Noticias:</strong> Permitido operar noticias</li>
+<li><strong>Fin de semana:</strong> Se permite mantener posiciones</li>
+<li><strong>Scaling:</strong> Disponible tras rendimiento consistente</li>
+</ul>
+</div>
+</div>
+
+<div class="comparison-table">
+<div class="comparison-col">
+<h4>Funded Next</h4>
+<ul>
+<li><strong>Fases:</strong> 1 (Express) o 2 (Evaluation)</li>
+<li><strong>Profit Target:</strong> Express: 25% | Eval: 10% + 5%</li>
+<li><strong>DD Diario:</strong> 5%</li>
+<li><strong>DD Total:</strong> 10%</li>
+<li><strong>Días mínimos:</strong> 5 días (Evaluation)</li>
+<li><strong>Tiempo límite:</strong> Ilimitado</li>
+<li><strong>Split:</strong> 80% → hasta 90% con scaling</li>
+<li><strong>Noticias:</strong> Permitido con restricciones</li>
+<li><strong>Fin de semana:</strong> Depende del plan</li>
+<li><strong>Scaling:</strong> Cada 15% profit → +40% capital</li>
+</ul>
+</div>
+<div class="comparison-col">
+<h4>The Funded Trader</h4>
+<ul>
+<li><strong>Fases:</strong> 2 (Standard) o 1 (Rapid)</li>
+<li><strong>Profit Target:</strong> Standard: 8% + 5% | Rapid: 8%</li>
+<li><strong>DD Diario:</strong> 5%</li>
+<li><strong>DD Total:</strong> 10% (trailing en algunos planes)</li>
+<li><strong>Días mínimos:</strong> 3-5 días según plan</li>
+<li><strong>Tiempo límite:</strong> Ilimitado</li>
+<li><strong>Split:</strong> 80% → hasta 90%</li>
+<li><strong>Noticias:</strong> Restricciones en algunos planes</li>
+<li><strong>Fin de semana:</strong> Varía según plan</li>
+<li><strong>Scaling:</strong> Royal Challenge: scaling agresivo</li>
+</ul>
+</div>
+</div>
+
+<h3>Tipos de Drawdown: La Diferencia que Mata Cuentas</h3>
+<div class="highlight-box red">
+<h4>¡CUIDADO! No Todos los Drawdowns Son Iguales</h4>
+<p>Esta es la diferencia más importante y la más ignorada. El tipo de drawdown determina cuánto margen real tienes para operar.</p>
+</div>
+
+<div class="grid-cards">
+<div class="card">
+<h4>Drawdown Estático (Static)</h4>
+<p>Se calcula desde el <strong>balance inicial</strong>. Si empiezas con 100K y tienes DD total del 10%, tu cuenta se cierra si el equity baja de 90K. <strong>NO importa cuánto hayas ganado</strong>. Si ganas 5K (105K) y luego bajas a 89K, pierdes la cuenta.</p>
+<p><strong>Ventaja:</strong> Sabes exactamente cuál es tu piso. Siempre es 90K.</p>
+</div>
+<div class="card">
+<h4>Drawdown Trailing (Perseguidor)</h4>
+<p>Se mueve CON tus ganancias. Si empiezas en 100K y ganas hasta 105K, tu nuevo piso sube a 95K (105K - 10%). <strong>El piso SUBE pero NUNCA baja.</strong></p>
+<p><strong>Peligro:</strong> Si ganas mucho rápido, tu piso sube mucho y tienes menos margen para operar. ¡Puedes tener ganancias y aún así perder la cuenta!</p>
+</div>
+<div class="card">
+<h4>Drawdown Balance-Based</h4>
+<p>Se calcula al <strong>cierre de cada día</strong> basado en el balance (no equity flotante). Esto significa que las operaciones abiertas no cuentan para el drawdown diario hasta que se cierran.</p>
+<p><strong>Ventaja:</strong> Más margen intradía. <strong>Peligro:</strong> Si cierras muchas pérdidas en un día, puedes violar el DD al cierre.</p>
+</div>
+</div>
+
+<div class="example-box">
+<h4>Ejemplo Práctico: Trailing vs Estático</h4>
+<p><strong>Cuenta 100K con DD total 10%:</strong></p>
+<p><strong>Estático:</strong> Ganas hasta 115K → tu piso sigue en 90K → tienes 25K de margen.</p>
+<p><strong>Trailing:</strong> Ganas hasta 115K → tu piso sube a 105K → ¡solo tienes 10K de margen! Si bajas a 104K, pierdes la cuenta a pesar de tener +4K de profit.</p>
+<p><strong>Lección:</strong> Con drawdown trailing, retira ganancias frecuentemente y opera con menos riesgo después de rachas ganadoras.</p>
+</div>
+
+<h3>Planes de Scaling: Cómo Crecer tu Capital</h3>
+<div class="highlight-box green">
+<h4>Scaling = Más Capital = Más Ganancias</h4>
+<ul>
+<li><strong>FTMO:</strong> +25% capital cada 4 meses si tienes +10% profit acumulado con mínimo 2 retiros</li>
+<li><strong>Funded Next:</strong> +40% capital por cada 15% de profit. Rápido y agresivo.</li>
+<li><strong>The Funded Trader:</strong> Scaling plan varía según tipo de challenge (Royal es el más generoso)</li>
+<li><strong>MyFundedFX:</strong> Scaling tras demostrar consistencia durante varios meses</li>
+</ul>
+<p>El scaling es donde las cuentas fondeadas se vuelven realmente poderosas. Una cuenta de 100K puede convertirse en 400K en 12-18 meses con buen rendimiento.</p>
+</div>
+
+<h3>Frecuencia de Pagos y Métodos de Retiro</h3>
+<div class="grid-cards">
+<div class="card"><h4>FTMO</h4><p>Retiro cada 14 días. Métodos: transferencia bancaria, Skrill, criptomonedas. Procesamiento: 1-2 días hábiles. Primer retiro se puede hacer tras 14 días de cuenta fondeada.</p></div>
+<div class="card"><h4>Funded Next</h4><p>Retiro cada 14 días (Express) o 30 días (Evaluation). Métodos: criptomonedas, Rise, transferencia. Procesamiento: 3-7 días hábiles.</p></div>
+<div class="card"><h4>The Funded Trader</h4><p>Retiro según plan (14-30 días). Métodos: Rise, criptomonedas. Procesamiento: 3-5 días hábiles.</p></div>
+<div class="card"><h4>MyFundedFX</h4><p>Retiro cada 14 días tras primer mes. Métodos: Rise, criptomonedas. Procesamiento: 2-5 días hábiles.</p></div>
+</div>
+
+<h3>Restricciones de Noticias y Fin de Semana</h3>
+<div class="warning-box">
+<h4>Reglas que Causan el 30% de las Eliminaciones</h4>
+<ul>
+<li><strong>Noticias rojas (NFP, CPI, FOMC, etc.):</strong> FTMO prohíbe abrir/cerrar trades 2 minutos antes y después. Otras firms son más permisivas pero con advertencias.</li>
+<li><strong>Fin de semana:</strong> FTMO exige cerrar todas las posiciones antes del cierre del viernes. Funded Next varía según plan. Otras firms generalmente permiten mantener posiciones.</li>
+<li><strong>Hedging/Cobertura:</strong> Algunas firms lo permiten, otras no. Verifica antes de usar esta técnica.</li>
+<li><strong>EAs y Bots:</strong> La mayoría permite trading automatizado, pero algunas prohíben ciertos tipos de EAs (high-frequency, arbitraje, etc.).</li>
+</ul>
+</div>
+
+<h3>Reglas de Consistencia</h3>
+<div class="highlight-box purple">
+<h4>La Regla que Pocos Conocen</h4>
+<p>Algunas prop firms tienen una <strong>regla de consistencia</strong>: ningún día de trading puede representar más del 30-40% de tu profit total. Esto impide que pases el challenge con "un solo trade suertudo". Ejemplo: si necesitas 10K de profit, ningún día puede tener más de 3K-4K de ganancia.</p>
+<p><strong>Solución:</strong> Opera de manera consistente todos los días. No intentes hacer el objetivo en una sola sesión aunque el mercado lo permita.</p>
+</div>
+
+<h3>¿Qué Firma para Qué Perfil de Trader?</h3>
+<div class="strategy-box">
+<h4>Elige Según tu Estilo</h4>
+<ul>
+<li><strong>Scalper agresivo:</strong> MyFundedFX o Funded Next (permiten noticias, más flexibles)</li>
+<li><strong>Swing trader:</strong> Funded Next o The Funded Trader (sin límite de tiempo, permiten holding nocturno)</li>
+<li><strong>Day trader conservador:</strong> FTMO (la más estricta pero más respetada, ideal si ya tienes disciplina)</li>
+<li><strong>Principiante absoluto:</strong> Empieza con cuenta de 10K en MyFundedFX o Funded Next. Precio bajo, reglas más permisivas.</li>
+<li><strong>Trader que quiere escalar rápido:</strong> Funded Next (scaling agresivo: +40% capital por cada 15% profit)</li>
+</ul>
+</div>`,
+          keyPoints: [
+            "Cada prop firm tiene reglas únicas — FTMO es la más estricta, MyFundedFX y Funded Next son más flexibles con noticias y fin de semana",
+            "El drawdown trailing es mucho más peligroso que el estático: tu piso sube con las ganancias y reduce tu margen de maniobra",
+            "Las restricciones de noticias y fin de semana causan el 30% de las eliminaciones — lee cada regla antes de operar",
+            "Los planes de scaling permiten crecer de 100K a 400K en 12-18 meses con rendimiento consistente",
+            "Elige la firma según tu estilo: scalpers necesitan flexibilidad, swing traders necesitan sin límite de tiempo, conservadores van a FTMO"
+          ],
+          quiz: [
+            { question: "¿Cuál es la diferencia principal entre drawdown estático y trailing?", options: ["No hay diferencia, son lo mismo", "El estático se calcula desde el balance inicial y nunca cambia; el trailing sube con tus ganancias reduciendo tu margen", "El trailing te da más margen que el estático", "El estático se aplica solo al drawdown diario"], correctIndex: 1, explanation: "El drawdown estático tiene un piso fijo (ej: 90K en cuenta de 100K). El trailing sube con tus ganancias: si llegas a 115K, tu piso sube a 105K, dejándote solo 10K de margen en vez de 25K." },
+            { question: "¿Qué prop firm es la más recomendable para un scalper que opera durante noticias?", options: ["FTMO, porque es la más reconocida", "MyFundedFX o Funded Next, porque permiten operar noticias", "Ninguna, los scalpers no deberían usar prop firms", "The Funded Trader exclusivamente"], correctIndex: 1, explanation: "FTMO prohíbe operar 2 minutos antes y después de noticias rojas. MyFundedFX y Funded Next son más flexibles con noticias, lo que las hace ideales para scalpers." },
+            { question: "¿Qué es la regla de consistencia que tienen algunas prop firms?", options: ["Que debes operar todos los días sin excepción", "Que ningún día puede representar más del 30-40% de tu profit total", "Que debes usar siempre el mismo tamaño de lote", "Que solo puedes operar un par de divisas"], correctIndex: 1, explanation: "La regla de consistencia impide que pases el challenge con un solo trade suertudo. Ningún día de trading puede representar más del 30-40% del profit total del challenge." }
+          ]
+        },
+        {
+          id: "5-3-2",
+          title: "Errores que Destruyen Cuentas Fondeadas",
+          duration: "20 min",
+          content: `
+<h2>Los 10 Errores Fatales DESPUÉS de Conseguir una Cuenta Fondeada</h2>
+<div class="analogy-box">
+<h3>La Analogía del Atleta Profesional</h3>
+<p>Muchos atletas firman un gran contrato y empiezan a comer mal, entrenar menos y salir de fiesta. ¿El resultado? Bajo rendimiento y contrato cancelado. Pasar el challenge es "firmar tu contrato" — pero los errores que cometes DESPUÉS determinan si mantienes tu carrera o la destruyes en semanas.</p>
+</div>
+
+<div class="warning-box">
+<h4>Estadística Alarmante</h4>
+<p>El <strong>60-70% de los traders que pasan un challenge pierden su cuenta fondeada en los primeros 3 meses</strong>. No porque no sepan tradear, sino porque cometen errores evitables después de ser fondeados.</p>
+</div>
+
+<h3>Error #1: Exceso de Confianza Post-Challenge</h3>
+<div class="highlight-box red">
+<h4>El Síndrome del "Ya Lo Logré"</h4>
+<p>"Pasé el challenge, soy un crack. Ahora puedo arriesgar más." Este pensamiento ha destruido más cuentas fondeadas que cualquier mala estrategia.</p>
+<p><strong>Lo que pasa:</strong> Después de la euforia de pasar, aumentas el riesgo de 0.5% a 1.5-2% por trade. Tienes una mala racha de 3 trades y estás en -6% de drawdown. Pánico.</p>
+<p><strong>La solución:</strong> Opera la cuenta fondeada con MENOS riesgo que el challenge. Si pasaste con 1%, opera con 0.5-0.75%. El objetivo ahora es longevidad, no velocidad.</p>
+</div>
+
+<h3>Error #2: Aumentar el Riesgo por Trade</h3>
+<div class="highlight-box red">
+<h4>El Error de la Avaricia</h4>
+<p>"Con 100K fondeados al 2% por trade puedo ganar 2,000$ por operación." Matemáticamente es correcto. Psicológicamente es un desastre.</p>
+<p><strong>Lo que pasa:</strong> Con 2% de riesgo, solo necesitas 5 pérdidas seguidas para violar el drawdown total. Y 5 pérdidas seguidas NO son raras — ocurren regularmente.</p>
+<p><strong>La solución:</strong> Máximo 0.5-1% por trade. Con 0.5%, necesitas 20 pérdidas seguidas para violar el DD total. Eso es casi imposible con una estrategia decente.</p>
+</div>
+
+<div class="calculation-box">
+<h4>Cálculo de Supervivencia</h4>
+<p><strong>Cuenta 100K, DD total 10% (10,000$):</strong></p>
+<p>Con riesgo del 2%: solo 5 pérdidas seguidas = cuenta muerta</p>
+<p>Con riesgo del 1%: necesitas 10 pérdidas seguidas = improbable</p>
+<p>Con riesgo del 0.5%: necesitas 20 pérdidas seguidas = casi imposible</p>
+<p><strong>¿Cuál prefieres?</strong> Ganar menos por trade pero mantener la cuenta VIVA por años.</p>
+</div>
+
+<h3>Error #3: Revenge Trading con Dinero Fondeado</h3>
+<div class="highlight-box red">
+<h4>El Asesino Silencioso</h4>
+<p>Pierdes un trade. Te enojas. Abres otro inmediatamente para "recuperar". Pierdes otra vez. Abres otro con el doble de tamaño. Pierdes. En 2 horas has quemado el 5% de drawdown diario.</p>
+<p><strong>Regla de oro:</strong> Después de 2 pérdidas consecutivas en un día, CIERRA la plataforma. No hay excepción. No hay "pero este setup es perfecto". CIERRA y vuelve mañana.</p>
+</div>
+
+<h3>Error #4: No Rastrear el Drawdown Diariamente</h3>
+<div class="highlight-box red">
+<h4>Operar a Ciegas</h4>
+<p>Muchos traders no saben exactamente cuál es su drawdown actual. Operan sin verificar cuánto margen les queda. Un día simplemente reciben el correo: "Su cuenta ha sido cerrada por violación de drawdown."</p>
+<p><strong>La solución:</strong> Cada mañana antes de operar, anota en tu diario:</p>
+<ul>
+<li>Balance actual de la cuenta</li>
+<li>Drawdown máximo diario restante (cuánto puedes perder HOY)</li>
+<li>Drawdown total restante (cuánto puedes perder EN TOTAL)</li>
+<li>Si alguno está por debajo del 3%, reduce riesgo o no operes</li>
+</ul>
+</div>
+
+<h3>Error #5: Operar Noticias sin Verificar las Reglas</h3>
+<div class="warning-box">
+<h4>"¿Por Qué Perdí Mi Cuenta Si Gané el Trade?"</h4>
+<p>Esto pasa más de lo que crees. Un trader abre un trade 1 minuto antes del NFP. Gana 3,000$. Celebra. Al día siguiente: "Cuenta eliminada por violación de regla de noticias." Las ganancias no importan — la violación de reglas es automática.</p>
+<p><strong>La solución:</strong> Ten un calendario económico abierto SIEMPRE. Marca las noticias rojas. Verifica las reglas específicas de tu firma. Cuando hay duda, NO operes.</p>
+</div>
+
+<h3>Error #6: Mantener Trades el Fin de Semana</h3>
+<div class="highlight-box red">
+<h4>El Gap del Lunes</h4>
+<p>Dejas un trade abierto el viernes. El mercado abre el domingo/lunes con un gap en contra. Tu SL no se ejecuta al precio que tenías (slippage del gap). Violación de drawdown instantánea.</p>
+<p><strong>Además:</strong> Muchas prop firms PROHÍBEN mantener posiciones el fin de semana. Incluso si tu firma lo permite, el riesgo de gap es demasiado alto.</p>
+<p><strong>La solución:</strong> Cierra TODAS las posiciones antes del cierre del viernes. Sin excepciones.</p>
+</div>
+
+<h3>Error #7: No Retirar Ganancias</h3>
+<div class="highlight-box red">
+<h4>El Error del "Un Poco Más"</h4>
+<p>Llevas +8% de profit. Piensas: "Si llego al 12% retiro todo junto." Tienes una mala racha y bajas al +2%. Ahora necesitas recuperar 6% para llegar donde estabas. No retiraste nada.</p>
+<p><strong>La solución:</strong> Retira en cuanto sea posible. La mayoría de firms permiten retiro cada 14 días. Retira el 60-70% de las ganancias. El dinero en tu cuenta bancaria es TUYO. El dinero en la cuenta fondeada siempre está en riesgo.</p>
+</div>
+
+<h3>Error #8: Cambiar de Estrategia Después de Fondeado</h3>
+<div class="highlight-box yellow">
+<h4>"Voy a Probar Algo Nuevo"</h4>
+<p>Pasaste el challenge con scalping en EUR/USD. Ahora quieres probar swing trading en oro. O trading de noticias. O un robot nuevo.</p>
+<p><strong>La regla:</strong> Opera EXACTAMENTE la misma estrategia que te hizo pasar el challenge. Si quieres probar algo nuevo, hazlo en una cuenta demo. NUNCA experimentes con dinero fondeado.</p>
+</div>
+
+<h3>Error #9: No Tener un Plan de Contingencia</h3>
+<div class="highlight-box yellow">
+<h4>¿Qué Pasa Si Pierdes la Cuenta?</h4>
+<p>Si tu único plan es "no perder la cuenta", no tienes plan. Perder cuentas fondeadas es NORMAL. Los mejores traders pierden 1-2 cuentas al año.</p>
+<p><strong>El plan de contingencia:</strong></p>
+<ul>
+<li>Siempre ten ahorrado para 2-3 challenges nuevos</li>
+<li>Si pierdes una cuenta, tómate 1-2 días de descanso mental</li>
+<li>Analiza POR QUÉ perdiste antes de comprar otro challenge</li>
+<li>No compres otro challenge inmediatamente por impulso emocional</li>
+</ul>
+</div>
+
+<h3>Error #10: Trading Emocional Post-Retiro</h3>
+<div class="highlight-box red">
+<h4>El Ciclo Destructivo</h4>
+<p>Retiras 3,000$ de ganancias. Tu balance baja de 108K a 105K. Tu cerebro interpreta esto como "pérdida" aunque acabas de cobrar. Sientes urgencia por "recuperar" ese balance. Aumentas riesgo. Pierdes más. Ciclo destructivo.</p>
+<p><strong>La solución:</strong> Después de cada retiro, visualiza tu nuevo balance como tu "nuevo punto de partida". No intentes "recuperar" lo que retiraste. Esas ganancias ya son tuyas. Opera con el balance que tienes, no con el que tenías.</p>
+</div>
+
+<div class="strategy-box">
+<h4>Checklist Diario del Trader Fondeado</h4>
+<ol>
+<li>✓ Verificar balance y drawdown restante (diario y total)</li>
+<li>✓ Revisar calendario económico — marcar noticias rojas</li>
+<li>✓ Confirmar que el riesgo por trade es 0.5-1% máximo</li>
+<li>✓ Verificar si hay reglas especiales hoy (fin de semana, festivos)</li>
+<li>✓ Revisar las reglas específicas de mi firma</li>
+<li>✓ Preparar máximo 2-3 setups para el día</li>
+<li>✓ Regla de 2 pérdidas: si pierdo 2 seguidas, cierro por hoy</li>
+<li>✓ Anotar todo en el diario de trading</li>
+</ol>
+</div>`,
+          keyPoints: [
+            "El 60-70% de los traders pierden su cuenta fondeada en los primeros 3 meses por errores evitables, no por mala estrategia",
+            "Exceso de confianza post-challenge es el error #1 — opera con MENOS riesgo que en el challenge, no más",
+            "Después de 2 pérdidas consecutivas en un día, cierra la plataforma sin excepciones para evitar revenge trading",
+            "Retira ganancias en cuanto sea posible — el dinero en tu banco es tuyo, el dinero en la cuenta fondeada siempre está en riesgo",
+            "Usa un checklist diario: verificar drawdown, revisar calendario de noticias, confirmar riesgo y reglas antes de operar"
+          ],
+          quiz: [
+            { question: "¿Qué porcentaje de traders pierden su cuenta fondeada en los primeros 3 meses?", options: ["10-20%", "30-40%", "60-70%", "90%"], correctIndex: 2, explanation: "El 60-70% pierden su cuenta fondeada en los primeros 3 meses. No por falta de habilidad, sino por errores de disciplina como exceso de confianza y revenge trading." },
+            { question: "¿Qué debes hacer después de 2 pérdidas consecutivas en un día con cuenta fondeada?", options: ["Aumentar el tamaño para recuperar rápido", "Cambiar de par y seguir operando", "Cerrar la plataforma y volver mañana sin excepciones", "Poner el doble de riesgo en el siguiente trade"], correctIndex: 2, explanation: "La regla de 2 pérdidas es inquebrantable: después de 2 pérdidas seguidas, cierras la plataforma. El revenge trading es la causa #1 de destrucción de cuentas fondeadas." },
+            { question: "¿Por qué es peligroso no retirar ganancias regularmente?", options: ["Porque los impuestos son menores si retiras todo junto", "Porque puedes perder todas las ganancias acumuladas en una mala racha y no cobrar nada", "Porque la prop firm te obliga a retirar", "No es peligroso, es mejor acumular"], correctIndex: 1, explanation: "Si acumulas +8% sin retirar y luego tienes una mala racha, puedes perder todo ese profit. El dinero en tu banco es seguro; el dinero en la cuenta fondeada siempre está en riesgo." }
+          ]
+        },
+        {
+          id: "5-3-3",
+          title: "Escalar de 100K a 400K en Cuentas Fondeadas",
+          duration: "25 min",
+          content: `
+<h2>Escalar de 100K a 400K: La Estrategia Multi-Cuenta</h2>
+<div class="analogy-box">
+<h3>La Analogía del Franquiciado</h3>
+<p>Imagina que abres un restaurante exitoso. ¿Qué haces después? Abres otro. Y otro. Cada restaurante usa la misma receta, el mismo menú, el mismo sistema. Escalar cuentas fondeadas es exactamente igual: una vez que tienes un sistema que funciona, lo <strong>replicas</strong> en múltiples cuentas para multiplicar tus ingresos.</p>
+</div>
+
+<h3>La Estrategia Multi-Cuenta</h3>
+<div class="highlight-box green">
+<h4>¿Por Qué Múltiples Cuentas?</h4>
+<p>Con una sola cuenta de 100K al 0.5% de riesgo y un retorno mensual del 3-5%, ganas 2,400-4,000$/mes (después del split). Está bien, pero no es transformador. Con 3-4 cuentas ejecutando los <strong>mismos trades simultáneamente</strong>, multiplicas esos ingresos sin trabajo adicional.</p>
+</div>
+
+<div class="calculation-box">
+<h4>Proyección de Ingresos por Número de Cuentas</h4>
+<p><strong>Supuestos:</strong> Retorno mensual 4%, profit split 80%, misma estrategia en todas las cuentas</p>
+<p><strong>1 cuenta de 100K:</strong> 4,000$ × 80% = <strong>3,200$/mes</strong></p>
+<p><strong>2 cuentas de 100K:</strong> 8,000$ × 80% = <strong>6,400$/mes</strong></p>
+<p><strong>3 cuentas de 100K:</strong> 12,000$ × 80% = <strong>9,600$/mes</strong></p>
+<p><strong>4 cuentas de 100K:</strong> 16,000$ × 80% = <strong>12,800$/mes</strong></p>
+<p><strong>2 cuentas de 200K:</strong> 16,000$ × 80% = <strong>12,800$/mes</strong></p>
+<p>Con scaling de las propias firms (ej: FTMO +25% cada 4 meses), estos números crecen aún más con el tiempo.</p>
+</div>
+
+<h3>Trade Copiers: Cómo Funcionan</h3>
+<div class="highlight-box blue">
+<h4>Tu Herramienta de Escalado</h4>
+<p>Un <strong>trade copier</strong> es un software que conecta múltiples cuentas de trading. Cuando abres un trade en tu cuenta principal (la "master"), el copier automáticamente abre el mismo trade en todas las cuentas conectadas (las "slave").</p>
+</div>
+
+<div class="grid-cards">
+<div class="card">
+<h4>¿Cómo Funciona?</h4>
+<p>1) Instalas el copier en tu VPS (servidor virtual). 2) Conectas tu cuenta master. 3) Conectas las cuentas slave. 4) Configuras el tamaño de lote para cada cuenta. 5) Operas normalmente en la master — las slave copian todo automáticamente.</p>
+</div>
+<div class="card">
+<h4>Copiers Populares</h4>
+<p><strong>Duplikium:</strong> Basado en la nube, fácil de configurar, funciona con MT4/MT5. <strong>Social Trader Tools:</strong> Popular en la comunidad de prop trading. <strong>FX Blue:</strong> Gratuito con funciones básicas. <strong>Trade Copier MT4/MT5:</strong> Plugins directos para MetaTrader.</p>
+</div>
+<div class="card">
+<h4>Configuración del Tamaño</h4>
+<p>Si tu master es 100K con 0.5% de riesgo (0.5 lotes en EUR/USD), y tu slave también es 100K, el copier replica el mismo tamaño. Si la slave es 50K, configura el multiplicador a 0.5x para mantener el mismo porcentaje de riesgo.</p>
+</div>
+</div>
+
+<div class="warning-box">
+<h4>Precauciones con Trade Copiers</h4>
+<ul>
+<li><strong>Latencia:</strong> Puede haber 0.5-2 segundos de retraso entre la master y las slave. En scalping ultra-rápido esto puede afectar.</li>
+<li><strong>Reglas diferentes:</strong> Si una cuenta es FTMO (sin noticias) y otra es MyFundedFX (con noticias), el copier no distingue. TÚ debes gestionar esto.</li>
+<li><strong>VPS obligatorio:</strong> Necesitas un servidor virtual (VPS) que esté encendido 24/5 para que el copier funcione sin interrupciones. Costo: 10-30$/mes.</li>
+<li><strong>Verificar reglas:</strong> Algunas firms prohíben trade copiers entre cuentas de la MISMA firma. Verifica antes de configurar.</li>
+</ul>
+</div>
+
+<h3>Gestionar 2-4 Cuentas Simultáneamente</h3>
+<div class="strategy-box">
+<h4>El Sistema de Gestión Multi-Cuenta</h4>
+<ol>
+<li><strong>Diversifica entre firms:</strong> No pongas todas las cuentas en la misma prop firm. Si la firma tiene problemas, no pierdes todo. Ejemplo: 2 en FTMO + 1 en Funded Next + 1 en MyFundedFX.</li>
+<li><strong>Un spreadsheet maestro:</strong> Crea una hoja de cálculo con el balance, drawdown, reglas específicas y fecha de retiro de CADA cuenta. Actualiza diariamente.</li>
+<li><strong>Horarios de noticias centralizados:</strong> Si una cuenta prohíbe noticias, desconéctala del copier antes de eventos. Marca en tu calendario cuándo desconectar cada cuenta.</li>
+<li><strong>Retiros escalonados:</strong> No retires de todas las cuentas el mismo día. Escálalo para tener flujo de caja constante (ej: cuenta A retira semana 1, cuenta B semana 3).</li>
+</ol>
+</div>
+
+<h3>¿Cuándo Añadir una Nueva Cuenta?</h3>
+<div class="highlight-box green">
+<h4>El Momento Correcto para Escalar</h4>
+<ul>
+<li><strong>Requisito 1:</strong> Tu primera cuenta fondeada lleva mínimo 2-3 meses activa con retiros exitosos</li>
+<li><strong>Requisito 2:</strong> Tu estrategia es consistentemente rentable (no rachas de suerte)</li>
+<li><strong>Requisito 3:</strong> Tienes el capital para el challenge de la nueva cuenta SIN tocar tus ahorros de emergencia</li>
+<li><strong>Requisito 4:</strong> Ya probaste el trade copier en demo y funciona correctamente</li>
+<li><strong>Requisito 5:</strong> No estás agregando cuentas por avaricia sino por un plan de negocio estructurado</li>
+</ul>
+<p><strong>Señal de alerta:</strong> Si quieres otra cuenta porque la primera va mal y "necesitas más capital para recuperar", PARA. Eso no es escalar, es multiplicar el problema.</p>
+</div>
+
+<h3>Gestión de Riesgo Across Cuentas</h3>
+<div class="highlight-box yellow">
+<h4>El Riesgo Total Importa</h4>
+<p>Con 4 cuentas de 100K y el mismo trade copiado, tu exposición real es de 400K en un solo trade. Si el mercado se mueve violentamente en tu contra, pierdes en TODAS las cuentas simultáneamente.</p>
+<ul>
+<li><strong>Riesgo por trade:</strong> Mantén 0.5% máximo por cuenta. Con 4 cuentas, tu riesgo total es 2,000$ por trade (0.5% × 4 × 100K). Es mucho pero manejable.</li>
+<li><strong>Correlación:</strong> Si tienes un trade en EUR/USD y otro en GBP/USD, estás correlacionado. Un movimiento del dólar te afecta en ambos. Cuidado con la exposición total.</li>
+<li><strong>Peor escenario:</strong> Calcula qué pasa si pierdes 3 trades seguidos en todas las cuentas. ¿Sigues dentro de los límites de drawdown de cada una?</li>
+</ul>
+</div>
+
+<h3>Proyecciones de Ingresos a Diferentes Escalas</h3>
+<div class="grid-cards">
+<div class="card">
+<h4>Nivel Principiante</h4>
+<p><strong>1 cuenta de 50K</strong><br>Retorno mensual: 3%<br>Profit: 1,500$<br>Tu parte (80%): <strong>1,200$/mes</strong><br>Inversión: ~250$ (challenge)</p>
+</div>
+<div class="card">
+<h4>Nivel Intermedio</h4>
+<p><strong>2 cuentas de 100K</strong><br>Retorno mensual: 4%<br>Profit: 8,000$<br>Tu parte (80%): <strong>6,400$/mes</strong><br>Inversión: ~1,000$ (2 challenges)</p>
+</div>
+<div class="card">
+<h4>Nivel Avanzado</h4>
+<p><strong>4 cuentas de 100K</strong><br>Retorno mensual: 4%<br>Profit: 16,000$<br>Tu parte (80%): <strong>12,800$/mes</strong><br>Inversión: ~2,000$ (4 challenges)</p>
+</div>
+<div class="card">
+<h4>Nivel Profesional</h4>
+<p><strong>3 cuentas de 200K (con scaling)</strong><br>Retorno mensual: 3-5%<br>Profit: 18,000-30,000$<br>Tu parte (85%): <strong>15,300-25,500$/mes</strong><br>Inversión: tiempo + consistencia</p>
+</div>
+</div>
+
+<h3>Construyendo un Negocio de Trading</h3>
+<div class="strategy-box">
+<h4>De Trader a Empresario del Trading</h4>
+<ol>
+<li><strong>Estructura legal:</strong> Cuando tus ingresos superen los 3,000-5,000$/mes, considera crear una empresa o sociedad para optimizar impuestos</li>
+<li><strong>Gastos deducibles:</strong> VPS, plataformas de trading, cursos, herramientas de análisis, computadora — todo puede ser deducible si tienes empresa</li>
+<li><strong>Separación de cuentas:</strong> Ten una cuenta bancaria exclusiva para el trading. Ingresos de prop firms van ahí. Págate un "salario" mensual fijo.</li>
+<li><strong>Reinversión:</strong> Destina el 20-30% de tus ganancias a nuevos challenges, herramientas y educación continua</li>
+<li><strong>Documentación:</strong> Lleva contabilidad profesional de todos los ingresos, gastos y retiros. Tu futuro yo te lo agradecerá.</li>
+</ol>
+</div>`,
+          keyPoints: [
+            "La estrategia multi-cuenta permite multiplicar ingresos usando trade copiers que replican el mismo trade en todas las cuentas simultáneamente",
+            "Con 4 cuentas de 100K al 4% mensual y 80% split, puedes generar 12,800$/mes sin trabajo adicional respecto a una sola cuenta",
+            "Diversifica entre diferentes prop firms para no depender de una sola — si una tiene problemas, las otras siguen generando",
+            "No añadas una nueva cuenta hasta tener mínimo 2-3 meses de resultados consistentes y retiros exitosos en la primera",
+            "Cuando superes 3,000-5,000$/mes, estructura tu trading como un negocio con empresa, cuenta bancaria separada y contabilidad profesional"
+          ],
+          quiz: [
+            { question: "¿Qué es un trade copier y para qué sirve?", options: ["Un software para copiar trades de otros traders en redes sociales", "Un software que replica automáticamente tus trades de una cuenta master a múltiples cuentas slave", "Una herramienta para hacer backtesting automático", "Un robot de trading que opera solo"], correctIndex: 1, explanation: "Un trade copier conecta una cuenta master con múltiples cuentas slave. Cuando operas en la master, el mismo trade se ejecuta automáticamente en todas las slave, permitiéndote escalar sin trabajo extra." },
+            { question: "¿Cuándo es el momento correcto para añadir una segunda cuenta fondeada?", options: ["Inmediatamente después de pasar el primer challenge", "Cuando la primera cuenta lleva 2-3 meses activa con retiros exitosos y resultados consistentes", "Cuando pierdes la primera cuenta y necesitas más capital", "Solo cuando tengas 1 año de experiencia"], correctIndex: 1, explanation: "Necesitas mínimo 2-3 meses de resultados consistentes y retiros exitosos. Escalar antes de tener una base sólida solo multiplica los problemas." },
+            { question: "¿Por qué es importante diversificar entre diferentes prop firms?", options: ["Porque cada firma tiene mejores spreads que las otras", "Para obtener descuentos por volumen", "Porque si una firma tiene problemas o cierra, las otras cuentas siguen generando ingresos", "No es importante, mejor tener todas en la misma firma"], correctIndex: 2, explanation: "Si todas tus cuentas están en una sola firma y esa firma tiene problemas (técnicos, financieros, o de regulación), pierdes todo. Diversificar protege tu flujo de ingresos." }
+          ]
+        },
+        {
+          id: "5-3-4",
+          title: "El Diario de Trading Profesional",
+          duration: "20 min",
+          content: `
+<h2>El Diario de Trading Profesional: Tu Arma Secreta</h2>
+<div class="analogy-box">
+<h3>La Analogía del Médico</h3>
+<p>Un médico no trata a los pacientes de memoria. Lleva un historial clínico detallado: síntomas, diagnóstico, tratamiento, resultado. Si un tratamiento no funciona, revisa el historial y ajusta. Tu diario de trading es tu <strong>historial clínico</strong>: cada trade es un paciente, y sin registro detallado, estás operando a ciegas.</p>
+</div>
+
+<h3>Diario Amateur vs Diario Profesional</h3>
+<div class="comparison-table">
+<div class="comparison-col">
+<h4>Diario Amateur</h4>
+<ul>
+<li>"Compré EUR/USD, gané 50 pips"</li>
+<li>Sin capturas de pantalla</li>
+<li>Sin análisis de emociones</li>
+<li>Sin revisión semanal/mensual</li>
+<li>Olvida anotar las pérdidas</li>
+<li>No registra el contexto del mercado</li>
+<li>Lo llena "cuando tiene tiempo"</li>
+</ul>
+</div>
+<div class="comparison-col">
+<h4>Diario Profesional</h4>
+<ul>
+<li>Registra CADA campo relevante del trade</li>
+<li>Capturas antes, durante y después</li>
+<li>Análisis emocional honesto</li>
+<li>Revisión semanal obligatoria</li>
+<li>Registra TODAS las operaciones, ganadoras Y perdedoras</li>
+<li>Contexto completo del mercado</li>
+<li>Se llena INMEDIATAMENTE después de cada trade</li>
+</ul>
+</div>
+</div>
+
+<h3>Los Campos que DEBE Tener tu Diario</h3>
+<div class="highlight-box blue">
+<h4>Datos Básicos del Trade</h4>
+<ul>
+<li><strong>Fecha y hora:</strong> Cuándo abriste y cerraste la operación</li>
+<li><strong>Par/Instrumento:</strong> EUR/USD, GBP/USD, XAUUSD, etc.</li>
+<li><strong>Sesión:</strong> Asia, Londres, Nueva York, o solapamiento</li>
+<li><strong>Dirección:</strong> Compra (long) o Venta (short)</li>
+<li><strong>Tipo de setup:</strong> Rotura de estructura, rechazo de zona, continuación de tendencia, etc.</li>
+</ul>
+</div>
+
+<div class="highlight-box green">
+<h4>Análisis del Setup</h4>
+<ul>
+<li><strong>Confluencia (puntuación 1-5):</strong> ¿Cuántas confirmaciones tenía el trade? Estructura + zona de demanda + FVG + divergencia = 4/5</li>
+<li><strong>Timeframe de análisis:</strong> En qué temporalidad identificaste el setup (H4, H1, M15, etc.)</li>
+<li><strong>Timeframe de entrada:</strong> En qué temporalidad ejecutaste la entrada (M5, M1, etc.)</li>
+<li><strong>Narrativa del mercado:</strong> ¿Cuál era la tendencia general? ¿Qué esperabas que hiciera el precio?</li>
+</ul>
+</div>
+
+<div class="highlight-box yellow">
+<h4>Ejecución y Gestión</h4>
+<ul>
+<li><strong>Precio de entrada:</strong> Exacto, con pip</li>
+<li><strong>Stop Loss:</strong> Nivel y razón (debajo de estructura, debajo de zona, etc.)</li>
+<li><strong>Take Profit:</strong> Nivel y razón (siguiente zona, extensión de Fibonacci, etc.)</li>
+<li><strong>Risk:Reward (R:R):</strong> Calculado antes de entrar (ej: 1:2.5)</li>
+<li><strong>Tamaño de posición:</strong> Lotes y porcentaje de riesgo de la cuenta</li>
+<li><strong>¿Moviste el SL?</strong> Si lo moviste a break-even o lo ajustaste, anota cuándo y por qué</li>
+</ul>
+</div>
+
+<div class="highlight-box purple">
+<h4>Resultado y Reflexión</h4>
+<ul>
+<li><strong>Resultado:</strong> Ganancia o pérdida en $ y en R (ej: +2.3R, -1R)</li>
+<li><strong>Capturas de pantalla:</strong> MÍNIMO 2: el setup antes de entrar + el resultado final</li>
+<li><strong>Emociones durante el trade:</strong> Confiado, nervioso, ansioso, impaciente, neutral</li>
+<li><strong>¿Seguí mi plan?</strong> Sí/No. Si no, ¿por qué no?</li>
+<li><strong>Condiciones del mercado:</strong> Tendencia clara, rango, volátil, noticias pendientes</li>
+<li><strong>Errores cometidos:</strong> Entré tarde, moví el SL, cerré antes del TP, etc.</li>
+<li><strong>Lecciones aprendidas:</strong> ¿Qué haré diferente la próxima vez?</li>
+</ul>
+</div>
+
+<h3>Plantilla de Revisión Semanal</h3>
+<div class="strategy-box">
+<h4>Cada Domingo: 30-60 Minutos de Revisión</h4>
+<ol>
+<li><strong>Estadísticas de la semana:</strong> Total de trades, win rate, R total ganado/perdido, mejor trade, peor trade</li>
+<li><strong>¿Seguí mi plan?</strong> Porcentaje de trades donde seguí todas las reglas al pie de la letra</li>
+<li><strong>Mejores setups:</strong> ¿Qué tipo de setup funcionó mejor esta semana?</li>
+<li><strong>Peores setups:</strong> ¿Qué tipo de setup me hizo perder? ¿Debo eliminarlo de mi arsenal?</li>
+<li><strong>Emociones predominantes:</strong> ¿Estuve calmado o ansioso? ¿Hubo revenge trading?</li>
+<li><strong>Errores recurrentes:</strong> ¿Repetí algún error de la semana anterior?</li>
+<li><strong>Ajustes para la próxima semana:</strong> UN aspecto concreto a mejorar (solo uno, no diez)</li>
+<li><strong>Nota general de la semana (1-10):</strong> ¿Qué tan profesional fue mi trading esta semana?</li>
+</ol>
+</div>
+
+<h3>Plantilla de Revisión Mensual</h3>
+<div class="strategy-box">
+<h4>Primer Domingo del Mes: Revisión Profunda</h4>
+<ol>
+<li><strong>Estadísticas del mes:</strong> Win rate, R total, drawdown máximo alcanzado, número de días operados</li>
+<li><strong>Evolución vs mes anterior:</strong> ¿Mejoré o empeoré? ¿En qué métricas específicas?</li>
+<li><strong>Top 3 mejores trades:</strong> ¿Qué tenían en común? ¿Puedo replicar esos elementos?</li>
+<li><strong>Top 3 peores trades:</strong> ¿Qué tenían en común? ¿Cómo evito repetirlos?</li>
+<li><strong>Análisis por sesión:</strong> ¿En qué sesión opero mejor? ¿Debería eliminar alguna sesión?</li>
+<li><strong>Análisis por par:</strong> ¿En qué par tengo mejor win rate? ¿Debería enfocarme más?</li>
+<li><strong>Análisis por tipo de setup:</strong> ¿Qué setups tienen mejor expectativa matemática?</li>
+<li><strong>Estado emocional general:</strong> ¿El trading me está afectando negativamente? ¿Necesito un descanso?</li>
+<li><strong>Objetivos para el próximo mes:</strong> Máximo 3 objetivos concretos y medibles</li>
+</ol>
+</div>
+
+<h3>Cómo Identificar Patrones en tu Trading</h3>
+<div class="highlight-box green">
+<h4>El Poder de los Datos</h4>
+<p>Después de 30-50 trades registrados correctamente, tu diario empieza a revelar patrones que no puedes ver en tiempo real:</p>
+<ul>
+<li><strong>Patrón de horario:</strong> "Mis trades ganadores ocurren entre 14:00-16:00 UTC. Mis perdedores ocurren después de las 18:00." → Solución: no operar después de las 18:00.</li>
+<li><strong>Patrón de par:</strong> "Mi win rate en EUR/USD es 65% pero en GBP/JPY es 35%." → Solución: eliminar GBP/JPY de mi lista.</li>
+<li><strong>Patrón emocional:</strong> "Cada vez que anoto 'ansioso' pierdo el trade. Cuando anoto 'neutral' gano el 70%." → Solución: si me siento ansioso, no entro al trade.</li>
+<li><strong>Patrón de confluencia:</strong> "Trades con confluencia 4-5/5 ganan el 75%. Trades con confluencia 2-3/5 ganan solo el 40%." → Solución: solo tomar trades con confluencia mínima de 4/5.</li>
+</ul>
+</div>
+
+<div class="example-box">
+<h4>Ejemplo Real de Descubrimiento por Diario</h4>
+<p>Un trader anotó durante 3 meses que sus trades del lunes tenían un win rate del 30%, mientras que de martes a jueves era del 65%. ¿La razón? Los lunes llegaba ansioso por la apertura semanal y tomaba trades impulsivos. Solución: no operar los lunes. Su rentabilidad mensual subió un 40% con ese solo cambio.</p>
+</div>
+
+<div class="grid-cards">
+<div class="card">
+<h4>Herramientas para el Diario</h4>
+<p><strong>Excel/Google Sheets:</strong> Gratis, personalizable, bueno para análisis con fórmulas. <strong>Notion:</strong> Flexible, permite capturas y texto. <strong>TraderSync:</strong> Plataforma profesional con analytics automáticos. <strong>Edgewonk:</strong> El diario más completo para traders serios.</p>
+</div>
+<div class="card">
+<h4>Cuánto Tiempo Dedicar</h4>
+<p><strong>Por trade:</strong> 3-5 minutos inmediatamente después de cerrar la operación. <strong>Revisión semanal:</strong> 30-60 minutos cada domingo. <strong>Revisión mensual:</strong> 1-2 horas el primer domingo del mes. <strong>Total:</strong> ~2-3 horas/semana. Es la inversión con mejor retorno que harás como trader.</p>
+</div>
+</div>
+
+<div class="warning-box">
+<h4>Si No Llevas Diario, No Eres un Trader Profesional</h4>
+<p>El 95% de los traders que no llevan diario pierden dinero a largo plazo. El 80% de los traders consistentemente rentables llevan un diario detallado. Esto no es coincidencia. El diario es lo que separa a los profesionales de los apostadores. <strong>Sin datos, no puedes mejorar. Sin mejora, no sobrevives.</strong></p>
+</div>`,
+          keyPoints: [
+            "Un diario profesional registra cada campo del trade: fecha, par, sesión, setup, confluencia, entrada/SL/TP, R:R, resultado, capturas, emociones y lecciones",
+            "La revisión semanal (30-60 min cada domingo) identifica patrones, errores recurrentes y un aspecto concreto a mejorar cada semana",
+            "La revisión mensual analiza estadísticas por sesión, par y tipo de setup para optimizar tu estrategia con datos reales",
+            "Después de 30-50 trades registrados, el diario revela patrones invisibles como horarios improductivos, pares poco rentables y disparadores emocionales",
+            "El 80% de los traders consistentemente rentables llevan un diario detallado — sin datos no puedes mejorar, sin mejora no sobrevives"
+          ],
+          quiz: [
+            { question: "¿Cuál es la diferencia principal entre un diario amateur y uno profesional?", options: ["El profesional usa software caro y el amateur usa papel", "El profesional registra cada campo relevante incluyendo emociones y capturas, se llena inmediatamente y tiene revisión semanal/mensual", "No hay diferencia real, cualquier anotación sirve", "El profesional solo registra las operaciones ganadoras"], correctIndex: 1, explanation: "El diario profesional es completo (todos los campos), inmediato (se llena justo después del trade), honesto (incluye emociones y errores) y tiene revisiones periódicas obligatorias." },
+            { question: "¿Cada cuánto debes hacer una revisión semanal de tu diario de trading?", options: ["Solo cuando pierdes dinero", "Cada domingo, dedicando 30-60 minutos a analizar la semana", "Una vez al mes es suficiente", "Cada día después de operar"], correctIndex: 1, explanation: "La revisión semanal (30-60 minutos cada domingo) te permite identificar patrones, errores recurrentes y definir un aspecto concreto a mejorar para la próxima semana." },
+            { question: "¿Cuántos trades necesitas registrar antes de que el diario empiece a revelar patrones útiles?", options: ["5-10 trades", "30-50 trades", "200-300 trades", "No necesitas registrar trades, solo resultados"], correctIndex: 1, explanation: "Después de 30-50 trades registrados correctamente, el diario empieza a revelar patrones de horario, par, emoción y confluencia que no puedes ver en tiempo real." }
+          ]
+        }
+      ]
     }
   ]
 };
