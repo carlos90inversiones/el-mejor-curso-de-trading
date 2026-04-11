@@ -8,6 +8,7 @@ import { useProgress } from "@/lib/useProgress";
 import { useGamification } from "@/components/GamificationSystem";
 import AudioPlayer from "@/components/AudioPlayer";
 import LessonNotes from "@/components/LessonNotes";
+import ShareButtons from "@/components/ShareButtons";
 
 function findLesson(lessonId: string) {
   for (const phase of COURSE_DATA) {
@@ -113,7 +114,12 @@ export default function LeccionPage({ params }: { params: Promise<{ lessonId: st
                 </Link>
               </div>
 
-              <div className="mt-8 flex justify-between items-center border-t border-[#2a2a40] pt-6">
+              {/* Share */}
+              <div className="mt-6">
+                <ShareButtons title={lesson.title} lessonId={lessonId} />
+              </div>
+
+              <div className="mt-6 flex justify-between items-center border-t border-[#2a2a40] pt-6">
                 {prevId ? (
                   <Link href={`/leccion/${prevId}`} className="text-[#a0a0b8] hover:text-white transition text-sm">
                     &#8592; Anterior
