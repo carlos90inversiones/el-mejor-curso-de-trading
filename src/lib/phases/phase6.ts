@@ -32,7 +32,7 @@ export const PHASE_6: Phase = {
 </div>
 
 <h3>Que es el Backtesting y Por Que es CRUCIAL</h3>
-<p>El backtesting consiste en <strong>aplicar tu estrategia de trading a datos historicos del mercado</strong> para ver como habria funcionado. Es la diferencia entre operar con fe ciega y operar con datos concretos.</p>
+<p>El backtesting consiste en <strong>aplicar tu estrategia de trading a datos historicos del mercado</strong> para ver como habría funcionado. Es la diferencia entre operar con fe ciega y operar con datos concretos.</p>
 
 <div class="highlight-box green">
 <h4>Beneficios del Backtesting</h4>
@@ -115,10 +115,10 @@ export const PHASE_6: Phase = {
             "Metricas clave: win rate, profit factor (>1.5), max drawdown, esperanza matematica positiva",
             "Cuidado con el overfitting: mantener la estrategia simple (3-5 reglas) y validar fuera de muestra",
             "TradingView Replay permite backtesting manual gratuito — avanza vela a vela",
-            "Si no funciona en backtest, no funcionara en vivo"
+            "Si no funciona en backtest, no funcionará en vivo"
           ],
           quiz: [
-            { question: "Que es el backtesting?", options: ["Operar en una cuenta demo", "Aplicar tu estrategia a datos historicos para ver como habria funcionado", "Copiar trades de otros traders", "Usar indicadores automaticos"], correctIndex: 1, explanation: "El backtesting consiste en aplicar tu estrategia de trading a datos historicos del mercado para evaluar su rendimiento antes de arriesgar dinero real." },
+            { question: "Que es el backtesting?", options: ["Operar en una cuenta demo", "Aplicar tu estrategia a datos historicos para ver como habría funcionado", "Copiar trades de otros traders", "Usar indicadores automaticos"], correctIndex: 1, explanation: "El backtesting consiste en aplicar tu estrategia de trading a datos historicos del mercado para evaluar su rendimiento antes de arriesgar dinero real." },
             { question: "Cual es el tamano de muestra mínimo recomendado para un backtest confiable?", options: ["10 trades", "30 trades", "100-200 trades", "Solo 5 trades buenos"], correctIndex: 2, explanation: "Se necesitan al menos 100-200 trades para que los resultados del backtest sean estadisticamente significativos y confiables." },
             { question: "Que es el overfitting?", options: ["Cuando tu estrategia funciona en todos los mercados", "Cuando ajustas tanto los parametros que funciona perfecto en el pasado pero falla en datos nuevos", "Cuando usas demasiado apalancamiento", "Cuando operas muchos pares a la vez"], correctIndex: 1, explanation: "El overfitting es sobre-optimizar tu estrategia para datos historicos especificos. Funciona perfecto en el backtest pero falla en operaciones reales porque no es una estrategia robusta." },
             { question: "Un profit factor de 0.8 significa que:", options: ["Tu estrategia es muy rentable", "Estas perdiendo dinero — las perdidas superan las ganancias", "Necesitas más datos", "Es un buen resultado para empezar"], correctIndex: 1, explanation: "Un profit factor por debajo de 1.0 significa que las perdidas totales superan las ganancias totales. Necesitas un profit factor de al menos 1.5 para que la estrategia sea viable." }
@@ -141,7 +141,7 @@ export const PHASE_6: Phase = {
 <div class="card"><h4>Gratuito y Open Source</h4><p>Python es gratis. Las librerias de trading son gratis. No necesitas pagar nada para empezar.</p></div>
 <div class="card"><h4>Facil de Aprender</h4><p>Python es el lenguaje más fácil de aprender. Su sintaxis es casi como leer ingles.</p></div>
 <div class="card"><h4>Librerias Poderosas</h4><p>pandas, numpy, matplotlib, yfinance — herramientas especializadas para datos financieros.</p></div>
-<div class="card"><h4>Comunidad Enorme</h4><p>Miles de tutoriales, foros, y codigo gratuito para trading. Nunca estaras solo.</p></div>
+<div class="card"><h4>Comunidad Enorme</h4><p>Miles de tutoriales, foros, y codigo gratuito para trading. Nunca estarás solo.</p></div>
 </div>
 
 <h3>Las Librerias Esenciales</h3>
@@ -301,7 +301,7 @@ result = mt5.order_send(order)
 </div>
 
 <h3>Que es Pine Script?</h3>
-<p><strong>Pine Script</strong> es el lenguaje de programacion de TradingView. Te permite crear:</p>
+<p><strong>Pine Script</strong> es el lenguaje de programación de TradingView. Te permite crear:</p>
 <div class="grid-cards">
 <div class="card"><h4>Indicadores Custom</h4><p>Combina RSI + Volumen + tu logica personal en un solo indicador que te de señales claras.</p></div>
 <div class="card"><h4>Alertas Automaticas</h4><p>Recibe notificaciones en tu telefono cuando se cumplan TUS condiciones especificas.</p></div>
@@ -449,8 +449,8 @@ plot(smaSlow, color=color.red)
             "Puedes publicar tus indicadores gratis o vender acceso como servicio premium"
           ],
           quiz: [
-            { question: "Para que sirve Pine Script?", options: ["Para minar criptomonedas", "Para crear indicadores custom, alertas y estrategias de backtest en TradingView", "Para programar bots de trading en MetaTrader", "Para hackear brokers"], correctIndex: 1, explanation: "Pine Script es el lenguaje de programacion propio de TradingView que permite crear indicadores personalizados, alertas automaticas y scripts de backtesting." },
-            { question: "Que funcion de Pine Script usas para detectar cuando una linea cruza por encima de otra?", options: ["ta.sma()", "ta.crossover()", "plot()", "alertcondition()"], correctIndex: 1, explanation: "ta.crossover(a, b) devuelve true cuando la serie 'a' cruza por encima de la serie 'b'. Es la funcion estandar para detectar cruces alcistas." },
+            { question: "Para que sirve Pine Script?", options: ["Para minar criptomonedas", "Para crear indicadores custom, alertas y estrategias de backtest en TradingView", "Para programar bots de trading en MetaTrader", "Para hackear brokers"], correctIndex: 1, explanation: "Pine Script es el lenguaje de programación propio de TradingView que permite crear indicadores personalizados, alertas automaticas y scripts de backtesting." },
+            { question: "Que función de Pine Script usas para detectar cuando una linea cruza por encima de otra?", options: ["ta.sma()", "ta.crossover()", "plot()", "alertcondition()"], correctIndex: 1, explanation: "ta.crossover(a, b) devuelve true cuando la serie 'a' cruza por encima de la serie 'b'. Es la función estandar para detectar cruces alcistas." },
             { question: "Cual es la diferencia entre 'indicator' y 'strategy' en Pine Script?", options: ["No hay diferencia", "indicator muestra visualizaciones, strategy permite hacer backtest con entradas y salidas simuladas", "strategy es más rápido", "indicator es de pago"], correctIndex: 1, explanation: "indicator() es para crear indicadores visuales y alertas. strategy() permite definir entradas y salidas de trades que TradingView simula con datos historicos para mostrar estadisticas de backtest." },
             { question: "Como puedes recibir una notificacion en tu movil cuando tu indicador detecta una señal?", options: ["No es posible", "Usando alertcondition() en el script y configurando una alerta en TradingView", "Enviando un email manualmente", "Pagando una suscripcion especial"], correctIndex: 1, explanation: "Usas alertcondition() en tu script para definir la condicion, luego configuras una alerta en TradingView que envia push notifications a tu movil cuando la condicion se cumple." }
           ],
@@ -597,7 +597,7 @@ result = mt5.order_send(request)
           ],
           quiz: [
             { question: "Cuales son las 4 partes principales de un bot de trading?", options: ["HTML, CSS, JS, React", "Datos, Estrategia, Gestion de Riesgo, Ejecucion", "Comprar, Vender, Esperar, Cerrar", "Indicador, Senal, Alerta, Email"], correctIndex: 1, explanation: "Un bot necesita: fuente de datos (precios), motor de estrategia (logica), gestión de riesgo (position sizing, SL), y ejecucion (conexion al broker)." },
-            { question: "Cuanto tiempo mínimo deberias backtestear un bot antes de ponerlo en real?", options: ["1 semana", "1 mes", "6+ meses de backtest + 3 meses de demo", "No necesita backtest"], correctIndex: 2, explanation: "Minimo 6 meses de backtest historico positivo + 3 meses de forward test en demo para verificar que funciona en condiciones reales." },
+            { question: "Cuanto tiempo mínimo deberías backtestear un bot antes de ponerlo en real?", options: ["1 semana", "1 mes", "6+ meses de backtest + 3 meses de demo", "No necesita backtest"], correctIndex: 2, explanation: "Minimo 6 meses de backtest historico positivo + 3 meses de forward test en demo para verificar que funciona en condiciones reales." },
             { question: "Que libreria de Python permite conectar directamente con MetaTrader 5?", options: ["pandas", "numpy", "MetaTrader5 (mt5)", "yfinance"], correctIndex: 2, explanation: "La libreria oficial MetaTrader5 (import MetaTrader5 as mt5) permite obtener datos, abrir/cerrar ordenes, y consultar la cuenta desde Python." }
           ]
         }
@@ -677,7 +677,7 @@ ws.run_forever()</code></pre></div></div>`,
           ],
           quiz: [
             { question: "Cual es la mejor fuente gratuita de datos Forex?", options: ["Yahoo Finance", "OANDA API (con cuenta demo)", "Google Finance", "Twitter"], correctIndex: 1, explanation: "OANDA ofrece datos Forex historicos y en tiempo real gratuitamente con una cuenta demo. Es la fuente estandar para Forex algorítmico." },
-            { question: "Porque deberias guardar los datos localmente en CSV?", options: ["Porque son más bonitos", "Para no tener que re-descargar cada vez que ejecutas tu codigo (mas rápido y eficiente)", "Porque las APIs son de pago", "No necesitas guardarlos"], correctIndex: 1, explanation: "Descargar datos cada vez es lento y puede alcanzar limites de la API. Guardando en CSV, cargas en milisegundos." },
+            { question: "Porque deberías guardar los datos localmente en CSV?", options: ["Porque son más bonitos", "Para no tener que re-descargar cada vez que ejecutas tu codigo (mas rápido y eficiente)", "Porque las APIs son de pago", "No necesitas guardarlos"], correctIndex: 1, explanation: "Descargar datos cada vez es lento y puede alcanzar limites de la API. Guardando en CSV, cargas en milisegundos." },
             { question: "Que tecnologia se usa para recibir datos de precios en tiempo real?", options: ["HTTP requests cada segundo", "WebSockets (conexion permanente)", "Email", "FTP"], correctIndex: 1, explanation: "WebSockets mantienen una conexion abierta y reciben datos instantaneamente cuando hay un nuevo tick/trade." }
           ]
         },
@@ -707,7 +707,7 @@ from sklearn.metrics import classification_report
 data = pd.read_csv("eurusd_daily.csv")
 data['SMA_20'] = data['Close'].rolling(20).mean()
 data['SMA_50'] = data['Close'].rolling(50).mean()
-data['RSI'] = compute_rsi(data['Close'], 14)  # funcion propia
+data['RSI'] = compute_rsi(data['Close'], 14)  # función propia
 data['ATR'] = compute_atr(data, 14)
 
 # Target: precio sube (1) o baja (0) en los próximos 5 dias
@@ -747,7 +747,7 @@ print(classification_report(y_test, predictions))</code></pre></div>
 <p>Esto es MUCHO más realista y util que intentar predecir el precio.</p></div>`,
           keyPoints: [
             "ML NO es magia - la mayoria de modelos fallan en produccion",
-            "Usos reales: clasificacion de regimenes, deteccion de patrones, optimizacion de parametros",
+            "Usos reales: clasificacion de regimenes, deteccion de patrones, optimización de parametros",
             "NUNCA hagas shuffle en datos de tiempo (el train debe ser ANTES del test)",
             "Overfitting es el enemigo #1 - un backtest perfecto que falla en real",
             "Enfoque pragmatico: usar ML para filtrar y clasificar, no para predecir precios"
@@ -831,7 +831,7 @@ send_alert("ALERTA: Drawdown al 3.5% - revisad")</code></pre></div></div>
           quiz: [
             { question: "Cual es la forma más economica y popular de tener un bot 24/7?", options: ["Comprar un servidor fisico", "VPS (Servidor Privado Virtual) por 5-20 euros/mes", "Dejar tu PC encendido siempre", "Pagar un servicio de 500$/mes"], correctIndex: 1, explanation: "Un VPS es un servidor en la nube que cuesta 5-20 euros/mes y esta siempre encendido. Es la opcion estandar para bots de trading." },
             { question: "Que es un 'kill switch' en un bot de trading?", options: ["Un indicador técnico", "Mecanismo para APAGAR el bot remotamente en caso de emergencia", "Un tipo de orden", "Una estrategia de scalping"], correctIndex: 1, explanation: "Un kill switch permite apagar tu bot inmediatamente si algo sale mal, sin tener que acceder fisicamente al servidor." },
-            { question: "Donde NUNCA deberias poner tus API keys del broker?", options: ["En variables de entorno", "Directamente en el codigo fuente (hardcoded)", "En un archivo .env", "En un gestor de secretos"], correctIndex: 1, explanation: "Las API keys nunca deben estar en el codigo fuente. Si subes tu codigo a GitHub, cualquiera podria acceder a tu cuenta del broker." }
+            { question: "Donde NUNCA deberías poner tus API keys del broker?", options: ["En variables de entorno", "Directamente en el codigo fuente (hardcoded)", "En un archivo .env", "En un gestor de secretos"], correctIndex: 1, explanation: "Las API keys nunca deben estar en el codigo fuente. Si subes tu codigo a GitHub, cualquiera podría acceder a tu cuenta del broker." }
           ]
         }
       ]
@@ -1197,7 +1197,7 @@ if bosDown
 <p><strong>Ejemplo:</strong> Entrar cuando EMA21 cruza EMA50 al alza con ADX > 25. Stop trailing con ATR.</p>
 </div>
 <div class="card">
-<h4>2. Mean Reversion (Reversión a la Media)</h4>
+<h4>2. Mean Reversión (Reversión a la Media)</h4>
 <p><strong>Cuándo brilla:</strong> Mercados en rango, laterales, consolidación</p>
 <p><strong>Cuándo sufre:</strong> Tendencias fuertes y breakouts</p>
 <p><strong>Herramientas:</strong> RSI extremos, Bandas de Bollinger, desviaciones estándar, zonas de soporte/resistencia</p>
@@ -1225,7 +1225,7 @@ if bosDown
 <tr><td><strong>Mean Reversion</strong></td><td>-0.40</td><td>1.00</td><td>-0.20</td></tr>
 <tr><td><strong>Breakout</strong></td><td>0.30</td><td>-0.20</td><td>1.00</td></tr>
 </table>
-<p><strong>Interpretación:</strong> Trend Following y Mean Reversion tienen correlación negativa (-0.40), lo que significa que cuando una pierde, la otra tiende a ganar. Esto es EXACTAMENTE lo que queremos.</p>
+<p><strong>Interpretación:</strong> Trend Following y Mean Reversión tienen correlación negativa (-0.40), lo que significa que cuando una pierde, la otra tiende a ganar. Esto es EXACTAMENTE lo que queremos.</p>
 </div>
 
 <h3>Asignación de Capital Entre Estrategias</h3>
@@ -1283,7 +1283,7 @@ if bosDown
 </div>
 </div>`,
           keyPoints: [
-            "Un portfolio de estrategias (trend following + mean reversion + breakout) reduce el drawdown y suaviza la curva de equity porque cada tipo funciona en condiciones de mercado diferentes",
+            "Un portfolio de estrategias (trend following + mean reversión + breakout) reduce el drawdown y suaviza la curva de equity porque cada tipo funciona en condiciones de mercado diferentes",
             "La correlación negativa entre estrategias es la clave: cuando una pierde, otra tiende a ganar — esto es verdadera diversificación",
             "Asignación sugerida para empezar: 50% trend following, 30% mean reversion, 20% breakout — ajusta según tus resultados de backtesting",
             "Rebalancea mensual o trimestralmente según rendimiento real vs esperado — no por emociones ni rachas cortas",
@@ -1291,7 +1291,7 @@ if bosDown
           ],
           quiz: [
             { question: "¿Por qué es peligroso depender de una sola estrategia de trading?", options: ["Porque una sola estrategia siempre pierde dinero", "Porque ninguna estrategia funciona en TODOS los tipos de mercado — cuando el mercado cambia de régimen, tu única estrategia puede perder durante meses", "Porque los brokers no lo permiten", "Porque es aburrido operar una sola estrategia"], correctIndex: 1, explanation: "Los mercados alternan entre tendencias, rangos y explosiones. Una sola estrategia solo funciona bien en uno de estos regímenes, sufriendo pérdidas prolongadas en los demás." },
-            { question: "¿Qué significa que dos estrategias tengan correlación negativa?", options: ["Que ambas pierden al mismo tiempo", "Que cuando una gana, la otra tiende a perder — lo ideal para diversificar un portfolio", "Que una es mejor que la otra", "Que no se pueden usar juntas"], correctIndex: 1, explanation: "La correlación negativa entre estrategias significa que se compensan mutuamente: cuando el mercado lateral daña tu trend following, tu mean reversion tiende a compensar esas pérdidas." },
+            { question: "¿Qué significa que dos estrategias tengan correlación negativa?", options: ["Que ambas pierden al mismo tiempo", "Que cuando una gana, la otra tiende a perder — lo ideal para diversificar un portfolio", "Que una es mejor que la otra", "Que no se pueden usar juntas"], correctIndex: 1, explanation: "La correlación negativa entre estrategias significa que se compensan mutuamente: cuando el mercado lateral daña tu trend following, tu mean reversión tiende a compensar esas pérdidas." },
             { question: "¿Cuál es la señal más confiable para retirar una estrategia de tu portfolio?", options: ["Que lleve 2 semanas perdiendo", "Que un youtuber diga que ya no funciona", "Rendimiento sostenido por debajo del backtest durante más de 6 meses consecutivos o drawdown 2x el esperado", "Que encuentres una estrategia nueva más emocionante"], correctIndex: 2, explanation: "Las rachas malas de 2-4 semanas son completamente normales. Solo debes retirar una estrategia con evidencia objetiva de degradación prolongada, no por emociones ni opiniones externas." }
           ]
         },

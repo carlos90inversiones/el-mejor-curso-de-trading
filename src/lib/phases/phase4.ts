@@ -39,7 +39,7 @@ export const PHASE_4: Phase = {
 
 <div class="highlight-box green">
 <h4>Concepto Clave: Por que las Instituciones Necesitan tu Stop Loss</h4>
-<p>Un fondo de cobertura quiere comprar EUR/USD con una posición de 500 millones de dolares. Si simplemente pone una orden de mercado, el precio se moveria 50 pips en su contra antes de llenar toda la orden. En cambio, necesita encontrar vendedores dispuestos a venderle a buenos precios. Donde estan esos vendedores? <strong>En los stop loss de los traders retail que estan en LONG</strong>. Un stop loss de un LONG es una orden de VENTA. Exactamente lo que la institucion necesita para comprar.</p>
+<p>Un fondo de cobertura quiere comprar EUR/USD con una posición de 500 millones de dólares. Si simplemente pone una orden de mercado, el precio se moveria 50 pips en su contra antes de llenar toda la orden. En cambio, necesita encontrar vendedores dispuestos a venderle a buenos precios. Donde estan esos vendedores? <strong>En los stop loss de los traders retail que estan en LONG</strong>. Un stop loss de un LONG es una orden de VENTA. Exactamente lo que la institucion necesita para comprar.</p>
 </div>
 
 <div style="display:flex;justify-content:center;margin:24px 0">
@@ -111,7 +111,7 @@ export const PHASE_4: Phase = {
 <div class="highlight-box blue">
 <h4>Como Identificar un Liquidity Grab</h4>
 <ol>
-<li><strong>Identifica el pool de liquidez:</strong> Equal highs, equal lows, maximos/minimos de sesion anteriores, maximos/minimos de la semana anterior</li>
+<li><strong>Identifica el pool de liquidez:</strong> Equal highs, equal lows, maximos/minimos de sesión anteriores, maximos/minimos de la semana anterior</li>
 <li><strong>Observa la mecha:</strong> El precio rompe el nivel con una mecha larga pero el CUERPO de la vela cierra por debajo (si era BSL) o por encima (si era SSL)</li>
 <li><strong>Confirmacion:</strong> La siguiente vela muestra movimiento fuerte en la dirección opuesta al sweep</li>
 <li><strong>Entrada:</strong> Entra en la dirección del reverso despues de que la liquidez ha sido tomada</li>
@@ -149,7 +149,7 @@ export const PHASE_4: Phase = {
 </div>
 <div class="card">
 <h4>Session Highs/Lows</h4>
-<p>Los maximos y minimos de la sesion asiatica son frecuentemente barridos durante London. Es uno de los setups más consistentes de ICT.</p>
+<p>Los maximos y minimos de la sesión asiatica son frecuentemente barridos durante London. Es uno de los setups más consistentes de ICT.</p>
 </div>
 <div class="card">
 <h4>Swing Points Obvios</h4>
@@ -166,7 +166,7 @@ export const PHASE_4: Phase = {
 <h4>Setup Completo de Liquidez</h4>
 <p><strong>Contexto:</strong> GBP/USD en tendencia alcista en H4. En M15, ves equal lows formandose en 1.2700.</p>
 <p><strong>Paso 1:</strong> Identificas SSL debajo de 1.2700 (equal lows = trampa de liquidez).</p>
-<p><strong>Paso 2:</strong> Durante la sesion de London, el precio baja agresivamente y rompe 1.2700, llegando a 1.2685.</p>
+<p><strong>Paso 2:</strong> Durante la sesión de London, el precio baja agresivamente y rompe 1.2700, llegando a 1.2685.</p>
 <p><strong>Paso 3:</strong> El precio forma una vela de rechazo con mecha larga inferior. El cuerpo cierra encima de 1.2700.</p>
 <p><strong>Paso 4:</strong> Entras en LONG en el cierre de esa vela (1.2705), con SL debajo de la mecha (1.2680).</p>
 <p><strong>Paso 5:</strong> TP en la BSL más cercana: los maximos de ayer en 1.2780.</p>
@@ -223,7 +223,7 @@ export const PHASE_4: Phase = {
                 "Porque los brokers se lo piden"
               ],
               correctIndex: 1,
-              explanation: "Las instituciones manejan posiciones de cientos de millones de dolares. Necesitan contrapartes para ejecutar esas ordenes. Los stop loss de los retail son ordenes del lado opuesto que las instituciones usan para llenar sus posiciones a buenos precios."
+              explanation: "Las instituciones manejan posiciones de cientos de millones de dólares. Necesitan contrapartes para ejecutar esas ordenes. Los stop loss de los retail son ordenes del lado opuesto que las instituciones usan para llenar sus posiciones a buenos precios."
             }
           ],
           practicalExercise: "Abre TradingView con EUR/USD en M15. Marca todos los equal highs y equal lows de los ultimos 3 dias. Ahora observa que paso cuando el precio llego a esos niveles: barrio la liquidez y revirtio? o la respeto? Anota cuantos de esos niveles fueron barridos antes de un movimiento fuerte. Haz esto con al menos 3 pares de divisas y compara los resultados."
@@ -349,7 +349,7 @@ export const PHASE_4: Phase = {
 <div class="highlight-box blue">
 <h4>Que es un Breaker Block</h4>
 <p>Cuando un Order Block es completamente invalidado (el precio cierra a traves de el con fuerza), ese OB se convierte en un <strong>Breaker Block</strong>. Es como si las instituciones "cambiaran de bando". Un OB alcista invalidado se convierte en un Breaker bajista, y viceversa.</p>
-<p><strong>Mecanica:</strong> El precio rompe un OB alcista -> eso significa que las instituciones que compraron ahi han sido derrotadas -> ahora hay "atrapados" en esa zona -> cuando el precio regrese, esos atrapados saldran (venderan) -> eso crea presion de venta = el Breaker actua como resistencia.</p>
+<p><strong>Mecanica:</strong> El precio rompe un OB alcista -> eso significa que las instituciones que compraron ahi han sido derrotadas -> ahora hay "atrapados" en esa zona -> cuando el precio regrese, esos atrapados saldran (venderan) -> eso crea presión de venta = el Breaker actua como resistencia.</p>
 </div>
 
 <div class="example-box">
@@ -357,7 +357,7 @@ export const PHASE_4: Phase = {
 <p><strong>Escenario:</strong> Habia un Bullish OB en EUR/USD en 1.0900.</p>
 <p><strong>Invalidacion:</strong> El precio rompe 1.0900 con fuerza bajista, cerrando cuerpo de vela debajo.</p>
 <p><strong>Transformacion:</strong> Ese antiguo OB alcista ahora es un Breaker BAJISTA.</p>
-<p><strong>Trade:</strong> Cuando el precio retroceda a 1.0900, busca SHORT. Los traders que compraron ahi estan "atrapados" y venderan para cortar perdidas, sumando presion bajista a tu favor.</p>
+<p><strong>Trade:</strong> Cuando el precio retroceda a 1.0900, busca SHORT. Los traders que compraron ahi estan "atrapados" y venderan para cortar perdidas, sumando presión bajista a tu favor.</p>
 </div>
 
 <h3>Rejection Blocks</h3>
@@ -449,7 +449,7 @@ export const PHASE_4: Phase = {
                 "Una zona donde el precio siempre rebota"
               ],
               correctIndex: 1,
-              explanation: "Un Breaker Block es un OB que fue completamente invalidado y ahora actua en la dirección opuesta. Un Bullish OB roto se convierte en un Breaker bajista porque los compradores atrapados crearan presion de venta al salir."
+              explanation: "Un Breaker Block es un OB que fue completamente invalidado y ahora actua en la dirección opuesta. Un Bullish OB roto se convierte en un Breaker bajista porque los compradores atrapados crearan presión de venta al salir."
             },
             {
               question: "Por que los Propulsion Blocks son considerados los OBs más potentes?",
@@ -555,7 +555,7 @@ export const PHASE_4: Phase = {
 
 <h3>ICT Killzones: Las Ventanas de Oportunidad</h3>
 
-<p>Las <strong>Killzones</strong> son ventanas de tiempo especificas DENTRO de cada sesion donde la probabilidad de movimientos institucionales es MAXIMA. No es lo mismo "sesion de London" que "London Killzone".</p>
+<p>Las <strong>Killzones</strong> son ventanas de tiempo especificas DENTRO de cada sesión donde la probabilidad de movimientos institucionales es MAXIMA. No es lo mismo "sesión de London" que "London Killzone".</p>
 
 <div class="highlight-box green">
 <h4>Las Killzones Exactas de ICT (Hora de Nueva York / EST)</h4>
@@ -596,13 +596,13 @@ export const PHASE_4: Phase = {
 </svg>
 </div>
 
-<p>El <strong>Power of 3</strong> (o AMD) es el patron que las instituciones repiten CADA DIA, CADA SESION. Es la huella digital del dinero inteligente y el concepto MAS importante de ICT.</p>
+<p>El <strong>Power of 3</strong> (o AMD) es el patrón que las instituciones repiten CADA DIA, CADA SESION. Es la huella digital del dinero inteligente y el concepto MAS importante de ICT.</p>
 
 <div class="grid-cards">
 <div class="concept-card">
 <h4>1. Acumulacion (A)</h4>
 <p><strong>Que es:</strong> Las instituciones acumulan posiciones silenciosamente durante un período de baja volatilidad. El precio se mueve en un rango estrecho.</p>
-<p><strong>Cuando:</strong> Tipicamente durante la sesion asiatica o las primeras horas antes de una killzone.</p>
+<p><strong>Cuando:</strong> Tipicamente durante la sesión asiatica o las primeras horas antes de una killzone.</p>
 <p><strong>Que ves en el gráfico:</strong> Consolidacion, rango estrecho, velas pequenas, volumen bajo.</p>
 <p><strong>Lo que esta pasando realmente:</strong> Las instituciones estan construyendo sus posiciones poco a poco sin alertar al mercado.</p>
 </div>
@@ -647,14 +647,14 @@ export const PHASE_4: Phase = {
 
 <h3>London Barre el Rango Asiatico</h3>
 
-<p>Uno de los setups MAS consistentes de ICT es la relación entre la sesion asiatica y London.</p>
+<p>Uno de los setups MAS consistentes de ICT es la relación entre la sesión asiatica y London.</p>
 
 <div class="strategy-box">
 <h4>Setup: London Sweeps Asia Range</h4>
 <p><strong>Premisa:</strong> Asia crea un rango (acumulacion). London lo barre (manipulacion). Luego el precio se mueve en la dirección opuesta al sweep (distribucion).</p>
 <p><strong>Ejecucion paso a paso:</strong></p>
 <ol>
-<li><strong>Marca el rango asiatico:</strong> El high y low de la sesion asiatica (00:00-07:00 UTC)</li>
+<li><strong>Marca el rango asiatico:</strong> El high y low de la sesión asiatica (00:00-07:00 UTC)</li>
 <li><strong>Determina el bias diario:</strong> Con HTF (H4/Daily), determina si el dia es alcista o bajista</li>
 <li><strong>Espera el sweep de London:</strong> Si tu bias es alcista, espera que London barra el BAJO de Asia (SSL). Si tu bias es bajista, espera que London barra el ALTO de Asia (BSL)</li>
 <li><strong>Busca confirmación en LTF:</strong> En M5 o M1, busca un CHoCH o BOS en la dirección de tu bias despues del sweep</li>
@@ -686,7 +686,7 @@ export const PHASE_4: Phase = {
 
 <div class="warning-box">
 <h4>Regla de Oro del Timing ICT</h4>
-<p>Si NO estas operando durante las Killzones, estas jugando contra la casa. El 80% de los movimientos significativos ocurren durante las Killzones. Fuera de ellas, el movimiento es consolidacion, ruido, y manipulacion sin dirección. <strong>Menos horas frente a la pantalla, mejores resultados.</strong></p>
+<p>Si NO estas operando durante las Killzones, estas jugando contra la casa. El 80% de los movimientos significativos ocurren durante las Killzones. Fuera de ellas, el movimiento es consolidacion, ruido, y manipulación sin dirección. <strong>Menos horas frente a la pantalla, mejores resultados.</strong></p>
 </div>`,
           keyPoints: [
             "Las Killzones son ventanas especificas: London KZ (02:00-05:00 EST), NY KZ (07:00-10:00 EST), London Close (10:00-12:00 EST)",
@@ -717,7 +717,7 @@ export const PHASE_4: Phase = {
                 "20:00 - 00:00 EST"
               ],
               correctIndex: 1,
-              explanation: "La London Killzone segun ICT es de 02:00 a 05:00 EST (08:00 a 11:00 hora de España). Es cuando las instituciones de Londres son más activas y los movimientos más significativos de la sesion europea ocurren."
+              explanation: "La London Killzone segun ICT es de 02:00 a 05:00 EST (08:00 a 11:00 hora de España). Es cuando las instituciones de Londres son más activas y los movimientos más significativos de la sesión europea ocurren."
             },
             {
               question: "Que setup ocurre cuando London barre el rango asiatico?",
@@ -728,7 +728,7 @@ export const PHASE_4: Phase = {
                 "Significa que debemos cerrar todas nuestras operaciones inmediatamente"
               ],
               correctIndex: 2,
-              explanation: "Cuando London barre un extremo del rango asiatico, esta tomando la liquidez acumulada durante Asia (la fase de manipulacion del AMD). Despues, el precio tipicamente se mueve en la dirección opuesta al sweep (distribucion)."
+              explanation: "Cuando London barre un extremo del rango asiatico, esta tomando la liquidez acumulada durante Asia (la fase de manipulación del AMD). Despues, el precio tipicamente se mueve en la dirección opuesta al sweep (distribucion)."
             },
             {
               question: "Segun ICT, cuales son los mejores dias de la semana para tradear?",
@@ -739,10 +739,10 @@ export const PHASE_4: Phase = {
                 "Solo los Jueves porque hay reversiones"
               ],
               correctIndex: 1,
-              explanation: "ICT considera Martes y Miercoles como los dias de maxima probabilidad. Las instituciones estan más activas estos dias y los movimientos son más predecibles. Lunes es de preparacion y Viernes es de toma de beneficios."
+              explanation: "ICT considera Martes y Miercoles como los dias de maxima probabilidad. Las instituciones estan más activas estos dias y los movimientos son más predecibles. Lunes es de preparación y Viernes es de toma de beneficios."
             }
           ],
-          practicalExercise: "Durante una semana completa, marca el rango asiatico (high y low) CADA DIA en EUR/USD M15. Luego observa que pasa cuando abre London: barrio el high o el low de Asia? Que paso despues del sweep? El precio continuo o revirtio? Documenta los 5 dias con capturas de pantalla y calcula: en cuantos de los 5 dias el patron AMD fue visible? Esto te dara una comprension práctica del Power of 3."
+          practicalExercise: "Durante una semana completa, marca el rango asiatico (high y low) CADA DIA en EUR/USD M15. Luego observa que pasa cuando abre London: barrio el high o el low de Asia? Que paso despues del sweep? El precio continuo o revirtio? Documenta los 5 dias con capturas de pantalla y calcula: en cuantos de los 5 dias el patrón AMD fue visible? Esto te dara una comprension práctica del Power of 3."
         },
         // --------------------------------------------------------------------
         // LESSON 4-2-2: FVG, PREMIUM/DISCOUNT, CONFLUENCIAS
@@ -827,7 +827,7 @@ export const PHASE_4: Phase = {
 <p>Un <strong>IFVG (Inversed FVG)</strong> se crea cuando el precio cierra completamente A TRAVES de un FVG con fuerza. Similar a como un OB invalidado se convierte en Breaker, un FVG atravesado se convierte en un IFVG que actua en la dirección OPUESTA.</p>
 <p><strong>FVG alcista violado con cierre bajista:</strong> Se convierte en un IFVG bajista (zona de venta)</p>
 <p><strong>FVG bajista violado con cierre alcista:</strong> Se convierte en un IFVG alcista (zona de compra)</p>
-<p><strong>Mecanica:</strong> Los traders que tenian ordenes en ese FVG original ahora estan "atrapados" en el lado equivocado. Sus ordenes de salida (stop losses) crean presion en la dirección opuesta.</p>
+<p><strong>Mecanica:</strong> Los traders que tenian ordenes en ese FVG original ahora estan "atrapados" en el lado equivocado. Sus ordenes de salida (stop losses) crean presión en la dirección opuesta.</p>
 </div>
 
 <h3>Consequent Encroachment (CE)</h3>
@@ -1016,7 +1016,7 @@ export const PHASE_4: Phase = {
 
 <div class="analogy-box">
 <h3>La Analogia del Detective</h3>
-<p>Un buen detective no necesita que el criminal le diga donde esta. Lee las pistas: huellas, marcas, patrones de comportamiento. El precio deja pistas EXACTAMENTE igual. Cada vela, cada mecha, cada patron te cuenta una historia. Los indicadores son como leer el informe de otro detective: llega tarde y puede estar equivocado. El price action es como estar en la escena del crimen en tiempo real. <strong>El precio es el único indicador que NO miente y NO tiene retraso.</strong></p>
+<p>Un buen detective no necesita que el criminal le diga donde esta. Lee las pistas: huellas, marcas, patrones de comportamiento. El precio deja pistas EXACTAMENTE igual. Cada vela, cada mecha, cada patrón te cuenta una historia. Los indicadores son como leer el informe de otro detective: llega tarde y puede estar equivocado. El price action es como estar en la escena del crimen en tiempo real. <strong>El precio es el único indicador que NO miente y NO tiene retraso.</strong></p>
 </div>
 
 <h3>Principios del Price Action Puro</h3>
@@ -1039,7 +1039,7 @@ export const PHASE_4: Phase = {
 <div class="concept-card">
 <h4>Pin Bar / Martillo (en Soporte/Zona de Demanda)</h4>
 <p><strong>Que es:</strong> Vela con cuerpo pequeno y mecha inferior larga (al menos 2/3 de la vela total).</p>
-<p><strong>En contexto:</strong> En una zona de demanda, despues de una caida, un pin bar alcista indica rechazo agresivo del precio bajo. Los compradores absorbieron toda la presion vendedora.</p>
+<p><strong>En contexto:</strong> En una zona de demanda, despues de una caida, un pin bar alcista indica rechazo agresivo del precio bajo. Los compradores absorbieron toda la presión vendedora.</p>
 <p><strong>SIN contexto:</strong> Un pin bar en medio del rango no significa nada. Ignoralo.</p>
 </div>
 <div class="concept-card">
@@ -1052,7 +1052,7 @@ export const PHASE_4: Phase = {
 <h4>Inside Bar</h4>
 <p><strong>Que es:</strong> Una vela cuyo rango (high-low) esta completamente dentro del rango de la vela anterior.</p>
 <p><strong>En contexto:</strong> Indica consolidacion e indecision. En una zona clave, precede frecuentemente un movimiento explosivo. La rotura del rango del inside bar da la dirección.</p>
-<p><strong>Uso avanzado:</strong> Multiples inside bars consecutivos = compresion extrema = explosion inminente.</p>
+<p><strong>Uso avanzado:</strong> Multiples inside bars consecutivos = compresión extrema = explosion inminente.</p>
 </div>
 <div class="concept-card">
 <h4>Doji de Lapida / Shooting Star (en Resistencia/Zona de Supply)</h4>
@@ -1068,7 +1068,7 @@ export const PHASE_4: Phase = {
 
 <h3>Supply y Demand: Mas alla del Soporte/Resistencia</h3>
 
-<p>Supply/Demand es la version AVANZADA de soporte/resistencia. Mientras que S/R son lineas donde el precio "reboto" en el pasado, Supply/Demand son ZONAS donde hay ordenes institucionales pendientes.</p>
+<p>Supply/Demand es la versión AVANZADA de soporte/resistencia. Mientras que S/R son lineas donde el precio "reboto" en el pasado, Supply/Demand son ZONAS donde hay ordenes institucionales pendientes.</p>
 
 <div class="grid-cards">
 <div class="card">
@@ -1171,7 +1171,7 @@ export const PHASE_4: Phase = {
               explanation: "Supply/Demand son zonas basadas en ordenes institucionales pendientes que se AGOTAN con cada toque. Soporte/Resistencia clasico son lineas que supuestamente se 'fortalecen' con más toques, lo cual es incorrecto desde la perspectiva institucional."
             },
             {
-              question: "Que patron forma una zona de demanda fuerte?",
+              question: "Que patrón forma una zona de demanda fuerte?",
               options: [
                 "Rally-Base-Drop (RBD)",
                 "Drop-Base-Rally (DBR)",
@@ -1218,7 +1218,7 @@ export const PHASE_4: Phase = {
 <p><strong>Las 3 Leyes de Wyckoff:</strong></p>
 <ol>
 <li><strong>Ley de Oferta y Demanda:</strong> Si la demanda supera la oferta, el precio sube. Si la oferta supera la demanda, el precio baja. Simple, pero la clave esta en DETECTAR cual domina.</li>
-<li><strong>Ley de Causa y Efecto:</strong> Cuanto más tiempo dure una acumulacion/distribucion (causa), mayor sera el movimiento posterior (efecto). Un rango lateral de 3 meses produce un movimiento más grande que uno de 3 dias.</li>
+<li><strong>Ley de Causa y Efecto:</strong> Cuanto más tiempo dure una acumulacion/distribución (causa), mayor sera el movimiento posterior (efecto). Un rango lateral de 3 meses produce un movimiento más grande que uno de 3 dias.</li>
 <li><strong>Ley de Esfuerzo vs Resultado:</strong> Si hay mucho volumen (esfuerzo) pero poco movimiento de precio (resultado), algo esta cambiando. Es como empujar un coche: si empujas fuerte y no se mueve, hay algo bloqueandolo.</li>
 </ol>
 </div>
@@ -1351,7 +1351,7 @@ export const PHASE_4: Phase = {
 <li><strong>ST (Secondary Test):</strong> El precio retestea la zona del SC con MENOS volumen. Si el volumen es menor, confirma que la venta se esta agotando.</li>
 <li><strong>Spring (o Shakeout):</strong> El falso rompimiento bajista. La trampa final. MOMENTO CLAVE.</li>
 <li><strong>Test del Spring:</strong> El precio retestea la zona del Spring con volumen bajo. Si no cae, confirma que el Spring funciono.</li>
-<li><strong>SOS (Sign of Strength):</strong> Movimiento alcista fuerte con volumen alto que rompe la resistencia del rango. La acumulacion ha terminado.</li>
+<li><strong>SOS (Sign of Strength):</strong> Movimiento alcista fuerte con volumen alto que rompe la resistencia del rango. La acumulación ha terminado.</li>
 <li><strong>LPS (Last Point of Support):</strong> Ultimo retroceso al rango antes del Markup definitivo. ULTIMA oportunidad de compra.</li>
 </ol>
 </div>
@@ -1384,18 +1384,18 @@ export const PHASE_4: Phase = {
 <p><strong>2. AR (Automatic Rally):</strong> Rebote rápido a 18,000. Sin mucho esfuerzo.</p>
 <p><strong>3. ST (Secondary Test):</strong> Bitcoin cae a 16,200. Volumen mucho menor que en el SC. La venta se agota.</p>
 <p><strong>4. Spring:</strong> Bitcoin cae brevemente a 15,400 (debajo del SC). Mecha larga, cierre por encima de 16,000. Los stops se activaron. EL MOMENTO DE COMPRAR.</p>
-<p><strong>5. SOS:</strong> Bitcoin rompe 18,000 con volumen fuerte. La acumulacion término.</p>
+<p><strong>5. SOS:</strong> Bitcoin rompe 18,000 con volumen fuerte. La acumulación término.</p>
 <p><strong>6. Markup:</strong> Bitcoin sube de 18,000 a 45,000+ en los meses siguientes.</p>
 </div>
 
 <div class="warning-box">
 <h4>Error Comun con Wyckoff</h4>
-<p>No todos los rangos laterales son acumulacion o distribucion. A veces son simplemente consolidacion sin propósito institucional claro. La CLAVE esta en el volumen: si el volumen confirma el esquema (disminuye donde debe disminuir, aumenta donde debe aumentar), es Wyckoff. Si el volumen no cuadra, probablemente no lo es. <strong>El volumen es el detector de mentiras de Wyckoff.</strong></p>
+<p>No todos los rangos laterales son acumulación o distribucion. A veces son simplemente consolidacion sin propósito institucional claro. La CLAVE esta en el volumen: si el volumen confirma el esquema (disminuye donde debe disminuir, aumenta donde debe aumentar), es Wyckoff. Si el volumen no cuadra, probablemente no lo es. <strong>El volumen es el detector de mentiras de Wyckoff.</strong></p>
 </div>`,
           keyPoints: [
             "El Composite Man de Wyckoff representa a todas las manos fuertes actuando como una sola entidad, es el mismo concepto que Smart Money",
             "Las 4 fases ciclicas: Acumulacion (rango inferior) -> Markup (tendencia alcista) -> Distribucion (rango superior) -> Markdown (tendencia bajista)",
-            "El Spring es un falso rompimiento bajista en acumulacion que barre stops: es identico al liquidity sweep de SMC",
+            "El Spring es un falso rompimiento bajista en acumulación que barre stops: es identico al liquidity sweep de SMC",
             "El Upthrust (UTAD) es un falso rompimiento alcista en distribucion: equivalente a un BSL sweep",
             "Las 3 Leyes de Wyckoff: Oferta/Demanda, Causa/Efecto (mayor rango = mayor movimiento), Esfuerzo/Resultado (volumen vs precio)",
             "El volumen es el detector de mentiras: confirma o niega cada fase del esquema Wyckoff"
@@ -1421,7 +1421,7 @@ export const PHASE_4: Phase = {
                 "Ley del Composite Man"
               ],
               correctIndex: 2,
-              explanation: "La Ley de Causa y Efecto dice que cuanto más tiempo dure la 'causa' (acumulacion o distribucion), mayor sera el 'efecto' (movimiento tendencial posterior). Un rango de 3 meses produce un movimiento mucho mayor que uno de 3 dias."
+              explanation: "La Ley de Causa y Efecto dice que cuanto más tiempo dure la 'causa' (acumulación o distribucion), mayor sera el 'efecto' (movimiento tendencial posterior). Un rango de 3 meses produce un movimiento mucho mayor que uno de 3 dias."
             },
             {
               question: "Como se conecta el Spring de Wyckoff con los conceptos de Smart Money?",
@@ -1653,7 +1653,7 @@ export const PHASE_4: Phase = {
 <li>Marca el rango asiatico en tu watchlist.</li>
 <li>Define tus posibles trades del dia siguiente (zonas de interes).</li>
 </ol>
-<p><strong>Pre-sesion (5 min):</strong></p>
+<p><strong>Pre-sesión (5 min):</strong></p>
 <ol>
 <li>Revisa noticias de alto impacto (Forex Factory).</li>
 <li>Actualiza las zonas marcadas la noche anterior si es necesario.</li>
@@ -1666,7 +1666,7 @@ export const PHASE_4: Phase = {
 <li>Si el puntaje es suficiente, EJECUTA sin dudar.</li>
 <li>Gestiona el trade segun tus reglas de salida.</li>
 </ol>
-<p><strong>Post-sesion (10 min):</strong></p>
+<p><strong>Post-sesión (10 min):</strong></p>
 <ol>
 <li>Registra el trade en tu journal (o registra que no hubo trade y por que).</li>
 <li>Captura de pantalla del trade (o del análisis del dia).</li>
@@ -1694,13 +1694,13 @@ export const PHASE_4: Phase = {
 
 <div class="warning-box">
 <h4>La Verdad Final sobre los Sistemas de Trading</h4>
-<p>El sistema PERFECTO no existe. Perderas trades. Tendras rachas negativas. Lo que separa a los profesionales de los amateurs no es tener un sistema que nunca pierde, sino tener un sistema con VENTAJA ESTADISTICA y la DISCIPLINA para ejecutarlo sin excepcion. Si tu sistema gana el 50% de las veces con un RR promedio de 3:1, despues de 100 trades tendras una ganancia neta de 100R (50 trades x 3R - 50 trades x 1R). <strong>La consistencia mata la genialidad.</strong></p>
+<p>El sistema PERFECTO no existe. Perderas trades. Tendras rachas negativas. Lo que separa a los profesionales de los amateurs no es tener un sistema que nunca pierde, sino tener un sistema con VENTAJA ESTADISTICA y la DISCIPLINA para ejecutarlo sin excepcion. Si tu sistema gana el 50% de las veces con un RR promedio de 3:1, despues de 100 trades tendrás una ganancia neta de 100R (50 trades x 3R - 50 trades x 1R). <strong>La consistencia mata la genialidad.</strong></p>
 </div>`,
           keyPoints: [
             "Un sistema completo tiene 5 pilares: Bias direccional (HTF), Zona de entrada (OB/FVG/SD), Confirmacion (LTF), Gestion del trade (SL/TP/parciales), y Reglas de riesgo (1-2%)",
             "El sistema de puntuacion de confluencias: 0-4 = no tradear, 5-6 = trade B, 7-8 = trade A, 9-12 = trade A+",
             "Backtesting de mínimo 50-100 trades es OBLIGATORIO antes de usar dinero real. Win rate >45% con RR 3:1 = rentable",
-            "La rutina diaria profesional incluye: análisis nocturno (10 min), pre-sesion (5 min), killzone activa (1-3 horas), y post-sesion journal (10 min)",
+            "La rutina diaria profesional incluye: análisis nocturno (10 min), pre-sesión (5 min), killzone activa (1-3 horas), y post-sesión journal (10 min)",
             "La consistencia en la ejecucion del sistema es más importante que la perfeccion del sistema en si"
           ],
           quiz: [
@@ -1735,7 +1735,7 @@ export const PHASE_4: Phase = {
                 "No es necesario usar stop loss si tienes confianza en el trade"
               ],
               correctIndex: 2,
-              explanation: "El Stop Loss se coloca ANTES de entrar y NUNCA se mueve en contra de la posición (ampliar el SL). Solo puede moverse a breakeven (cuando TP1 se alcanza) o a favor para proteger ganancias. Mover el SL en contra es la via rapida a destruir tu cuenta."
+              explanation: "El Stop Loss se coloca ANTES de entrar y NUNCA se mueve en contra de la posición (ampliar el SL). Solo puede moverse a breakeven (cuando TP1 se alcanza) o a favor para proteger ganancias. Mover el SL en contra es la via rápida a destruir tu cuenta."
             },
             {
               question: "Si tu sistema tiene un win rate del 50% y un RR promedio de 3:1, despues de 100 trades que resultado esperas?",
@@ -1769,7 +1769,7 @@ export const PHASE_4: Phase = {
           duration: "35 min",
           content: `
 <h2>Teoria de Ondas de Elliott</h2>
-<div class="analogy-box"><h3>Las Olas del Mar</h3><p>El mercado se mueve en ondas, como el mar. Hay olas grandes que van hacia la playa (impulso) y olas que retroceden (corrección). Dentro de cada ola grande hay olas más pequenas. Elliott descubrio que estas olas siguen un patron repetitivo de 5+3.</p></div>
+<div class="analogy-box"><h3>Las Olas del Mar</h3><p>El mercado se mueve en ondas, como el mar. Hay olas grandes que van hacia la playa (impulso) y olas que retroceden (corrección). Dentro de cada ola grande hay olas más pequenas. Elliott descubrio que estas olas siguen un patrón repetitivo de 5+3.</p></div>
 <h3>El Patron Basico: 5-3</h3>
 
 <div style="display:flex;justify-content:center;margin:20px 0">
@@ -1860,7 +1860,7 @@ export const PHASE_4: Phase = {
 <p><strong>Ask:</strong> El precio más bajo al que alguien esta dispuesto a VENDER (vendedores esperando).</p>
 <p>La diferencia entre ambos es el <strong>spread</strong>.</p></div>
 <div class="vocab-card"><h4>Libro de Ordenes (Order Book / DOM)</h4>
-<p>Muestra todas las ordenes limitadas pendientes en cada nivel de precio. Te dice DONDE hay concentracion de compradores y vendedores.</p>
+<p>Muestra todas las ordenes limitadas pendientes en cada nivel de precio. Te dice DONDE hay concentración de compradores y vendedores.</p>
 <ul>
 <li>Muchas ordenes de compra en un nivel = posible <strong>soporte</strong></li>
 <li>Muchas ordenes de venta en un nivel = posible <strong>resistencia</strong></li>
@@ -1872,8 +1872,8 @@ export const PHASE_4: Phase = {
 <div class="vocab-card"><h4>Delta</h4>
 <p>La diferencia entre ordenes de compra agresivas y venta agresivas en un período.</p>
 <ul>
-<li><strong>Delta positivo:</strong> Mas compras agresivas = presion alcista</li>
-<li><strong>Delta negativo:</strong> Mas ventas agresivas = presion bajista</li>
+<li><strong>Delta positivo:</strong> Mas compras agresivas = presión alcista</li>
+<li><strong>Delta negativo:</strong> Mas ventas agresivas = presión bajista</li>
 </ul></div>
 <div class="vocab-card"><h4>Volume Profile</h4>
 <p>Muestra el volumen tradeado en CADA NIVEL DE PRECIO (horizontal), no en el tiempo (vertical).</p>
@@ -1886,20 +1886,20 @@ export const PHASE_4: Phase = {
 <div class="highlight-box green"><h4>Como se Complementan</h4>
 <p>SMC te dice DONDE buscar entradas (Order Blocks, FVG, liquidez). Order Flow te confirma si realmente hay compradores/vendedores en esa zona.</p>
 <ul>
-<li>Ves un Order Block alcista → miras el Order Flow → hay acumulacion de ordenes de compra → CONFIRMA tu análisis</li>
-<li>Ves un OB alcista → el Order Flow muestra ventas agresivas → la zona podria fallar</li>
+<li>Ves un Order Block alcista → miras el Order Flow → hay acumulación de ordenes de compra → CONFIRMA tu análisis</li>
+<li>Ves un OB alcista → el Order Flow muestra ventas agresivas → la zona podría fallar</li>
 </ul></div>
 <div class="warning-box"><h4>Nota sobre Order Flow</h4><p>El Order Flow real requiere acceso a datos de nivel 2 (DOM/tape reading) que generalmente necesitan plataformas de pago como Sierra Chart, Bookmap o ATAS. Para Forex retail, el volumen de tick y Volume Profile de TradingView son buenas aproximaciones. El Order Flow puro es más util en futuros e indices.</p></div>`,
           keyPoints: [
             "Order Flow = analizar las ordenes reales del mercado (quien compra/vende, cuanto, a que precio)",
             "Market Orders (agresivos) mueven el precio, Limit Orders (pasivos) crean S/R",
-            "Delta positivo = más compras = presion alcista, Delta negativo = presion bajista",
+            "Delta positivo = más compras = presión alcista, Delta negativo = presión bajista",
             "Volume Profile: POC es el precio con más volumen, Value Area es donde se tradeo el 70%",
             "Order Flow confirma o invalida los niveles de SMC (OB, FVG)"
           ],
           quiz: [
             { question: "Que es el POC (Point of Control) en Volume Profile?", options: ["El precio más alto del dia", "El precio con mayor volumen tradeado", "El precio de cierre", "El spread del broker"], correctIndex: 1, explanation: "El POC es el nivel de precio donde se ha tradeado el mayor volumen. Actua como un iman para el precio." },
-            { question: "Si el delta es fuertemente negativo, que indica?", options: ["Muchas compras agresivas", "Muchas ventas agresivas - presion bajista", "El mercado esta cerrado", "Indecision"], correctIndex: 1, explanation: "Delta negativo = más ordenes de venta agresivas (market sells) que de compra = presion bajista." },
+            { question: "Si el delta es fuertemente negativo, que indica?", options: ["Muchas compras agresivas", "Muchas ventas agresivas - presión bajista", "El mercado esta cerrado", "Indecision"], correctIndex: 1, explanation: "Delta negativo = más ordenes de venta agresivas (market sells) que de compra = presión bajista." },
             { question: "Como complementa el Order Flow al SMC?", options: ["Lo reemplaza completamente", "Confirma o invalida las zonas de SMC (OB, FVG) con datos reales de ordenes", "No tienen relación", "Solo funciona con criptomonedas"], correctIndex: 1, explanation: "SMC identifica DONDE hay zonas de interes. Order Flow confirma si realmente hay participacion institucional en esas zonas." }
           ]
         },
@@ -1912,7 +1912,7 @@ export const PHASE_4: Phase = {
 <div class="analogy-box"><h3>El Precio Forma Figuras Geometricas</h3><p>Los patrones armonicos son figuras geometricas que el precio forma usando proporciones exactas de Fibonacci. Son como huellas digitales del mercado - cuando las ves, sabes con alta probabilidad que va a pasar despues.</p></div>
 <h3>Los 4 Patrones Armonicos Principales</h3>
 <div class="pattern-card"><h4>1. GARTLEY ("222")</h4>
-<p>El patron armonico más conocido. Forma una estructura XABCD con estas proporciones:</p>
+<p>El patrón armonico más conocido. Forma una estructura XABCD con estas proporciones:</p>
 <ul>
 <li><strong>AB</strong> = 61.8% de XA</li>
 <li><strong>BC</strong> = 38.2% - 88.6% de AB</li>
@@ -1927,7 +1927,7 @@ export const PHASE_4: Phase = {
 <li><strong>CD</strong> = 161.8% - 261.8% de BC</li>
 <li><strong>D</strong> = 127.2% - 161.8% de XA (extiende más alla de X)</li>
 </ul>
-<p><strong>Diferencia con Gartley:</strong> El punto D va MAS ALLA del punto X. Es un patron más agresivo.</p></div>
+<p><strong>Diferencia con Gartley:</strong> El punto D va MAS ALLA del punto X. Es un patrón más agresivo.</p></div>
 <div class="pattern-card"><h4>3. BAT (Murcielago)</h4>
 <ul>
 <li><strong>AB</strong> = 38.2% - 50% de XA</li>
@@ -1957,7 +1957,7 @@ export const PHASE_4: Phase = {
 <div class="highlight-box blue"><h4>Herramientas para Harmonic Patterns</h4>
 <p>TradingView tiene una herramienta de "XABCD Pattern" en el panel de dibujo. Tambien hay indicadores automaticos como "Harmonic Pattern" que detectan patrones por ti.</p></div>
 <div class="warning-box"><h4>Realidad de los Harmonic Patterns</h4>
-<p>Son patrones de ALTA precision pero BAJA frecuencia. No aparecen todos los dias. Cuando aparecen con las proporciones correctas, el ratio de éxito es alto (65-75%). Pero si fuerzas un patron donde no lo hay, perderas. Paciencia es clave.</p></div>`,
+<p>Son patrones de ALTA precision pero BAJA frecuencia. No aparecen todos los dias. Cuando aparecen con las proporciones correctas, el ratio de éxito es alto (65-75%). Pero si fuerzas un patrón donde no lo hay, perderas. Paciencia es clave.</p></div>`,
           keyPoints: [
             "4 patrones principales: Gartley, Butterfly, Bat, Crab",
             "Todos usan proporciones exactas de Fibonacci para los puntos XABCD",
@@ -1966,7 +1966,7 @@ export const PHASE_4: Phase = {
             "TradingView tiene herramientas integradas para dibujar y detectar Harmonics"
           ],
           quiz: [
-            { question: "En que nivel de Fibonacci se completa el punto D de un patron Gartley?", options: ["38.2% de XA", "50% de XA", "78.6% de XA", "161.8% de XA"], correctIndex: 2, explanation: "El Gartley tiene su punto D en el 78.6% de retroceso del movimiento XA. Es su firma." },
+            { question: "En que nivel de Fibonacci se completa el punto D de un patrón Gartley?", options: ["38.2% de XA", "50% de XA", "78.6% de XA", "161.8% de XA"], correctIndex: 2, explanation: "El Gartley tiene su punto D en el 78.6% de retroceso del movimiento XA. Es su firma." },
             { question: "Cual es la diferencia principal entre Gartley y Butterfly?", options: ["No hay diferencia", "En el Butterfly, el punto D extiende más alla del punto X", "El Gartley tiene más puntos", "El Butterfly solo aparece en Forex"], correctIndex: 1, explanation: "En Gartley, D esta dentro del rango XA (78.6%). En Butterfly, D va más alla de X (127.2-161.8%). El Butterfly es más agresivo." },
             { question: "Los patrones armonicos son de...", options: ["Alta frecuencia, baja precision", "Alta precision, baja frecuencia", "Baja precision, baja frecuencia", "Alta frecuencia, alta precision"], correctIndex: 1, explanation: "Los Harmonics no aparecen todos los dias (baja frecuencia), pero cuando se forman correctamente tienen alta tasa de éxito (65-75%)." }
           ]
@@ -2021,15 +2021,15 @@ export const PHASE_4: Phase = {
 <p><strong>Recomendacion:</strong> Empieza con Swing Trading (mas fácil). Solo pasa a Scalping cuando domines el análisis y la psicología.</p></div>`,
           keyPoints: [
             "Scalping profesional = precision quirurgica, NO disparo rápido",
-            "Requisitos: broker ECN (spread 0.0-0.5), ejecucion < 50ms, concentracion total",
+            "Requisitos: broker ECN (spread 0.0-0.5), ejecucion < 50ms, concentración total",
             "Multi-TF: H4 para sesgo, M5 para zona, M1 para entrada",
             "Mejores horas: London Open (08-10 UTC) y NY Open (13-15 UTC)",
             "Es el estilo MAS DIFICIL - domina Swing Trading primero"
           ],
           quiz: [
-            { question: "Cual es el requisito MAS importante del broker para hacer scalping?", options: ["Que tenga app movil", "Spread bajo (0.0-0.5 pips) y ejecucion rapida", "Que ofrezca bonus de bienvenida", "Que permita apalancamiento 1:1000"], correctIndex: 1, explanation: "Con un TP de 5-15 pips, un spread de 2+ pips se come la mitad de tu ganancia. Spreads bajos y ejecucion rapida son obligatorios para scalping." },
+            { question: "Cual es el requisito MAS importante del broker para hacer scalping?", options: ["Que tenga app movil", "Spread bajo (0.0-0.5 pips) y ejecucion rápida", "Que ofrezca bonus de bienvenida", "Que permita apalancamiento 1:1000"], correctIndex: 1, explanation: "Con un TP de 5-15 pips, un spread de 2+ pips se come la mitad de tu ganancia. Spreads bajos y ejecucion rápida son obligatorios para scalping." },
             { question: "En scalping con SMC, donde buscas la entrada exacta?", options: ["En H4 directamente", "En M1, buscando CHoCH dentro de un OB/FVG de M5", "En D1", "En cualquier temporalidad"], correctIndex: 1, explanation: "H4 da el sesgo, M5 identifica la zona (OB/FVG), y M1 da el timing exacto buscando un cambio de estructura (CHoCH) dentro de la zona." },
-            { question: "Cuando NO deberias hacer scalping?", options: ["London Open", "NY Open", "Sesion asiatica y almuerzo europeo (baja volatilidad)", "Nunca, siempre es buen momento"], correctIndex: 2, explanation: "Asia y el almuerzo europeo tienen baja volatilidad = spreads más altos + movimientos erraticos sin dirección. No es viable para scalping." }
+            { question: "Cuando NO deberías hacer scalping?", options: ["London Open", "NY Open", "Sesion asiatica y almuerzo europeo (baja volatilidad)", "Nunca, siempre es buen momento"], correctIndex: 2, explanation: "Asia y el almuerzo europeo tienen baja volatilidad = spreads más altos + movimientos erraticos sin dirección. No es viable para scalping." }
           ]
         },
         {
@@ -2073,7 +2073,7 @@ export const PHASE_4: Phase = {
 <div class="grid-cards">
 <div class="card"><h4>Mover SL a Break-Even</h4><p>Cuando el trade gana 1R (ej: arriesgaste 30 pips y ya gano 30), mueve el SL al punto de entrada. Ya no puedes perder.</p></div>
 <div class="card"><h4>Trailing Stop Manual</h4><p>Cada vez que el precio haga un nuevo HH/HL (en LONG), mueve el SL debajo del último HL. Proteges ganancias y dejas correr.</p></div>
-<div class="card"><h4>Take Profit Parcial</h4><p>Cierra 50% en TP1 (1:2 R:R), deja el otro 50% correr con trailing stop hacia TP2 (1:4 o mas).</p></div>
+<div class="card"><h4>Take Profit Parcial</h4><p>Cierra 50% en TP1 (1:2 R:R), deja el otro 50% correr con trailing stop hacia TP2 (1:4 o más).</p></div>
 </div>
 <div class="highlight-box green"><h4>El Secreto del Swing Trading</h4>
 <p>Los swing traders ganan dinero por la CALIDAD de sus trades, no por la cantidad. Un trade bien ejecutado de 150 pips con ratio 1:4 equivale a 12 scalps de 12.5 pips. Pero con mucho menos estres, menos comisiones, y menos desgaste emocional.</p></div>
@@ -2087,14 +2087,14 @@ export const PHASE_4: Phase = {
           keyPoints: [
             "Swing Trading = menos estres, compatible con trabajo, mejores R:R",
             "Framework: W1 contexto → D1 tendencia → H4 setup → H1 entrada",
-            "Workflow: análisis dominical + revision diaria de 15 min",
+            "Workflow: análisis dominical + revisión diaria de 15 min",
             "Mover SL a break-even cuando ganes 1R para eliminar riesgo",
             "Take profit parcial: 50% en TP1, 50% con trailing stop",
             "Cuidado con gaps del fin de semana - cerrar o reducir posiciones"
           ],
           quiz: [
             { question: "Por que Swing Trading es el mejor estilo para empezar?", options: ["Porque es más rápido", "Menos estres, compatible con trabajo, mejores R:R, menos comisiones", "Porque no necesitas analizar", "Porque siempre ganas"], correctIndex: 1, explanation: "Swing trading permite operar con 1-2 horas al dia, tiene menos estres que scalping/day trading, permite ratios R:R de 1:3 o mejores, y paga menos en comisiones." },
-            { question: "Cuando deberias mover tu SL a break-even en swing trading?", options: ["Inmediatamente despues de entrar", "Cuando el trade gana 1R (la misma distancia que tu SL)", "Nunca, dejar el SL original", "Solo si pierdes 3 trades seguidos"], correctIndex: 1, explanation: "Cuando el trade ha ganado 1R (ej: arriesgaste 30 pips y ya va +30 pips), mueves el SL al punto de entrada. Ya no puedes perder dinero en ese trade." },
+            { question: "Cuando deberías mover tu SL a break-even en swing trading?", options: ["Inmediatamente despues de entrar", "Cuando el trade gana 1R (la misma distancia que tu SL)", "Nunca, dejar el SL original", "Solo si pierdes 3 trades seguidos"], correctIndex: 1, explanation: "Cuando el trade ha ganado 1R (ej: arriesgaste 30 pips y ya va +30 pips), mueves el SL al punto de entrada. Ya no puedes perder dinero en ese trade." },
             { question: "Que haces con trades abiertos el viernes por la noche?", options: ["Los dejas sin preocuparte", "Los cierras o reduces posición por riesgo de gap del fin de semana", "Abres más posiciones", "Quitas el SL"], correctIndex: 1, explanation: "Los gaps del fin de semana pueden hacer que el precio abra muy lejos de donde cerro, saltandose tu SL. Lo seguro es cerrar o reducir antes del cierre del viernes." }
           ]
         }

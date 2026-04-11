@@ -38,7 +38,7 @@ export const PHASE_2: Phase = {
 
 <div class="warning-box">
 <h4>El Error Numero 1 de los Principiantes</h4>
-<p>Los traders nuevos dibujan una linea fina y esperan que el precio la toque al pip exacto. Los profesionales saben que soportes y resistencias son <strong>ZONAS</strong>, areas donde se concentra presion compradora o vendedora. Piensa en un rango de 10-30 pips, no en un número exacto.</p>
+<p>Los traders nuevos dibujan una linea fina y esperan que el precio la toque al pip exacto. Los profesionales saben que soportes y resistencias son <strong>ZONAS</strong>, areas donde se concentra presión compradora o vendedora. Piensa en un rango de 10-30 pips, no en un número exacto.</p>
 </div>
 
 <div class="highlight-box purple">
@@ -79,7 +79,7 @@ export const PHASE_2: Phase = {
 </div>
 <div class="card">
 <h4>2. Ordenes Institucionales</h4>
-<p>Los bancos y fondos de inversion colocan ordenes masivas en niveles clave. Un banco puede tener 500 millones en ordenes de compra en 1.0800. Eso crea un "muro" real de demanda.</p>
+<p>Los bancos y fondos de inversión colocan ordenes masivas en niveles clave. Un banco puede tener 500 millones en ordenes de compra en 1.0800. Eso crea un "muro" real de demanda.</p>
 </div>
 <div class="card">
 <h4>3. Numeros Redondos (Psicologicos)</h4>
@@ -87,7 +87,7 @@ export const PHASE_2: Phase = {
 </div>
 <div class="card">
 <h4>4. Pain Trade</h4>
-<p>Los traders que perdieron dinero en un nivel quieren "recuperar" su dinero cuando el precio vuelve. Este comportamiento crea presion real en esas zonas.</p>
+<p>Los traders que perdieron dinero en un nivel quieren "recuperar" su dinero cuando el precio vuelve. Este comportamiento crea presión real en esas zonas.</p>
 </div>
 </div>
 
@@ -186,7 +186,7 @@ export const PHASE_2: Phase = {
               question: "Por que los profesionales dibujan zonas en vez de lineas para soportes y resistencias?",
               options: [
                 "Porque se ve más bonito en el gráfico",
-                "Porque el precio raramente reacciona al pip exacto - hay un rango de presion compradora/vendedora",
+                "Porque el precio raramente reacciona al pip exacto - hay un rango de presión compradora/vendedora",
                 "Porque TradingView solo permite rectangulos",
                 "Porque las lineas confunden a otros traders"
               ],
@@ -400,7 +400,7 @@ export const PHASE_2: Phase = {
 
 <div class="highlight-box purple">
 <h4>Regla de Oro</h4>
-<p>Siempre opera A FAVOR de la estructura del mercado. Si el HTF (timeframe alto) muestra HH/HL, solo busca COMPRAS. Si muestra LH/LL, solo busca VENTAS. Operar contra la estructura es la forma más rapida de perder dinero. "The trend is your friend until the end."</p>
+<p>Siempre opera A FAVOR de la estructura del mercado. Si el HTF (timeframe alto) muestra HH/HL, solo busca COMPRAS. Si muestra LH/LL, solo busca VENTAS. Operar contra la estructura es la forma más rápida de perder dinero. "The trend is your friend until the end."</p>
 </div>`,
           keyPoints: [
             "Tendencia alcista = secuencia de HH (Higher Highs) y HL (Higher Lows)",
@@ -431,7 +431,7 @@ export const PHASE_2: Phase = {
                 "CHoCH confirma tendencia y BOS indica cambio"
               ],
               correctIndex: 1,
-              explanation: "BOS (Break of Structure) confirma que la tendencia actual sigue viva rompiendo un nuevo HH o LL. CHoCH (Change of Character) es la primera señal de que la tendencia podria estar cambiando al romper un HL (en alcista) o un LH (en bajista)."
+              explanation: "BOS (Break of Structure) confirma que la tendencia actual sigue viva rompiendo un nuevo HH o LL. CHoCH (Change of Character) es la primera señal de que la tendencia podría estar cambiando al romper un HL (en alcista) o un LH (en bajista)."
             },
             {
               question: "En que fase del ciclo Wyckoff las instituciones compran silenciosamente mientras el sentimiento público es negativo?",
@@ -445,7 +445,7 @@ export const PHASE_2: Phase = {
               explanation: "En la fase de Acumulacion, las instituciones compran grandes cantidades mientras el precio se mueve lateral. El público tiene miedo y no quiere comprar, lo cual permite a las instituciones acumular a buen precio."
             },
             {
-              question: "Que deberias hacer si el timeframe alto (Diario) muestra LH/LL pero en M15 ves un CHoCH alcista?",
+              question: "Que deberías hacer si el timeframe alto (Diario) muestra LH/LL pero en M15 ves un CHoCH alcista?",
               options: [
                 "Comprar inmediatamente porque el CHoCH en M15 cambia todo",
                 "Ser cauteloso - el HTF bajista manda, el CHoCH en LTF puede ser solo un retroceso",
@@ -688,7 +688,7 @@ export const PHASE_2: Phase = {
 <div style="display:flex;justify-content:center;margin:20px 0">
 <svg width="460" height="200" viewBox="0 0 460 200" style="background:#131722;border-radius:12px;border:1px solid #2a2a40">
 <text x="230" y="18" fill="white" font-size="11" text-anchor="middle" font-weight="bold">GOLDEN CROSS vs DEATH CROSS</text>
-<!-- EMA rapida (21) -->
+<!-- EMA rápida (21) -->
 <polyline points="30,130 60,120 90,110 120,108 150,115 180,105 210,85 240,70 270,55 300,48 330,42 360,38 400,30" fill="none" stroke="#3b82f6" stroke-width="2"/>
 <text x="410" y="33" fill="#3b82f6" font-size="8">EMA 21</text>
 <!-- EMA lenta (50) -->
@@ -697,7 +697,7 @@ export const PHASE_2: Phase = {
 <!-- Punto de cruce -->
 <circle cx="170" cy="112" r="8" fill="none" stroke="#26a69a" stroke-width="2.5"/>
 <text x="170" y="140" fill="#26a69a" font-size="10" text-anchor="middle" font-weight="bold">GOLDEN CROSS</text>
-<text x="170" y="153" fill="#26a69a" font-size="8" text-anchor="middle">EMA rapida cruza arriba = ALCISTA</text>
+<text x="170" y="153" fill="#26a69a" font-size="8" text-anchor="middle">EMA rápida cruza arriba = ALCISTA</text>
 <!-- Precio subiendo tras cruce -->
 <polyline points="170,112 200,90 230,75 260,60 290,50 320,42 350,35" fill="none" stroke="#26a69a33" stroke-width="8"/>
 <text x="350" y="80" fill="#787b86" font-size="8" text-anchor="middle">El precio sube</text>
@@ -920,7 +920,7 @@ export const PHASE_2: Phase = {
 <div class="highlight-box blue">
 <h4>Los 3 Componentes del MACD</h4>
 <ol>
-<li><strong>Linea MACD:</strong> EMA(12) - EMA(26). Es la diferencia entre dos medias exponenciales. Cuando es positiva, la EMA rapida esta encima de la lenta (momentum alcista).</li>
+<li><strong>Linea MACD:</strong> EMA(12) - EMA(26). Es la diferencia entre dos medias exponenciales. Cuando es positiva, la EMA rápida esta encima de la lenta (momentum alcista).</li>
 <li><strong>Linea Signal:</strong> EMA(9) del MACD. Es un "suavizado" del MACD. Los cruces entre MACD y Signal generan señales.</li>
 <li><strong>Histograma:</strong> MACD - Signal. Las barras del histograma. Cuando crecen = momentum acelerando. Cuando decrecen = momentum desacelerando.</li>
 </ol>
@@ -949,7 +949,7 @@ export const PHASE_2: Phase = {
 
 <div class="highlight-box purple">
 <h4>El Estocastico: Velocidad del Precio</h4>
-<p>Mide donde esta el precio actual respecto a su rango de N periodos (default: 14). Tiene dos lineas: %K (rapida) y %D (lenta, media de %K).</p>
+<p>Mide donde esta el precio actual respecto a su rango de N periodos (default: 14). Tiene dos lineas: %K (rápida) y %D (lenta, media de %K).</p>
 <ul>
 <li><strong>Stochastic > 80:</strong> Sobrecompra. Pero en tendencia fuerte puede mantenerse ahi mucho tiempo.</li>
 <li><strong>Stochastic < 20:</strong> Sobreventa. Posible rebote pero no actues solo por esto.</li>
@@ -965,7 +965,7 @@ export const PHASE_2: Phase = {
 <li><strong>Paso 2 - RSI:</strong> Espera que el RSI en H1 llegue a zona 30-40 (sobreventa relativa en tendencia alcista).</li>
 <li><strong>Paso 3 - MACD:</strong> Busca un cruce alcista del MACD o histograma creciendo en H1.</li>
 <li><strong>Paso 4 - Entrada:</strong> Si los 3 se alinean + vela de confirmación, entra LONG.</li>
-<li><strong>Resultado:</strong> Esta combinacion filtra el 80% de señales falsas y te deja con setups de alta probabilidad.</li>
+<li><strong>Resultado:</strong> Esta combinación filtra el 80% de señales falsas y te deja con setups de alta probabilidad.</li>
 </ol>
 </div>`,
           keyPoints: [
@@ -978,7 +978,7 @@ export const PHASE_2: Phase = {
           ],
           quiz: [
             {
-              question: "El RSI de EUR/USD esta en 78 y el mercado esta en tendencia alcista fuerte. Que deberias hacer?",
+              question: "El RSI de EUR/USD esta en 78 y el mercado esta en tendencia alcista fuerte. Que deberías hacer?",
               options: [
                 "Vender inmediatamente porque esta en sobrecompra",
                 "Nada especial - en tendencia alcista fuerte el RSI puede mantenerse en sobrecompra mucho tiempo",
@@ -1173,7 +1173,7 @@ export const PHASE_2: Phase = {
                 "El indicador esta roto"
               ],
               correctIndex: 2,
-              explanation: "Cuando el OBV sube mientras el precio esta lateral, significa que el volumen en los dias alcistas es mayor que en los bajistas. Las instituciones estan comprando sin mover el precio. Cuando la acumulacion se complete, el precio rompera al alza."
+              explanation: "Cuando el OBV sube mientras el precio esta lateral, significa que el volumen en los dias alcistas es mayor que en los bajistas. Las instituciones estan comprando sin mover el precio. Cuando la acumulación se complete, el precio rompera al alza."
             }
           ],
           practicalExercise: "En TradingView, abre NAS100 o S&P500 en H1. Agrega el indicador Volume Profile (Visible Range). Identifica: 1) El POC - marca con una linea horizontal. 2) El Value Area High y Low. 3) Busca los LVN (huecos en el perfil) donde el precio viajaria rápido. 4) Agrega el OBV y compara si confirma o contradice la dirección del precio. 5) En las ultimas 5 velas, verifica si el volumen confirma el movimiento del precio."
@@ -1278,7 +1278,7 @@ export const PHASE_2: Phase = {
 <ol>
 <li><strong>Identifica un impulso claro:</strong> Un movimiento de swing low a swing high (para retroceso alcista) o de swing high a swing low (para retroceso bajista). Debe ser un movimiento IMPULSIVO, no un retroceso.</li>
 <li><strong>En TradingView:</strong> Selecciona la herramienta "Fibonacci Retracement" (en la barra lateral izquierda).</li>
-<li><strong>Para impulso ALCISTA:</strong> Haz clic en el MINIMO del impulso y arrastra hasta el MAXIMO. El 0% estara arriba (el máximo) y el 100% abajo (el mínimo).</li>
+<li><strong>Para impulso ALCISTA:</strong> Haz clic en el MINIMO del impulso y arrastra hasta el MAXIMO. El 0% estará arriba (el máximo) y el 100% abajo (el mínimo).</li>
 <li><strong>Para impulso BAJISTA:</strong> Haz clic en el MAXIMO y arrastra hasta el MINIMO. El 0% abajo y el 100% arriba.</li>
 <li><strong>Busca confluencia:</strong> Los mejores trades ocurren cuando un nivel Fibonacci coincide con otra señal: soporte/resistencia horizontal, media movil, linea de tendencia. Cuanta más confluencia, mejor.</li>
 </ol>
@@ -1406,7 +1406,7 @@ export const PHASE_2: Phase = {
 <p>Cuando un detective examina una escena del crimen, busca patrones en las huellas para reconstruir lo que paso. Los patrones de gráfico son las "huellas" que dejan compradores y vendedores. Un doble techo es como dos intentos fallidos de escapar por una ventana. Un triangulo es como dos paredes que se estrechan hasta que alguien tiene que salir por un lado.</p>
 </div>
 
-<h3>Patrones de Reversion (Cambio de Tendencia)</h3>
+<h3>Patrones de Reversión (Cambio de Tendencia)</h3>
 
 <div style="display:flex;justify-content:center;gap:20px;margin:20px 0;flex-wrap:wrap">
 <!-- DOBLE TECHO -->
@@ -1466,7 +1466,7 @@ export const PHASE_2: Phase = {
 
 <div class="pattern-card">
 <h4>Head and Shoulders (Cabeza y Hombros) - El Patron Mas Fiable</h4>
-<p>Considerado el patron de reversion más fiable del análisis técnico. Tiene 3 picos: hombro izquierdo, cabeza (el pico más alto) y hombro derecho (mas bajo que la cabeza). Los tres picos estan conectados por un "neckline" en los minimos.</p>
+<p>Considerado el patrón de reversión más fiable del análisis técnico. Tiene 3 picos: hombro izquierdo, cabeza (el pico más alto) y hombro derecho (mas bajo que la cabeza). Los tres picos estan conectados por un "neckline" en los minimos.</p>
 <div class="grid-cards">
 <div class="card">
 <h4>H&S Normal (Bajista)</h4>
@@ -1515,12 +1515,12 @@ export const PHASE_2: Phase = {
 <div class="card">
 <h4>Cuña Ascendente (Rising Wedge) - Bajista</h4>
 <p>Similar a un triangulo pero ambas lineas apuntan HACIA ARRIBA. Los maximos suben pero cada vez menos. Los minimos suben pero cada vez menos. La tendencia se agota. Ruptura tipicamente BAJISTA.</p>
-<p><strong>Engaño:</strong> Parece alcista (el precio sube) pero la compresion indica agotamiento. Es una trampa para compradores.</p>
+<p><strong>Engaño:</strong> Parece alcista (el precio sube) pero la compresión indica agotamiento. Es una trampa para compradores.</p>
 </div>
 <div class="card">
 <h4>Cuña Descendente (Falling Wedge) - Alcista</h4>
 <p>Ambas lineas apuntan HACIA ABAJO pero convergen. Parece bajista pero es alcista. Los vendedores pierden fuerza progresivamente. Ruptura tipicamente ALCISTA.</p>
-<p><strong>Nota:</strong> Las cuñas pueden ser de reversion (al final de tendencia) o de continuacion (como pausa en una tendencia).</p>
+<p><strong>Nota:</strong> Las cuñas pueden ser de reversión (al final de tendencia) o de continuacion (como pausa en una tendencia).</p>
 </div>
 </div>
 
@@ -1540,19 +1540,19 @@ export const PHASE_2: Phase = {
 <div class="warning-box">
 <h4>Reglas Criticas para Patrones</h4>
 <ul>
-<li><strong>Siempre espera la CONFIRMACION (ruptura).</strong> Un patron no esta "completo" hasta que rompe el neckline o la linea clave. Muchos patrones fallan.</li>
+<li><strong>Siempre espera la CONFIRMACION (ruptura).</strong> Un patrón no esta "completo" hasta que rompe el neckline o la linea clave. Muchos patrones fallan.</li>
 <li><strong>Volumen es tu aliado:</strong> La ruptura debe venir con volumen creciente. Sin volumen, desconfia.</li>
-<li><strong>No busques patrones donde no hay:</strong> Si tienes que forzar la interpretacion, probablemente no es un patron válido. Los buenos patrones son OBVIOS.</li>
+<li><strong>No busques patrones donde no hay:</strong> Si tienes que forzar la interpretacion, probablemente no es un patrón válido. Los buenos patrones son OBVIOS.</li>
 <li><strong>Contexto importa:</strong> Un doble techo en una tendencia alcista fuerte de HTF puede fallar. Los patrones funcionan mejor cuando van A FAVOR de la tendencia del timeframe superior.</li>
 </ul>
 </div>`,
           keyPoints: [
-            "Doble techo (M) = patron bajista; Doble suelo (W) = patron alcista",
-            "Head & Shoulders es considerado el patron de reversion más fiable del análisis técnico",
+            "Doble techo (M) = patrón bajista; Doble suelo (W) = patrón alcista",
+            "Head & Shoulders es considerado el patrón de reversión más fiable del análisis técnico",
             "Triangulo ascendente = sesgo alcista; descendente = sesgo bajista; simetrico = depende del contexto",
             "Las banderas (flags) son de los patrones de continuacion más fiables",
             "Cuña ascendente es BAJISTA (engaño); cuña descendente es ALCISTA",
-            "Target de cualquier patron = altura del patron proyectada desde el punto de ruptura"
+            "Target de cualquier patrón = altura del patrón proyectada desde el punto de ruptura"
           ],
           quiz: [
             {
@@ -1564,10 +1564,10 @@ export const PHASE_2: Phase = {
                 "No se puede calcular"
               ],
               correctIndex: 0,
-              explanation: "Altura del patron = 1.3500 - 1.3400 = 100 pips. Se proyecta esa distancia hacia ABAJO desde el punto de ruptura (neckline): 1.3400 - 100 = 1.3300."
+              explanation: "Altura del patrón = 1.3500 - 1.3400 = 100 pips. Se proyecta esa distancia hacia ABAJO desde el punto de ruptura (neckline): 1.3400 - 100 = 1.3300."
             },
             {
-              question: "Una cuña ascendente (rising wedge) es un patron de que tipo?",
+              question: "Una cuña ascendente (rising wedge) es un patrón de que tipo?",
               options: [
                 "Alcista - porque el precio sube",
                 "Bajista - indica agotamiento de la tendencia alcista",
@@ -1575,10 +1575,10 @@ export const PHASE_2: Phase = {
                 "Solo aparece en mercados de cripto"
               ],
               correctIndex: 1,
-              explanation: "Aunque parece alcista (el precio sube), la cuña ascendente es un patron BAJISTA. Las dos lineas convergentes hacia arriba indican que los compradores pierden fuerza progresivamente. La ruptura típica es hacia abajo."
+              explanation: "Aunque parece alcista (el precio sube), la cuña ascendente es un patrón BAJISTA. Las dos lineas convergentes hacia arriba indican que los compradores pierden fuerza progresivamente. La ruptura típica es hacia abajo."
             },
             {
-              question: "Que patron de gráfico se forma despues de un impulso fuerte al alza seguido de una consolidacion en canal descendente estrecho?",
+              question: "Que patrón de gráfico se forma despues de un impulso fuerte al alza seguido de una consolidacion en canal descendente estrecho?",
               options: [
                 "Doble techo",
                 "Triangulo simetrico",
@@ -1586,7 +1586,7 @@ export const PHASE_2: Phase = {
                 "Cuña descendente"
               ],
               correctIndex: 2,
-              explanation: "Una bandera alcista (bull flag) se forma cuando hay un impulso fuerte al alza (el 'asta'), seguido de una consolidacion en un canal descendente estrecho (la 'bandera'). Es un patron de continuacion que indica que la tendencia alcista probablemente continuara."
+              explanation: "Una bandera alcista (bull flag) se forma cuando hay un impulso fuerte al alza (el 'asta'), seguido de una consolidacion en un canal descendente estrecho (la 'bandera'). Es un patrón de continuacion que indica que la tendencia alcista probablemente continuara."
             },
             {
               question: "Cual es la señal de CONFIRMACION para un Head and Shoulders?",
@@ -1597,10 +1597,10 @@ export const PHASE_2: Phase = {
                 "Cuando el volumen es alto en el hombro izquierdo"
               ],
               correctIndex: 1,
-              explanation: "Un H&S no esta confirmado hasta que el precio rompe el neckline (la linea que conecta los minimos entre los hombros) con volumen significativo. Antes de eso, el patron puede fallar."
+              explanation: "Un H&S no esta confirmado hasta que el precio rompe el neckline (la linea que conecta los minimos entre los hombros) con volumen significativo. Antes de eso, el patrón puede fallar."
             }
           ],
-          practicalExercise: "En TradingView, abre 4 gráficos diferentes (EUR/USD, GBP/USD, BTCUSD, NAS100) en H4 o Diario. Busca al menos 1 patron de cada tipo: 1) Un doble techo o doble suelo. 2) Un triangulo (simetrico, ascendente o descendente). 3) Una bandera (bull flag o bear flag). 4) Una cuña (ascendente o descendente). Para cada patron: marca los puntos clave, dibuja el neckline o lineas de ruptura, y calcula el target proyectado."
+          practicalExercise: "En TradingView, abre 4 gráficos diferentes (EUR/USD, GBP/USD, BTCUSD, NAS100) en H4 o Diario. Busca al menos 1 patrón de cada tipo: 1) Un doble techo o doble suelo. 2) Un triangulo (simetrico, ascendente o descendente). 3) Una bandera (bull flag o bear flag). 4) Una cuña (ascendente o descendente). Para cada patron: marca los puntos clave, dibuja el neckline o lineas de ruptura, y calcula el target proyectado."
         },
         // --------------------------------------------------------------
         // LESSON 2-3-3: MULTI-TIMEFRAME ANALYSIS
@@ -1647,7 +1647,7 @@ export const PHASE_2: Phase = {
 
 <div class="highlight-box purple">
 <h4>LTF (Lower Time Frame) - El Francotirador</h4>
-<p>El timeframe bajo te da la ENTRADA PRECISA. Aqui buscas el setup específico: la vela de confirmación, el patron de entrada, el timing exacto. No defines dirección en LTF - ya la tienes del HTF.</p>
+<p>El timeframe bajo te da la ENTRADA PRECISA. Aqui buscas el setup específico: la vela de confirmación, el patrón de entrada, el timing exacto. No defines dirección en LTF - ya la tienes del HTF.</p>
 <ul>
 <li><strong>Swing Traders:</strong> LTF = H4/H1</li>
 <li><strong>Day Traders:</strong> LTF = M15/M5</li>
@@ -1661,8 +1661,8 @@ export const PHASE_2: Phase = {
 <h4>El Framework de 3 Pantallas (Adaptado de Alexander Elder)</h4>
 <ol>
 <li><strong>Pantalla 1 - HTF (La Tendencia):</strong> Mira el gráfico más alto para determinar la TENDENCIA. Usa estructura de mercado (HH/HL o LH/LL) y medias moviles (precio respecto a SMA 200). Esto define si buscas COMPRAS o VENTAS. No buscas entradas aquí.</li>
-<li><strong>Pantalla 2 - MTF (La Zona):</strong> Baja un timeframe para encontrar la ZONA de entrada. Aqui buscas niveles de Fibonacci, soportes/resistencias, zonas de Supply/Demand, o Order Blocks donde el precio podria reaccionar a favor de la tendencia del HTF.</li>
-<li><strong>Pantalla 3 - LTF (La Entrada):</strong> Baja al timeframe más bajo para encontrar el TRIGGER exacto de entrada. Busca un CHoCH a favor de tu dirección, un patron de velas de confirmación, o una ruptura de mini-estructura que confirme que el precio va en tu dirección.</li>
+<li><strong>Pantalla 2 - MTF (La Zona):</strong> Baja un timeframe para encontrar la ZONA de entrada. Aqui buscas niveles de Fibonacci, soportes/resistencias, zonas de Supply/Demand, o Order Blocks donde el precio podría reaccionar a favor de la tendencia del HTF.</li>
+<li><strong>Pantalla 3 - LTF (La Entrada):</strong> Baja al timeframe más bajo para encontrar el TRIGGER exacto de entrada. Busca un CHoCH a favor de tu dirección, un patrón de velas de confirmación, o una ruptura de mini-estructura que confirme que el precio va en tu dirección.</li>
 </ol>
 </div>
 
@@ -1689,7 +1689,7 @@ export const PHASE_2: Phase = {
 
 <div class="highlight-box yellow">
 <h4>Regla del Factor 4-6x</h4>
-<p>La relación entre timeframes debe ser de 4 a 6 veces. El M15 es ~4x el M5. El H4 es 4x el H1. El Diario es ~6x el H4. NO saltes de Semanal a M5 directamente - la diferencia es demasiado grande y perderas contexto. Siempre usa un timeframe intermedio.</p>
+<p>La relación entre timeframes debe ser de 4 a 6 veces. El M15 es ~4x el M5. El H4 es 4x el H1. El Diario es ~6x el H4. NO saltes de Semanal a M5 directamente - la diferencia es demasiado grande y perderás contexto. Siempre usa un timeframe intermedio.</p>
 </div>
 
 <h3>Workflow Practico Paso a Paso</h3>
@@ -1697,7 +1697,7 @@ export const PHASE_2: Phase = {
 <div class="strategy-box">
 <h4>Tu Rutina de Analisis Multi-Timeframe (Day Trading)</h4>
 <ol>
-<li><strong>DIARIO (5 minutos):</strong> Abre el gráfico diario de tu par. Preguntate: Cual es la tendencia? (HH/HL = alcista, LH/LL = bajista). Donde estan los niveles clave de S/R? Hay algun patron grande formandose? El precio esta cerca de la SMA 200?</li>
+<li><strong>DIARIO (5 minutos):</strong> Abre el gráfico diario de tu par. Preguntate: Cual es la tendencia? (HH/HL = alcista, LH/LL = bajista). Donde estan los niveles clave de S/R? Hay algun patrón grande formandose? El precio esta cerca de la SMA 200?</li>
 <li><strong>H1 (10 minutos):</strong> Baja a H1. Identifica la estructura interna. Donde estan los niveles de Fibonacci del último impulso? Hay alguna zona de confluencia (Fib + S/R + EMA)? Marca tu "zona de interes" - el area donde buscas entradas.</li>
 <li><strong>M15/M5 (Ejecucion):</strong> Solo miras M15/M5 CUANDO el precio llega a tu zona de interes en H1. Aqui buscas el trigger: CHoCH en M15 a favor de tu dirección, vela envolvente, o martillo en tu zona. ESTA es tu entrada.</li>
 <li><strong>Ejecuta el trade:</strong> Entrada en LTF. Stop loss basado en la estructura de LTF (debajo del último HL en compras). Take profit basado en MTF/HTF (próximo nivel de S/R en H1 o extension Fibonacci).</li>
@@ -1750,7 +1750,7 @@ export const PHASE_2: Phase = {
               explanation: "El HTF SIEMPRE manda. Un CHoCH en M15 dentro de una tendencia bajista en el Diario es muy probablemente solo un retroceso temporal (la onda correctiva). Deberias buscar VENTAS cuando ese retroceso alcista termine, no compras."
             },
             {
-              question: "Cual es la combinacion de timeframes recomendada para day trading?",
+              question: "Cual es la combinación de timeframes recomendada para day trading?",
               options: [
                 "Semanal - Diario - H4",
                 "Diario - H1 - M15/M5",
@@ -1758,7 +1758,7 @@ export const PHASE_2: Phase = {
                 "Mensual - Semanal - Diario"
               ],
               correctIndex: 1,
-              explanation: "Para day trading, la combinacion ideal es: Diario (tendencia general), H1 (zonas de interes e identificacion de niveles) y M15/M5 (entrada precisa y trigger). Esto mantiene la relación 4-6x entre timeframes."
+              explanation: "Para day trading, la combinación ideal es: Diario (tendencia general), H1 (zonas de interes e identificacion de niveles) y M15/M5 (entrada precisa y trigger). Esto mantiene la relación 4-6x entre timeframes."
             },
             {
               question: "En el framework de 3 pantallas, para que usas el timeframe MEDIO (MTF)?",
@@ -1772,7 +1772,7 @@ export const PHASE_2: Phase = {
               explanation: "El MTF (timeframe medio) sirve para identificar las ZONAS de interes donde buscas entrar: niveles de Fibonacci, soportes/resistencias, confluencias. No defines tendencia (eso es HTF) ni buscas entrada exacta (eso es LTF)."
             },
             {
-              question: "Por que NO deberias saltar directamente del gráfico Semanal al M5?",
+              question: "Por que NO deberías saltar directamente del gráfico Semanal al M5?",
               options: [
                 "Porque TradingView no lo permite",
                 "Porque la diferencia es demasiado grande y pierdes el contexto intermedio",
@@ -1783,7 +1783,7 @@ export const PHASE_2: Phase = {
               explanation: "Saltar de Semanal a M5 pierde todo el contexto intermedio. Los niveles del Semanal son demasiado amplios para entradas en M5. Necesitas el timeframe intermedio (Diario/H4) para identificar las zonas de interes dentro del contexto del Semanal."
             }
           ],
-          practicalExercise: "Realiza un análisis multi-timeframe COMPLETO de EUR/USD o GBP/USD siguiendo estos pasos exactos: 1) DIARIO: Identifica la tendencia (HH/HL o LH/LL), marca los niveles clave de S/R, y decide tu sesgo (compras o ventas). 2) H1: Dibuja Fibonacci del último impulso, identifica EMAs, y encuentra tu 'zona de interes' donde hay confluencia. 3) M15: Si el precio ya esta en tu zona, busca un trigger (CHoCH, patron de velas). Si no esta en tu zona, ESPERA. 4) Documenta todo: captura de pantalla de cada timeframe, tu zona de entrada, stop loss, take profit y ratio R:R."
+          practicalExercise: "Realiza un análisis multi-timeframe COMPLETO de EUR/USD o GBP/USD siguiendo estos pasos exactos: 1) DIARIO: Identifica la tendencia (HH/HL o LH/LL), marca los niveles clave de S/R, y decide tu sesgo (compras o ventas). 2) H1: Dibuja Fibonacci del último impulso, identifica EMAs, y encuentra tu 'zona de interes' donde hay confluencia. 3) M15: Si el precio ya esta en tu zona, busca un trigger (CHoCH, patrón de velas). Si no esta en tu zona, ESPERA. 4) Documenta todo: captura de pantalla de cada timeframe, tu zona de entrada, stop loss, take profit y ratio R:R."
         }
       ]
     },
@@ -1829,7 +1829,7 @@ export const PHASE_2: Phase = {
 <h3>Sentimiento de Mercado</h3>
 <div class="grid-cards">
 <div class="card"><h4>Risk-On (Apetito por riesgo)</h4><p>Mercados optimistas. Acciones suben, oro baja, monedas de riesgo (AUD, NZD) suben, JPY y CHF bajan.</p></div>
-<div class="card"><h4>Risk-Off (Aversion al riesgo)</h4><p>Mercados temerosos. Acciones bajan, oro sube, JPY y CHF suben (refugios seguros), monedas de riesgo bajan.</p></div>
+<div class="card"><h4>Risk-Off (Aversión al riesgo)</h4><p>Mercados temerosos. Acciones bajan, oro sube, JPY y CHF suben (refugios seguros), monedas de riesgo bajan.</p></div>
 </div>`,
           keyPoints: [
             "NFP (primer viernes del mes) es el dato más importante - 50-100 pips de movimiento",
@@ -1881,7 +1881,7 @@ export const PHASE_2: Phase = {
           ],
           quiz: [
             { question: "Si el DXY esta en una fuerte tendencia alcista, que operación buscarias en EUR/USD?", options: ["LONG (compra)", "SHORT (venta)", "Ambas", "Ninguna"], correctIndex: 1, explanation: "DXY alcista = dolar fuerte. Si el dolar se fortalece, EUR/USD baja, así que buscas SHORT." },
-            { question: "Si tienes un LONG en EUR/USD, por que NO deberias abrir un LONG en GBP/USD al mismo tiempo?", options: ["Porque ambos pares se mueven juntos y estarias duplicando riesgo, no diversificando", "Porque GBP/USD es más volatil", "Porque el broker no lo permite", "No hay problema en hacerlo"], correctIndex: 0, explanation: "EUR/USD y GBP/USD tienen correlacion positiva ~80%. Abrir ambos en la misma dirección es como duplicar el mismo trade." },
+            { question: "Si tienes un LONG en EUR/USD, por que NO deberías abrir un LONG en GBP/USD al mismo tiempo?", options: ["Porque ambos pares se mueven juntos y estarias duplicando riesgo, no diversificando", "Porque GBP/USD es más volatil", "Porque el broker no lo permite", "No hay problema en hacerlo"], correctIndex: 0, explanation: "EUR/USD y GBP/USD tienen correlacion positiva ~80%. Abrir ambos en la misma dirección es como duplicar el mismo trade." },
             { question: "Si el petroleo esta subiendo fuertemente, que podrias esperar del USD/CAD?", options: ["Que suba", "Que baje (CAD se fortalece)", "Que no se mueva", "Que el mercado cierre"], correctIndex: 1, explanation: "Canada exporta petroleo. Petroleo sube → economía canadiense se beneficia → CAD se fortalece → USD/CAD baja." }
           ]
         }

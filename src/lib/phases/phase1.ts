@@ -28,7 +28,7 @@ export const PHASE_1: Phase = {
 </div>
 <p>El <strong>trading</strong> es simplemente <strong>comprar algo a un precio y venderlo a un precio mayor</strong> (o venderlo primero y comprarlo despues a un precio menor). En vez de camisetas, usamos:</p>
 <div class="grid-cards">
-<div class="card"><h4>Divisas (Forex)</h4><p>Compras euros y vendes dolares, o al reves. El mercado más grande del mundo con 7.5 BILLONES de dolares diarios.</p></div>
+<div class="card"><h4>Divisas (Forex)</h4><p>Compras euros y vendes dólares, o al reves. El mercado más grande del mundo con 7.5 BILLONES de dólares diarios.</p></div>
 <div class="card"><h4>Acciones</h4><p>Compras un pedacito de Apple, Tesla, Amazon... Si la empresa sube, tu ganas.</p></div>
 <div class="card"><h4>Criptomonedas</h4><p>Bitcoin, Ethereum... Activos digitales que puedes comprar y vender 24/7.</p></div>
 <div class="card"><h4>Indices y Materias Primas</h4><p>S&P 500, NASDAQ, Oro, Petroleo... Paquetes de acciones o recursos naturales.</p></div>
@@ -51,7 +51,7 @@ export const PHASE_1: Phase = {
 </div>
 <h3>Los 4 Estilos de Trading</h3>
 <div class="grid-cards">
-<div class="card"><h4>Scalping</h4><p>Operaciones de segundos a minutos. Muchas operaciones al dia, ganancias pequenas por operación. Requiere concentracion extrema.</p></div>
+<div class="card"><h4>Scalping</h4><p>Operaciones de segundos a minutos. Muchas operaciones al dia, ganancias pequenas por operación. Requiere concentración extrema.</p></div>
 <div class="card"><h4>Day Trading</h4><p>Operaciones que se abren y cierran el MISMO DIA. No dejas nada abierto por la noche. 1-5 operaciones al dia.</p></div>
 <div class="card"><h4>Swing Trading</h4><p>Operaciones de dias a semanas. Buscas movimientos grandes. Menos estres, ideal para combinar con trabajo.</p></div>
 <div class="card"><h4>Position Trading</h4><p>Semanas a meses. Casi como invertir pero con análisis técnico. Muy pocas operaciones.</p></div>
@@ -68,7 +68,7 @@ export const PHASE_1: Phase = {
           ],
           quiz: [
             { question: "Que es el trading en palabras simples?", options: ["Comprar y vender activos para obtener beneficio por la diferencia de precio", "Guardar dinero en el banco", "Apostar en un casino online", "Comprar acciones y nunca venderlas"], correctIndex: 0, explanation: "El trading consiste en comprar y vender activos financieros aprovechando las diferencias de precio para obtener un beneficio." },
-            { question: "Que es una posición SHORT (corta)?", options: ["Comprar un activo esperando que suba", "Vender un activo prestado esperando que baje para recomprarlo más barato", "Mantener una inversion por poco tiempo", "Comprar criptomonedas"], correctIndex: 1, explanation: "Una posición corta (SHORT) significa vender un activo primero (prestado por el broker) y recomprarlo despues a un precio menor." },
+            { question: "Que es una posición SHORT (corta)?", options: ["Comprar un activo esperando que suba", "Vender un activo prestado esperando que baje para recomprarlo más barato", "Mantener una inversión por poco tiempo", "Comprar criptomonedas"], correctIndex: 1, explanation: "Una posición corta (SHORT) significa vender un activo primero (prestado por el broker) y recomprarlo despues a un precio menor." },
             { question: "Cual es la diferencia principal entre scalping y swing trading?", options: ["No hay diferencia", "El scalping dura segundos/minutos, el swing dura dias/semanas", "El swing es más rápido que el scalping", "El scalping solo funciona con acciones"], correctIndex: 1, explanation: "El scalping opera en segundos/minutos buscando ganancias pequenas, mientras el swing trading mantiene posiciones dias o semanas buscando movimientos más grandes." }
           ],
           practicalExercise: "Abre TradingView.com (gratis). Busca BTCUSD. Observa como sube y baja. Identifica un momento donde habrias comprado (LONG) y otro donde habrias vendido (SHORT). Apuntalo."
@@ -145,7 +145,7 @@ export const PHASE_1: Phase = {
             "Indices son muy populares en cuentas fondeadas (prop firms)"
           ],
           quiz: [
-            { question: "Cual es el mercado financiero más grande del mundo?", options: ["Acciones", "Criptomonedas", "Forex (divisas)", "Materias primas"], correctIndex: 2, explanation: "Forex mueve 7.5 billones de dolares diarios." },
+            { question: "Cual es el mercado financiero más grande del mundo?", options: ["Acciones", "Criptomonedas", "Forex (divisas)", "Materias primas"], correctIndex: 2, explanation: "Forex mueve 7.5 billones de dólares diarios." },
             { question: "Que mercado esta abierto 24/7?", options: ["Forex", "Acciones", "Criptomonedas", "Indices"], correctIndex: 2, explanation: "El mercado cripto nunca cierra." },
             { question: "Cual es el mejor momento del dia para tradear Forex?", options: ["Sesion de Sydney", "Sesion de Tokio", "Solapamiento Londres-Nueva York", "Cierre de Nueva York"], correctIndex: 2, explanation: "El solapamiento London-NY tiene mayor volumen y volatilidad." }
           ]
@@ -160,7 +160,7 @@ export const PHASE_1: Phase = {
 <div class="vocab-section">
 <h3>Terminos del Precio</h3>
 <div class="vocab-card"><h4>PIP (Point in Percentage)</h4><p>El movimiento mínimo de precio en Forex. En EUR/USD, un pip es 0.0001.</p><div class="example-box"><strong>Ejemplo:</strong> EUR/USD de 1.0800 a 1.0850 = 50 pips</div></div>
-<div class="vocab-card"><h4>SPREAD</h4><p>La diferencia entre precio de compra (ASK) y venta (BID). Es la comision del broker.</p><div class="example-box"><strong>Ejemplo:</strong> BID: 1.0800 | ASK: 1.0802 → Spread = 2 pips</div></div>
+<div class="vocab-card"><h4>SPREAD</h4><p>La diferencia entre precio de compra (ASK) y venta (BID). Es la comisión del broker.</p><div class="example-box"><strong>Ejemplo:</strong> BID: 1.0800 | ASK: 1.0802 → Spread = 2 pips</div></div>
 <div class="vocab-card"><h4>LOTE (Lot Size)</h4><ul><li><strong>1 Lote Estandar</strong> = 100,000 unidades (1 pip = ~10$)</li><li><strong>1 Mini Lote (0.1)</strong> = 10,000 unidades (1 pip = ~1$)</li><li><strong>1 Micro Lote (0.01)</strong> = 1,000 unidades (1 pip = ~0.10$)</li></ul></div>
 </div>
 <div class="vocab-section">
@@ -232,7 +232,7 @@ export const PHASE_1: Phase = {
 <div class="vocab-card"><h4>EQUITY vs BALANCE</h4><p><strong>Balance:</strong> Dinero en tu cuenta SIN contar operaciones abiertas.</p><p><strong>Equity:</strong> Balance + ganancias/perdidas de operaciones abiertas. Es tu dinero REAL en este momento.</p></div>
 </div>`,
           keyPoints: [
-            "PIP = movimiento mínimo. SPREAD = comision del broker",
+            "PIP = movimiento mínimo. SPREAD = comisión del broker",
             "Stop Loss OBLIGATORIO en cada operación",
             "4 tipos de ordenes pendientes: Buy/Sell Limit, Buy/Sell Stop",
             "Ratio R:R de 1:2+ es la clave de la rentabilidad",
@@ -283,7 +283,7 @@ export const PHASE_1: Phase = {
           ],
           quiz: [
             { question: "Para que sirve TradingView principalmente?", options: ["Ejecutar compras/ventas", "Analizar gráficos y mercado", "Depositar dinero", "Hablar con traders"], correctIndex: 1, explanation: "TradingView es para análisis. MetaTrader para ejecutar." },
-            { question: "Cuantos indicadores deberias usar como máximo al empezar?", options: ["10-15", "2-3", "7-8", "Ninguno"], correctIndex: 1, explanation: "2-3 indicadores son suficientes. Mas indicadores = más confusion." }
+            { question: "Cuantos indicadores deberías usar como máximo al empezar?", options: ["10-15", "2-3", "7-8", "Ninguno"], correctIndex: 1, explanation: "2-3 indicadores son suficientes. Mas indicadores = más confusion." }
           ]
         },
         {
@@ -292,17 +292,17 @@ export const PHASE_1: Phase = {
           duration: "20 min",
           content: `
 <h2>Eligiendo tu Broker: Tu Socio Financiero</h2>
-<div class="analogy-box"><h3>El Broker es como un Agente Inmobiliario</h3><p>Tu quieres comprar/vender una casa (activo financiero), pero no puedes ir directamente al mercado. El broker es el intermediario que ejecuta tus ordenes a cambio de una comision (spread).</p></div>
+<div class="analogy-box"><h3>El Broker es como un Agente Inmobiliario</h3><p>Tu quieres comprar/vender una casa (activo financiero), pero no puedes ir directamente al mercado. El broker es el intermediario que ejecuta tus ordenes a cambio de una comisión (spread).</p></div>
 <h3>Tipos de Brokers</h3>
 <div class="grid-cards">
-<div class="card green-border"><h4>ECN/STP (Acceso Directo)</h4><p>Tu orden va directamente al mercado. Spreads bajos pero cobran comision. <strong>MEJOR OPCION.</strong> Sin conflicto de intereses.</p></div>
-<div class="card red-border"><h4>Market Maker (Creador de Mercado)</h4><p>El broker toma la otra parte de tu operación. Puede haber conflicto de intereses. Spreads más altos pero sin comision. <strong>CUIDADO.</strong></p></div>
+<div class="card green-border"><h4>ECN/STP (Acceso Directo)</h4><p>Tu orden va directamente al mercado. Spreads bajos pero cobran comisión. <strong>MEJOR OPCION.</strong> Sin conflicto de intereses.</p></div>
+<div class="card red-border"><h4>Market Maker (Creador de Mercado)</h4><p>El broker toma la otra parte de tu operación. Puede haber conflicto de intereses. Spreads más altos pero sin comisión. <strong>CUIDADO.</strong></p></div>
 </div>
 <h3>Que Buscar en un Broker</h3>
 <div class="strategy-box"><h4>Checklist del Broker Perfecto</h4><ol>
 <li><strong>Regulacion:</strong> FCA (UK), CySEC (EU), ASIC (Australia), NFA (USA). Si no esta regulado, HUYE.</li>
-<li><strong>Spreads bajos:</strong> EUR/USD deberia ser 0.1-1.5 pips máximo</li>
-<li><strong>Ejecucion rapida:</strong> Menos de 100ms de latencia</li>
+<li><strong>Spreads bajos:</strong> EUR/USD debería ser 0.1-1.5 pips máximo</li>
+<li><strong>Ejecucion rápida:</strong> Menos de 100ms de latencia</li>
 <li><strong>Deposito mínimo razonable:</strong> 50-500$ es normal</li>
 <li><strong>MetaTrader 4 o 5:</strong> La plataforma estandar de la industria</li>
 <li><strong>Retiros faciles:</strong> Deberia procesar en 1-3 dias laborables</li>
@@ -326,12 +326,12 @@ export const PHASE_1: Phase = {
           keyPoints: [
             "Brokers ECN/STP son mejores que Market Makers (menos conflicto de intereses)",
             "SIEMPRE verifica que este regulado (FCA, CySEC, ASIC)",
-            "Spread del EUR/USD deberia ser máximo 1.5 pips",
+            "Spread del EUR/USD debería ser máximo 1.5 pips",
             "Si prometen ganancias garantizadas = ESTAFA"
           ],
           quiz: [
             { question: "Que tipo de broker es mejor para evitar conflictos de interes?", options: ["Market Maker", "ECN/STP (acceso directo al mercado)", "Cualquiera sirve", "Los no regulados"], correctIndex: 1, explanation: "Un broker ECN/STP envia tus ordenes directamente al mercado, sin tomar la otra parte de tu operación." },
-            { question: "Cual NO es una señal de broker estafa?", options: ["Promete ganancias garantizadas", "Esta regulado por la FCA de UK", "Te llama insistentemente para depositar mas", "Bonus del 500%"], correctIndex: 1, explanation: "Estar regulado por la FCA (Financial Conduct Authority del Reino Unido) es señal de legitimidad." }
+            { question: "Cual NO es una señal de broker estafa?", options: ["Promete ganancias garantizadas", "Esta regulado por la FCA de UK", "Te llama insistentemente para depositar más", "Bonus del 500%"], correctIndex: 1, explanation: "Estar regulado por la FCA (Financial Conduct Authority del Reino Unido) es señal de legitimidad." }
           ]
         }
       ]
@@ -407,7 +407,7 @@ export const PHASE_1: Phase = {
 <line x1="40" y1="20" x2="40" y2="45" stroke="#fbbf24" stroke-width="2"/><rect x="25" y="45" width="30" height="10" rx="2" fill="#fbbf24"/><line x1="40" y1="55" x2="40" y2="80" stroke="#fbbf24" stroke-width="2"/>
 <text x="40" y="115" fill="#fbbf24" font-size="8" text-anchor="middle" font-weight="bold">Doji</text>
 </svg>
-<p style="font-size:11px;color:#a0a0b8;max-width:90px">Indecision total</p>
+<p style="font-size:11px;color:#a0a0b8;max-width:90px">Indecisión total</p>
 </div>
 <div style="text-align:center">
 <svg width="80" height="120" viewBox="0 0 80 120">
@@ -500,16 +500,16 @@ export const PHASE_1: Phase = {
 <li><strong>Doji en extremo de tendencia</strong></li>
 <li><strong>Martillo/Estrella Fugaz aislados</strong> - Menos fiable sola</li>
 </ol></div>
-<div class="highlight-box green"><h4>LA REGLA DE ORO de las Velas</h4><p>Un patron de velas SOLO es válido si aparece en un NIVEL IMPORTANTE (soporte, resistencia, order block, fibonacci). Un martillo en medio de la nada no significa nada. Un martillo en un soporte fuerte con confluencia = entrada de alta probabilidad.</p></div>`,
+<div class="highlight-box green"><h4>LA REGLA DE ORO de las Velas</h4><p>Un patrón de velas SOLO es válido si aparece en un NIVEL IMPORTANTE (soporte, resistencia, order block, fibonacci). Un martillo en medio de la nada no significa nada. Un martillo en un soporte fuerte con confluencia = entrada de alta probabilidad.</p></div>`,
           keyPoints: [
             "Morning/Evening Star son de los patrones más fiables",
             "Inside Bar = consolidacion antes de movimiento explosivo",
             "Three Soldiers/Crows = momentum fuerte y sostenido",
-            "Un patron SOLO es válido en un NIVEL IMPORTANTE",
-            "La confluencia (patron + nivel + tendencia) es lo que realmente importa"
+            "Un patrón SOLO es válido en un NIVEL IMPORTANTE",
+            "La confluencia (patrón + nivel + tendencia) es lo que realmente importa"
           ],
           quiz: [
-            { question: "Que es un Morning Star?", options: ["Una vela verde sola", "Patron de 3 velas: roja grande, vela pequena, verde grande = giro alcista", "Un indicador técnico", "El gap de apertura"], correctIndex: 1, explanation: "Morning Star es un patron de 3 velas de giro alcista: bajista grande → indecision → alcista grande." },
+            { question: "Que es un Morning Star?", options: ["Una vela verde sola", "Patron de 3 velas: roja grande, vela pequena, verde grande = giro alcista", "Un indicador técnico", "El gap de apertura"], correctIndex: 1, explanation: "Morning Star es un patrón de 3 velas de giro alcista: bajista grande → indecisión → alcista grande." },
             { question: "Que significa un Inside Bar?", options: ["El precio se mueve muy rápido", "Consolidacion antes de un movimiento explosivo", "Final de la tendencia", "Error en el gráfico"], correctIndex: 1, explanation: "Inside Bar indica que el mercado esta comprimiendo energia (consolidando) antes de un movimiento fuerte." },
             { question: "Un martillo en medio de una tendencia sin ningun soporte cerca es...", options: ["Senal de compra fuerte", "Senal poco fiable - necesita contexto/nivel importante", "Senal de venta", "Momento de cerrar todo"], correctIndex: 1, explanation: "Los patrones de velas SOLO son fiables cuando aparecen en niveles importantes (soporte, resistencia, order block, etc.)." }
           ]
@@ -535,9 +535,9 @@ export const PHASE_1: Phase = {
 <div class="card red-border"><h4>2. Arriesgar demasiado por trade</h4><p>Principiantes arriesgan 10-20% por operación. Con 5 perdidas seguidas (que PASARA), pierdes todo. Maximo 1-2%.</p></div>
 <div class="card red-border"><h4>3. Revenge Trading</h4><p>Perder → frustacion → operar más para "recuperar" → perder más. El ciclo destructivo #1. Si pierdes 2 seguidas, CIERRA la plataforma.</p></div>
 <div class="card red-border"><h4>4. No tener un plan de trading</h4><p>Operar "a ojo" es como navegar sin mapa. Necesitas reglas escritas ANTES de operar: que, cuando, cuanto, como.</p></div>
-<div class="card red-border"><h4>5. Operar en cuenta real demasiado pronto</h4><p>Minimo 3 meses en demo con resultados positivos. Si pierdes en demo, perderas 10x más en real por las emociones.</p></div>
+<div class="card red-border"><h4>5. Operar en cuenta real demasiado pronto</h4><p>Minimo 3 meses en demo con resultados positivos. Si pierdes en demo, perderás 10x más en real por las emociones.</p></div>
 <div class="card red-border"><h4>6. Seguir "señales" de otros</h4><p>Grupos de Telegram, "gurus" de Instagram... El 95% son estafas. Si supieran ganar, no venderian señales. Aprende TU.</p></div>
-<div class="card red-border"><h4>7. Cambiar de estrategia cada semana</h4><p>Una estrategia necesita al menos 30-50 trades para evaluarla. Si cambias cada 5 trades, nunca sabras si funciona.</p></div>
+<div class="card red-border"><h4>7. Cambiar de estrategia cada semana</h4><p>Una estrategia necesita al menos 30-50 trades para evaluarla. Si cambias cada 5 trades, nunca sabrás si funciona.</p></div>
 <div class="card red-border"><h4>8. Sobreoperar (Overtrading)</h4><p>Mas trades ≠ más dinero. Mas trades = más comisiones + peores decisiones + más estres. 1-3 buenos trades al dia es SUFICIENTE.</p></div>
 <div class="card red-border"><h4>9. Ignorar la gestión de riesgo</h4><p>El 80% del éxito en trading es gestión de riesgo. No el mejor indicador, no la mejor estrategia. RIESGO.</p></div>
 <div class="card red-border"><h4>10. Expectativas irreales</h4><p>"Voy a duplicar mi cuenta en un mes." NO. Los mejores traders del mundo hacen 2-5% MENSUAL. Eso es excelente. Acepta la realidad.</p></div>
@@ -552,8 +552,8 @@ export const PHASE_1: Phase = {
           ],
           quiz: [
             { question: "Cuantos trades necesitas como mínimo para evaluar si una estrategia funciona?", options: ["5 trades", "10 trades", "30-50 trades", "200 trades"], correctIndex: 2, explanation: "30-50 trades es el mínimo para tener una muestra estadisticamente relevante. Con menos, no puedes saber si los resultados son por la estrategia o por suerte." },
-            { question: "Cual es un retorno mensual REALISTA y excelente para un trader profesional?", options: ["50-100%", "20-30%", "2-5%", "0.5%"], correctIndex: 2, explanation: "2-5% mensual es lo que hacen los mejores. Suena poco pero es 24-60% anual, que supera a casi cualquier fondo de inversion del mundo." },
-            { question: "Por que no deberias seguir 'señales' de grupos de Telegram?", options: ["Porque Telegram no funciona bien", "Porque el 95% son estafas y si supieran ganar consistentemente no venderian señales", "Porque las señales llegan tarde", "Porque solo funcionan en Forex"], correctIndex: 1, explanation: "Si alguien pudiera ganar consistentemente en trading, no necesitaria vender señales a 20 euros/mes. La mayoria son estafas o traders mediocres que ganan más vendiendo señales que operando." }
+            { question: "Cual es un retorno mensual REALISTA y excelente para un trader profesional?", options: ["50-100%", "20-30%", "2-5%", "0.5%"], correctIndex: 2, explanation: "2-5% mensual es lo que hacen los mejores. Suena poco pero es 24-60% anual, que supera a casi cualquier fondo de inversión del mundo." },
+            { question: "Por que no deberías seguir 'señales' de grupos de Telegram?", options: ["Porque Telegram no funciona bien", "Porque el 95% son estafas y si supieran ganar consistentemente no venderian señales", "Porque las señales llegan tarde", "Porque solo funcionan en Forex"], correctIndex: 1, explanation: "Si alguien pudiera ganar consistentemente en trading, no necesitaria vender señales a 20 euros/mes. La mayoria son estafas o traders mediocres que ganan más vendiendo señales que operando." }
           ]
         },
         {
