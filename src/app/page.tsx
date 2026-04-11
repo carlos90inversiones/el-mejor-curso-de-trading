@@ -101,7 +101,8 @@ export default function LandingPage() {
               { num: 5, title: "Cuentas Fondeadas", lessons: 6, color: "#f59e0b", desc: "Prop firms, challenges, fiscalidad" },
               { num: 6, title: "Trading Algorítmico", lessons: 7, color: "#6366f1", desc: "Python, Pine Script, bots, Machine Learning" },
               { num: 7, title: "Examen Final", lessons: 4, color: "#dc2626", desc: "20 preguntas de nivel experto + plan de carrera" },
-              { num: 8, title: "Práctica: 8 Semanas", lessons: 5, color: "#14b8a6", desc: "Plan diario guiado de la teoría a la acción real" },
+              { num: 8, title: "Práctica: 8 Semanas", lessons: 6, color: "#14b8a6", desc: "Plan diario guiado de la teoría a la acción real" },
+              { num: 9, title: "Preparación CMT", lessons: 4, color: "#0ea5e9", desc: "Certificación profesional de análisis técnico" },
             ].map((phase, i) => (
               <ScrollReveal key={i} delay={i * 0.05}>
                 <Link href="/curso" className="flex items-center gap-4 bg-[#12142a] rounded-xl p-4 hover:bg-[#1a1c3a] transition group">

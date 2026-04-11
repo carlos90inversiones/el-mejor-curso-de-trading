@@ -10,6 +10,7 @@ import AudioPlayer from "@/components/AudioPlayer";
 import LessonNotes from "@/components/LessonNotes";
 import ShareButtons from "@/components/ShareButtons";
 import ReadingProgress from "@/components/ReadingProgress";
+import ReadingTime from "@/components/ReadingTime";
 
 function findLesson(lessonId: string) {
   for (const phase of COURSE_DATA) {
@@ -69,7 +70,8 @@ export default function LeccionPage({ params }: { params: Promise<{ lessonId: st
                 <span className="text-xs text-[#a0a0b8]">{mod.title}</span>
               </div>
               <h1 className="text-2xl md:text-3xl font-bold text-white mb-2">{lesson.title}</h1>
-              <p className="text-sm text-[#a0a0b8] mb-6">{lesson.duration}</p>
+              <p className="text-sm text-[#a0a0b8] mb-2">{lesson.duration}</p>
+              <ReadingTime content={lesson.content} quizCount={lesson.quiz.length} />
 
               <div className="mb-6">
                 <AudioPlayer text={lesson.content} title={lesson.title} />
