@@ -521,7 +521,7 @@ export const PHASE_5: Phase = {
         },
         {
           id: "5-2-3",
-          title: "Psicologia del Challenge: Como No Autodestruirte",
+          title: "Psicología del Challenge: Como No Autodestruirte",
           duration: "20 min",
           content: `
 <h2>La Psicologia del Challenge: Tu Mayor Enemigo Eres Tu</h2>

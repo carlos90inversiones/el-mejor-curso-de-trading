@@ -18,7 +18,7 @@ export const PHASE_7: Phase = {
       lessons: [
         {
           id: "7-1-1",
-          title: "Examen de Certificacion - 20 Preguntas Nivel Experto",
+          title: "Examen de Certificación - 20 Preguntas Nivel Experto",
           duration: "45 min",
           content: `
 <h2>Examen Final de Certificacion</h2>

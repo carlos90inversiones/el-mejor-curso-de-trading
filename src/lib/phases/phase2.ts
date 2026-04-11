@@ -463,7 +463,7 @@ export const PHASE_2: Phase = {
         // --------------------------------------------------------------
         {
           id: "2-1-3",
-          title: "Lineas de Tendencia y Canales",
+          title: "Líneas de Tendencia y Canales",
           duration: "30 min",
           content: `
 <h2>Lineas de Tendencia y Canales: Guias del Precio</h2>
@@ -620,7 +620,7 @@ export const PHASE_2: Phase = {
         // --------------------------------------------------------------
         {
           id: "2-2-1",
-          title: "Medias Moviles en Profundidad",
+          title: "Medias Móviles en Profundidad",
           duration: "35 min",
           content: `
 <h2>Medias Moviles: Tu Primer Indicador Serio</h2>
@@ -1396,7 +1396,7 @@ export const PHASE_2: Phase = {
         // --------------------------------------------------------------
         {
           id: "2-3-2",
-          title: "Patrones de Grafico Clasicos",
+          title: "Patrones de Gráfico Clásicos",
           duration: "40 min",
           content: `
 <h2>Patrones de Grafico: El Lenguaje Visual del Mercado</h2>
@@ -1607,7 +1607,7 @@ export const PHASE_2: Phase = {
         // --------------------------------------------------------------
         {
           id: "2-3-3",
-          title: "Analisis Multi-Timeframe: El Arma Secreta",
+          title: "Análisis Multi-Timeframe: El Arma Secreta",
           duration: "40 min",
           content: `
 <h2>Multi-Timeframe Analysis (MTA): Ver el Bosque Y los Arboles</h2>
@@ -1792,14 +1792,14 @@ export const PHASE_2: Phase = {
     // ================================================================
     {
       id: "mod-2-4",
-      title: "Analisis Fundamental y Correlaciones",
+      title: "Análisis Fundamental y Correlaciones",
       description: "Entiende QUE mueve el precio desde la perspectiva macroeconomica",
       icon: "🌍",
       color: "#F59E0B",
       lessons: [
         {
           id: "2-4-1",
-          title: "Analisis Fundamental: Las Noticias que Mueven el Mercado",
+          title: "Análisis Fundamental: Las Noticias que Mueven el Mercado",
           duration: "30 min",
           content: `
 <h2>Analisis Fundamental para Traders</h2>

@@ -285,10 +285,10 @@ export const PHASE_3: Phase = {
         // --------------------------------------------------------------------
         {
           id: "3-1-2",
-          title: "Position Sizing: La Ciencia del Tamano de Posicion",
+          title: "Position Sizing: La Ciencia del Tamaño de Posición",
           duration: "40 min",
           content: `
-<h2>Position Sizing: La Ciencia del Tamano de Posicion</h2>
+<h2>Position Sizing: La Ciencia del Tamaño de Posición</h2>
 
 <div class="analogy-box">
 <h3>La Analogia del Cinturon de Seguridad Ajustable</h3>
@@ -331,7 +331,7 @@ export const PHASE_3: Phase = {
 <div class="formula-box">
 <h4>FORMULA MAESTRA</h4>
 <p style="font-size:1.2em; text-align:center; margin: 15px 0; font-weight:bold;">
-Tamano de Posicion = Riesgo en $ / (Distancia SL en pips x Valor por pip)
+Tamaño de Posición = Riesgo en $ / (Distancia SL en pips x Valor por pip)
 </p>
 <p>Donde:</p>
 <ul>
@@ -480,7 +480,7 @@ Tamano de Posicion = Riesgo en $ / (Distancia SL en pips x Valor por pip)
 <h3>Calculadora Rapida de Position Sizing</h3>
 
 <div class="highlight-box purple">
-<h4>Tabla Rapida: Tamano de Posicion en Forex (cuenta de 10,000$, riesgo 1%)</h4>
+<h4>Tabla Rapida: Tamaño de Posición en Forex (cuenta de 10,000$, riesgo 1%)</h4>
 <table style="width:100%; border-collapse:collapse;">
 <tr style="border-bottom:2px solid rgba(0,0,0,0.1);"><th style="padding:6px;">SL (pips)</th><th style="padding:6px;">Lotes</th><th style="padding:6px;">Perdida si SL hit</th></tr>
 <tr><td style="padding:6px;">10 pips</td><td style="padding:6px;">1.00</td><td style="padding:6px;">100$</td></tr>
@@ -795,7 +795,7 @@ Tamano de Posicion = Riesgo en $ / (Distancia SL en pips x Valor por pip)
         // --------------------------------------------------------------------
         {
           id: "3-2-1",
-          title: "Los 7 Enemigos Psicologicos del Trader",
+          title: "Los 7 Enemigos Psicológicos del Trader",
           duration: "40 min",
           content: `
 <h2>Los 7 Enemigos Psicológicos del Trader</h2>
@@ -1601,7 +1601,7 @@ Tamano de Posicion = Riesgo en $ / (Distancia SL en pips x Valor por pip)
         },
         {
           id: "3-2-5",
-          title: "Como Superar una Racha Perdedora",
+          title: "Cómo Superar una Racha Perdedora",
           duration: "20 min",
           content: `
 <h2>Rachas Perdedoras: Todos las Tienen, Pocos las Sobreviven</h2>

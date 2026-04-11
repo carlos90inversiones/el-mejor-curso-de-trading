@@ -11,7 +11,7 @@ export const PHASE_1: Phase = {
   modules: [
     {
       id: "mod-1-1",
-      title: "Que es el Trading",
+      title: "Qué es el Trading",
       description: "Entiende que es esto del trading de una vez por todas",
       icon: "📊",
       color: "#3B82F6",
@@ -75,7 +75,7 @@ export const PHASE_1: Phase = {
         },
         {
           id: "1-1-2",
-          title: "Los Mercados Financieros: Donde ocurre todo",
+          title: "Los Mercados Financieros: Dónde Ocurre Todo",
           duration: "20 min",
           content: `
 <h2>Los Mercados Financieros</h2>
@@ -152,7 +152,7 @@ export const PHASE_1: Phase = {
         },
         {
           id: "1-1-3",
-          title: "Terminologia ESENCIAL del Trader",
+          title: "Terminología ESENCIAL del Trader",
           duration: "25 min",
           content: `
 <h2>El Diccionario del Trader</h2>
@@ -288,7 +288,7 @@ export const PHASE_1: Phase = {
         },
         {
           id: "1-2-2",
-          title: "Como elegir un Broker (sin que te estafen)",
+          title: "Cómo Elegir un Broker (Sin Que Te Estafen)",
           duration: "20 min",
           content: `
 <h2>Eligiendo tu Broker: Tu Socio Financiero</h2>
@@ -345,7 +345,7 @@ export const PHASE_1: Phase = {
       lessons: [
         {
           id: "1-3-1",
-          title: "Anatomia de una Vela Japonesa",
+          title: "Anatomía de una Vela Japonesa",
           duration: "20 min",
           content: `
 <h2>Las Velas Japonesas: El ABC del Trader</h2>
