@@ -5,7 +5,7 @@ export const PHASE_3: Phase = {
   number: 3,
   title: "Gestion de Riesgo y Psicologia",
   subtitle: "Lo que separa ganadores de perdedores",
-  description: "Esta es LA FASE MAS IMPORTANTE del curso. Puedes tener la mejor estrategia del mundo, pero sin gestion de riesgo y control emocional, PERDERAS todo tu dinero. Aqui aprenderas a proteger tu capital como un profesional y a dominar tu mente para operar con disciplina inquebrantable.",
+  description: "Esta es LA FASE MAS IMPORTANTE del curso. Puedes tener la mejor estrategia del mundo, pero sin gestión de riesgo y control emocional, PERDERAS todo tu dinero. Aqui aprenderas a proteger tu capital como un profesional y a dominar tu mente para operar con disciplina inquebrantable.",
   color: "#EF4444",
   gradient: "from-red-500 to-red-700",
   modules: [
@@ -15,7 +15,7 @@ export const PHASE_3: Phase = {
     {
       id: "mod-3-1",
       title: "Money Management Profesional",
-      description: "Aprende a proteger tu capital y maximizar tus ganancias con gestion de riesgo matematica",
+      description: "Aprende a proteger tu capital y maximizar tus ganancias con gestión de riesgo matematica",
       icon: "\u{1F6E1}\uFE0F",
       color: "#EF4444",
       lessons: [
@@ -31,46 +31,46 @@ export const PHASE_3: Phase = {
 
 <div class="analogy-box">
 <h3>La Analogia del Casino</h3>
-<p>Imagina un casino. El casino SIEMPRE gana a largo plazo. No porque gane cada apuesta, sino porque tiene una <strong>ventaja estadistica</strong> y <strong>gestiona su riesgo perfectamente</strong>. Si alguien gana 1 millon, el casino no quiebra porque ese millon es una fraccion minima de su capital. TU debes ser el casino, no el jugador. La gestion de riesgo es lo que convierte el trading de un juego de azar en un NEGOCIO rentable.</p>
+<p>Imagina un casino. El casino SIEMPRE gana a largo plazo. No porque gane cada apuesta, sino porque tiene una <strong>ventaja estadistica</strong> y <strong>gestiona su riesgo perfectamente</strong>. Si alguien gana 1 millon, el casino no quiebra porque ese millon es una fraccion minima de su capital. TU debes ser el casino, no el jugador. La gestión de riesgo es lo que convierte el trading de un juego de azar en un NEGOCIO rentable.</p>
 </div>
 
 <div class="warning-box">
 <h4>LA VERDAD QUE NADIE TE DICE</h4>
-<p>El 90% de los traders que pierden dinero NO pierden por mala estrategia. Pierden por MALA GESTION DE RIESGO. Arriesgan demasiado, no usan Stop Loss, y dejan que una sola operacion destruya semanas de trabajo. Esta leccion va a cambiar eso para siempre.</p>
+<p>El 90% de los traders que pierden dinero NO pierden por mala estrategia. Pierden por MALA GESTION DE RIESGO. Arriesgan demasiado, no usan Stop Loss, y dejan que una sola operación destruya semanas de trabajo. Esta lección va a cambiar eso para siempre.</p>
 </div>
 
-<h3>REGLA #1: Nunca arriesgues mas del 1-2% por operacion</h3>
+<h3>REGLA #1: Nunca arriesgues mas del 1-2% por operación</h3>
 
 <div class="highlight-box red">
 <h4>La Regla Mas Importante del Trading</h4>
-<p>En CADA operacion, el maximo que puedes perder es el <strong>1-2% de tu cuenta</strong>. No el 5%, no el 10%, no "lo que sientas". El 1-2%. SIEMPRE. SIN EXCEPCIONES.</p>
+<p>En CADA operación, el máximo que puedes perder es el <strong>1-2% de tu cuenta</strong>. No el 5%, no el 10%, no "lo que sientas". El 1-2%. SIEMPRE. SIN EXCEPCIONES.</p>
 </div>
 
 <div class="calculation-box">
 <h4>Ejemplo Practico: Cuenta de 10,000$</h4>
 <ul>
-<li><strong>Riesgo 1%</strong> = 100$ maximo de perdida por trade</li>
-<li><strong>Riesgo 2%</strong> = 200$ maximo de perdida por trade</li>
-<li><strong>Riesgo 5% (MAL)</strong> = 500$ maximo de perdida por trade</li>
+<li><strong>Riesgo 1%</strong> = 100$ máximo de perdida por trade</li>
+<li><strong>Riesgo 2%</strong> = 200$ máximo de perdida por trade</li>
+<li><strong>Riesgo 5% (MAL)</strong> = 500$ máximo de perdida por trade</li>
 </ul>
 </div>
 
 <div class="formula-box">
 <h4>Por que el 1% funciona - La Matematica de la Supervivencia</h4>
-<p><strong>Con riesgo del 1% por operacion:</strong></p>
+<p><strong>Con riesgo del 1% por operación:</strong></p>
 <ul>
 <li>10 perdidas seguidas = pierdes 9.56% de tu cuenta (quedan 9,044$)</li>
 <li>20 perdidas seguidas = pierdes 18.21% (quedan 8,179$)</li>
 <li>Necesitarias 100+ perdidas seguidas para perder el 50%</li>
 <li><strong>PRACTICAMENTE IMPOSIBLE quedarte sin cuenta</strong></li>
 </ul>
-<p><strong>Con riesgo del 5% por operacion:</strong></p>
+<p><strong>Con riesgo del 5% por operación:</strong></p>
 <ul>
 <li>10 perdidas seguidas = pierdes 40.13% de tu cuenta (quedan 5,987$)</li>
 <li>20 perdidas seguidas = pierdes 64.15% (quedan 3,585$)</li>
 <li><strong>En 13 perdidas seguidas ya perdiste MAS DEL 50%</strong></li>
 </ul>
-<p><strong>Con riesgo del 10% por operacion:</strong></p>
+<p><strong>Con riesgo del 10% por operación:</strong></p>
 <ul>
 <li>5 perdidas seguidas = pierdes 40.95% (quedan 5,905$)</li>
 <li>10 perdidas seguidas = pierdes 65.13% (quedan 3,487$)</li>
@@ -80,7 +80,7 @@ export const PHASE_3: Phase = {
 
 <div class="highlight-box green">
 <h4>El Secreto: Recuperacion Asimetrica</h4>
-<p>Si pierdes el 10% de tu cuenta, necesitas ganar un 11.1% para recuperarte. Si pierdes el 50%, necesitas ganar un 100% (el DOBLE). Si pierdes el 90%, necesitas ganar un 900%. <strong>Es matematicamente mas facil NO perder que recuperarse.</strong></p>
+<p>Si pierdes el 10% de tu cuenta, necesitas ganar un 11.1% para recuperarte. Si pierdes el 50%, necesitas ganar un 100% (el DOBLE). Si pierdes el 90%, necesitas ganar un 900%. <strong>Es matematicamente mas fácil NO perder que recuperarse.</strong></p>
 <table style="width:100%; border-collapse:collapse; margin-top:10px;">
 <tr style="border-bottom:2px solid rgba(0,0,0,0.1);"><th style="text-align:left; padding:8px;">Perdida</th><th style="text-align:left; padding:8px;">Ganancia necesaria para recuperar</th></tr>
 <tr><td style="padding:8px;">-10%</td><td style="padding:8px;">+11.1%</td></tr>
@@ -96,7 +96,7 @@ export const PHASE_3: Phase = {
 
 <div class="highlight-box red">
 <h4>SIN EXCEPCION. SIN NEGOCIACION.</h4>
-<p>Cada operacion DEBE tener un Stop Loss ANTES de entrar. No despues. No "mental". Un Stop Loss REAL puesto en la plataforma. Si tu broker no permite SL, CAMBIA de broker. Una sola operacion sin SL puede destruir MESES de trabajo.</p>
+<p>Cada operación DEBE tener un Stop Loss ANTES de entrar. No despues. No "mental". Un Stop Loss REAL puesto en la plataforma. Si tu broker no permite SL, CAMBIA de broker. Una sola operación sin SL puede destruir MESES de trabajo.</p>
 </div>
 
 <div class="example-box">
@@ -104,7 +104,7 @@ export const PHASE_3: Phase = {
 <p>El 15 de enero de 2015, el Banco Nacional Suizo elimino el techo del EUR/CHF. En MINUTOS, el par cayo 2,800 pips (un 30%). Traders sin Stop Loss perdieron TODO su capital en segundos. Algunos quedaron con deuda. Brokers quebraron. Los que tenian SL perdieron su 1-2% y siguieron operando al dia siguiente.</p>
 </div>
 
-<h3>REGLA #3: Ratio Riesgo/Beneficio minimo 1:2</h3>
+<h3>REGLA #3: Ratio Riesgo/Beneficio mínimo 1:2</h3>
 
 <div style="display:flex;justify-content:center;margin:20px 0">
 <svg width="420" height="200" viewBox="0 0 420 200" style="background:#131722;border-radius:12px;border:1px solid #2a2a40">
@@ -141,7 +141,7 @@ export const PHASE_3: Phase = {
 <li><strong>Resultado: +200$ de beneficio (perdiendo 6 de cada 10)</strong></li>
 </ul>
 <p>Con ratio 1:3 (arriesgas 100$ para ganar 300$), solo necesitas el 26% de acierto.</p>
-<p>Con ratio 1:1, necesitas mas del 50% de acierto (muy dificil de mantener).</p>
+<p>Con ratio 1:1, necesitas mas del 50% de acierto (muy difícil de mantener).</p>
 </div>
 
 <div class="comparison-table">
@@ -168,23 +168,23 @@ export const PHASE_3: Phase = {
 <div class="highlight-box yellow">
 <h4>Limites de Perdida</h4>
 <ul>
-<li><strong>Drawdown diario maximo:</strong> 3% de la cuenta. Si pierdes 3% en un dia, APAGAS la computadora y te vas.</li>
-<li><strong>Drawdown semanal maximo:</strong> 5-6% de la cuenta. Si llegas al limite semanal, no operas hasta el lunes siguiente.</li>
-<li><strong>Drawdown mensual maximo:</strong> 8-10% de la cuenta. Si llegas, paras el mes y analizas que paso.</li>
+<li><strong>Drawdown diario máximo:</strong> 3% de la cuenta. Si pierdes 3% en un dia, APAGAS la computadora y te vas.</li>
+<li><strong>Drawdown semanal máximo:</strong> 5-6% de la cuenta. Si llegas al limite semanal, no operas hasta el lunes siguiente.</li>
+<li><strong>Drawdown mensual máximo:</strong> 8-10% de la cuenta. Si llegas, paras el mes y analizas que paso.</li>
 </ul>
-<p>Las prop firms (cuentas fondeadas) usan limites similares: 4-5% diario, 8-12% total. Si los profesionales lo hacen, tu tambien.</p>
+<p>Las prop firms (cuentas fondeadas) usan limites similares: 4-5% diario, 8-12% total. Si los profesionales lo hacen, tu también.</p>
 </div>
 
 <h3>REGLA #5: NUNCA promedies posiciones perdedoras</h3>
 
 <div class="warning-box">
 <h4>El Error Mas Caro del Trading</h4>
-<p>"Averaging down" o "promediar a la baja" significa comprar MAS cuando tu posicion esta perdiendo, esperando que el precio "vuelva". Es la forma mas rapida de destruir una cuenta. Si tu analisis fue incorrecto, aceptalo y sal. No dupliques la apuesta perdedora.</p>
+<p>"Averaging down" o "promediar a la baja" significa comprar MAS cuando tu posición esta perdiendo, esperando que el precio "vuelva". Es la forma mas rapida de destruir una cuenta. Si tu análisis fue incorrecto, aceptalo y sal. No dupliques la apuesta perdedora.</p>
 </div>
 
 <div class="example-box">
 <h4>Ejemplo de Desastre</h4>
-<p>Compras EUR/USD a 1.1000. Baja a 1.0950, compras mas para "promediar". Baja a 1.0900, compras MAS. Ahora tienes el TRIPLE de exposicion y el precio sigue bajando. Lo que era una perdida de 50 pips se convierte en una perdida de 300 pips con triple tamano. <strong>Una operacion que debia perder 100$ acaba perdiendo 900$.</strong></p>
+<p>Compras EUR/USD a 1.1000. Baja a 1.0950, compras mas para "promediar". Baja a 1.0900, compras MAS. Ahora tienes el TRIPLE de exposicion y el precio sigue bajando. Lo que era una perdida de 50 pips se convierte en una perdida de 300 pips con triple tamano. <strong>Una operación que debia perder 100$ acaba perdiendo 900$.</strong></p>
 </div>
 
 <h3>REGLA #6: Maximo 2-3 operaciones simultaneas</h3>
@@ -194,7 +194,7 @@ export const PHASE_3: Phase = {
 <p>No necesitas estar en 10 trades a la vez. Con 2-3 operaciones bien analizadas es suficiente. Mas de 3 operaciones abiertas:</p>
 <ul>
 <li>Aumenta tu riesgo total (si el mercado se mueve en contra, pierdes en todas)</li>
-<li>Reduce tu capacidad de gestion (no puedes monitorear 10 trades bien)</li>
+<li>Reduce tu capacidad de gestión (no puedes monitorear 10 trades bien)</li>
 <li>Genera estres y decisiones emocionales</li>
 <li>Muchos pares estan CORRELACIONADOS (EUR/USD y GBP/USD se mueven juntos)</li>
 </ul>
@@ -202,7 +202,7 @@ export const PHASE_3: Phase = {
 
 <div class="warning-box">
 <h4>Cuidado con la Correlacion</h4>
-<p>Si abres BUY en EUR/USD y BUY en GBP/USD, NO tienes 2 trades independientes. Tienes basicamente el DOBLE de riesgo en la misma direccion, porque ambos pares se mueven similar. Estar largo en 3 pares correlacionados = arriesgar 3 veces mas de lo que crees.</p>
+<p>Si abres BUY en EUR/USD y BUY en GBP/USD, NO tienes 2 trades independientes. Tienes basicamente el DOBLE de riesgo en la misma dirección, porque ambos pares se mueven similar. Estar largo en 3 pares correlacionados = arriesgar 3 veces mas de lo que crees.</p>
 </div>
 
 <h3>REGLA #7: Compounding vs Retiros - Crece Inteligentemente</h3>
@@ -218,7 +218,7 @@ export const PHASE_3: Phase = {
 <tr><td style="padding:6px;">Mes 24</td><td style="padding:6px;">10,000$ + 12,000$ retirados</td><td style="padding:6px;">32,251$</td></tr>
 <tr><td style="padding:6px;">Mes 36</td><td style="padding:6px;">10,000$ + 18,000$ retirados</td><td style="padding:6px;">57,946$</td></tr>
 </table>
-<p><strong>Diferencia en 3 anos: 28,000$ vs 57,946$.</strong> El compounding DUPLICA tus resultados.</p>
+<p><strong>Diferencia en 3 años: 28,000$ vs 57,946$.</strong> El compounding DUPLICA tus resultados.</p>
 </div>
 
 <div class="strategy-box">
@@ -234,9 +234,9 @@ export const PHASE_3: Phase = {
 <div class="highlight-box purple">
 <h4>RESUMEN: Las 7 Reglas en una Imagen Mental</h4>
 <ol>
-<li><strong>1-2% maximo por trade</strong> - Tu escudo protector</li>
+<li><strong>1-2% máximo por trade</strong> - Tu escudo protector</li>
 <li><strong>SIEMPRE Stop Loss</strong> - Tu cinturon de seguridad</li>
-<li><strong>R:R minimo 1:2</strong> - Tu ventaja matematica</li>
+<li><strong>R:R mínimo 1:2</strong> - Tu ventaja matematica</li>
 <li><strong>Drawdown limits (3% dia, 5% semana)</strong> - Tu freno de emergencia</li>
 <li><strong>Nunca promediar perdedoras</strong> - No tires dinero bueno al malo</li>
 <li><strong>Maximo 2-3 trades abiertos</strong> - Calidad sobre cantidad</li>
@@ -244,19 +244,19 @@ export const PHASE_3: Phase = {
 </ol>
 </div>`,
           keyPoints: [
-            "Nunca arriesgar mas del 1-2% del capital por operacion - es la regla mas importante del trading",
+            "Nunca arriesgar mas del 1-2% del capital por operación - es la regla mas importante del trading",
             "SIEMPRE usar Stop Loss real en la plataforma, nunca mental, nunca sin el",
-            "Ratio Riesgo/Beneficio minimo de 1:2 - con 40% de acierto ya eres rentable",
-            "Limites de drawdown: 3% diario, 5% semanal, 10% mensual maximo",
+            "Ratio Riesgo/Beneficio mínimo de 1:2 - con 40% de acierto ya eres rentable",
+            "Limites de drawdown: 3% diario, 5% semanal, 10% mensual máximo",
             "Nunca promediar posiciones perdedoras - es la forma mas rapida de destruir una cuenta",
             "El interes compuesto duplica resultados vs retirar todas las ganancias"
           ],
           quiz: [
             {
-              question: "Si tienes una cuenta de 25,000$ y aplicas la regla del 1%, cual es el maximo que puedes perder en UNA operacion?",
+              question: "Si tienes una cuenta de 25,000$ y aplicas la regla del 1%, cual es el máximo que puedes perder en UNA operación?",
               options: ["250$", "2,500$", "1,250$", "500$"],
               correctIndex: 0,
-              explanation: "El 1% de 25,000$ = 250$. Ese es el maximo absoluto que puedes perder en una sola operacion."
+              explanation: "El 1% de 25,000$ = 250$. Ese es el máximo absoluto que puedes perder en una sola operación."
             },
             {
               question: "Con un ratio R:R de 1:3, que porcentaje de acierto necesitas para ser rentable?",
@@ -271,13 +271,13 @@ export const PHASE_3: Phase = {
               explanation: "Si tu cuenta baja de 10,000$ a 5,000$ (perdida del 50%), necesitas ganar 5,000$ sobre 5,000$, lo cual es un 100%. La recuperacion es asimetrica."
             },
             {
-              question: "Que es lo PEOR que puedes hacer cuando una operacion esta en perdida?",
-              options: ["Cerrarla en Stop Loss", "Esperar a que se recupere sin SL", "Abrir MAS posiciones en la misma direccion (promediar)", "Reducir el tamano de posicion"],
+              question: "Que es lo PEOR que puedes hacer cuando una operación esta en perdida?",
+              options: ["Cerrarla en Stop Loss", "Esperar a que se recupere sin SL", "Abrir MAS posiciones en la misma dirección (promediar)", "Reducir el tamano de posición"],
               correctIndex: 2,
               explanation: "Promediar posiciones perdedoras multiplica tu riesgo exponencialmente. Lo que era una perdida controlada se convierte en una catastrofe."
             }
           ],
-          practicalExercise: "Abre una hoja de calculo. Simula 50 operaciones con riesgo del 1% (100$ en cuenta de 10,000$), ratio 1:2, y 45% de acierto. Calcula el resultado final. Luego repite con riesgo del 5%. Compara los resultados y el drawdown maximo de cada escenario. Esto te convencera de por que el 1% es sagrado."
+          practicalExercise: "Abre una hoja de calculo. Simula 50 operaciones con riesgo del 1% (100$ en cuenta de 10,000$), ratio 1:2, y 45% de acierto. Calcula el resultado final. Luego repite con riesgo del 5%. Compara los resultados y el drawdown máximo de cada escenario. Esto te convencera de por que el 1% es sagrado."
         },
 
         // --------------------------------------------------------------------
@@ -292,7 +292,7 @@ export const PHASE_3: Phase = {
 
 <div class="analogy-box">
 <h3>La Analogia del Cinturon de Seguridad Ajustable</h3>
-<p>Imagina que tu coche tiene un cinturon de seguridad que puedes ajustar segun la velocidad. A 30km/h, va holgado. A 120km/h, lo aprietas al maximo. El position sizing es exactamente eso: ajustar tu "proteccion" (tamano de posicion) segun la "velocidad" (volatilidad y distancia del Stop Loss) para que el impacto de un choque (perdida) siempre sea el mismo: 1-2% de tu cuenta.</p>
+<p>Imagina que tu coche tiene un cinturon de seguridad que puedes ajustar segun la velocidad. A 30km/h, va holgado. A 120km/h, lo aprietas al máximo. El position sizing es exactamente eso: ajustar tu "proteccion" (tamano de posición) segun la "velocidad" (volatilidad y distancia del Stop Loss) para que el impacto de un choque (perdida) siempre sea el mismo: 1-2% de tu cuenta.</p>
 </div>
 
 <div class="highlight-box blue">
@@ -308,7 +308,7 @@ export const PHASE_3: Phase = {
 <!-- Formula visual -->
 <rect x="30" y="45" width="400" height="50" rx="8" fill="#2962ff15" stroke="#2962ff44"/>
 <text x="230" y="68" fill="white" font-size="14" text-anchor="middle" font-weight="bold" font-family="monospace">Lotes = Riesgo($) / (SL pips x Valor pip)</text>
-<text x="230" y="85" fill="#787b86" font-size="9" text-anchor="middle">Tamano exacto de tu posicion para cada trade</text>
+<text x="230" y="85" fill="#787b86" font-size="9" text-anchor="middle">Tamano exacto de tu posición para cada trade</text>
 <!-- Ejemplo -->
 <rect x="30" y="110" width="130" height="55" rx="6" fill="#26a69a12" stroke="#26a69a33"/>
 <text x="95" y="128" fill="#26a69a" font-size="9" text-anchor="middle" font-weight="bold">Cuenta: 10,000$</text>
@@ -380,7 +380,7 @@ Tamano de Posicion = Riesgo en $ / (Distancia SL en pips x Valor por pip)
 <p><strong>Calculo:</strong></p>
 <p>Tamano = 100$ / (100 pips x 10$ por pip por lote) = 100$ / 1,000$ = 0.10 lotes</p>
 <p><strong>Resultado: Entrar con 0.10 lotes (1 mini lote)</strong></p>
-<p>Nota: SL mas amplio = posicion mas PEQUENA. Es automatico con la formula.</p>
+<p>Nota: SL mas amplio = posición mas PEQUENA. Es automatico con la formula.</p>
 </div>
 
 <div class="example-box">
@@ -440,7 +440,7 @@ Tamano de Posicion = Riesgo en $ / (Distancia SL en pips x Valor por pip)
 </ul>
 <p><strong>Calculo:</strong></p>
 <p>Tamano = 30$ / 1,500$ = 0.02 BTC</p>
-<p>Valor de la posicion: 0.02 x 65,000$ = 1,300$ (el apalancamiento cubre la diferencia)</p>
+<p>Valor de la posición: 0.02 x 65,000$ = 1,300$ (el apalancamiento cubre la diferencia)</p>
 <p><strong>Resultado: Comprar 0.02 BTC</strong></p>
 </div>
 
@@ -448,7 +448,7 @@ Tamano de Posicion = Riesgo en $ / (Distancia SL en pips x Valor por pip)
 
 <div class="strategy-box">
 <h4>Metodo 1: Fixed Fractional (Fraccion Fija) - RECOMENDADO</h4>
-<p>Es el metodo que hemos estado usando. Siempre arriesgas un % fijo de tu cuenta ACTUAL (no la inicial). A medida que ganas, tu posicion crece. A medida que pierdes, tu posicion se reduce automaticamente.</p>
+<p>Es el metodo que hemos estado usando. Siempre arriesgas un % fijo de tu cuenta ACTUAL (no la inicial). A medida que ganas, tu posición crece. A medida que pierdes, tu posición se reduce automaticamente.</p>
 <ul>
 <li><strong>Ventaja:</strong> Se ajusta automaticamente. Cuando pierdes, arriesgas menos en terminos absolutos. Cuando ganas, aprovechas el compounding.</li>
 <li><strong>Ejemplo:</strong> Cuenta empieza en 10,000$: riesgo = 100$. Despues de ganar y llegar a 12,000$: riesgo = 120$. Si baja a 8,000$: riesgo = 80$.</li>
@@ -457,7 +457,7 @@ Tamano de Posicion = Riesgo en $ / (Distancia SL en pips x Valor por pip)
 
 <div class="strategy-box">
 <h4>Metodo 2: Fixed Ratio (Ratio Fijo)</h4>
-<p>Aumentas el tamano de posicion solo cuando alcanzas cierto beneficio acumulado (llamado "delta").</p>
+<p>Aumentas el tamano de posición solo cuando alcanzas cierto beneficio acumulado (llamado "delta").</p>
 <ul>
 <li>Delta = cantidad de beneficio necesaria para subir un nivel</li>
 <li><strong>Ejemplo con delta de 1,000$:</strong> Empiezas con 0.01 lotes. Cuando acumulas 1,000$ de ganancia, subes a 0.02 lotes. Cuando acumulas otros 1,000$ (2,000$ total), subes a 0.03 lotes.</li>
@@ -474,7 +474,7 @@ Tamano de Posicion = Riesgo en $ / (Distancia SL en pips x Valor por pip)
 </div>
 <p><strong>Ejemplo:</strong> Si tu winrate es 55% (W=0.55) y tu ratio promedio es 1.5:1 (R=1.5):</p>
 <p>Kelly% = 0.55 - [(1-0.55) / 1.5] = 0.55 - 0.30 = 0.25 = 25%</p>
-<p><strong>IMPORTANTE:</strong> El Kelly puro es MUY agresivo. Los profesionales usan "Half Kelly" o "Quarter Kelly" (dividir el resultado entre 2 o 4). En este caso: 25% / 4 = 6.25%, y nosotros recomendamos maximo 2%.</p>
+<p><strong>IMPORTANTE:</strong> El Kelly puro es MUY agresivo. Los profesionales usan "Half Kelly" o "Quarter Kelly" (dividir el resultado entre 2 o 4). En este caso: 25% / 4 = 6.25%, y nosotros recomendamos máximo 2%.</p>
 </div>
 
 <h3>Calculadora Rapida de Position Sizing</h3>
@@ -492,13 +492,13 @@ Tamano de Posicion = Riesgo en $ / (Distancia SL en pips x Valor por pip)
 <tr><td style="padding:6px;">150 pips</td><td style="padding:6px;">0.07</td><td style="padding:6px;">~105$</td></tr>
 <tr><td style="padding:6px;">200 pips</td><td style="padding:6px;">0.05</td><td style="padding:6px;">100$</td></tr>
 </table>
-<p><strong>Observa:</strong> SL mas amplio = posicion mas pequena. SIEMPRE pierdes lo mismo: ~100$. ESO es position sizing.</p>
+<p><strong>Observa:</strong> SL mas amplio = posición mas pequena. SIEMPRE pierdes lo mismo: ~100$. ESO es position sizing.</p>
 </div>
 
 <div class="warning-box">
 <h4>Errores Comunes de Position Sizing</h4>
 <ul>
-<li><strong>Usar siempre el mismo numero de lotes:</strong> Si siempre usas 0.10 lotes, tu riesgo cambia segun donde pongas el SL. Eso NO es gestion de riesgo.</li>
+<li><strong>Usar siempre el mismo número de lotes:</strong> Si siempre usas 0.10 lotes, tu riesgo cambia segun donde pongas el SL. Eso NO es gestión de riesgo.</li>
 <li><strong>Calcular basado en la cuenta inicial:</strong> Si empezaste con 10,000$ pero ahora tienes 8,000$, tu 1% es 80$, NO 100$.</li>
 <li><strong>Ignorar el apalancamiento:</strong> Que tu broker te deje abrir 5 lotes no significa que DEBAS. El position sizing te dice cuanto DEBES abrir.</li>
 <li><strong>Redondear hacia arriba:</strong> Si el calculo da 0.17 lotes, usa 0.17, no 0.20. Mejor arriesgar un poco menos que un poco mas.</li>
@@ -506,10 +506,10 @@ Tamano de Posicion = Riesgo en $ / (Distancia SL en pips x Valor por pip)
 </div>`,
           keyPoints: [
             "La formula universal: Tamano = Riesgo en $ / (Distancia SL x Valor por pip)",
-            "SL mas amplio = posicion mas pequena para mantener el mismo riesgo en dolares",
+            "SL mas amplio = posición mas pequena para mantener el mismo riesgo en dolares",
             "Fixed Fractional (fraccion fija) es el metodo recomendado para la mayoria de traders",
             "El Criterio de Kelly da el riesgo optimo, pero los pros usan solo 1/4 del Kelly",
-            "SIEMPRE calcular el tamano de posicion ANTES de entrar al trade, nunca usar lotes fijos",
+            "SIEMPRE calcular el tamano de posición ANTES de entrar al trade, nunca usar lotes fijos",
             "Con cuentas pequenas (500$), se usan micro lotes (0.01) para mantener el riesgo correcto"
           ],
           quiz: [
@@ -520,25 +520,25 @@ Tamano de Posicion = Riesgo en $ / (Distancia SL en pips x Valor por pip)
               explanation: "Riesgo = 15,000$ x 1% = 150$. Tamano = 150$ / (40 pips x 10$ por pip) = 150$ / 400$ = 0.375 lotes."
             },
             {
-              question: "Si tu SL es de 100 pips en vez de 50 pips, que pasa con el tamano de posicion?",
+              question: "Si tu SL es de 100 pips en vez de 50 pips, que pasa con el tamano de posición?",
               options: ["Se duplica", "Se reduce a la mitad", "Se mantiene igual", "Depende del par"],
               correctIndex: 1,
-              explanation: "Si el SL se duplica (de 50 a 100 pips), el tamano de posicion se reduce a la mitad para mantener el mismo riesgo en dolares. Mas pips de SL = menos lotes."
+              explanation: "Si el SL se duplica (de 50 a 100 pips), el tamano de posición se reduce a la mitad para mantener el mismo riesgo en dolares. Mas pips de SL = menos lotes."
             },
             {
               question: "Que es el metodo Fixed Fractional?",
-              options: ["Usar siempre el mismo numero de lotes", "Arriesgar siempre el mismo porcentaje del capital ACTUAL", "Aumentar posicion cuando pierdes", "Usar el 50% de la cuenta en cada trade"],
+              options: ["Usar siempre el mismo número de lotes", "Arriesgar siempre el mismo porcentaje del capital ACTUAL", "Aumentar posición cuando pierdes", "Usar el 50% de la cuenta en cada trade"],
               correctIndex: 1,
               explanation: "Fixed Fractional significa arriesgar siempre el mismo porcentaje (ej: 1%) del capital actual. Si la cuenta crece, el riesgo en dolares crece. Si baja, el riesgo en dolares baja automaticamente."
             },
             {
-              question: "Por que NO debes usar siempre el mismo numero de lotes?",
+              question: "Por que NO debes usar siempre el mismo número de lotes?",
               options: ["Porque es ilegal", "Porque tu riesgo real cambia segun la distancia del Stop Loss", "Porque el broker no lo permite", "No hay ninguna razon, es perfectamente valido"],
               correctIndex: 1,
               explanation: "Con lotes fijos, si tu SL es de 20 pips arriesgas 200$, pero si tu SL es de 100 pips arriesgas 1,000$. Tu riesgo seria diferente en cada trade, lo cual es peligroso."
             }
           ],
-          practicalExercise: "Crea tu propia tabla de position sizing. Con tu capital actual (o simulado), calcula el tamano de posicion para: 1) EUR/USD con SL de 25 pips, 2) EUR/USD con SL de 75 pips, 3) GBP/USD con SL de 50 pips. Usa riesgo del 1%. Luego abre TradingView, identifica 3 setups potenciales, mide la distancia al SL logico y calcula cuantos lotes usarias en cada uno."
+          practicalExercise: "Crea tu propia tabla de position sizing. Con tu capital actual (o simulado), calcula el tamano de posición para: 1) EUR/USD con SL de 25 pips, 2) EUR/USD con SL de 75 pips, 3) GBP/USD con SL de 50 pips. Usa riesgo del 1%. Luego abre TradingView, identifica 3 setups potenciales, mide la distancia al SL logico y calcula cuantos lotes usarias en cada uno."
         },
 
         // --------------------------------------------------------------------
@@ -558,7 +558,7 @@ Tamano de Posicion = Riesgo en $ / (Distancia SL en pips x Valor por pip)
 
 <div class="warning-box">
 <h4>La Estadistica Brutal</h4>
-<p>Segun estudios de brokers regulados, el 95% de los traders que NO tienen un plan escrito pierden dinero. Entre los que SI tienen un plan escrito y lo siguen, la tasa de exito sube al 40-50%. Tener un plan no garantiza ganar, pero NO tenerlo casi garantiza perder.</p>
+<p>Segun estudios de brokers regulados, el 95% de los traders que NO tienen un plan escrito pierden dinero. Entre los que SI tienen un plan escrito y lo siguen, la tasa de éxito sube al 40-50%. Tener un plan no garantiza ganar, pero NO tenerlo casi garantiza perder.</p>
 </div>
 
 <h3>SECCION 1: Informacion General</h3>
@@ -586,12 +586,12 @@ Tamano de Posicion = Riesgo en $ / (Distancia SL en pips x Valor por pip)
 <li><strong>Mercados secundarios:</strong> [Ej: USD/JPY, XAUUSD]</li>
 <li><strong>Mercados PROHIBIDOS:</strong> [Ej: Pares exoticos, criptos de baja capitalizacion]</li>
 </ul>
-<p><strong>Horario de operacion:</strong></p>
+<p><strong>Horario de operación:</strong></p>
 <ul>
 <li><strong>Sesion principal:</strong> [Ej: London-NY overlap 15:00-19:00 hora local]</li>
 <li><strong>Analisis pre-mercado:</strong> [Ej: 14:30-15:00]</li>
 <li><strong>Revision post-mercado:</strong> [Ej: 19:00-19:30]</li>
-<li><strong>Dias de operacion:</strong> [Ej: Lunes a Viernes, excepto primer viernes del mes (NFP)]</li>
+<li><strong>Dias de operación:</strong> [Ej: Lunes a Viernes, excepto primer viernes del mes (NFP)]</li>
 </ul>
 </div>
 
@@ -608,7 +608,7 @@ Tamano de Posicion = Riesgo en $ / (Distancia SL en pips x Valor por pip)
 <ol>
 <li>[Ej: Precio por encima de la media movil de 200 periodos]</li>
 <li>[Ej: Retroceso a zona de soporte/demanda identificada en H4]</li>
-<li>[Ej: Vela de rechazo o patron de confirmacion en M15]</li>
+<li>[Ej: Vela de rechazo o patron de confirmación en M15]</li>
 <li>[Ej: RSI por encima de 50 pero no en sobrecompra]</li>
 <li>[Ej: No hay noticias de alto impacto en las proximas 2 horas]</li>
 </ol>
@@ -623,7 +623,7 @@ Tamano de Posicion = Riesgo en $ / (Distancia SL en pips x Valor por pip)
 <h4>Plantilla - Reglas de Salida</h4>
 <p><strong>Stop Loss:</strong></p>
 <ul>
-<li>[Ej: Debajo del ultimo swing low + 5 pips de margen para BUY]</li>
+<li>[Ej: Debajo del último swing low + 5 pips de margen para BUY]</li>
 <li>[Ej: Maximo SL: 50 pips para day trading, 150 pips para swing]</li>
 <li>[Ej: NUNCA mover el SL mas lejos del precio. Solo acercarlo (trailing)]</li>
 </ul>
@@ -637,7 +637,7 @@ Tamano de Posicion = Riesgo en $ / (Distancia SL en pips x Valor por pip)
 <ul>
 <li>[Ej: Mover SL a breakeven cuando el trade va +1R a favor]</li>
 <li>[Ej: Usar trailing stop de 20 pips cuando va +2R a favor]</li>
-<li>[Ej: Cerrar manualmente si aparece senal contraria clara]</li>
+<li>[Ej: Cerrar manualmente si aparece señal contraria clara]</li>
 </ul>
 </div>
 
@@ -646,13 +646,13 @@ Tamano de Posicion = Riesgo en $ / (Distancia SL en pips x Valor por pip)
 <div class="strategy-box">
 <h4>Plantilla - Riesgo</h4>
 <ul>
-<li><strong>Riesgo por operacion:</strong> 1% del capital actual (MAXIMO 2% en A+ setups)</li>
+<li><strong>Riesgo por operación:</strong> 1% del capital actual (MAXIMO 2% en A+ setups)</li>
 <li><strong>Maximo operaciones simultaneas:</strong> 3</li>
 <li><strong>Maximo operaciones por dia:</strong> 3 (ganadoras o perdedoras)</li>
-<li><strong>Drawdown diario maximo:</strong> 3% (si llego, paro el dia)</li>
-<li><strong>Drawdown semanal maximo:</strong> 5% (si llego, paro la semana)</li>
-<li><strong>Drawdown mensual maximo:</strong> 10% (si llego, paro y reviso todo)</li>
-<li><strong>Correlacion:</strong> No abrir mas de 2 posiciones en la misma direccion en pares correlacionados</li>
+<li><strong>Drawdown diario máximo:</strong> 3% (si llego, paro el dia)</li>
+<li><strong>Drawdown semanal máximo:</strong> 5% (si llego, paro la semana)</li>
+<li><strong>Drawdown mensual máximo:</strong> 10% (si llego, paro y reviso todo)</li>
+<li><strong>Correlacion:</strong> No abrir mas de 2 posiciones en la misma dirección en pares correlacionados</li>
 <li><strong>Noticias:</strong> No operar 30 minutos antes/despues de noticias de alto impacto (NFP, FOMC, BCE)</li>
 </ul>
 </div>
@@ -689,7 +689,7 @@ Tamano de Posicion = Riesgo en $ / (Distancia SL en pips x Valor por pip)
 <li>Verificar que se cumplen TODAS las reglas de entrada</li>
 <li>Calcular position sizing antes de entrar</li>
 <li>Ejecutar con SL y TP puestos</li>
-<li>NO tocar la operacion una vez abierta (excepto trailing stop)</li>
+<li>NO tocar la operación una vez abierta (excepto trailing stop)</li>
 </ol>
 <p><strong>DESPUES del mercado (15-30 min):</strong></p>
 <ol>
@@ -709,7 +709,7 @@ Tamano de Posicion = Riesgo en $ / (Distancia SL en pips x Valor por pip)
 <ul>
 <li>Cuantos trades tome esta semana?</li>
 <li>Cuantos ganadores vs perdedores?</li>
-<li>Segui mi plan en cada operacion?</li>
+<li>Segui mi plan en cada operación?</li>
 <li>Cual fue mi mejor trade y por que?</li>
 <li>Cual fue mi peor trade y que puedo aprender?</li>
 <li>Drawdown de la semana?</li>
@@ -744,22 +744,22 @@ Tamano de Posicion = Riesgo en $ / (Distancia SL en pips x Valor por pip)
             "Un plan de trading escrito es INDISPENSABLE - el 95% de traders sin plan pierden dinero",
             "El plan debe cubrir: mercados, horarios, reglas de entrada/salida, riesgo y emociones",
             "Las reglas emocionales son tan importantes como las reglas tecnicas",
-            "Rutina diaria: analisis pre-mercado, ejecucion disciplinada, revision post-mercado",
+            "Rutina diaria: análisis pre-mercado, ejecucion disciplinada, revision post-mercado",
             "Revisiones semanales, mensuales y trimestrales para mejora continua",
-            "No cambiar el plan impulsivamente - esperar minimo 50 operaciones antes de ajustar"
+            "No cambiar el plan impulsivamente - esperar mínimo 50 operaciones antes de ajustar"
           ],
           quiz: [
             {
-              question: "Cual es el proposito principal de un plan de trading?",
+              question: "Cual es el propósito principal de un plan de trading?",
               options: ["Impresionar a otros traders", "Eliminar decisiones emocionales y operar con reglas claras", "Cumplir requisitos del broker", "Solo es necesario para cuentas grandes"],
               correctIndex: 1,
               explanation: "El plan de trading elimina la toma de decisiones emocional. Todo esta predefinido: cuando entrar, cuando salir, cuanto arriesgar. Asi operas como un robot disciplinado, no como un apostador."
             },
             {
               question: "Cuantas operaciones necesitas para evaluar si tu plan funciona?",
-              options: ["5 operaciones", "10 operaciones", "Minimo 50 operaciones", "Solo 1 operacion perfecta"],
+              options: ["5 operaciones", "10 operaciones", "Minimo 50 operaciones", "Solo 1 operación perfecta"],
               correctIndex: 2,
-              explanation: "Se necesitan minimo 50 operaciones para tener una muestra estadisticamente relevante. En menos de eso, los resultados pueden ser suerte o mala suerte, no reflejo real de tu sistema."
+              explanation: "Se necesitan mínimo 50 operaciones para tener una muestra estadisticamente relevante. En menos de eso, los resultados pueden ser suerte o mala suerte, no reflejo real de tu sistema."
             },
             {
               question: "Que debes hacer si pierdes 2 operaciones seguidas en un dia?",
@@ -774,7 +774,7 @@ Tamano de Posicion = Riesgo en $ / (Distancia SL en pips x Valor por pip)
               explanation: "El plan es un documento vivo. Revision semanal rapida para trackear, mensual profunda para analizar, trimestral para ajustes estrategicos. Los cambios deben basarse en datos, no emociones."
             }
           ],
-          practicalExercise: "TAREA OBLIGATORIA: Copia la plantilla de esta leccion y completa CADA seccion con tus propios datos. No dejes NADA en blanco. Si aun no tienes estrategia definida, escribe las reglas generales que planeas seguir. Imprime tu plan y ponlo junto a tu pantalla de trading. Antes de cada operacion, preguntate: 'Esto cumple con mi plan?'. Si la respuesta es no, no operes."
+          practicalExercise: "TAREA OBLIGATORIA: Copia la plantilla de esta lección y completa CADA seccion con tus propios datos. No dejes NADA en blanco. Si aun no tienes estrategia definida, escribe las reglas generales que planeas seguir. Imprime tu plan y ponlo junto a tu pantalla de trading. Antes de cada operación, preguntate: 'Esto cumple con mi plan?'. Si la respuesta es no, no operes."
         }
       ]
     },
@@ -801,12 +801,12 @@ Tamano de Posicion = Riesgo en $ / (Distancia SL en pips x Valor por pip)
 
 <div class="analogy-box">
 <h3>La Analogia del Guerrero Interior</h3>
-<p>Todo trader libra DOS batallas simultaneas: una contra el mercado y otra contra si mismo. La batalla contra el mercado la puedes ganar con estrategia y analisis tecnico. Pero la batalla contra ti mismo es mucho mas dificil, porque tu peor enemigo conoce todos tus puntos debiles. Los 7 enemigos que vas a conocer aqui son los responsables del 80% de las perdidas en trading. Identificarlos es el primer paso para vencerlos.</p>
+<p>Todo trader libra DOS batallas simultaneas: una contra el mercado y otra contra si mismo. La batalla contra el mercado la puedes ganar con estrategia y análisis técnico. Pero la batalla contra ti mismo es mucho mas difícil, porque tu peor enemigo conoce todos tus puntos debiles. Los 7 enemigos que vas a conocer aquí son los responsables del 80% de las perdidas en trading. Identificarlos es el primer paso para vencerlos.</p>
 </div>
 
 <div class="warning-box">
 <h4>Dato Clave</h4>
-<p>Mark Douglas, autor de "Trading in the Zone", estudio a miles de traders durante decadas y concluyo: "El trading es 80% psicologia y 20% estrategia." Los traders exitosos no son necesariamente los mas inteligentes ni los que tienen mejores indicadores. Son los que mejor controlan sus emociones.</p>
+<p>Mark Douglas, autor de "Trading in the Zone", estudio a miles de traders durante decadas y concluyo: "El trading es 80% psicología y 20% estrategia." Los traders exitosos no son necesariamente los mas inteligentes ni los que tienen mejores indicadores. Son los que mejor controlan sus emociones.</p>
 </div>
 
 <h3>ENEMIGO #1: EL MIEDO</h3>
@@ -817,9 +817,9 @@ Tamano de Posicion = Riesgo en $ / (Distancia SL en pips x Valor por pip)
 <ul>
 <li>No entras a un trade aunque tu setup sea perfecto porque "puede que pierda"</li>
 <li>Cierras operaciones ganadoras demasiado pronto por miedo a que se gire</li>
-<li>Reduces tu tamano de posicion hasta niveles insignificantes</li>
+<li>Reduces tu tamano de posición hasta niveles insignificantes</li>
 <li>Despues de una racha perdedora, no puedes apretar el boton de compra/venta</li>
-<li>Analizas y analizas pero nunca ejecutas ("paralisis por analisis")</li>
+<li>Analizas y analizas pero nunca ejecutas ("paralisis por análisis")</li>
 </ul>
 <p><strong>Por que aparece:</strong> Tu cerebro primitivo (amigdala) asocia perder dinero con peligro de supervivencia. Cuando ves una perdida, se activa la misma respuesta que si vieras un depredador. Es una reaccion biologica, NO una debilidad personal.</p>
 </div>
@@ -827,7 +827,7 @@ Tamano de Posicion = Riesgo en $ / (Distancia SL en pips x Valor por pip)
 <div class="highlight-box green">
 <h4>SOLUCION al Miedo</h4>
 <ol>
-<li><strong>Acepta la perdida ANTES de entrar:</strong> Antes de cada trade, di en voz alta: "Estoy dispuesto a perder [X]$ en esta operacion." Si no puedes decirlo, reduce el tamano.</li>
+<li><strong>Acepta la perdida ANTES de entrar:</strong> Antes de cada trade, di en voz alta: "Estoy dispuesto a perder [X]$ en esta operación." Si no puedes decirlo, reduce el tamano.</li>
 <li><strong>Piensa en probabilidades:</strong> No estás arriesgando dinero, estas ejecutando una probabilidad. Como un casino, pierdes a veces pero ganas a largo plazo.</li>
 <li><strong>Usa alertas automaticas:</strong> Si la paralisis es muy fuerte, configura alertas que te avisen cuando el precio llegue a tu zona y usa ordenes pendientes en vez de ordenes de mercado.</li>
 <li><strong>Empieza con cuenta demo o muy pequena:</strong> Opera con cantidades que no te generen ansiedad mientras desarrollas confianza.</li>
@@ -842,8 +842,8 @@ Tamano de Posicion = Riesgo en $ / (Distancia SL en pips x Valor por pip)
 <p><strong>Como se manifiesta:</strong></p>
 <ul>
 <li>Mueves tu Take Profit mas lejos cuando el trade va a tu favor ("seguro que sigue subiendo")</li>
-<li>Aumentas el tamano de posicion despues de ganar 2-3 trades ("estoy en racha")</li>
-<li>No cierras una posicion ganadora porque quieres "exprimir cada pip"</li>
+<li>Aumentas el tamano de posición despues de ganar 2-3 trades ("estoy en racha")</li>
+<li>No cierras una posición ganadora porque quieres "exprimir cada pip"</li>
 <li>Arriesgas 5-10% en vez de 1% porque "este setup es seguro"</li>
 <li>Ves que ganaste 200$ y piensas "podria haber sido 2,000$ si hubiera metido mas"</li>
 </ul>
@@ -853,7 +853,7 @@ Tamano de Posicion = Riesgo en $ / (Distancia SL en pips x Valor por pip)
 <div class="highlight-box green">
 <h4>SOLUCION a la Avaricia</h4>
 <ol>
-<li><strong>TP y SL se ponen ANTES de entrar, y NO se mueven:</strong> Define tu salida con el analisis frio, no con la emocion del momento.</li>
+<li><strong>TP y SL se ponen ANTES de entrar, y NO se mueven:</strong> Define tu salida con el análisis frio, no con la emocion del momento.</li>
 <li><strong>Usa la regla del "Suficiente":</strong> Define un objetivo diario. Si lo alcanzas, APAGA la pantalla. No sigas.</li>
 <li><strong>Mantente fiel a tu position sizing:</strong> No importa cuantos trades hayas ganado, el proximo es 1% de riesgo. Sin excepciones.</li>
 <li><strong>Recuerda las rachas:</strong> Toda racha ganadora TERMINA. No dejes que la euforia destruya lo que construiste.</li>
@@ -867,7 +867,7 @@ Tamano de Posicion = Riesgo en $ / (Distancia SL en pips x Valor por pip)
 <p><strong>Como se manifiesta:</strong></p>
 <ul>
 <li>Pierdes un trade y INMEDIATAMENTE abres otro para "recuperar"</li>
-<li>Aumentas el tamano de la siguiente posicion para recuperar mas rapido</li>
+<li>Aumentas el tamano de la siguiente posición para recuperar mas rápido</li>
 <li>Abandonas tu estrategia y empiezas a operar por impulso</li>
 <li>Sientes ira contra el mercado, como si fuera "personal"</li>
 <li>Operas fuera de tu horario habitual porque "necesitas recuperar"</li>
@@ -881,7 +881,7 @@ Tamano de Posicion = Riesgo en $ / (Distancia SL en pips x Valor por pip)
 <ol>
 <li><strong>REGLA ABSOLUTA: 2 perdidas seguidas = paras el dia.</strong> No es negociable. No "un trade mas". PARAS.</li>
 <li><strong>Levantate de la silla fisicamente.</strong> Sal a caminar 15-30 minutos. Lejos de la pantalla.</li>
-<li><strong>Pon una nota junto a tu monitor:</strong> "REVENGE TRADING = DESTRUCCION. Respira. Apaga. Vuelve manana."</li>
+<li><strong>Pon una nota junto a tu monitor:</strong> "REVENGE TRADING = DESTRUCCION. Respira. Apaga. Vuelve mañana."</li>
 <li><strong>Acepta que la perdida ya ocurrio.</strong> El dinero que perdiste NO existe. No hay nada que "recuperar". Cada trade es independiente.</li>
 </ol>
 </div>
@@ -892,7 +892,7 @@ Tamano de Posicion = Riesgo en $ / (Distancia SL en pips x Valor por pip)
 <h4>FOMO - El Miedo a Perderse la Oportunidad</h4>
 <p><strong>Como se manifiesta:</strong></p>
 <ul>
-<li>Ves que un par subio 200 pips y entras a la carrera sin analisis ("no me lo quiero perder")</li>
+<li>Ves que un par subio 200 pips y entras a la carrera sin análisis ("no me lo quiero perder")</li>
 <li>Entras tarde a un movimiento que ya ocurrio</li>
 <li>Ves a otros traders en redes sociales presumir ganancias y entras en panico por no estar en ese trade</li>
 <li>Abres un trade porque "el mercado se esta moviendo" aunque no hay setup</li>
@@ -904,10 +904,10 @@ Tamano de Posicion = Riesgo en $ / (Distancia SL en pips x Valor por pip)
 <div class="highlight-box green">
 <h4>SOLUCION al FOMO</h4>
 <ol>
-<li><strong>El mercado SIEMPRE da otra oportunidad.</strong> Si perdiste este movimiento, habra otro manana. Y pasado. Y la semana que viene. SIEMPRE.</li>
-<li><strong>Si el tren ya salio, NO corras detras.</strong> Espera el siguiente. Entrar tarde es la forma mas comun de comprar en el maximo.</li>
+<li><strong>El mercado SIEMPRE da otra oportunidad.</strong> Si perdiste este movimiento, habra otro mañana. Y pasado. Y la semana que viene. SIEMPRE.</li>
+<li><strong>Si el tren ya salio, NO corras detras.</strong> Espera el siguiente. Entrar tarde es la forma mas comun de comprar en el máximo.</li>
 <li><strong>Deja de seguir "gurus" en redes sociales.</strong> El 90% exageran o mienten sobre sus resultados. Compararte con ellos es toxico.</li>
-<li><strong>Recuerda: no operar ES una operacion.</strong> A veces la mejor decision es no hacer nada y preservar tu capital para cuando SI aparezca tu setup.</li>
+<li><strong>Recuerda: no operar ES una operación.</strong> A veces la mejor decision es no hacer nada y preservar tu capital para cuando SI aparezca tu setup.</li>
 </ol>
 </div>
 
@@ -918,12 +918,12 @@ Tamano de Posicion = Riesgo en $ / (Distancia SL en pips x Valor por pip)
 <p><strong>Como se manifiesta:</strong></p>
 <ul>
 <li>Abres 10-15 trades al dia cuando tu plan dice 2-3</li>
-<li>Operas en timeframes muy bajos buscando "accion" constante</li>
+<li>Operas en timeframes muy bajos buscando "acción" constante</li>
 <li>Sientes que si no estas en el mercado, estas perdiendo oportunidades</li>
 <li>Tomas setups mediocres porque "algo es mejor que nada"</li>
 <li>Tu cuenta de broker muestra spreads/comisiones enormes al final del mes</li>
 </ul>
-<p><strong>Por que aparece:</strong> Adiccion a la accion y la dopamina. Cada operacion es una "apuesta" que genera excitacion. Tambien puede ser aburrimiento o la creencia falsa de que "mas trades = mas dinero".</p>
+<p><strong>Por que aparece:</strong> Adiccion a la acción y la dopamina. Cada operación es una "apuesta" que genera excitacion. Tambien puede ser aburrimiento o la creencia falsa de que "mas trades = mas dinero".</p>
 </div>
 
 <div class="highlight-box green">
@@ -944,7 +944,7 @@ Tamano de Posicion = Riesgo en $ / (Distancia SL en pips x Valor por pip)
 <ul>
 <li>Entras antes de que tu setup se complete porque "ya casi esta"</li>
 <li>Cierras un trade ganador a los 5 minutos porque no puedes esperar a que llegue al TP</li>
-<li>Cambias de estrategia cada semana porque "esta no da resultados rapido"</li>
+<li>Cambias de estrategia cada semana porque "esta no da resultados rápido"</li>
 <li>Quieres ser rentable en 2 semanas y te frustras cuando no lo logras</li>
 <li>Mueves tu SL para que no te saque antes de tiempo, y luego pierdes mas</li>
 </ul>
@@ -954,7 +954,7 @@ Tamano de Posicion = Riesgo en $ / (Distancia SL en pips x Valor por pip)
 <div class="highlight-box green">
 <h4>SOLUCION a la Impaciencia</h4>
 <ol>
-<li><strong>Acepta el timeline real:</strong> 6-12 meses de aprendizaje. 1-2 anos para ser consistente. No hay atajos.</li>
+<li><strong>Acepta el timeline real:</strong> 6-12 meses de aprendizaje. 1-2 años para ser consistente. No hay atajos.</li>
 <li><strong>Usa alertas de precio:</strong> En vez de mirar la pantalla esperando que el precio llegue, configura alertas. Te avisan cuando es hora de actuar.</li>
 <li><strong>"Let the trade work":</strong> Una vez que entras con SL y TP, cierra la plataforma y vuelve en 1 hora. El trade no necesita que lo mires.</li>
 <li><strong>Opera en timeframes mas altos:</strong> H4 y D1 requieren menos tiempo frente a la pantalla y generan menos ansiedad que M1 y M5.</li>
@@ -967,21 +967,21 @@ Tamano de Posicion = Riesgo en $ / (Distancia SL en pips x Valor por pip)
 <h4>La Esperanza - El Asesino Disfrazado</h4>
 <p><strong>Como se manifiesta:</strong></p>
 <ul>
-<li>"Ya va a girar, ya va a girar..." mientras la operacion cae 100 pips en tu contra</li>
+<li>"Ya va a girar, ya va a girar..." mientras la operación cae 100 pips en tu contra</li>
 <li>Eliminas o mueves tu Stop Loss porque "seguro que se recupera"</li>
-<li>Mantienes una operacion perdedora durante DIAS esperando un milagro</li>
+<li>Mantienes una operación perdedora durante DIAS esperando un milagro</li>
 <li>"Este trade es diferente" - la frase mas peligrosa en trading</li>
-<li>Ignoras las senales de que tu analisis fue incorrecto</li>
+<li>Ignoras las señales de que tu análisis fue incorrecto</li>
 </ul>
-<p><strong>Por que aparece:</strong> El sesgo de confirmacion. Tu cerebro busca informacion que confirme lo que quieres creer (que el trade va a funcionar) e ignora la informacion contraria. Mas la incapacidad de aceptar que te equivocaste.</p>
+<p><strong>Por que aparece:</strong> El sesgo de confirmación. Tu cerebro busca información que confirme lo que quieres creer (que el trade va a funcionar) e ignora la información contraria. Mas la incapacidad de aceptar que te equivocaste.</p>
 </div>
 
 <div class="highlight-box red">
 <h4>SOLUCION a la Esperanza Toxica</h4>
 <ol>
-<li><strong>Tu Stop Loss es tu verdad.</strong> Si el precio llega a tu SL, tu analisis fue incorrecto. PUNTO. No hay discusion.</li>
+<li><strong>Tu Stop Loss es tu verdad.</strong> Si el precio llega a tu SL, tu análisis fue incorrecto. PUNTO. No hay discusion.</li>
 <li><strong>La esperanza NO es una estrategia de trading.</strong> Si tu unica razon para mantener un trade es "espero que se gire", SAL INMEDIATAMENTE.</li>
-<li><strong>Preguntate:</strong> "Si no tuviera esta posicion abierta, la abriria ahora?" Si la respuesta es no, CIERRA.</li>
+<li><strong>Preguntate:</strong> "Si no tuviera esta posición abierta, la abriria ahora?" Si la respuesta es no, CIERRA.</li>
 <li><strong>Define el punto de invalidacion ANTES:</strong> Antes de entrar, decide exactamente que precio te demuestra que estabas equivocado. Ese es tu SL. Si llega, RESPETALO.</li>
 </ol>
 </div>
@@ -989,7 +989,7 @@ Tamano de Posicion = Riesgo en $ / (Distancia SL en pips x Valor por pip)
 <div class="highlight-box purple">
 <h4>RESUMEN: Mapa de los 7 Enemigos</h4>
 <table style="width:100%; border-collapse:collapse;">
-<tr style="border-bottom:2px solid rgba(0,0,0,0.2);"><th style="text-align:left; padding:8px;">Enemigo</th><th style="text-align:left; padding:8px;">Sintoma principal</th><th style="text-align:left; padding:8px;">Antidoto rapido</th></tr>
+<tr style="border-bottom:2px solid rgba(0,0,0,0.2);"><th style="text-align:left; padding:8px;">Enemigo</th><th style="text-align:left; padding:8px;">Sintoma principal</th><th style="text-align:left; padding:8px;">Antidoto rápido</th></tr>
 <tr style="border-bottom:1px solid rgba(0,0,0,0.1);"><td style="padding:8px;">Miedo</td><td style="padding:8px;">No ejecutas trades validos</td><td style="padding:8px;">Acepta la perdida antes de entrar</td></tr>
 <tr style="border-bottom:1px solid rgba(0,0,0,0.1);"><td style="padding:8px;">Avaricia</td><td style="padding:8px;">Arriesgas demasiado o mueves el TP</td><td style="padding:8px;">TP fijo, no se toca</td></tr>
 <tr style="border-bottom:1px solid rgba(0,0,0,0.1);"><td style="padding:8px;">Revenge Trading</td><td style="padding:8px;">Operas impulsivamente tras perder</td><td style="padding:8px;">2 perdidas = paras el dia</td></tr>
@@ -1001,7 +1001,7 @@ Tamano de Posicion = Riesgo en $ / (Distancia SL en pips x Valor por pip)
 </div>`,
           keyPoints: [
             "Los 7 enemigos: Miedo, Avaricia, Revenge Trading, FOMO, Overtrading, Impaciencia y Esperanza",
-            "El trading es 80% psicologia y 20% estrategia segun Mark Douglas",
+            "El trading es 80% psicología y 20% estrategia segun Mark Douglas",
             "Revenge Trading es el destructor de cuentas #1: 2 perdidas seguidas = paras el dia",
             "FOMO te hace comprar en maximos - si el tren ya salio, espera el siguiente",
             "La esperanza NO es una estrategia: si tu unica razon para mantener un trade es esperanza, sal",
@@ -1015,16 +1015,16 @@ Tamano de Posicion = Riesgo en $ / (Distancia SL en pips x Valor por pip)
               explanation: "Esto es Revenge Trading: operar impulsivamente para 'vengar' una perdida. La solucion es parar despues de 2 perdidas seguidas."
             },
             {
-              question: "Ves que el oro subio 500 pips y entras a comprar sin analisis porque no quieres perderte el movimiento. Que enemigo es?",
+              question: "Ves que el oro subio 500 pips y entras a comprar sin análisis porque no quieres perderte el movimiento. Que enemigo es?",
               options: ["FOMO", "Avaricia", "Miedo", "Esperanza"],
               correctIndex: 0,
-              explanation: "FOMO (Fear Of Missing Out): entrar a un movimiento tarde porque tienes miedo de perderte la oportunidad. Resultado tipico: compras en el maximo."
+              explanation: "FOMO (Fear Of Missing Out): entrar a un movimiento tarde porque tienes miedo de perderte la oportunidad. Resultado tipico: compras en el máximo."
             },
             {
               question: "Tu trade va perdiendo 80 pips pero no cierras porque 'seguro que se gira'. Que enemigo es?",
               options: ["Miedo", "Impaciencia", "Esperanza", "Overtrading"],
               correctIndex: 2,
-              explanation: "La Esperanza toxica: mantener una posicion perdedora basandote en fe, no en analisis. La solucion es respetar el Stop Loss sin excepciones."
+              explanation: "La Esperanza toxica: mantener una posición perdedora basandote en fe, no en análisis. La solucion es respetar el Stop Loss sin excepciones."
             },
             {
               question: "Cual es la regla mas efectiva contra el Revenge Trading?",
@@ -1069,7 +1069,7 @@ Tamano de Posicion = Riesgo en $ / (Distancia SL en pips x Valor por pip)
 <tr style="border-bottom:1px solid rgba(0,0,0,0.05);"><td style="padding:8px;"><strong>Stop Loss</strong></td><td style="padding:8px;">1.0820 (32 pips)</td></tr>
 <tr style="border-bottom:1px solid rgba(0,0,0,0.05);"><td style="padding:8px;"><strong>Take Profit</strong></td><td style="padding:8px;">1.0916 (64 pips)</td></tr>
 <tr style="border-bottom:1px solid rgba(0,0,0,0.05);"><td style="padding:8px;"><strong>Ratio R:R</strong></td><td style="padding:8px;">1:2</td></tr>
-<tr style="border-bottom:1px solid rgba(0,0,0,0.05);"><td style="padding:8px;"><strong>Tamano posicion</strong></td><td style="padding:8px;">0.31 lotes</td></tr>
+<tr style="border-bottom:1px solid rgba(0,0,0,0.05);"><td style="padding:8px;"><strong>Tamano posición</strong></td><td style="padding:8px;">0.31 lotes</td></tr>
 <tr style="border-bottom:1px solid rgba(0,0,0,0.05);"><td style="padding:8px;"><strong>Riesgo en $</strong></td><td style="padding:8px;">100$ (1%)</td></tr>
 <tr style="border-bottom:1px solid rgba(0,0,0,0.05);"><td style="padding:8px;"><strong>Razon de entrada</strong></td><td style="padding:8px;">Rechazo de zona de demanda H4 + vela martillo M15 + RSI divergencia</td></tr>
 <tr style="border-bottom:1px solid rgba(0,0,0,0.05);"><td style="padding:8px;"><strong>Resultado</strong></td><td style="padding:8px;">TP alcanzado: +200$</td></tr>
@@ -1083,7 +1083,7 @@ Tamano de Posicion = Riesgo en $ / (Distancia SL en pips x Valor por pip)
 <div class="highlight-box yellow">
 <h4>3 Screenshots por Trade</h4>
 <ol>
-<li><strong>ANTES de entrar:</strong> Captura del grafico con tu analisis marcado (zonas, lineas, indicadores). Muestra POR QUE decidiste entrar.</li>
+<li><strong>ANTES de entrar:</strong> Captura del grafico con tu análisis marcado (zonas, lineas, indicadores). Muestra POR QUE decidiste entrar.</li>
 <li><strong>DURANTE (opcional):</strong> Si el trade tuvo un desarrollo interesante, captura como evoluciono.</li>
 <li><strong>DESPUES de cerrar:</strong> Captura del resultado final. Donde entro, donde salio, que paso.</li>
 </ol>
@@ -1186,16 +1186,16 @@ Tamano de Posicion = Riesgo en $ / (Distancia SL en pips x Valor por pip)
 <h4>Herramientas Recomendadas para tu Diario</h4>
 <ul>
 <li><strong>Google Sheets / Excel:</strong> Gratis, flexible, puedes crear graficos de rendimiento. La opcion mas accesible.</li>
-<li><strong>Notion:</strong> Plantillas bonitas, facil de organizar, permite incrustar imagenes.</li>
+<li><strong>Notion:</strong> Plantillas bonitas, fácil de organizar, permite incrustar imagenes.</li>
 <li><strong>Edgewonk:</strong> Software especializado en diarios de trading. Caro pero muy completo. Calcula todas las estadisticas automaticamente.</li>
 <li><strong>TradeZella / Tradervue:</strong> Plataformas online especializadas. Importan trades automaticamente de tu broker.</li>
-<li><strong>Cuaderno fisico:</strong> Si, un cuaderno de papel tambien funciona. Escribir a mano fuerza la reflexion.</li>
+<li><strong>Cuaderno fisico:</strong> Si, un cuaderno de papel también funciona. Escribir a mano fuerza la reflexion.</li>
 </ul>
 </div>
 
 <div class="warning-box">
 <h4>El Error Mas Comun con el Diario</h4>
-<p>Empezar con mucha motivacion y dejarlo despues de 2 semanas. El diario solo funciona si es CONSISTENTE. Mejor registrar poco pero todos los dias que hacer un diario super detallado que abandonas al mes. Empieza simple: par, direccion, entrada, SL, TP, resultado, y una nota emocional. 2 minutos por trade. Luego lo expandes.</p>
+<p>Empezar con mucha motivacion y dejarlo despues de 2 semanas. El diario solo funciona si es CONSISTENTE. Mejor registrar poco pero todos los dias que hacer un diario super detallado que abandonas al mes. Empieza simple: par, dirección, entrada, SL, TP, resultado, y una nota emocional. 2 minutos por trade. Luego lo expandes.</p>
 </div>`,
           keyPoints: [
             "El diario de trading mejora la rentabilidad un 30% en promedio segun estudios",
@@ -1213,14 +1213,14 @@ Tamano de Posicion = Riesgo en $ / (Distancia SL en pips x Valor por pip)
               explanation: "El diario te permite identificar patrones (que funciona, que no, cuando operas mejor, que emociones te sabotean) y mejorar basandote en datos reales, no en opiniones."
             },
             {
-              question: "Que informacion emocional debes registrar?",
+              question: "Que información emocional debes registrar?",
               options: ["No es necesario registrar emociones", "Solo si te sientes mal", "Estado emocional antes, durante y despues del trade con puntuacion", "Solo la emocion despues del resultado"],
               correctIndex: 2,
               explanation: "Registrar emociones antes, durante y despues permite correlacionar tu estado emocional con tus resultados. Muchos traders descubren que sus peores trades coinciden con estados emocionales especificos."
             },
             {
               question: "Con que frecuencia debes hacer revision profunda de tu diario?",
-              options: ["Diariamente", "Semanalmente (rapida) y mensualmente (profunda)", "Solo cuando pierdes dinero", "Una vez al ano"],
+              options: ["Diariamente", "Semanalmente (rapida) y mensualmente (profunda)", "Solo cuando pierdes dinero", "Una vez al año"],
               correctIndex: 1,
               explanation: "Revision semanal rapida (1h) para trackear, revision mensual profunda (2-3h) para analizar estadisticas, patrones y hacer ajustes."
             },
@@ -1228,7 +1228,7 @@ Tamano de Posicion = Riesgo en $ / (Distancia SL en pips x Valor por pip)
               question: "Descubres en tu diario que pierdes el 70% de los trades en GBP/JPY pero ganas el 60% en EUR/USD. Que haces?",
               options: ["Operar mas GBP/JPY para mejorar", "Dejar de operar GBP/JPY y enfocarte en EUR/USD", "Ignorar el dato", "Operar ambos por igual"],
               correctIndex: 1,
-              explanation: "Si los datos muestran consistentemente que un par no te funciona, lo inteligente es dejar de operarlo y enfocarte donde SI tienes ventaja. El diario te da esta informacion vital."
+              explanation: "Si los datos muestran consistentemente que un par no te funciona, lo inteligente es dejar de operarlo y enfocarte donde SI tienes ventaja. El diario te da esta información vital."
             }
           ],
           practicalExercise: "Crea tu diario de trading HOY. Usa Google Sheets o Excel. Haz columnas para: Fecha, Par, Direccion, Entrada, SL, TP, R:R, Lotes, Riesgo$, Resultado$, Segui plan (Si/No), Emocion pre-trade (1-5), Nota emocional. Registra tus proximas 20 operaciones (demo o real). Al final, calcula tu winrate, R:R promedio y busca patrones. Este ejercicio vale mas que 100 horas viendo videos de YouTube."
@@ -1246,7 +1246,7 @@ Tamano de Posicion = Riesgo en $ / (Distancia SL en pips x Valor por pip)
 
 <div class="analogy-box">
 <h3>La Analogia del Jugador de Poker Profesional</h3>
-<p>Un jugador profesional de poker no se enfada cuando pierde una mano. No se emociona demasiado cuando gana un bote grande. Sabe que en una noche puede perder incluso jugando perfectamente, y puede ganar jugando mal (suerte). Lo que le importa es: "Tome la decision correcta con la informacion que tenia?" Si la respuesta es si, fue una buena mano, gane o pierda. EXACTAMENTE lo mismo aplica al trading.</p>
+<p>Un jugador profesional de poker no se enfada cuando pierde una mano. No se emociona demasiado cuando gana un bote grande. Sabe que en una noche puede perder incluso jugando perfectamente, y puede ganar jugando mal (suerte). Lo que le importa es: "Tome la decision correcta con la información que tenia?" Si la respuesta es si, fue una buena mano, gane o pierda. EXACTAMENTE lo mismo aplica al trading.</p>
 </div>
 
 <h3>PILAR 1: Proceso sobre Resultados</h3>
@@ -1271,7 +1271,7 @@ Tamano de Posicion = Riesgo en $ / (Distancia SL en pips x Valor por pip)
 <li>Cada perdida es un fracaso personal</li>
 <li>Cambia de estrategia cada semana</li>
 <li>"El mercado me odia"</li>
-<li>Busca la operacion perfecta</li>
+<li>Busca la operación perfecta</li>
 <li>Operar = adrenalina y emocion</li>
 </ul>
 </div>
@@ -1305,7 +1305,7 @@ Tamano de Posicion = Riesgo en $ / (Distancia SL en pips x Valor por pip)
 <h4>Expectativa Matematica (Expectancy)</h4>
 <p><strong>Formula:</strong></p>
 <p style="text-align:center; font-weight:bold; font-size:1.1em;">Expectancy = (Winrate x Ganancia promedio) - (Lossrate x Perdida promedio)</p>
-<p><strong>Ejemplo con tus numeros:</strong></p>
+<p><strong>Ejemplo con tus números:</strong></p>
 <ul>
 <li>Winrate: 45%</li>
 <li>Ganancia promedio: 200$ (ratio 1:2)</li>
@@ -1358,7 +1358,7 @@ Tamano de Posicion = Riesgo en $ / (Distancia SL en pips x Valor por pip)
 <h4>Rutina Matutina</h4>
 <ul>
 <li>Despertar a la misma hora</li>
-<li>Ejercicio fisico (30 min minimo)</li>
+<li>Ejercicio fisico (30 min mínimo)</li>
 <li>Desayuno saludable</li>
 <li>5-10 min de meditacion/respiracion</li>
 <li>Revision del calendario economico</li>
@@ -1384,7 +1384,7 @@ Tamano de Posicion = Riesgo en $ / (Distancia SL en pips x Valor por pip)
 <li>Evaluar adherencia al plan</li>
 <li>Cerrar TODAS las plataformas</li>
 <li>Actividad de desconexion</li>
-<li>No pensar en trading hasta manana</li>
+<li>No pensar en trading hasta mañana</li>
 </ul>
 </div>
 <div class="card">
@@ -1420,10 +1420,10 @@ Tamano de Posicion = Riesgo en $ / (Distancia SL en pips x Valor por pip)
 <div class="highlight-box yellow">
 <h4>Lo que NO debes hacer en una racha perdedora</h4>
 <ul>
-<li>Aumentar el tamano de posicion para "recuperar mas rapido" (receta para desastre)</li>
+<li>Aumentar el tamano de posición para "recuperar mas rápido" (receta para desastre)</li>
 <li>Cambiar completamente de estrategia (dale tiempo a la actual)</li>
 <li>Operar mas frecuentemente (overtrading emocional)</li>
-<li>Buscar "la operacion milagrosa" que recupere todo</li>
+<li>Buscar "la operación milagrosa" que recupere todo</li>
 <li>Dejar de usar Stop Loss "porque siempre me sacan"</li>
 <li>Compararte con otros traders que "si estan ganando"</li>
 </ul>
@@ -1435,7 +1435,7 @@ Tamano de Posicion = Riesgo en $ / (Distancia SL en pips x Valor por pip)
 <h4>El Trader con Mentalidad de Crecimiento</h4>
 <p>Carol Dweck, psicologa de Stanford, identifico dos tipos de mentalidad:</p>
 <ul>
-<li><strong>Fixed Mindset (Mentalidad fija):</strong> "No sirvo para esto." "No tengo talento." "Los que ganan es porque tienen informacion privilegiada." Se rinde ante los obstaculos.</li>
+<li><strong>Fixed Mindset (Mentalidad fija):</strong> "No sirvo para esto." "No tengo talento." "Los que ganan es porque tienen información privilegiada." Se rinde ante los obstaculos.</li>
 <li><strong>Growth Mindset (Mentalidad de crecimiento):</strong> "Aun no soy rentable, pero estoy aprendiendo." "Esta perdida me enseno algo." "Cada error me acerca a la consistencia." Ve los obstaculos como oportunidades de mejora.</li>
 </ul>
 <p><strong>Cada trade perdedor es una LECCION, no un fracaso.</strong> Cada error es INFORMACION, no una condena. Los mejores traders del mundo perdieron miles de trades antes de ser consistentes.</p>
@@ -1451,7 +1451,7 @@ Tamano de Posicion = Riesgo en $ / (Distancia SL en pips x Valor por pip)
 <li>"Una perdida no es un fracaso. Es el costo de hacer negocios."</li>
 <li>"Mi ventaja se manifiesta en SERIES de trades, no en operaciones individuales."</li>
 <li>"Si segui mi plan, fue un buen trade sin importar el resultado."</li>
-<li>"El mercado estara aqui manana. No hay urgencia."</li>
+<li>"El mercado estara aquí mañana. No hay urgencia."</li>
 </ul>
 </div>
 
@@ -1477,24 +1477,24 @@ Tamano de Posicion = Riesgo en $ / (Distancia SL en pips x Valor por pip)
 <li>"Este trade es uno de miles"</li>
 <li>"El mercado no me debe nada"</li>
 <li>"Voy a reducir riesgo y analizar"</li>
-<li>"Habra otra oportunidad manana"</li>
+<li>"Habra otra oportunidad mañana"</li>
 <li>"Necesito 100+ trades para evaluar"</li>
-<li>"El secreto es disciplina y gestion de riesgo"</li>
+<li>"El secreto es disciplina y gestión de riesgo"</li>
 </ul>
 </div>
 </div>
 
 <div class="highlight-box purple">
 <h4>EL MENSAJE FINAL DE ESTA FASE</h4>
-<p>Si has llegado hasta aqui y has absorbido este conocimiento, ya tienes MAS preparacion mental que el 90% de los traders del mundo. La gestion de riesgo y la psicologia son los verdaderos "secretos" del trading rentable. No hay indicador magico, no hay setup perfecto, no hay algoritmo secreto. Hay DISCIPLINA, hay GESTION DE RIESGO, y hay CONTROL EMOCIONAL. Domina estos tres pilares y el mercado se convertira en tu fuente de ingresos consistente. No en un dia, no en una semana, pero con practica y paciencia, LO LOGRARAS.</p>
+<p>Si has llegado hasta aquí y has absorbido este conocimiento, ya tienes MAS preparacion mental que el 90% de los traders del mundo. La gestión de riesgo y la psicología son los verdaderos "secretos" del trading rentable. No hay indicador magico, no hay setup perfecto, no hay algoritmo secreto. Hay DISCIPLINA, hay GESTION DE RIESGO, y hay CONTROL EMOCIONAL. Domina estos tres pilares y el mercado se convertira en tu fuente de ingresos consistente. No en un dia, no en una semana, pero con práctica y paciencia, LO LOGRARAS.</p>
 </div>`,
           keyPoints: [
             "Proceso sobre resultados: un trade que sigue el plan es bueno aunque pierda dinero",
             "Pensamiento probabilistico: cada trade es parte de una serie, el resultado individual no importa",
             "La Zona es el estado mental optimo donde operas sin emocion, solo ejecutas el plan",
             "Las rachas perdedoras son inevitables: reduce riesgo, revisa, no entres en panico",
-            "Growth mindset: cada perdida es una leccion, cada error es informacion valiosa",
-            "Los profesionales NO tienen un secreto magico - tienen disciplina y gestion de riesgo"
+            "Growth mindset: cada perdida es una lección, cada error es información valiosa",
+            "Los profesionales NO tienen un secreto magico - tienen disciplina y gestión de riesgo"
           ],
           quiz: [
             {
@@ -1511,7 +1511,7 @@ Tamano de Posicion = Riesgo en $ / (Distancia SL en pips x Valor por pip)
             },
             {
               question: "Llevas 6 perdidas seguidas. Segun el protocolo, que debes hacer?",
-              options: ["Duplicar el tamano para recuperar rapido", "Parar 2-3 dias, revisar todos los trades de la racha, operar en demo antes de volver", "Seguir operando normal", "Cambiar completamente de estrategia"],
+              options: ["Duplicar el tamano para recuperar rápido", "Parar 2-3 dias, revisar todos los trades de la racha, operar en demo antes de volver", "Seguir operando normal", "Cambiar completamente de estrategia"],
               correctIndex: 1,
               explanation: "Con 5-7 perdidas seguidas, el protocolo dice: parar 2-3 dias, revisar la racha en tu diario, buscar errores sistematicos, y operar en demo antes de volver a real."
             },
@@ -1519,10 +1519,10 @@ Tamano de Posicion = Riesgo en $ / (Distancia SL en pips x Valor por pip)
               question: "Cual es la diferencia CLAVE entre la mentalidad amateur y profesional?",
               options: ["Los profesionales nunca pierden", "Los profesionales se enfocan en el proceso, los amateurs en el resultado", "Los profesionales tienen mejor software", "Los profesionales operan mas horas"],
               correctIndex: 1,
-              explanation: "La diferencia fundamental es el enfoque: amateurs miden exito por dinero ganado/perdido en cada trade. Profesionales miden exito por si ejecutaron su plan correctamente. Los resultados vienen como consecuencia de un buen proceso repetido muchas veces."
+              explanation: "La diferencia fundamental es el enfoque: amateurs miden éxito por dinero ganado/perdido en cada trade. Profesionales miden éxito por si ejecutaron su plan correctamente. Los resultados vienen como consecuencia de un buen proceso repetido muchas veces."
             }
           ],
-          practicalExercise: "Ejercicio de 30 dias: Cada manana antes de operar, lee las 7 frases de reprogramacion mental en voz alta. Luego, evalua tu estado emocional (1-5 en confianza, calma, disciplina, paciencia). Si alguna esta por debajo de 3, NO operes ese dia. Al final de los 30 dias, compara tus resultados de las primeras 2 semanas vs las ultimas 2. Notaras una mejora significativa en tu consistencia y control emocional."
+          practicalExercise: "Ejercicio de 30 dias: Cada mañana antes de operar, lee las 7 frases de reprogramacion mental en voz alta. Luego, evalua tu estado emocional (1-5 en confianza, calma, disciplina, paciencia). Si alguna esta por debajo de 3, NO operes ese dia. Al final de los 30 dias, compara tus resultados de las primeras 2 semanas vs las ultimas 2. Notaras una mejora significativa en tu consistencia y control emocional."
         },
         {
           id: "3-2-4",
@@ -1530,7 +1530,7 @@ Tamano de Posicion = Riesgo en $ / (Distancia SL en pips x Valor por pip)
           duration: "20 min",
           content: `
 <h2>Tu Rutina Diaria: De Amateur a Profesional</h2>
-<div class="analogy-box"><h3>El Atleta Profesional</h3><p>Un futbolista profesional no llega al campo y empieza a jugar. Tiene una rutina: calentamiento, repaso tactico, hidratacion, enfoque mental. Un trader profesional tambien tiene una rutina estructurada. Sin ella, estas improvisando, y los improvisadores pierden.</p></div>
+<div class="analogy-box"><h3>El Atleta Profesional</h3><p>Un futbolista profesional no llega al campo y empieza a jugar. Tiene una rutina: calentamiento, repaso tactico, hidratacion, enfoque mental. Un trader profesional también tiene una rutina estructurada. Sin ella, estas improvisando, y los improvisadores pierden.</p></div>
 <h3>Rutina Pre-Market (30 min antes de operar)</h3>
 <div class="strategy-box"><h4>Checklist Matutina</h4><ol>
 <li><strong>Revisa Forex Factory:</strong> Identifica noticias de alto impacto del dia. Marca las horas en tu calendario.</li>
@@ -1544,7 +1544,7 @@ Tamano de Posicion = Riesgo en $ / (Distancia SL en pips x Valor por pip)
 <div class="grid-cards">
 <div class="card green-border"><h4>HACER</h4><ul>
 <li>Esperar que el precio llegue a TUS zonas</li>
-<li>Buscar confirmacion antes de entrar</li>
+<li>Buscar confirmación antes de entrar</li>
 <li>Calcular position size ANTES de cada trade</li>
 <li>Poner SL y TP INMEDIATAMENTE</li>
 <li>Registrar cada trade en el diario</li>
@@ -1577,17 +1577,17 @@ Tamano de Posicion = Riesgo en $ / (Distancia SL en pips x Valor por pip)
 <li>Ajustes a la estrategia (si hay datos suficientes)</li>
 </ul></div>
 <div class="highlight-box green"><h4>La Formula del Exito en Trading</h4>
-<p><strong>Buena estrategia + Buena gestion de riesgo + Rutina consistente + Diario de trading = RENTABILIDAD</strong></p>
+<p><strong>Buena estrategia + Buena gestión de riesgo + Rutina consistente + Diario de trading = RENTABILIDAD</strong></p>
 <p>No es magia. Es disciplina repetida dia tras dia. Los que siguen esta formula por 6-12 meses se convierten en traders rentables. Los que buscan atajos pierden su dinero.</p></div>`,
           keyPoints: [
-            "Pre-market (30 min): noticias, analisis top-down, zonas, sesgo, check emocional",
+            "Pre-market (30 min): noticias, análisis top-down, zonas, sesgo, check emocional",
             "Durante sesion: esperar zonas, confirmar, registrar, max 3 trades/dia",
             "Post-market (15 min): resultado, plan seguido?, mejor/peor decision, capturas",
             "Revision semanal: win rate, R:R, patron de errores, ajustes",
-            "Buena estrategia + gestion riesgo + rutina + diario = RENTABILIDAD"
+            "Buena estrategia + gestión riesgo + rutina + diario = RENTABILIDAD"
           ],
           quiz: [
-            { question: "Que deberias hacer PRIMERO en tu rutina pre-market?", options: ["Abrir un trade rapido", "Revisar Forex Factory para noticias de alto impacto", "Poner indicadores nuevos", "Mirar Twitter"], correctIndex: 1, explanation: "Lo primero es revisar las noticias. Un dato de alto impacto puede invalidar todo tu analisis tecnico. Siempre saber que noticias hay ANTES de operar." },
+            { question: "Que deberias hacer PRIMERO en tu rutina pre-market?", options: ["Abrir un trade rápido", "Revisar Forex Factory para noticias de alto impacto", "Poner indicadores nuevos", "Mirar Twitter"], correctIndex: 1, explanation: "Lo primero es revisar las noticias. Un dato de alto impacto puede invalidar todo tu análisis técnico. Siempre saber que noticias hay ANTES de operar." },
             { question: "Si tu check emocional da 2/5 en calma, que deberias hacer?", options: ["Operar con menos riesgo", "NO operar ese dia", "Operar solo cripto", "Ignorar y operar igual"], correctIndex: 1, explanation: "Si tu estado emocional esta por debajo de 3/5 en cualquier categoria, la decision correcta es NO operar. Tradear con emociones negativas lleva a malas decisiones." },
             { question: "Con que frecuencia deberias hacer una revision completa de tu rendimiento?", options: ["Cada trade", "Diariamente (breve) y semanalmente (completa)", "Solo al final del mes", "Nunca, los resultados hablan solos"], correctIndex: 1, explanation: "Revision diaria breve (15 min post-market) + revision semanal completa (30 min dominical). Esto te permite detectar patrones y mejorar constantemente." }
           ]
@@ -1608,18 +1608,18 @@ Tamano de Posicion = Riesgo en $ / (Distancia SL en pips x Valor por pip)
 <li><strong>7 perdidas seguidas:</strong> 0.78% (pasara eventualmente)</li>
 <li><strong>10 perdidas seguidas:</strong> 0.1% (raro pero POSIBLE)</li>
 </ul>
-<p><strong>Con 200+ trades al ano, una racha de 5-7 perdidas es INEVITABLE.</strong></p></div>
+<p><strong>Con 200+ trades al año, una racha de 5-7 perdidas es INEVITABLE.</strong></p></div>
 <h3>El Protocolo de Recuperacion de 5 Pasos</h3>
 <div class="strategy-box"><h4>Cuando llevas 3+ perdidas seguidas</h4><ol>
 <li><strong>PARA.</strong> Cierra la plataforma. No operes hoy. Punto.</li>
-<li><strong>RESPIRA.</strong> Haz ejercicio, sal a caminar, desconecta del mercado minimo 24 horas.</li>
+<li><strong>RESPIRA.</strong> Haz ejercicio, sal a caminar, desconecta del mercado mínimo 24 horas.</li>
 <li><strong>ANALIZA.</strong> Revisa los trades perdedores con la cabeza fria: seguiste tu plan? Los setups eran validos? El mercado estaba en condiciones favorables?</li>
 <li><strong>CLASIFICA.</strong> Las perdidas fueron por: a) Mala ejecucion (tu culpa), b) El mercado (condiciones adversas), c) Mala suerte (setups validos que no funcionaron).</li>
 <li><strong>AJUSTA.</strong> Si fue mala ejecucion: refuerza la disciplina. Si fue el mercado: cambia de par o espera mejores condiciones. Si fue mala suerte: no cambies NADA, sigue con tu plan.</li>
 </ol></div>
 <div class="highlight-box red"><h4>Lo que NO Debes Hacer en una Racha Perdedora</h4>
 <ul>
-<li>Aumentar el tamano de posicion para "recuperar rapido"</li>
+<li>Aumentar el tamano de posición para "recuperar rápido"</li>
 <li>Cambiar de estrategia</li>
 <li>Operar mas frecuentemente</li>
 <li>Quitar o mover el Stop Loss</li>
@@ -1628,7 +1628,7 @@ Tamano de Posicion = Riesgo en $ / (Distancia SL en pips x Valor por pip)
 </ul></div>
 <div class="highlight-box green"><h4>Lo que SI Debes Hacer</h4>
 <ul>
-<li>REDUCIR el tamano de posicion a la mitad temporalmente</li>
+<li>REDUCIR el tamano de posición a la mitad temporalmente</li>
 <li>Volver a demo por 1-2 dias si es necesario</li>
 <li>Revisar tu diario de trading con calma</li>
 <li>Hablar con un mentor o accountability partner</li>
@@ -1636,16 +1636,16 @@ Tamano de Posicion = Riesgo en $ / (Distancia SL en pips x Valor por pip)
 <li>Confiar en el proceso: si tu backtest es positivo en 100+ trades, 5 perdidas no invalidan la estrategia</li>
 </ul></div>
 <div class="highlight-box blue"><h4>La Regla de Oro</h4>
-<p>Si tu estrategia es rentable en un backtest de 100+ trades, una racha de 5-10 perdidas es ESTADISTICAMENTE NORMAL. No cambies la estrategia. Cambia tu gestion emocional. El trader que sobrevive a la racha con la disciplina intacta es el que se convierte en profesional.</p></div>`,
+<p>Si tu estrategia es rentable en un backtest de 100+ trades, una racha de 5-10 perdidas es ESTADISTICAMENTE NORMAL. No cambies la estrategia. Cambia tu gestión emocional. El trader que sobrevive a la racha con la disciplina intacta es el que se convierte en profesional.</p></div>`,
           keyPoints: [
-            "Con 50% win rate, una racha de 5-7 perdidas es INEVITABLE a lo largo del ano",
+            "Con 50% win rate, una racha de 5-7 perdidas es INEVITABLE a lo largo del año",
             "Protocolo: PARA → RESPIRA → ANALIZA → CLASIFICA → AJUSTA",
             "NUNCA aumentes riesgo ni cambies estrategia durante una racha perdedora",
-            "REDUCE el tamano de posicion a la mitad temporalmente",
+            "REDUCE el tamano de posición a la mitad temporalmente",
             "Si el backtest es positivo en 100+ trades, 5 perdidas no invalidan la estrategia"
           ],
           quiz: [
-            { question: "Con un win rate del 50%, cual es la probabilidad de tener 5 perdidas seguidas?", options: ["0% - imposible", "3.1% - raro pero inevitable con suficientes trades", "50% - muy probable", "25%"], correctIndex: 1, explanation: "Con 50% win rate, la probabilidad de 5 perdidas consecutivas es (0.5)^5 = 3.1%. Con 200+ trades al ano, pasara." },
+            { question: "Con un win rate del 50%, cual es la probabilidad de tener 5 perdidas seguidas?", options: ["0% - imposible", "3.1% - raro pero inevitable con suficientes trades", "50% - muy probable", "25%"], correctIndex: 1, explanation: "Con 50% win rate, la probabilidad de 5 perdidas consecutivas es (0.5)^5 = 3.1%. Con 200+ trades al año, pasara." },
             { question: "Que deberias hacer PRIMERO cuando llevas 3+ perdidas seguidas?", options: ["Abrir mas operaciones para recuperar", "PARAR de operar y cerrar la plataforma", "Cambiar de estrategia", "Duplicar el riesgo"], correctIndex: 1, explanation: "Lo primero es PARAR. No puedes tomar buenas decisiones con las emociones alteradas. Desconecta y vuelve cuando estes calmado." },
             { question: "Si tu backtest muestra 55% win rate en 200 trades pero llevas 6 perdidas seguidas, que haces?", options: ["Cambias de estrategia inmediatamente", "Reduces el tamano a la mitad pero sigues el plan - la racha es estadisticamente normal", "Dejas el trading", "Triplicas el riesgo"], correctIndex: 1, explanation: "Con 200 trades de backtest positivo, 6 perdidas seguidas es normal estadisticamente. Reduce el riesgo temporalmente pero NO cambies la estrategia." }
           ]
