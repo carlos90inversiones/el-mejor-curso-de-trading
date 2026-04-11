@@ -72,17 +72,17 @@ export const PHASE_5: Phase = {
 
 <h3>Profit Split: Como se Reparten las Ganancias</h3>
 <div class="grid-cards">
-<div class="card"><h4>Estandar: 80/20</h4><p>Tu te quedas con el 80% de las ganancias. La prop firm se queda con el 20%. Es lo mas comun en la industria.</p></div>
+<div class="card"><h4>Estandar: 80/20</h4><p>Tu te quedas con el 80% de las ganancias. La prop firm se queda con el 20%. Es lo más comun en la industria.</p></div>
 <div class="card"><h4>Premium: 90/10</h4><p>Algunas firms ofrecen 90% para el trader despues de cierto volumen o antiguedad. FTMO lo ofrece tras el primer retiro exitoso.</p></div>
 <div class="card"><h4>Con Scaling: Hasta 100%</h4><p>Firms como Funded Next ofrecen hasta 90-95% con planes de escalado que aumentan tu capital y tu porcentaje.</p></div>
 </div>
 
 <h3>Las Principales Prop Firms del Mercado</h3>
 <div class="grid-cards">
-<div class="card"><h4>FTMO</h4><p>La mas reconocida del mundo. 2 fases de evaluación. Profit split 80-90%. Cuenta desde 10K hasta 200K. Muy estricta pero muy profesional.</p></div>
+<div class="card"><h4>FTMO</h4><p>La más reconocida del mundo. 2 fases de evaluación. Profit split 80-90%. Cuenta desde 10K hasta 200K. Muy estricta pero muy profesional.</p></div>
 <div class="card"><h4>Funded Next</h4><p>Crecimiento rápido. Modelo Express (1 fase) o Evaluation (2 fases). Hasta 95% profit split con scaling. Reembolso de tarifa tras primer retiro.</p></div>
 <div class="card"><h4>The Funded Trader</h4><p>Multiples tipos de challenge. Royal, Knight, Dragon. Cuentas hasta 400K. Profit split hasta 90%. Buena atencion al cliente.</p></div>
-<div class="card"><h4>MyForexFunds / True Forex Funds</h4><p>Opciones mas accesibles. Tarifas mas bajas. Ideales para empezar con cuentas pequenas y ganar experiencia en el mundo fondeado.</p></div>
+<div class="card"><h4>MyForexFunds / True Forex Funds</h4><p>Opciones más accesibles. Tarifas más bajas. Ideales para empezar con cuentas pequenas y ganar experiencia en el mundo fondeado.</p></div>
 </div>
 
 <h3>1 Fase vs 2 Fases: Cual Elegir?</h3>
@@ -91,7 +91,7 @@ export const PHASE_5: Phase = {
 <h4>Challenge 1 Fase</h4>
 <ul>
 <li>Solo una evaluación para pasar</li>
-<li>Objetivo de profit mas alto (8-10%)</li>
+<li>Objetivo de profit más alto (8-10%)</li>
 <li>Mas rápido si lo pasas</li>
 <li>Mayor presion en una sola fase</li>
 <li>Ideal si tienes experiencia y confianza</li>
@@ -103,7 +103,7 @@ export const PHASE_5: Phase = {
 <li>Fase 1: objetivo ~8-10% profit</li>
 <li>Fase 2: objetivo ~5% profit</li>
 <li>Mas tiempo total pero menos presion por fase</li>
-<li>Drawdown mas manejable</li>
+<li>Drawdown más manejable</li>
 <li>Ideal para principiantes en prop firms</li>
 </ul>
 </div>
@@ -113,8 +113,8 @@ export const PHASE_5: Phase = {
 <div class="warning-box">
 <h4>Reglas que DEBES Respetar</h4>
 <ul>
-<li><strong>Drawdown Maximo Diario:</strong> No puedes perder mas del 5% de la cuenta en UN DIA</li>
-<li><strong>Drawdown Maximo Total:</strong> No puedes perder mas del 10% del balance inicial TOTAL</li>
+<li><strong>Drawdown Maximo Diario:</strong> No puedes perder más del 5% de la cuenta en UN DIA</li>
+<li><strong>Drawdown Maximo Total:</strong> No puedes perder más del 10% del balance inicial TOTAL</li>
 <li><strong>Objetivo de Profit:</strong> Generalmente 8-10% en Fase 1, 5% en Fase 2</li>
 <li><strong>Dias Minimos de Trading:</strong> Normalmente 4-5 dias minimos operando</li>
 <li><strong>Sin Noticias de Alto Impacto:</strong> Muchas firms prohiben operar 2 min antes/despues de noticias rojas</li>
@@ -129,17 +129,17 @@ export const PHASE_5: Phase = {
           keyPoints: [
             "Las Prop Firms te dan capital para operar sin arriesgar tu dinero — tu demuestras habilidad y te quedas con 70-90% de ganancias",
             "Principales firms: FTMO, Funded Next, The Funded Trader — cada una con reglas distintas",
-            "Challenge 1 fase es mas rápido pero con mas presion; 2 fases es mas gradual y recomendable para empezar",
+            "Challenge 1 fase es más rápido pero con más presion; 2 fases es más gradual y recomendable para empezar",
             "Reglas criticas: drawdown diario 5%, drawdown total 10%, dias minimos de trading",
             "Leer TODAS las reglas antes de empezar es obligatorio — una violacion elimina la cuenta sin importar el profit"
           ],
           quiz: [
-            { question: "Que es una Prop Firm?", options: ["Un banco que da prestamos a traders", "Una empresa que proporciona capital a traders para operar a cambio de un porcentaje de ganancias", "Una plataforma de trading automatico", "Un fondo de inversion tradicional"], correctIndex: 1, explanation: "Una Prop Firm proporciona capital a traders. El trader demuestra su habilidad en un challenge y luego opera la cuenta fondeada, quedandose con el 70-90% de las ganancias." },
-            { question: "Cual es el drawdown máximo diario tipico en un challenge?", options: ["2%", "5%", "10%", "15%"], correctIndex: 1, explanation: "La mayoria de prop firms establecen un drawdown máximo diario del 5%. Si pierdes mas que eso en un solo dia, fallas el challenge." },
-            { question: "Cual es la ventaja principal de un challenge de 2 fases vs 1 fase?", options: ["Es mas barato", "Tiene menos presion por fase y drawdown mas manejable", "Te dan mas capital", "No tiene reglas de drawdown"], correctIndex: 1, explanation: "El challenge de 2 fases divide el objetivo en dos partes, lo que reduce la presion en cada fase individual y hace el drawdown mas manejable." },
-            { question: "Que profit split es el mas comun en la industria?", options: ["50/50", "60/40", "80/20 (80% para el trader)", "100% para el trader"], correctIndex: 2, explanation: "El profit split estandar es 80/20 — el trader se queda con el 80% de las ganancias y la prop firm con el 20%." }
+            { question: "Que es una Prop Firm?", options: ["Un banco que da prestamos a traders", "Una empresa que proporciona capital a traders para operar a cambio de un porcentaje de ganancias", "Una plataforma de trading automático", "Un fondo de inversion tradicional"], correctIndex: 1, explanation: "Una Prop Firm proporciona capital a traders. El trader demuestra su habilidad en un challenge y luego opera la cuenta fondeada, quedandose con el 70-90% de las ganancias." },
+            { question: "Cual es el drawdown máximo diario típico en un challenge?", options: ["2%", "5%", "10%", "15%"], correctIndex: 1, explanation: "La mayoria de prop firms establecen un drawdown máximo diario del 5%. Si pierdes más que eso en un solo dia, fallas el challenge." },
+            { question: "Cual es la ventaja principal de un challenge de 2 fases vs 1 fase?", options: ["Es más barato", "Tiene menos presion por fase y drawdown más manejable", "Te dan más capital", "No tiene reglas de drawdown"], correctIndex: 1, explanation: "El challenge de 2 fases divide el objetivo en dos partes, lo que reduce la presion en cada fase individual y hace el drawdown más manejable." },
+            { question: "Que profit split es el más comun en la industria?", options: ["50/50", "60/40", "80/20 (80% para el trader)", "100% para el trader"], correctIndex: 2, explanation: "El profit split estandar es 80/20 — el trader se queda con el 80% de las ganancias y la prop firm con el 20%." }
           ],
-          practicalExercise: "Visita las paginas web de FTMO (ftmo.com) y Funded Next (fundednext.com). Compara: 1) Tarifas del challenge para una cuenta de 100K. 2) Reglas de drawdown. 3) Profit split. 4) Numero de fases. Crea una tabla comparativa y decide cual seria mejor para ti y por que."
+          practicalExercise: "Visita las páginas web de FTMO (ftmo.com) y Funded Next (fundednext.com). Compara: 1) Tarifas del challenge para una cuenta de 100K. 2) Reglas de drawdown. 3) Profit split. 4) Numero de fases. Crea una tabla comparativa y decide cual seria mejor para ti y por que."
         },
         {
           id: "5-1-2",
@@ -172,7 +172,7 @@ export const PHASE_5: Phase = {
 <ul>
 <li><strong>Riesgo por trade:</strong> 0.5% MAXIMO</li>
 <li><strong>Objetivo semanal:</strong> 2,000$ - 3,000$ (2-3%)</li>
-<li><strong>Pares a operar:</strong> Solo EUR/USD y GBP/USD (los mas liquidos, spreads bajos)</li>
+<li><strong>Pares a operar:</strong> Solo EUR/USD y GBP/USD (los más liquidos, spreads bajos)</li>
 <li><strong>Horario:</strong> Solo solapamiento London-NY (13:00-17:00 UTC)</li>
 <li><strong>Maximo 2 trades al dia</strong></li>
 <li><strong>Mentalidad:</strong> "Estoy conociendo la plataforma y adaptandome"</li>
@@ -189,7 +189,7 @@ export const PHASE_5: Phase = {
 <li><strong>Maximo 2-3 trades al dia</strong></li>
 <li><strong>Mentalidad:</strong> "Ya conozco el ritmo, aumento ligeramente"</li>
 </ul>
-<p>Si la semana 1 fue rentable, tienes colchon. Ahora puedes arriesgar un poco mas por trade pero siempre con disciplina.</p>
+<p>Si la semana 1 fue rentable, tienes colchon. Ahora puedes arriesgar un poco más por trade pero siempre con disciplina.</p>
 </div>
 
 <div class="highlight-box green">
@@ -254,13 +254,13 @@ export const PHASE_5: Phase = {
 <div class="grid-cards">
 <div class="card"><h4>TIER 1 - Los Mejores</h4><p><strong>EUR/USD:</strong> Spread bajo, movimiento predecible. <strong>GBP/USD:</strong> Mas volatil pero muy técnico. Ideal para la mayoria de estrategias.</p></div>
 <div class="card"><h4>TIER 2 - Buenos</h4><p><strong>USD/JPY:</strong> Buen movimiento en sesion asiatica. <strong>XAUUSD (Oro):</strong> Mucho movimiento, ideal si dominas su comportamiento.</p></div>
-<div class="card"><h4>EVITAR en Challenges</h4><p><strong>Pares exoticos:</strong> Spreads altos, movimientos impredecibles. <strong>Cripto:</strong> Volatilidad extrema. <strong>Indices:</strong> Solo si tienes experiencia especifica con ellos.</p></div>
+<div class="card"><h4>EVITAR en Challenges</h4><p><strong>Pares exoticos:</strong> Spreads altos, movimientos impredecibles. <strong>Cripto:</strong> Volatilidad extrema. <strong>Indices:</strong> Solo si tienes experiencia específica con ellos.</p></div>
 </div>
 
 <h3>Horarios Optimos de Trading</h3>
 <div class="highlight-box blue">
 <h4>Ventana de Oro: 13:00-17:00 UTC</h4>
-<p>El solapamiento London-NY es tu mejor amigo. Maximo volumen, mejores movimientos, spreads mas bajos. Opera aquí y evita la tentacion de tradear fuera de horario. Menos trades de calidad > muchos trades mediocres.</p>
+<p>El solapamiento London-NY es tu mejor amigo. Maximo volumen, mejores movimientos, spreads más bajos. Opera aquí y evita la tentacion de tradear fuera de horario. Menos trades de calidad > muchos trades mediocres.</p>
 </div>`,
           keyPoints: [
             "Riesgo 0.5-1% por trade máximo — la consistencia gana challenges, no las operaciones grandes",
@@ -272,9 +272,9 @@ export const PHASE_5: Phase = {
           ],
           quiz: [
             { question: "Cual deberia ser tu riesgo máximo por trade en la semana 1 de un challenge?", options: ["2%", "1.5%", "0.5%", "3%"], correctIndex: 2, explanation: "En la semana 1 debes ser ultra-conservador con 0.5% de riesgo máximo para adaptarte y ganar confianza sin arriesgar el challenge." },
-            { question: "Que debes hacer si llevas un drawdown del 4% en un dia?", options: ["Duplicar el riesgo para recuperar", "Seguir operando con el mismo riesgo", "Dejar de operar por hoy inmediatamente", "Cambiar a otros pares mas volatiles"], correctIndex: 2, explanation: "Al alcanzar un 4% de drawdown diario, debes parar de operar inmediatamente. El drawdown máximo diario es 5%, y necesitas proteger ese margen." },
+            { question: "Que debes hacer si llevas un drawdown del 4% en un dia?", options: ["Duplicar el riesgo para recuperar", "Seguir operando con el mismo riesgo", "Dejar de operar por hoy inmediatamente", "Cambiar a otros pares más volatiles"], correctIndex: 2, explanation: "Al alcanzar un 4% de drawdown diario, debes parar de operar inmediatamente. El drawdown máximo diario es 5%, y necesitas proteger ese margen." },
             { question: "Cuales son los mejores pares para un challenge?", options: ["Pares exoticos por su volatilidad", "EUR/USD y GBP/USD por sus spreads bajos y movimiento técnico", "Solo criptomonedas", "Cualquier par es igual de bueno"], correctIndex: 1, explanation: "EUR/USD y GBP/USD son los mejores para challenges por sus spreads bajos, alta liquidez y movimientos tecnicos predecibles." },
-            { question: "Si ya tienes un 9% de profit en la semana 3, que debes hacer?", options: ["Ser agresivo para llegar al 15%", "Reducir riesgo a 0.5% y cerrar el último 1% con paciencia", "Dejar de operar y esperar", "Aumentar el tamano de posición al 3%"], correctIndex: 1, explanation: "Con 9% de profit solo necesitas 1% mas. Reduce el riesgo al mínimo (0.5%) y busca 1-2 buenos trades para cerrar. No arriesgues lo que ya ganaste." }
+            { question: "Si ya tienes un 9% de profit en la semana 3, que debes hacer?", options: ["Ser agresivo para llegar al 15%", "Reducir riesgo a 0.5% y cerrar el último 1% con paciencia", "Dejar de operar y esperar", "Aumentar el tamano de posición al 3%"], correctIndex: 1, explanation: "Con 9% de profit solo necesitas 1% más. Reduce el riesgo al mínimo (0.5%) y busca 1-2 buenos trades para cerrar. No arriesgues lo que ya ganaste." }
           ],
           practicalExercise: "Abre una cuenta demo con las mismas reglas de un challenge (100K de balance, 5% drawdown diario, 10% drawdown total). Opera durante 2 semanas siguiendo el plan de las semanas 1 y 2 al pie de la letra. Lleva un diario de cada trade con: par, riesgo %, R:R, resultado, y como te sentiste. Si no puedes pasar la demo, no pagues un challenge real."
         },
@@ -354,13 +354,13 @@ export const PHASE_5: Phase = {
 <div class="warning-box">
 <h4>Los 7 Errores que Matan Cuentas Fondeadas</h4>
 <ol>
-<li><strong>Sobreoperar:</strong> "Ya estoy fondeado, puedo tomar mas riesgos" — NO. Mismo plan que en el challenge.</li>
+<li><strong>Sobreoperar:</strong> "Ya estoy fondeado, puedo tomar más riesgos" — NO. Mismo plan que en el challenge.</li>
 <li><strong>Revenge trading:</strong> Perder un dia y querer recuperar inmediatamente. Es la causa #1 de perder cuentas.</li>
 <li><strong>Ignorar el drawdown:</strong> Estar al 7-8% de drawdown y seguir operando agresivamente.</li>
 <li><strong>Cambiar de estrategia:</strong> "Voy a probar algo nuevo con la cuenta fondeada" — Usa SOLO lo que funciono en el challenge.</li>
 <li><strong>No retirar ganancias:</strong> Acumular 15% de profit sin retirar y luego perderlo todo en una mala racha.</li>
 <li><strong>Trading emocional post-retiro:</strong> Despues de retirar ganancias, sentir que "necesitas" recuperar lo que retiraste.</li>
-<li><strong>No tener backup:</strong> Perder la unica cuenta fondeada y no tener dinero para otro challenge.</li>
+<li><strong>No tener backup:</strong> Perder la única cuenta fondeada y no tener dinero para otro challenge.</li>
 </ol>
 </div>
 
@@ -377,10 +377,10 @@ export const PHASE_5: Phase = {
             "Siempre ten reservas para 2-3 challenges por si pierdes una cuenta"
           ],
           quiz: [
-            { question: "Cual es la prioridad #1 al operar una cuenta fondeada?", options: ["Maximizar el profit lo mas rápido posible", "Proteger el drawdown y no perder la cuenta", "Hacer muchas operaciones al dia", "Probar nuevas estrategias"], correctIndex: 1, explanation: "La prioridad número 1 es proteger el drawdown y no perder la cuenta. El profit es secundario — una cuenta viva genera ganancias mes a mes." },
+            { question: "Cual es la prioridad #1 al operar una cuenta fondeada?", options: ["Maximizar el profit lo más rápido posible", "Proteger el drawdown y no perder la cuenta", "Hacer muchas operaciones al dia", "Probar nuevas estrategias"], correctIndex: 1, explanation: "La prioridad número 1 es proteger el drawdown y no perder la cuenta. El profit es secundario — una cuenta viva genera ganancias mes a mes." },
             { question: "Como funciona el scaling con multiples cuentas?", options: ["Operas estrategias diferentes en cada cuenta", "Usas un trade copier para ejecutar el mismo trade en todas las cuentas simultaneamente", "Solo puedes tener una cuenta a la vez", "Necesitas aprobar un examen especial"], correctIndex: 1, explanation: "Con un trade copier, ejecutas la misma operación en todas tus cuentas simultaneamente. Mismos trades, multiples cuentas = multiples ganancias." },
             { question: "Que porcentaje de ganancias deberias retirar regularmente?", options: ["100% siempre", "60-70%, dejando 30-40% como colchon", "Nunca retirar, dejar todo en la cuenta", "Solo 10%"], correctIndex: 1, explanation: "Retira el 60-70% de tus ganancias y deja un 30-40% como colchon en la cuenta. Esto protege contra drawdowns futuros y asegura que cobras por tu trabajo." },
-            { question: "Cual es el error mas comun despues de ser fondeado?", options: ["Operar muy poco", "Relajar la disciplina y tomar mas riesgos de los necesarios", "Retirar demasiado rápido", "Cambiar de broker"], correctIndex: 1, explanation: "El error mas comun es relajar la disciplina: sobreoperar, aumentar el riesgo, o hacer revenge trading. Los traders exitosos operan igual que en el challenge." }
+            { question: "Cual es el error más comun despues de ser fondeado?", options: ["Operar muy poco", "Relajar la disciplina y tomar más riesgos de los necesarios", "Retirar demasiado rápido", "Cambiar de broker"], correctIndex: 1, explanation: "El error más comun es relajar la disciplina: sobreoperar, aumentar el riesgo, o hacer revenge trading. Los traders exitosos operan igual que en el challenge." }
           ],
           practicalExercise: "Crea tu 'Plan de Trader Fondeado' en un documento: 1) Cuantas cuentas quieres tener en 6 meses. 2) Tu riesgo por trade y reglas de drawdown. 3) Plan de retiro (frecuencia, porcentaje). 4) Presupuesto para challenges (cuanto destinas al mes). 5) Que haras si pierdes tu primera cuenta fondeada. 6) Tu horario diario de trading. Este documento sera tu guia cuando estes fondeado."
         }
@@ -444,7 +444,7 @@ export const PHASE_5: Phase = {
           quiz: [
             { question: "En España, que porcentaje de impuestos pagas sobre los primeros 6,000 euros de ganancias de trading?", options: ["10%", "19%", "25%", "30%"], correctIndex: 1, explanation: "Los primeros 6,000 euros de ganancias de capital en España tributan al 19% en la base del ahorro del IRPF." },
             { question: "Que porcentaje de tus ganancias deberias separar para impuestos?", options: ["5%", "10%", "25-30%", "50%"], correctIndex: 2, explanation: "Separar 25-30% desde el primer dia asegura que tendras cubierta la factura fiscal sin sorpresas." },
-            { question: "Que documentos necesitas guardar para la declaracion fiscal?", options: ["Solo el balance final", "Registros de todas las operaciones + statements del broker", "Nada, el broker lo reporta automaticamente", "Solo las operaciones ganadoras"], correctIndex: 1, explanation: "Necesitas registros completos de todas las operaciones (ganadoras y perdedoras) mas los informes oficiales del broker." }
+            { question: "Que documentos necesitas guardar para la declaracion fiscal?", options: ["Solo el balance final", "Registros de todas las operaciones + statements del broker", "Nada, el broker lo reporta automáticamente", "Solo las operaciones ganadoras"], correctIndex: 1, explanation: "Necesitas registros completos de todas las operaciones (ganadoras y perdedoras) más los informes oficiales del broker." }
           ]
         },
         {
@@ -472,7 +472,7 @@ export const PHASE_5: Phase = {
 <li>Split: 80% (hasta 90%)</li>
 <li>Periodo: 30 + 60 dias</li>
 <li>Pago: 1-2 dias laborables</li>
-<li><strong>Pro:</strong> La mas respetada, buena reputacion</li>
+<li><strong>Pro:</strong> La más respetada, buena reputacion</li>
 <li><strong>Con:</strong> Reglas estrictas, precio medio-alto</li>
 </ul></div>
 <div class="comparison-col">
@@ -504,10 +504,10 @@ export const PHASE_5: Phase = {
 <li>Evita las que tienen ofertas "demasiado buenas para ser verdad"</li>
 </ul></div>`,
           keyPoints: [
-            "FTMO es la mas respetada pero no la mas barata",
+            "FTMO es la más respetada pero no la más barata",
             "Empieza con cuentas pequenas (10K-25K) para tu primer challenge",
             "Verifica reviews en TrustPilot y pruebas de pago antes de comprar",
-            "El profit split tipico es 80%, algunas escalan hasta 90%",
+            "El profit split típico es 80%, algunas escalan hasta 90%",
             "Evita prop firms nuevas sin historial verificable"
           ],
           quiz: [
@@ -524,7 +524,7 @@ export const PHASE_5: Phase = {
 <div class="analogy-box"><h3>El Examen de Conducir</h3><p>Recuerdas tu examen de conducir? Sabias conducir, pero los nervios te hacian cometer errores que normalmente no cometirias. El challenge de una prop firm es EXACTAMENTE igual. Tu estrategia funciona en demo, pero la presion del challenge te sabotea.</p></div>
 <h3>Los 5 Momentos Criticos del Challenge</h3>
 <div class="psychology-card fear"><h4>1. El Primer Trade</h4><p>Nervios extremos. Tendencia a no entrar o entrar con tamano muy pequeno por miedo.</p>
-<p><strong>Solucion:</strong> Tu primer trade del challenge deberia ser IDENTICO a tus trades de demo. Mismo riesgo (0.5-1%), mismo setup. No es "especial" - es uno mas.</p></div>
+<p><strong>Solucion:</strong> Tu primer trade del challenge deberia ser IDENTICO a tus trades de demo. Mismo riesgo (0.5-1%), mismo setup. No es "especial" - es uno más.</p></div>
 <div class="psychology-card greed"><h4>2. Llevas +3% Rapido</h4><p>Sensacion de invencibilidad. Tendencia a aumentar riesgo o sobreoperar. "Si sigo así, paso en una semana!"</p>
 <p><strong>Solucion:</strong> Mantener EXACTAMENTE el mismo riesgo. Incluso considerar reducir a 0.5%. Las ganancias ya estan ahi, protegelas.</p></div>
 <div class="psychology-card revenge"><h4>3. Primera Racha Perdedora (-2%)</h4><p>Panico. "Estoy perdiendo el challenge!" Tendencia a revenge trading o quitar SL.</p>
@@ -532,10 +532,10 @@ export const PHASE_5: Phase = {
 <div class="psychology-card fomo"><h4>4. Ultimos Dias y Te Falta 2%</h4><p>Desesperacion. Tendencia a aumentar riesgo dramaticamente. "Necesito una operación grande!"</p>
 <p><strong>Solucion:</strong> NUNCA aumentes riesgo al final. Es MEJOR no pasar y comprar otro challenge que violar el drawdown. Mantener disciplina.</p></div>
 <div class="psychology-card hope"><h4>5. Estas a 0.5% del Objetivo</h4><p>Ansiedad extrema. Cada pip cuenta. Tendencia a cerrar trades ganadores demasiado pronto.</p>
-<p><strong>Solucion:</strong> Trata este trade como cualquier otro. Pon TP normal. Si llega, genial. Si no, habra mas oportunidades.</p></div>
+<p><strong>Solucion:</strong> Trata este trade como cualquier otro. Pon TP normal. Si llega, genial. Si no, habra más oportunidades.</p></div>
 <h3>El Mantra del Challenge</h3>
 <div class="highlight-box green"><h4>Repite esto antes de cada sesion de trading en el challenge:</h4>
-<p>"No estoy intentando pasar un challenge. Estoy ejecutando mi plan de trading. El resultado es una consecuencia del proceso. Mi unico objetivo es seguir mis reglas, trade por trade."</p></div>
+<p>"No estoy intentando pasar un challenge. Estoy ejecutando mi plan de trading. El resultado es una consecuencia del proceso. Mi único objetivo es seguir mis reglas, trade por trade."</p></div>
 <div class="highlight-box blue"><h4>La Estadistica Clave</h4>
 <p>Solo el 10-15% de los traders pasan su primer challenge. PERO, de los que eventualmente pasan, el 80% lo hicieron en su segundo o tercer intento. Fallar el primero es NORMAL y parte del aprendizaje. No te rindas.</p></div>`,
           keyPoints: [
@@ -546,9 +546,9 @@ export const PHASE_5: Phase = {
             "Enfocate en el PROCESO (seguir tu plan) no en el RESULTADO (pasar el challenge)"
           ],
           quiz: [
-            { question: "Llevas +4% en tu challenge y quedan 2 semanas. Que haces?", options: ["Aumentas riesgo para llegar rápido al 8%", "Mantienes o reduces el riesgo para proteger las ganancias", "Dejas de operar y esperas", "Cambias de estrategia"], correctIndex: 1, explanation: "Con +4%, lo inteligente es proteger lo ganado. Mantener 0.5% de riesgo o incluso reducir a 0.25%. Es mejor tardar mas que arriesgar las ganancias." },
+            { question: "Llevas +4% en tu challenge y quedan 2 semanas. Que haces?", options: ["Aumentas riesgo para llegar rápido al 8%", "Mantienes o reduces el riesgo para proteger las ganancias", "Dejas de operar y esperas", "Cambias de estrategia"], correctIndex: 1, explanation: "Con +4%, lo inteligente es proteger lo ganado. Mantener 0.5% de riesgo o incluso reducir a 0.25%. Es mejor tardar más que arriesgar las ganancias." },
             { question: "Que porcentaje de traders pasa su PRIMER challenge?", options: ["50%", "30%", "10-15%", "90%"], correctIndex: 2, explanation: "Solo el 10-15% pasa el primer intento. Pero el 80% de los que eventualmente pasan lo logran en el 2do o 3er intento. Fallar es parte del proceso." },
-            { question: "Cual deberia ser tu enfoque mental durante un challenge?", options: ["Ganar lo máximo posible lo mas rápido posible", "Ejecutar tu plan de trading correctamente, trade por trade", "Intentar estrategias nuevas para encontrar la mejor", "Copiar a otros traders que ya pasaron"], correctIndex: 1, explanation: "Enfocate en el PROCESO: ejecutar tu plan correctamente. El resultado (pasar el challenge) es una consecuencia natural de un buen proceso repetido." }
+            { question: "Cual deberia ser tu enfoque mental durante un challenge?", options: ["Ganar lo máximo posible lo más rápido posible", "Ejecutar tu plan de trading correctamente, trade por trade", "Intentar estrategias nuevas para encontrar la mejor", "Copiar a otros traders que ya pasaron"], correctIndex: 1, explanation: "Enfocate en el PROCESO: ejecutar tu plan correctamente. El resultado (pasar el challenge) es una consecuencia natural de un buen proceso repetido." }
           ]
         }
       ]

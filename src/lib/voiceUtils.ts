@@ -114,6 +114,22 @@ export function fixSpanishForTTS(text: string): string {
     [/\bcuanto\b/gi, "cuánto"],
     [/\bexito\b/gi, "éxito"],
     [/\binstitucional\b/gi, "institucional"],
+    [/\bgrafico\b/gi, "gráfico"],
+    [/\bgraficos\b/gi, "gráficos"],
+    [/\bmetodo\b/gi, "método"],
+    [/\bautomatico\b/gi, "automático"],
+    [/\bautomaticamente\b/gi, "automáticamente"],
+    [/\bdinamico\b/gi, "dinámico"],
+    [/\bvalido\b/gi, "válido"],
+    [/\bunico\b/gi, "único"],
+    [/\btermino\b/gi, "término"],
+    [/\bterminos\b/gi, "términos"],
+    [/\bcalculo\b/gi, "cálculo"],
+    [/\bpagina\b/gi, "página"],
+    [/\bespecifico\b/gi, "específico"],
+    [/\btipico\b/gi, "típico"],
+    [/\blogico\b/gi, "lógico"],
+    [/\bproximo\b/gi, "próximo"],
   ];
 
   for (const [pattern, replacement] of replacements) {

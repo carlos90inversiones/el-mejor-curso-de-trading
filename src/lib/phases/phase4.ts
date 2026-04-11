@@ -35,7 +35,7 @@ export const PHASE_4: Phase = {
 </div>
 
 <h3>Que es la Liquidez en Trading</h3>
-<p>La <strong>liquidez</strong> es la disponibilidad de ordenes pendientes en el mercado a diferentes niveles de precio. En terminos simples: es <strong>donde esta el dinero esperando ser ejecutado</strong>. Las instituciones necesitan liquidez para llenar sus ordenes masivas sin mover el precio demasiado en su contra.</p>
+<p>La <strong>liquidez</strong> es la disponibilidad de ordenes pendientes en el mercado a diferentes niveles de precio. En términos simples: es <strong>donde esta el dinero esperando ser ejecutado</strong>. Las instituciones necesitan liquidez para llenar sus ordenes masivas sin mover el precio demasiado en su contra.</p>
 
 <div class="highlight-box green">
 <h4>Concepto Clave: Por que las Instituciones Necesitan tu Stop Loss</h4>
@@ -86,7 +86,7 @@ export const PHASE_4: Phase = {
 
 <h3>Equal Highs y Equal Lows: Los Imanes de Liquidez</h3>
 
-<p>Cuando el precio crea dos o mas maximos al mismo nivel (equal highs), cada trader retail del mundo ve una "resistencia fuerte" y pone su stop loss justo por encima. Lo mismo con equal lows: ven un "soporte fuerte" y ponen su stop justo debajo.</p>
+<p>Cuando el precio crea dos o más maximos al mismo nivel (equal highs), cada trader retail del mundo ve una "resistencia fuerte" y pone su stop loss justo por encima. Lo mismo con equal lows: ven un "soporte fuerte" y ponen su stop justo debajo.</p>
 
 <div class="example-box">
 <h4>Ejemplo Practico: Equal Highs como Trampa</h4>
@@ -96,11 +96,11 @@ export const PHASE_4: Phase = {
 <div class="grid-cards">
 <div class="card">
 <h4>Equal Highs = BSL</h4>
-<p>Dos o mas maximos en el mismo nivel crean un <strong>pool de BSL</strong> encima. El mercado los ve como resistencia. En realidad, son un iman de liquidez. <strong>Espera que el precio los barra antes de buscar shorts.</strong></p>
+<p>Dos o más maximos en el mismo nivel crean un <strong>pool de BSL</strong> encima. El mercado los ve como resistencia. En realidad, son un iman de liquidez. <strong>Espera que el precio los barra antes de buscar shorts.</strong></p>
 </div>
 <div class="card">
 <h4>Equal Lows = SSL</h4>
-<p>Dos o mas minimos en el mismo nivel crean un <strong>pool de SSL</strong> debajo. El mercado los ve como soporte. En realidad, son un iman de liquidez. <strong>Espera que el precio los barra antes de buscar longs.</strong></p>
+<p>Dos o más minimos en el mismo nivel crean un <strong>pool de SSL</strong> debajo. El mercado los ve como soporte. En realidad, son un iman de liquidez. <strong>Espera que el precio los barra antes de buscar longs.</strong></p>
 </div>
 </div>
 
@@ -145,15 +145,15 @@ export const PHASE_4: Phase = {
 </div>
 <div class="card">
 <h4>Previous Week High/Low (PWH/PWL)</h4>
-<p>Liquidez semanal. Movimientos mas grandes y significativos. Ideal para swing trading con Smart Money.</p>
+<p>Liquidez semanal. Movimientos más grandes y significativos. Ideal para swing trading con Smart Money.</p>
 </div>
 <div class="card">
 <h4>Session Highs/Lows</h4>
-<p>Los maximos y minimos de la sesion asiatica son frecuentemente barridos durante London. Es uno de los setups mas consistentes de ICT.</p>
+<p>Los maximos y minimos de la sesion asiatica son frecuentemente barridos durante London. Es uno de los setups más consistentes de ICT.</p>
 </div>
 <div class="card">
 <h4>Swing Points Obvios</h4>
-<p>Cualquier máximo o mínimo que sea obvio y visible en el grafico acumula liquidez. Cuanto mas obvio, mas liquidez acumula, y mas probable es que sea barrido.</p>
+<p>Cualquier máximo o mínimo que sea obvio y visible en el gráfico acumula liquidez. Cuanto más obvio, más liquidez acumula, y más probable es que sea barrido.</p>
 </div>
 </div>
 
@@ -169,7 +169,7 @@ export const PHASE_4: Phase = {
 <p><strong>Paso 2:</strong> Durante la sesion de London, el precio baja agresivamente y rompe 1.2700, llegando a 1.2685.</p>
 <p><strong>Paso 3:</strong> El precio forma una vela de rechazo con mecha larga inferior. El cuerpo cierra encima de 1.2700.</p>
 <p><strong>Paso 4:</strong> Entras en LONG en el cierre de esa vela (1.2705), con SL debajo de la mecha (1.2680).</p>
-<p><strong>Paso 5:</strong> TP en la BSL mas cercana: los maximos de ayer en 1.2780.</p>
+<p><strong>Paso 5:</strong> TP en la BSL más cercana: los maximos de ayer en 1.2780.</p>
 <p><strong>Resultado:</strong> 75 pips de ganancia con 25 pips de riesgo = 3:1 RR.</p>
 </div>`,
           keyPoints: [
@@ -208,7 +208,7 @@ export const PHASE_4: Phase = {
               options: [
                 "No hay diferencia, son lo mismo",
                 "La interna esta dentro del rango (FVGs, OBs) para rebalancear; la externa esta fuera (equal highs/lows) para tomar ordenes",
-                "La interna es mas importante que la externa",
+                "La interna es más importante que la externa",
                 "La externa solo existe en timeframes altos"
               ],
               correctIndex: 1,
@@ -312,10 +312,10 @@ export const PHASE_4: Phase = {
 <div class="strategy-box">
 <h4>Checklist de un Order Block Valido</h4>
 <ol>
-<li><strong>Debe causar un Break of Structure (BOS):</strong> El movimiento que sale del OB debe romper un máximo o mínimo de estructura. Sin BOS, no es un OB valido.</li>
-<li><strong>Debe dejar un Fair Value Gap (FVG):</strong> Los OBs mas potentes crean un gap de valor justo, indicando agresion institucional extrema.</li>
-<li><strong>Debe estar en una zona de descuento (para OB alcista) o premium (para OB bajista):</strong> Un OB alcista es mas fuerte en la zona de descuento (por debajo del 50% del rango). Un OB bajista es mas fuerte en la zona premium (por encima del 50%).</li>
-<li><strong>No debe haber sido mitigado:</strong> Si el precio ya volvio al OB una vez, ha sido "mitigado" y pierde potencia. Los OBs frescos (sin tocar) son los mas fuertes.</li>
+<li><strong>Debe causar un Break of Structure (BOS):</strong> El movimiento que sale del OB debe romper un máximo o mínimo de estructura. Sin BOS, no es un OB válido.</li>
+<li><strong>Debe dejar un Fair Value Gap (FVG):</strong> Los OBs más potentes crean un gap de valor justo, indicando agresion institucional extrema.</li>
+<li><strong>Debe estar en una zona de descuento (para OB alcista) o premium (para OB bajista):</strong> Un OB alcista es más fuerte en la zona de descuento (por debajo del 50% del rango). Un OB bajista es más fuerte en la zona premium (por encima del 50%).</li>
+<li><strong>No debe haber sido mitigado:</strong> Si el precio ya volvio al OB una vez, ha sido "mitigado" y pierde potencia. Los OBs frescos (sin tocar) son los más fuertes.</li>
 <li><strong>El impulso debe ser de calidad:</strong> Velas grandes, con cuerpo lleno y pocas mechas, indican movimiento institucional real.</li>
 </ol>
 </div>
@@ -331,11 +331,11 @@ export const PHASE_4: Phase = {
 </div>
 <div class="card">
 <h4>OB Mitigado (Tocado 1 vez)</h4>
-<p>El precio ya regreso una vez. Parte de las ordenes institucionales ya fueron ejecutadas. Aun puede reaccionar pero con <strong>menor probabilidad</strong>. Requiere mas confluencias.</p>
+<p>El precio ya regreso una vez. Parte de las ordenes institucionales ya fueron ejecutadas. Aun puede reaccionar pero con <strong>menor probabilidad</strong>. Requiere más confluencias.</p>
 </div>
 <div class="card">
 <h4>OB Invalidado</h4>
-<p>El precio cerro COMPLETAMENTE a traves del OB (no solo una mecha, sino un cierre de vela). Las ordenes institucionales han sido completamente absorbidas. <strong>Ya no es valido, no tradear.</strong></p>
+<p>El precio cerro COMPLETAMENTE a traves del OB (no solo una mecha, sino un cierre de vela). Las ordenes institucionales han sido completamente absorbidas. <strong>Ya no es válido, no tradear.</strong></p>
 </div>
 </div>
 
@@ -394,7 +394,7 @@ export const PHASE_4: Phase = {
 <ol>
 <li><strong>Paso 1:</strong> Identifica el OB en tu timeframe de análisis (H1 o H4)</li>
 <li><strong>Paso 2:</strong> Baja a un timeframe menor (M15 o M5)</li>
-<li><strong>Paso 3:</strong> Dentro de la zona del OB de H1, busca el OB de M15/M5 mas cercano al extremo</li>
+<li><strong>Paso 3:</strong> Dentro de la zona del OB de H1, busca el OB de M15/M5 más cercano al extremo</li>
 <li><strong>Paso 4:</strong> Usa el OB del TF menor como tu zona de entrada exacta</li>
 </ol>
 <p><strong>Beneficio:</strong> Reduces drasticamente tu stop loss (de 30 pips a 10 pips) manteniendo el mismo target, multiplicando tu ratio riesgo-beneficio.</p>
@@ -407,12 +407,12 @@ export const PHASE_4: Phase = {
 <p><strong>3. Espera:</strong> El precio retrocede hacia 1.0850-1.0865 durante la killzone de London.</p>
 <p><strong>4. Refinamiento (M5):</strong> Dentro del OB de H4, encuentras un OB de M5 en 1.0855-1.0860.</p>
 <p><strong>5. Confirmacion LTF:</strong> En M1, ves un CHoCH (Change of Character) alcista dentro del OB.</p>
-<p><strong>6. Entrada:</strong> Long en 1.0860, SL en 1.0845 (debajo del OB refinado), TP en 1.0920 (proximo BSL).</p>
+<p><strong>6. Entrada:</strong> Long en 1.0860, SL en 1.0845 (debajo del OB refinado), TP en 1.0920 (próximo BSL).</p>
 <p><strong>7. Resultado:</strong> 60 pips de ganancia con 15 pips de riesgo = 4:1 RR.</p>
 </div>`,
           keyPoints: [
             "Un Order Block es la última vela bajista antes de un impulso alcista (Bullish OB) o la última vela alcista antes de un impulso bajista (Bearish OB)",
-            "Un OB valido debe causar BOS, idealmente dejar FVG, estar en zona premium/discount correcta, y estar fresco (sin mitigar)",
+            "Un OB válido debe causar BOS, idealmente dejar FVG, estar en zona premium/discount correcta, y estar fresco (sin mitigar)",
             "Un OB se invalida cuando el cuerpo de una vela cierra completamente a traves de el, no por una simple mecha",
             "Breaker Blocks son OBs invalidados que cambian de polaridad: un OB alcista roto se convierte en resistencia bajista",
             "Los Propulsion Blocks (OB + FVG en la misma zona) son los setups de mayor probabilidad"
@@ -452,9 +452,9 @@ export const PHASE_4: Phase = {
               explanation: "Un Breaker Block es un OB que fue completamente invalidado y ahora actua en la dirección opuesta. Un Bullish OB roto se convierte en un Breaker bajista porque los compradores atrapados crearan presion de venta al salir."
             },
             {
-              question: "Por que los Propulsion Blocks son considerados los OBs mas potentes?",
+              question: "Por que los Propulsion Blocks son considerados los OBs más potentes?",
               options: [
-                "Porque son los mas grandes en tamano",
+                "Porque son los más grandes en tamano",
                 "Porque combinan un OB con un FVG en la misma zona, dando doble confluencia",
                 "Porque solo aparecen en timeframes altos",
                 "Porque siempre generan ganancias garantizadas"
@@ -504,7 +504,7 @@ export const PHASE_4: Phase = {
 <ul>
 <li>Volumen BAJO, rango estrecho</li>
 <li>El precio consolida y crea un RANGO definido</li>
-<li>Pares de JPY, AUD y NZD son mas activos</li>
+<li>Pares de JPY, AUD y NZD son más activos</li>
 <li>Crea la liquidez que London y NY van a tomar</li>
 </ul>
 <p><strong>Funcion SMC:</strong> Asia CREA el rango. Es la fase de ACUMULACION.</p>
@@ -545,7 +545,7 @@ export const PHASE_4: Phase = {
 <p><strong>Caracteristicas:</strong></p>
 <ul>
 <li>MAXIMO volumen del dia</li>
-<li>Los movimientos mas grandes ocurren aquí</li>
+<li>Los movimientos más grandes ocurren aquí</li>
 <li>Mejor momento para day trading</li>
 <li>Noticias de alto impacto (NFP, CPI, FOMC)</li>
 </ul>
@@ -603,21 +603,21 @@ export const PHASE_4: Phase = {
 <h4>1. Acumulacion (A)</h4>
 <p><strong>Que es:</strong> Las instituciones acumulan posiciones silenciosamente durante un período de baja volatilidad. El precio se mueve en un rango estrecho.</p>
 <p><strong>Cuando:</strong> Tipicamente durante la sesion asiatica o las primeras horas antes de una killzone.</p>
-<p><strong>Que ves en el grafico:</strong> Consolidacion, rango estrecho, velas pequenas, volumen bajo.</p>
+<p><strong>Que ves en el gráfico:</strong> Consolidacion, rango estrecho, velas pequenas, volumen bajo.</p>
 <p><strong>Lo que esta pasando realmente:</strong> Las instituciones estan construyendo sus posiciones poco a poco sin alertar al mercado.</p>
 </div>
 <div class="concept-card">
 <h4>2. Manipulacion (M)</h4>
 <p><strong>Que es:</strong> Las instituciones empujan el precio EN LA DIRECCION OPUESTA a su intencion real para activar stop losses y atrapar a los retail.</p>
 <p><strong>Cuando:</strong> Al inicio de la London o NY Killzone.</p>
-<p><strong>Que ves en el grafico:</strong> Un movimiento agresivo que rompe el rango de consolidacion, barre los stops, y crea un falso breakout.</p>
+<p><strong>Que ves en el gráfico:</strong> Un movimiento agresivo que rompe el rango de consolidacion, barre los stops, y crea un falso breakout.</p>
 <p><strong>Lo que esta pasando realmente:</strong> La institucion esta tomando liquidez (activando stops) para llenar el resto de su posición masiva.</p>
 </div>
 <div class="concept-card">
 <h4>3. Distribucion (D)</h4>
 <p><strong>Que es:</strong> El movimiento REAL. Despues de tomar la liquidez, el precio se mueve agresivamente en la dirección verdadera de la institucion.</p>
 <p><strong>Cuando:</strong> Despues de la manipulacion, durante el corazon de la killzone.</p>
-<p><strong>Que ves en el grafico:</strong> Movimiento direccional fuerte, velas grandes, volume alto, BOS claros.</p>
+<p><strong>Que ves en el gráfico:</strong> Movimiento direccional fuerte, velas grandes, volume alto, BOS claros.</p>
 <p><strong>Lo que esta pasando realmente:</strong> La institucion ya tiene su posición completa y ahora deja que el precio se mueva a su favor.</p>
 </div>
 </div>
@@ -668,15 +668,15 @@ export const PHASE_4: Phase = {
 <div class="grid-cards">
 <div class="card">
 <h4>Lunes</h4>
-<p>"Dia de preparacion". El mercado establece el rango semanal. Puede ser engannoso. ICT recomienda observar mas que tradear. Si tradeas, hazlo con tamano reducido.</p>
+<p>"Dia de preparacion". El mercado establece el rango semanal. Puede ser engannoso. ICT recomienda observar más que tradear. Si tradeas, hazlo con tamano reducido.</p>
 </div>
 <div class="card">
 <h4>Martes - Miercoles</h4>
-<p>"Dias de maxima probabilidad". Los mejores dias para tradear segun ICT. Las instituciones estan activas y los movimientos son mas predecibles. EL CORAZON de tu semana de trading.</p>
+<p>"Dias de maxima probabilidad". Los mejores dias para tradear segun ICT. Las instituciones estan activas y los movimientos son más predecibles. EL CORAZON de tu semana de trading.</p>
 </div>
 <div class="card">
 <h4>Jueves</h4>
-<p>"Dia de reverso". Frecuentemente el mercado revierte el movimiento de la semana. Puede ofrecer buenas oportunidades pero requiere mas cuidado.</p>
+<p>"Dia de reverso". Frecuentemente el mercado revierte el movimiento de la semana. Puede ofrecer buenas oportunidades pero requiere más cuidado.</p>
 </div>
 <div class="card">
 <h4>Viernes</h4>
@@ -692,7 +692,7 @@ export const PHASE_4: Phase = {
             "Las Killzones son ventanas especificas: London KZ (02:00-05:00 EST), NY KZ (07:00-10:00 EST), London Close (10:00-12:00 EST)",
             "Power of 3 (AMD): Acumulacion (rango/Asia) -> Manipulacion (sweep/Judas Swing) -> Distribucion (movimiento real)",
             "El Judas Swing es el movimiento falso inicial que barre liquidez antes del movimiento verdadero",
-            "London frecuentemente barre el rango asiatico: es uno de los setups mas consistentes de ICT",
+            "London frecuentemente barre el rango asiatico: es uno de los setups más consistentes de ICT",
             "Martes y Miercoles son los mejores dias para tradear segun la metodologia ICT",
             "SOLO busca entradas durante Killzones: fuera de ellas el movimiento es ruido"
           ],
@@ -717,7 +717,7 @@ export const PHASE_4: Phase = {
                 "20:00 - 00:00 EST"
               ],
               correctIndex: 1,
-              explanation: "La London Killzone segun ICT es de 02:00 a 05:00 EST (08:00 a 11:00 hora de España). Es cuando las instituciones de Londres son mas activas y los movimientos mas significativos de la sesion europea ocurren."
+              explanation: "La London Killzone segun ICT es de 02:00 a 05:00 EST (08:00 a 11:00 hora de España). Es cuando las instituciones de Londres son más activas y los movimientos más significativos de la sesion europea ocurren."
             },
             {
               question: "Que setup ocurre cuando London barre el rango asiatico?",
@@ -739,7 +739,7 @@ export const PHASE_4: Phase = {
                 "Solo los Jueves porque hay reversiones"
               ],
               correctIndex: 1,
-              explanation: "ICT considera Martes y Miercoles como los dias de maxima probabilidad. Las instituciones estan mas activas estos dias y los movimientos son mas predecibles. Lunes es de preparacion y Viernes es de toma de beneficios."
+              explanation: "ICT considera Martes y Miercoles como los dias de maxima probabilidad. Las instituciones estan más activas estos dias y los movimientos son más predecibles. Lunes es de preparacion y Viernes es de toma de beneficios."
             }
           ],
           practicalExercise: "Durante una semana completa, marca el rango asiatico (high y low) CADA DIA en EUR/USD M15. Luego observa que pasa cuando abre London: barrio el high o el low de Asia? Que paso despues del sweep? El precio continuo o revirtio? Documenta los 5 dias con capturas de pantalla y calcula: en cuantos de los 5 dias el patron AMD fue visible? Esto te dara una comprension práctica del Power of 3."
@@ -836,7 +836,7 @@ export const PHASE_4: Phase = {
 
 <div class="strategy-box">
 <h4>Como Usar el CE</h4>
-<p><strong>Regla:</strong> Si el precio entra en un FVG y alcanza el CE (50%), la probabilidad de que el FVG sea respetado DISMINUYE. Si el precio solo toca el borde del FVG sin alcanzar el CE, la reaccion suele ser mas fuerte.</p>
+<p><strong>Regla:</strong> Si el precio entra en un FVG y alcanza el CE (50%), la probabilidad de que el FVG sea respetado DISMINUYE. Si el precio solo toca el borde del FVG sin alcanzar el CE, la reaccion suele ser más fuerte.</p>
 <p><strong>Como nivel de precision:</strong> El CE es el punto exacto donde puedes colocar tu entrada limit dentro de un FVG para maxima precision. Es como refinar un OB pero para FVGs.</p>
 <p><strong>Calculo:</strong> CE = (Maximo del FVG + Minimo del FVG) / 2</p>
 </div>
@@ -907,7 +907,7 @@ export const PHASE_4: Phase = {
 
 <h3>Combinando TODO: El Sistema de Confluencias ICT</h3>
 
-<p>El poder real de ICT no esta en un concepto individual. Esta en la <strong>CONFLUENCIA</strong> de multiples conceptos alineados. Cuantas mas confluencias, mayor probabilidad.</p>
+<p>El poder real de ICT no esta en un concepto individual. Esta en la <strong>CONFLUENCIA</strong> de multiples conceptos alineados. Cuantas más confluencias, mayor probabilidad.</p>
 
 <div class="highlight-box green">
 <h4>Checklist de Confluencias ICT para un Trade A+</h4>
@@ -915,7 +915,7 @@ export const PHASE_4: Phase = {
 <li><strong>Bias HTF (Higher Time Frame):</strong> La tendencia en H4/Daily esta a tu favor? (BOS, estructura)</li>
 <li><strong>Premium/Discount:</strong> Estas comprando en discount o vendiendo en premium?</li>
 <li><strong>Liquidez tomada:</strong> Se ha barrido liquidez (equal highs/lows, PDH/PDL, Asia range)?</li>
-<li><strong>Order Block:</strong> Hay un OB valido y fresco en tu zona de entrada?</li>
+<li><strong>Order Block:</strong> Hay un OB válido y fresco en tu zona de entrada?</li>
 <li><strong>Fair Value Gap:</strong> Hay un FVG que coincide con tu OB?</li>
 <li><strong>Killzone:</strong> Estas dentro de una Killzone activa?</li>
 <li><strong>Power of 3:</strong> Puedes identificar la fase AMD del dia?</li>
@@ -928,7 +928,7 @@ export const PHASE_4: Phase = {
 
 <div class="example-box">
 <h4>Trade A+ Completo con Todas las Confluencias</h4>
-<p><strong>Par:</strong> EUR/USD | <strong>Fecha:</strong> Martes (dia optimo ICT)</p>
+<p><strong>Par:</strong> EUR/USD | <strong>Fecha:</strong> Martes (dia óptimo ICT)</p>
 <p><strong>1. Bias HTF (H4):</strong> Tendencia alcista. Ultimo BOS al alza. Bias = LONG.</p>
 <p><strong>2. Sesion:</strong> London Killzone (08:30 España) - Killzone activa.</p>
 <p><strong>3. AMD:</strong> Asia creo rango 1.0850-1.0870. London abre y rompe ABAJO de 1.0850 (barre SSL = Manipulacion).</p>
@@ -943,14 +943,14 @@ export const PHASE_4: Phase = {
 
 <div class="warning-box">
 <h4>La Trampa de la Sobre-Complejidad</h4>
-<p>ICT tiene docenas de conceptos. NO necesitas usar TODOS en cada trade. Los traders mas rentables usan 3-4 conceptos clave con maestria, no 20 conceptos a medias. Domina primero: Liquidez + OBs + FVGs + Killzones. Luego anade capas gradualmente. <strong>Simplicidad con comprension profunda siempre gana a complejidad superficial.</strong></p>
+<p>ICT tiene docenas de conceptos. NO necesitas usar TODOS en cada trade. Los traders más rentables usan 3-4 conceptos clave con maestria, no 20 conceptos a medias. Domina primero: Liquidez + OBs + FVGs + Killzones. Luego anade capas gradualmente. <strong>Simplicidad con comprension profunda siempre gana a complejidad superficial.</strong></p>
 </div>`,
           keyPoints: [
             "Un FVG es un gap de 3 velas donde la mecha de la vela 1 no se solapa con la mecha de la vela 3, indicando movimiento institucional agresivo",
             "BISI = FVG alcista (zona de compra), SIBI = FVG bajista (zona de venta). IFVG = FVG violado que cambia de rol",
             "Consequent Encroachment (CE) es el 50% exacto del FVG y funciona como nivel de precision para entradas",
             "Premium Zone = encima del 50% del rango (vende aquí), Discount Zone = debajo del 50% (compra aquí)",
-            "La zona OTE de ICT (Fibonacci 0.618-0.786) es el punto optimo de entrada en retrocesos",
+            "La zona OTE de ICT (Fibonacci 0.618-0.786) es el punto óptimo de entrada en retrocesos",
             "4+ confluencias alineadas = setup de alta probabilidad. 6+ confluencias = setup A+ excepcional"
           ],
           quiz: [
@@ -959,22 +959,22 @@ export const PHASE_4: Phase = {
               options: [
                 "Dos velas consecutivas del mismo color",
                 "El espacio entre el máximo de la vela 1 y el mínimo de la vela 3, donde solo opero la vela 2 alcista agresiva",
-                "Cualquier gap en el grafico",
+                "Cualquier gap en el gráfico",
                 "Una vela con mecha larga"
               ],
               correctIndex: 1,
-              explanation: "Un FVG alcista se identifica por el espacio (gap) entre el máximo de la vela 1 y el mínimo de la vela 3. La vela 2 (alcista y agresiva) es la unica que opero en esa zona, dejando un desequilibrio que el precio tiende a llenar."
+              explanation: "Un FVG alcista se identifica por el espacio (gap) entre el máximo de la vela 1 y el mínimo de la vela 3. La vela 2 (alcista y agresiva) es la única que opero en esa zona, dejando un desequilibrio que el precio tiende a llenar."
             },
             {
               question: "Que es la zona OTE de ICT y donde se encuentra?",
               options: [
                 "Es la zona entre 0% y 50% del retroceso Fibonacci",
-                "Es la zona entre 61.8% y 78.6% del retroceso Fibonacci, considerada el punto optimo de entrada",
+                "Es la zona entre 61.8% y 78.6% del retroceso Fibonacci, considerada el punto óptimo de entrada",
                 "Es la zona por encima del 100% de Fibonacci",
                 "Es el nivel exacto de 50% de Fibonacci"
               ],
               correctIndex: 1,
-              explanation: "La OTE (Optimal Trade Entry) de ICT se encuentra entre los niveles 0.618 y 0.786 del retroceso Fibonacci, con el 0.705 como punto optimo. Es donde ICT busca la mayoria de sus entradas por tener la mejor relación riesgo-beneficio."
+              explanation: "La OTE (Optimal Trade Entry) de ICT se encuentra entre los niveles 0.618 y 0.786 del retroceso Fibonacci, con el 0.705 como punto óptimo. Es donde ICT busca la mayoria de sus entradas por tener la mejor relación riesgo-beneficio."
             },
             {
               question: "Segun las reglas de Premium/Discount, donde debes buscar compras (LONG)?",
@@ -1014,7 +1014,7 @@ export const PHASE_4: Phase = {
 
 <div class="analogy-box">
 <h3>La Analogia del Detective</h3>
-<p>Un buen detective no necesita que el criminal le diga donde esta. Lee las pistas: huellas, marcas, patrones de comportamiento. El precio deja pistas EXACTAMENTE igual. Cada vela, cada mecha, cada patron te cuenta una historia. Los indicadores son como leer el informe de otro detective: llega tarde y puede estar equivocado. El price action es como estar en la escena del crimen en tiempo real. <strong>El precio es el unico indicador que NO miente y NO tiene retraso.</strong></p>
+<p>Un buen detective no necesita que el criminal le diga donde esta. Lee las pistas: huellas, marcas, patrones de comportamiento. El precio deja pistas EXACTAMENTE igual. Cada vela, cada mecha, cada patron te cuenta una historia. Los indicadores son como leer el informe de otro detective: llega tarde y puede estar equivocado. El price action es como estar en la escena del crimen en tiempo real. <strong>El precio es el único indicador que NO miente y NO tiene retraso.</strong></p>
 </div>
 
 <h3>Principios del Price Action Puro</h3>
@@ -1022,9 +1022,9 @@ export const PHASE_4: Phase = {
 <div class="highlight-box green">
 <h4>Por que Tradear sin Indicadores</h4>
 <ul>
-<li><strong>Los indicadores son derivados del precio:</strong> TODOS los indicadores (RSI, MACD, medias moviles) se calculan A PARTIR del precio. Son el precio procesado con un retraso. Ir a la fuente original es siempre mas rápido y preciso.</li>
+<li><strong>Los indicadores son derivados del precio:</strong> TODOS los indicadores (RSI, MACD, medias moviles) se calculan A PARTIR del precio. Son el precio procesado con un retraso. Ir a la fuente original es siempre más rápido y preciso.</li>
 <li><strong>Sin retraso (lag):</strong> El precio es información en TIEMPO REAL. Los indicadores siempre reaccionan DESPUES del movimiento.</li>
-<li><strong>Claridad visual:</strong> Un grafico limpio te permite ver la estructura, las zonas clave y los patrones sin distracciones.</li>
+<li><strong>Claridad visual:</strong> Un gráfico limpio te permite ver la estructura, las zonas clave y los patrones sin distracciones.</li>
 <li><strong>Universalidad:</strong> El price action funciona en CUALQUIER mercado, CUALQUIER timeframe, CUALQUIER epoca. Los patrones de comportamiento humano no cambian.</li>
 </ul>
 </div>
@@ -1074,7 +1074,7 @@ export const PHASE_4: Phase = {
 <ul>
 <li>Son LINEAS (un precio exacto)</li>
 <li>Se basan en donde el precio reboto antes</li>
-<li>Cuantas mas veces toca, "mas fuerte" (FALSO)</li>
+<li>Cuantas más veces toca, "más fuerte" (FALSO)</li>
 <li>No explican POR QUE el precio reacciona</li>
 <li>Enfoque REACTIVO</li>
 </ul>
@@ -1084,7 +1084,7 @@ export const PHASE_4: Phase = {
 <ul>
 <li>Son ZONAS (rango de precio)</li>
 <li>Se basan en donde las instituciones dejaron ordenes</li>
-<li>Cuantas mas veces toca, MAS DEBIL (ordenes se agotan)</li>
+<li>Cuantas más veces toca, MAS DEBIL (ordenes se agotan)</li>
 <li>Explican la mecanica: ordenes pendientes institucionales</li>
 <li>Enfoque PROACTIVO</li>
 </ul>
@@ -1122,11 +1122,11 @@ export const PHASE_4: Phase = {
 <div class="grid-cards">
 <div class="card">
 <h4>Rally-Base-Rally (RBR)</h4>
-<p>En tendencia alcista, el precio sube, consolida, y sigue subiendo. La base crea una zona de demanda de CONTINUACION. Es mas debil que DBR pero util en tendencias fuertes.</p>
+<p>En tendencia alcista, el precio sube, consolida, y sigue subiendo. La base crea una zona de demanda de CONTINUACION. Es más debil que DBR pero util en tendencias fuertes.</p>
 </div>
 <div class="card">
 <h4>Drop-Base-Drop (DBD)</h4>
-<p>En tendencia bajista, el precio baja, consolida, y sigue bajando. La base crea una zona de supply de CONTINUACION. Es mas debil que RBD pero util en tendencias fuertes.</p>
+<p>En tendencia bajista, el precio baja, consolida, y sigue bajando. La base crea una zona de supply de CONTINUACION. Es más debil que RBD pero util en tendencias fuertes.</p>
 </div>
 </div>
 
@@ -1135,7 +1135,7 @@ export const PHASE_4: Phase = {
 <div class="highlight-box blue">
 <h4>La Regla de la Frescura</h4>
 <p><strong>Zona Fresca:</strong> El precio NUNCA ha regresado a esa zona desde que fue creada. Tiene la maxima probabilidad de reaccion porque TODAS las ordenes institucionales siguen ahi. <strong>Primera opcion siempre.</strong></p>
-<p><strong>Zona Testeada (1 toque):</strong> El precio regreso una vez. Parte de las ordenes ya se ejecutaron. Aun puede funcionar pero con menor probabilidad. Requiere mas confirmación.</p>
+<p><strong>Zona Testeada (1 toque):</strong> El precio regreso una vez. Parte de las ordenes ya se ejecutaron. Aun puede funcionar pero con menor probabilidad. Requiere más confirmación.</p>
 <p><strong>Zona Agotada (2+ toques):</strong> El precio ha regresado multiples veces. Las ordenes se han agotado. <strong>NO la tradees.</strong> Es un "soporte/resistencia clasico" disfrazado de S/D zone.</p>
 </div>
 
@@ -1150,23 +1150,23 @@ export const PHASE_4: Phase = {
 <p><strong>7.</strong> RR: 85 pips / 25 pips = 3.4:1</p>
 </div>`,
           keyPoints: [
-            "El precio es el unico indicador sin retraso: todo lo demas se deriva de el y llega tarde",
+            "El precio es el único indicador sin retraso: todo lo demas se deriva de el y llega tarde",
             "Las velas japonesas SOLO son significativas en CONTEXTO: zona clave + estructura + timing. Nunca tradees una vela aislada",
-            "Supply/Demand son ZONAS de ordenes institucionales, no lineas de soporte/resistencia. Cuantas mas veces se toca, MAS DEBIL (al reves que S/R clasico)",
+            "Supply/Demand son ZONAS de ordenes institucionales, no lineas de soporte/resistencia. Cuantas más veces se toca, MAS DEBIL (al reves que S/R clasico)",
             "Patrones clave: Drop-Base-Rally (demanda fuerte), Rally-Base-Drop (supply fuerte), RBR y DBD (continuacion)",
-            "Las zonas FRESCAS (sin tocar) son las mas poderosas. Despues de 2+ toques, la zona esta agotada"
+            "Las zonas FRESCAS (sin tocar) son las más poderosas. Despues de 2+ toques, la zona esta agotada"
           ],
           quiz: [
             {
               question: "Cual es la diferencia fundamental entre Supply/Demand y Soporte/Resistencia clasico?",
               options: [
                 "No hay diferencia, son lo mismo",
-                "S/D son zonas con ordenes institucionales donde mas toques = mas debil; S/R son lineas donde mas toques = supuestamente mas fuerte",
-                "S/R es mas preciso que S/D",
+                "S/D son zonas con ordenes institucionales donde más toques = más debil; S/R son lineas donde más toques = supuestamente más fuerte",
+                "S/R es más preciso que S/D",
                 "S/D solo funciona en Forex y S/R solo en acciones"
               ],
               correctIndex: 1,
-              explanation: "Supply/Demand son zonas basadas en ordenes institucionales pendientes que se AGOTAN con cada toque. Soporte/Resistencia clasico son lineas que supuestamente se 'fortalecen' con mas toques, lo cual es incorrecto desde la perspectiva institucional."
+              explanation: "Supply/Demand son zonas basadas en ordenes institucionales pendientes que se AGOTAN con cada toque. Soporte/Resistencia clasico son lineas que supuestamente se 'fortalecen' con más toques, lo cual es incorrecto desde la perspectiva institucional."
             },
             {
               question: "Que patron forma una zona de demanda fuerte?",
@@ -1177,7 +1177,7 @@ export const PHASE_4: Phase = {
                 "Rally-Rally-Rally"
               ],
               correctIndex: 1,
-              explanation: "El Drop-Base-Rally (DBR) crea la zona de demanda mas fuerte. El precio cae (drop), se detiene y consolida (base = zona de demanda), y luego explota al alza (rally). La base es donde las instituciones acumularon compras agresivamente."
+              explanation: "El Drop-Base-Rally (DBR) crea la zona de demanda más fuerte. El precio cae (drop), se detiene y consolida (base = zona de demanda), y luego explota al alza (rally). La base es donde las instituciones acumularon compras agresivamente."
             },
             {
               question: "Por que las velas japonesas individuales no deben tradearse aisladamente?",
@@ -1191,7 +1191,7 @@ export const PHASE_4: Phase = {
               explanation: "Una vela japonesa solo es significativa cuando aparece en el contexto correcto: en una zona clave (supply/demand, OB, FVG), con estructura favorable, y en el timing adecuado (killzone). Un martillo perfecto en medio del rango es ruido."
             }
           ],
-          practicalExercise: "Abre GBP/USD en H1 con grafico LIMPIO (sin ningun indicador). 1) Identifica 3 zonas de demanda (busca patrones DBR) y 3 zonas de supply (busca patrones RBD). 2) Marca cada zona y anota si es fresca o testeada. 3) Observa que vela de confirmación aparecio cuando el precio regreso a cada zona (pin bar, engulfing, inside bar?). 4) Compara tus zonas de S/D con los Order Blocks que identificaste en la lección anterior. Notaras que muchas zonas coinciden."
+          practicalExercise: "Abre GBP/USD en H1 con gráfico LIMPIO (sin ningun indicador). 1) Identifica 3 zonas de demanda (busca patrones DBR) y 3 zonas de supply (busca patrones RBD). 2) Marca cada zona y anota si es fresca o testeada. 3) Observa que vela de confirmación aparecio cuando el precio regreso a cada zona (pin bar, engulfing, inside bar?). 4) Compara tus zonas de S/D con los Order Blocks que identificaste en la lección anterior. Notaras que muchas zonas coinciden."
         },
         // --------------------------------------------------------------------
         // LESSON 4-3-2: WYCKOFF METHOD
@@ -1205,7 +1205,7 @@ export const PHASE_4: Phase = {
 
 <div class="analogy-box">
 <h3>La Analogia del Director de Orquesta</h3>
-<p>Imagina una orquesta sinfonica. Los 80 musicos (traders retail) tocan sus instrumentos, cada uno pensando que toma decisiones individuales. Pero hay UN director de orquesta (el Composite Man) que controla TODO: decide cuando suben los violines, cuando entran los tambores, y cuando hay silencio. El publico (observadores del mercado) ve la orquesta tocar, pero no siempre ve al director. <strong>Richard Wyckoff nos enseno a VER al director</strong> analizando como se comporta el precio y el volumen juntos.</p>
+<p>Imagina una orquesta sinfonica. Los 80 musicos (traders retail) tocan sus instrumentos, cada uno pensando que toma decisiones individuales. Pero hay UN director de orquesta (el Composite Man) que controla TODO: decide cuando suben los violines, cuando entran los tambores, y cuando hay silencio. El público (observadores del mercado) ve la orquesta tocar, pero no siempre ve al director. <strong>Richard Wyckoff nos enseno a VER al director</strong> analizando como se comporta el precio y el volumen juntos.</p>
 </div>
 
 <h3>El Composite Man</h3>
@@ -1216,7 +1216,7 @@ export const PHASE_4: Phase = {
 <p><strong>Las 3 Leyes de Wyckoff:</strong></p>
 <ol>
 <li><strong>Ley de Oferta y Demanda:</strong> Si la demanda supera la oferta, el precio sube. Si la oferta supera la demanda, el precio baja. Simple, pero la clave esta en DETECTAR cual domina.</li>
-<li><strong>Ley de Causa y Efecto:</strong> Cuanto mas tiempo dure una acumulacion/distribucion (causa), mayor sera el movimiento posterior (efecto). Un rango lateral de 3 meses produce un movimiento mas grande que uno de 3 dias.</li>
+<li><strong>Ley de Causa y Efecto:</strong> Cuanto más tiempo dure una acumulacion/distribucion (causa), mayor sera el movimiento posterior (efecto). Un rango lateral de 3 meses produce un movimiento más grande que uno de 3 dias.</li>
 <li><strong>Ley de Esfuerzo vs Resultado:</strong> Si hay mucho volumen (esfuerzo) pero poco movimiento de precio (resultado), algo esta cambiando. Es como empujar un coche: si empujas fuerte y no se mueve, hay algo bloqueandolo.</li>
 </ol>
 </div>
@@ -1268,7 +1268,7 @@ export const PHASE_4: Phase = {
 <li>El volumen disminuye en las caidas dentro del rango</li>
 <li>Los medios dicen que "todo esta mal" y los retail venden</li>
 </ul>
-<p><strong>Duracion:</strong> Semanas a meses. Cuanto mas dura, mas fuerte sera el movimiento posterior (Ley de Causa y Efecto).</p>
+<p><strong>Duracion:</strong> Semanas a meses. Cuanto más dura, más fuerte sera el movimiento posterior (Ley de Causa y Efecto).</p>
 <p><strong>Eventos clave:</strong> PS (Preliminary Support), SC (Selling Climax), AR (Automatic Rally), ST (Secondary Test), Spring</p>
 </div>
 <div class="concept-card">
@@ -1281,7 +1281,7 @@ export const PHASE_4: Phase = {
 <li>Los medios empiezan a hablar positivamente</li>
 <li>Los retail empiezan a comprar (TARDE)</li>
 </ul>
-<p><strong>Estrategia:</strong> Comprar en retrocesos (pullbacks) a zonas de demanda/OBs. Es la fase donde mas dinero se gana en LONG.</p>
+<p><strong>Estrategia:</strong> Comprar en retrocesos (pullbacks) a zonas de demanda/OBs. Es la fase donde más dinero se gana en LONG.</p>
 </div>
 <div class="concept-card">
 <h4>Fase 3: Distribucion</h4>
@@ -1293,7 +1293,7 @@ export const PHASE_4: Phase = {
 <li>El volumen disminuye en los rebotes alcistas</li>
 <li>Los medios dicen "compra, compra" y los retail compran</li>
 </ul>
-<p><strong>Duracion:</strong> Similar a la acumulacion. Cuanto mas dura, mas fuerte sera la caida posterior.</p>
+<p><strong>Duracion:</strong> Similar a la acumulacion. Cuanto más dura, más fuerte sera la caida posterior.</p>
 <p><strong>Eventos clave:</strong> PSY (Preliminary Supply), BC (Buying Climax), AR (Automatic Reaction), ST (Secondary Test), UTAD</p>
 </div>
 <div class="concept-card">
@@ -1306,7 +1306,7 @@ export const PHASE_4: Phase = {
 <li>Panico en los medios</li>
 <li>Los retail venden en perdida (TARDE)</li>
 </ul>
-<p><strong>Estrategia:</strong> Vender en pullbacks a zonas de supply. Es la fase donde mas dinero se gana en SHORT.</p>
+<p><strong>Estrategia:</strong> Vender en pullbacks a zonas de supply. Es la fase donde más dinero se gana en SHORT.</p>
 </div>
 </div>
 
@@ -1314,7 +1314,7 @@ export const PHASE_4: Phase = {
 
 <div class="highlight-box green">
 <h4>Que es el Spring</h4>
-<p>El <strong>Spring</strong> es el evento mas importante del esquema de Acumulacion. Es un <strong>falso rompimiento POR DEBAJO del soporte</strong> del rango de acumulacion. El Composite Man empuja el precio abajo del rango para:</p>
+<p>El <strong>Spring</strong> es el evento más importante del esquema de Acumulacion. Es un <strong>falso rompimiento POR DEBAJO del soporte</strong> del rango de acumulacion. El Composite Man empuja el precio abajo del rango para:</p>
 <ol>
 <li>Activar los stop losses de los que compraron en el rango (tomar liquidez)</li>
 <li>Atrapar a los retail que venden el "breakout bajista"</li>
@@ -1345,7 +1345,7 @@ export const PHASE_4: Phase = {
 <ol>
 <li><strong>PS (Preliminary Support):</strong> Primer intento de frenado de la caida. Volumen alto pero el precio aun cae. Primera señal de que hay compradores.</li>
 <li><strong>SC (Selling Climax):</strong> Venta de panico masiva. Volumen EXTREMO. El precio cae bruscamente y rebota. Marca el limite inferior del rango.</li>
-<li><strong>AR (Automatic Rally):</strong> Rebote automatico despues del SC. Sin mucho esfuerzo. Marca el limite superior del rango.</li>
+<li><strong>AR (Automatic Rally):</strong> Rebote automático despues del SC. Sin mucho esfuerzo. Marca el limite superior del rango.</li>
 <li><strong>ST (Secondary Test):</strong> El precio retestea la zona del SC con MENOS volumen. Si el volumen es menor, confirma que la venta se esta agotando.</li>
 <li><strong>Spring (o Shakeout):</strong> El falso rompimiento bajista. La trampa final. MOMENTO CLAVE.</li>
 <li><strong>Test del Spring:</strong> El precio retestea la zona del Spring con volumen bajo. Si no cae, confirma que el Spring funciono.</li>
@@ -1382,7 +1382,7 @@ export const PHASE_4: Phase = {
 <p><strong>2. AR (Automatic Rally):</strong> Rebote rápido a 18,000. Sin mucho esfuerzo.</p>
 <p><strong>3. ST (Secondary Test):</strong> Bitcoin cae a 16,200. Volumen mucho menor que en el SC. La venta se agota.</p>
 <p><strong>4. Spring:</strong> Bitcoin cae brevemente a 15,400 (debajo del SC). Mecha larga, cierre por encima de 16,000. Los stops se activaron. EL MOMENTO DE COMPRAR.</p>
-<p><strong>5. SOS:</strong> Bitcoin rompe 18,000 con volumen fuerte. La acumulacion termino.</p>
+<p><strong>5. SOS:</strong> Bitcoin rompe 18,000 con volumen fuerte. La acumulacion término.</p>
 <p><strong>6. Markup:</strong> Bitcoin sube de 18,000 a 45,000+ en los meses siguientes.</p>
 </div>
 
@@ -1411,7 +1411,7 @@ export const PHASE_4: Phase = {
               explanation: "El Spring es un falso rompimiento por debajo del soporte del rango de acumulacion. El Composite Man empuja el precio abajo para activar stops, tomar liquidez, y comprar a los mejores precios antes de impulsar el Markup."
             },
             {
-              question: "Cual de las leyes de Wyckoff establece que un rango lateral mas largo produce un movimiento mas grande?",
+              question: "Cual de las leyes de Wyckoff establece que un rango lateral más largo produce un movimiento más grande?",
               options: [
                 "Ley de Oferta y Demanda",
                 "Ley de Esfuerzo vs Resultado",
@@ -1419,7 +1419,7 @@ export const PHASE_4: Phase = {
                 "Ley del Composite Man"
               ],
               correctIndex: 2,
-              explanation: "La Ley de Causa y Efecto dice que cuanto mas tiempo dure la 'causa' (acumulacion o distribucion), mayor sera el 'efecto' (movimiento tendencial posterior). Un rango de 3 meses produce un movimiento mucho mayor que uno de 3 dias."
+              explanation: "La Ley de Causa y Efecto dice que cuanto más tiempo dure la 'causa' (acumulacion o distribucion), mayor sera el 'efecto' (movimiento tendencial posterior). Un rango de 3 meses produce un movimiento mucho mayor que uno de 3 dias."
             },
             {
               question: "Como se conecta el Spring de Wyckoff con los conceptos de Smart Money?",
@@ -1433,7 +1433,7 @@ export const PHASE_4: Phase = {
               explanation: "El Spring de Wyckoff y el liquidity sweep de SMC son esencialmente el mismo concepto: un movimiento falso que rompe un nivel clave para tomar la liquidez (activar stops) antes de que el precio se mueva en la dirección real. Wyckoff lo describio hace 100 años."
             }
           ],
-          practicalExercise: "Busca BTC/USD o SP500 en grafico Diario y encuentra un ejemplo historico de un ciclo completo de Wyckoff. Marca cada evento: PS, SC, AR, ST, Spring (si existe), SOS, LPS. Verifica si el volumen confirma cada fase. Luego, traduce cada evento a terminologia SMC: donde estan los liquidity sweeps? Donde estan los BOS? Donde estan los OBs? Comprobaras que Wyckoff y SMC cuentan la misma historia."
+          practicalExercise: "Busca BTC/USD o SP500 en gráfico Diario y encuentra un ejemplo historico de un ciclo completo de Wyckoff. Marca cada evento: PS, SC, AR, ST, Spring (si existe), SOS, LPS. Verifica si el volumen confirma cada fase. Luego, traduce cada evento a terminologia SMC: donde estan los liquidity sweeps? Donde estan los BOS? Donde estan los OBs? Comprobaras que Wyckoff y SMC cuentan la misma historia."
         },
         // --------------------------------------------------------------------
         // LESSON 4-3-3: TU SISTEMA COMPLETO DE TRADING
@@ -1466,7 +1466,7 @@ export const PHASE_4: Phase = {
 </div>
 <div class="concept-card">
 <h4>2. Zona de Entrada (Donde?)</h4>
-<p>Una vez que sabes la dirección, necesitas una ZONA especifica donde buscar tu trade.</p>
+<p>Una vez que sabes la dirección, necesitas una ZONA específica donde buscar tu trade.</p>
 <p><strong>Zonas validas para LONG:</strong></p>
 <ul>
 <li>Bullish Order Block fresco en Discount Zone</li>
@@ -1533,7 +1533,7 @@ export const PHASE_4: Phase = {
 <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Se barrio liquidez (equal highs/lows, PDH/PDL, Asia range)</td>
 </tr>
 <tr>
-<td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Order Block valido</td>
+<td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Order Block válido</td>
 <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">+1</td>
 <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">OB fresco que causo BOS y esta en zona correcta</td>
 </tr>
@@ -1548,7 +1548,7 @@ export const PHASE_4: Phase = {
 <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Dentro de London KZ, NY KZ, o London Close KZ</td>
 </tr>
 <tr>
-<td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Dia optimo</td>
+<td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Dia óptimo</td>
 <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">+1</td>
 <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Martes, Miercoles o Jueves (evitar Lunes/Viernes)</td>
 </tr>
@@ -1581,7 +1581,7 @@ export const PHASE_4: Phase = {
 <li>Que dice el HTF? (D1/H4 estructura y bias) ________________</li>
 <li>Estoy comprando en discount o vendiendo en premium? SI / NO</li>
 <li>Se ha barrido liquidez obvia? SI / NO (Cual? ________)</li>
-<li>Mi zona de entrada tiene OB/FVG/S-D valido? SI / NO</li>
+<li>Mi zona de entrada tiene OB/FVG/S-D válido? SI / NO</li>
 <li>Estoy dentro de una Killzone? SI / NO (Cual? ________)</li>
 <li>Es Martes, Miercoles o Jueves? SI / NO</li>
 <li>Tengo confirmación en LTF? SI / NO (Cual? ________)</li>
@@ -1622,10 +1622,10 @@ export const PHASE_4: Phase = {
 <div class="strategy-box">
 <h4>Protocolo de Backtesting (OBLIGATORIO antes de tradear con dinero real)</h4>
 <ol>
-<li><strong>Elige UN par:</strong> EUR/USD o GBP/USD. No mas de uno al principio.</li>
+<li><strong>Elige UN par:</strong> EUR/USD o GBP/USD. No más de uno al principio.</li>
 <li><strong>Elige UN timeframe de análisis:</strong> H1 o H4.</li>
 <li><strong>Elige UNA killzone:</strong> London O New York. No ambas.</li>
-<li><strong>Retrocede 3 meses en el grafico.</strong></li>
+<li><strong>Retrocede 3 meses en el gráfico.</strong></li>
 <li><strong>Avanza vela por vela</strong> buscando setups que cumplan tu checklist.</li>
 <li><strong>Documenta CADA trade</strong> en un journal: fecha, par, confluencias, entrada, SL, TP, resultado, captura de pantalla.</li>
 <li><strong>Minimo 50 trades de backtest.</strong> Idealmente 100.</li>
@@ -1698,7 +1698,7 @@ export const PHASE_4: Phase = {
             "El sistema de puntuacion de confluencias: 0-4 = no tradear, 5-6 = trade B, 7-8 = trade A, 9-12 = trade A+",
             "Backtesting de mínimo 50-100 trades es OBLIGATORIO antes de usar dinero real. Win rate >45% con RR 3:1 = rentable",
             "La rutina diaria profesional incluye: análisis nocturno (10 min), pre-sesion (5 min), killzone activa (1-3 horas), y post-sesion journal (10 min)",
-            "La consistencia en la ejecucion del sistema es mas importante que la perfeccion del sistema en si"
+            "La consistencia en la ejecucion del sistema es más importante que la perfeccion del sistema en si"
           ],
           quiz: [
             {
@@ -1724,7 +1724,7 @@ export const PHASE_4: Phase = {
               explanation: "Un mínimo de 50 trades (idealmente 100) es necesario para tener una muestra estadisticamente significativa que te permita evaluar el win rate, RR promedio, profit factor y racha maxima de perdidas de tu sistema."
             },
             {
-              question: "Cual es la regla mas importante sobre el Stop Loss?",
+              question: "Cual es la regla más importante sobre el Stop Loss?",
               options: [
                 "Se puede mover en cualquier dirección segun como vaya el trade",
                 "Se coloca despues de entrar al trade",
@@ -1740,7 +1740,7 @@ export const PHASE_4: Phase = {
                 "Pierdes dinero porque 50% de win rate es malo",
                 "Empatas, ni ganas ni pierdes",
                 "Ganas una ganancia neta de 100R (50 wins x 3R - 50 losses x 1R)",
-                "Imposible calcular sin mas datos"
+                "Imposible calcular sin más datos"
               ],
               correctIndex: 2,
               explanation: "Con 50% win rate y 3:1 RR: ganas 50 trades x 3R = 150R, y pierdes 50 trades x 1R = 50R. Ganancia neta = 100R. Por eso el ratio riesgo-beneficio es tan importante: puedes ganar dinero incluso perdiendo la mitad de tus trades."
@@ -1766,7 +1766,7 @@ export const PHASE_4: Phase = {
           duration: "35 min",
           content: `
 <h2>Teoria de Ondas de Elliott</h2>
-<div class="analogy-box"><h3>Las Olas del Mar</h3><p>El mercado se mueve en ondas, como el mar. Hay olas grandes que van hacia la playa (impulso) y olas que retroceden (corrección). Dentro de cada ola grande hay olas mas pequenas. Elliott descubrio que estas olas siguen un patron repetitivo de 5+3.</p></div>
+<div class="analogy-box"><h3>Las Olas del Mar</h3><p>El mercado se mueve en ondas, como el mar. Hay olas grandes que van hacia la playa (impulso) y olas que retroceden (corrección). Dentro de cada ola grande hay olas más pequenas. Elliott descubrio que estas olas siguen un patron repetitivo de 5+3.</p></div>
 <h3>El Patron Basico: 5-3</h3>
 
 <div style="display:flex;justify-content:center;margin:20px 0">
@@ -1779,7 +1779,7 @@ export const PHASE_4: Phase = {
 <circle cx="70" cy="120" r="4" fill="#26a69a"/><text x="70" y="112" fill="#26a69a" font-size="10" text-anchor="middle" font-weight="bold">1</text>
 <circle cx="90" cy="140" r="4" fill="#42a5f5"/><text x="90" y="155" fill="#42a5f5" font-size="10" text-anchor="middle" font-weight="bold">2</text>
 <circle cx="170" cy="35" r="5" fill="#26a69a"/><text x="170" y="28" fill="#26a69a" font-size="11" text-anchor="middle" font-weight="bold">3</text>
-<text x="178" y="48" fill="#26a69a" font-size="7">(la mas fuerte!)</text>
+<text x="178" y="48" fill="#26a69a" font-size="7">(la más fuerte!)</text>
 <circle cx="200" cy="75" r="4" fill="#42a5f5"/><text x="200" y="90" fill="#42a5f5" font-size="10" text-anchor="middle" font-weight="bold">4</text>
 <circle cx="260" cy="25" r="4" fill="#26a69a"/><text x="260" y="18" fill="#26a69a" font-size="10" text-anchor="middle" font-weight="bold">5</text>
 <!-- 3 ondas correctivas (A-B-C) -->
@@ -1790,14 +1790,14 @@ export const PHASE_4: Phase = {
 <!-- Legend -->
 <rect x="30" y="180" width="100" height="14" rx="3" fill="#26a69a15"/><text x="80" y="191" fill="#26a69a" font-size="8" text-anchor="middle">5 ondas impulso</text>
 <rect x="140" y="180" width="100" height="14" rx="3" fill="#ef535015"/><text x="190" y="191" fill="#ef5350" font-size="8" text-anchor="middle">3 ondas corrección</text>
-<text x="340" y="191" fill="#fbbf24" font-size="8" text-anchor="middle">Onda 3 = la mas rentable</text>
+<text x="340" y="191" fill="#fbbf24" font-size="8" text-anchor="middle">Onda 3 = la más rentable</text>
 </svg>
 </div>
 <div class="highlight-box blue"><h4>Fase Impulsiva: 5 Ondas</h4>
 <ul>
 <li><strong>Onda 1:</strong> El inicio del movimiento. Pocos lo ven. Suele ser debil.</li>
-<li><strong>Onda 2:</strong> Retroceso de la onda 1. NUNCA retrocede mas del 100% de la onda 1. Suele retroceder 50-78.6% (Fibonacci!).</li>
-<li><strong>Onda 3:</strong> LA MAS FUERTE y larga. Aqui es donde quieres estar. Nunca es la mas corta de las 3 impulsivas.</li>
+<li><strong>Onda 2:</strong> Retroceso de la onda 1. NUNCA retrocede más del 100% de la onda 1. Suele retroceder 50-78.6% (Fibonacci!).</li>
+<li><strong>Onda 3:</strong> LA MAS FUERTE y larga. Aqui es donde quieres estar. Nunca es la más corta de las 3 impulsivas.</li>
 <li><strong>Onda 4:</strong> Retroceso de la onda 3. Suele ser lateral/complejo. NO debe solapar con la onda 1.</li>
 <li><strong>Onda 5:</strong> El empujon final. Suele tener divergencia en RSI (señal de agotamiento).</li>
 </ul></div>
@@ -1809,18 +1809,18 @@ export const PHASE_4: Phase = {
 </ul></div>
 <h3>Las 3 Reglas INVIOLABLES de Elliott</h3>
 <div class="strategy-box"><h4>Si alguna de estas se rompe, tu conteo esta MAL</h4><ol>
-<li><strong>Onda 2 NUNCA retrocede mas del 100% de la onda 1</strong></li>
-<li><strong>Onda 3 NUNCA es la mas corta</strong> de las ondas 1, 3 y 5</li>
+<li><strong>Onda 2 NUNCA retrocede más del 100% de la onda 1</strong></li>
+<li><strong>Onda 3 NUNCA es la más corta</strong> de las ondas 1, 3 y 5</li>
 <li><strong>Onda 4 NUNCA entra en territorio de la onda 1</strong> (no se solapan)</li>
 </ol></div>
 <h3>Elliott + Fibonacci = Combo Perfecto</h3>
 <div class="grid-cards">
 <div class="card"><h4>Onda 2</h4><p>Suele retroceder 50-78.6% de la onda 1. La zona OTE es ideal para entrar.</p></div>
-<div class="card"><h4>Onda 3</h4><p>Suele ser 1.618x o 2.618x la longitud de la onda 1. La mas rentable.</p></div>
+<div class="card"><h4>Onda 3</h4><p>Suele ser 1.618x o 2.618x la longitud de la onda 1. La más rentable.</p></div>
 <div class="card"><h4>Onda 4</h4><p>Suele retroceder 38.2% de la onda 3.</p></div>
 <div class="card"><h4>Onda 5</h4><p>Suele ser igual a la onda 1 o 61.8% de las ondas 1-3.</p></div>
 </div>
-<div class="warning-box"><h4>Advertencia sobre Elliott Wave</h4><p>Elliott Wave es SUBJETIVO. Dos traders pueden ver conteos diferentes en el mismo grafico. Usalo como CONTEXTO para entender donde estamos en el ciclo, no como señal de entrada directa. Combinalo con SMC/ICT para entradas precisas.</p></div>
+<div class="warning-box"><h4>Advertencia sobre Elliott Wave</h4><p>Elliott Wave es SUBJETIVO. Dos traders pueden ver conteos diferentes en el mismo gráfico. Usalo como CONTEXTO para entender donde estamos en el ciclo, no como señal de entrada directa. Combinalo con SMC/ICT para entradas precisas.</p></div>
 <h3>Como Usar Elliott en la Practica</h3>
 <div class="strategy-box"><ol>
 <li>En D1/H4, intenta identificar si estamos en onda impulsiva (1-5) o correctiva (A-B-C)</li>
@@ -1830,15 +1830,15 @@ export const PHASE_4: Phase = {
 </ol></div>`,
           keyPoints: [
             "Elliott: 5 ondas impulsivas + 3 ondas correctivas (A-B-C)",
-            "Onda 3 es la mas fuerte y rentable - siempre busca tradearla",
-            "3 reglas inviolables: onda 2 < 100% de onda 1, onda 3 no es la mas corta, onda 4 no solapa con onda 1",
+            "Onda 3 es la más fuerte y rentable - siempre busca tradearla",
+            "3 reglas inviolables: onda 2 < 100% de onda 1, onda 3 no es la más corta, onda 4 no solapa con onda 1",
             "Fibonacci se alinea con Elliott: onda 2 retrocede 50-78.6%, onda 3 extiende 1.618x",
             "Es subjetivo - usalo como contexto, no como señal directa"
           ],
           quiz: [
             { question: "Cuantas ondas tiene un ciclo completo de Elliott?", options: ["3 ondas", "5 ondas", "8 ondas (5 impulsivas + 3 correctivas)", "10 ondas"], correctIndex: 2, explanation: "Un ciclo completo tiene 5 ondas impulsivas (1-2-3-4-5) y 3 ondas correctivas (A-B-C) = 8 en total." },
-            { question: "Cual de las ondas de Elliott es generalmente la mas fuerte y larga?", options: ["Onda 1", "Onda 2", "Onda 3", "Onda 5"], correctIndex: 2, explanation: "La Onda 3 es la mas fuerte y larga del impulso. Es donde la mayoria de traders identifican la tendencia y se suman." },
-            { question: "Si la Onda 2 retrocede el 105% de la Onda 1, que significa?", options: ["Es una onda 2 normal", "Tu conteo de ondas esta MAL - onda 2 nunca retrocede mas del 100%", "Es una señal de compra", "Necesitas mas indicadores"], correctIndex: 1, explanation: "Es una regla inviolable: la Onda 2 NUNCA retrocede mas del 100% de la Onda 1. Si lo hace, tu conteo esta equivocado." }
+            { question: "Cual de las ondas de Elliott es generalmente la más fuerte y larga?", options: ["Onda 1", "Onda 2", "Onda 3", "Onda 5"], correctIndex: 2, explanation: "La Onda 3 es la más fuerte y larga del impulso. Es donde la mayoria de traders identifican la tendencia y se suman." },
+            { question: "Si la Onda 2 retrocede el 105% de la Onda 1, que significa?", options: ["Es una onda 2 normal", "Tu conteo de ondas esta MAL - onda 2 nunca retrocede más del 100%", "Es una señal de compra", "Necesitas más indicadores"], correctIndex: 1, explanation: "Es una regla inviolable: la Onda 2 NUNCA retrocede más del 100% de la Onda 1. Si lo hace, tu conteo esta equivocado." }
           ]
         },
         {
@@ -1852,8 +1852,8 @@ export const PHASE_4: Phase = {
 <p>El Order Flow analiza las ordenes REALES que entran al mercado: cuantos contratos se compran y venden, a que precios, y con que agresividad. Es mirar "detras del telon" del precio.</p>
 <h3>Conceptos Clave del Order Flow</h3>
 <div class="vocab-card"><h4>Bid y Ask (Oferta y Demanda)</h4>
-<p><strong>Bid:</strong> El precio mas alto que alguien esta dispuesto a PAGAR (compradores esperando).</p>
-<p><strong>Ask:</strong> El precio mas bajo al que alguien esta dispuesto a VENDER (vendedores esperando).</p>
+<p><strong>Bid:</strong> El precio más alto que alguien esta dispuesto a PAGAR (compradores esperando).</p>
+<p><strong>Ask:</strong> El precio más bajo al que alguien esta dispuesto a VENDER (vendedores esperando).</p>
 <p>La diferencia entre ambos es el <strong>spread</strong>.</p></div>
 <div class="vocab-card"><h4>Libro de Ordenes (Order Book / DOM)</h4>
 <p>Muestra todas las ordenes limitadas pendientes en cada nivel de precio. Te dice DONDE hay concentracion de compradores y vendedores.</p>
@@ -1885,17 +1885,17 @@ export const PHASE_4: Phase = {
 <li>Ves un Order Block alcista → miras el Order Flow → hay acumulacion de ordenes de compra → CONFIRMA tu análisis</li>
 <li>Ves un OB alcista → el Order Flow muestra ventas agresivas → la zona podria fallar</li>
 </ul></div>
-<div class="warning-box"><h4>Nota sobre Order Flow</h4><p>El Order Flow real requiere acceso a datos de nivel 2 (DOM/tape reading) que generalmente necesitan plataformas de pago como Sierra Chart, Bookmap o ATAS. Para Forex retail, el volumen de tick y Volume Profile de TradingView son buenas aproximaciones. El Order Flow puro es mas util en futuros e indices.</p></div>`,
+<div class="warning-box"><h4>Nota sobre Order Flow</h4><p>El Order Flow real requiere acceso a datos de nivel 2 (DOM/tape reading) que generalmente necesitan plataformas de pago como Sierra Chart, Bookmap o ATAS. Para Forex retail, el volumen de tick y Volume Profile de TradingView son buenas aproximaciones. El Order Flow puro es más util en futuros e indices.</p></div>`,
           keyPoints: [
             "Order Flow = analizar las ordenes reales del mercado (quien compra/vende, cuanto, a que precio)",
             "Market Orders (agresivos) mueven el precio, Limit Orders (pasivos) crean S/R",
-            "Delta positivo = mas compras = presion alcista, Delta negativo = presion bajista",
-            "Volume Profile: POC es el precio con mas volumen, Value Area es donde se tradeo el 70%",
+            "Delta positivo = más compras = presion alcista, Delta negativo = presion bajista",
+            "Volume Profile: POC es el precio con más volumen, Value Area es donde se tradeo el 70%",
             "Order Flow confirma o invalida los niveles de SMC (OB, FVG)"
           ],
           quiz: [
-            { question: "Que es el POC (Point of Control) en Volume Profile?", options: ["El precio mas alto del dia", "El precio con mayor volumen tradeado", "El precio de cierre", "El spread del broker"], correctIndex: 1, explanation: "El POC es el nivel de precio donde se ha tradeado el mayor volumen. Actua como un iman para el precio." },
-            { question: "Si el delta es fuertemente negativo, que indica?", options: ["Muchas compras agresivas", "Muchas ventas agresivas - presion bajista", "El mercado esta cerrado", "Indecision"], correctIndex: 1, explanation: "Delta negativo = mas ordenes de venta agresivas (market sells) que de compra = presion bajista." },
+            { question: "Que es el POC (Point of Control) en Volume Profile?", options: ["El precio más alto del dia", "El precio con mayor volumen tradeado", "El precio de cierre", "El spread del broker"], correctIndex: 1, explanation: "El POC es el nivel de precio donde se ha tradeado el mayor volumen. Actua como un iman para el precio." },
+            { question: "Si el delta es fuertemente negativo, que indica?", options: ["Muchas compras agresivas", "Muchas ventas agresivas - presion bajista", "El mercado esta cerrado", "Indecision"], correctIndex: 1, explanation: "Delta negativo = más ordenes de venta agresivas (market sells) que de compra = presion bajista." },
             { question: "Como complementa el Order Flow al SMC?", options: ["Lo reemplaza completamente", "Confirma o invalida las zonas de SMC (OB, FVG) con datos reales de ordenes", "No tienen relación", "Solo funciona con criptomonedas"], correctIndex: 1, explanation: "SMC identifica DONDE hay zonas de interes. Order Flow confirma si realmente hay participacion institucional en esas zonas." }
           ]
         },
@@ -1908,7 +1908,7 @@ export const PHASE_4: Phase = {
 <div class="analogy-box"><h3>El Precio Forma Figuras Geometricas</h3><p>Los patrones armonicos son figuras geometricas que el precio forma usando proporciones exactas de Fibonacci. Son como huellas digitales del mercado - cuando las ves, sabes con alta probabilidad que va a pasar despues.</p></div>
 <h3>Los 4 Patrones Armonicos Principales</h3>
 <div class="pattern-card"><h4>1. GARTLEY ("222")</h4>
-<p>El patron armonico mas conocido. Forma una estructura XABCD con estas proporciones:</p>
+<p>El patron armonico más conocido. Forma una estructura XABCD con estas proporciones:</p>
 <ul>
 <li><strong>AB</strong> = 61.8% de XA</li>
 <li><strong>BC</strong> = 38.2% - 88.6% de AB</li>
@@ -1921,9 +1921,9 @@ export const PHASE_4: Phase = {
 <li><strong>AB</strong> = 78.6% de XA</li>
 <li><strong>BC</strong> = 38.2% - 88.6% de AB</li>
 <li><strong>CD</strong> = 161.8% - 261.8% de BC</li>
-<li><strong>D</strong> = 127.2% - 161.8% de XA (extiende mas alla de X)</li>
+<li><strong>D</strong> = 127.2% - 161.8% de XA (extiende más alla de X)</li>
 </ul>
-<p><strong>Diferencia con Gartley:</strong> El punto D va MAS ALLA del punto X. Es un patron mas agresivo.</p></div>
+<p><strong>Diferencia con Gartley:</strong> El punto D va MAS ALLA del punto X. Es un patron más agresivo.</p></div>
 <div class="pattern-card"><h4>3. BAT (Murcielago)</h4>
 <ul>
 <li><strong>AB</strong> = 38.2% - 50% de XA</li>
@@ -1931,7 +1931,7 @@ export const PHASE_4: Phase = {
 <li><strong>CD</strong> = 161.8% - 261.8% de BC</li>
 <li><strong>D</strong> = 88.6% de XA</li>
 </ul>
-<p><strong>Nota:</strong> El nivel 88.6% es el sello del Bat pattern. Retroceso profundo pero valido.</p></div>
+<p><strong>Nota:</strong> El nivel 88.6% es el sello del Bat pattern. Retroceso profundo pero válido.</p></div>
 <div class="pattern-card"><h4>4. CRAB (Cangrejo)</h4>
 <ul>
 <li><strong>AB</strong> = 38.2% - 61.8% de XA</li>
@@ -1939,14 +1939,14 @@ export const PHASE_4: Phase = {
 <li><strong>CD</strong> = 224% - 361.8% de BC</li>
 <li><strong>D</strong> = 161.8% de XA</li>
 </ul>
-<p><strong>Nota:</strong> La extension mas extrema. D va 161.8% mas alla de X. Reversiones explosivas.</p></div>
+<p><strong>Nota:</strong> La extension más extrema. D va 161.8% más alla de X. Reversiones explosivas.</p></div>
 <h3>Como Tradear Patrones Armonicos</h3>
 <div class="strategy-box"><h4>Paso a Paso</h4><ol>
 <li>Identifica un movimiento XA claro (impulso)</li>
 <li>Espera el retroceso AB y mide el porcentaje de Fibonacci</li>
 <li>Espera BC y luego CD</li>
 <li>Cuando D se complete en la zona de Fibonacci correcta, busca ENTRADA</li>
-<li><strong>Stop Loss:</strong> Justo mas alla de D (10-20 pips)</li>
+<li><strong>Stop Loss:</strong> Justo más alla de D (10-20 pips)</li>
 <li><strong>Take Profit 1:</strong> Nivel de A</li>
 <li><strong>Take Profit 2:</strong> 61.8% del movimiento CD</li>
 </ol></div>
@@ -1957,13 +1957,13 @@ export const PHASE_4: Phase = {
           keyPoints: [
             "4 patrones principales: Gartley, Butterfly, Bat, Crab",
             "Todos usan proporciones exactas de Fibonacci para los puntos XABCD",
-            "La entrada siempre es en el punto D con SL justo mas alla",
+            "La entrada siempre es en el punto D con SL justo más alla",
             "Alta precision (65-75%) pero baja frecuencia - paciencia necesaria",
             "TradingView tiene herramientas integradas para dibujar y detectar Harmonics"
           ],
           quiz: [
             { question: "En que nivel de Fibonacci se completa el punto D de un patron Gartley?", options: ["38.2% de XA", "50% de XA", "78.6% de XA", "161.8% de XA"], correctIndex: 2, explanation: "El Gartley tiene su punto D en el 78.6% de retroceso del movimiento XA. Es su firma." },
-            { question: "Cual es la diferencia principal entre Gartley y Butterfly?", options: ["No hay diferencia", "En el Butterfly, el punto D extiende mas alla del punto X", "El Gartley tiene mas puntos", "El Butterfly solo aparece en Forex"], correctIndex: 1, explanation: "En Gartley, D esta dentro del rango XA (78.6%). En Butterfly, D va mas alla de X (127.2-161.8%). El Butterfly es mas agresivo." },
+            { question: "Cual es la diferencia principal entre Gartley y Butterfly?", options: ["No hay diferencia", "En el Butterfly, el punto D extiende más alla del punto X", "El Gartley tiene más puntos", "El Butterfly solo aparece en Forex"], correctIndex: 1, explanation: "En Gartley, D esta dentro del rango XA (78.6%). En Butterfly, D va más alla de X (127.2-161.8%). El Butterfly es más agresivo." },
             { question: "Los patrones armonicos son de...", options: ["Alta frecuencia, baja precision", "Alta precision, baja frecuencia", "Baja precision, baja frecuencia", "Alta frecuencia, alta precision"], correctIndex: 1, explanation: "Los Harmonics no aparecen todos los dias (baja frecuencia), pero cuando se forman correctamente tienen alta tasa de éxito (65-75%)." }
           ]
         },
@@ -2002,7 +2002,7 @@ export const PHASE_4: Phase = {
 <div class="grid-cards">
 <div class="card green-border"><h4>London Open (08:00-10:00 UTC)</h4><p>Las primeras 2 horas de London son las MEJORES para scalping. Maxima volatilidad, setups claros.</p></div>
 <div class="card green-border"><h4>NY Open (13:00-15:00 UTC)</h4><p>Apertura de NY, datos economicos, alta volatilidad. Segundo mejor momento.</p></div>
-<div class="card red-border"><h4>EVITAR: Asia, almuerzo europeo</h4><p>Baja volatilidad = spreads mas altos + movimientos erraticos. No scalpes aquí.</p></div>
+<div class="card red-border"><h4>EVITAR: Asia, almuerzo europeo</h4><p>Baja volatilidad = spreads más altos + movimientos erraticos. No scalpes aquí.</p></div>
 </div>
 <div class="warning-box"><h4>Advertencia Seria sobre Scalping</h4>
 <p>El scalping es el estilo MAS DIFICIL de trading. Requiere:</p>
@@ -2023,7 +2023,7 @@ export const PHASE_4: Phase = {
           quiz: [
             { question: "Cual es el requisito MAS importante del broker para hacer scalping?", options: ["Que tenga app movil", "Spread bajo (0.0-0.5 pips) y ejecucion rapida", "Que ofrezca bonus de bienvenida", "Que permita apalancamiento 1:1000"], correctIndex: 1, explanation: "Con un TP de 5-15 pips, un spread de 2+ pips se come la mitad de tu ganancia. Spreads bajos y ejecucion rapida son obligatorios para scalping." },
             { question: "En scalping con SMC, donde buscas la entrada exacta?", options: ["En H4 directamente", "En M1, buscando CHoCH dentro de un OB/FVG de M5", "En D1", "En cualquier temporalidad"], correctIndex: 1, explanation: "H4 da el sesgo, M5 identifica la zona (OB/FVG), y M1 da el timing exacto buscando un cambio de estructura (CHoCH) dentro de la zona." },
-            { question: "Cuando NO deberias hacer scalping?", options: ["London Open", "NY Open", "Sesion asiatica y almuerzo europeo (baja volatilidad)", "Nunca, siempre es buen momento"], correctIndex: 2, explanation: "Asia y el almuerzo europeo tienen baja volatilidad = spreads mas altos + movimientos erraticos sin dirección. No es viable para scalping." }
+            { question: "Cuando NO deberias hacer scalping?", options: ["London Open", "NY Open", "Sesion asiatica y almuerzo europeo (baja volatilidad)", "Nunca, siempre es buen momento"], correctIndex: 2, explanation: "Asia y el almuerzo europeo tienen baja volatilidad = spreads más altos + movimientos erraticos sin dirección. No es viable para scalping." }
           ]
         },
         {
@@ -2086,9 +2086,9 @@ export const PHASE_4: Phase = {
             "Cuidado con gaps del fin de semana - cerrar o reducir posiciones"
           ],
           quiz: [
-            { question: "Por que Swing Trading es el mejor estilo para empezar?", options: ["Porque es mas rápido", "Menos estres, compatible con trabajo, mejores R:R, menos comisiones", "Porque no necesitas analizar", "Porque siempre ganas"], correctIndex: 1, explanation: "Swing trading permite operar con 1-2 horas al dia, tiene menos estres que scalping/day trading, permite ratios R:R de 1:3 o mejores, y paga menos en comisiones." },
+            { question: "Por que Swing Trading es el mejor estilo para empezar?", options: ["Porque es más rápido", "Menos estres, compatible con trabajo, mejores R:R, menos comisiones", "Porque no necesitas analizar", "Porque siempre ganas"], correctIndex: 1, explanation: "Swing trading permite operar con 1-2 horas al dia, tiene menos estres que scalping/day trading, permite ratios R:R de 1:3 o mejores, y paga menos en comisiones." },
             { question: "Cuando deberias mover tu SL a break-even en swing trading?", options: ["Inmediatamente despues de entrar", "Cuando el trade gana 1R (la misma distancia que tu SL)", "Nunca, dejar el SL original", "Solo si pierdes 3 trades seguidos"], correctIndex: 1, explanation: "Cuando el trade ha ganado 1R (ej: arriesgaste 30 pips y ya va +30 pips), mueves el SL al punto de entrada. Ya no puedes perder dinero en ese trade." },
-            { question: "Que haces con trades abiertos el viernes por la noche?", options: ["Los dejas sin preocuparte", "Los cierras o reduces posición por riesgo de gap del fin de semana", "Abres mas posiciones", "Quitas el SL"], correctIndex: 1, explanation: "Los gaps del fin de semana pueden hacer que el precio abra muy lejos de donde cerro, saltandose tu SL. Lo seguro es cerrar o reducir antes del cierre del viernes." }
+            { question: "Que haces con trades abiertos el viernes por la noche?", options: ["Los dejas sin preocuparte", "Los cierras o reduces posición por riesgo de gap del fin de semana", "Abres más posiciones", "Quitas el SL"], correctIndex: 1, explanation: "Los gaps del fin de semana pueden hacer que el precio abra muy lejos de donde cerro, saltandose tu SL. Lo seguro es cerrar o reducir antes del cierre del viernes." }
           ]
         }
       ]
