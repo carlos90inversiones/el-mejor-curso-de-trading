@@ -64,7 +64,7 @@ export const PHASE_1: Phase = {
             "Trading = comprar y vender activos financieros para obtener beneficio",
             "Puedes ganar cuando el mercado sube (LONG) o baja (SHORT)",
             "4 estilos: Scalping, Day Trading, Swing Trading, Position Trading",
-            "El 70-90% pierde dinero, pero con educacion y disciplina puedes ser rentable"
+            "El 70-90% pierde dinero, pero con educación y disciplina puedes ser rentable"
           ],
           quiz: [
             { question: "¿Qué es el trading en palabras simples?", options: ["Comprar y vender activos para obtener beneficio por la diferencia de precio", "Guardar dinero en el banco", "Apostar en un casino online", "Comprar acciones y nunca venderlas"], correctIndex: 0, explanation: "El trading consiste en comprar y vender activos financieros aprovechando las diferencias de precio para obtener un beneficio." },
@@ -267,7 +267,7 @@ export const PHASE_1: Phase = {
 <div class="step"><h4>Paso 3: Temporalidad</h4><p>Empieza con: <strong>D (diario)</strong> para tendencia general, <strong>H4</strong> para análisis, <strong>H1</strong> para entradas.</p></div>
 <div class="step"><h4>Paso 4: Tipo de Grafico</h4><p>Selecciona <strong>"Velas Japonesas"</strong> (Candlestick). Es el único que usaremos.</p></div>
 <div class="step"><h4>Paso 5: Herramientas de Dibujo</h4><p>Panel izquierdo: Linea horizontal (soportes/resistencias), Linea de tendencia, Rectangulo (zonas), Fibonacci.</p></div>
-<div class="step"><h4>Paso 6: Configurar Layout</h4><p>Crea un layout con multiples temporalidades: pon D1, H4 y H1 del mismo par lado a lado.</p></div>
+<div class="step"><h4>Paso 6: Configurar Layout</h4><p>Crea un layout con múltiples temporalidades: pon D1, H4 y H1 del mismo par lado a lado.</p></div>
 </div>
 <h3>MetaTrader 4/5: Donde Ejecutas</h3>
 <div class="highlight-box blue"><h4>Diferencia Clave</h4><p><strong>TradingView</strong> = Donde analizas (laboratorio)</p><p><strong>MetaTrader</strong> = Donde ejecutas operaciones (sala de trading)</p><p>Muchos traders usan ambas a la vez.</p></div>
@@ -282,7 +282,7 @@ export const PHASE_1: Phase = {
             "MINIMO 3 meses en demo antes de dinero real"
           ],
           quiz: [
-            { question: "Para que sirve TradingView principalmente?", options: ["Ejecutar compras/ventas", "Analizar gráficos y mercado", "Depositar dinero", "Hablar con traders"], correctIndex: 1, explanation: "TradingView es para análisis. MetaTrader para ejecutar." },
+            { question: "¿Para qué sirve TradingView principalmente?", options: ["Ejecutar compras/ventas", "Analizar gráficos y mercado", "Depositar dinero", "Hablar con traders"], correctIndex: 1, explanation: "TradingView es para análisis. MetaTrader para ejecutar." },
             { question: "¿Cuántos indicadores deberías usar como máximo al empezar?", options: ["10-15", "2-3", "7-8", "Ninguno"], correctIndex: 1, explanation: "2-3 indicadores son suficientes. Mas indicadores = más confusion." }
           ],
           practicalExercise: "Configura TradingView con velas japonesas, EMA 21 (azul), EMA 50 (naranja), RSI 14. Guarda el layout. Practica cambiar entre temporalidades D1, H4, H1. Dibuja 2 lineas horizontales en niveles que te parezcan importantes."
@@ -318,10 +318,10 @@ export const PHASE_1: Phase = {
 <div class="card"><h4>Interactive Brokers</h4><p>El más profesional. Para acciones, opciones, futuros. Ideal si quieres diversificar mercados.</p></div>
 </div>
 <div class="warning-box"><h4>Senales de ESTAFA</h4><ul>
-<li>No esta regulado por ningun organismo</li>
+<li>No esta regulado por ningún organismo</li>
 <li>Te promete ganancias garantizadas</li>
 <li>Bonus enormes "irreales" (300%, 500%...)</li>
-<li>No te dejan retirar tu dinero facilmente</li>
+<li>No te dejan retirar tu dinero fácilmente</li>
 <li>Te llaman insistentemente para que deposites más</li>
 <li>No tienen sede fisica verificable</li>
 </ul><p><strong>Si ves cualquiera de estas señales, HUYE inmediatamente.</strong></p></div>`,
@@ -481,12 +481,12 @@ export const PHASE_1: Phase = {
           duration: "25 min",
           content: `
 <h2>Patrones de Velas Avanzados</h2>
-<p>Ahora que conoces los patrones basicos, vamos con los patrones de multiples velas y combinaciones que usan los profesionales.</p>
+<p>Ahora que conoces los patrones básicos, vamos con los patrones de múltiples velas y combinaciones que usan los profesionales.</p>
 <h3>Patrones de 2-3 Velas</h3>
-<div class="pattern-card"><h4>MORNING STAR (Estrella de la Manana)</h4><p>Patron de 3 velas ALCISTA:</p><ol><li>Vela roja grande (bajistas dominan)</li><li>Vela pequeña (doji o cuerpo chico) = indecision</li><li>Vela verde grande (alcistas toman control)</li></ol><p><strong>Aparece en suelos/soportes. Senal de giro alcista MUY fiable.</strong></p></div>
-<div class="pattern-card"><h4>EVENING STAR (Estrella de la Tarde)</h4><p>Patron de 3 velas BAJISTA (inverso del Morning Star):</p><ol><li>Vela verde grande</li><li>Vela pequeña (indecision)</li><li>Vela roja grande</li></ol><p><strong>Aparece en techos/resistencias. Senal de giro bajista.</strong></p></div>
-<div class="pattern-card"><h4>THREE WHITE SOLDIERS (Tres Soldados Blancos)</h4><p>3 velas verdes consecutivas, cada una cerrando más alto. Cuerpos grandes, mechas pequeñas.</p><p><strong>Senal alcista MUY fuerte.</strong> Indica momentum comprador sostenido.</p></div>
-<div class="pattern-card"><h4>THREE BLACK CROWS (Tres Cuervos Negros)</h4><p>3 velas rojas consecutivas, cada una cerrando más bajo.</p><p><strong>Senal bajista MUY fuerte.</strong> Inverso de los Tres Soldados.</p></div>
+<div class="pattern-card"><h4>MORNING STAR (Estrella de la Mañana)</h4><p>Patrón de 3 velas ALCISTA:</p><ol><li>Vela roja grande (bajistas dominan)</li><li>Vela pequeña (doji o cuerpo chico) = indecisión</li><li>Vela verde grande (alcistas toman control)</li></ol><p><strong>Aparece en suelos/soportes. Señal de giro alcista MUY fiable.</strong></p></div>
+<div class="pattern-card"><h4>EVENING STAR (Estrella de la Tarde)</h4><p>Patrón de 3 velas BAJISTA (inverso del Morning Star):</p><ol><li>Vela verde grande</li><li>Vela pequeña (indecisión)</li><li>Vela roja grande</li></ol><p><strong>Aparece en techos/resistencias. Señal de giro bajista.</strong></p></div>
+<div class="pattern-card"><h4>THREE WHITE SOLDIERS (Tres Soldados Blancos)</h4><p>3 velas verdes consecutivas, cada una cerrando más alto. Cuerpos grandes, mechas pequeñas.</p><p><strong>Señal alcista MUY fuerte.</strong> Indica momentum comprador sostenido.</p></div>
+<div class="pattern-card"><h4>THREE BLACK CROWS (Tres Cuervos Negros)</h4><p>3 velas rojas consecutivas, cada una cerrando más bajo.</p><p><strong>Señal bajista MUY fuerte.</strong> Inverso de los Tres Soldados.</p></div>
 <div class="pattern-card"><h4>TWEEZER TOP / BOTTOM</h4><p><strong>Tweezer Top:</strong> Dos velas con maximos casi identicos en resistencia = BAJISTA</p><p><strong>Tweezer Bottom:</strong> Dos velas con minimos casi identicos en soporte = ALCISTA</p><p>Muestra que el mercado RECHAZO el mismo nivel dos veces.</p></div>
 <div class="pattern-card"><h4>INSIDE BAR (Barra Interior)</h4><p>Una vela completamente contenida dentro del rango de la vela anterior. La segunda vela es más pequeña.</p><p><strong>Significado:</strong> CONSOLIDACION antes de un movimiento explosivo. Espera la ruptura de la vela madre.</p><p><strong>Setup:</strong> Entrada cuando el precio rompe el máximo (LONG) o mínimo (SHORT) de la vela madre.</p></div>
 <h3>Patrones de Continuacion</h3>
@@ -506,15 +506,15 @@ export const PHASE_1: Phase = {
 <div class="highlight-box green"><h4>LA REGLA DE ORO de las Velas</h4><p>Un patrón de velas SOLO es válido si aparece en un NIVEL IMPORTANTE (soporte, resistencia, order block, fibonacci). Un martillo en medio de la nada no significa nada. Un martillo en un soporte fuerte con confluencia = entrada de alta probabilidad.</p></div>`,
           keyPoints: [
             "Morning/Evening Star son de los patrones más fiables",
-            "Inside Bar = consolidacion antes de movimiento explosivo",
+            "Inside Bar = consolidación antes de movimiento explosivo",
             "Three Soldiers/Crows = momentum fuerte y sostenido",
             "Un patrón SOLO es válido en un NIVEL IMPORTANTE",
             "La confluencia (patrón + nivel + tendencia) es lo que realmente importa"
           ],
           quiz: [
-            { question: "¿Qué es un Morning Star?", options: ["Una vela verde sola", "Patron de 3 velas: roja grande, vela pequeña, verde grande = giro alcista", "Un indicador técnico", "El gap de apertura"], correctIndex: 1, explanation: "Morning Star es un patrón de 3 velas de giro alcista: bajista grande → indecisión → alcista grande." },
+            { question: "¿Qué es un Morning Star?", options: ["Una vela verde sola", "Patrón de 3 velas: roja grande, vela pequeña, verde grande = giro alcista", "Un indicador técnico", "El gap de apertura"], correctIndex: 1, explanation: "Morning Star es un patrón de 3 velas de giro alcista: bajista grande → indecisión → alcista grande." },
             { question: "¿Qué significa un Inside Bar?", options: ["El precio se mueve muy rápido", "Consolidacion antes de un movimiento explosivo", "Final de la tendencia", "Error en el gráfico"], correctIndex: 1, explanation: "Inside Bar indica que el mercado esta comprimiendo energia (consolidando) antes de un movimiento fuerte." },
-            { question: "Un martillo en medio de una tendencia sin ningun soporte cerca es...", options: ["Senal de compra fuerte", "Senal poco fiable - necesita contexto/nivel importante", "Senal de venta", "Momento de cerrar todo"], correctIndex: 1, explanation: "Los patrones de velas SOLO son fiables cuando aparecen en niveles importantes (soporte, resistencia, order block, etc.)." }
+            { question: "¿Un martillo en medio de una tendencia sin ningún soporte cerca es...", options: ["Señal de compra fuerte", "Señal poco fiable - necesita contexto/nivel importante", "Señal de venta", "Momento de cerrar todo"], correctIndex: 1, explanation: "Los patrones de velas SOLO son fiables cuando aparecen en niveles importantes (soporte, resistencia, order block, etc.)." }
           ],
           practicalExercise: "En EUR/USD H4, identifica al menos: 2 Morning Star, 2 Inside Bar, 1 Three White Soldiers. Marca cada patron con la herramienta de texto. Observa que paso DESPUES de cada patron y anotalo."
         }
@@ -537,10 +537,10 @@ export const PHASE_1: Phase = {
 <div class="grid-cards">
 <div class="card red-border"><h4>1. Operar sin Stop Loss</h4><p>"Ya se va a recuperar..." NO. Una operación sin SL puede destruir tu cuenta entera en minutos. SIEMPRE pon SL antes de entrar.</p></div>
 <div class="card red-border"><h4>2. Arriesgar demasiado por trade</h4><p>Principiantes arriesgan 10-20% por operación. Con 5 perdidas seguidas (que PASARA), pierdes todo. Maximo 1-2%.</p></div>
-<div class="card red-border"><h4>3. Revenge Trading</h4><p>Perder → frustacion → operar más para "recuperar" → perder más. El ciclo destructivo #1. Si pierdes 2 seguidas, CIERRA la plataforma.</p></div>
+<div class="card red-border"><h4>3. Revenge Trading</h4><p>Perder → frustración → operar más para "recuperar" → perder más. El ciclo destructivo #1. Si pierdes 2 seguidas, CIERRA la plataforma.</p></div>
 <div class="card red-border"><h4>4. No tener un plan de trading</h4><p>Operar "a ojo" es como navegar sin mapa. Necesitas reglas escritas ANTES de operar: que, cuando, cuanto, como.</p></div>
 <div class="card red-border"><h4>5. Operar en cuenta real demasiado pronto</h4><p>Minimo 3 meses en demo con resultados positivos. Si pierdes en demo, perderás 10x más en real por las emociones.</p></div>
-<div class="card red-border"><h4>6. Seguir "señales" de otros</h4><p>Grupos de Telegram, "gurus" de Instagram... El 95% son estafas. Si supieran ganar, no venderian señales. Aprende TU.</p></div>
+<div class="card red-border"><h4>6. Seguir "señales" de otros</h4><p>Grupos de Telegram, "gurus" de Instagram... El 95% son estafas. Si supieran ganar, no venderían señales. Aprende TU.</p></div>
 <div class="card red-border"><h4>7. Cambiar de estrategia cada semana</h4><p>Una estrategia necesita al menos 30-50 trades para evaluarla. Si cambias cada 5 trades, nunca sabrás si funciona.</p></div>
 <div class="card red-border"><h4>8. Sobreoperar (Overtrading)</h4><p>Mas trades ≠ más dinero. Mas trades = más comisiones + peores decisiones + más estrés. 1-3 buenos trades al día es SUFICIENTE.</p></div>
 <div class="card red-border"><h4>9. Ignorar la gestión de riesgo</h4><p>El 80% del éxito en trading es gestión de riesgo. No el mejor indicador, no la mejor estrategia. RIESGO.</p></div>
@@ -557,7 +557,7 @@ export const PHASE_1: Phase = {
           quiz: [
             { question: "¿Cuántos trades necesitas como mínimo para evaluar si una estrategia funciona?", options: ["5 trades", "10 trades", "30-50 trades", "200 trades"], correctIndex: 2, explanation: "30-50 trades es el mínimo para tener una muestra estadisticamente relevante. Con menos, no puedes saber si los resultados son por la estrategia o por suerte." },
             { question: "¿Cuál es un retorno mensual REALISTA y excelente para un trader profesional?", options: ["50-100%", "20-30%", "2-5%", "0.5%"], correctIndex: 2, explanation: "2-5% mensual es lo que hacen los mejores. Suena poco pero es 24-60% anual, que supera a casi cualquier fondo de inversión del mundo." },
-            { question: "Por que no deberías seguir 'señales' de grupos de Telegram?", options: ["Porque Telegram no funciona bien", "Porque el 95% son estafas y si supieran ganar consistentemente no venderian señales", "Porque las señales llegan tarde", "Porque solo funcionan en Forex"], correctIndex: 1, explanation: "Si alguien pudiera ganar consistentemente en trading, no necesitaria vender señales a 20 euros/mes. La mayoría son estafas o traders mediocres que ganan más vendiendo señales que operando." }
+            { question: "¿Por qué no deberías seguir 'señales' de grupos de Telegram?", options: ["Porque Telegram no funciona bien", "Porque el 95% son estafas y si supieran ganar consistentemente no venderían señales", "Porque las señales llegan tarde", "Porque solo funcionan en Forex"], correctIndex: 1, explanation: "Si alguien pudiera ganar consistentemente en trading, no necesitaría vender señales a 20 euros/mes. La mayoría son estafas o traders mediocres que ganan más vendiendo señales que operando." }
           ]
         },
         {
@@ -565,20 +565,20 @@ export const PHASE_1: Phase = {
           title: "Tu Hoja de Ruta: De Principiante a Experto",
           duration: "15 min",
           content: `
-<h2>El Camino Completo: Tu Mapa de Aqui a Vivir del Trading</h2>
+<h2>El Camino Completo: Tu Mapa de Aquí a Vivir del Trading</h2>
 <div class="analogy-box"><h3>El Viaje del Trading</h3><p>Aprender trading es como aprender a conducir. Primero estudias la teoría (este curso), luego practicas en un circuito cerrado (demo), luego conduces por la ciudad con cuidado (cuenta pequeña/prop firm), y eventualmente conduces con confianza (trader profesional). No puedes saltarte pasos.</p></div>
 <h3>Las 5 Etapas del Trader</h3>
 <div style="display:flex;justify-content:center;margin:16px 0"><svg width="460" height="90" viewBox="0 0 460 90" style="background:#131722;border-radius:12px;border:1px solid #2a2a40"><text x="230" y="15" fill="white" font-size="9" text-anchor="middle" font-weight="bold">LAS 5 ETAPAS DEL TRADER</text><rect x="5" y="26" width="85" height="36" rx="5" fill="#ef535015" stroke="#ef5350"/><text x="47" y="40" fill="#ef5350" font-size="6" text-anchor="middle" font-weight="bold">1. INCOMPETENTE</text><text x="47" y="50" fill="#ef5350" font-size="5" text-anchor="middle">INCONSCIENTE</text><text x="47" y="58" fill="#787b86" font-size="5" text-anchor="middle">No sé lo que no sé</text><text x="95" y="47" fill="#555" font-size="8">→</text><rect x="100" y="26" width="85" height="36" rx="5" fill="#f59e0b15" stroke="#f59e0b"/><text x="142" y="40" fill="#f59e0b" font-size="6" text-anchor="middle" font-weight="bold">2. INCOMPETENTE</text><text x="142" y="50" fill="#f59e0b" font-size="5" text-anchor="middle">CONSCIENTE</text><text x="142" y="58" fill="#787b86" font-size="5" text-anchor="middle">Sé que no sé</text><text x="190" y="47" fill="#555" font-size="8">→</text><rect x="195" y="26" width="85" height="36" rx="5" fill="#3b82f615" stroke="#3b82f6"/><text x="237" y="40" fill="#3b82f6" font-size="6" text-anchor="middle" font-weight="bold">3. COMPETENTE</text><text x="237" y="50" fill="#3b82f6" font-size="5" text-anchor="middle">CONSCIENTE</text><text x="237" y="58" fill="#787b86" font-size="5" text-anchor="middle">Puedo si me concentro</text><text x="285" y="47" fill="#555" font-size="8">→</text><rect x="290" y="26" width="85" height="36" rx="5" fill="#26a69a15" stroke="#26a69a"/><text x="332" y="40" fill="#26a69a" font-size="6" text-anchor="middle" font-weight="bold">4. COMPETENTE</text><text x="332" y="50" fill="#26a69a" font-size="5" text-anchor="middle">INCONSCIENTE</text><text x="332" y="58" fill="#787b86" font-size="5" text-anchor="middle">Lo hago sin pensar</text><text x="380" y="47" fill="#555" font-size="8">→</text><rect x="385" y="26" width="68" height="36" rx="5" fill="#f59e0b15" stroke="#f59e0b"/><text x="419" y="40" fill="#f59e0b" font-size="6" text-anchor="middle" font-weight="bold">5. MAESTRÍA</text><text x="419" y="52" fill="#787b86" font-size="5" text-anchor="middle">Adapto y evoluciono</text><text x="230" y="80" fill="#26a69a" font-size="7" text-anchor="middle" font-weight="bold">Etapa 4 = consistencia real. Requiere 10-18 meses de práctica dedicada.</text></svg></div>
 <div class="strategy-box"><h4>Etapa 1: Incompetente Inconsciente (Mes 1)</h4><p>"No sé lo que no sé." Crees que el trading es fácil. Haces trades aleatorios. Puedes ganar algo por suerte. Aquí es donde el 50% abandona.</p></div>
 <div class="strategy-box"><h4>Etapa 2: Incompetente Consciente (Meses 2-4)</h4><p>"Ahora sé que no sé nada." Empiezas a estudiar (este curso). Te das cuenta de la complejidad. Frustración. Es NORMAL. No abandones aquí.</p></div>
 <div class="strategy-box"><h4>Etapa 3: Competente Consciente (Meses 5-9)</h4><p>"Puedo hacerlo si me concentro." Tu estrategia funciona cuando sigues tu plan. Pero todavía luchas con las emociones. Necesitas enfoque activo.</p></div>
-<div class="strategy-box"><h4>Etapa 4: Competente Inconsciente (Meses 10-18)</h4><p>"Lo hago sin pensar." Tu plan de trading es automático. Tomas decisiones correctas naturalmente. Aqui empiezas a ser consistente.</p></div>
+<div class="strategy-box"><h4>Etapa 4: Competente Inconsciente (Meses 10-18)</h4><p>"Lo hago sin pensar." Tu plan de trading es automático. Tomas decisiones correctas naturalmente. Aquí empiezas a ser consistente.</p></div>
 <div class="strategy-box"><h4>Etapa 5: Maestria (18+ meses)</h4><p>"Adapto y evoluciono." Lees el mercado como un libro. Adaptas tu estrategia segun condiciones. Eres rentable consistentemente. Vives del trading.</p></div>
 <h3>Tu Plan de Accion Inmediato</h3>
 <div class="highlight-box green"><h4>Que hacer AHORA MISMO</h4><ol>
 <li><strong>Completa la Fase 1</strong> de este curso (ya casi estas)</li>
 <li><strong>Abre TradingView</strong> y familiarizate con la plataforma</li>
-<li><strong>NO pongas dinero real</strong> en ningun lado todavía</li>
+<li><strong>NO pongas dinero real</strong> en ningún lado todavía</li>
 <li><strong>Sigue con la Fase 2</strong> (Analisis Tecnico) mañana</li>
 <li><strong>Dedica 1-2 horas al día</strong> al estudio y práctica</li>
 <li><strong>Se paciente:</strong> esto es un maraton, no un sprint</li>
@@ -598,8 +598,8 @@ export const PHASE_1: Phase = {
             "Es un maraton, no un sprint. La paciencia gana."
           ],
           quiz: [
-            { question: "En que etapa empiezas a ser realmente consistente?", options: ["Etapa 1 - Incompetente inconsciente", "Etapa 2 - Incompetente consciente", "Etapa 4 - Competente inconsciente", "Desde el primer día"], correctIndex: 2, explanation: "La consistencia llega en la Etapa 4 (Competente Inconsciente), cuando tu plan de trading se vuelve automático y tomas decisiones correctas sin esfuerzo consciente." },
-            { question: "Cuanto tiempo toma de forma realista ser un trader consistente?", options: ["1-2 semanas", "1-2 meses", "12-18 meses", "5+ años"], correctIndex: 2, explanation: "12-18 meses es un timeline realista para un trader dedicado que estudia y práctica 1-2 horas al día. Puede ser más rápido con dedicacion completa, pero rara vez menos de 9 meses." }
+            { question: "¿En qué etapa empiezas a ser realmente consistente?", options: ["Etapa 1 - Incompetente inconsciente", "Etapa 2 - Incompetente consciente", "Etapa 4 - Competente inconsciente", "Desde el primer día"], correctIndex: 2, explanation: "La consistencia llega en la Etapa 4 (Competente Inconsciente), cuando tu plan de trading se vuelve automático y tomas decisiones correctas sin esfuerzo consciente." },
+            { question: "¿Cuánto tiempo toma de forma realista ser un trader consistente?", options: ["1-2 semanas", "1-2 meses", "12-18 meses", "5+ años"], correctIndex: 2, explanation: "12-18 meses es un timeline realista para un trader dedicado que estudia y practica 1-2 horas al día. Puede ser más rápido con dedicación completa, pero rara vez menos de 9 meses." }
           ]
         }
       ]
