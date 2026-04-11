@@ -284,7 +284,8 @@ export const PHASE_1: Phase = {
           quiz: [
             { question: "Para que sirve TradingView principalmente?", options: ["Ejecutar compras/ventas", "Analizar gráficos y mercado", "Depositar dinero", "Hablar con traders"], correctIndex: 1, explanation: "TradingView es para análisis. MetaTrader para ejecutar." },
             { question: "Cuantos indicadores deberías usar como máximo al empezar?", options: ["10-15", "2-3", "7-8", "Ninguno"], correctIndex: 1, explanation: "2-3 indicadores son suficientes. Mas indicadores = más confusion." }
-          ]
+          ],
+          practicalExercise: "Configura TradingView con velas japonesas, EMA 21 (azul), EMA 50 (naranja), RSI 14. Guarda el layout. Practica cambiar entre temporalidades D1, H4, H1. Dibuja 2 lineas horizontales en niveles que te parezcan importantes."
         },
         {
           id: "1-2-2",
@@ -332,7 +333,8 @@ export const PHASE_1: Phase = {
           quiz: [
             { question: "Que tipo de broker es mejor para evitar conflictos de interes?", options: ["Market Maker", "ECN/STP (acceso directo al mercado)", "Cualquiera sirve", "Los no regulados"], correctIndex: 1, explanation: "Un broker ECN/STP envia tus ordenes directamente al mercado, sin tomar la otra parte de tu operación." },
             { question: "Cual NO es una señal de broker estafa?", options: ["Promete ganancias garantizadas", "Esta regulado por la FCA de UK", "Te llama insistentemente para depositar más", "Bonus del 500%"], correctIndex: 1, explanation: "Estar regulado por la FCA (Financial Conduct Authority del Reino Unido) es señal de legitimidad." }
-          ]
+          ],
+          practicalExercise: "Investiga 3 brokers regulados (IC Markets, Pepperstone, XM). Compara: regulacion, spread EUR/USD, deposito minimo, plataformas disponibles. Elige 1 y abre una cuenta DEMO (no real)."
         }
       ]
     },
@@ -512,7 +514,8 @@ export const PHASE_1: Phase = {
             { question: "Que es un Morning Star?", options: ["Una vela verde sola", "Patron de 3 velas: roja grande, vela pequena, verde grande = giro alcista", "Un indicador técnico", "El gap de apertura"], correctIndex: 1, explanation: "Morning Star es un patrón de 3 velas de giro alcista: bajista grande → indecisión → alcista grande." },
             { question: "Que significa un Inside Bar?", options: ["El precio se mueve muy rápido", "Consolidacion antes de un movimiento explosivo", "Final de la tendencia", "Error en el gráfico"], correctIndex: 1, explanation: "Inside Bar indica que el mercado esta comprimiendo energia (consolidando) antes de un movimiento fuerte." },
             { question: "Un martillo en medio de una tendencia sin ningun soporte cerca es...", options: ["Senal de compra fuerte", "Senal poco fiable - necesita contexto/nivel importante", "Senal de venta", "Momento de cerrar todo"], correctIndex: 1, explanation: "Los patrones de velas SOLO son fiables cuando aparecen en niveles importantes (soporte, resistencia, order block, etc.)." }
-          ]
+          ],
+          practicalExercise: "En EUR/USD H4, identifica al menos: 2 Morning Star, 2 Inside Bar, 1 Three White Soldiers. Marca cada patron con la herramienta de texto. Observa que paso DESPUES de cada patron y anotalo."
         }
       ]
     },

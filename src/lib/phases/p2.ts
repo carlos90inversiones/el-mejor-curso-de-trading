@@ -239,7 +239,6 @@ export const PHASE_2: Phase = {
           duration: "40 min",
           content: `
 <h2>Estructura del Mercado: El ADN del Precio</h2>
-<div style="display:flex;justify-content:center;margin:20px 0"><svg width="380" height="110" viewBox="0 0 380 110" style="background:#131722;border-radius:10px;border:1px solid #2a2a40"><text x="190" y="16" fill="white" font-size="10" text-anchor="middle" font-weight="bold">CANAL ASCENDENTE</text><line x1="30" y1="90" x2="350" y2="30" stroke="#26a69a" stroke-width="1.5" stroke-dasharray="5,4"/><line x1="30" y1="60" x2="350" y2="0" stroke="#26a69a" stroke-width="1.5" stroke-dasharray="5,4"/><polyline points="40,82 80,52 120,72 160,42 200,62 240,32 280,52 320,25" fill="none" stroke="#8b5cf6" stroke-width="2"/><circle cx="80" cy="52" r="3" fill="#26a69a"/><text x="80" y="47" fill="#26a69a" font-size="7" text-anchor="middle">Compra</text><circle cx="160" cy="42" r="3" fill="#ef5350"/><text x="160" y="37" fill="#ef5350" font-size="7" text-anchor="middle">Venta</text><circle cx="200" cy="62" r="3" fill="#26a69a"/><text x="200" y="75" fill="#26a69a" font-size="7" text-anchor="middle">Compra</text><circle cx="280" cy="52" r="3" fill="#ef5350"/><text x="280" y="47" fill="#ef5350" font-size="7" text-anchor="middle">Venta</text><text x="190" y="100" fill="#787b86" font-size="8" text-anchor="middle">Compra en la línea inferior, vende en la superior</text></svg></div>
 
 <div class="analogy-box">
 <h3>La Analogia de las Escaleras</h3>

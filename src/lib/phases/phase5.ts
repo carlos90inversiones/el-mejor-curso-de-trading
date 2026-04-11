@@ -449,7 +449,8 @@ export const PHASE_5: Phase = {
             { question: "En España, que porcentaje de impuestos pagas sobre los primeros 6,000 euros de ganancias de trading?", options: ["10%", "19%", "25%", "30%"], correctIndex: 1, explanation: "Los primeros 6,000 euros de ganancias de capital en España tributan al 19% en la base del ahorro del IRPF." },
             { question: "Que porcentaje de tus ganancias deberías separar para impuestos?", options: ["5%", "10%", "25-30%", "50%"], correctIndex: 2, explanation: "Separar 25-30% desde el primer dia asegura que tendrás cubierta la factura fiscal sin sorpresas." },
             { question: "Que documentos necesitas guardar para la declaracion fiscal?", options: ["Solo el balance final", "Registros de todas las operaciones + statements del broker", "Nada, el broker lo reporta automáticamente", "Solo las operaciones ganadoras"], correctIndex: 1, explanation: "Necesitas registros completos de todas las operaciones (ganadoras y perdedoras) más los informes oficiales del broker." }
-          ]
+          ],
+          practicalExercise: "Busca un asesor fiscal en tu ciudad especializado en trading. Preparale estas preguntas: como tributan las ganancias de trading, como tributan las cuentas fondeadas, y que documentos necesitas guardar. Anota las respuestas."
         },
         {
           id: "5-2-2",
@@ -517,7 +518,8 @@ export const PHASE_5: Phase = {
           quiz: [
             { question: "Que tamano de cuenta recomiendas para un primer challenge?", options: ["200K - ir a lo grande", "10K-25K - menos presion, menos riesgo financiero", "500K - maximizar ganancias", "No importa el tamano"], correctIndex: 1, explanation: "Para tu primer challenge, una cuenta de 10K-25K tiene un costo bajo (50-150 euros) y te permite aprender el proceso sin presión financiera excesiva." },
             { question: "Que deberías verificar ANTES de pagar un challenge de una prop firm?", options: ["Solo el precio", "Reviews en TrustPilot, pruebas de pago reales, y cuanto tiempo llevan operando", "Nada, todas son iguales", "Solo si tienen Instagram"], correctIndex: 1, explanation: "Muchas prop firms nuevas desaparecen con tu dinero. Verifica reviews reales, pruebas de pago, y que lleven al menos 1 año operando." }
-          ]
+          ],
+          practicalExercise: "Entra en TrustPilot y busca reviews de 4 prop firms: FTMO, Funded Next, MyFundedFX, True Forex Funds. Anota: puntuacion, numero de reviews, quejas mas comunes, y cual elegirlas para tu primer challenge."
         },
         {
           id: "5-2-3",
@@ -553,7 +555,8 @@ export const PHASE_5: Phase = {
             { question: "Llevas +4% en tu challenge y quedan 2 semanas. Que haces?", options: ["Aumentas riesgo para llegar rápido al 8%", "Mantienes o reduces el riesgo para proteger las ganancias", "Dejas de operar y esperas", "Cambias de estrategia"], correctIndex: 1, explanation: "Con +4%, lo inteligente es proteger lo ganado. Mantener 0.5% de riesgo o incluso reducir a 0.25%. Es mejor tardar más que arriesgar las ganancias." },
             { question: "Que porcentaje de traders pasa su PRIMER challenge?", options: ["50%", "30%", "10-15%", "90%"], correctIndex: 2, explanation: "Solo el 10-15% pasa el primer intento. Pero el 80% de los que eventualmente pasan lo logran en el 2do o 3er intento. Fallar es parte del proceso." },
             { question: "Cual debería ser tu enfoque mental durante un challenge?", options: ["Ganar lo máximo posible lo más rápido posible", "Ejecutar tu plan de trading correctamente, trade por trade", "Intentar estrategias nuevas para encontrar la mejor", "Copiar a otros traders que ya pasaron"], correctIndex: 1, explanation: "Enfocate en el PROCESO: ejecutar tu plan correctamente. El resultado (pasar el challenge) es una consecuencia natural de un buen proceso repetido." }
-          ]
+          ],
+          practicalExercise: "Simula un challenge en tu cuenta demo durante 1 semana con las reglas reales: 0.5% riesgo, max 2 trades/dia, drawdown diario 5%. Anota tu balance cada dia. Al final, evalua si habrias pasado la semana 1 del challenge."
         }
       ]
     },

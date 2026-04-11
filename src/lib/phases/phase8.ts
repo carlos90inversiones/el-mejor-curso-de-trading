@@ -149,7 +149,8 @@ export const PHASE_8: Phase = {
           quiz: [
             { question: "¿Qué deberías hacer si el precio NO llega a tus zonas predefinidas durante toda la sesión?", options: ["Buscar zonas nuevas y más cercanas", "Bajar de temporalidad hasta encontrar algo", "NO operar. Esperar al día siguiente.", "Cambiar de par"], correctIndex: 2, explanation: "Si el precio no llega a tus zonas, no hay setup. No fuerces trades. La paciencia es una habilidad." },
             { question: "¿Qué necesitas ANTES de entrar en un trade en la Semana 2?", options: ["Solo que el precio esté en soporte", "Precio en tu zona + vela de confirmación + R:R 1:2+", "Solo un indicador en sobrecompra/sobreventa", "Nada, solo intuición"], correctIndex: 1, explanation: "Necesitas 3 cosas: precio en zona predefinida + confirmación con vela de rechazo + ratio R:R de 1:2 mínimo." }
-          ]
+          ],
+          practicalExercise: "Marca 2 soportes y 2 resistencias en H4 ANTES de cada sesion. Pon alertas. Solo opera si el precio llega a TUS zonas con confirmacion. Si no llega, NO operes. Cuenta cuantas veces esperaste vs perseguiste."
         }
       ]
     },
@@ -220,7 +221,8 @@ export const PHASE_8: Phase = {
           quiz: [
             { question: "¿Cuántas confluencias mínimas necesitas para un trade válido?", options: ["1", "2", "3", "7"], correctIndex: 2, explanation: "Mínimo 3 confluencias. Con 5+ tienes un setup A+ de alta probabilidad." },
             { question: "¿SMC reemplaza el análisis de soportes y resistencias?", options: ["Sí, es una mejora total", "No, SMC COMPLEMENTA S/R y velas, no las reemplaza", "Sí, ya no necesitas S/R", "Depende del mercado"], correctIndex: 1, explanation: "SMC es una capa ADICIONAL de análisis. Los soportes, resistencias y patrones de velas siguen siendo fundamentales." }
-          ]
+          ],
+          practicalExercise: "Marca OBs y FVGs cada manana en H4. Puntua cada setup (0-7 confluencias). Solo entra con 3+. Correlaciona puntuacion con resultado al final de la semana."
         },
         {
           id: "8-2-2",
@@ -284,7 +286,8 @@ export const PHASE_8: Phase = {
           ],
           quiz: [
             { question: "Al final de la Semana 4, ¿qué métricas debes tener para avanzar?", options: ["Solo ganar dinero", "Win rate 40%+, R:R 1.5:1+, disciplina 80%+, diario completo (3 de 4)", "100% de acierto", "Solo completar los trades"], correctIndex: 1, explanation: "Necesitas 3 de 4 métricas positivas. No se trata de perfección sino de consistencia medible." }
-          ]
+          ],
+          practicalExercise: "Marca rango asiatico ANTES de London cada dia. Documenta: ruptura arriba/abajo, manipulacion o real, BOS despues, AMD cumplido. Calcula % de AMD correcto en 5 dias."
         }
       ]
     },
@@ -348,7 +351,8 @@ export const PHASE_8: Phase = {
           ],
           quiz: [
             { question: "¿Qué define el 'éxito' durante las Semanas 5-6?", options: ["Ganar mucho dinero", "Ejecutar tu plan correctamente el 80%+ de las veces y ser positivo 2 semanas consecutivas", "No perder nunca", "Acertar el 90% de trades"], correctIndex: 1, explanation: "El éxito es ejecutar el plan consistentemente y lograr 2 semanas positivas seguidas. El monto es irrelevante." }
-          ]
+          ],
+          practicalExercise: "Opera 2 semanas SIN cambiar nada. Si una semana es negativa: identifica 3 errores del diario, crea 1 regla por error, repite. No cambies estrategia."
         }
       ]
     },
@@ -443,7 +447,8 @@ export const PHASE_8: Phase = {
           quiz: [
             { question: "¿Qué deberías hacer si llevas +6% en tu challenge simulado faltando 3 días?", options: ["Aumentar riesgo para llegar a +8% rápido", "REDUCIR riesgo a 0.25% para proteger ganancias", "Dejar de operar completamente", "Cambiar de par"], correctIndex: 1, explanation: "Con +6%, solo te faltan 2%. Reduce riesgo para proteger lo ganado. Es mejor tardar más que arriesgarse." },
             { question: "Después de completar las 8 semanas, ¿qué tamaño de challenge real recomiendas?", options: ["200K inmediatamente", "10K-25K para empezar (precio bajo, menos presión)", "No comprar challenge nunca", "500K"], correctIndex: 1, explanation: "Empieza con 10K-25K. El precio es bajo (50-150€) y la presión es menor. Cuando lo pases, escala." }
-          ]
+          ],
+          practicalExercise: "Configura demo con reglas FTMO (100K, 5% DD diario, 10% total). Opera 2 semanas buscando +8%. Registra balance y DD diario. Si pasas: listo para challenge real."
         }
       ]
     }

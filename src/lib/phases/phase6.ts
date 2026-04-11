@@ -679,7 +679,8 @@ ws.run_forever()</code></pre></div></div>`,
             { question: "Cual es la mejor fuente gratuita de datos Forex?", options: ["Yahoo Finance", "OANDA API (con cuenta demo)", "Google Finance", "Twitter"], correctIndex: 1, explanation: "OANDA ofrece datos Forex historicos y en tiempo real gratuitamente con una cuenta demo. Es la fuente estandar para Forex algorítmico." },
             { question: "Porque deberías guardar los datos localmente en CSV?", options: ["Porque son más bonitos", "Para no tener que re-descargar cada vez que ejecutas tu codigo (mas rápido y eficiente)", "Porque las APIs son de pago", "No necesitas guardarlos"], correctIndex: 1, explanation: "Descargar datos cada vez es lento y puede alcanzar limites de la API. Guardando en CSV, cargas en milisegundos." },
             { question: "Que tecnologia se usa para recibir datos de precios en tiempo real?", options: ["HTTP requests cada segundo", "WebSockets (conexion permanente)", "Email", "FTP"], correctIndex: 1, explanation: "WebSockets mantienen una conexion abierta y reciben datos instantaneamente cuando hay un nuevo tick/trade." }
-          ]
+          ],
+          practicalExercise: "Instala Python y ejecuta: pip install yfinance pandas. Luego descarga 1 ano de datos diarios de EUR/USD con yfinance y guardalos en un CSV. Verifica que los datos tienen columnas Open, High, Low, Close, Volume."
         },
         {
           id: "6-3-2",
@@ -756,7 +757,8 @@ print(classification_report(y_test, predictions))</code></pre></div>
             { question: "Cual es el error más comun al usar ML en trading?", options: ["Usar Python", "Overfitting - el modelo memoriza datos pasados y no funciona en real", "Usar demasiados datos", "No usar suficientes indicadores"], correctIndex: 1, explanation: "Overfitting ocurre cuando el modelo se ajusta demasiado a los datos de entrenamiento. Funciona perfecto en backtest pero pierde en real." },
             { question: "Por que NUNCA debes hacer shuffle en datos de time series?", options: ["Porque es más lento", "Porque mezclar datos temporales crea look-ahead bias - el modelo veria datos del futuro", "No hay razon, siempre se puede hacer shuffle", "Porque Python no lo permite"], correctIndex: 1, explanation: "En time series, shuffle mezcla pasado y futuro. El modelo entrenaria con datos de 2024 para predecir 2023, lo cual es trampa." },
             { question: "Cual es el uso MAS realista y util de ML en trading?", options: ["Predecir el precio exacto del Bitcoin mañana", "Clasificar el regimen de mercado (tendencia/rango) para adaptar la estrategia", "Reemplazar completamente al trader humano", "Hackear el mercado"], correctIndex: 1, explanation: "Clasificar si el mercado esta en tendencia o rango es un uso práctico y realista de ML. Permite adaptar tu estrategia automáticamente segun las condiciones." }
-          ]
+          ],
+          practicalExercise: "Crea un clasificador simple con scikit-learn que prediga si el precio subira o bajara manana basandose en el RSI y la SMA 20. Usa 80% de datos para entrenar y 20% para validar. Calcula el accuracy en el set de validacion."
         },
         {
           id: "6-3-3",
@@ -832,7 +834,8 @@ send_alert("ALERTA: Drawdown al 3.5% - revisad")</code></pre></div></div>
             { question: "Cual es la forma más economica y popular de tener un bot 24/7?", options: ["Comprar un servidor fisico", "VPS (Servidor Privado Virtual) por 5-20 euros/mes", "Dejar tu PC encendido siempre", "Pagar un servicio de 500$/mes"], correctIndex: 1, explanation: "Un VPS es un servidor en la nube que cuesta 5-20 euros/mes y esta siempre encendido. Es la opcion estandar para bots de trading." },
             { question: "Que es un 'kill switch' en un bot de trading?", options: ["Un indicador técnico", "Mecanismo para APAGAR el bot remotamente en caso de emergencia", "Un tipo de orden", "Una estrategia de scalping"], correctIndex: 1, explanation: "Un kill switch permite apagar tu bot inmediatamente si algo sale mal, sin tener que acceder fisicamente al servidor." },
             { question: "Donde NUNCA deberías poner tus API keys del broker?", options: ["En variables de entorno", "Directamente en el codigo fuente (hardcoded)", "En un archivo .env", "En un gestor de secretos"], correctIndex: 1, explanation: "Las API keys nunca deben estar en el codigo fuente. Si subes tu codigo a GitHub, cualquiera podría acceder a tu cuenta del broker." }
-          ]
+          ],
+          practicalExercise: "Crea una cuenta en DigitalOcean (5$/mes). Sube un script Python simple que imprima la hora cada minuto. Verifica que funciona por SSH. Luego configuralo como cron job para que se ejecute cada hora."
         }
       ]
     },
