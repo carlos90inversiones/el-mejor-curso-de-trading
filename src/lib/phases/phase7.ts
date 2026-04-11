@@ -28,7 +28,7 @@ export const PHASE_7: Phase = {
 <p>Este es el examen final del curso. Contiene <strong>20 preguntas de nivel experto</strong> que cubren TODAS las fases del curso: fundamentos, velas japonesas, estructura de mercado, soportes/resistencias, indicadores tecnicos, Fibonacci, gestión de riesgo, psicología del trading, Smart Money Concepts, ICT, prop firms y backtesting.</p>
 <ul>
 <li>Las preguntas son basadas en escenarios reales</li>
-<li>Requieren combinar conocimientos de multiples fases</li>
+<li>Requieren combinar conocimientos de múltiples fases</li>
 <li>No hay trampa — pero necesitas pensar como un trader profesional</li>
 <li>Aprobado: 70% o más (14/20 correctas)</li>
 <li>Excelente: 85% o más (17/20 correctas)</li>
@@ -39,7 +39,7 @@ export const PHASE_7: Phase = {
 <h3>Preparacion Mental</h3>
 <div class="analogy-box">
 <h3>Piensa como un Trader, No como un Estudiante</h3>
-<p>Este examen no es para memorizar definiciones. Es para evaluar si puedes <strong>tomar decisiones de trading en tiempo real</strong>. Cada pregunta simula un escenario donde necesitas aplicar multiples conceptos a la vez — exactamente como en el mercado real. Lee cada escenario cuidadosamente y piensa: "si esto fuera mi cuenta fondeada, que haria?"</p>
+<p>Este examen no es para memorizar definiciones. Es para evaluar si puedes <strong>tomar decisiones de trading en tiempo real</strong>. Cada pregunta simula un escenario donde necesitas aplicar múltiples conceptos a la vez — exactamente como en el mercado real. Lee cada escenario cuidadosamente y piensa: "si esto fuera mi cuenta fondeada, que haria?"</p>
 </div>
 
 <h3>Estructura del Examen</h3>
@@ -57,13 +57,13 @@ export const PHASE_7: Phase = {
 </div>`,
           keyPoints: [
             "El examen cubre las 7 fases del curso con 20 preguntas de nivel experto",
-            "Las preguntas son basadas en escenarios reales que requieren combinar multiples conceptos",
+            "Las preguntas son basadas en escenarios reales que requieren combinar múltiples conceptos",
             "Aprobado con 70%+ (14/20), Excelente con 85%+ (17/20), Maestria con 95%+ (19/20)",
             "Piensa como trader profesional, no como estudiante memorizando definiciones"
           ],
           quiz: [
             {
-              question: "Escenario: Estas viendo EUR/USD en gráfico de 1H. El precio acaba de hacer un BOS (Break of Structure) alcista, retrocede al nivel 0.618 de Fibonacci, y forma un martillo (hammer) en un order block alcista. RSI esta en 38. Que haces?",
+              question: "¿Escenario: Estas viendo EUR/USD en gráfico de 1H. El precio acaba de hacer un BOS (Break of Structure) alcista, retrocede al nivel 0.618 de Fibonacci, y forma un martillo (hammer) en un order block alcista. RSI esta en 38. Que haces?",
               options: [
                 "Vender porque el RSI esta bajo",
                 "Comprar: BOS alcista + retroceso al 0.618 + martillo en OB + RSI en zona de recuperacion = confluencia de alta probabilidad",
@@ -74,7 +74,7 @@ export const PHASE_7: Phase = {
               explanation: "Tienes confluencia maxima: BOS alcista (tendencia), retroceso al golden pocket de Fibonacci (nivel), martillo en order block (confirmación de entrada), y RSI saliendo de sobreventa (momentum). Es un setup A+ de alta probabilidad para compra."
             },
             {
-              question: "En tu cuenta fondeada de 100K llevas un drawdown diario de 4.2%. Ves un setup que consideras 'perfecto' con R:R 1:3. Tu riesgo sería 0.8% de la cuenta. Que decisión tomas?",
+              question: "¿En tu cuenta fondeada de 100K llevas un drawdown diario de 4.2%. Ves un setup que consideras 'perfecto' con R:R 1:3. Tu riesgo sería 0.8% de la cuenta. Que decisión tomas?",
               options: [
                 "Entrar al trade porque el setup es perfecto y el R:R es muy bueno",
                 "No operar hoy — estas a 0.8% del limite de drawdown diario (5%) y una perdida te eliminaria del challenge",
@@ -85,7 +85,7 @@ export const PHASE_7: Phase = {
               explanation: "Con 4.2% de drawdown diario, estas a solo 0.8% del limite de 5%. Si tomas el trade con 0.8% de riesgo y pierdes, llegas al 5% exacto y pierdes la cuenta. Ningun setup justifica arriesgar tu cuenta fondeada. La respuesta correcta es NO OPERAR MAS HOY."
             },
             {
-              question: "Que patrón de velas japonesas de 3 velas indica un giro alcista fuerte cuando aparece en un soporte?",
+              question: "¿Qué patrón de velas japonesas de 3 velas indica un giro alcista fuerte cuando aparece en un soporte?",
               options: [
                 "Three Black Crows",
                 "Evening Star",
@@ -96,7 +96,7 @@ export const PHASE_7: Phase = {
               explanation: "Morning Star es un patrón de 3 velas de giro alcista: vela bajista grande, vela de indecisión pequena, y vela alcista grande. En un soporte es una señal de compra fuerte. Evening Star y Three Black Crows son bajistas."
             },
             {
-              question: "Identificas una zona de demanda (order block) en H4. El precio se acerca a la zona. Que confluencias adicionales buscarias ANTES de entrar en largo?",
+              question: "¿Identificas una zona de demanda (order block) en H4. El precio se acerca a la zona. Que confluencias adicionales buscarias ANTES de entrar en largo?",
               options: [
                 "Solo el order block es suficiente para entrar",
                 "Fibonacci 0.618-0.786, patrón de velas de rechazo, volumen creciente, y que la estructura general sea alcista",
@@ -104,10 +104,10 @@ export const PHASE_7: Phase = {
                 "Que haya una noticia economica positiva ese dia"
               ],
               correctIndex: 1,
-              explanation: "Un trade de alta probabilidad combina multiples confluencias: order block (zona), Fibonacci (nivel matematico), patrón de velas (confirmación), volumen (validacion), y estructura alcista (dirección). Cuantas más confluencias, mayor probabilidad."
+              explanation: "Un trade de alta probabilidad combina múltiples confluencias: order block (zona), Fibonacci (nivel matematico), patrón de velas (confirmación), volumen (validacion), y estructura alcista (dirección). Cuantas más confluencias, mayor probabilidad."
             },
             {
-              question: "Estas backtesting una estrategia. Despues de 200 trades tienes: Win Rate 42%, Profit Factor 1.8, Max Drawdown 12%, R:R promedio 1:2.5. Es una estrategia viable para un challenge de prop firm?",
+              question: "¿Estas backtesting una estrategia. Despues de 200 trades tienes: Win Rate 42%, Profit Factor 1.8, Max Drawdown 12%, R:R promedio 1:2.5. Es una estrategia viable para un challenge de prop firm?",
               options: [
                 "No, porque el win rate es menor al 50%",
                 "No, porque el max drawdown es 12% y el limite del challenge es 10%",
@@ -118,7 +118,7 @@ export const PHASE_7: Phase = {
               explanation: "La estrategia es rentable (PF 1.8 es bueno, R:R 1:2.5 compensa el 42% win rate). PERO el max drawdown de 12% excede el limite del 10% en challenges. Solucion: reducir el riesgo por trade para comprimir el drawdown por debajo del 10%."
             },
             {
-              question: "Que es un Fair Value Gap (FVG) en el contexto de Smart Money Concepts?",
+              question: "¿Qué es un Fair Value Gap (FVG) en el contexto de Smart Money Concepts?",
               options: [
                 "Un indicador técnico que mide la volatilidad",
                 "Un gap entre la mecha de la vela 1 y la mecha de la vela 3 donde el precio se movio tan rápido que dejo un desequilibrio que el mercado tiende a rellenar",
@@ -129,7 +129,7 @@ export const PHASE_7: Phase = {
               explanation: "Un FVG es un desequilibrio de precio donde la vela 2 se mueve tan agresivamente que deja un gap entre las mechas de las velas 1 y 3. El mercado institucional tiende a volver a estas zonas para 'rellenar' el desequilibrio."
             },
             {
-              question: "Llevas 5 trades perdedores seguidos. Tu estrategia tiene un win rate del 55% en backtest de 300 trades. Que debes hacer?",
+              question: "¿Llevas 5 trades perdedores seguidos. Tu estrategia tiene un win rate del 55% en backtest de 300 trades. Que debes hacer?",
               options: [
                 "Cambiar de estrategia inmediatamente",
                 "Duplicar el tamano de posición para recuperar rápido",
@@ -140,7 +140,7 @@ export const PHASE_7: Phase = {
               explanation: "Con un 55% de win rate, rachas de 5-7 perdidas consecutivas son estadisticamente normales y esperables. Si seguiste las reglas de tu plan, continua. El backtest de 300 trades ya demostro que la estrategia es rentable a largo plazo."
             },
             {
-              question: "Que nivel de Fibonacci es conocido como el 'golden pocket' y es uno de los retrocesos más fiables?",
+              question: "¿Qué nivel de Fibonacci es conocido como el 'golden pocket' y es uno de los retrocesos más fiables?",
               options: [
                 "0.236",
                 "0.382",
@@ -148,10 +148,10 @@ export const PHASE_7: Phase = {
                 "1.0"
               ],
               correctIndex: 2,
-              explanation: "El nivel 0.618 (y la zona 0.618-0.786 llamada 'golden pocket') es el retroceso de Fibonacci más respetado por el mercado. Es donde la mayoria de retrocesos saludables terminan antes de continuar la tendencia."
+              explanation: "El nivel 0.618 (y la zona 0.618-0.786 llamada 'golden pocket') es el retroceso de Fibonacci más respetado por el mercado. Es donde la mayoría de retrocesos saludables terminan antes de continuar la tendencia."
             },
             {
-              question: "El precio de GBP/USD rompe un soporte importante con una vela de cuerpo grande y alto volumen. Luego retrocede al soporte roto (ahora resistencia) y forma una estrella fugaz. Tu análisis es:",
+              question: "¿El precio de GBP/USD rompe un soporte importante con una vela de cuerpo grande y alto volumen. Luego retrocede al soporte roto (ahora resistencia) y forma una estrella fugaz. Tu análisis es:",
               options: [
                 "Comprar porque el precio esta subiendo",
                 "El soporte roto ahora actua como resistencia (polaridad). La estrella fugaz confirma rechazo. Es una entrada en corto (venta) de alta probabilidad",
@@ -162,7 +162,7 @@ export const PHASE_7: Phase = {
               explanation: "Este es un ejemplo clasico de 'polaridad' (soporte roto se convierte en resistencia). El retroceso al nivel con rechazo (estrella fugaz) es un setup de venta con alta confluencia: estructura bajista + nivel clave + confirmación de vela."
             },
             {
-              question: "Que es un 'liquidity sweep' en la teoria ICT?",
+              question: "¿Qué es un 'liquidity sweep' en la teoria ICT?",
               options: [
                 "Cuando el precio sube muy rápido",
                 "Cuando el mercado barre los stop losses acumulados detras de un nivel obvio (highs/lows) para luego revertir en la dirección opuesta",
@@ -173,7 +173,7 @@ export const PHASE_7: Phase = {
               explanation: "Un liquidity sweep ocurre cuando las instituciones empujan el precio más alla de un nivel obvio donde se acumulan stop losses del retail, activan esas ordenes (capturan liquidez), y luego mueven el precio en la dirección opuesta."
             },
             {
-              question: "En una cuenta fondeada con profit split 80/20, si generas 8,000$ de ganancia en un mes, cuanto recibes tu y cuanto la prop firm?",
+              question: "¿En una cuenta fondeada con profit split 80/20, si generas 8,000$ de ganancia en un mes, cuanto recibes tu y cuanto la prop firm?",
               options: [
                 "Tu: 4,000$, Firm: 4,000$",
                 "Tu: 6,400$, Firm: 1,600$",
@@ -184,7 +184,7 @@ export const PHASE_7: Phase = {
               explanation: "Con profit split 80/20: Tu parte = 8,000$ x 80% = 6,400$. La prop firm se queda con 8,000$ x 20% = 1,600$."
             },
             {
-              question: "Que condicion DEBE cumplirse para que un patrón de velas como un martillo sea una señal fiable de compra?",
+              question: "¿Qué condicion DEBE cumplirse para que un patrón de velas como un martillo sea una señal fiable de compra?",
               options: [
                 "Que aparezca en cualquier lugar del gráfico",
                 "Que el volumen sea bajo",
@@ -195,7 +195,7 @@ export const PHASE_7: Phase = {
               explanation: "Un patrón de velas SOLO es fiable cuando aparece en un nivel importante (soporte, resistencia, order block, Fibonacci) y la estructura general del mercado apoya la dirección. Un martillo aislado sin contexto no tiene valor."
             },
             {
-              question: "Que significa un profit factor de 2.5 en un backtest?",
+              question: "¿Qué significa un profit factor de 2.5 en un backtest?",
               options: [
                 "Que ganaste 2.5 veces más trades de los que perdiste",
                 "Que por cada dolar perdido, ganaste 2.50 dólares en total",
@@ -206,7 +206,7 @@ export const PHASE_7: Phase = {
               explanation: "Profit Factor = Ganancias Totales / Perdidas Totales. Un PF de 2.5 significa que por cada dolar que perdiste, ganaste 2.50$. Es un resultado excelente que indica una estrategia muy rentable."
             },
             {
-              question: "Estas en una tendencia alcista en H4. El precio hace un Higher High, luego retrocede. Donde buscarias la entrada óptima para un long segun SMC?",
+              question: "¿Estas en una tendencia alcista en H4. El precio hace un Higher High, luego retrocede. Donde buscarias la entrada óptima para un long según SMC?",
               options: [
                 "En el punto más alto (Higher High)",
                 "En cualquier punto aleatorio del retroceso",
@@ -217,7 +217,7 @@ export const PHASE_7: Phase = {
               explanation: "Segun SMC, la entrada óptima es en el order block (última vela bajista antes del impulso) que coincide con la zona del golden pocket de Fibonacci (0.618-0.786). Esta es la zona donde las instituciones recargan posiciones."
             },
             {
-              question: "Un trader tiene una estrategia con win rate del 60% y R:R de 1:1.5. Cual es su esperanza matematica por trade (en unidades de riesgo)?",
+              question: "¿Un trader tiene una estrategia con win rate del 60% y R:R de 1:1.5. Cual es su esperanza matematica por trade (en unidades de riesgo)?",
               options: [
                 "0.50R — rentable",
                 "0.90R — rentable",
@@ -228,7 +228,7 @@ export const PHASE_7: Phase = {
               explanation: "Esperanza = (Win% x Avg Win) - (Loss% x Avg Loss) = (0.60 x 1.5R) - (0.40 x 1R) = 0.90R - 0.40R = 0.50R. Por cada trade, en promedio ganas 0.50 unidades de riesgo. Es una estrategia rentable."
             },
             {
-              question: "Que es el 'overfitting' en backtesting y por que es peligroso?",
+              question: "¿Qué es el 'overfitting' en backtesting y por que es peligroso?",
               options: [
                 "Cuando usas muy pocos datos",
                 "Cuando optimizas tanto los parametros de tu estrategia que funciona perfecto en datos historicos pero falla en datos nuevos — porque ajustaste la estrategia al ruido del pasado, no a patrones reales",
@@ -239,7 +239,7 @@ export const PHASE_7: Phase = {
               explanation: "El overfitting es el mayor peligro del backtesting. Ocurre cuando ajustas excesivamente los parametros para que funcionen en datos historicos especificos. La estrategia parece perfecta en el backtest pero fracasa en el mercado real porque no captura patrones verdaderos sino ruido aleatorio."
             },
             {
-              question: "El concepto de 'displacement' en ICT se refiere a:",
+              question: "¿El concepto de 'displacement' en ICT se refiere a:",
               options: [
                 "Cuando el trader cambia de broker",
                 "Un movimiento agresivo y rápido del precio causado por instituciones que muestra interes direccional fuerte, dejando FVGs y rompiendo estructura",
@@ -250,7 +250,7 @@ export const PHASE_7: Phase = {
               explanation: "Displacement es un movimiento de precio agresivo y rápido causado por la actividad institucional. Se caracteriza por velas de cuerpo grande, deja Fair Value Gaps, y rompe estructura de mercado. Indica la dirección real del interes institucional."
             },
             {
-              question: "Para un challenge de prop firm con objetivo de 10% y drawdown máximo de 10%, cual es la MEJOR estrategia de riesgo?",
+              question: "¿Para un challenge de prop firm con objetivo de 10% y drawdown máximo de 10%, cual es la MEJOR estrategia de riesgo?",
               options: [
                 "Arriesgar 5% por trade para llegar rápido al objetivo",
                 "Arriesgar 2-3% por trade — riesgo moderado para avanzar rápido",
@@ -261,7 +261,7 @@ export const PHASE_7: Phase = {
               explanation: "Con 0.5-1% de riesgo por trade, necesitas muchas perdidas consecutivas para llegar al limite de drawdown. Con R:R 1:2 y un win rate decente, alcanzas el 10% de forma gradual y segura. Riesgos mayores pueden eliminar tu cuenta en pocos trades."
             },
             {
-              question: "Ves una divergencia bajista en el RSI (precio hace higher high, RSI hace lower high) justo en una zona de oferta (supply zone) de H4. La estructura en M15 acaba de hacer un Change of Character (CHoCH) bajista. Tu plan es:",
+              question: "¿Ves una divergencia bajista en el RSI (precio hace higher high, RSI hace lower high) justo en una zona de oferta (supply zone) de H4. La estructura en M15 acaba de hacer un Change of Character (CHoCH) bajista. Tu plan es:",
               options: [
                 "Comprar porque el precio esta en maximos",
                 "Vender: divergencia bajista + supply zone + CHoCH bajista en timeframe menor = triple confluencia para short con entrada en el último order block bajista de M15",
@@ -272,7 +272,7 @@ export const PHASE_7: Phase = {
               explanation: "Tienes triple confluencia bajista: 1) Divergencia RSI indica debilidad del impulso alcista. 2) Supply zone en H4 es resistencia institucional. 3) CHoCH bajista en M15 confirma que los compradores perdieron el control. La entrada óptima es en el order block que genero el CHoCH."
             },
             {
-              question: "Un trader consistente que ya paso un challenge de FTMO con una cuenta de 100K quiere escalar sus ingresos. Cual es la mejor estrategia a seguir?",
+              question: "¿Un trader consistente que ya paso un challenge de FTMO con una cuenta de 100K quiere escalar sus ingresos. Cual es la mejor estrategia a seguir?",
               options: [
                 "Aumentar el riesgo por trade al 5% para ganar más rápido",
                 "Mantener la misma estrategia y riesgo, y abrir cuentas adicionales en la misma u otras prop firms usando un trade copier para multiplicar ganancias",
@@ -280,7 +280,7 @@ export const PHASE_7: Phase = {
                 "Invertir todas las ganancias en criptomonedas"
               ],
               correctIndex: 1,
-              explanation: "La mejor forma de escalar es mantener exactamente la misma estrategia y riesgo que funciono, y multiplicar cuentas fondeadas. Un trade copier replica la misma operación en todas las cuentas. Mismos trades, multiples cuentas = ingresos multiplicados sin aumentar el riesgo."
+              explanation: "La mejor forma de escalar es mantener exactamente la misma estrategia y riesgo que funciono, y multiplicar cuentas fondeadas. Un trade copier replica la misma operación en todas las cuentas. Mismos trades, múltiples cuentas = ingresos multiplicados sin aumentar el riesgo."
             }
           ],
           practicalExercise: "Realiza el examen completo sin mirar las respuestas. Anota tus respuestas en un papel. Luego revisa cada una y calcula tu porcentaje. Para cada respuesta incorrecta, vuelve a la fase correspondiente del curso y estudia el tema. Repite el examen en una semana hasta alcanzar al menos 85%."
@@ -327,10 +327,10 @@ export const PHASE_7: Phase = {
 <h4>FASE 3: Meses 4-6 — Primer Challenge de Prop Firm</h4>
 <ul>
 <li><strong>Objetivo:</strong> Pasar tu primer challenge</li>
-<li>Empieza con una cuenta pequena (10K-25K) para reducir la presion</li>
+<li>Empieza con una cuenta pequena (10K-25K) para reducir la presión</li>
 <li>Sigue el plan de 4 semanas que aprendiste en la Fase 5 del curso</li>
 <li>Si no pasas el primero, analiza por que, ajusta, y vuelve a intentar</li>
-<li>La mayoria de traders necesitan 2-3 intentos antes de pasar su primer challenge</li>
+<li>La mayoría de traders necesitan 2-3 intentos antes de pasar su primer challenge</li>
 <li><strong>Presupuesto: ten dinero para al menos 3 challenges</strong></li>
 </ul>
 </div>
@@ -361,7 +361,7 @@ export const PHASE_7: Phase = {
 <div class="warning-box">
 <h4>La Verdad que Nadie te Dice</h4>
 <ul>
-<li><strong>6-12 meses</strong> es el tiempo REALISTA para ser consistentemente rentable con dedicacion seria</li>
+<li><strong>6-12 meses</strong> es el tiempo REALISTA para ser consistentemente rentable con dedicación seria</li>
 <li><strong>No es un esquema de dinero rápido.</strong> Los traders exitosos pasaron meses o años aprendiendo.</li>
 <li><strong>80% del éxito</strong> es psicología y gestión de riesgo, no la estrategia</li>
 <li><strong>Vas a tener meses malos</strong> incluso siendo rentable a largo plazo. Es parte del proceso.</li>
@@ -410,17 +410,17 @@ export const PHASE_7: Phase = {
 </div>`,
           keyPoints: [
             "Roadmap realista: demo (2 meses) → cuenta pequena (2 meses) → prop firm (2 meses) → escalar (3-6 meses)",
-            "6-12 meses es el tiempo realista para ser consistentemente rentable con dedicacion seria",
+            "6-12 meses es el tiempo realista para ser consistentemente rentable con dedicación seria",
             "El 80% del éxito es psicología y gestión de riesgo, no la estrategia",
             "Construye tu track record con diario de trading, metricas mensuales y herramientas como Myfxbook",
             "Nunca dejes de aprender: libros, YouTube (ICT), comunidades de traders verificados",
             "Encuentra un accountability partner y un mentor para acelerar tu progreso"
           ],
           quiz: [
-            { question: "Cual es el tiempo realista para convertirse en un trader consistentemente rentable?", options: ["1 semana si estudias mucho", "1 mes con la estrategia correcta", "6-12 meses con dedicacion seria, estudio y práctica constante", "5 años mínimo"], correctIndex: 2, explanation: "6 a 12 meses es el rango realista para la mayoria de traders que estudian en serio, practican diariamente, y siguen un plan estructurado. No hay atajos, pero con dedicacion es alcanzable." },
-            { question: "Cual debería ser tu PRIMER paso despues de completar este curso?", options: ["Abrir una cuenta con 10,000$ y empezar a operar", "Pagar un challenge de prop firm inmediatamente", "Backtestear tu estrategia con al menos 200 trades y operar en demo hasta ser rentable 2 meses consecutivos", "Comprar un bot de trading automático"], correctIndex: 2, explanation: "El primer paso es validar tu estrategia con backtesting extenso y luego demostrar consistencia en demo. Nunca pongas dinero real hasta que tu estrategia este probada." },
-            { question: "Que porcentaje del éxito en trading corresponde a psicología y gestión de riesgo?", options: ["20%", "50%", "80%", "10%"], correctIndex: 2, explanation: "Aproximadamente el 80% del éxito en trading depende de la psicología (disciplina, control emocional) y la gestión de riesgo. La estrategia importa, pero sin la mentalidad correcta, ninguna estrategia funciona." },
-            { question: "Por que es importante tener un accountability partner o mentor?", options: ["Para que te diga que trades tomar", "La responsabilidad mutua acelera el progreso y ayuda a mantener la disciplina", "Para copiar sus trades exactos", "No es importante, es mejor operar completamente solo"], correctIndex: 1, explanation: "Un accountability partner te ayuda a mantener la disciplina, revisar errores, y mantener la motivacion. La responsabilidad mutua acelera significativamente el proceso de aprendizaje." }
+            { question: "¿Cuál es el tiempo realista para convertirse en un trader consistentemente rentable?", options: ["1 semana si estudias mucho", "1 mes con la estrategia correcta", "6-12 meses con dedicación seria, estudio y práctica constante", "5 años mínimo"], correctIndex: 2, explanation: "6 a 12 meses es el rango realista para la mayoría de traders que estudian en serio, practican diariamente, y siguen un plan estructurado. No hay atajos, pero con dedicación es alcanzable." },
+            { question: "¿Cuál debería ser tu PRIMER paso despues de completar este curso?", options: ["Abrir una cuenta con 10,000$ y empezar a operar", "Pagar un challenge de prop firm inmediatamente", "Backtestear tu estrategia con al menos 200 trades y operar en demo hasta ser rentable 2 meses consecutivos", "Comprar un bot de trading automático"], correctIndex: 2, explanation: "El primer paso es validar tu estrategia con backtesting extenso y luego demostrar consistencia en demo. Nunca pongas dinero real hasta que tu estrategia este probada." },
+            { question: "¿Qué porcentaje del éxito en trading corresponde a psicología y gestión de riesgo?", options: ["20%", "50%", "80%", "10%"], correctIndex: 2, explanation: "Aproximadamente el 80% del éxito en trading depende de la psicología (disciplina, control emocional) y la gestión de riesgo. La estrategia importa, pero sin la mentalidad correcta, ninguna estrategia funciona." },
+            { question: "¿Por qué es importante tener un accountability partner o mentor?", options: ["Para que te diga que trades tomar", "La responsabilidad mutua acelera el progreso y ayuda a mantener la disciplina", "Para copiar sus trades exactos", "No es importante, es mejor operar completamente solo"], correctIndex: 1, explanation: "Un accountability partner te ayuda a mantener la disciplina, revisar errores, y mantener la motivacion. La responsabilidad mutua acelera significativamente el proceso de aprendizaje." }
           ],
           practicalExercise: "Crea tu Plan de Carrera completo en un documento: 1) Tu estrategia elegida. 2) Pares y timeframe. 3) Riesgo por trade. 4) Horario. 5) Timeline 12 meses. 6) Presupuesto. 7) Como documentar progreso. 8) Compromiso firmado."
         },
@@ -431,24 +431,24 @@ export const PHASE_7: Phase = {
           content: `
 <h2>Examen de Escenarios: Piensa como un Profesional</h2>
 <div class="highlight-box gold"><h4>Instrucciones</h4><p>Este examen presenta 10 escenarios REALES de trading. No hay respuestas "correctas" universales - hay respuestas que demuestran pensamiento profesional. Necesitas 80%+ para pasar.</p></div>
-<div class="warning-box"><p>Estas preguntas son más dificiles que el examen anterior. Requieren COMBINAR conocimientos de multiples fases y tomar decisiones bajo presión simulada.</p></div>`,
+<div class="warning-box"><p>Estas preguntas son más dificiles que el examen anterior. Requieren COMBINAR conocimientos de múltiples fases y tomar decisiones bajo presión simulada.</p></div>`,
           keyPoints: [
             "Escenarios basados en situaciones reales de trading",
-            "Requiere combinar multiples conceptos a la vez",
+            "Requiere combinar múltiples conceptos a la vez",
             "Piensa como profesional: proceso > resultado",
             "80% para pasar"
           ],
           quiz: [
-            { question: "Escenario: Es lunes 8:30 UTC. EUR/USD rangeaba en Asia entre 1.0820-1.0850. London acaba de abrir y el precio rompio por debajo a 1.0810 con una vela roja grande. Ves muchos SL activandose. Que haces?", options: ["Vendo inmediatamente porque la tendencia es bajista", "ESPERO - esto parece un liquidity sweep del rango asiatico. Busco confirmación de giro alcista (BOS en M5/M15) para ir LONG", "Compro inmediatamente porque bajo mucho", "Cierro todo y no opero hoy"], correctIndex: 1, explanation: "Clasico AMD: Asia rangeaba, London rompe abajo para cazar liquidez. Esperar confirmación de giro (BOS) y buscar LONG en el OB/FVG es la respuesta profesional." },
-            { question: "Escenario: Tienes un LONG abierto en GBP/USD con +80 pips. Tu TP original era 100 pips. El RSI muestra divergencia bajista en H1 y el precio esta en una resistencia de D1. Que haces?", options: ["Esperar a que llegue al TP de 100 pips", "Cerrar 50-70% de la posición ahora y mover SL a profit para el resto", "Mover el TP a 200 pips porque 'va bien'", "Cerrar todo inmediatamente y abrir SHORT"], correctIndex: 1, explanation: "Con divergencia bajista + resistencia D1, hay riesgo de giro. Lo profesional es asegurar parte de la ganancia (cerrar parcial) y proteger el resto con trailing stop." },
-            { question: "Escenario: Llevas +6.5% en un challenge de FTMO (objetivo 8%). Quedan 5 dias. Tu riesgo normal es 1% por trade. Que ajustas?", options: ["Aumento a 2% para terminar rápido", "Reduzco a 0.25-0.5% para proteger ganancias. Solo necesito 1.5% más en 5 dias = 0.3%/dia", "Mantengo 1% como siempre", "Dejo de operar y espero"], correctIndex: 1, explanation: "Cerca del objetivo, la prioridad es PROTEGER lo ganado. 0.25-0.5% de riesgo sigue siendo viable para alcanzar el 1.5% restante sin arriesgar las ganancias acumuladas." },
-            { question: "Escenario: NFP (Non-Farm Payrolls) sale en 30 minutos. Tienes un trade abierto con +25 pips y tu TP esta a +60 pips. Que haces?", options: ["Dejo el trade abierto, mi análisis técnico dice que llegara al TP", "Cierro el trade o muevo SL a profit ANTES de la noticia. El NFP puede mover 100+ pips en segundos", "Abro otro trade en la misma dirección para maximizar", "Quito el SL para dar más espacio"], correctIndex: 1, explanation: "El NFP es el dato más volatil del mes. Puede invalidar todo tu análisis en segundos. Lo profesional es proteger las ganancias antes de la noticia." },
-            { question: "Escenario: Tu backtest muestra 55% win rate y 1:2 R:R en 200 trades. Pero en las ultimas 3 semanas en real llevas 35% win rate. Que concluyes?", options: ["Mi estrategia no funciona, la abandono", "3 semanas es muestra demasiado pequena. Reviso ejecucion (estoy siguiendo mi plan?) pero NO cambio la estrategia basado en 15-20 trades", "Necesito anadir más indicadores", "El mercado cambio para siempre y nunca volvera a funcionar"], correctIndex: 1, explanation: "200 trades de backtest vs 15-20 trades en real: la muestra real es demasiado pequena. Revisa si estas siguiendo tu plan correctamente. No cambies una estrategia probada por una racha corta." },
-            { question: "Escenario: Ves un setup A+ en EUR/USD: OB + FVG + Fibonacci 61.8% + Killzone NY + BOS alcista en M15. PERO el DXY (Indice Dolar) esta en soporte fuerte y parece rebotar al alza. Que haces?", options: ["Entro LONG en EUR/USD porque tengo 5 confluencias", "NO entro. DXY rebotando al alza = USD se fortalece = EUR/USD debería BAJAR. Las confluencias tecnicas contradicen el contexto macro", "Entro con doble de riesgo porque tengo muchas confluencias", "Ignoro el DXY, solo miro el gráfico de EUR/USD"], correctIndex: 1, explanation: "DXY es la brujula del Forex. Si el DXY rebota al alza (USD fuerte), ir LONG en EUR/USD contradice el contexto macro. Las confluencias tecnicas son importantes pero el contexto fundamental puede invalidarlas." },
-            { question: "Escenario: Acabas de perder tu primera cuenta fondeada de 100K despues de 2 meses de operar. Te sientes devastado. Cual es la acción CORRECTA?", options: ["Compro otro challenge inmediatamente para 'recuperar'", "Pausa de 1-2 semanas. Analizo QUE salio mal (diario de trading). Vuelvo a demo 2-4 semanas. Solo entonces compro nuevo challenge.", "Abandono el trading para siempre", "Cambio completamente de estrategia y compro un bot"], correctIndex: 1, explanation: "Perder la primera cuenta es NORMAL. Lo profesional: pausa para procesar emocionalmente, análisis detallado de errores, práctica en demo, y volver mejor preparado." },
-            { question: "Escenario: Un 'guru' de Instagram dice que EUR/USD va a subir a 1.1500 esta semana. Tu análisis dice lo contrario: tendencia bajista, resistencia fuerte en 1.0900. Que haces?", options: ["Sigo al guru, debe saber más que yo", "SIEMPRE sigo mi propio análisis. Ningun guru conoce mi plan, mi riesgo, ni mis reglas. Mi análisis es mi responsabilidad.", "Hago mitad y mitad", "Espero a ver quien tiene razon"], correctIndex: 1, explanation: "Tu análisis es TU responsabilidad. Ningun guru en Instagram conoce tu contexto, plan de riesgo, ni responde por tus perdidas. La autonomia en tus decisiones es fundamental." },
-            { question: "Escenario: Tu diario de trading muestra que pierdes consistentemente los martes por la tarde y cuando operas USD/JPY. Que haces?", options: ["Ignoro los datos, probablemente es coincidencia", "Dejo de operar martes por la tarde y elimino USD/JPY de mis pares durante 1 mes. Luego reevaluo con datos", "Opero MAS los martes para 'arreglar' la estadistica", "Cambio completamente de estrategia"], correctIndex: 1, explanation: "El diario revelo un patrón. Lo profesional: eliminar martes tarde y USD/JPY temporalmente, recopilar datos 1 mes, y decidir con evidencia. Los datos no mienten." },
-            { question: "Escenario: Un amigo te pide que le enseñes a hacer 'dinero fácil' con trading en 1 semana. Que le dices?", options: ["Le enseno un par de trucos rapidos", "Le explico que trading NO es dinero fácil: requiere mínimo 6-12 meses de estudio y práctica, le recomiendo este curso, y le advierto que el 70-90% pierde dinero", "Le paso señales de un grupo de Telegram", "Le digo que invierta en mi cuenta"], correctIndex: 1, explanation: "La honestidad es fundamental. Trading requiere educacion seria, práctica y disciplina. Venderle la idea de 'dinero fácil' sería irresponsable y le costaria dinero." }
+            { question: "¿Escenario: Es lunes 8:30 UTC. EUR/USD rangeaba en Asia entre 1.0820-1.0850. London acaba de abrir y el precio rompio por debajo a 1.0810 con una vela roja grande. Ves muchos SL activandose. Que haces?", options: ["Vendo inmediatamente porque la tendencia es bajista", "ESPERO - esto parece un liquidity sweep del rango asiatico. Busco confirmación de giro alcista (BOS en M5/M15) para ir LONG", "Compro inmediatamente porque bajo mucho", "Cierro todo y no opero hoy"], correctIndex: 1, explanation: "Clasico AMD: Asia rangeaba, London rompe abajo para cazar liquidez. Esperar confirmación de giro (BOS) y buscar LONG en el OB/FVG es la respuesta profesional." },
+            { question: "¿Escenario: Tienes un LONG abierto en GBP/USD con +80 pips. Tu TP original era 100 pips. El RSI muestra divergencia bajista en H1 y el precio esta en una resistencia de D1. Que haces?", options: ["Esperar a que llegue al TP de 100 pips", "Cerrar 50-70% de la posición ahora y mover SL a profit para el resto", "Mover el TP a 200 pips porque 'va bien'", "Cerrar todo inmediatamente y abrir SHORT"], correctIndex: 1, explanation: "Con divergencia bajista + resistencia D1, hay riesgo de giro. Lo profesional es asegurar parte de la ganancia (cerrar parcial) y proteger el resto con trailing stop." },
+            { question: "¿Escenario: Llevas +6.5% en un challenge de FTMO (objetivo 8%). Quedan 5 dias. Tu riesgo normal es 1% por trade. Que ajustas?", options: ["Aumento a 2% para terminar rápido", "Reduzco a 0.25-0.5% para proteger ganancias. Solo necesito 1.5% más en 5 dias = 0.3%/dia", "Mantengo 1% como siempre", "Dejo de operar y espero"], correctIndex: 1, explanation: "Cerca del objetivo, la prioridad es PROTEGER lo ganado. 0.25-0.5% de riesgo sigue siendo viable para alcanzar el 1.5% restante sin arriesgar las ganancias acumuladas." },
+            { question: "¿Escenario: NFP (Non-Farm Payrolls) sale en 30 minutos. Tienes un trade abierto con +25 pips y tu TP esta a +60 pips. Que haces?", options: ["Dejo el trade abierto, mi análisis técnico dice que llegara al TP", "Cierro el trade o muevo SL a profit ANTES de la noticia. El NFP puede mover 100+ pips en segundos", "Abro otro trade en la misma dirección para maximizar", "Quito el SL para dar más espacio"], correctIndex: 1, explanation: "El NFP es el dato más volatil del mes. Puede invalidar todo tu análisis en segundos. Lo profesional es proteger las ganancias antes de la noticia." },
+            { question: "¿Escenario: Tu backtest muestra 55% win rate y 1:2 R:R en 200 trades. Pero en las ultimas 3 semanas en real llevas 35% win rate. Que concluyes?", options: ["Mi estrategia no funciona, la abandono", "3 semanas es muestra demasiado pequena. Reviso ejecucion (estoy siguiendo mi plan?) pero NO cambio la estrategia basado en 15-20 trades", "Necesito anadir más indicadores", "El mercado cambio para siempre y nunca volvera a funcionar"], correctIndex: 1, explanation: "200 trades de backtest vs 15-20 trades en real: la muestra real es demasiado pequena. Revisa si estas siguiendo tu plan correctamente. No cambies una estrategia probada por una racha corta." },
+            { question: "¿Escenario: Ves un setup A+ en EUR/USD: OB + FVG + Fibonacci 61.8% + Killzone NY + BOS alcista en M15. PERO el DXY (Índice Dolar) esta en soporte fuerte y parece rebotar al alza. Que haces?", options: ["Entro LONG en EUR/USD porque tengo 5 confluencias", "NO entro. DXY rebotando al alza = USD se fortalece = EUR/USD debería BAJAR. Las confluencias tecnicas contradicen el contexto macro", "Entro con doble de riesgo porque tengo muchas confluencias", "Ignoro el DXY, solo miro el gráfico de EUR/USD"], correctIndex: 1, explanation: "DXY es la brujula del Forex. Si el DXY rebota al alza (USD fuerte), ir LONG en EUR/USD contradice el contexto macro. Las confluencias tecnicas son importantes pero el contexto fundamental puede invalidarlas." },
+            { question: "¿Escenario: Acabas de perder tu primera cuenta fondeada de 100K despues de 2 meses de operar. Te sientes devastado. Cual es la acción CORRECTA?", options: ["Compro otro challenge inmediatamente para 'recuperar'", "Pausa de 1-2 semanas. Analizo QUE salio mal (diario de trading). Vuelvo a demo 2-4 semanas. Solo entonces compro nuevo challenge.", "Abandono el trading para siempre", "Cambio completamente de estrategia y compro un bot"], correctIndex: 1, explanation: "Perder la primera cuenta es NORMAL. Lo profesional: pausa para procesar emocionalmente, análisis detallado de errores, práctica en demo, y volver mejor preparado." },
+            { question: "¿Escenario: Un 'guru' de Instagram dice que EUR/USD va a subir a 1.1500 esta semana. Tu análisis dice lo contrario: tendencia bajista, resistencia fuerte en 1.0900. Que haces?", options: ["Sigo al guru, debe saber más que yo", "SIEMPRE sigo mi propio análisis. Ningun guru conoce mi plan, mi riesgo, ni mis reglas. Mi análisis es mi responsabilidad.", "Hago mitad y mitad", "Espero a ver quien tiene razon"], correctIndex: 1, explanation: "Tu análisis es TU responsabilidad. Ningun guru en Instagram conoce tu contexto, plan de riesgo, ni responde por tus perdidas. La autonomia en tus decisiones es fundamental." },
+            { question: "¿Escenario: Tu diario de trading muestra que pierdes consistentemente los martes por la tarde y cuando operas USD/JPY. Que haces?", options: ["Ignoro los datos, probablemente es coincidencia", "Dejo de operar martes por la tarde y elimino USD/JPY de mis pares durante 1 mes. Luego reevaluo con datos", "Opero MAS los martes para 'arreglar' la estadistica", "Cambio completamente de estrategia"], correctIndex: 1, explanation: "El diario revelo un patrón. Lo profesional: eliminar martes tarde y USD/JPY temporalmente, recopilar datos 1 mes, y decidir con evidencia. Los datos no mienten." },
+            { question: "¿Escenario: Un amigo te pide que le enseñes a hacer 'dinero fácil' con trading en 1 semana. Que le dices?", options: ["Le enseno un par de trucos rapidos", "Le explico que trading NO es dinero fácil: requiere mínimo 6-12 meses de estudio y práctica, le recomiendo este curso, y le advierto que el 70-90% pierde dinero", "Le paso señales de un grupo de Telegram", "Le digo que invierta en mi cuenta"], correctIndex: 1, explanation: "La honestidad es fundamental. Trading requiere educación seria, práctica y disciplina. Venderle la idea de 'dinero fácil' sería irresponsable y le costaria dinero." }
           ],
           practicalExercise: "Cronometra este examen: tienes 20 minutos para las 10 preguntas (2 min/pregunta, como en el CMT real). No consultes lecciones. Al terminar, anota tu score y tiempo. Si sacas 80%+ en menos de 20 min, tu nivel es profesional."
         },
@@ -460,7 +460,7 @@ export const PHASE_7: Phase = {
 <h2>Mas Alla del Trading: Construyendo un Futuro</h2>
 <div style="display:flex;justify-content:center;margin:20px 0"><svg width="420" height="85" viewBox="0 0 420 85" style="background:#131722;border-radius:10px;border:1px solid #2a2a40"><text x="210" y="15" fill="white" font-size="10" text-anchor="middle" font-weight="bold">5 PILARES DEL TRADER EXITOSO</text><rect x="8" y="28" width="75" height="32" rx="5" fill="#26a69a15" stroke="#26a69a"/><text x="45" y="42" fill="#26a69a" font-size="7" text-anchor="middle" font-weight="bold">SALUD</text><text x="45" y="54" fill="#787b86" font-size="6" text-anchor="middle">Física+Mental</text><rect x="89" y="28" width="75" height="32" rx="5" fill="#3b82f615" stroke="#3b82f6"/><text x="126" y="42" fill="#3b82f6" font-size="7" text-anchor="middle" font-weight="bold">RELACIONES</text><text x="126" y="54" fill="#787b86" font-size="6" text-anchor="middle">No aislarse</text><rect x="170" y="28" width="85" height="32" rx="5" fill="#f59e0b15" stroke="#f59e0b"/><text x="212" y="42" fill="#f59e0b" font-size="7" text-anchor="middle" font-weight="bold">DIVERSIFICAR</text><text x="212" y="54" fill="#787b86" font-size="6" text-anchor="middle">No solo trading</text><rect x="261" y="28" width="75" height="32" rx="5" fill="#8b5cf615" stroke="#8b5cf6"/><text x="298" y="42" fill="#8b5cf6" font-size="7" text-anchor="middle" font-weight="bold">EDUCACIÓN</text><text x="298" y="54" fill="#787b86" font-size="6" text-anchor="middle">Nunca parar</text><rect x="342" y="28" width="72" height="32" rx="5" fill="#ec489915" stroke="#ec4899"/><text x="378" y="42" fill="#ec4899" font-size="7" text-anchor="middle" font-weight="bold">DISCIPLINA</text><text x="378" y="54" fill="#787b86" font-size="6" text-anchor="middle">El #1</text><text x="210" y="75" fill="#26a69a" font-size="8" text-anchor="middle" font-weight="bold">Los traders exitosos NO se rindieron. Tú tampoco.</text></svg></div>
 <div style="display:flex;justify-content:center;margin:20px 0"><svg width="460" height="90" viewBox="0 0 460 90" style="background:#131722;border-radius:10px;border:1px solid #2a2a40"><text x="230" y="15" fill="white" font-size="10" text-anchor="middle" font-weight="bold">CHECKLIST: ¿ESTÁS LISTO?</text><rect x="8" y="28" width="88" height="35" rx="5" fill="#26a69a15" stroke="#26a69a"/><text x="52" y="44" fill="#26a69a" font-size="7" text-anchor="middle" font-weight="bold">✅ TEORÍA</text><text x="52" y="56" fill="#787b86" font-size="6" text-anchor="middle">76 lecciones</text><rect x="102" y="28" width="88" height="35" rx="5" fill="#3b82f615" stroke="#3b82f6"/><text x="146" y="44" fill="#3b82f6" font-size="7" text-anchor="middle" font-weight="bold">✅ QUIZZES</text><text x="146" y="56" fill="#787b86" font-size="6" text-anchor="middle">282 preguntas</text><rect x="196" y="28" width="88" height="35" rx="5" fill="#f59e0b15" stroke="#f59e0b"/><text x="240" y="44" fill="#f59e0b" font-size="7" text-anchor="middle" font-weight="bold">✅ PRÁCTICA</text><text x="240" y="56" fill="#787b86" font-size="6" text-anchor="middle">8 sem demo</text><rect x="290" y="28" width="80" height="35" rx="5" fill="#8b5cf615" stroke="#8b5cf6"/><text x="330" y="44" fill="#8b5cf6" font-size="7" text-anchor="middle" font-weight="bold">✅ CHALLENGE</text><text x="330" y="56" fill="#787b86" font-size="6" text-anchor="middle">Simulado</text><rect x="376" y="28" width="76" height="35" rx="5" fill="#ef535015" stroke="#ef5350"/><text x="414" y="44" fill="#ef5350" font-size="7" text-anchor="middle" font-weight="bold">→ REAL</text><text x="414" y="56" fill="#787b86" font-size="6" text-anchor="middle">Prop Firm</text><text x="230" y="80" fill="#26a69a" font-size="8" text-anchor="middle" font-weight="bold">Si marcaste todo = estás en el top 5% de traders preparados</text></svg></div>
-<div class="highlight-box purple"><h4>Has Llegado al Final del Curso</h4><p>Si has completado las 7 fases, los quizzes, los proyectos, y el examen... tienes más conocimiento que el 95% de los traders del mundo. Pero el conocimiento sin acción no vale nada. Aqui va tu última lección.</p></div>
+<div class="highlight-box purple"><h4>Has Llegado al Final del Curso</h4><p>Si has completado las 7 fases, los quizzes, los proyectos, y el examen... tienes más conocimiento que el 95% de los traders del mundo. Pero el conocimiento sin acción no vale nada. Aquí va tu última lección.</p></div>
 <h3>El Trading NO es el Fin, es el Medio</h3>
 <div class="analogy-box"><p>El trading es una HERRAMIENTA para conseguir lo que realmente quieres: libertad financiera, tiempo, independencia. No te enamores del trading en si. Enamorate de la vida que te permite construir.</p></div>
 <h3>Los 5 Pilares del Trader Exitoso a Largo Plazo</h3>
@@ -488,15 +488,15 @@ export const PHASE_7: Phase = {
 <p>Despues de estudiar miles de traders exitosos, hay UN factor que los separa del resto: <strong>NO SE RINDIERON</strong>. Pasaron por rachas perdedoras, challenges fallidos, momentos de duda. Pero siguieron adelante, ajustaron, aprendieron, y eventualmente llegaron. Tu también puedes. Ahora ve y hazlo.</p></div>`,
           keyPoints: [
             "El trading es un MEDIO para conseguir libertad, no un fin en si mismo",
-            "5 pilares: salud fisica, salud mental, relaciones, diversificacion, educacion continua",
+            "5 pilares: salud fisica, salud mental, relaciones, diversificacion, educación continua",
             "Nunca arriesgues dinero que no puedes perder",
             "El factor #1 de los traders exitosos: NO SE RINDIERON",
             "Trata el trading como un negocio, no como un juego"
           ],
           quiz: [
-            { question: "Cual es el factor #1 que separa a los traders exitosos del resto?", options: ["Tienen la mejor estrategia", "Tienen más dinero", "No se rindieron - persistieron a pesar de las dificultades", "Tienen mejor software"], correctIndex: 2, explanation: "La persistencia es el factor clave. Todos los traders exitosos pasaron por momentos dificiles. La diferencia es que NO se rindieron." },
-            { question: "Porque es importante diversificar más alla del trading?", options: ["No es importante", "Porque poner todo tu dinero y esperanza en una sola fuente de ingreso es un riesgo enorme", "Porque el trading no funciona", "Porque es la ley"], correctIndex: 1, explanation: "Diversificar ingresos (trading + inversiones + negocio) reduce el riesgo total y la presión sobre tu trading. Si dependes 100% del trading, la presión nubla las decisiones." },
-            { question: "Que debería hacer un trader para su salud mental?", options: ["Operar 12 horas al dia", "Tener hobbies, hacer ejercicio, meditar, desconectar del mercado regularmente", "Solo pensar en trading", "Ignorar el estres"], correctIndex: 1, explanation: "El trading puede ser muy estresante. Ejercicio, hobbies, meditacion y desconexion son esenciales para mantener la claridad mental y tomar buenas decisiones." }
+            { question: "¿Cuál es el factor #1 que separa a los traders exitosos del resto?", options: ["Tienen la mejor estrategia", "Tienen más dinero", "No se rindieron - persistieron a pesar de las dificultades", "Tienen mejor software"], correctIndex: 2, explanation: "La persistencia es el factor clave. Todos los traders exitosos pasaron por momentos dificiles. La diferencia es que NO se rindieron." },
+            { question: "¿Porque es importante diversificar más alla del trading?", options: ["No es importante", "Porque poner todo tu dinero y esperanza en una sola fuente de ingreso es un riesgo enorme", "Porque el trading no funciona", "Porque es la ley"], correctIndex: 1, explanation: "Diversificar ingresos (trading + inversiones + negocio) reduce el riesgo total y la presión sobre tu trading. Si dependes 100% del trading, la presión nubla las decisiones." },
+            { question: "¿Qué debería hacer un trader para su salud mental?", options: ["Operar 12 horas al dia", "Tener hobbies, hacer ejercicio, meditar, desconectar del mercado regularmente", "Solo pensar en trading", "Ignorar el estrés"], correctIndex: 1, explanation: "El trading puede ser muy estresante. Ejercicio, hobbies, meditacion y desconexion son esenciales para mantener la claridad mental y tomar buenas decisiones." }
           ],
           practicalExercise: "Escribe tu compromiso personal como trader en un documento. Incluye: por que quieres ser trader, que estas dispuesto a sacrificar, cuanto tiempo dedicaras al dia, y firmalo con tu nombre y fecha. Ponlo donde lo veas cada dia."
         }

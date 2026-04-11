@@ -85,9 +85,9 @@ export const PHASE_6: Phase = {
 
 <h3>Las Metricas Esenciales del Backtesting</h3>
 <div class="grid-cards">
-<div class="card"><h4>Win Rate (% de Acierto)</h4><p>Porcentaje de trades ganadores. Un 40-60% es normal para la mayoria de estrategias rentables. Un win rate del 40% con R:R 1:3 es MUY rentable.</p></div>
+<div class="card"><h4>Win Rate (% de Acierto)</h4><p>Porcentaje de trades ganadores. Un 40-60% es normal para la mayoría de estrategias rentables. Un win rate del 40% con R:R 1:3 es MUY rentable.</p></div>
 <div class="card"><h4>Profit Factor</h4><p>Ganancias totales / Perdidas totales. Por encima de 1.5 es bueno. Por encima de 2.0 es excelente. Por debajo de 1.0 pierdes dinero.</p></div>
-<div class="card"><h4>Max Drawdown</h4><p>La mayor caida desde un pico de equity. Si tu max drawdown es 15%, prepara tu mente para soportar ese dolor. En cuenta fondeada, debe ser menor al 10%.</p></div>
+<div class="card"><h4>Max Drawdown</h4><p>La mayor caída desde un pico de equity. Si tu max drawdown es 15%, prepara tu mente para soportar ese dolor. En cuenta fondeada, debe ser menor al 10%.</p></div>
 <div class="card"><h4>Ratio de Sharpe</h4><p>Mide el retorno ajustado al riesgo. Por encima de 1.0 es aceptable. Por encima de 2.0 es excelente. Tiene en cuenta la volatilidad de tus resultados.</p></div>
 <div class="card"><h4>Expectancy (Esperanza Matematica)</h4><p>Cuanto esperas ganar EN PROMEDIO por cada trade. Expectancy = (Win% x Avg Win) - (Loss% x Avg Loss). Debe ser POSITIVA para que tu estrategia sea rentable.</p></div>
 <div class="card"><h4>Sample Size (Tamano de Muestra)</h4><p>MINIMO 100 trades para que los datos sean estadisticamente significativos. Idealmente 200-500 trades. Con menos de 50, los resultados no son confiables.</p></div>
@@ -98,7 +98,7 @@ export const PHASE_6: Phase = {
 <h4>El Mayor Peligro del Backtesting</h4>
 <p>El <strong>overfitting</strong> es cuando ajustas tanto los parametros de tu estrategia que funciona PERFECTO en datos historicos pero FRACASA en datos nuevos. Es como estudiar las respuestas de un examen pasado — sacas 10 en ese examen pero no aprendes nada real.</p>
 <ul>
-<li><strong>Senal de overfitting:</strong> Tu estrategia tiene 20 reglas y 15 filtros. Si necesitas tantas condiciones, probablemente no funciona.</li>
+<li><strong>Señal de overfitting:</strong> Tu estrategia tiene 20 reglas y 15 filtros. Si necesitas tantas condiciones, probablemente no funciona.</li>
 <li><strong>Solucion:</strong> Manten tu estrategia SIMPLE. 3-5 reglas máximo.</li>
 <li><strong>Test fuera de muestra:</strong> Backtestea en un período (2020-2023) y luego válida en otro período que NO usaste (2024). Si funciona en ambos, es robusta.</li>
 <li><strong>Walk-forward analysis:</strong> Divide tus datos en segmentos y válida secuencialmente.</li>
@@ -118,10 +118,10 @@ export const PHASE_6: Phase = {
             "Si no funciona en backtest, no funcionará en vivo"
           ],
           quiz: [
-            { question: "Que es el backtesting?", options: ["Operar en una cuenta demo", "Aplicar tu estrategia a datos historicos para ver como habría funcionado", "Copiar trades de otros traders", "Usar indicadores automaticos"], correctIndex: 1, explanation: "El backtesting consiste en aplicar tu estrategia de trading a datos historicos del mercado para evaluar su rendimiento antes de arriesgar dinero real." },
-            { question: "Cual es el tamano de muestra mínimo recomendado para un backtest confiable?", options: ["10 trades", "30 trades", "100-200 trades", "Solo 5 trades buenos"], correctIndex: 2, explanation: "Se necesitan al menos 100-200 trades para que los resultados del backtest sean estadisticamente significativos y confiables." },
-            { question: "Que es el overfitting?", options: ["Cuando tu estrategia funciona en todos los mercados", "Cuando ajustas tanto los parametros que funciona perfecto en el pasado pero falla en datos nuevos", "Cuando usas demasiado apalancamiento", "Cuando operas muchos pares a la vez"], correctIndex: 1, explanation: "El overfitting es sobre-optimizar tu estrategia para datos historicos especificos. Funciona perfecto en el backtest pero falla en operaciones reales porque no es una estrategia robusta." },
-            { question: "Un profit factor de 0.8 significa que:", options: ["Tu estrategia es muy rentable", "Estas perdiendo dinero — las perdidas superan las ganancias", "Necesitas más datos", "Es un buen resultado para empezar"], correctIndex: 1, explanation: "Un profit factor por debajo de 1.0 significa que las perdidas totales superan las ganancias totales. Necesitas un profit factor de al menos 1.5 para que la estrategia sea viable." }
+            { question: "¿Qué es el backtesting?", options: ["Operar en una cuenta demo", "Aplicar tu estrategia a datos historicos para ver como habría funcionado", "Copiar trades de otros traders", "Usar indicadores automaticos"], correctIndex: 1, explanation: "El backtesting consiste en aplicar tu estrategia de trading a datos historicos del mercado para evaluar su rendimiento antes de arriesgar dinero real." },
+            { question: "¿Cuál es el tamano de muestra mínimo recomendado para un backtest confiable?", options: ["10 trades", "30 trades", "100-200 trades", "Solo 5 trades buenos"], correctIndex: 2, explanation: "Se necesitan al menos 100-200 trades para que los resultados del backtest sean estadisticamente significativos y confiables." },
+            { question: "¿Qué es el overfitting?", options: ["Cuando tu estrategia funciona en todos los mercados", "Cuando ajustas tanto los parametros que funciona perfecto en el pasado pero falla en datos nuevos", "Cuando usas demasiado apalancamiento", "Cuando operas muchos pares a la vez"], correctIndex: 1, explanation: "El overfitting es sobre-optimizar tu estrategia para datos historicos especificos. Funciona perfecto en el backtest pero falla en operaciones reales porque no es una estrategia robusta." },
+            { question: "¿Un profit factor de 0.8 significa que:", options: ["Tu estrategia es muy rentable", "Estas perdiendo dinero — las perdidas superan las ganancias", "Necesitas más datos", "Es un buen resultado para empezar"], correctIndex: 1, explanation: "Un profit factor por debajo de 1.0 significa que las perdidas totales superan las ganancias totales. Necesitas un profit factor de al menos 1.5 para que la estrategia sea viable." }
           ],
           practicalExercise: "Abre TradingView, activa el modo Replay en EUR/USD gráfico de 1H. Ve atras 6 meses. Aplica UNA estrategia simple (ej: rebote en soporte/resistencia con confirmación de vela). Opera al menos 30 trades anotando en Excel: fecha, dirección, entrada, SL, TP, resultado en pips, resultado en %. Al final calcula: win rate, profit factor, max drawdown, y esperanza matematica."
         },
@@ -281,10 +281,10 @@ result = mt5.order_send(order)
             "Python puede enviar alertas a Telegram cuando se cumplan condiciones de tu estrategia"
           ],
           quiz: [
-            { question: "Cual libreria de Python se usa para descargar datos historicos de precios gratis?", options: ["numpy", "matplotlib", "yfinance", "tensorflow"], correctIndex: 2, explanation: "yfinance permite descargar datos historicos gratuitos de Yahoo Finance para acciones, forex y criptomonedas." },
-            { question: "Para que sirve pandas en el contexto de trading?", options: ["Para crear gráficos bonitos", "Para manejar datos en tablas (DataFrames), como un Excel super poderoso", "Para enviar ordenes al broker", "Para minar criptomonedas"], correctIndex: 1, explanation: "pandas es la libreria fundamental para manejo de datos tabulares en Python. Permite organizar, filtrar y analizar datos de precios de forma eficiente." },
-            { question: "Que es lo PRIMERO que debes hacer antes de automatizar una estrategia con un bot?", options: ["Conectar la API del broker", "Validar que la estrategia es rentable con backtesting manual", "Comprar un servidor VPS", "Aprender machine learning"], correctIndex: 1, explanation: "Antes de automatizar, debes validar que tu estrategia es rentable con backtesting manual. Automatizar una estrategia perdedora solo pierde dinero más rápido." },
-            { question: "Que libreria permite controlar MetaTrader 5 desde Python?", options: ["yfinance", "pandas", "MetaTrader5 (mt5)", "requests"], correctIndex: 2, explanation: "La libreria MetaTrader5 permite conectar Python con MT5 para obtener datos, enviar ordenes y gestionar posiciones de forma automatizada." }
+            { question: "¿Cuál libreria de Python se usa para descargar datos historicos de precios gratis?", options: ["numpy", "matplotlib", "yfinance", "tensorflow"], correctIndex: 2, explanation: "yfinance permite descargar datos historicos gratuitos de Yahoo Finance para acciones, forex y criptomonedas." },
+            { question: "¿Para que sirve pandas en el contexto de trading?", options: ["Para crear gráficos bonitos", "Para manejar datos en tablas (DataFrames), como un Excel super poderoso", "Para enviar ordenes al broker", "Para minar criptomonedas"], correctIndex: 1, explanation: "pandas es la libreria fundamental para manejo de datos tabulares en Python. Permite organizar, filtrar y analizar datos de precios de forma eficiente." },
+            { question: "¿Qué es lo PRIMERO que debes hacer antes de automatizar una estrategia con un bot?", options: ["Conectar la API del broker", "Validar que la estrategia es rentable con backtesting manual", "Comprar un servidor VPS", "Aprender machine learning"], correctIndex: 1, explanation: "Antes de automatizar, debes validar que tu estrategia es rentable con backtesting manual. Automatizar una estrategia perdedora solo pierde dinero más rápido." },
+            { question: "¿Qué libreria permite controlar MetaTrader 5 desde Python?", options: ["yfinance", "pandas", "MetaTrader5 (mt5)", "requests"], correctIndex: 2, explanation: "La libreria MetaTrader5 permite conectar Python con MT5 para obtener datos, enviar ordenes y gestionar posiciones de forma automatizada." }
           ],
           practicalExercise: "Instala Python (python.org) y las librerias: pip install yfinance pandas numpy matplotlib. Luego crea un script que: 1) Descargue datos de EUR/USD de los ultimos 2 años. 2) Calcule la SMA de 20 y 50 periodos. 3) Cuente cuantas veces la SMA20 cruzo por encima de la SMA50 (señal de compra) y por debajo (señal de venta). 4) Imprima los resultados. Si no tienes experiencia con Python, usa ChatGPT para ayudarte con el codigo."
         },
@@ -313,7 +313,7 @@ result = mt5.order_send(order)
 <div class="highlight-box blue">
 <h4>Estructura Basica de un Script</h4>
 <pre><code>
-//@version=5
+//@versión=5
 indicator("Mi Primer Indicador", overlay=true)
 
 // Calcular medias moviles
@@ -348,7 +348,7 @@ plotshape(crossDown, style=shape.triangledown, location=location.abovebar,
 <div class="highlight-box green">
 <h4>Indicador RSI Mejorado</h4>
 <pre><code>
-//@version=5
+//@versión=5
 indicator("RSI Pro con Alertas", overlay=false)
 
 // Inputs personalizables
@@ -398,7 +398,7 @@ alertcondition(ta.crossover(rsiValue, overbought),
 <div class="highlight-box green">
 <h4>Ejemplo: Estrategia de Cruce de Medias con Backtest</h4>
 <pre><code>
-//@version=5
+//@versión=5
 strategy("Cruce SMA Backtest", overlay=true, default_qty_type=strategy.percent_of_equity, default_qty_value=2)
 
 // Parametros
@@ -439,20 +439,20 @@ plot(smaSlow, color=color.red)
 
 <div class="warning-box">
 <h4>Consejo Final sobre Pine Script</h4>
-<p>No necesitas ser programador experto. Con lo básico puedes crear indicadores muy utiles. TradingView tiene una documentacion excelente (pine-script-docs) y la comunidad responde preguntas rapidamente. Empieza modificando scripts existentes antes de crear los tuyos desde cero.</p>
+<p>No necesitas ser programador experto. Con lo básico puedes crear indicadores muy utiles. TradingView tiene una documentacion excelente (pine-script-docs) y la comunidad responde preguntas rápidamente. Empieza modificando scripts existentes antes de crear los tuyos desde cero.</p>
 </div>`,
           keyPoints: [
             "Pine Script es el lenguaje de TradingView para crear indicadores custom, alertas y estrategias de backtest",
-            "Estructura basica: //@version=5, indicator(), variables de precio (open, high, low, close), funciones ta.*",
+            "Estructura basica: //@versión=5, indicator(), variables de precio (open, high, low, close), funciones ta.*",
             "alertcondition() permite crear alertas que se envian al movil, email o webhook automáticamente",
             "Strategy scripts permiten backtestear directamente en TradingView con estadisticas completas",
             "Puedes publicar tus indicadores gratis o vender acceso como servicio premium"
           ],
           quiz: [
-            { question: "Para que sirve Pine Script?", options: ["Para minar criptomonedas", "Para crear indicadores custom, alertas y estrategias de backtest en TradingView", "Para programar bots de trading en MetaTrader", "Para hackear brokers"], correctIndex: 1, explanation: "Pine Script es el lenguaje de programación propio de TradingView que permite crear indicadores personalizados, alertas automaticas y scripts de backtesting." },
-            { question: "Que función de Pine Script usas para detectar cuando una linea cruza por encima de otra?", options: ["ta.sma()", "ta.crossover()", "plot()", "alertcondition()"], correctIndex: 1, explanation: "ta.crossover(a, b) devuelve true cuando la serie 'a' cruza por encima de la serie 'b'. Es la función estandar para detectar cruces alcistas." },
-            { question: "Cual es la diferencia entre 'indicator' y 'strategy' en Pine Script?", options: ["No hay diferencia", "indicator muestra visualizaciones, strategy permite hacer backtest con entradas y salidas simuladas", "strategy es más rápido", "indicator es de pago"], correctIndex: 1, explanation: "indicator() es para crear indicadores visuales y alertas. strategy() permite definir entradas y salidas de trades que TradingView simula con datos historicos para mostrar estadisticas de backtest." },
-            { question: "Como puedes recibir una notificacion en tu movil cuando tu indicador detecta una señal?", options: ["No es posible", "Usando alertcondition() en el script y configurando una alerta en TradingView", "Enviando un email manualmente", "Pagando una suscripcion especial"], correctIndex: 1, explanation: "Usas alertcondition() en tu script para definir la condicion, luego configuras una alerta en TradingView que envia push notifications a tu movil cuando la condicion se cumple." }
+            { question: "¿Para que sirve Pine Script?", options: ["Para minar criptomonedas", "Para crear indicadores custom, alertas y estrategias de backtest en TradingView", "Para programar bots de trading en MetaTrader", "Para hackear brokers"], correctIndex: 1, explanation: "Pine Script es el lenguaje de programación propio de TradingView que permite crear indicadores personalizados, alertas automaticas y scripts de backtesting." },
+            { question: "¿Qué función de Pine Script usas para detectar cuando una línea cruza por encima de otra?", options: ["ta.sma()", "ta.crossover()", "plot()", "alertcondition()"], correctIndex: 1, explanation: "ta.crossover(a, b) devuelve true cuando la serie 'a' cruza por encima de la serie 'b'. Es la función estandar para detectar cruces alcistas." },
+            { question: "¿Cuál es la diferencia entre 'indicator' y 'strategy' en Pine Script?", options: ["No hay diferencia", "indicator muestra visualizaciones, strategy permite hacer backtest con entradas y salidas simuladas", "strategy es más rápido", "indicator es de pago"], correctIndex: 1, explanation: "indicator() es para crear indicadores visuales y alertas. strategy() permite definir entradas y salidas de trades que TradingView simula con datos historicos para mostrar estadisticas de backtest." },
+            { question: "¿Cómo puedes recibir una notificacion en tu movil cuando tu indicador detecta una señal?", options: ["No es posible", "Usando alertcondition() en el script y configurando una alerta en TradingView", "Enviando un email manualmente", "Pagando una suscripcion especial"], correctIndex: 1, explanation: "Usas alertcondition() en tu script para definir la condicion, luego configuras una alerta en TradingView que envia push notifications a tu movil cuando la condicion se cumple." }
           ],
           practicalExercise: "Abre el Editor de Pine Script en TradingView (icono de codigo en la parte inferior). Copia el ejemplo del 'RSI Pro con Alertas' de esta lección. Anadelo al gráfico de EUR/USD en 1H. Luego modifica: 1) Cambia el período del RSI a 21. 2) Anade una media movil SMA de 200 periodos al indicador del RSI. 3) Crea una alerta que se active cuando el RSI cruce por debajo de 25. Experimenta cambiando colores y parametros."
         }
@@ -596,9 +596,9 @@ result = mt5.order_send(request)
             "Un bot sin gestión de riesgo es una bomba de tiempo"
           ],
           quiz: [
-            { question: "Cuales son las 4 partes principales de un bot de trading?", options: ["HTML, CSS, JS, React", "Datos, Estrategia, Gestion de Riesgo, Ejecucion", "Comprar, Vender, Esperar, Cerrar", "Indicador, Senal, Alerta, Email"], correctIndex: 1, explanation: "Un bot necesita: fuente de datos (precios), motor de estrategia (logica), gestión de riesgo (position sizing, SL), y ejecucion (conexion al broker)." },
-            { question: "Cuanto tiempo mínimo deberías backtestear un bot antes de ponerlo en real?", options: ["1 semana", "1 mes", "6+ meses de backtest + 3 meses de demo", "No necesita backtest"], correctIndex: 2, explanation: "Minimo 6 meses de backtest historico positivo + 3 meses de forward test en demo para verificar que funciona en condiciones reales." },
-            { question: "Que libreria de Python permite conectar directamente con MetaTrader 5?", options: ["pandas", "numpy", "MetaTrader5 (mt5)", "yfinance"], correctIndex: 2, explanation: "La libreria oficial MetaTrader5 (import MetaTrader5 as mt5) permite obtener datos, abrir/cerrar ordenes, y consultar la cuenta desde Python." }
+            { question: "¿Cuales son las 4 partes principales de un bot de trading?", options: ["HTML, CSS, JS, React", "Datos, Estrategia, Gestion de Riesgo, Ejecucion", "Comprar, Vender, Esperar, Cerrar", "Indicador, Senal, Alerta, Email"], correctIndex: 1, explanation: "Un bot necesita: fuente de datos (precios), motor de estrategia (logica), gestión de riesgo (position sizing, SL), y ejecucion (conexión al broker)." },
+            { question: "¿Cuánto tiempo mínimo deberías backtestear un bot antes de ponerlo en real?", options: ["1 semana", "1 mes", "6+ meses de backtest + 3 meses de demo", "No necesita backtest"], correctIndex: 2, explanation: "Minimo 6 meses de backtest historico positivo + 3 meses de forward test en demo para verificar que funciona en condiciones reales." },
+            { question: "¿Qué libreria de Python permite conectar directamente con MetaTrader 5?", options: ["pandas", "numpy", "MetaTrader5 (mt5)", "yfinance"], correctIndex: 2, explanation: "La libreria oficial MetaTrader5 (import MetaTrader5 as mt5) permite obtener datos, abrir/cerrar ordenes, y consultar la cuenta desde Python." }
           ]
         }
       ]
@@ -618,7 +618,7 @@ result = mt5.order_send(request)
 <h2>Obteniendo Datos Reales del Mercado</h2>
 <div style="display:flex;justify-content:center;margin:20px 0"><svg width="420" height="85" viewBox="0 0 420 85" style="background:#131722;border-radius:10px;border:1px solid #2a2a40"><text x="210" y="15" fill="white" font-size="10" text-anchor="middle" font-weight="bold">ML EN TRADING: FUNCIONA vs NO FUNCIONA</text><rect x="8" y="28" width="200" height="32" rx="6" fill="#26a69a10" stroke="#26a69a44"/><text x="108" y="42" fill="#26a69a" font-size="8" text-anchor="middle" font-weight="bold">✅ Clasificar régimen | Detectar patrones</text><text x="108" y="54" fill="#787b86" font-size="6" text-anchor="middle">Optimizar parámetros | Filtrar setups</text><rect x="215" y="28" width="198" height="32" rx="6" fill="#ef535010" stroke="#ef535044"/><text x="314" y="42" fill="#ef5350" font-size="8" text-anchor="middle" font-weight="bold">❌ Predecir precio exacto</text><text x="314" y="54" fill="#787b86" font-size="6" text-anchor="middle">Reemplazar al trader | Ganar siempre</text><text x="210" y="75" fill="#f59e0b" font-size="8" text-anchor="middle" font-weight="bold">ML = herramienta complementaria, NO varita mágica</text></svg></div>
 <div style="display:flex;justify-content:center;margin:20px 0"><svg width="420" height="85" viewBox="0 0 420 85" style="background:#131722;border-radius:10px;border:1px solid #2a2a40"><text x="210" y="15" fill="white" font-size="10" text-anchor="middle" font-weight="bold">FUENTES DE DATOS PARA TRADING</text><rect x="8" y="28" width="95" height="32" rx="5" fill="#26a69a15" stroke="#26a69a"/><text x="55" y="42" fill="#26a69a" font-size="7" text-anchor="middle" font-weight="bold">yfinance</text><text x="55" y="54" fill="#787b86" font-size="6" text-anchor="middle">Acciones (gratis)</text><rect x="110" y="28" width="95" height="32" rx="5" fill="#3b82f615" stroke="#3b82f6"/><text x="157" y="42" fill="#3b82f6" font-size="7" text-anchor="middle" font-weight="bold">OANDA API</text><text x="157" y="54" fill="#787b86" font-size="6" text-anchor="middle">Forex (gratis)</text><rect x="212" y="28" width="95" height="32" rx="5" fill="#f59e0b15" stroke="#f59e0b"/><text x="259" y="42" fill="#f59e0b" font-size="7" text-anchor="middle" font-weight="bold">Binance API</text><text x="259" y="54" fill="#787b86" font-size="6" text-anchor="middle">Crypto (gratis)</text><rect x="314" y="28" width="98" height="32" rx="5" fill="#8b5cf615" stroke="#8b5cf6"/><text x="363" y="42" fill="#8b5cf6" font-size="7" text-anchor="middle" font-weight="bold">Alpha Vantage</text><text x="363" y="54" fill="#787b86" font-size="6" text-anchor="middle">Multi (gratis)</text><text x="210" y="75" fill="#26a69a" font-size="7" text-anchor="middle" font-weight="bold">Todas las APIs tienen versión gratuita suficiente para empezar</text></svg></div>
-<div class="highlight-box blue"><h4>Sin datos, no hay trading algorítmico</h4><p>Todo bot necesita datos: precios historicos para backtest y precios en tiempo real para operar. Aqui aprendes de donde sacarlos.</p></div>
+<div class="highlight-box blue"><h4>Sin datos, no hay trading algorítmico</h4><p>Todo bot necesita datos: precios historicos para backtest y precios en tiempo real para operar. Aquí aprendes de donde sacarlos.</p></div>
 <h3>Fuentes de Datos Gratuitas</h3>
 <div class="grid-cards">
 <div class="card"><h4>Yahoo Finance (yfinance)</h4><p>Datos historicos de acciones, indices, ETFs, cripto. Gratis, fácil de usar. Limitado para Forex intraddia.</p>
@@ -653,7 +653,7 @@ data.to_csv("spy_daily.csv")
 data = pd.read_csv("spy_daily.csv", index_col=0, parse_dates=True)
 print(f"Datos: {len(data)} dias desde {data.index[0]} hasta {data.index[-1]}")</code></pre></div>
 <h3>Datos en Tiempo Real</h3>
-<div class="highlight-box green"><h4>WebSockets para Tiempo Real</h4><p>Para datos en vivo, las APIs usan WebSockets (conexion permanente). Recibes cada tick/vela al instante.</p>
+<div class="highlight-box green"><h4>WebSockets para Tiempo Real</h4><p>Para datos en vivo, las APIs usan WebSockets (conexión permanente). Recibes cada tick/vela al instante.</p>
 <div class="code-block"><pre><code># Ejemplo con Binance WebSocket (cripto)
 import websocket
 import json
@@ -676,9 +676,9 @@ ws.run_forever()</code></pre></div></div>`,
             "Para backtesting necesitas mínimo 1-2 años de datos historicos"
           ],
           quiz: [
-            { question: "Cual es la mejor fuente gratuita de datos Forex?", options: ["Yahoo Finance", "OANDA API (con cuenta demo)", "Google Finance", "Twitter"], correctIndex: 1, explanation: "OANDA ofrece datos Forex historicos y en tiempo real gratuitamente con una cuenta demo. Es la fuente estandar para Forex algorítmico." },
-            { question: "Porque deberías guardar los datos localmente en CSV?", options: ["Porque son más bonitos", "Para no tener que re-descargar cada vez que ejecutas tu codigo (mas rápido y eficiente)", "Porque las APIs son de pago", "No necesitas guardarlos"], correctIndex: 1, explanation: "Descargar datos cada vez es lento y puede alcanzar limites de la API. Guardando en CSV, cargas en milisegundos." },
-            { question: "Que tecnologia se usa para recibir datos de precios en tiempo real?", options: ["HTTP requests cada segundo", "WebSockets (conexion permanente)", "Email", "FTP"], correctIndex: 1, explanation: "WebSockets mantienen una conexion abierta y reciben datos instantaneamente cuando hay un nuevo tick/trade." }
+            { question: "¿Cuál es la mejor fuente gratuita de datos Forex?", options: ["Yahoo Finance", "OANDA API (con cuenta demo)", "Google Finance", "Twitter"], correctIndex: 1, explanation: "OANDA ofrece datos Forex historicos y en tiempo real gratuitamente con una cuenta demo. Es la fuente estandar para Forex algorítmico." },
+            { question: "¿Porque deberías guardar los datos localmente en CSV?", options: ["Porque son más bonitos", "Para no tener que re-descargar cada vez que ejecutas tu codigo (mas rápido y eficiente)", "Porque las APIs son de pago", "No necesitas guardarlos"], correctIndex: 1, explanation: "Descargar datos cada vez es lento y puede alcanzar limites de la API. Guardando en CSV, cargas en milisegundos." },
+            { question: "¿Qué tecnologia se usa para recibir datos de precios en tiempo real?", options: ["HTTP requests cada segundo", "WebSockets (conexión permanente)", "Email", "FTP"], correctIndex: 1, explanation: "WebSockets mantienen una conexión abierta y reciben datos instantaneamente cuando hay un nuevo tick/trade." }
           ],
           practicalExercise: "Instala Python y ejecuta: pip install yfinance pandas. Luego descarga 1 ano de datos diarios de EUR/USD con yfinance y guardalos en un CSV. Verifica que los datos tienen columnas Open, High, Low, Close, Volume."
         },
@@ -689,13 +689,13 @@ ws.run_forever()</code></pre></div></div>`,
           content: `
 <h2>Machine Learning Aplicado al Trading</h2>
 <div style="display:flex;justify-content:center;margin:20px 0"><svg width="420" height="90" viewBox="0 0 420 90" style="background:#131722;border-radius:10px;border:1px solid #2a2a40"><text x="210" y="15" fill="white" font-size="10" text-anchor="middle" font-weight="bold">DEPLOY DE BOT 24/7</text><rect x="8" y="28" width="90" height="35" rx="5" fill="#3b82f615" stroke="#3b82f6"/><text x="53" y="44" fill="#3b82f6" font-size="8" text-anchor="middle" font-weight="bold">TU CÓDIGO</text><text x="53" y="56" fill="#787b86" font-size="6" text-anchor="middle">Python bot</text><text x="105" y="48" fill="#555" font-size="10">→</text><rect x="112" y="28" width="95" height="35" rx="5" fill="#8b5cf615" stroke="#8b5cf6"/><text x="159" y="44" fill="#8b5cf6" font-size="8" text-anchor="middle" font-weight="bold">VPS 5-20€/mes</text><text x="159" y="56" fill="#787b86" font-size="6" text-anchor="middle">DigitalOcean/Vultr</text><text x="214" y="48" fill="#555" font-size="10">→</text><rect x="221" y="28" width="95" height="35" rx="5" fill="#26a69a15" stroke="#26a69a"/><text x="268" y="44" fill="#26a69a" font-size="8" text-anchor="middle" font-weight="bold">CRON / 24/7</text><text x="268" y="56" fill="#787b86" font-size="6" text-anchor="middle">Ejecuta sin parar</text><text x="323" y="48" fill="#555" font-size="10">→</text><rect x="330" y="28" width="82" height="35" rx="5" fill="#f59e0b15" stroke="#f59e0b"/><text x="371" y="44" fill="#f59e0b" font-size="8" text-anchor="middle" font-weight="bold">TELEGRAM</text><text x="371" y="56" fill="#787b86" font-size="6" text-anchor="middle">Alertas al móvil</text><text x="210" y="80" fill="#26a69a" font-size="8" text-anchor="middle" font-weight="bold">Tu bot opera mientras duermes, comes o viajas</text></svg></div>
-<div class="warning-box"><h4>Expectativas Realistas</h4><p>ML NO es una varita magica. La mayoria de modelos de ML en trading FALLAN en produccion. Usalo como herramienta complementaria, no como tu única estrategia. El mercado es más complejo que cualquier algoritmo.</p></div>
+<div class="warning-box"><h4>Expectativas Realistas</h4><p>ML NO es una varita magica. La mayoría de modelos de ML en trading FALLAN en produccion. Usalo como herramienta complementaria, no como tu única estrategia. El mercado es más complejo que cualquier algoritmo.</p></div>
 <h3>Aplicaciones Reales de ML en Trading</h3>
 <div class="grid-cards">
 <div class="card green-border"><h4>Clasificacion de Regimenes</h4><p>Detectar si el mercado esta en tendencia, rango, o alta volatilidad para adaptar tu estrategia automáticamente.</p></div>
 <div class="card green-border"><h4>Deteccion de Patrones</h4><p>Identificar automáticamente patrones de velas, figuras chartistas, o setups de Price Action.</p></div>
 <div class="card yellow-border"><h4>Prediccion de Direccion</h4><p>Predecir si el precio subira o bajara. Funciona a corto plazo pero es MUY difícil de hacer bien.</p></div>
-<div class="card red-border"><h4>Prediccion de Precio Exacto</h4><p>Predecir el precio exacto futuro. CASI IMPOSIBLE con precision util. No pierdas tiempo en esto.</p></div>
+<div class="card red-border"><h4>Prediccion de Precio Exacto</h4><p>Predecir el precio exacto futuro. CASI IMPOSIBLE con precision útil. No pierdas tiempo en esto.</p></div>
 </div>
 <h3>Tu Primer Modelo: Random Forest para Clasificar Tendencia</h3>
 <div class="code-block"><pre><code>import pandas as pd
@@ -741,22 +741,22 @@ print(classification_report(y_test, predictions))</code></pre></div>
 </div>
 <div class="highlight-box blue"><h4>El Enfoque Pragmatico</h4><p>En vez de intentar que ML prediga el mercado, usalo para:</p>
 <ul>
-<li><strong>Filtrar:</strong> "De mis 10 setups diarios, cuales tienen mayor probabilidad segun historico?"</li>
+<li><strong>Filtrar:</strong> "De mis 10 setups diarios, cuales tienen mayor probabilidad según historico?"</li>
 <li><strong>Optimizar:</strong> "Que parametros funcionan mejor para mi estrategia en diferentes condiciones?"</li>
 <li><strong>Clasificar:</strong> "Estamos en mercado trending o ranging? Adapto mi enfoque."</li>
 </ul>
-<p>Esto es MUCHO más realista y util que intentar predecir el precio.</p></div>`,
+<p>Esto es MUCHO más realista y útil que intentar predecir el precio.</p></div>`,
           keyPoints: [
-            "ML NO es magia - la mayoria de modelos fallan en produccion",
+            "ML NO es magia - la mayoría de modelos fallan en produccion",
             "Usos reales: clasificacion de regimenes, deteccion de patrones, optimización de parametros",
             "NUNCA hagas shuffle en datos de tiempo (el train debe ser ANTES del test)",
             "Overfitting es el enemigo #1 - un backtest perfecto que falla en real",
             "Enfoque pragmatico: usar ML para filtrar y clasificar, no para predecir precios"
           ],
           quiz: [
-            { question: "Cual es el error más comun al usar ML en trading?", options: ["Usar Python", "Overfitting - el modelo memoriza datos pasados y no funciona en real", "Usar demasiados datos", "No usar suficientes indicadores"], correctIndex: 1, explanation: "Overfitting ocurre cuando el modelo se ajusta demasiado a los datos de entrenamiento. Funciona perfecto en backtest pero pierde en real." },
-            { question: "Por que NUNCA debes hacer shuffle en datos de time series?", options: ["Porque es más lento", "Porque mezclar datos temporales crea look-ahead bias - el modelo veria datos del futuro", "No hay razon, siempre se puede hacer shuffle", "Porque Python no lo permite"], correctIndex: 1, explanation: "En time series, shuffle mezcla pasado y futuro. El modelo entrenaria con datos de 2024 para predecir 2023, lo cual es trampa." },
-            { question: "Cual es el uso MAS realista y util de ML en trading?", options: ["Predecir el precio exacto del Bitcoin mañana", "Clasificar el regimen de mercado (tendencia/rango) para adaptar la estrategia", "Reemplazar completamente al trader humano", "Hackear el mercado"], correctIndex: 1, explanation: "Clasificar si el mercado esta en tendencia o rango es un uso práctico y realista de ML. Permite adaptar tu estrategia automáticamente segun las condiciones." }
+            { question: "¿Cuál es el error más comun al usar ML en trading?", options: ["Usar Python", "Overfitting - el modelo memoriza datos pasados y no funciona en real", "Usar demasiados datos", "No usar suficientes indicadores"], correctIndex: 1, explanation: "Overfitting ocurre cuando el modelo se ajusta demasiado a los datos de entrenamiento. Funciona perfecto en backtest pero pierde en real." },
+            { question: "¿Por qué NUNCA debes hacer shuffle en datos de time series?", options: ["Porque es más lento", "Porque mezclar datos temporales crea look-ahead bias - el modelo veria datos del futuro", "No hay razon, siempre se puede hacer shuffle", "Porque Python no lo permite"], correctIndex: 1, explanation: "En time series, shuffle mezcla pasado y futuro. El modelo entrenaria con datos de 2024 para predecir 2023, lo cual es trampa." },
+            { question: "¿Cuál es el uso MAS realista y útil de ML en trading?", options: ["Predecir el precio exacto del Bitcoin mañana", "Clasificar el regimen de mercado (tendencia/rango) para adaptar la estrategia", "Reemplazar completamente al trader humano", "Hackear el mercado"], correctIndex: 1, explanation: "Clasificar si el mercado esta en tendencia o rango es un uso práctico y realista de ML. Permite adaptar tu estrategia automáticamente según las condiciones." }
           ],
           practicalExercise: "Crea un clasificador simple con scikit-learn que prediga si el precio subira o bajara manana basandose en el RSI y la SMA 20. Usa 80% de datos para entrenar y 20% para validar. Calcula el accuracy en el set de validacion."
         },
@@ -831,9 +831,9 @@ send_alert("ALERTA: Drawdown al 3.5% - revisad")</code></pre></div></div>
             "Aunque sea automático, REVISA los resultados CADA DIA"
           ],
           quiz: [
-            { question: "Cual es la forma más economica y popular de tener un bot 24/7?", options: ["Comprar un servidor fisico", "VPS (Servidor Privado Virtual) por 5-20 euros/mes", "Dejar tu PC encendido siempre", "Pagar un servicio de 500$/mes"], correctIndex: 1, explanation: "Un VPS es un servidor en la nube que cuesta 5-20 euros/mes y esta siempre encendido. Es la opcion estandar para bots de trading." },
-            { question: "Que es un 'kill switch' en un bot de trading?", options: ["Un indicador técnico", "Mecanismo para APAGAR el bot remotamente en caso de emergencia", "Un tipo de orden", "Una estrategia de scalping"], correctIndex: 1, explanation: "Un kill switch permite apagar tu bot inmediatamente si algo sale mal, sin tener que acceder fisicamente al servidor." },
-            { question: "Donde NUNCA deberías poner tus API keys del broker?", options: ["En variables de entorno", "Directamente en el codigo fuente (hardcoded)", "En un archivo .env", "En un gestor de secretos"], correctIndex: 1, explanation: "Las API keys nunca deben estar en el codigo fuente. Si subes tu codigo a GitHub, cualquiera podría acceder a tu cuenta del broker." }
+            { question: "¿Cuál es la forma más economica y popular de tener un bot 24/7?", options: ["Comprar un servidor fisico", "VPS (Servidor Privado Virtual) por 5-20 euros/mes", "Dejar tu PC encendido siempre", "Pagar un servicio de 500$/mes"], correctIndex: 1, explanation: "Un VPS es un servidor en la nube que cuesta 5-20 euros/mes y esta siempre encendido. Es la opcion estandar para bots de trading." },
+            { question: "¿Qué es un 'kill switch' en un bot de trading?", options: ["Un indicador técnico", "Mecanismo para APAGAR el bot remotamente en caso de emergencia", "Un tipo de orden", "Una estrategia de scalping"], correctIndex: 1, explanation: "Un kill switch permite apagar tu bot inmediatamente si algo sale mal, sin tener que acceder fisicamente al servidor." },
+            { question: "¿Dónde NUNCA deberías poner tus API keys del broker?", options: ["En variables de entorno", "Directamente en el codigo fuente (hardcoded)", "En un archivo .env", "En un gestor de secretos"], correctIndex: 1, explanation: "Las API keys nunca deben estar en el codigo fuente. Si subes tu codigo a GitHub, cualquiera podría acceder a tu cuenta del broker." }
           ],
           practicalExercise: "Crea una cuenta en DigitalOcean (5$/mes). Sube un script Python simple que imprima la hora cada minuto. Verifica que funciona por SSH. Luego configuralo como cron job para que se ejecute cada hora."
         }
@@ -871,7 +871,7 @@ send_alert("ALERTA: Drawdown al 3.5% - revisad")</code></pre></div></div>
 </ul>
 </div>
 
-<div class="code-block"><pre><code>//@version=5
+<div class="code-block"><pre><code>//@versión=5
 indicator("MTF EMA + RSI Dashboard", overlay=true)
 
 // === INPUTS ===
@@ -942,7 +942,7 @@ if barstate.islast
 <h3>Alertas Personalizadas con Condiciones Complejas</h3>
 <p>Las alertas profesionales no son simples cruces de media. Combinan <strong>múltiples condiciones, filtros de volumen y confirmaciones multi-timeframe</strong>.</p>
 
-<div class="code-block"><pre><code>//@version=5
+<div class="code-block"><pre><code>//@versión=5
 indicator("Sistema de Alertas Profesional", overlay=true)
 
 // === CONDICIONES DE ENTRADA ===
@@ -979,7 +979,7 @@ plotshape(shortCondition, title="Short", style=shape.triangledown,
 <h3>Strategy Tester: Reglas de Entrada y Salida Automatizadas</h3>
 <p>El <strong>Strategy Tester</strong> de Pine Script te permite backtestear directamente en TradingView con resultados detallados: profit factor, drawdown, ratio Sharpe y más.</p>
 
-<div class="code-block"><pre><code>//@version=5
+<div class="code-block"><pre><code>//@versión=5
 strategy("Estrategia EMA Cross con Gestión de Riesgo",
      overlay=true, default_qty_type=strategy.percent_of_equity,
      default_qty_value=2, initial_capital=10000, commission_value=0.04)
@@ -1023,7 +1023,7 @@ bgcolor(strategy.position_size > 0 ? color.new(color.green, 90) :
 <p>Este es el indicador más avanzado del curso: <strong>detecta automáticamente Order Blocks, Fair Value Gaps y cambios de estructura</strong>. Los traders institucionales usan conceptos similares — ahora tú puedes automatizar su detección.</p>
 </div>
 
-<div class="code-block"><pre><code>//@version=5
+<div class="code-block"><pre><code>//@versión=5
 indicator("SMC Detector Pro", overlay=true, max_boxes_count=500,
      max_labels_count=500, max_lines_count=500)
 

@@ -150,7 +150,7 @@ export const PHASE_8: Phase = {
             { question: "¿Qué deberías hacer si el precio NO llega a tus zonas predefinidas durante toda la sesión?", options: ["Buscar zonas nuevas y más cercanas", "Bajar de temporalidad hasta encontrar algo", "NO operar. Esperar al día siguiente.", "Cambiar de par"], correctIndex: 2, explanation: "Si el precio no llega a tus zonas, no hay setup. No fuerces trades. La paciencia es una habilidad." },
             { question: "¿Qué necesitas ANTES de entrar en un trade en la Semana 2?", options: ["Solo que el precio esté en soporte", "Precio en tu zona + vela de confirmación + R:R 1:2+", "Solo un indicador en sobrecompra/sobreventa", "Nada, solo intuición"], correctIndex: 1, explanation: "Necesitas 3 cosas: precio en zona predefinida + confirmación con vela de rechazo + ratio R:R de 1:2 mínimo." }
           ],
-          practicalExercise: "Marca 2 soportes y 2 resistencias en H4 ANTES de cada sesion. Pon alertas. Solo opera si el precio llega a TUS zonas con confirmacion. Si no llega, NO operes. Cuenta cuantas veces esperaste vs perseguiste."
+          practicalExercise: "Marca 2 soportes y 2 resistencias en H4 ANTES de cada sesión. Pon alertas. Solo opera si el precio llega a TUS zonas con confirmacion. Si no llega, NO operes. Cuenta cuantas veces esperaste vs perseguiste."
         }
       ]
     },
@@ -285,9 +285,9 @@ export const PHASE_8: Phase = {
             "Evaluación mitad: win rate 40%+, R:R 1.5:1+, disciplina 80%+, diario completo"
           ],
           quiz: [
-            { question: "Al final de la Semana 4, ¿qué métricas debes tener para avanzar?", options: ["Solo ganar dinero", "Win rate 40%+, R:R 1.5:1+, disciplina 80%+, diario completo (3 de 4)", "100% de acierto", "Solo completar los trades"], correctIndex: 1, explanation: "Necesitas 3 de 4 métricas positivas. No se trata de perfección sino de consistencia medible." }
+            { question: "¿Al final de la Semana 4, ¿qué métricas debes tener para avanzar?", options: ["Solo ganar dinero", "Win rate 40%+, R:R 1.5:1+, disciplina 80%+, diario completo (3 de 4)", "100% de acierto", "Solo completar los trades"], correctIndex: 1, explanation: "Necesitas 3 de 4 métricas positivas. No se trata de perfección sino de consistencia medible." }
           ],
-          practicalExercise: "Marca rango asiatico ANTES de London cada dia. Documenta: ruptura arriba/abajo, manipulacion o real, BOS despues, AMD cumplido. Calcula % de AMD correcto en 5 dias."
+          practicalExercise: "Marca rango asiatico ANTES de London cada dia. Documenta: ruptura arriba/abajo, manipulación o real, BOS despues, AMD cumplido. Calcula % de AMD correcto en 5 dias."
         }
       ]
     },
@@ -446,7 +446,7 @@ export const PHASE_8: Phase = {
           ],
           quiz: [
             { question: "¿Qué deberías hacer si llevas +6% en tu challenge simulado faltando 3 días?", options: ["Aumentar riesgo para llegar a +8% rápido", "REDUCIR riesgo a 0.25% para proteger ganancias", "Dejar de operar completamente", "Cambiar de par"], correctIndex: 1, explanation: "Con +6%, solo te faltan 2%. Reduce riesgo para proteger lo ganado. Es mejor tardar más que arriesgarse." },
-            { question: "Después de completar las 8 semanas, ¿qué tamaño de challenge real recomiendas?", options: ["200K inmediatamente", "10K-25K para empezar (precio bajo, menos presión)", "No comprar challenge nunca", "500K"], correctIndex: 1, explanation: "Empieza con 10K-25K. El precio es bajo (50-150€) y la presión es menor. Cuando lo pases, escala." }
+            { question: "¿Después de completar las 8 semanas, ¿qué tamaño de challenge real recomiendas?", options: ["200K inmediatamente", "10K-25K para empezar (precio bajo, menos presión)", "No comprar challenge nunca", "500K"], correctIndex: 1, explanation: "Empieza con 10K-25K. El precio es bajo (50-150€) y la presión es menor. Cuando lo pases, escala." }
           ],
           practicalExercise: "Configura demo con reglas FTMO (100K, 5% DD diario, 10% total). Opera 2 semanas buscando +8%. Registra balance y DD diario. Si pasas: listo para challenge real."
         }
