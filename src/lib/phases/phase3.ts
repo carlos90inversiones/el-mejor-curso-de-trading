@@ -302,6 +302,32 @@ export const PHASE_3: Phase = {
 
 <h3>La Formula Universal del Position Sizing</h3>
 
+<div style="display:flex;justify-content:center;margin:20px 0">
+<svg width="460" height="180" viewBox="0 0 460 180" style="background:#131722;border-radius:12px;border:1px solid #2a2a40">
+<text x="230" y="22" fill="white" font-size="12" text-anchor="middle" font-weight="bold">FORMULA DE POSITION SIZING</text>
+<!-- Formula visual -->
+<rect x="30" y="45" width="400" height="50" rx="8" fill="#2962ff15" stroke="#2962ff44"/>
+<text x="230" y="68" fill="white" font-size="14" text-anchor="middle" font-weight="bold" font-family="monospace">Lotes = Riesgo($) / (SL pips x Valor pip)</text>
+<text x="230" y="85" fill="#787b86" font-size="9" text-anchor="middle">Tamano exacto de tu posicion para cada trade</text>
+<!-- Ejemplo -->
+<rect x="30" y="110" width="130" height="55" rx="6" fill="#26a69a12" stroke="#26a69a33"/>
+<text x="95" y="128" fill="#26a69a" font-size="9" text-anchor="middle" font-weight="bold">Cuenta: 10,000$</text>
+<text x="95" y="142" fill="#26a69a" font-size="9" text-anchor="middle">Riesgo 1% = 100$</text>
+<text x="95" y="156" fill="#787b86" font-size="8" text-anchor="middle">Lo que arriesgas</text>
+<rect x="170" y="110" width="120" height="55" rx="6" fill="#ff980012" stroke="#ff980033"/>
+<text x="230" y="128" fill="#ff9800" font-size="9" text-anchor="middle" font-weight="bold">SL: 30 pips</text>
+<text x="230" y="142" fill="#ff9800" font-size="9" text-anchor="middle">Pip value: 10$</text>
+<text x="230" y="156" fill="#787b86" font-size="8" text-anchor="middle">Tu stop loss</text>
+<rect x="300" y="110" width="130" height="55" rx="6" fill="#8b5cf612" stroke="#8b5cf633"/>
+<text x="365" y="128" fill="#8b5cf6" font-size="9" text-anchor="middle" font-weight="bold">= 0.33 lotes</text>
+<text x="365" y="142" fill="#8b5cf6" font-size="9" text-anchor="middle">100 / (30x10)</text>
+<text x="365" y="156" fill="#787b86" font-size="8" text-anchor="middle">Resultado</text>
+<!-- Arrows -->
+<text x="158" y="140" fill="#787b86" font-size="14">÷</text>
+<text x="293" y="140" fill="#787b86" font-size="14">=</text>
+</svg>
+</div>
+
 <div class="formula-box">
 <h4>FORMULA MAESTRA</h4>
 <p style="font-size:1.2em; text-align:center; margin: 15px 0; font-weight:bold;">

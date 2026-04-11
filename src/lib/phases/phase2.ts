@@ -313,6 +313,28 @@ export const PHASE_2: Phase = {
 
 <h3>BOS - Break of Structure (Ruptura de Estructura)</h3>
 
+<div style="display:flex;justify-content:center;margin:20px 0">
+<svg width="420" height="180" viewBox="0 0 420 180" style="background:#131722;border-radius:10px;border:1px solid #2a2a40">
+<text x="210" y="16" fill="white" font-size="10" text-anchor="middle" font-weight="bold">BOS ALCISTA - El precio rompe el ultimo HH</text>
+<!-- Tendencia alcista -->
+<polyline points="20,140 60,95 85,112 130,68 155,85 200,45 225,60" fill="none" stroke="#26a69a" stroke-width="2"/>
+<!-- Nivel HH anterior -->
+<line x1="130" y1="68" x2="300" y2="68" stroke="#ff9800" stroke-width="1.5" stroke-dasharray="5,4"/>
+<text x="305" y="72" fill="#ff9800" font-size="8">Ultimo HH</text>
+<!-- BOS - rompe el HH -->
+<polyline points="225,60 250,50 280,40 310,30" fill="none" stroke="#26a69a" stroke-width="2.5"/>
+<circle cx="265" cy="65" r="8" fill="none" stroke="#ff9800" stroke-width="2"/>
+<text x="278" y="68" fill="#ff9800" font-size="11" font-weight="bold">BOS!</text>
+<!-- Labels -->
+<text x="60" y="90" fill="#26a69a" font-size="8">HH</text>
+<text x="85" y="120" fill="#42a5f5" font-size="8">HL</text>
+<text x="130" y="62" fill="#26a69a" font-size="8">HH</text>
+<text x="155" y="92" fill="#42a5f5" font-size="8">HL</text>
+<text x="200" y="40" fill="#26a69a" font-size="8">HH</text>
+<text x="210" y="170" fill="#26a69a" font-size="9" text-anchor="middle">Ruptura del HH anterior = tendencia CONTINUA</text>
+</svg>
+</div>
+
 <div class="highlight-box blue">
 <h4>Que es un BOS</h4>
 <p>Un <strong>Break of Structure</strong> ocurre cuando el precio rompe un swing high (en tendencia alcista) o un swing low (en tendencia bajista), <strong>confirmando la continuacion de la tendencia</strong>.</p>
@@ -1132,6 +1154,32 @@ export const PHASE_2: Phase = {
 <h4>Los Numeros Magicos</h4>
 <p>La secuencia: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144... Cada numero es la suma de los dos anteriores. El ratio entre numeros consecutivos converge a <strong>1.618</strong> (el ratio dorado o Phi). Este ratio aparece en la naturaleza (espirales de conchas, petalos de flores) y tambien en los mercados financieros.</p>
 <p>Los ratios de Fibonacci usados en trading: <strong>0.236, 0.382, 0.500, 0.618, 0.786, 1.000, 1.272, 1.618, 2.618</strong></p>
+</div>
+
+<div style="display:flex;justify-content:center;margin:24px 0">
+<svg width="460" height="260" viewBox="0 0 460 260" style="background:#131722;border-radius:12px;border:1px solid #2a2a40">
+<text x="230" y="18" fill="white" font-size="11" text-anchor="middle" font-weight="bold">RETROCESOS DE FIBONACCI</text>
+<!-- Impulso alcista -->
+<line x1="40" y1="220" x2="140" y2="35" stroke="#26a69a" stroke-width="3"/>
+<circle cx="40" cy="220" r="4" fill="#26a69a"/><text x="15" y="225" fill="#26a69a" font-size="8">Swing Low</text>
+<circle cx="140" cy="35" r="4" fill="#26a69a"/><text x="115" y="28" fill="#26a69a" font-size="8">Swing High</text>
+<!-- Fib levels -->
+<line x1="140" y1="35" x2="420" y2="35" stroke="#26a69a55" stroke-width="0.8" stroke-dasharray="3,3"/><text x="425" y="38" fill="#26a69a" font-size="8">0%</text>
+<line x1="140" y1="79" x2="420" y2="79" stroke="#42a5f555" stroke-width="0.8" stroke-dasharray="3,3"/><text x="425" y="82" fill="#42a5f5" font-size="8">23.6%</text>
+<line x1="140" y1="106" x2="420" y2="106" stroke="#60a5fa88" stroke-width="0.8" stroke-dasharray="3,3"/><text x="425" y="109" fill="#60a5fa" font-size="8">38.2%</text>
+<line x1="140" y1="127" x2="420" y2="127" stroke="#fbbf2488" stroke-width="0.8" stroke-dasharray="3,3"/><text x="425" y="130" fill="#fbbf24" font-size="8">50%</text>
+<line x1="140" y1="149" x2="420" y2="149" stroke="#ff980088" stroke-width="1" stroke-dasharray="3,3"/><text x="425" y="152" fill="#ff9800" font-size="8" font-weight="bold">61.8%</text>
+<line x1="140" y1="180" x2="420" y2="180" stroke="#ef535088" stroke-width="0.8" stroke-dasharray="3,3"/><text x="425" y="183" fill="#ef5350" font-size="8">78.6%</text>
+<line x1="140" y1="220" x2="420" y2="220" stroke="#ef535055" stroke-width="0.8" stroke-dasharray="3,3"/><text x="425" y="223" fill="#ef5350" font-size="8">100%</text>
+<!-- OTE Zone highlight -->
+<rect x="140" y="145" width="280" height="40" rx="4" fill="#ff980012" stroke="#ff980044" stroke-width="1.5"/>
+<text x="280" y="172" fill="#ff9800" font-size="11" text-anchor="middle" font-weight="bold">ZONA OTE (61.8% - 78.6%)</text>
+<!-- Retroceso y rebote -->
+<polyline points="140,35 180,55 200,75 230,149 250,140 280,90 320,50 370,30" fill="none" stroke="#8b5cf6" stroke-width="2"/>
+<circle cx="230" cy="149" r="5" fill="#ff9800"/>
+<text x="235" y="145" fill="#ff9800" font-size="9" font-weight="bold">Entrada OTE</text>
+<text x="230" y="250" fill="#787b86" font-size="9" text-anchor="middle">El 61.8% (Golden Ratio) es el nivel mas importante de Fibonacci</text>
+</svg>
 </div>
 
 <h3>Retrocesos de Fibonacci (Fibonacci Retracements)</h3>

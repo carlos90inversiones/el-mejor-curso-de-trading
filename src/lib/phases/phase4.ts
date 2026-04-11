@@ -42,6 +42,30 @@ export const PHASE_4: Phase = {
 <p>Un fondo de cobertura quiere comprar EUR/USD con una posicion de 500 millones de dolares. Si simplemente pone una orden de mercado, el precio se moveria 50 pips en su contra antes de llenar toda la orden. En cambio, necesita encontrar vendedores dispuestos a venderle a buenos precios. Donde estan esos vendedores? <strong>En los stop loss de los traders retail que estan en LONG</strong>. Un stop loss de un LONG es una orden de VENTA. Exactamente lo que la institucion necesita para comprar.</p>
 </div>
 
+<div style="display:flex;justify-content:center;margin:24px 0">
+<svg width="460" height="220" viewBox="0 0 460 220" style="background:#131722;border-radius:12px;border:1px solid #2a2a40">
+<text x="230" y="18" fill="white" font-size="11" text-anchor="middle" font-weight="bold">CAZA DE LIQUIDEZ (Liquidity Sweep)</text>
+<!-- Equal lows -->
+<line x1="30" y1="140" x2="220" y2="140" stroke="#ff9800" stroke-width="1.5" stroke-dasharray="5,4"/>
+<text x="225" y="143" fill="#ff9800" font-size="8">Equal Lows</text>
+<!-- SL zone -->
+<rect x="30" y="142" width="190" height="18" fill="#ef535010"/>
+<text x="125" y="156" fill="#ef5350" font-size="7" text-anchor="middle">Stop Loss de retail aqui abajo</text>
+<!-- Price bouncing on equal lows -->
+<polyline points="40,90 65,135 90,80 120,138 150,75 185,136" fill="none" stroke="#8b5cf6" stroke-width="1.8"/>
+<!-- SWEEP below -->
+<polyline points="185,136 210,165 225,175" fill="none" stroke="#ef5350" stroke-width="2.5"/>
+<circle cx="225" cy="175" r="6" fill="#ff9800"/>
+<text x="235" y="178" fill="#ff9800" font-size="10" font-weight="bold">SWEEP!</text>
+<!-- Reversal up -->
+<polyline points="225,175 250,145 280,105 310,70 345,42 380,25" fill="none" stroke="#26a69a" stroke-width="2.5"/>
+<text x="370" y="20" fill="#26a69a" font-size="9" font-weight="bold">Rally</text>
+<!-- Labels -->
+<text x="125" y="70" fill="#787b86" font-size="8" text-anchor="middle">Precio toca el nivel varias veces</text>
+<text x="230" y="210" fill="#787b86" font-size="9" text-anchor="middle">Sweep de SL → Las instituciones compran → Precio sube con fuerza</text>
+</svg>
+</div>
+
 <h3>Tipos de Liquidez</h3>
 
 <div class="grid-cards">
@@ -546,6 +570,32 @@ export const PHASE_4: Phase = {
 
 <h3>Power of 3 (AMD): Acumulacion - Manipulacion - Distribucion</h3>
 
+<div style="display:flex;justify-content:center;margin:20px 0">
+<svg width="480" height="200" viewBox="0 0 480 200" style="background:#131722;border-radius:12px;border:1px solid #2a2a40">
+<text x="240" y="16" fill="white" font-size="10" text-anchor="middle" font-weight="bold">POWER OF 3 (AMD) - El Patron Diario</text>
+<!-- Asia - Rango -->
+<rect x="20" y="80" width="130" height="45" rx="4" fill="#6366f115" stroke="#6366f144"/>
+<text x="85" y="75" fill="#6366f1" font-size="9" text-anchor="middle" font-weight="bold">ASIA (Rango)</text>
+<polyline points="30,105 50,95 70,110 90,100 110,108 130,102 145,104" fill="none" stroke="#8b5cf6" stroke-width="1.5"/>
+<line x1="20" y1="85" x2="150" y2="85" stroke="#6366f133" stroke-width="0.8"/><text x="155" y="88" fill="#6366f1" font-size="7">Asia High</text>
+<line x1="20" y1="120" x2="150" y2="120" stroke="#6366f133" stroke-width="0.8"/><text x="155" y="123" fill="#6366f1" font-size="7">Asia Low</text>
+<!-- London - Manipulacion -->
+<rect x="150" y="80" width="100" height="80" rx="4" fill="#ef535010" stroke="#ef535030"/>
+<text x="200" y="75" fill="#ef5350" font-size="9" text-anchor="middle" font-weight="bold">LONDON (Trampa)</text>
+<polyline points="145,104 165,115 180,130 195,148 205,145" fill="none" stroke="#ef5350" stroke-width="2.5"/>
+<circle cx="195" cy="148" r="5" fill="#ff9800"/>
+<text x="200" y="165" fill="#ff9800" font-size="8" text-anchor="middle">Sweep Asia Low</text>
+<!-- NY - Distribucion -->
+<rect x="250" y="22" width="210" height="140" rx="4" fill="#26a69a08" stroke="#26a69a30"/>
+<text x="355" y="18" fill="#26a69a" font-size="9" text-anchor="middle" font-weight="bold">NEW YORK (Movimiento Real)</text>
+<polyline points="205,145 235,110 265,80 300,55 340,38 380,28 420,22 450,20" fill="none" stroke="#26a69a" stroke-width="2.5"/>
+<!-- Labels -->
+<text x="85" y="185" fill="#6366f1" font-size="8" text-anchor="middle">Acumulacion</text>
+<text x="200" y="185" fill="#ef5350" font-size="8" text-anchor="middle">Manipulacion</text>
+<text x="355" y="185" fill="#26a69a" font-size="8" text-anchor="middle">Distribucion</text>
+</svg>
+</div>
+
 <p>El <strong>Power of 3</strong> (o AMD) es el patron que las instituciones repiten CADA DIA, CADA SESION. Es la huella digital del dinero inteligente y el concepto MAS importante de ICT.</p>
 
 <div class="grid-cards">
@@ -707,6 +757,32 @@ export const PHASE_4: Phase = {
 <div class="analogy-box">
 <h3>La Analogia de la Autopista</h3>
 <p>Imagina que conduces por una autopista y hay un tramo de 5 km donde no hay NINGUNA gasolinera, restaurante ni area de descanso. Es un "hueco" en los servicios. Eventualmente, alguien construira algo ahi porque hay demanda insatisfecha. En trading, un <strong>Fair Value Gap (FVG)</strong> es exactamente eso: un "hueco" en el precio donde no hubo transacciones suficientes. El precio tiende a volver para "llenar" ese hueco, igual que alguien eventualmente construira una gasolinera en ese tramo vacio de la autopista.</p>
+</div>
+
+<div style="display:flex;justify-content:center;margin:24px 0">
+<svg width="440" height="200" viewBox="0 0 440 200" style="background:#131722;border-radius:12px;border:1px solid #2a2a40">
+<text x="220" y="18" fill="white" font-size="11" text-anchor="middle" font-weight="bold">FAIR VALUE GAP (FVG) - Las 3 Velas</text>
+<!-- Vela 1 -->
+<rect x="80" y="100" width="30" height="40" rx="3" fill="#ef5350"/><line x1="95" y1="90" x2="95" y2="100" stroke="#ef5350" stroke-width="2"/><line x1="95" y1="140" x2="95" y2="155" stroke="#ef5350" stroke-width="2"/>
+<text x="95" y="170" fill="#787b86" font-size="9" text-anchor="middle">Vela 1</text>
+<line x1="110" y1="90" x2="160" y2="90" stroke="#fbbf24" stroke-width="1" stroke-dasharray="3,3"/>
+<text x="165" y="93" fill="#fbbf24" font-size="8">High de Vela 1</text>
+<!-- Vela 2 (la grande) -->
+<rect x="140" y="30" width="35" height="80" rx="3" fill="#26a69a"/><line x1="157" y1="25" x2="157" y2="30" stroke="#26a69a" stroke-width="2"/><line x1="157" y1="110" x2="157" y2="120" stroke="#26a69a" stroke-width="2"/>
+<text x="157" y="170" fill="#787b86" font-size="9" text-anchor="middle">Vela 2</text>
+<text x="157" y="145" fill="#26a69a" font-size="8" text-anchor="middle">(la grande)</text>
+<!-- Vela 3 -->
+<rect x="205" y="40" width="30" height="30" rx="3" fill="#26a69a"/><line x1="220" y1="35" x2="220" y2="40" stroke="#26a69a" stroke-width="2"/><line x1="220" y1="70" x2="220" y2="80" stroke="#26a69a" stroke-width="2"/>
+<text x="220" y="170" fill="#787b86" font-size="9" text-anchor="middle">Vela 3</text>
+<line x1="235" y1="80" x2="300" y2="80" stroke="#fbbf24" stroke-width="1" stroke-dasharray="3,3"/>
+<text x="305" y="83" fill="#fbbf24" font-size="8">Low de Vela 3</text>
+<!-- FVG Zone -->
+<rect x="80" y="80" width="175" height="12" rx="3" fill="#9c27b020" stroke="#9c27b0" stroke-width="2" stroke-dasharray="5,3"/>
+<text x="330" y="60" fill="#9c27b0" font-size="11" font-weight="bold">← FVG</text>
+<text x="330" y="75" fill="#9c27b0" font-size="8">(hueco entre</text>
+<text x="330" y="87" fill="#9c27b0" font-size="8">High V1 y Low V3)</text>
+<text x="220" y="195" fill="#787b86" font-size="9" text-anchor="middle">El precio tiende a VOLVER para rellenar este gap</text>
+</svg>
 </div>
 
 <h3>Que es un Fair Value Gap (FVG)</h3>

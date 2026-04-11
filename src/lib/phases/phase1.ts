@@ -123,6 +123,41 @@ export const PHASE_1: Phase = {
 </div>
 <div class="vocab-section">
 <h3>Tipos de Ordenes</h3>
+
+<div style="display:flex;justify-content:center;margin:20px 0">
+<svg width="460" height="220" viewBox="0 0 460 220" style="background:#131722;border-radius:12px;border:1px solid #2a2a40">
+<text x="230" y="18" fill="white" font-size="11" text-anchor="middle" font-weight="bold">TIPOS DE ORDENES PENDIENTES</text>
+<!-- Precio actual -->
+<line x1="30" y1="110" x2="430" y2="110" stroke="#3b82f6" stroke-width="2"/>
+<rect x="175" y="100" width="110" height="20" rx="4" fill="#3b82f6"/><text x="230" y="114" fill="white" font-size="10" text-anchor="middle" font-weight="bold">PRECIO ACTUAL</text>
+<!-- Buy Limit (abajo) -->
+<rect x="30" y="155" width="100" height="40" rx="6" fill="#26a69a20" stroke="#26a69a"/>
+<text x="80" y="172" fill="#26a69a" font-size="9" text-anchor="middle" font-weight="bold">BUY LIMIT</text>
+<text x="80" y="187" fill="#787b86" font-size="7" text-anchor="middle">Comprar mas abajo</text>
+<!-- Sell Limit (arriba) -->
+<rect x="30" y="35" width="100" height="40" rx="6" fill="#ef535020" stroke="#ef5350"/>
+<text x="80" y="52" fill="#ef5350" font-size="9" text-anchor="middle" font-weight="bold">SELL LIMIT</text>
+<text x="80" y="67" fill="#787b86" font-size="7" text-anchor="middle">Vender mas arriba</text>
+<!-- Buy Stop (arriba) -->
+<rect x="250" y="35" width="100" height="40" rx="6" fill="#26a69a20" stroke="#26a69a"/>
+<text x="300" y="52" fill="#26a69a" font-size="9" text-anchor="middle" font-weight="bold">BUY STOP</text>
+<text x="300" y="67" fill="#787b86" font-size="7" text-anchor="middle">Comprar en ruptura</text>
+<!-- Sell Stop (abajo) -->
+<rect x="250" y="155" width="100" height="40" rx="6" fill="#ef535020" stroke="#ef5350"/>
+<text x="300" y="172" fill="#ef5350" font-size="9" text-anchor="middle" font-weight="bold">SELL STOP</text>
+<text x="300" y="187" fill="#787b86" font-size="7" text-anchor="middle">Vender en ruptura</text>
+<!-- Flechas -->
+<text x="80" y="145" fill="#26a69a" font-size="12">↓</text>
+<text x="80" y="90" fill="#ef5350" font-size="12">↑</text>
+<text x="300" y="90" fill="#26a69a" font-size="12">↑</text>
+<text x="300" y="145" fill="#ef5350" font-size="12">↓</text>
+<!-- Labels -->
+<text x="145" y="145" fill="#787b86" font-size="7">Retroceso</text>
+<text x="365" y="80" fill="#787b86" font-size="7">Breakout</text>
+<text x="230" y="212" fill="#787b86" font-size="8" text-anchor="middle">LIMIT = esperar retroceso | STOP = seguir rupturas</text>
+</svg>
+</div>
+
 <div class="vocab-card"><h4>ORDEN DE MERCADO (Market Order)</h4><p>Compras/vendes AL PRECIO ACTUAL, inmediatamente.</p></div>
 <div class="vocab-card"><h4>ORDEN LIMITADA (Limit Order)</h4><p>Se ejecuta solo si el precio llega a un nivel especifico que tu defines.</p>
 <ul><li><strong>Buy Limit:</strong> Comprar a un precio MAS BAJO que el actual</li><li><strong>Sell Limit:</strong> Vender a un precio MAS ALTO que el actual</li><li><strong>Buy Stop:</strong> Comprar a un precio MAS ALTO (para rupturas alcistas)</li><li><strong>Sell Stop:</strong> Vender a un precio MAS BAJO (para rupturas bajistas)</li></ul></div>
