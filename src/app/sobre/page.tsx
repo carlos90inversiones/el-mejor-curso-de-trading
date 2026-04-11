@@ -65,7 +65,7 @@ export default function SobrePage() {
               { value: "63", label: "Lecciones" },
               { value: "227", label: "Preguntas Quiz" },
               { value: "35", label: "Diagramas SVG" },
-              { value: "8", label: "Fases" },
+              { value: "9", label: "Fases" },
               { value: "10", label: "Video-Lecciones" },
               { value: "102", label: "Terminos Glosario" },
               { value: "30", label: "Flashcards" },
