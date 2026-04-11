@@ -44,9 +44,18 @@ export default function LeccionPage({ params }: { params: Promise<{ lessonId: st
     <div className="min-h-screen">
       <Navbar />
       <main className="max-w-7xl mx-auto px-4 py-8">
-        <Link href={`/fase/${phase.id}`} className="text-[#a0a0b8] hover:text-white mb-6 flex items-center gap-2 transition text-sm">
-          <span>&#8592;</span> Volver a Fase {phase.number}: {phase.title}
-        </Link>
+        {/* Breadcrumbs */}
+        <nav className="flex items-center gap-2 text-sm mb-6 flex-wrap">
+          <Link href="/curso" className="text-[#555] hover:text-[#a0a0b8] transition">Curso</Link>
+          <span className="text-[#333]">/</span>
+          <Link href={`/fase/${phase.id}`} className="hover:text-white transition" style={{ color: phase.color }}>
+            Fase {phase.number}
+          </Link>
+          <span className="text-[#333]">/</span>
+          <span className="text-[#a0a0b8]">{mod.title}</span>
+          <span className="text-[#333]">/</span>
+          <span className="text-white font-medium truncate max-w-[200px]">{lesson.title}</span>
+        </nav>
 
         <div className="flex flex-col lg:flex-row gap-8">
           <div className="flex-1 min-w-0">

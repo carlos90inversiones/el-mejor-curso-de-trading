@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { COURSE_DATA } from "@/lib/courseData";
 import { useProgress } from "@/lib/useProgress";
+import { Confetti } from "@/components/Animations";
 import { useGamification } from "@/components/GamificationSystem";
 
 function findLesson(lessonId: string) {
@@ -65,6 +66,7 @@ export default function QuizPage({ params }: { params: Promise<{ lessonId: strin
   if (finished) {
     return (
       <div className="min-h-screen">
+        <Confetti active={finalScore >= 70} />
         <Navbar />
         <div className="max-w-2xl mx-auto px-4 py-12">
           <div className="bg-[#1a1a2e] border border-[#2a2a40] rounded-2xl p-8 text-center">

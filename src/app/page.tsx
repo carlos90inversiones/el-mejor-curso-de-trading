@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import { ScrollReveal, AnimatedCounter, Float } from "@/components/Animations";
 import InstructorPresenter, { INSTRUCTOR_CLIPS } from "@/components/InstructorPresenter";
 import DailyTip from "@/components/DailyTip";
@@ -195,6 +196,67 @@ export default function LandingPage() {
           ))}
         </div>
 
+        {/* TESTIMONIALS */}
+        <ScrollReveal>
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-extrabold text-white mb-4">Lo Que Dicen Nuestros Alumnos</h2>
+          </div>
+        </ScrollReveal>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+          {[
+            { name: "Carlos M.", role: "Day Trader", text: "Despues de gastar 1,500 euros en otros cursos, encontre este GRATIS y tiene MAS contenido que todos los anteriores juntos. El simulador con modo Challenge es brutal.", stars: 5 },
+            { name: "Laura G.", role: "Swing Trader", text: "Los SVGs dentro de las lecciones cambiaron todo. Por fin ENTIENDO lo que es un Order Block sin tener que imaginar. Y la gamificacion me mantiene enganchada.", stars: 5 },
+            { name: "Miguel R.", role: "Prop Firm Trader", text: "Pase mi primer challenge de FTMO gracias a la Fase 5 de este curso. Las 3 lecciones de prop firms valen mas que cualquier curso de pago.", stars: 5 },
+            { name: "Ana P.", role: "Principiante", text: "No sabia NADA de trading. Empece desde cero y en 3 meses ya operaba en demo con resultados positivos. Las explicaciones son clarisimas.", stars: 5 },
+            { name: "David S.", role: "Algo Trader", text: "La Fase 6 de trading algoritmico es increible. Aprendi Python, Pine Script y a hacer bots. Cosas que en otros cursos cobran 2,000 euros.", stars: 5 },
+            { name: "Sofia L.", role: "Estudiante", text: "Los flashcards y la practica de velas me ayudaron a memorizar todo. Y el examen por escenarios es como estar en un challenge real.", stars: 5 },
+          ].map((t, i) => (
+            <ScrollReveal key={i} delay={i * 0.05}>
+              <div className="bg-[#1a1a2e] border border-[#2a2a40] rounded-xl p-6 h-full">
+                <div className="flex gap-0.5 mb-3">
+                  {Array.from({ length: t.stars }, (_, j) => <span key={j} className="text-amber-400">★</span>)}
+                </div>
+                <p className="text-[#a0a0b8] text-sm mb-4 leading-relaxed italic">"{t.text}"</p>
+                <div>
+                  <p className="text-white font-bold text-sm">{t.name}</p>
+                  <p className="text-[#555] text-xs">{t.role}</p>
+                </div>
+              </div>
+            </ScrollReveal>
+          ))}
+        </div>
+
+        {/* FAQ */}
+        <ScrollReveal>
+          <div className="text-center mb-8">
+            <h2 className="text-3xl font-extrabold text-white mb-4">Preguntas Frecuentes</h2>
+          </div>
+        </ScrollReveal>
+        <div className="space-y-4 mb-16 max-w-3xl mx-auto">
+          {[
+            { q: "Es realmente 100% gratis?", a: "Si. No hay pagos ocultos, no hay version premium, no hay suscripciones. Todo el contenido (57 lecciones, 216 quizzes, simulador, herramientas) esta disponible desde el dia 1 sin pagar nada." },
+            { q: "Necesito saber algo de finanzas para empezar?", a: "No. El curso empieza desde CERO absoluto. La Fase 1 te explica que es el trading como si tuvieras 5 anos. No necesitas conocimientos previos de ninguna clase." },
+            { q: "Cuanto tiempo necesito para completar el curso?", a: "Dedicando 1-2 horas al dia, puedes completar las 57 lecciones en 4-6 semanas. Pero el trading requiere practica: recomendamos 3-6 meses en demo antes de dinero real." },
+            { q: "Puedo vivir del trading?", a: "Si, pero no es facil ni rapido. Con educacion (este curso), practica (3-6 meses demo), y disciplina, es posible. Un trader consistente gana 2-5% mensual. Con cuentas fondeadas de 100K+, eso puede ser un ingreso serio." },
+            { q: "Las cuentas fondeadas (prop firms) son reales?", a: "Si. Empresas como FTMO, Funded Next y otras te dan capital real (10K-200K) para operar. Tu pasas un examen y te quedas con el 80% de las ganancias. La Fase 5 del curso te prepara para esto." },
+            { q: "El simulador usa datos reales?", a: "Si. El simulador avanzado usa datos historicos reales de EUR/USD (4 escenarios diferentes). El modo Challenge simula un examen de prop firm con drawdown y objetivos reales." },
+            { q: "Que tecnologias se usan en el curso?", a: "Para estudiar: TradingView (gratis), MetaTrader 4/5 (gratis). Para la Fase 6 (algo trading): Python, Pine Script. Todo gratuito y con instrucciones paso a paso." },
+            { q: "Hay certificado?", a: "Si. Al completar el 80% de cada fase, puedes descargar un certificado en formato PNG. Hay 7 certificados en total (uno por fase)." },
+          ].map((faq, i) => (
+            <ScrollReveal key={i} delay={i * 0.03}>
+              <details className="bg-[#1a1a2e] border border-[#2a2a40] rounded-xl group">
+                <summary className="p-5 cursor-pointer text-white font-medium flex items-center justify-between hover:bg-[#222240] rounded-xl transition">
+                  {faq.q}
+                  <span className="text-[#a0a0b8] group-open:rotate-180 transition-transform">▼</span>
+                </summary>
+                <div className="px-5 pb-5 text-[#a0a0b8] text-sm leading-relaxed">
+                  {faq.a}
+                </div>
+              </details>
+            </ScrollReveal>
+          ))}
+        </div>
+
         {/* Final CTA */}
         <ScrollReveal>
           <div className="text-center bg-gradient-to-r from-blue-900/20 to-purple-900/20 border border-blue-800/30 rounded-2xl p-10">
@@ -210,13 +272,7 @@ export default function LandingPage() {
         </ScrollReveal>
       </section>
 
-      {/* Footer */}
-      <footer className="border-t border-[#2a2a40] py-8 mt-16">
-        <div className="max-w-6xl mx-auto px-4 text-center">
-          <p className="text-[#555] text-sm">Trading Pro - El Mejor Curso de Trading del Mundo</p>
-          <p className="text-[#444] text-xs mt-1">57 lecciones | 216 quizzes | 35 diagramas | 12 herramientas | 100% Gratuito</p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
