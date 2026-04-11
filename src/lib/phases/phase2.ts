@@ -685,6 +685,31 @@ export const PHASE_2: Phase = {
 
 <h3>Cruces de Medias Moviles (Moving Average Crossovers)</h3>
 
+<div style="display:flex;justify-content:center;margin:20px 0">
+<svg width="460" height="200" viewBox="0 0 460 200" style="background:#131722;border-radius:12px;border:1px solid #2a2a40">
+<text x="230" y="18" fill="white" font-size="11" text-anchor="middle" font-weight="bold">GOLDEN CROSS vs DEATH CROSS</text>
+<!-- EMA rapida (21) -->
+<polyline points="30,130 60,120 90,110 120,108 150,115 180,105 210,85 240,70 270,55 300,48 330,42 360,38 400,30" fill="none" stroke="#3b82f6" stroke-width="2"/>
+<text x="410" y="33" fill="#3b82f6" font-size="8">EMA 21</text>
+<!-- EMA lenta (50) -->
+<polyline points="30,110 60,112 90,115 120,118 150,120 180,118 210,110 240,95 270,80 300,68 330,60 360,55 400,50" fill="none" stroke="#ff9800" stroke-width="2"/>
+<text x="410" y="53" fill="#ff9800" font-size="8">EMA 50</text>
+<!-- Punto de cruce -->
+<circle cx="170" cy="112" r="8" fill="none" stroke="#26a69a" stroke-width="2.5"/>
+<text x="170" y="140" fill="#26a69a" font-size="10" text-anchor="middle" font-weight="bold">GOLDEN CROSS</text>
+<text x="170" y="153" fill="#26a69a" font-size="8" text-anchor="middle">EMA rapida cruza arriba = ALCISTA</text>
+<!-- Precio subiendo tras cruce -->
+<polyline points="170,112 200,90 230,75 260,60 290,50 320,42 350,35" fill="none" stroke="#26a69a33" stroke-width="8"/>
+<text x="350" y="80" fill="#787b86" font-size="8" text-anchor="middle">El precio sube</text>
+<text x="350" y="92" fill="#787b86" font-size="8" text-anchor="middle">tras el cruce</text>
+<!-- Legend -->
+<rect x="30" y="170" width="400" height="22" rx="4" fill="#131722" stroke="#2a2a40"/>
+<circle cx="50" cy="181" r="4" fill="#3b82f6"/><text x="60" y="184" fill="#787b86" font-size="8">EMA Rapida (21)</text>
+<circle cx="160" cy="181" r="4" fill="#ff9800"/><text x="170" y="184" fill="#787b86" font-size="8">EMA Lenta (50)</text>
+<text x="310" y="184" fill="#787b86" font-size="8">Cruce arriba = compra | Cruce abajo = venta</text>
+</svg>
+</div>
+
 <div class="highlight-box green">
 <h4>Golden Cross (Cruz Dorada)</h4>
 <p>La media movil corta (ej: SMA 50) cruza POR ENCIMA de la media movil larga (ej: SMA 200). Es una señal <strong>alcista</strong> potente. Historicamente, los Golden Cross en el S&P 500 han precedido rallies significativos. Traders institucionales y algoritmos monitorean este cruce.</p>
@@ -835,6 +860,38 @@ export const PHASE_2: Phase = {
 </div>
 
 <h3>Divergencias del RSI: El Setup Mas Poderoso</h3>
+
+<div style="display:flex;justify-content:center;margin:20px 0">
+<svg width="460" height="240" viewBox="0 0 460 240" style="background:#131722;border-radius:12px;border:1px solid #2a2a40">
+<text x="230" y="18" fill="white" font-size="11" text-anchor="middle" font-weight="bold">DIVERGENCIA BAJISTA DEL RSI</text>
+<!-- Precio (arriba) -->
+<rect x="30" y="30" width="400" height="85" rx="0" fill="#131722" stroke="#1e222d" stroke-width="0.5"/>
+<text x="40" y="45" fill="#787b86" font-size="8">PRECIO</text>
+<!-- Precio sube -->
+<polyline points="50,95 90,75 130,85 170,55 210,70 250,42 290,58 330,35" fill="none" stroke="#8b5cf6" stroke-width="2"/>
+<circle cx="170" cy="55" r="4" fill="#8b5cf6"/><text x="170" y="50" fill="#8b5cf6" font-size="9" text-anchor="middle">HH</text>
+<circle cx="250" cy="42" r="4" fill="#8b5cf6"/>
+<circle cx="330" cy="35" r="4" fill="#ef5350"/><text x="330" y="30" fill="#ef5350" font-size="9" text-anchor="middle">HH (mas alto)</text>
+<!-- Linea de tendencia precio -->
+<line x1="170" y1="55" x2="330" y2="35" stroke="#8b5cf6" stroke-width="1.5" stroke-dasharray="4,3"/>
+<text x="260" y="30" fill="#8b5cf6" font-size="7">Precio SUBE ↗</text>
+<!-- RSI (abajo) -->
+<rect x="30" y="125" width="400" height="85" rx="0" fill="#0d111a" stroke="#1e222d" stroke-width="0.5"/>
+<text x="40" y="140" fill="#787b86" font-size="8">RSI (14)</text>
+<line x1="30" y1="145" x2="430" y2="145" stroke="#333" stroke-width="0.5" stroke-dasharray="2,2"/><text x="432" y="148" fill="#555" font-size="6">70</text>
+<line x1="30" y1="175" x2="430" y2="175" stroke="#333" stroke-width="0.5" stroke-dasharray="2,2"/><text x="432" y="178" fill="#555" font-size="6">50</text>
+<!-- RSI baja -->
+<polyline points="50,185 90,170 130,178 170,142 210,168 250,150 290,165 330,158" fill="none" stroke="#f59e0b" stroke-width="2"/>
+<circle cx="170" cy="142" r="4" fill="#f59e0b"/><text x="170" y="138" fill="#f59e0b" font-size="8" text-anchor="middle">78</text>
+<circle cx="330" cy="158" r="4" fill="#ef5350"/><text x="330" y="155" fill="#ef5350" font-size="8" text-anchor="middle">68</text>
+<!-- Linea de tendencia RSI -->
+<line x1="170" y1="142" x2="330" y2="158" stroke="#ef5350" stroke-width="1.5" stroke-dasharray="4,3"/>
+<text x="260" y="165" fill="#ef5350" font-size="7">RSI BAJA ↘</text>
+<!-- Divergencia label -->
+<rect x="100" y="215" width="260" height="20" rx="6" fill="#ef535015" stroke="#ef535044"/>
+<text x="230" y="229" fill="#ef5350" font-size="10" text-anchor="middle" font-weight="bold">DIVERGENCIA: Precio sube pero RSI baja = GIRO BAJISTA</text>
+</svg>
+</div>
 
 <div class="highlight-box green">
 <h4>Divergencia Regular Alcista (Bullish Divergence)</h4>

@@ -90,10 +90,32 @@ export const PHASE_1: Phase = {
 <div class="market-card commodities"><h4>5. Materias Primas</h4><div class="stats"><span>Oro, Petroleo, Gas, Plata</span><span>Movido por geopolitica</span></div><p>El oro (XAUUSD) es el "refugio seguro" por excelencia. El petroleo se mueve con conflictos y OPEP.</p></div>
 <h3>Sesiones de Trading - CUANDO Tradear</h3>
 <div class="sessions-timeline">
-<div class="session sydney"><h4>Sydney</h4><p>22:00 - 07:00 UTC</p><p>Baja volatilidad</p></div>
-<div class="session tokyo"><h4>Tokio</h4><p>00:00 - 09:00 UTC</p><p>JPY se mueve</p></div>
-<div class="session london"><h4>Londres</h4><p>08:00 - 17:00 UTC</p><p>ALTA volatilidad</p></div>
-<div class="session newyork"><h4>Nueva York</h4><p>13:00 - 22:00 UTC</p><p>ALTA volatilidad</p></div>
+<div style="display:flex;justify-content:center;margin:20px 0">
+<svg width="480" height="140" viewBox="0 0 480 140" style="background:#131722;border-radius:12px;border:1px solid #2a2a40">
+<text x="240" y="18" fill="white" font-size="10" text-anchor="middle" font-weight="bold">SESIONES DE TRADING (UTC)</text>
+<!-- Timeline bar -->
+<rect x="20" y="50" width="440" height="30" rx="4" fill="#1e222d"/>
+<!-- Hour markers -->
+<text x="20" y="95" fill="#555" font-size="7">00</text><text x="56" y="95" fill="#555" font-size="7">02</text><text x="93" y="95" fill="#555" font-size="7">04</text><text x="130" y="95" fill="#555" font-size="7">06</text><text x="166" y="95" fill="#555" font-size="7">08</text><text x="203" y="95" fill="#555" font-size="7">10</text><text x="240" y="95" fill="#555" font-size="7">12</text><text x="276" y="95" fill="#555" font-size="7">14</text><text x="313" y="95" fill="#555" font-size="7">16</text><text x="350" y="95" fill="#555" font-size="7">18</text><text x="386" y="95" fill="#555" font-size="7">20</text><text x="423" y="95" fill="#555" font-size="7">22</text>
+<!-- Sydney -->
+<rect x="405" y="52" width="55" height="10" rx="2" fill="#6366f144"/><rect x="20" y="52" width="65" height="10" rx="2" fill="#6366f144"/>
+<text x="430" y="48" fill="#6366f1" font-size="7">Sydney</text>
+<!-- Tokyo -->
+<rect x="20" y="55" width="166" height="10" rx="2" fill="#ef535033"/>
+<text x="90" y="48" fill="#ef5350" font-size="7">Tokio</text>
+<!-- London -->
+<rect x="152" y="58" width="166" height="10" rx="2" fill="#3b82f655"/>
+<text x="230" y="48" fill="#3b82f6" font-size="8" font-weight="bold">Londres</text>
+<!-- NY -->
+<rect x="240" y="61" width="166" height="10" rx="2" fill="#26a69a55"/>
+<text x="320" y="48" fill="#26a69a" font-size="8" font-weight="bold">Nueva York</text>
+<!-- Overlap highlight -->
+<rect x="240" y="50" width="78" height="30" rx="0" fill="#fbbf2422" stroke="#fbbf24" stroke-width="1.5"/>
+<text x="279" y="42" fill="#fbbf24" font-size="8" font-weight="bold" text-anchor="middle">SOLAPAMIENTO</text>
+<!-- Best time -->
+<text x="240" y="120" fill="#fbbf24" font-size="10" text-anchor="middle" font-weight="bold">13:00-17:00 UTC = MEJOR MOMENTO para tradear</text>
+<text x="240" y="135" fill="#787b86" font-size="8" text-anchor="middle">(15:00-19:00 hora Espana)</text>
+</svg>
 </div>
 <div class="highlight-box green"><h4>El Mejor Momento: Solapamiento London-NY</h4><p>13:00-17:00 UTC (15:00-19:00 Espana). MAXIMO volumen y movimiento. Es el "prime time" del trading. La mayoria de traders profesionales operan exclusivamente en este horario.</p></div>`,
           keyPoints: [

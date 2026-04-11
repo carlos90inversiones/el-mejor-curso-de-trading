@@ -845,6 +845,33 @@ export const PHASE_4: Phase = {
 
 <p>Este concepto es FUNDAMENTAL para filtrar trades. Piensa en ello como comprar en rebajas (discount) y vender a precio completo (premium).</p>
 
+<div style="display:flex;justify-content:center;margin:20px 0">
+<svg width="320" height="220" viewBox="0 0 320 220" style="background:#131722;border-radius:12px;border:1px solid #2a2a40">
+<text x="160" y="18" fill="white" font-size="11" text-anchor="middle" font-weight="bold">PREMIUM vs DISCOUNT</text>
+<!-- Swing High -->
+<line x1="30" y1="40" x2="290" y2="40" stroke="#ef535055" stroke-width="1"/>
+<text x="295" y="43" fill="#ef5350" font-size="8">Swing High</text>
+<!-- Equilibrium 50% -->
+<line x1="30" y1="110" x2="290" y2="110" stroke="#fbbf24" stroke-width="1.5" stroke-dasharray="6,4"/>
+<text x="295" y="113" fill="#fbbf24" font-size="8" font-weight="bold">50% (EQ)</text>
+<!-- Swing Low -->
+<line x1="30" y1="180" x2="290" y2="180" stroke="#26a69a55" stroke-width="1"/>
+<text x="295" y="183" fill="#26a69a" font-size="8">Swing Low</text>
+<!-- Premium zone -->
+<rect x="30" y="40" width="260" height="70" rx="0" fill="#ef535010"/>
+<text x="160" y="65" fill="#ef5350" font-size="14" text-anchor="middle" font-weight="bold">PREMIUM</text>
+<text x="160" y="82" fill="#ef5350" font-size="9" text-anchor="middle">(CARO - busca VENTAS)</text>
+<text x="160" y="95" fill="#ef535088" font-size="8" text-anchor="middle">Vende aqui arriba</text>
+<!-- Discount zone -->
+<rect x="30" y="110" width="260" height="70" rx="0" fill="#26a69a10"/>
+<text x="160" y="140" fill="#26a69a" font-size="14" text-anchor="middle" font-weight="bold">DISCOUNT</text>
+<text x="160" y="157" fill="#26a69a" font-size="9" text-anchor="middle">(BARATO - busca COMPRAS)</text>
+<text x="160" y="170" fill="#26a69a88" font-size="8" text-anchor="middle">Compra aqui abajo</text>
+<!-- Rule -->
+<text x="160" y="205" fill="#fbbf24" font-size="9" text-anchor="middle" font-weight="bold">Compra en DISCOUNT, vende en PREMIUM</text>
+</svg>
+</div>
+
 <div class="grid-cards">
 <div class="card">
 <h4>Como Calcular Premium/Discount</h4>
@@ -1195,6 +1222,40 @@ export const PHASE_4: Phase = {
 </div>
 
 <h3>Las 4 Fases del Ciclo de Mercado de Wyckoff</h3>
+
+<div style="display:flex;justify-content:center;margin:20px 0">
+<svg width="480" height="200" viewBox="0 0 480 200" style="background:#131722;border-radius:12px;border:1px solid #2a2a40">
+<text x="240" y="16" fill="white" font-size="10" text-anchor="middle" font-weight="bold">CICLO DE WYCKOFF: Las 4 Fases</text>
+<!-- Phase 1: Accumulation -->
+<rect x="20" y="105" width="100" height="55" rx="4" fill="#26a69a10" stroke="#26a69a44"/>
+<polyline points="25,145 40,130 55,148 70,128 85,142 100,135 115,140" fill="none" stroke="#787b86" stroke-width="1.5"/>
+<text x="70" y="100" fill="#26a69a" font-size="8" text-anchor="middle" font-weight="bold">1. ACUMULACION</text>
+<text x="70" y="170" fill="#787b86" font-size="7" text-anchor="middle">Rango lateral</text>
+<!-- Spring -->
+<polyline points="85,142 95,158 100,155" fill="none" stroke="#ff9800" stroke-width="2"/>
+<circle cx="95" cy="158" r="3" fill="#ff9800"/>
+<text x="95" y="178" fill="#ff9800" font-size="7" text-anchor="middle">Spring</text>
+<!-- Phase 2: Markup -->
+<polyline points="115,140 150,110 180,80 210,55 240,40" fill="none" stroke="#26a69a" stroke-width="2.5"/>
+<text x="180" y="48" fill="#26a69a" font-size="8" text-anchor="middle" font-weight="bold">2. MARKUP</text>
+<text x="180" y="60" fill="#26a69a" font-size="7" text-anchor="middle">(Tendencia alcista)</text>
+<!-- Phase 3: Distribution -->
+<rect x="240" y="25" width="100" height="50" rx="4" fill="#ef535010" stroke="#ef535044"/>
+<polyline points="240,40 260,35 275,48 290,32 305,42 320,38 335,45" fill="none" stroke="#787b86" stroke-width="1.5"/>
+<text x="290" y="22" fill="#ef5350" font-size="8" text-anchor="middle" font-weight="bold">3. DISTRIBUCION</text>
+<text x="290" y="85" fill="#787b86" font-size="7" text-anchor="middle">Rango lateral en techo</text>
+<!-- Upthrust -->
+<polyline points="305,42 312,22 320,28" fill="none" stroke="#ff9800" stroke-width="2"/>
+<circle cx="312" cy="22" r="3" fill="#ff9800"/>
+<text x="338" y="22" fill="#ff9800" font-size="7">Upthrust</text>
+<!-- Phase 4: Markdown -->
+<polyline points="335,45 360,75 380,100 400,125 430,155" fill="none" stroke="#ef5350" stroke-width="2.5"/>
+<text x="400" y="110" fill="#ef5350" font-size="8" text-anchor="middle" font-weight="bold">4. MARKDOWN</text>
+<text x="400" y="122" fill="#ef5350" font-size="7" text-anchor="middle">(Tendencia bajista)</text>
+<!-- Cycle arrow -->
+<text x="240" y="192" fill="#787b86" font-size="8" text-anchor="middle">Acumulacion → Subida → Distribucion → Bajada → Acumulacion...</text>
+</svg>
+</div>
 
 <div class="grid-cards">
 <div class="concept-card">
