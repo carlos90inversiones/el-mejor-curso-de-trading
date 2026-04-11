@@ -297,7 +297,134 @@ export const PHASE_9: Phase = {
             { question: "¿Cuál es el código ético principal que el CMT Institute exige?", options: ["Ganar dinero a toda costa", "Integridad profesional: no manipular mercados, revelar conflictos de interés, actuar en beneficio del cliente", "Solo operar en horario de mercado", "No compartir análisis"], correctIndex: 1, explanation: "El CMT exige estándares éticos altos: integridad, transparencia, revelación de conflictos de interés, y priorizar el interés del cliente." },
             { question: "¿Cuántas horas de estudio adicional estimas necesarias para preparar el CMT Nivel 1 después de completar este curso?", options: ["0 horas, ya estoy listo", "50-100 horas adicionales para el 30% restante", "500+ horas", "Imposible saberlo"], correctIndex: 1, explanation: "Con el 70% cubierto por este curso, necesitas 50-100 horas adicionales estudiando el libro oficial y haciendo exámenes de práctica para el 30% restante." },
             { question: "¿Qué combinación de herramientas te daría la mejor visión del sentimiento del mercado?", options: ["Solo el RSI", "VIX + Put/Call Ratio + AAII Survey + COT Report combinados", "Solo las noticias", "Solo el volumen"], correctIndex: 1, explanation: "Ningún indicador de sentimiento es perfecto solo. La combinación de VIX + Put/Call + AAII + COT te da una visión completa del sentimiento desde diferentes ángulos." }
-          ]
+          ],
+          practicalExercise: "Haz este examen de práctica SIN consultar las lecciones. Cronometra cuánto tardas. En el CMT real tienes 132 preguntas en 4 horas = ~1.8 min/pregunta. Intenta responder cada pregunta en menos de 2 minutos. Si sacas 70%+ en menos de 40 minutos, estás preparado para el ritmo del examen real."
+        }
+      ]
+    },
+    {
+      id: "mod-9-3",
+      title: "Conceptos Complementarios CMT",
+      description: "Los temas restantes que completan tu preparación",
+      icon: "📘",
+      color: "#10B981",
+      lessons: [
+        {
+          id: "9-3-1",
+          title: "Ética Profesional del CMT",
+          duration: "20 min",
+          content: `
+<h2>Ética y Estándares Profesionales del CMT</h2>
+
+<div style="display:flex;justify-content:center;margin:20px 0"><svg width="420" height="90" viewBox="0 0 420 90" style="background:#131722;border-radius:10px;border:1px solid #2a2a40"><text x="210" y="15" fill="white" font-size="10" text-anchor="middle" font-weight="bold">LOS 5 PILARES ÉTICOS DEL CMT</text><rect x="8" y="28" width="75" height="35" rx="5" fill="#26a69a15" stroke="#26a69a"/><text x="45" y="42" fill="#26a69a" font-size="7" text-anchor="middle" font-weight="bold">INTEGRIDAD</text><text x="45" y="54" fill="#787b86" font-size="6" text-anchor="middle">Honestidad total</text><rect x="90" y="28" width="75" height="35" rx="5" fill="#3b82f615" stroke="#3b82f6"/><text x="127" y="42" fill="#3b82f6" font-size="7" text-anchor="middle" font-weight="bold">TRANSPARENCIA</text><text x="127" y="54" fill="#787b86" font-size="6" text-anchor="middle">Sin información oculta</text><rect x="172" y="28" width="75" height="35" rx="5" fill="#f59e0b15" stroke="#f59e0b"/><text x="209" y="42" fill="#f59e0b" font-size="7" text-anchor="middle" font-weight="bold">CONFLICTOS</text><text x="209" y="54" fill="#787b86" font-size="6" text-anchor="middle">Revelar siempre</text><rect x="254" y="28" width="75" height="35" rx="5" fill="#8b5cf615" stroke="#8b5cf6"/><text x="291" y="42" fill="#8b5cf6" font-size="7" text-anchor="middle" font-weight="bold">COMPETENCIA</text><text x="291" y="54" fill="#787b86" font-size="6" text-anchor="middle">Formación continua</text><rect x="336" y="28" width="75" height="35" rx="5" fill="#ec489915" stroke="#ec4899"/><text x="373" y="42" fill="#ec4899" font-size="7" text-anchor="middle" font-weight="bold">CLIENTE</text><text x="373" y="54" fill="#787b86" font-size="6" text-anchor="middle">Prioridad #1</text><text x="210" y="78" fill="#787b86" font-size="7" text-anchor="middle">~5-10% del examen CMT cubre ética profesional</text></svg></div>
+
+<div class="highlight-box blue">
+<h4>¿Por Qué la Ética en el Examen CMT?</h4>
+<p>La CMT Association quiere asegurar que los profesionales certificados actúen con integridad. Aproximadamente el 5-10% del examen CMT Nivel 1 incluye preguntas sobre ética y estándares profesionales. Es puntuación "gratis" si las estudias.</p>
+</div>
+
+<h3>Los Estándares del CMT</h3>
+
+<div class="grid-cards">
+<div class="card"><h4>I. Integridad del Mercado</h4><p>No manipular precios, no hacer front-running (operar antes que tu cliente), no difundir información falsa para mover el mercado.</p></div>
+<div class="card"><h4>II. Conflictos de Interés</h4><p>Si recomiendas un activo, debes revelar si tú o tu empresa tienen posiciones en ese activo. Transparencia total.</p></div>
+<div class="card"><h4>III. Deber hacia el Cliente</h4><p>Los intereses del cliente van PRIMERO. Antes que los tuyos y antes que los de tu empresa. Siempre.</p></div>
+<div class="card"><h4>IV. Competencia Profesional</h4><p>Mantener tus conocimientos actualizados. No ofrecer servicios fuera de tu área de competencia.</p></div>
+</div>
+
+<h3>Situaciones Éticas en el Examen</h3>
+
+<div class="strategy-box">
+<h4>Tipo de Pregunta que Encontrarás</h4>
+<p>El examen presenta ESCENARIOS y te pregunta cuál es la acción correcta:</p>
+<ul>
+<li><strong>Escenario:</strong> "Un analista CMT descubre que su empresa va a publicar un informe alcista sobre una acción. ¿Puede comprar acciones antes de la publicación?"</li>
+<li><strong>Respuesta:</strong> NO. Eso es front-running / insider trading. Debe esperar a que el informe sea público.</li>
+</ul>
+<ul>
+<li><strong>Escenario:</strong> "Un CMT tiene posiciones largas en oro. Un cliente le pregunta su opinión sobre el oro. ¿Qué debe hacer?"</li>
+<li><strong>Respuesta:</strong> Puede dar su opinión PERO debe revelar que tiene posiciones en oro (conflicto de interés).</li>
+</ul>
+</div>
+
+<div class="warning-box">
+<h4>Regla de Oro para las Preguntas de Ética</h4>
+<p>Cuando dudes, elige siempre la opción que: 1) Protege al cliente, 2) Es más transparente, 3) Revela más información. El CMT siempre prioriza la protección del inversor.</p>
+</div>`,
+          keyPoints: [
+            "5-10% del examen CMT cubre ética profesional",
+            "5 pilares: integridad, transparencia, conflictos, competencia, cliente primero",
+            "Nunca hacer front-running ni manipular mercados",
+            "Siempre revelar conflictos de interés",
+            "En caso de duda: elige la opción que más protege al cliente"
+          ],
+          quiz: [
+            { question: "Un analista CMT tiene acciones de Apple. Un cliente le pregunta si debe comprar Apple. ¿Qué debe hacer?", options: ["Recomendar comprar sin decir nada", "Dar su opinión PERO revelar que tiene posiciones en Apple", "Negarse a dar opinión", "Vender sus acciones primero"], correctIndex: 1, explanation: "Debe revelar el conflicto de interés (tiene posiciones) y luego puede dar su opinión profesional. La transparencia es obligatoria." },
+            { question: "¿Qué es el 'front-running'?", options: ["Comprar acciones muy rápido", "Operar antes que tu cliente basándote en información privilegiada de una orden pendiente", "Ser el primero en operar cada mañana", "Usar stops muy ajustados"], correctIndex: 1, explanation: "Front-running es usar el conocimiento de una orden pendiente de un cliente para operar antes, beneficiándose a costa del cliente. Es ilegal y antiético." },
+            { question: "En una pregunta de ética del CMT, cuando dudes, ¿qué opción debes elegir?", options: ["La que maximiza el beneficio", "La que protege más al cliente y es más transparente", "La que es más rápida", "La que tu jefe prefiere"], correctIndex: 1, explanation: "El CMT siempre prioriza la protección del inversor. En caso de duda, elige transparencia y protección del cliente." }
+          ],
+          practicalExercise: "Lee los Standards of Practice de la CMT Association en su web oficial (cmtassociation.org). Identifica 3 situaciones de tu vida cotidiana (no necesariamente trading) donde aplicarías estos principios éticos. Escríbelas."
+        },
+        {
+          id: "9-3-2",
+          title: "Hipótesis de Mercados Eficientes vs Análisis Técnico",
+          duration: "20 min",
+          content: `
+<h2>EMH vs AT: El Gran Debate de las Finanzas</h2>
+
+<div style="display:flex;justify-content:center;margin:20px 0"><svg width="420" height="100" viewBox="0 0 420 100" style="background:#131722;border-radius:10px;border:1px solid #2a2a40"><text x="210" y="16" fill="white" font-size="10" text-anchor="middle" font-weight="bold">EMH vs ANÁLISIS TÉCNICO: EL DEBATE</text><rect x="10" y="30" width="190" height="40" rx="6" fill="#ef535010" stroke="#ef535044"/><text x="105" y="47" fill="#ef5350" font-size="9" text-anchor="middle" font-weight="bold">EMH: "No puedes ganar"</text><text x="105" y="62" fill="#787b86" font-size="7" text-anchor="middle">Los precios son aleatorios</text><text x="210" y="55" fill="#f59e0b" font-size="14" font-weight="bold">vs</text><rect x="220" y="30" width="190" height="40" rx="6" fill="#26a69a10" stroke="#26a69a44"/><text x="315" y="47" fill="#26a69a" font-size="9" text-anchor="middle" font-weight="bold">AT: "Sí puedes ganar"</text><text x="315" y="62" fill="#787b86" font-size="7" text-anchor="middle">Los patrones se repiten</text><text x="210" y="90" fill="#f59e0b" font-size="8" text-anchor="middle" font-weight="bold">El examen CMT te pide conocer AMBAS posiciones</text></svg></div>
+
+<h3>¿Qué es la Hipótesis de Mercados Eficientes (EMH)?</h3>
+
+<p>Propuesta por Eugene Fama en 1970, la EMH dice que los precios de los activos reflejan TODA la información disponible, haciendo imposible obtener una ventaja consistente.</p>
+
+<div class="grid-cards">
+<div class="card"><h4>EMH Forma Débil</h4><p>Los precios reflejan toda la información histórica. El análisis técnico NO debería funcionar (porque los patrones pasados ya están en el precio).</p></div>
+<div class="card"><h4>EMH Forma Semi-Fuerte</h4><p>Los precios reflejan toda la información pública (histórica + noticias + estados financieros). Ni AT ni AF deberían funcionar.</p></div>
+<div class="card"><h4>EMH Forma Fuerte</h4><p>Los precios reflejan TODA la información, incluyendo información privilegiada. NADA debería funcionar. (Casi nadie cree esta versión.)</p></div>
+</div>
+
+<h3>¿Por Qué el AT Desafía la EMH?</h3>
+
+<div class="highlight-box green">
+<h4>Argumentos a Favor del Análisis Técnico</h4>
+<ul>
+<li><strong>Behavioral Finance:</strong> Los humanos NO son racionales. El miedo, la codicia y los sesgos cognitivos crean patrones repetitivos.</li>
+<li><strong>Profecía autocumplida:</strong> Si millones de traders usan las mismas herramientas (S/R, Fibonacci), los niveles funcionan PORQUE todos los miran.</li>
+<li><strong>Evidencia empírica:</strong> Estudios muestran que ciertas estrategias de momentum y mean-reversion han generado retornos superiores al mercado.</li>
+<li><strong>Smart Money:</strong> Las instituciones no son eficientes - manipulan la liquidez, creando patrones predecibles (lo que aprendiste en SMC).</li>
+</ul>
+</div>
+
+<div class="highlight-box red">
+<h4>Argumentos a Favor de la EMH</h4>
+<ul>
+<li><strong>Costes de transacción:</strong> Muchas estrategias que funcionan en backtest dejan de funcionar cuando incluyes spreads y comisiones.</li>
+<li><strong>Survivorship bias:</strong> Solo vemos a los traders exitosos, no a los miles que perdieron con las mismas estrategias.</li>
+<li><strong>Degradación de estrategias:</strong> Cuando una estrategia se hace popular, pierde efectividad porque demasiados la usan.</li>
+</ul>
+</div>
+
+<h3>La Respuesta Correcta para el Examen CMT</h3>
+
+<div class="strategy-box">
+<h4>Posición del CMT Institute</h4>
+<p>El CMT reconoce que los mercados son "razonablemente eficientes" pero NO perfectamente eficientes. Existen ineficiencias temporales que un analista técnico bien formado puede explotar. Los mercados tienden hacia la eficiencia pero nunca la alcanzan completamente debido al comportamiento humano.</p>
+<p><strong>Clave para el examen:</strong> No digas que el AT siempre funciona. Tampoco digas que nunca funciona. La respuesta correcta es que el AT puede identificar ineficiencias temporales en mercados que son "mayormente pero no completamente" eficientes.</p>
+</div>`,
+          keyPoints: [
+            "EMH: los precios reflejan toda la información (3 formas: débil, semi-fuerte, fuerte)",
+            "El AT desafía la EMH basándose en behavioral finance y patrones repetitivos",
+            "Posición CMT: mercados son 'razonablemente eficientes' pero con ineficiencias explotables",
+            "Behavioral Finance: humanos no son racionales → sesgos crean patrones",
+            "Para el examen: la respuesta correcta está en el MEDIO (ni todo funciona ni nada funciona)"
+          ],
+          quiz: [
+            { question: "¿Qué dice la forma DÉBIL de la EMH sobre el análisis técnico?", options: ["Que siempre funciona", "Que NO debería funcionar porque la información histórica ya está reflejada en el precio", "Que es la mejor forma de analizar", "Que solo funciona en Forex"], correctIndex: 1, explanation: "La EMH forma débil dice que los precios ya reflejan toda la información histórica, por lo que analizar patrones pasados (AT) no debería dar ventaja." },
+            { question: "¿Cuál es el principal argumento de Behavioral Finance CONTRA la EMH?", options: ["Los mercados son perfectos", "Los humanos son irracionales: el miedo, la codicia y los sesgos crean patrones predecibles", "La tecnología hace los mercados eficientes", "No hay argumentos contra la EMH"], correctIndex: 1, explanation: "Behavioral Finance demuestra que los humanos toman decisiones irracionales (FOMO, revenge trading, herding). Esto crea ineficiencias que el AT puede explotar." },
+            { question: "¿Cuál es la posición del CMT sobre la eficiencia de los mercados?", options: ["Los mercados son 100% eficientes", "Los mercados son 100% ineficientes", "Los mercados son 'razonablemente eficientes' pero con ineficiencias temporales explotables", "La EMH es completamente falsa"], correctIndex: 2, explanation: "El CMT toma la posición intermedia: los mercados son mayormente eficientes pero no perfectamente, y un analista técnico bien formado puede identificar ineficiencias temporales." }
+          ],
+          practicalExercise: "Lee un resumen de 'A Random Walk Down Wall Street' de Burton Malkiel (pro-EMH) y un resumen de 'Technical Analysis: The Complete Resource' de Kirkpatrick (pro-AT). Escribe 3 argumentos de cada lado y tu conclusión personal sobre si los mercados son eficientes."
         }
       ]
     }

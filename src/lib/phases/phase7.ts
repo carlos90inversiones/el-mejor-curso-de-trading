@@ -449,7 +449,8 @@ export const PHASE_7: Phase = {
             { question: "Escenario: Un 'guru' de Instagram dice que EUR/USD va a subir a 1.1500 esta semana. Tu análisis dice lo contrario: tendencia bajista, resistencia fuerte en 1.0900. Que haces?", options: ["Sigo al guru, debe saber más que yo", "SIEMPRE sigo mi propio análisis. Ningun guru conoce mi plan, mi riesgo, ni mis reglas. Mi análisis es mi responsabilidad.", "Hago mitad y mitad", "Espero a ver quien tiene razon"], correctIndex: 1, explanation: "Tu análisis es TU responsabilidad. Ningun guru en Instagram conoce tu contexto, plan de riesgo, ni responde por tus perdidas. La autonomia en tus decisiones es fundamental." },
             { question: "Escenario: Tu diario de trading muestra que pierdes consistentemente los martes por la tarde y cuando operas USD/JPY. Que haces?", options: ["Ignoro los datos, probablemente es coincidencia", "Dejo de operar martes por la tarde y elimino USD/JPY de mis pares durante 1 mes. Luego reevaluo con datos", "Opero MAS los martes para 'arreglar' la estadistica", "Cambio completamente de estrategia"], correctIndex: 1, explanation: "El diario revelo un patrón. Lo profesional: eliminar martes tarde y USD/JPY temporalmente, recopilar datos 1 mes, y decidir con evidencia. Los datos no mienten." },
             { question: "Escenario: Un amigo te pide que le enseñes a hacer 'dinero fácil' con trading en 1 semana. Que le dices?", options: ["Le enseno un par de trucos rapidos", "Le explico que trading NO es dinero fácil: requiere mínimo 6-12 meses de estudio y práctica, le recomiendo este curso, y le advierto que el 70-90% pierde dinero", "Le paso señales de un grupo de Telegram", "Le digo que invierta en mi cuenta"], correctIndex: 1, explanation: "La honestidad es fundamental. Trading requiere educacion seria, práctica y disciplina. Venderle la idea de 'dinero fácil' sería irresponsable y le costaria dinero." }
-          ]
+          ],
+          practicalExercise: "Cronometra este examen: tienes 20 minutos para las 10 preguntas (2 min/pregunta, como en el CMT real). No consultes lecciones. Al terminar, anota tu score y tiempo. Si sacas 80%+ en menos de 20 min, tu nivel es profesional."
         },
         {
           id: "7-1-4",
@@ -496,7 +497,8 @@ export const PHASE_7: Phase = {
             { question: "Cual es el factor #1 que separa a los traders exitosos del resto?", options: ["Tienen la mejor estrategia", "Tienen más dinero", "No se rindieron - persistieron a pesar de las dificultades", "Tienen mejor software"], correctIndex: 2, explanation: "La persistencia es el factor clave. Todos los traders exitosos pasaron por momentos dificiles. La diferencia es que NO se rindieron." },
             { question: "Porque es importante diversificar más alla del trading?", options: ["No es importante", "Porque poner todo tu dinero y esperanza en una sola fuente de ingreso es un riesgo enorme", "Porque el trading no funciona", "Porque es la ley"], correctIndex: 1, explanation: "Diversificar ingresos (trading + inversiones + negocio) reduce el riesgo total y la presión sobre tu trading. Si dependes 100% del trading, la presión nubla las decisiones." },
             { question: "Que debería hacer un trader para su salud mental?", options: ["Operar 12 horas al dia", "Tener hobbies, hacer ejercicio, meditar, desconectar del mercado regularmente", "Solo pensar en trading", "Ignorar el estres"], correctIndex: 1, explanation: "El trading puede ser muy estresante. Ejercicio, hobbies, meditacion y desconexion son esenciales para mantener la claridad mental y tomar buenas decisiones." }
-          ]
+          ],
+          practicalExercise: "Escribe tu compromiso personal como trader en un documento. Incluye: por que quieres ser trader, que estas dispuesto a sacrificar, cuanto tiempo dedicaras al dia, y firmalo con tu nombre y fecha. Ponlo donde lo veas cada dia."
         }
       ]
     },
@@ -602,7 +604,8 @@ export const PHASE_7: Phase = {
           quiz: [
             { question: "¿Qué deberías hacer si no recuerdas cómo identificar un Order Block?", options: ["Ignorarlo y seguir adelante", "Volver a la Fase 4 y repasar la lección de Order Blocks", "Buscar en YouTube", "Preguntar en un grupo de Telegram"], correctIndex: 1, explanation: "Vuelve a la lección correspondiente. No avances con lagunas de conocimiento." },
             { question: "¿Cuántos conceptos de la checklist deberías dominar antes de empezar la Fase 8?", options: ["El 50%", "El 70%", "TODOS (100%)", "No importa"], correctIndex: 2, explanation: "Deberías dominar el 100% de la checklist. Cada concepto se construye sobre los anteriores." }
-          ]
+          ],
+          practicalExercise: "Imprime la checklist de esta leccion. Repasa cada punto marcando con un boli verde (domino) o rojo (necesito repasar). Para cada punto rojo, anota la leccion exacta que necesitas volver a estudiar. Crea tu plan de repaso personalizado."
         },
         {
           id: "7-2-2",
@@ -668,7 +671,8 @@ export const PHASE_7: Phase = {
           quiz: [
             { question: "¿Con qué frecuencia deberías revisar si tu estrategia sigue funcionando?", options: ["Cada día", "Cada semana", "Cada trimestre (3 meses)", "Nunca, una buena estrategia funciona siempre"], correctIndex: 2, explanation: "Revisión trimestral es la frecuencia correcta. Los mercados cambian y tu estrategia puede necesitar ajustes." },
             { question: "¿Qué herramienta deberías revisar CADA DÍA antes de operar?", options: ["Instagram de traders", "Forex Factory (calendario económico)", "TikTok", "Solo TradingView"], correctIndex: 1, explanation: "Forex Factory te muestra las noticias de alto impacto del día. No operes sin saber qué noticias hay." }
-          ]
+          ],
+          practicalExercise: "Crea cuentas en: TradingView (gratis), MetaTrader 5 (demo), Forex Factory, y MyFXBook. Conecta MT5 con MyFXBook. Configura el calendario de Forex Factory para tu zona horaria. Haz una captura de cada plataforma configurada."
         }
       ]
     }
