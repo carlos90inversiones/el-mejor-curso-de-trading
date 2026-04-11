@@ -5,14 +5,14 @@ export const PHASE_1: Phase = {
   number: 1,
   title: "Fundamentos Absolutos",
   subtitle: "De cero a entender el mercado",
-  description: "Empezamos desde cero absoluto. No necesitas saber NADA de finanzas. Aqui vas a entender que es el trading, como funcionan los mercados, y vas a dar tus primeros pasos con confianza.",
+  description: "Empezamos desde cero absoluto. No necesitas saber NADA de finanzas. Aquí vas a entender qué es el trading, cómo funcionan los mercados, y vas a dar tus primeros pasos con confianza.",
   color: "#3B82F6",
   gradient: "from-blue-500 to-blue-700",
   modules: [
     {
       id: "mod-1-1",
       title: "Qué es el Trading",
-      description: "Entiende que es esto del trading de una vez por todas",
+      description: "Entiende qué es esto del trading de una vez por todas",
       icon: "📊",
       color: "#3B82F6",
       lessons: [
@@ -24,14 +24,14 @@ export const PHASE_1: Phase = {
 <h2>Bienvenido al Mundo del Trading</h2>
 <div class="analogy-box">
 <h3>La Analogia del Mercadillo</h3>
-<p>Imagina que vas a un mercadillo un sabado por la mañana. Ves un puesto vendiendo camisetas a 5 euros. Tu sabes que esas camisetas en una tienda cuestan 15 euros. Asi que compras 10 camisetas por 50 euros y las vendes en internet a 12 euros cada una. Resultado: gastaste 50 euros y ganaste 120 euros. <strong>Eso es trading.</strong></p>
+<p>Imagina que vas a un mercadillo un sábado por la mañana. Ves un puesto vendiendo camisetas a 5 euros. Tu sabes que esas camisetas en una tienda cuestan 15 euros. Asi que compras 10 camisetas por 50 euros y las vendes en internet a 12 euros cada una. Resultado: gastaste 50 euros y ganaste 120 euros. <strong>Eso es trading.</strong></p>
 </div>
 <p>El <strong>trading</strong> es simplemente <strong>comprar algo a un precio y venderlo a un precio mayor</strong> (o venderlo primero y comprarlo despues a un precio menor). En vez de camisetas, usamos:</p>
 <div class="grid-cards">
-<div class="card"><h4>Divisas (Forex)</h4><p>Compras euros y vendes dólares, o al reves. El mercado más grande del mundo con 7.5 BILLONES de dólares diarios.</p></div>
+<div class="card"><h4>Divisas (Forex)</h4><p>Compras euros y vendes dólares, o al revés. El mercado más grande del mundo con 7.5 BILLONES de dólares diarios.</p></div>
 <div class="card"><h4>Acciones</h4><p>Compras un pedacito de Apple, Tesla, Amazon... Si la empresa sube, tu ganas.</p></div>
 <div class="card"><h4>Criptomonedas</h4><p>Bitcoin, Ethereum... Activos digitales que puedes comprar y vender 24/7.</p></div>
-<div class="card"><h4>Indices y Materias Primas</h4><p>S&P 500, NASDAQ, Oro, Petroleo... Paquetes de acciones o recursos naturales.</p></div>
+<div class="card"><h4>Índices y Materias Primas</h4><p>S&P 500, NASDAQ, Oro, Petróleo... Paquetes de acciones o recursos naturales.</p></div>
 </div>
 <h3>La Gran Diferencia: Trading vs Invertir</h3>
 <div class="comparison-table">
@@ -51,14 +51,14 @@ export const PHASE_1: Phase = {
 </div>
 <h3>Los 4 Estilos de Trading</h3>
 <div class="grid-cards">
-<div class="card"><h4>Scalping</h4><p>Operaciones de segundos a minutos. Muchas operaciones al dia, ganancias pequenas por operación. Requiere concentración extrema.</p></div>
-<div class="card"><h4>Day Trading</h4><p>Operaciones que se abren y cierran el MISMO DIA. No dejas nada abierto por la noche. 1-5 operaciones al dia.</p></div>
-<div class="card"><h4>Swing Trading</h4><p>Operaciones de dias a semanas. Buscas movimientos grandes. Menos estres, ideal para combinar con trabajo.</p></div>
+<div class="card"><h4>Scalping</h4><p>Operaciones de segundos a minutos. Muchas operaciones al día, ganancias pequeñas por operación. Requiere concentración extrema.</p></div>
+<div class="card"><h4>Day Trading</h4><p>Operaciones que se abren y cierran el MISMO DIA. No dejas nada abierto por la noche. 1-5 operaciones al día.</p></div>
+<div class="card"><h4>Swing Trading</h4><p>Operaciones de días a semanas. Buscas movimientos grandes. Menos estrés, ideal para combinar con trabajo.</p></div>
 <div class="card"><h4>Position Trading</h4><p>Semanas a meses. Casi como invertir pero con análisis técnico. Muy pocas operaciones.</p></div>
 </div>
 <div class="warning-box">
 <h4>Realidad del Trading</h4>
-<p>El 70-90% de los traders pierden dinero. PERO, los que aprenden correctamente, tienen disciplina y gestionan bien el riesgo, pueden vivir del trading. Este curso existe para que estes en ese 10-30% ganador. No hay atajos: requiere estudio, práctica y disciplina.</p>
+<p>El 70-90% de los traders pierden dinero. PERO, los que aprenden correctamente, tienen disciplina y gestionan bien el riesgo, pueden vivir del trading. Este curso existe para que estés en ese 10-30% ganador. No hay atajos: requiere estudio, práctica y disciplina.</p>
 </div>`,
           keyPoints: [
             "Trading = comprar y vender activos financieros para obtener beneficio",
@@ -67,11 +67,11 @@ export const PHASE_1: Phase = {
             "El 70-90% pierde dinero, pero con educacion y disciplina puedes ser rentable"
           ],
           quiz: [
-            { question: "Que es el trading en palabras simples?", options: ["Comprar y vender activos para obtener beneficio por la diferencia de precio", "Guardar dinero en el banco", "Apostar en un casino online", "Comprar acciones y nunca venderlas"], correctIndex: 0, explanation: "El trading consiste en comprar y vender activos financieros aprovechando las diferencias de precio para obtener un beneficio." },
-            { question: "Que es una posición SHORT (corta)?", options: ["Comprar un activo esperando que suba", "Vender un activo prestado esperando que baje para recomprarlo más barato", "Mantener una inversión por poco tiempo", "Comprar criptomonedas"], correctIndex: 1, explanation: "Una posición corta (SHORT) significa vender un activo primero (prestado por el broker) y recomprarlo despues a un precio menor." },
-            { question: "Cual es la diferencia principal entre scalping y swing trading?", options: ["No hay diferencia", "El scalping dura segundos/minutos, el swing dura dias/semanas", "El swing es más rápido que el scalping", "El scalping solo funciona con acciones"], correctIndex: 1, explanation: "El scalping opera en segundos/minutos buscando ganancias pequenas, mientras el swing trading mantiene posiciones dias o semanas buscando movimientos más grandes." }
+            { question: "¿Qué es el trading en palabras simples?", options: ["Comprar y vender activos para obtener beneficio por la diferencia de precio", "Guardar dinero en el banco", "Apostar en un casino online", "Comprar acciones y nunca venderlas"], correctIndex: 0, explanation: "El trading consiste en comprar y vender activos financieros aprovechando las diferencias de precio para obtener un beneficio." },
+            { question: "¿Qué es una posición SHORT (corta)?", options: ["Comprar un activo esperando que suba", "Vender un activo prestado esperando que baje para recomprarlo más barato", "Mantener una inversión por poco tiempo", "Comprar criptomonedas"], correctIndex: 1, explanation: "Una posición corta (SHORT) significa vender un activo primero (prestado por el broker) y recomprarlo despues a un precio menor." },
+            { question: "¿Cuál es la diferencia principal entre scalping y swing trading?", options: ["No hay diferencia", "El scalping dura segundos/minutos, el swing dura días/semanas", "El swing es más rápido que el scalping", "El scalping solo funciona con acciones"], correctIndex: 1, explanation: "El scalping opera en segundos/minutos buscando ganancias pequeñas, mientras el swing trading mantiene posiciones días o semanas buscando movimientos más grandes." }
           ],
-          practicalExercise: "Abre TradingView.com (gratis). Busca BTCUSD. Observa como sube y baja. Identifica un momento donde habrias comprado (LONG) y otro donde habrias vendido (SHORT). Apuntalo."
+          practicalExercise: "Abre TradingView.com (gratis). Busca BTCUSD. Observa como sube y baja. Identifica un momento donde habrías comprado (LONG) y otro donde habrías vendido (SHORT). Apúntalo."
         },
         {
           id: "1-1-2",
@@ -79,7 +79,7 @@ export const PHASE_1: Phase = {
           duration: "20 min",
           content: `
 <h2>Los Mercados Financieros</h2>
-<div class="analogy-box"><h3>Piensa en un Centro Comercial</h3><p>Un centro comercial tiene muchas tiendas: ropa, electronica, comida... Los mercados financieros son igual: hay diferentes "tiendas" donde se compran y venden diferentes cosas.</p></div>
+<div class="analogy-box"><h3>Piensa en un Centro Comercial</h3><p>Un centro comercial tiene muchas tiendas: ropa, electrónica, comida... Los mercados financieros son igual: hay diferentes "tiendas" donde se compran y venden diferentes cosas.</p></div>
 <h3>Los 5 Mercados Principales</h3>
 
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:20px 0">
@@ -103,11 +103,11 @@ export const PHASE_1: Phase = {
 <p style="text-align:center;color:#555;font-size:11px;margin-bottom:16px">Capturas reales de TradingView - Abril 2026</p>
 <div class="market-card forex"><h4>1. FOREX (Foreign Exchange) - Divisas</h4><div class="stats"><span>Volumen diario: 7.5 BILLONES $</span><span>24h Lunes a Viernes</span><span>Apalancamiento: 1:30 a 1:500</span></div><p>El mercado más grande del mundo. Compras/vendes monedas: EUR/USD, GBP/USD, USD/JPY. <strong>Ideal para principiantes y cuentas fondeadas.</strong></p>
 <div class="highlight-box blue"><h4>Pares Principales (Majors) - Los más tradeados</h4><ul><li><strong>EUR/USD</strong> - Euro vs Dolar (el más liquido del mundo)</li><li><strong>GBP/USD</strong> - Libra vs Dolar (muy volatil)</li><li><strong>USD/JPY</strong> - Dolar vs Yen (movido por Bank of Japan)</li><li><strong>USD/CHF</strong> - Dolar vs Franco Suizo (refugio seguro)</li><li><strong>AUD/USD, NZD/USD, USD/CAD</strong> - Pares de commodities</li></ul></div></div>
-<div class="market-card indices"><h4>2. Indices Bursatiles</h4><div class="stats"><span>Principales: S&P 500, NASDAQ, DAX</span><span>Horario: 9:30-16:00 ET + futuros</span></div><p>Un indice es una "canasta" de acciones. El S&P 500 = las 500 empresas más grandes de EE.UU. Si la economía va bien, sube. <strong>Muy popular en prop firms.</strong></p>
+<div class="market-card indices"><h4>2. Índices Bursátiles</h4><div class="stats"><span>Principales: S&P 500, NASDAQ, DAX</span><span>Horario: 9:30-16:00 ET + futuros</span></div><p>Un índice es una "canasta" de acciones. El S&P 500 = las 500 empresas más grandes de EE.UU. Si la economía va bien, sube. <strong>Muy popular en prop firms.</strong></p>
 <div class="example-box"><strong>Activos más tradeados:</strong> US500 (S&P), US100 (NASDAQ), US30 (Dow Jones), GER40 (DAX aleman)</div></div>
-<div class="market-card crypto"><h4>3. Criptomonedas</h4><div class="stats"><span>Principales: BTC, ETH, SOL</span><span>24/7 nunca cierra</span><span>Volatilidad: MUY ALTA</span></div><p>Puede subir o bajar 10% en un dia. Ideal para traders que buscan grandes movimientos y pueden operar fines de semana.</p></div>
+<div class="market-card crypto"><h4>3. Criptomonedas</h4><div class="stats"><span>Principales: BTC, ETH, SOL</span><span>24/7 nunca cierra</span><span>Volatilidad: MUY ALTA</span></div><p>Puede subir o bajar 10% en un día. Ideal para traders que buscan grandes movimientos y pueden operar fines de semana.</p></div>
 <div class="market-card stocks"><h4>4. Acciones</h4><div class="stats"><span>NYSE, NASDAQ</span><span>9:30-16:00 ET</span></div><p>Compras un pedacito de una empresa. Las más tradeadas: Tesla, Apple, NVIDIA, Amazon, Meta.</p></div>
-<div class="market-card commodities"><h4>5. Materias Primas</h4><div class="stats"><span>Oro, Petroleo, Gas, Plata</span><span>Movido por geopolitica</span></div><p>El oro (XAUUSD) es el "refugio seguro" por excelencia. El petroleo se mueve con conflictos y OPEP.</p></div>
+<div class="market-card commodities"><h4>5. Materias Primas</h4><div class="stats"><span>Oro, Petróleo, Gas, Plata</span><span>Movido por geopolítica</span></div><p>El oro (XAUUSD) es el "refugio seguro" por excelencia. El petróleo se mueve con conflictos y OPEP.</p></div>
 <h3>Sesiones de Trading - CUANDO Tradear</h3>
 <div class="sessions-timeline">
 <div style="display:flex;justify-content:center;margin:20px 0">
@@ -137,17 +137,17 @@ export const PHASE_1: Phase = {
 <text x="240" y="135" fill="#787b86" font-size="8" text-anchor="middle">(15:00-19:00 hora España)</text>
 </svg>
 </div>
-<div class="highlight-box green"><h4>El Mejor Momento: Solapamiento London-NY</h4><p>13:00-17:00 UTC (15:00-19:00 España). MAXIMO volumen y movimiento. Es el "prime time" del trading. La mayoria de traders profesionales operan exclusivamente en este horario.</p></div>`,
+<div class="highlight-box green"><h4>El Mejor Momento: Solapamiento London-NY</h4><p>13:00-17:00 UTC (15:00-19:00 España). MAXIMO volumen y movimiento. Es el "prime time" del trading. La mayoría de traders profesionales operan exclusivamente en este horario.</p></div>`,
           keyPoints: [
-            "Forex es el mercado más grande (7.5 billones$/dia) - ideal para empezar",
-            "5 mercados: Forex, Indices, Cripto, Acciones, Materias Primas",
+            "Forex es el mercado más grande (7.5 billones$/día) - ideal para empezar",
+            "5 mercados: Forex, Índices, Cripto, Acciones, Materias Primas",
             "El solapamiento London-NY (13:00-17:00 UTC) es el mejor momento",
-            "Indices son muy populares en cuentas fondeadas (prop firms)"
+            "Índices son muy populares en cuentas fondeadas (prop firms)"
           ],
           quiz: [
-            { question: "Cual es el mercado financiero más grande del mundo?", options: ["Acciones", "Criptomonedas", "Forex (divisas)", "Materias primas"], correctIndex: 2, explanation: "Forex mueve 7.5 billones de dólares diarios." },
-            { question: "Que mercado esta abierto 24/7?", options: ["Forex", "Acciones", "Criptomonedas", "Indices"], correctIndex: 2, explanation: "El mercado cripto nunca cierra." },
-            { question: "Cual es el mejor momento del dia para tradear Forex?", options: ["Sesion de Sydney", "Sesion de Tokio", "Solapamiento Londres-Nueva York", "Cierre de Nueva York"], correctIndex: 2, explanation: "El solapamiento London-NY tiene mayor volumen y volatilidad." }
+            { question: "¿Cuál es el mercado financiero más grande del mundo?", options: ["Acciones", "Criptomonedas", "Forex (divisas)", "Materias primas"], correctIndex: 2, explanation: "Forex mueve 7.5 billones de dólares diarios." },
+            { question: "¿Qué mercado esta abierto 24/7?", options: ["Forex", "Acciones", "Criptomonedas", "Índices"], correctIndex: 2, explanation: "El mercado cripto nunca cierra." },
+            { question: "¿Cuál es el mejor momento del día para tradear Forex?", options: ["Sesion de Sydney", "Sesion de Tokio", "Solapamiento Londres-Nueva York", "Cierre de Nueva York"], correctIndex: 2, explanation: "El solapamiento London-NY tiene mayor volumen y volatilidad." }
           ]
         },
         {
@@ -158,7 +158,7 @@ export const PHASE_1: Phase = {
 <h2>El Diccionario del Trader</h2>
 <p>Estos términos los vas a usar TODOS LOS DIAS. No te preocupes si no los memorizas ahora.</p>
 <div class="vocab-section">
-<h3>Terminos del Precio</h3>
+<h3>Términos del Precio</h3>
 <div class="vocab-card"><h4>PIP (Point in Percentage)</h4><p>El movimiento mínimo de precio en Forex. En EUR/USD, un pip es 0.0001.</p><div class="example-box"><strong>Ejemplo:</strong> EUR/USD de 1.0800 a 1.0850 = 50 pips</div></div>
 <div class="vocab-card"><h4>SPREAD</h4><p>La diferencia entre precio de compra (ASK) y venta (BID). Es la comisión del broker.</p><div class="example-box"><strong>Ejemplo:</strong> BID: 1.0800 | ASK: 1.0802 → Spread = 2 pips</div></div>
 <div class="vocab-card"><h4>LOTE (Lot Size)</h4><ul><li><strong>1 Lote Estandar</strong> = 100,000 unidades (1 pip = ~10$)</li><li><strong>1 Mini Lote (0.1)</strong> = 10,000 unidades (1 pip = ~1$)</li><li><strong>1 Micro Lote (0.01)</strong> = 1,000 unidades (1 pip = ~0.10$)</li></ul></div>
@@ -203,7 +203,7 @@ export const PHASE_1: Phase = {
 <div class="vocab-card"><h4>ORDEN DE MERCADO (Market Order)</h4><p>Compras/vendes AL PRECIO ACTUAL, inmediatamente.</p></div>
 <div class="vocab-card"><h4>ORDEN LIMITADA (Limit Order)</h4><p>Se ejecuta solo si el precio llega a un nivel específico que tu defines.</p>
 <ul><li><strong>Buy Limit:</strong> Comprar a un precio MAS BAJO que el actual</li><li><strong>Sell Limit:</strong> Vender a un precio MAS ALTO que el actual</li><li><strong>Buy Stop:</strong> Comprar a un precio MAS ALTO (para rupturas alcistas)</li><li><strong>Sell Stop:</strong> Vender a un precio MAS BAJO (para rupturas bajistas)</li></ul></div>
-<div class="vocab-card"><h4>STOP LOSS (SL)</h4><p>Cierra tu operación automáticamente para LIMITAR PERDIDAS. Tu cinturon de seguridad.</p><div class="highlight-box red"><strong>REGLA DE ORO: NUNCA operes sin Stop Loss. NUNCA. JAMAS.</strong></div></div>
+<div class="vocab-card"><h4>STOP LOSS (SL)</h4><p>Cierra tu operación automáticamente para LIMITAR PERDIDAS. Tu cinturón de seguridad.</p><div class="highlight-box red"><strong>REGLA DE ORO: NUNCA operes sin Stop Loss. NUNCA. JAMAS.</strong></div></div>
 <div class="vocab-card"><h4>TAKE PROFIT (TP)</h4><p>Cierra tu operación automáticamente para ASEGURAR GANANCIAS. Tu objetivo.</p></div>
 <div class="vocab-card"><h4>TRAILING STOP</h4><p>Un Stop Loss que se MUEVE automáticamente a tu favor. Si el precio sube 50 pips, tu SL también sube 50 pips. Protege ganancias mientras dejas correr el trade.</p></div>
 </div>
@@ -227,8 +227,8 @@ export const PHASE_1: Phase = {
 </svg>
 </div>
 <div class="warning-box"><p>El apalancamiento es una espada de doble filo. Puede multiplicar ganancias Y perdidas. Usa siempre el mínimo necesario.</p></div></div>
-<div class="vocab-card"><h4>DRAWDOWN</h4><p>La caida maxima de tu cuenta desde su punto más alto. Cuenta llego a 10,000$ y ahora tiene 8,000$ = drawdown del 20%. <strong>Prop firms limitan a 5-10%.</strong></p></div>
-<div class="vocab-card"><h4>RATIO RIESGO/BENEFICIO (R:R)</h4><p>Relacion entre lo que arriesgas y lo que puedes ganar.</p><div class="example-box"><strong>Ejemplo:</strong> Arriesgas 50$ (SL) para ganar 150$ (TP) = Ratio 1:3. Aunque pierdas 2 de cada 3 operaciones, sigues siendo rentable.</div></div>
+<div class="vocab-card"><h4>DRAWDOWN</h4><p>La caída maxima de tu cuenta desde su punto más alto. Cuenta llegó a 10,000$ y ahora tiene 8,000$ = drawdown del 20%. <strong>Prop firms limitan a 5-10%.</strong></p></div>
+<div class="vocab-card"><h4>RATIO RIESGO/BENEFICIO (R:R)</h4><p>Relación entre lo que arriesgas y lo que puedes ganar.</p><div class="example-box"><strong>Ejemplo:</strong> Arriesgas 50$ (SL) para ganar 150$ (TP) = Ratio 1:3. Aunque pierdas 2 de cada 3 operaciones, sigues siendo rentable.</div></div>
 <div class="vocab-card"><h4>EQUITY vs BALANCE</h4><p><strong>Balance:</strong> Dinero en tu cuenta SIN contar operaciones abiertas.</p><p><strong>Equity:</strong> Balance + ganancias/perdidas de operaciones abiertas. Es tu dinero REAL en este momento.</p></div>
 </div>`,
           keyPoints: [
@@ -239,10 +239,10 @@ export const PHASE_1: Phase = {
             "Equity = tu dinero real incluyendo operaciones abiertas"
           ],
           quiz: [
-            { question: "Si EUR/USD pasa de 1.0800 a 1.0835, cuantos pips se movio?", options: ["3.5 pips", "35 pips", "350 pips", "0.35 pips"], correctIndex: 1, explanation: "1.0835 - 1.0800 = 0.0035. Cada pip = 0.0001, así que son 35 pips." },
-            { question: "Cual es la diferencia entre Buy Limit y Buy Stop?", options: ["No hay diferencia", "Buy Limit compra más abajo del precio actual, Buy Stop compra más arriba", "Buy Limit es para vender, Buy Stop es para comprar", "Buy Stop no existe"], correctIndex: 1, explanation: "Buy Limit se coloca por DEBAJO del precio actual (comprar en retroceso). Buy Stop se coloca por ENCIMA (comprar en ruptura)." },
-            { question: "Con ratio R:R de 1:2, que porcentaje de acierto necesitas para ser rentable?", options: ["51%", "34%", "75%", "90%"], correctIndex: 1, explanation: "Con 1:2, si ganas 34 de 100: 34 x 200$ = 6,800$, pierdes 66 x 100$ = 6,600$. Beneficio = 200$." },
-            { question: "Que es el equity de tu cuenta?", options: ["Solo el dinero depositado", "El balance mas/menos las ganancias/perdidas de operaciones abiertas", "Las comisiones pagadas", "El apalancamiento disponible"], correctIndex: 1, explanation: "Equity = Balance + P/L de operaciones abiertas. Es tu dinero real en el momento actual." }
+            { question: "¿Si EUR/USD pasa de 1.0800 a 1.0835, cuantos pips se movio?", options: ["3.5 pips", "35 pips", "350 pips", "0.35 pips"], correctIndex: 1, explanation: "1.0835 - 1.0800 = 0.0035. Cada pip = 0.0001, así que son 35 pips." },
+            { question: "¿Cuál es la diferencia entre Buy Limit y Buy Stop?", options: ["No hay diferencia", "Buy Limit compra más abajo del precio actual, Buy Stop compra más arriba", "Buy Limit es para vender, Buy Stop es para comprar", "Buy Stop no existe"], correctIndex: 1, explanation: "Buy Limit se coloca por DEBAJO del precio actual (comprar en retroceso). Buy Stop se coloca por ENCIMA (comprar en ruptura)." },
+            { question: "¿Con ratio R:R de 1:2, que porcentaje de acierto necesitas para ser rentable?", options: ["51%", "34%", "75%", "90%"], correctIndex: 1, explanation: "Con 1:2, si ganas 34 de 100: 34 x 200$ = 6,800$, pierdes 66 x 100$ = 6,600$. Beneficio = 200$." },
+            { question: "¿Qué es el equity de tu cuenta?", options: ["Solo el dinero depositado", "El balance mas/menos las ganancias/perdidas de operaciones abiertas", "Las comisiones pagadas", "El apalancamiento disponible"], correctIndex: 1, explanation: "Equity = Balance + P/L de operaciones abiertas. Es tu dinero real en el momento actual." }
           ]
         }
       ]
@@ -283,7 +283,7 @@ export const PHASE_1: Phase = {
           ],
           quiz: [
             { question: "Para que sirve TradingView principalmente?", options: ["Ejecutar compras/ventas", "Analizar gráficos y mercado", "Depositar dinero", "Hablar con traders"], correctIndex: 1, explanation: "TradingView es para análisis. MetaTrader para ejecutar." },
-            { question: "Cuantos indicadores deberías usar como máximo al empezar?", options: ["10-15", "2-3", "7-8", "Ninguno"], correctIndex: 1, explanation: "2-3 indicadores son suficientes. Mas indicadores = más confusion." }
+            { question: "¿Cuántos indicadores deberías usar como máximo al empezar?", options: ["10-15", "2-3", "7-8", "Ninguno"], correctIndex: 1, explanation: "2-3 indicadores son suficientes. Mas indicadores = más confusion." }
           ],
           practicalExercise: "Configura TradingView con velas japonesas, EMA 21 (azul), EMA 50 (naranja), RSI 14. Guarda el layout. Practica cambiar entre temporalidades D1, H4, H1. Dibuja 2 lineas horizontales en niveles que te parezcan importantes."
         },
@@ -295,6 +295,7 @@ export const PHASE_1: Phase = {
 <h2>Eligiendo tu Broker: Tu Socio Financiero</h2>
 <div class="analogy-box"><h3>El Broker es como un Agente Inmobiliario</h3><p>Tu quieres comprar/vender una casa (activo financiero), pero no puedes ir directamente al mercado. El broker es el intermediario que ejecuta tus ordenes a cambio de una comisión (spread).</p></div>
 <h3>Tipos de Brokers</h3>
+<div style="display:flex;justify-content:center;margin:20px 0"><svg width="420" height="100" viewBox="0 0 420 100" style="background:#131722;border-radius:10px;border:1px solid #2a2a40"><text x="210" y="16" fill="white" font-size="10" text-anchor="middle" font-weight="bold">ECN/STP vs MARKET MAKER</text><rect x="10" y="28" width="195" height="45" rx="6" fill="#26a69a10" stroke="#26a69a44"/><text x="107" y="44" fill="#26a69a" font-size="9" text-anchor="middle" font-weight="bold">ECN/STP ✅ RECOMENDADO</text><text x="107" y="58" fill="#787b86" font-size="7" text-anchor="middle">Tu orden va DIRECTO al mercado</text><text x="107" y="68" fill="#787b86" font-size="6" text-anchor="middle">Spreads bajos | Sin conflicto de interés</text><rect x="215" y="28" width="195" height="45" rx="6" fill="#ef535010" stroke="#ef535044"/><text x="312" y="44" fill="#ef5350" font-size="9" text-anchor="middle" font-weight="bold">MARKET MAKER ⚠️ CUIDADO</text><text x="312" y="58" fill="#787b86" font-size="7" text-anchor="middle">El broker toma la otra parte</text><text x="312" y="68" fill="#787b86" font-size="6" text-anchor="middle">Spreads más altos | Posible conflicto</text><text x="210" y="90" fill="#f59e0b" font-size="8" text-anchor="middle" font-weight="bold">Siempre elige ECN/STP: tus intereses están alineados con el broker</text></svg></div>
 <div class="grid-cards">
 <div class="card green-border"><h4>ECN/STP (Acceso Directo)</h4><p>Tu orden va directamente al mercado. Spreads bajos pero cobran comisión. <strong>MEJOR OPCION.</strong> Sin conflicto de intereses.</p></div>
 <div class="card red-border"><h4>Market Maker (Creador de Mercado)</h4><p>El broker toma la otra parte de tu operación. Puede haber conflicto de intereses. Spreads más altos pero sin comisión. <strong>CUIDADO.</strong></p></div>
@@ -306,7 +307,7 @@ export const PHASE_1: Phase = {
 <li><strong>Ejecucion rápida:</strong> Menos de 100ms de latencia</li>
 <li><strong>Deposito mínimo razonable:</strong> 50-500$ es normal</li>
 <li><strong>MetaTrader 4 o 5:</strong> La plataforma estandar de la industria</li>
-<li><strong>Retiros faciles:</strong> Deberia procesar en 1-3 dias laborables</li>
+<li><strong>Retiros faciles:</strong> Deberia procesar en 1-3 días laborables</li>
 <li><strong>Soporte en tu idioma:</strong> Si hay problemas, poder comunicarte</li>
 </ol></div>
 <h3>Brokers Recomendados para Empezar</h3>
@@ -331,8 +332,8 @@ export const PHASE_1: Phase = {
             "Si prometen ganancias garantizadas = ESTAFA"
           ],
           quiz: [
-            { question: "Que tipo de broker es mejor para evitar conflictos de interes?", options: ["Market Maker", "ECN/STP (acceso directo al mercado)", "Cualquiera sirve", "Los no regulados"], correctIndex: 1, explanation: "Un broker ECN/STP envia tus ordenes directamente al mercado, sin tomar la otra parte de tu operación." },
-            { question: "Cual NO es una señal de broker estafa?", options: ["Promete ganancias garantizadas", "Esta regulado por la FCA de UK", "Te llama insistentemente para depositar más", "Bonus del 500%"], correctIndex: 1, explanation: "Estar regulado por la FCA (Financial Conduct Authority del Reino Unido) es señal de legitimidad." }
+            { question: "¿Qué tipo de broker es mejor para evitar conflictos de interes?", options: ["Market Maker", "ECN/STP (acceso directo al mercado)", "Cualquiera sirve", "Los no regulados"], correctIndex: 1, explanation: "Un broker ECN/STP envia tus ordenes directamente al mercado, sin tomar la otra parte de tu operación." },
+            { question: "¿Cuál NO es una señal de broker estafa?", options: ["Promete ganancias garantizadas", "Esta regulado por la FCA de UK", "Te llama insistentemente para depositar más", "Bonus del 500%"], correctIndex: 1, explanation: "Estar regulado por la FCA (Financial Conduct Authority del Reino Unido) es señal de legitimidad." }
           ],
           practicalExercise: "Investiga 3 brokers regulados (IC Markets, Pepperstone, XM). Compara: regulacion, spread EUR/USD, deposito minimo, plataformas disponibles. Elige 1 y abre una cuenta DEMO (no real)."
         }
@@ -468,9 +469,9 @@ export const PHASE_1: Phase = {
             "NUNCA operes por una sola vela - siempre mira el contexto"
           ],
           quiz: [
-            { question: "Que indica una vela verde grande sin mechas?", options: ["Indecision", "Dominio total de compradores", "Mercado cerrado", "Dominio vendedores"], correctIndex: 1, explanation: "Compradores controlaron todo el período sin dar oportunidad a vendedores." },
-            { question: "Un Martillo tiene la mecha larga en...", options: ["Arriba", "Abajo", "Ambos lados", "No tiene mechas"], correctIndex: 1, explanation: "El Martillo tiene mecha inferior larga, indica rechazo de precios bajos." },
-            { question: "Envolvente Bajista en resistencia significa...", options: ["Seguir subiendo", "Nada", "Posible giro hacia abajo", "Comprar inmediatamente"], correctIndex: 2, explanation: "Envolvente Bajista en resistencia = vendedores tomando control = posible giro bajista." }
+            { question: "¿Qué indica una vela verde grande sin mechas?", options: ["Indecision", "Dominio total de compradores", "Mercado cerrado", "Dominio vendedores"], correctIndex: 1, explanation: "Compradores controlaron todo el período sin dar oportunidad a vendedores." },
+            { question: "¿Un Martillo tiene la mecha larga en...", options: ["Arriba", "Abajo", "Ambos lados", "No tiene mechas"], correctIndex: 1, explanation: "El Martillo tiene mecha inferior larga, indica rechazo de precios bajos." },
+            { question: "¿Envolvente Bajista en resistencia significa...", options: ["Seguir subiendo", "Nada", "Posible giro hacia abajo", "Comprar inmediatamente"], correctIndex: 2, explanation: "Envolvente Bajista en resistencia = vendedores tomando control = posible giro bajista." }
           ],
           practicalExercise: "En TradingView, EUR/USD en H4: identifica 3 Doji, 2 Martillos, 2 Estrellas Fugaz y 1 Envolvente. Marca cada uno y observa que paso DESPUES."
         },
@@ -482,16 +483,16 @@ export const PHASE_1: Phase = {
 <h2>Patrones de Velas Avanzados</h2>
 <p>Ahora que conoces los patrones basicos, vamos con los patrones de multiples velas y combinaciones que usan los profesionales.</p>
 <h3>Patrones de 2-3 Velas</h3>
-<div class="pattern-card"><h4>MORNING STAR (Estrella de la Manana)</h4><p>Patron de 3 velas ALCISTA:</p><ol><li>Vela roja grande (bajistas dominan)</li><li>Vela pequena (doji o cuerpo chico) = indecision</li><li>Vela verde grande (alcistas toman control)</li></ol><p><strong>Aparece en suelos/soportes. Senal de giro alcista MUY fiable.</strong></p></div>
-<div class="pattern-card"><h4>EVENING STAR (Estrella de la Tarde)</h4><p>Patron de 3 velas BAJISTA (inverso del Morning Star):</p><ol><li>Vela verde grande</li><li>Vela pequena (indecision)</li><li>Vela roja grande</li></ol><p><strong>Aparece en techos/resistencias. Senal de giro bajista.</strong></p></div>
-<div class="pattern-card"><h4>THREE WHITE SOLDIERS (Tres Soldados Blancos)</h4><p>3 velas verdes consecutivas, cada una cerrando más alto. Cuerpos grandes, mechas pequenas.</p><p><strong>Senal alcista MUY fuerte.</strong> Indica momentum comprador sostenido.</p></div>
+<div class="pattern-card"><h4>MORNING STAR (Estrella de la Manana)</h4><p>Patron de 3 velas ALCISTA:</p><ol><li>Vela roja grande (bajistas dominan)</li><li>Vela pequeña (doji o cuerpo chico) = indecision</li><li>Vela verde grande (alcistas toman control)</li></ol><p><strong>Aparece en suelos/soportes. Senal de giro alcista MUY fiable.</strong></p></div>
+<div class="pattern-card"><h4>EVENING STAR (Estrella de la Tarde)</h4><p>Patron de 3 velas BAJISTA (inverso del Morning Star):</p><ol><li>Vela verde grande</li><li>Vela pequeña (indecision)</li><li>Vela roja grande</li></ol><p><strong>Aparece en techos/resistencias. Senal de giro bajista.</strong></p></div>
+<div class="pattern-card"><h4>THREE WHITE SOLDIERS (Tres Soldados Blancos)</h4><p>3 velas verdes consecutivas, cada una cerrando más alto. Cuerpos grandes, mechas pequeñas.</p><p><strong>Senal alcista MUY fuerte.</strong> Indica momentum comprador sostenido.</p></div>
 <div class="pattern-card"><h4>THREE BLACK CROWS (Tres Cuervos Negros)</h4><p>3 velas rojas consecutivas, cada una cerrando más bajo.</p><p><strong>Senal bajista MUY fuerte.</strong> Inverso de los Tres Soldados.</p></div>
 <div class="pattern-card"><h4>TWEEZER TOP / BOTTOM</h4><p><strong>Tweezer Top:</strong> Dos velas con maximos casi identicos en resistencia = BAJISTA</p><p><strong>Tweezer Bottom:</strong> Dos velas con minimos casi identicos en soporte = ALCISTA</p><p>Muestra que el mercado RECHAZO el mismo nivel dos veces.</p></div>
-<div class="pattern-card"><h4>INSIDE BAR (Barra Interior)</h4><p>Una vela completamente contenida dentro del rango de la vela anterior. La segunda vela es más pequena.</p><p><strong>Significado:</strong> CONSOLIDACION antes de un movimiento explosivo. Espera la ruptura de la vela madre.</p><p><strong>Setup:</strong> Entrada cuando el precio rompe el máximo (LONG) o mínimo (SHORT) de la vela madre.</p></div>
+<div class="pattern-card"><h4>INSIDE BAR (Barra Interior)</h4><p>Una vela completamente contenida dentro del rango de la vela anterior. La segunda vela es más pequeña.</p><p><strong>Significado:</strong> CONSOLIDACION antes de un movimiento explosivo. Espera la ruptura de la vela madre.</p><p><strong>Setup:</strong> Entrada cuando el precio rompe el máximo (LONG) o mínimo (SHORT) de la vela madre.</p></div>
 <h3>Patrones de Continuacion</h3>
 <div class="grid-cards">
-<div class="card"><h4>Rising Three Methods</h4><p>En tendencia alcista: vela verde grande → 3 velas rojas pequenas → vela verde grande. La tendencia continua.</p></div>
-<div class="card"><h4>Falling Three Methods</h4><p>En tendencia bajista: vela roja grande → 3 velas verdes pequenas → vela roja grande. La caida continua.</p></div>
+<div class="card"><h4>Rising Three Methods</h4><p>En tendencia alcista: vela verde grande → 3 velas rojas pequeñas → vela verde grande. La tendencia continua.</p></div>
+<div class="card"><h4>Falling Three Methods</h4><p>En tendencia bajista: vela roja grande → 3 velas verdes pequeñas → vela roja grande. La caída continua.</p></div>
 </div>
 <h3>La Jerarquia de Fiabilidad</h3>
 <div class="highlight-box blue"><h4>De MAS a MENOS fiable</h4><ol>
@@ -511,8 +512,8 @@ export const PHASE_1: Phase = {
             "La confluencia (patrón + nivel + tendencia) es lo que realmente importa"
           ],
           quiz: [
-            { question: "Que es un Morning Star?", options: ["Una vela verde sola", "Patron de 3 velas: roja grande, vela pequena, verde grande = giro alcista", "Un indicador técnico", "El gap de apertura"], correctIndex: 1, explanation: "Morning Star es un patrón de 3 velas de giro alcista: bajista grande → indecisión → alcista grande." },
-            { question: "Que significa un Inside Bar?", options: ["El precio se mueve muy rápido", "Consolidacion antes de un movimiento explosivo", "Final de la tendencia", "Error en el gráfico"], correctIndex: 1, explanation: "Inside Bar indica que el mercado esta comprimiendo energia (consolidando) antes de un movimiento fuerte." },
+            { question: "¿Qué es un Morning Star?", options: ["Una vela verde sola", "Patron de 3 velas: roja grande, vela pequeña, verde grande = giro alcista", "Un indicador técnico", "El gap de apertura"], correctIndex: 1, explanation: "Morning Star es un patrón de 3 velas de giro alcista: bajista grande → indecisión → alcista grande." },
+            { question: "¿Qué significa un Inside Bar?", options: ["El precio se mueve muy rápido", "Consolidacion antes de un movimiento explosivo", "Final de la tendencia", "Error en el gráfico"], correctIndex: 1, explanation: "Inside Bar indica que el mercado esta comprimiendo energia (consolidando) antes de un movimiento fuerte." },
             { question: "Un martillo en medio de una tendencia sin ningun soporte cerca es...", options: ["Senal de compra fuerte", "Senal poco fiable - necesita contexto/nivel importante", "Senal de venta", "Momento de cerrar todo"], correctIndex: 1, explanation: "Los patrones de velas SOLO son fiables cuando aparecen en niveles importantes (soporte, resistencia, order block, etc.)." }
           ],
           practicalExercise: "En EUR/USD H4, identifica al menos: 2 Morning Star, 2 Inside Bar, 1 Three White Soldiers. Marca cada patron con la herramienta de texto. Observa que paso DESPUES de cada patron y anotalo."
@@ -532,7 +533,7 @@ export const PHASE_1: Phase = {
           duration: "20 min",
           content: `
 <h2>Errores que DESTRUYEN al 90% de los Principiantes</h2>
-<div class="highlight-box red"><p>Estos errores son la razon por la que la mayoria pierde dinero. Leelos, memorizalos, y JURA que no los cometeras.</p></div>
+<div class="highlight-box red"><p>Estos errores son la razon por la que la mayoría pierde dinero. Leelos, memorizalos, y JURA que no los cometeras.</p></div>
 <div class="grid-cards">
 <div class="card red-border"><h4>1. Operar sin Stop Loss</h4><p>"Ya se va a recuperar..." NO. Una operación sin SL puede destruir tu cuenta entera en minutos. SIEMPRE pon SL antes de entrar.</p></div>
 <div class="card red-border"><h4>2. Arriesgar demasiado por trade</h4><p>Principiantes arriesgan 10-20% por operación. Con 5 perdidas seguidas (que PASARA), pierdes todo. Maximo 1-2%.</p></div>
@@ -541,7 +542,7 @@ export const PHASE_1: Phase = {
 <div class="card red-border"><h4>5. Operar en cuenta real demasiado pronto</h4><p>Minimo 3 meses en demo con resultados positivos. Si pierdes en demo, perderás 10x más en real por las emociones.</p></div>
 <div class="card red-border"><h4>6. Seguir "señales" de otros</h4><p>Grupos de Telegram, "gurus" de Instagram... El 95% son estafas. Si supieran ganar, no venderian señales. Aprende TU.</p></div>
 <div class="card red-border"><h4>7. Cambiar de estrategia cada semana</h4><p>Una estrategia necesita al menos 30-50 trades para evaluarla. Si cambias cada 5 trades, nunca sabrás si funciona.</p></div>
-<div class="card red-border"><h4>8. Sobreoperar (Overtrading)</h4><p>Mas trades ≠ más dinero. Mas trades = más comisiones + peores decisiones + más estres. 1-3 buenos trades al dia es SUFICIENTE.</p></div>
+<div class="card red-border"><h4>8. Sobreoperar (Overtrading)</h4><p>Mas trades ≠ más dinero. Mas trades = más comisiones + peores decisiones + más estrés. 1-3 buenos trades al día es SUFICIENTE.</p></div>
 <div class="card red-border"><h4>9. Ignorar la gestión de riesgo</h4><p>El 80% del éxito en trading es gestión de riesgo. No el mejor indicador, no la mejor estrategia. RIESGO.</p></div>
 <div class="card red-border"><h4>10. Expectativas irreales</h4><p>"Voy a duplicar mi cuenta en un mes." NO. Los mejores traders del mundo hacen 2-5% MENSUAL. Eso es excelente. Acepta la realidad.</p></div>
 </div>
@@ -554,9 +555,9 @@ export const PHASE_1: Phase = {
             "Expectativas realistas: 2-5% mensual es EXCELENTE"
           ],
           quiz: [
-            { question: "Cuantos trades necesitas como mínimo para evaluar si una estrategia funciona?", options: ["5 trades", "10 trades", "30-50 trades", "200 trades"], correctIndex: 2, explanation: "30-50 trades es el mínimo para tener una muestra estadisticamente relevante. Con menos, no puedes saber si los resultados son por la estrategia o por suerte." },
-            { question: "Cual es un retorno mensual REALISTA y excelente para un trader profesional?", options: ["50-100%", "20-30%", "2-5%", "0.5%"], correctIndex: 2, explanation: "2-5% mensual es lo que hacen los mejores. Suena poco pero es 24-60% anual, que supera a casi cualquier fondo de inversión del mundo." },
-            { question: "Por que no deberías seguir 'señales' de grupos de Telegram?", options: ["Porque Telegram no funciona bien", "Porque el 95% son estafas y si supieran ganar consistentemente no venderian señales", "Porque las señales llegan tarde", "Porque solo funcionan en Forex"], correctIndex: 1, explanation: "Si alguien pudiera ganar consistentemente en trading, no necesitaria vender señales a 20 euros/mes. La mayoria son estafas o traders mediocres que ganan más vendiendo señales que operando." }
+            { question: "¿Cuántos trades necesitas como mínimo para evaluar si una estrategia funciona?", options: ["5 trades", "10 trades", "30-50 trades", "200 trades"], correctIndex: 2, explanation: "30-50 trades es el mínimo para tener una muestra estadisticamente relevante. Con menos, no puedes saber si los resultados son por la estrategia o por suerte." },
+            { question: "¿Cuál es un retorno mensual REALISTA y excelente para un trader profesional?", options: ["50-100%", "20-30%", "2-5%", "0.5%"], correctIndex: 2, explanation: "2-5% mensual es lo que hacen los mejores. Suena poco pero es 24-60% anual, que supera a casi cualquier fondo de inversión del mundo." },
+            { question: "Por que no deberías seguir 'señales' de grupos de Telegram?", options: ["Porque Telegram no funciona bien", "Porque el 95% son estafas y si supieran ganar consistentemente no venderian señales", "Porque las señales llegan tarde", "Porque solo funcionan en Forex"], correctIndex: 1, explanation: "Si alguien pudiera ganar consistentemente en trading, no necesitaria vender señales a 20 euros/mes. La mayoría son estafas o traders mediocres que ganan más vendiendo señales que operando." }
           ]
         },
         {
@@ -565,20 +566,21 @@ export const PHASE_1: Phase = {
           duration: "15 min",
           content: `
 <h2>El Camino Completo: Tu Mapa de Aqui a Vivir del Trading</h2>
-<div class="analogy-box"><h3>El Viaje del Trading</h3><p>Aprender trading es como aprender a conducir. Primero estudias la teoria (este curso), luego practicas en un circuito cerrado (demo), luego conduces por la ciudad con cuidado (cuenta pequena/prop firm), y eventualmente conduces con confianza (trader profesional). No puedes saltarte pasos.</p></div>
+<div class="analogy-box"><h3>El Viaje del Trading</h3><p>Aprender trading es como aprender a conducir. Primero estudias la teoría (este curso), luego practicas en un circuito cerrado (demo), luego conduces por la ciudad con cuidado (cuenta pequeña/prop firm), y eventualmente conduces con confianza (trader profesional). No puedes saltarte pasos.</p></div>
 <h3>Las 5 Etapas del Trader</h3>
-<div class="strategy-box"><h4>Etapa 1: Incompetente Inconsciente (Mes 1)</h4><p>"No se lo que no se." Crees que el trading es fácil. Haces trades aleatorios. Puedes ganar algo por suerte. Aqui es donde el 50% abandona.</p></div>
-<div class="strategy-box"><h4>Etapa 2: Incompetente Consciente (Meses 2-4)</h4><p>"Ahora se que no se nada." Empiezas a estudiar (este curso). Te das cuenta de la complejidad. Frustacion. Es NORMAL. No abandones aquí.</p></div>
-<div class="strategy-box"><h4>Etapa 3: Competente Consciente (Meses 5-9)</h4><p>"Puedo hacerlo si me concentro." Tu estrategia funciona cuando sigues tu plan. Pero todavia luchas con las emociones. Necesitas enfoque activo.</p></div>
+<div style="display:flex;justify-content:center;margin:16px 0"><svg width="460" height="90" viewBox="0 0 460 90" style="background:#131722;border-radius:12px;border:1px solid #2a2a40"><text x="230" y="15" fill="white" font-size="9" text-anchor="middle" font-weight="bold">LAS 5 ETAPAS DEL TRADER</text><rect x="5" y="26" width="85" height="36" rx="5" fill="#ef535015" stroke="#ef5350"/><text x="47" y="40" fill="#ef5350" font-size="6" text-anchor="middle" font-weight="bold">1. INCOMPETENTE</text><text x="47" y="50" fill="#ef5350" font-size="5" text-anchor="middle">INCONSCIENTE</text><text x="47" y="58" fill="#787b86" font-size="5" text-anchor="middle">No sé lo que no sé</text><text x="95" y="47" fill="#555" font-size="8">→</text><rect x="100" y="26" width="85" height="36" rx="5" fill="#f59e0b15" stroke="#f59e0b"/><text x="142" y="40" fill="#f59e0b" font-size="6" text-anchor="middle" font-weight="bold">2. INCOMPETENTE</text><text x="142" y="50" fill="#f59e0b" font-size="5" text-anchor="middle">CONSCIENTE</text><text x="142" y="58" fill="#787b86" font-size="5" text-anchor="middle">Sé que no sé</text><text x="190" y="47" fill="#555" font-size="8">→</text><rect x="195" y="26" width="85" height="36" rx="5" fill="#3b82f615" stroke="#3b82f6"/><text x="237" y="40" fill="#3b82f6" font-size="6" text-anchor="middle" font-weight="bold">3. COMPETENTE</text><text x="237" y="50" fill="#3b82f6" font-size="5" text-anchor="middle">CONSCIENTE</text><text x="237" y="58" fill="#787b86" font-size="5" text-anchor="middle">Puedo si me concentro</text><text x="285" y="47" fill="#555" font-size="8">→</text><rect x="290" y="26" width="85" height="36" rx="5" fill="#26a69a15" stroke="#26a69a"/><text x="332" y="40" fill="#26a69a" font-size="6" text-anchor="middle" font-weight="bold">4. COMPETENTE</text><text x="332" y="50" fill="#26a69a" font-size="5" text-anchor="middle">INCONSCIENTE</text><text x="332" y="58" fill="#787b86" font-size="5" text-anchor="middle">Lo hago sin pensar</text><text x="380" y="47" fill="#555" font-size="8">→</text><rect x="385" y="26" width="68" height="36" rx="5" fill="#f59e0b15" stroke="#f59e0b"/><text x="419" y="40" fill="#f59e0b" font-size="6" text-anchor="middle" font-weight="bold">5. MAESTRÍA</text><text x="419" y="52" fill="#787b86" font-size="5" text-anchor="middle">Adapto y evoluciono</text><text x="230" y="80" fill="#26a69a" font-size="7" text-anchor="middle" font-weight="bold">Etapa 4 = consistencia real. Requiere 10-18 meses de práctica dedicada.</text></svg></div>
+<div class="strategy-box"><h4>Etapa 1: Incompetente Inconsciente (Mes 1)</h4><p>"No sé lo que no sé." Crees que el trading es fácil. Haces trades aleatorios. Puedes ganar algo por suerte. Aquí es donde el 50% abandona.</p></div>
+<div class="strategy-box"><h4>Etapa 2: Incompetente Consciente (Meses 2-4)</h4><p>"Ahora sé que no sé nada." Empiezas a estudiar (este curso). Te das cuenta de la complejidad. Frustración. Es NORMAL. No abandones aquí.</p></div>
+<div class="strategy-box"><h4>Etapa 3: Competente Consciente (Meses 5-9)</h4><p>"Puedo hacerlo si me concentro." Tu estrategia funciona cuando sigues tu plan. Pero todavía luchas con las emociones. Necesitas enfoque activo.</p></div>
 <div class="strategy-box"><h4>Etapa 4: Competente Inconsciente (Meses 10-18)</h4><p>"Lo hago sin pensar." Tu plan de trading es automático. Tomas decisiones correctas naturalmente. Aqui empiezas a ser consistente.</p></div>
 <div class="strategy-box"><h4>Etapa 5: Maestria (18+ meses)</h4><p>"Adapto y evoluciono." Lees el mercado como un libro. Adaptas tu estrategia segun condiciones. Eres rentable consistentemente. Vives del trading.</p></div>
 <h3>Tu Plan de Accion Inmediato</h3>
 <div class="highlight-box green"><h4>Que hacer AHORA MISMO</h4><ol>
 <li><strong>Completa la Fase 1</strong> de este curso (ya casi estas)</li>
 <li><strong>Abre TradingView</strong> y familiarizate con la plataforma</li>
-<li><strong>NO pongas dinero real</strong> en ningun lado todavia</li>
+<li><strong>NO pongas dinero real</strong> en ningun lado todavía</li>
 <li><strong>Sigue con la Fase 2</strong> (Analisis Tecnico) mañana</li>
-<li><strong>Dedica 1-2 horas al dia</strong> al estudio y práctica</li>
+<li><strong>Dedica 1-2 horas al día</strong> al estudio y práctica</li>
 <li><strong>Se paciente:</strong> esto es un maraton, no un sprint</li>
 </ol></div>
 <div class="warning-box"><h4>El Timeline Realista</h4><ul>
@@ -591,13 +593,13 @@ export const PHASE_1: Phase = {
           keyPoints: [
             "5 etapas: incompetente inconsciente → competente inconsciente → maestria",
             "El camino toma 12-18 meses mínimo para ser consistente",
-            "Dedica 1-2 horas al dia al estudio y práctica",
+            "Dedica 1-2 horas al día al estudio y práctica",
             "Meses 1-6: estudio y demo. Meses 7-12: prop firms y cuenta real",
             "Es un maraton, no un sprint. La paciencia gana."
           ],
           quiz: [
-            { question: "En que etapa empiezas a ser realmente consistente?", options: ["Etapa 1 - Incompetente inconsciente", "Etapa 2 - Incompetente consciente", "Etapa 4 - Competente inconsciente", "Desde el primer dia"], correctIndex: 2, explanation: "La consistencia llega en la Etapa 4 (Competente Inconsciente), cuando tu plan de trading se vuelve automático y tomas decisiones correctas sin esfuerzo consciente." },
-            { question: "Cuanto tiempo toma de forma realista ser un trader consistente?", options: ["1-2 semanas", "1-2 meses", "12-18 meses", "5+ años"], correctIndex: 2, explanation: "12-18 meses es un timeline realista para un trader dedicado que estudia y práctica 1-2 horas al dia. Puede ser más rápido con dedicacion completa, pero rara vez menos de 9 meses." }
+            { question: "En que etapa empiezas a ser realmente consistente?", options: ["Etapa 1 - Incompetente inconsciente", "Etapa 2 - Incompetente consciente", "Etapa 4 - Competente inconsciente", "Desde el primer día"], correctIndex: 2, explanation: "La consistencia llega en la Etapa 4 (Competente Inconsciente), cuando tu plan de trading se vuelve automático y tomas decisiones correctas sin esfuerzo consciente." },
+            { question: "Cuanto tiempo toma de forma realista ser un trader consistente?", options: ["1-2 semanas", "1-2 meses", "12-18 meses", "5+ años"], correctIndex: 2, explanation: "12-18 meses es un timeline realista para un trader dedicado que estudia y práctica 1-2 horas al día. Puede ser más rápido con dedicacion completa, pero rara vez menos de 9 meses." }
           ]
         }
       ]
