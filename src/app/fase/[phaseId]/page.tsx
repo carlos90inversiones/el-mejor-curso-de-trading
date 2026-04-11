@@ -85,6 +85,28 @@ export default function FasePage({ params }: { params: Promise<{ phaseId: string
             </div>
           ))}
         </div>
+        {/* Navigation between phases */}
+        <div className="flex justify-between items-center mt-10 pt-6 border-t border-[#2a2a40]">
+          {(() => {
+            const currentIdx = COURSE_DATA.findIndex(p => p.id === phaseId);
+            const prev = currentIdx > 0 ? COURSE_DATA[currentIdx - 1] : null;
+            const next = currentIdx < COURSE_DATA.length - 1 ? COURSE_DATA[currentIdx + 1] : null;
+            return (
+              <>
+                {prev ? (
+                  <Link href={`/fase/${prev.id}`} className="text-[#a0a0b8] hover:text-white transition text-sm">
+                    ← Fase {prev.number}: {prev.title}
+                  </Link>
+                ) : <div />}
+                {next ? (
+                  <Link href={`/fase/${next.id}`} className="text-[#a0a0b8] hover:text-white transition text-sm">
+                    Fase {next.number}: {next.title} →
+                  </Link>
+                ) : <div />}
+              </>
+            );
+          })()}
+        </div>
       </main>
       <Footer />
     </div>

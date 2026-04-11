@@ -19,6 +19,7 @@ export default function Footer() {
               <Link href="/curso" className="text-sm text-[#555] hover:text-[#a0a0b8] transition block">Todas las Fases</Link>
               <Link href="/herramientas" className="text-sm text-[#555] hover:text-[#a0a0b8] transition block">Herramientas</Link>
               <Link href="/fase/fase-1" className="text-sm text-[#555] hover:text-[#a0a0b8] transition block">Empezar Fase 1</Link>
+              <Link href="/sobre" className="text-sm text-[#555] hover:text-[#a0a0b8] transition block">Sobre Trading Pro</Link>
               <Link href="/changelog" className="text-sm text-[#555] hover:text-[#a0a0b8] transition block">Changelog</Link>
             </div>
           </div>

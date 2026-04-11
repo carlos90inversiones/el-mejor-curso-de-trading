@@ -28,8 +28,8 @@ export default function LandingPage() {
             <Link href="/curso" className="bg-gradient-to-r from-blue-600 to-purple-600 text-white text-lg px-10 py-4 rounded-xl hover:opacity-90 transition font-bold shadow-lg shadow-blue-500/25 hover-lift">
               Empezar Ahora →
             </Link>
-            <Link href="/curso" className="bg-[#1a1a2e] border border-[#2a2a40] text-white text-lg px-10 py-4 rounded-xl hover:bg-[#222240] transition font-medium">
-              Ver el Curso
+            <Link href="/herramientas" className="bg-[#1a1a2e] border border-[#2a2a40] text-white text-lg px-10 py-4 rounded-xl hover:bg-[#222240] transition font-medium">
+              Ver Herramientas
             </Link>
           </div>
         </div>

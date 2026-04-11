@@ -131,30 +131,45 @@ export default function CursoPage() {
           </div>
         </div>
 
-        {/* Phases */}
-        <h2 className="text-2xl font-bold text-white mb-6">Fases del Curso</h2>
+        {/* Phases with modules visible */}
+        <div className="flex items-center justify-between mb-6">
+          <h2 className="text-2xl font-bold text-white">Fases del Curso</h2>
+          <Link href="/herramientas" className="text-xs text-blue-400 hover:text-blue-300 transition">
+            🛠️ Herramientas del Trader →
+          </Link>
+        </div>
         <div className="space-y-4">
           {COURSE_DATA.map((phase, idx) => {
             const phaseLessons = phase.modules.reduce((t, m) => t + m.lessons.length, 0);
             const phaseCompleted = phase.modules.reduce((t, m) =>
               t + m.lessons.filter(l => progress.completed.has(l.id)).length, 0);
             const phasePercent = phaseLessons > 0 ? Math.round((phaseCompleted / phaseLessons) * 100) : 0;
+
+            // Find next incomplete lesson in this phase
+            let nextInPhase: string | null = null;
+            for (const mod of phase.modules) {
+              for (const lesson of mod.lessons) {
+                if (!progress.completed.has(lesson.id) && !nextInPhase) nextInPhase = lesson.id;
+              }
+            }
+
             return (
               <ScrollReveal key={phase.id} delay={idx * 0.05}>
-                <Link href={`/fase/${phase.id}`}>
-                  <div className="rounded-2xl p-6 transition-all duration-300 hover-lift cursor-pointer"
-                    style={{ background: `${phase.color}12`, border: `2px solid ${phase.color}44`, borderLeft: `5px solid ${phase.color}` }}>
-                    <div className="flex items-start gap-5">
-                      <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${phase.gradient} flex items-center justify-center text-xl font-bold text-white shrink-0`}>
+                <div className="rounded-2xl overflow-hidden transition-all duration-300"
+                  style={{ border: `2px solid ${phase.color}33`, borderLeft: `5px solid ${phase.color}` }}>
+                  {/* Phase header - clickable */}
+                  <Link href={`/fase/${phase.id}`}
+                    className="block p-5 hover:bg-white/[0.02] transition" style={{ background: `${phase.color}08` }}>
+                    <div className="flex items-start gap-4">
+                      <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${phase.gradient} flex items-center justify-center text-lg font-bold text-white shrink-0`}>
                         {phase.number}
                       </div>
                       <div className="flex-1 min-w-0">
                         <div className="flex items-center gap-2 mb-1">
                           <span className="text-xs font-semibold uppercase tracking-wider" style={{ color: phase.color }}>Fase {phase.number}</span>
-                          {phasePercent === 100 && <span className="text-xs bg-green-900/50 text-green-400 px-2 py-0.5 rounded-full">Completada</span>}
+                          {phasePercent === 100 && <span className="text-xs bg-green-900/50 text-green-400 px-2 py-0.5 rounded-full">✓ Completada</span>}
                         </div>
-                        <h3 className="text-lg font-bold text-white mb-1">{phase.title}</h3>
-                        <p className="text-sm text-[#a0a0b8] mb-3 line-clamp-2">{phase.description}</p>
+                        <h3 className="text-lg font-bold text-white mb-2">{phase.title}</h3>
                         <div className="flex items-center gap-3">
                           <div className="flex-1 h-2 bg-[#0d0d15] rounded-full overflow-hidden">
                             <div className="h-full rounded-full transition-all" style={{ width: `${phasePercent}%`, background: phase.color }} />
@@ -163,8 +178,26 @@ export default function CursoPage() {
                         </div>
                       </div>
                     </div>
+                  </Link>
+                  {/* Modules preview */}
+                  <div className="px-5 pb-4 space-y-1">
+                    {phase.modules.map(mod => (
+                      <div key={mod.id} className="flex items-center gap-2 text-xs text-[#555]">
+                        <span>{mod.icon}</span>
+                        <span className="text-[#a0a0b8]">{mod.title}</span>
+                        <span>·</span>
+                        <span>{mod.lessons.length} lecciones</span>
+                        {mod.lessons.every(l => progress.completed.has(l.id)) && <span className="text-green-400">✓</span>}
+                      </div>
+                    ))}
+                    {nextInPhase && phasePercent < 100 && (
+                      <Link href={`/leccion/${nextInPhase}`}
+                        className="flex items-center gap-2 text-xs text-blue-400 hover:text-blue-300 mt-2 transition">
+                        <span>▶</span> Continuar desde aquí
+                      </Link>
+                    )}
                   </div>
-                </Link>
+                </div>
               </ScrollReveal>
             );
           })}
