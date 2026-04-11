@@ -46,6 +46,7 @@ import { PHASE_4 } from "./phases/phase4";
 import { PHASE_5 } from "./phases/phase5";
 import { PHASE_6 } from "./phases/phase6";
 import { PHASE_7 } from "./phases/phase7";
+import { PHASE_8 } from "./phases/phase8";
 
 export const COURSE_DATA: Phase[] = [
   PHASE_1,
@@ -55,6 +56,7 @@ export const COURSE_DATA: Phase[] = [
   PHASE_5,
   PHASE_6,
   PHASE_7,
+  PHASE_8,
 ];
 
 export function getTotalLessons(): number {

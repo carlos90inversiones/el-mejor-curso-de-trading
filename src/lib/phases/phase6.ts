@@ -827,6 +827,725 @@ send_alert("ALERTA: Drawdown al 3.5% - revisad")</code></pre></div></div>
           ]
         }
       ]
+    },
+    {
+      id: "mod-6-4",
+      title: "Trading Algorítmico Avanzado",
+      description: "Pine Script profesional, portafolio de estrategias y optimización robusta",
+      icon: "⚙️",
+      color: "#F59E0B",
+      lessons: [
+        {
+          id: "6-4-1",
+          title: "Pine Script Avanzado: Indicadores Custom Profesionales",
+          duration: "30 min",
+          content: `
+<h2>Pine Script Avanzado: Crea Indicadores de Nivel Institucional</h2>
+<div class="analogy-box">
+<h3>La Analogía del Ingeniero vs el Operario</h3>
+<p>Hasta ahora has sido un <strong>operario</strong>: usas las herramientas que otros crearon. Ahora te conviertes en <strong>ingeniero</strong>: diseñas tus propias herramientas. Los indicadores custom profesionales te dan una ventaja competitiva porque NADIE más tiene exactamente tu combinación de señales.</p>
+</div>
+
+<h3>Indicadores Multi-Timeframe (MTF)</h3>
+<p>Los indicadores multi-timeframe te permiten <strong>ver la estructura del mercado superior sin cambiar de gráfico</strong>. Esto es crucial para confirmar tendencias y evitar operar contra la corriente principal.</p>
+
+<div class="highlight-box green">
+<h4>¿Por Qué Multi-Timeframe?</h4>
+<ul>
+<li><strong>Contexto superior:</strong> Ves la tendencia del timeframe mayor directamente en tu gráfico de operación</li>
+<li><strong>Filtro de señales:</strong> Solo operas en la dirección de la tendencia superior</li>
+<li><strong>Confluencia:</strong> Cuando múltiples timeframes coinciden, la probabilidad de éxito aumenta</li>
+<li><strong>Eficiencia:</strong> No necesitas cambiar entre gráficos constantemente</li>
+</ul>
+</div>
+
+<div class="code-block"><pre><code>//@version=5
+indicator("MTF EMA + RSI Dashboard", overlay=true)
+
+// === INPUTS ===
+emaLen   = input.int(21, "Longitud EMA")
+rsiLen   = input.int(14, "Longitud RSI")
+htf1     = input.timeframe("60",  "Timeframe Superior 1")
+htf2     = input.timeframe("240", "Timeframe Superior 2")
+
+// === EMA MULTI-TIMEFRAME ===
+ema_current = ta.ema(close, emaLen)
+ema_htf1    = request.security(syminfo.tickerid, htf1, ta.ema(close, emaLen))
+ema_htf2    = request.security(syminfo.tickerid, htf2, ta.ema(close, emaLen))
+
+// === RSI MULTI-TIMEFRAME ===
+rsi_current = ta.rsi(close, rsiLen)
+rsi_htf1    = request.security(syminfo.tickerid, htf1, ta.rsi(close, rsiLen))
+rsi_htf2    = request.security(syminfo.tickerid, htf2, ta.rsi(close, rsiLen))
+
+// === PLOTEO DE EMAs ===
+plot(ema_current, "EMA Actual",   color=color.blue,   linewidth=2)
+plot(ema_htf1,    "EMA HTF1",     color=color.orange,  linewidth=2)
+plot(ema_htf2,    "EMA HTF2",     color=color.red,     linewidth=3)
+
+// === TABLA DASHBOARD ===
+var table panel = table.new(position.top_right, 4, 4,
+     bgcolor=color.new(color.black, 80), border_width=1)
+
+if barstate.islast
+    table.cell(panel, 0, 0, "TF",        text_color=color.white, text_size=size.small)
+    table.cell(panel, 1, 0, "Tendencia",  text_color=color.white, text_size=size.small)
+    table.cell(panel, 2, 0, "RSI",        text_color=color.white, text_size=size.small)
+    table.cell(panel, 3, 0, "Señal",      text_color=color.white, text_size=size.small)
+
+    // Fila timeframe actual
+    trend_curr = close > ema_current ? "ALCISTA" : "BAJISTA"
+    table.cell(panel, 0, 1, timeframe.period, text_color=color.white, text_size=size.small)
+    table.cell(panel, 1, 1, trend_curr,
+         text_color=close > ema_current ? color.green : color.red, text_size=size.small)
+    table.cell(panel, 2, 1, str.tostring(rsi_current, "#.0"),
+         text_color=rsi_current > 70 ? color.red : rsi_current < 30 ? color.green : color.white,
+         text_size=size.small)
+
+    // Fila HTF1
+    trend_htf1 = ema_htf1 > ema_htf1[1] ? "ALCISTA" : "BAJISTA"
+    table.cell(panel, 0, 2, htf1, text_color=color.white, text_size=size.small)
+    table.cell(panel, 1, 2, trend_htf1,
+         text_color=trend_htf1 == "ALCISTA" ? color.green : color.red, text_size=size.small)
+    table.cell(panel, 2, 2, str.tostring(rsi_htf1, "#.0"),
+         text_color=rsi_htf1 > 70 ? color.red : rsi_htf1 < 30 ? color.green : color.white,
+         text_size=size.small)
+
+    // Fila HTF2
+    trend_htf2 = ema_htf2 > ema_htf2[1] ? "ALCISTA" : "BAJISTA"
+    table.cell(panel, 0, 3, htf2, text_color=color.white, text_size=size.small)
+    table.cell(panel, 1, 3, trend_htf2,
+         text_color=trend_htf2 == "ALCISTA" ? color.green : color.red, text_size=size.small)
+    table.cell(panel, 2, 3, str.tostring(rsi_htf2, "#.0"),
+         text_color=rsi_htf2 > 70 ? color.red : rsi_htf2 < 30 ? color.green : color.white,
+         text_size=size.small)
+
+    // Señal combinada
+    allBull = close > ema_current and trend_htf1 == "ALCISTA" and trend_htf2 == "ALCISTA"
+    allBear = close < ema_current and trend_htf1 == "BAJISTA" and trend_htf2 == "BAJISTA"
+    table.cell(panel, 3, 1, allBull ? "COMPRAR" : allBear ? "VENDER" : "ESPERAR",
+         text_color=allBull ? color.green : allBear ? color.red : color.yellow,
+         text_size=size.normal)</code></pre></div>
+
+<h3>Alertas Personalizadas con Condiciones Complejas</h3>
+<p>Las alertas profesionales no son simples cruces de media. Combinan <strong>múltiples condiciones, filtros de volumen y confirmaciones multi-timeframe</strong>.</p>
+
+<div class="code-block"><pre><code>//@version=5
+indicator("Sistema de Alertas Profesional", overlay=true)
+
+// === CONDICIONES DE ENTRADA ===
+ema21   = ta.ema(close, 21)
+ema50   = ta.ema(close, 50)
+rsi     = ta.rsi(close, 14)
+vol_sma = ta.sma(volume, 20)
+
+// Condición LONG: cruce EMA + RSI no sobrecomprado + volumen alto
+longCondition = ta.crossover(ema21, ema50) and
+     rsi < 65 and
+     volume > vol_sma * 1.3
+
+// Condición SHORT: cruce EMA bajista + RSI no sobrevendido + volumen alto
+shortCondition = ta.crossunder(ema21, ema50) and
+     rsi > 35 and
+     volume > vol_sma * 1.3
+
+// === ALERTAS ===
+alertcondition(longCondition,  title="Señal LONG",
+     message="LONG {{ticker}} @ {{close}} | RSI: " + str.tostring(rsi, "#.0") +
+     " | Vol: " + str.tostring(volume/vol_sma*100, "#.0") + "% del promedio")
+
+alertcondition(shortCondition, title="Señal SHORT",
+     message="SHORT {{ticker}} @ {{close}} | RSI: " + str.tostring(rsi, "#.0") +
+     " | Vol: " + str.tostring(volume/vol_sma*100, "#.0") + "% del promedio")
+
+// === VISUAL: formas en el gráfico ===
+plotshape(longCondition,  title="Long",  style=shape.triangleup,
+     location=location.belowbar, color=color.green, size=size.normal, text="LONG")
+plotshape(shortCondition, title="Short", style=shape.triangledown,
+     location=location.abovebar, color=color.red, size=size.normal, text="SHORT")</code></pre></div>
+
+<h3>Strategy Tester: Reglas de Entrada y Salida Automatizadas</h3>
+<p>El <strong>Strategy Tester</strong> de Pine Script te permite backtestear directamente en TradingView con resultados detallados: profit factor, drawdown, ratio Sharpe y más.</p>
+
+<div class="code-block"><pre><code>//@version=5
+strategy("Estrategia EMA Cross con Gestión de Riesgo",
+     overlay=true, default_qty_type=strategy.percent_of_equity,
+     default_qty_value=2, initial_capital=10000, commission_value=0.04)
+
+// === PARÁMETROS ===
+emaFast = input.int(21, "EMA Rápida")
+emaSlow = input.int(50, "EMA Lenta")
+slPercent = input.float(1.5, "Stop Loss %", step=0.1)
+tpPercent = input.float(3.0, "Take Profit %", step=0.1)
+
+// === CÁLCULOS ===
+fast = ta.ema(close, emaFast)
+slow = ta.ema(close, emaSlow)
+
+// === CONDICIONES ===
+longEntry  = ta.crossover(fast, slow)  and ta.rsi(close, 14) < 65
+shortEntry = ta.crossunder(fast, slow) and ta.rsi(close, 14) > 35
+
+// === EJECUCIÓN ===
+if longEntry
+    strategy.entry("Long", strategy.long)
+    strategy.exit("Exit Long", "Long",
+         stop=close * (1 - slPercent/100),
+         limit=close * (1 + tpPercent/100))
+
+if shortEntry
+    strategy.entry("Short", strategy.short)
+    strategy.exit("Exit Short", "Short",
+         stop=close * (1 + slPercent/100),
+         limit=close * (1 - tpPercent/100))
+
+// === VISUALIZACIÓN ===
+plot(fast, "EMA Rápida", color=color.blue,  linewidth=2)
+plot(slow, "EMA Lenta",  color=color.orange, linewidth=2)
+bgcolor(strategy.position_size > 0 ? color.new(color.green, 90) :
+     strategy.position_size < 0 ? color.new(color.red, 90) : na)</code></pre></div>
+
+<h3>Indicador SMC Completo: Detección de Order Blocks, FVGs y Estructura</h3>
+<div class="strategy-box">
+<h4>Smart Money Concepts (SMC) Automatizado</h4>
+<p>Este es el indicador más avanzado del curso: <strong>detecta automáticamente Order Blocks, Fair Value Gaps y cambios de estructura</strong>. Los traders institucionales usan conceptos similares — ahora tú puedes automatizar su detección.</p>
+</div>
+
+<div class="code-block"><pre><code>//@version=5
+indicator("SMC Detector Pro", overlay=true, max_boxes_count=500,
+     max_labels_count=500, max_lines_count=500)
+
+// === ORDER BLOCK DETECTION ===
+obLookback = input.int(10, "OB Lookback")
+
+// Detectar vela de impulso alcista (para OB bajista previo)
+bullishImpulse = close > open and (close - open) > ta.atr(14) * 1.5
+bearishImpulse = open > close and (open - close) > ta.atr(14) * 1.5
+
+// Encontrar el último Order Block antes del impulso
+var box bullOB = na
+var box bearOB = na
+
+if bullishImpulse
+    // Buscar la última vela bajista antes del impulso = Bullish OB
+    for i = 1 to obLookback
+        if close[i] < open[i]
+            bullOB := box.new(bar_index[i], high[i], bar_index, low[i],
+                 bgcolor=color.new(color.green, 85), border_color=color.green)
+            label.new(bar_index[i], high[i], "OB+",
+                 style=label.style_label_down, color=color.green,
+                 textcolor=color.white, size=size.small)
+            break
+
+if bearishImpulse
+    for i = 1 to obLookback
+        if close[i] > open[i]
+            bearOB := box.new(bar_index[i], high[i], bar_index, low[i],
+                 bgcolor=color.new(color.red, 85), border_color=color.red)
+            label.new(bar_index[i], low[i], "OB-",
+                 style=label.style_label_up, color=color.red,
+                 textcolor=color.white, size=size.small)
+            break
+
+// === FAIR VALUE GAP (FVG) DETECTION ===
+// FVG alcista: low[0] > high[2] (gap entre vela actual y dos velas atrás)
+fvgBull = low > high[2] and close[1] > open[1]
+fvgBear = high < low[2] and close[1] < open[1]
+
+if fvgBull
+    box.new(bar_index[1], low, bar_index[1], high[2],
+         bgcolor=color.new(color.green, 90), border_color=color.green,
+         border_style=line.style_dashed)
+    label.new(bar_index[1], (low + high[2])/2, "FVG+",
+         style=label.style_label_center, color=color.new(color.green, 70),
+         textcolor=color.white, size=size.tiny)
+
+if fvgBear
+    box.new(bar_index[1], high, bar_index[1], low[2],
+         bgcolor=color.new(color.red, 90), border_color=color.red,
+         border_style=line.style_dashed)
+    label.new(bar_index[1], (high + low[2])/2, "FVG-",
+         style=label.style_label_center, color=color.new(color.red, 70),
+         textcolor=color.white, size=size.tiny)
+
+// === STRUCTURE: Break of Structure (BOS) ===
+swingHigh = ta.pivothigh(high, 5, 5)
+swingLow  = ta.pivotlow(low, 5, 5)
+var float lastHigh = na
+var float lastLow  = na
+
+if not na(swingHigh)
+    lastHigh := swingHigh
+    label.new(bar_index[5], swingHigh, "HH",
+         style=label.style_label_down, color=color.blue,
+         textcolor=color.white, size=size.tiny)
+
+if not na(swingLow)
+    lastLow := swingLow
+    label.new(bar_index[5], swingLow, "LL",
+         style=label.style_label_up, color=color.blue,
+         textcolor=color.white, size=size.tiny)
+
+// BOS: precio rompe el último swing
+bosUp   = not na(lastHigh) and close > lastHigh and close[1] <= lastHigh
+bosDown = not na(lastLow)  and close < lastLow  and close[1] >= lastLow
+
+if bosUp
+    line.new(bar_index - 10, lastHigh, bar_index, lastHigh,
+         color=color.green, style=line.style_solid, width=2)
+    label.new(bar_index, lastHigh, "BOS ↑",
+         style=label.style_label_up, color=color.green,
+         textcolor=color.white)
+
+if bosDown
+    line.new(bar_index - 10, lastLow, bar_index, lastLow,
+         color=color.red, style=line.style_solid, width=2)
+    label.new(bar_index, lastLow, "BOS ↓",
+         style=label.style_label_down, color=color.red,
+         textcolor=color.white)</code></pre></div>
+
+<div class="warning-box">
+<h4>Importante sobre el Indicador SMC</h4>
+<ul>
+<li>Este indicador es una <strong>herramienta de análisis</strong>, no una señal automática de compra/venta</li>
+<li>Los Order Blocks y FVGs deben <strong>confirmarse con la acción del precio en tiempo real</strong></li>
+<li>Úsalo como <strong>complemento</strong> a tu análisis manual, no como sustituto</li>
+<li>Ajusta el parámetro <em>OB Lookback</em> según el timeframe que operes</li>
+</ul>
+</div>
+
+<div class="highlight-box blue">
+<h4>Resumen: Tu Arsenal de Pine Script</h4>
+<div class="grid-cards">
+<div class="card">
+<h5>Multi-Timeframe</h5>
+<p>Contexto superior en tu gráfico. Filtra señales falsas viendo la tendencia mayor.</p>
+</div>
+<div class="card">
+<h5>Alertas Profesionales</h5>
+<p>Combinan múltiples condiciones + volumen. Te avisan solo cuando TODO se alinea.</p>
+</div>
+<div class="card">
+<h5>Strategy Tester</h5>
+<p>Backtesting directo en TradingView con métricas completas.</p>
+</div>
+<div class="card">
+<h5>SMC Detector</h5>
+<p>Order Blocks + FVGs + estructura de mercado automatizados.</p>
+</div>
+</div>
+</div>`,
+          keyPoints: [
+            "Los indicadores multi-timeframe permiten ver la tendencia superior sin cambiar de gráfico — opera solo en la dirección de la tendencia mayor",
+            "Las alertas profesionales combinan múltiples condiciones (EMA + RSI + volumen) para reducir señales falsas drásticamente",
+            "El Strategy Tester de Pine Script permite backtestear estrategias completas con métricas de rendimiento directamente en TradingView",
+            "Un indicador SMC automatiza la detección de Order Blocks, Fair Value Gaps y Break of Structure — herramientas de análisis institucional",
+            "Los indicadores custom son herramientas de APOYO al análisis, nunca señales automáticas de compra/venta sin confirmación"
+          ],
+          quiz: [
+            { question: "¿Qué función de Pine Script se usa para obtener datos de un timeframe superior?", options: ["ta.ema()", "request.security()", "input.timeframe()", "syminfo.tickerid()"], correctIndex: 1, explanation: "request.security() permite solicitar datos de cualquier timeframe diferente al actual, esencial para análisis multi-timeframe." },
+            { question: "¿Cuál es la diferencia principal entre 'indicator()' y 'strategy()' en Pine Script?", options: ["No hay diferencia", "indicator() solo muestra datos visuales; strategy() permite simular operaciones con el Strategy Tester", "strategy() es más rápido", "indicator() es para profesionales y strategy() para principiantes"], correctIndex: 1, explanation: "indicator() crea herramientas visuales de análisis, mientras que strategy() permite simular entradas/salidas y obtener métricas de backtesting completas." },
+            { question: "¿Qué es un Order Block (OB) en Smart Money Concepts?", options: ["Un bloque de órdenes pendientes visibles en el libro", "La última vela contraria antes de un movimiento impulsivo fuerte — zona institucional de interés", "Un tipo de indicador de volumen", "Una orden limitada que bloquea otras órdenes"], correctIndex: 1, explanation: "Un Order Block es la última vela contraria antes de un impulso fuerte, representando la zona donde las instituciones acumularon posiciones antes del movimiento." }
+          ]
+        },
+        {
+          id: "6-4-2",
+          title: "Portfolio de Estrategias: No Dependas de Una Sola",
+          duration: "25 min",
+          content: `
+<h2>Portfolio de Estrategias: Diversifica tu Trading</h2>
+<div class="analogy-box">
+<h3>La Analogía del Equipo de Fútbol</h3>
+<p>Un equipo de fútbol no pone 11 delanteros. Tiene <strong>defensas, mediocampistas y atacantes</strong> porque cada posición cumple una función diferente según el momento del partido. Tu trading debe funcionar igual: necesitas <strong>estrategias ofensivas</strong> (trend following) para cuando el mercado se mueve, <strong>estrategias defensivas</strong> (mean reversion) para cuando el mercado lateral, y <strong>estrategias de contraataque</strong> (breakout) para momentos explosivos.</p>
+</div>
+
+<h3>¿Por Qué Necesitas Múltiples Estrategias?</h3>
+<div class="warning-box">
+<h4>El Error Fatal del Trader de Una Sola Estrategia</h4>
+<p>Si solo tienes una estrategia de tendencia y el mercado entra en rango 3 meses... <strong>pierdes 3 meses seguidos</strong>. Tu cuenta sufre, tu psicología se destruye y terminas abandonando una estrategia que SÍ funciona — solo que no en TODAS las condiciones de mercado.</p>
+</div>
+
+<div class="highlight-box green">
+<h4>Beneficios de un Portfolio de Estrategias</h4>
+<ul>
+<li><strong>Curva de equity más suave:</strong> Cuando una estrategia pierde, otra puede ganar</li>
+<li><strong>Menos drawdown:</strong> El drawdown combinado es menor que el de cada estrategia individual</li>
+<li><strong>Ingresos más consistentes:</strong> No dependes de un solo tipo de mercado</li>
+<li><strong>Resiliencia psicológica:</strong> Es más fácil aguantar rachas malas si otras estrategias compensan</li>
+<li><strong>Adaptabilidad:</strong> Cubres más condiciones de mercado sin cambiar tu operativa</li>
+</ul>
+</div>
+
+<h3>Los 3 Pilares de un Portfolio de Estrategias</h3>
+<div class="grid-cards">
+<div class="card">
+<h4>1. Trend Following (Seguimiento de Tendencia)</h4>
+<p><strong>Cuándo brilla:</strong> Mercados con tendencias claras y sostenidas</p>
+<p><strong>Cuándo sufre:</strong> Mercados laterales y choppy</p>
+<p><strong>Herramientas:</strong> Cruces de EMAs, ADX > 25, canales de Donchian, breakouts de estructura</p>
+<p><strong>Win rate típico:</strong> 35-45% (pero las ganadoras son mucho mayores que las perdedoras)</p>
+<p><strong>Ejemplo:</strong> Entrar cuando EMA21 cruza EMA50 al alza con ADX > 25. Stop trailing con ATR.</p>
+</div>
+<div class="card">
+<h4>2. Mean Reversion (Reversión a la Media)</h4>
+<p><strong>Cuándo brilla:</strong> Mercados en rango, laterales, consolidación</p>
+<p><strong>Cuándo sufre:</strong> Tendencias fuertes y breakouts</p>
+<p><strong>Herramientas:</strong> RSI extremos, Bandas de Bollinger, desviaciones estándar, zonas de soporte/resistencia</p>
+<p><strong>Win rate típico:</strong> 60-70% (pero los trades ganadores son más pequeños)</p>
+<p><strong>Ejemplo:</strong> Comprar cuando RSI < 25 y precio toca Banda Bollinger inferior. TP en la media.</p>
+</div>
+<div class="card">
+<h4>3. Breakout (Ruptura)</h4>
+<p><strong>Cuándo brilla:</strong> Después de consolidaciones prolongadas, noticias de alto impacto</p>
+<p><strong>Cuándo sufre:</strong> Mercados sin volatilidad, fakeouts frecuentes</p>
+<p><strong>Herramientas:</strong> Rangos de consolidación, ATR para medir volatilidad, volumen como confirmación</p>
+<p><strong>Win rate típico:</strong> 30-40% (pero las ganadoras pueden ser enormes: 3-5R)</p>
+<p><strong>Ejemplo:</strong> Entrar en ruptura de rango de 20 velas con volumen > 150% del promedio. Stop debajo del rango.</p>
+</div>
+</div>
+
+<h3>Correlación Entre Estrategias</h3>
+<p>La clave de un buen portfolio es que las estrategias tengan <strong>baja correlación</strong> entre sí. Si todas ganan y pierden al mismo tiempo, no hay diversificación real.</p>
+
+<div class="calculation-box">
+<h4>Tabla de Correlación Ideal</h4>
+<table>
+<tr><th>Estrategia</th><th>Trend Following</th><th>Mean Reversion</th><th>Breakout</th></tr>
+<tr><td><strong>Trend Following</strong></td><td>1.00</td><td>-0.40</td><td>0.30</td></tr>
+<tr><td><strong>Mean Reversion</strong></td><td>-0.40</td><td>1.00</td><td>-0.20</td></tr>
+<tr><td><strong>Breakout</strong></td><td>0.30</td><td>-0.20</td><td>1.00</td></tr>
+</table>
+<p><strong>Interpretación:</strong> Trend Following y Mean Reversion tienen correlación negativa (-0.40), lo que significa que cuando una pierde, la otra tiende a ganar. Esto es EXACTAMENTE lo que queremos.</p>
+</div>
+
+<h3>Asignación de Capital Entre Estrategias</h3>
+<div class="strategy-box">
+<h4>Modelo de Asignación Sugerido para Principiantes</h4>
+<ul>
+<li><strong>50% — Trend Following:</strong> Es la base. Históricamente, las tendencias generan los mayores retornos</li>
+<li><strong>30% — Mean Reversion:</strong> Genera ingresos durante los períodos laterales (que son la mayoría del tiempo)</li>
+<li><strong>20% — Breakout:</strong> Captura movimientos explosivos con riesgo controlado</li>
+</ul>
+<p><strong>Nota:</strong> Esta distribución es un punto de partida. Ajústala según tus resultados de backtesting y tu tolerancia al riesgo.</p>
+</div>
+
+<div class="highlight-box blue">
+<h4>Rebalanceo del Portfolio</h4>
+<p>Cada <strong>mes o trimestre</strong>, revisa el rendimiento de cada estrategia y rebalancea:</p>
+<ul>
+<li>Si una estrategia ha tenido drawdown excesivo (> 2x su drawdown esperado del backtest), <strong>reduce su asignación temporalmente</strong></li>
+<li>Si una estrategia consistentemente supera expectativas, <strong>considera aumentar ligeramente su peso</strong></li>
+<li>Si el mercado ha cambiado de régimen (de tendencial a lateral), <strong>el portfolio se ajusta naturalmente</strong> porque la estrategia correcta toma el protagonismo</li>
+</ul>
+</div>
+
+<h3>Cuándo Retirar una Estrategia</h3>
+<div class="warning-box">
+<h4>Señales de que una Estrategia Debe Retirarse</h4>
+<ul>
+<li><strong>Underperformance sostenida:</strong> Rendimiento por debajo de su backtest durante más de 6 meses consecutivos</li>
+<li><strong>Cambio estructural:</strong> El mercado que operaba ha cambiado fundamentalmente (nueva regulación, cambio de volatilidad permanente)</li>
+<li><strong>Drawdown 2x el esperado:</strong> Si tu backtest mostraba -15% máximo y llevas -30%, algo está mal</li>
+<li><strong>Degradación del edge:</strong> Demasiados participantes usan la misma estrategia, eliminando la ventaja</li>
+</ul>
+<p><strong>IMPORTANTE:</strong> No retires una estrategia solo porque lleva 2 semanas malas. Las rachas perdedoras son NORMALES. Usa datos objetivos, no emociones.</p>
+</div>
+
+<div class="highlight-box green">
+<h4>Construyendo tu Sistema de Trading Robusto</h4>
+<div class="grid-cards">
+<div class="card">
+<h5>Paso 1: Desarrolla</h5>
+<p>Crea y backtestea cada estrategia por separado con al menos 200 operaciones históricas.</p>
+</div>
+<div class="card">
+<h5>Paso 2: Correlaciona</h5>
+<p>Verifica que las estrategias tengan baja correlación. Si todas pierden al mismo tiempo, no sirve.</p>
+</div>
+<div class="card">
+<h5>Paso 3: Asigna capital</h5>
+<p>Distribuye capital según riesgo. Empieza conservador: 50/30/20 o incluso 40/30/30.</p>
+</div>
+<div class="card">
+<h5>Paso 4: Opera y monitorea</h5>
+<p>Ejecuta las 3 estrategias en paralelo. Revisa resultados semanalmente. Rebalancea mensualmente.</p>
+</div>
+</div>
+</div>`,
+          keyPoints: [
+            "Un portfolio de estrategias (trend following + mean reversion + breakout) reduce el drawdown y suaviza la curva de equity porque cada tipo funciona en condiciones de mercado diferentes",
+            "La correlación negativa entre estrategias es la clave: cuando una pierde, otra tiende a ganar — esto es verdadera diversificación",
+            "Asignación sugerida para empezar: 50% trend following, 30% mean reversion, 20% breakout — ajusta según tus resultados de backtesting",
+            "Rebalancea mensual o trimestralmente según rendimiento real vs esperado — no por emociones ni rachas cortas",
+            "Retira una estrategia solo con datos objetivos: underperformance de 6+ meses, drawdown 2x el esperado, o cambio estructural del mercado"
+          ],
+          quiz: [
+            { question: "¿Por qué es peligroso depender de una sola estrategia de trading?", options: ["Porque una sola estrategia siempre pierde dinero", "Porque ninguna estrategia funciona en TODOS los tipos de mercado — cuando el mercado cambia de régimen, tu única estrategia puede perder durante meses", "Porque los brokers no lo permiten", "Porque es aburrido operar una sola estrategia"], correctIndex: 1, explanation: "Los mercados alternan entre tendencias, rangos y explosiones. Una sola estrategia solo funciona bien en uno de estos regímenes, sufriendo pérdidas prolongadas en los demás." },
+            { question: "¿Qué significa que dos estrategias tengan correlación negativa?", options: ["Que ambas pierden al mismo tiempo", "Que cuando una gana, la otra tiende a perder — lo ideal para diversificar un portfolio", "Que una es mejor que la otra", "Que no se pueden usar juntas"], correctIndex: 1, explanation: "La correlación negativa entre estrategias significa que se compensan mutuamente: cuando el mercado lateral daña tu trend following, tu mean reversion tiende a compensar esas pérdidas." },
+            { question: "¿Cuál es la señal más confiable para retirar una estrategia de tu portfolio?", options: ["Que lleve 2 semanas perdiendo", "Que un youtuber diga que ya no funciona", "Rendimiento sostenido por debajo del backtest durante más de 6 meses consecutivos o drawdown 2x el esperado", "Que encuentres una estrategia nueva más emocionante"], correctIndex: 2, explanation: "Las rachas malas de 2-4 semanas son completamente normales. Solo debes retirar una estrategia con evidencia objetiva de degradación prolongada, no por emociones ni opiniones externas." }
+          ]
+        },
+        {
+          id: "6-4-3",
+          title: "Optimización sin Overfitting: El Arte del Backtesting",
+          duration: "30 min",
+          content: `
+<h2>Optimización sin Overfitting: Cómo Saber si tu Estrategia REALMENTE Funciona</h2>
+<div class="analogy-box">
+<h3>La Analogía del Estudiante que Memoriza vs el que Entiende</h3>
+<p>Imagina dos estudiantes antes de un examen. Uno <strong>memoriza</strong> todas las respuestas del examen de práctica y saca 100%. El otro <strong>entiende</strong> los conceptos y saca 85% en la práctica. ¿Quién sacará mejor nota en el examen real? El que entiende, porque el examen tendrá preguntas DIFERENTES. El <strong>overfitting</strong> es exactamente como memorizar: tu estrategia saca resultados perfectos en datos pasados pero FALLA en datos nuevos porque se adaptó al ruido en vez de a los patrones reales.</p>
+</div>
+
+<h3>¿Qué es el Overfitting y Por Qué es el Enemigo #1?</h3>
+<div class="warning-box">
+<h4>La Trampa Más Peligrosa del Backtesting</h4>
+<p>El overfitting ocurre cuando <strong>optimizas tanto los parámetros de tu estrategia que se ajustan perfectamente a los datos históricos, pero pierden toda capacidad predictiva en datos nuevos</strong>. Es la razón número uno por la que estrategias que lucen increíbles en backtest fracasan estrepitosamente en cuenta real.</p>
+<ul>
+<li><strong>Señal de peligro:</strong> Si tu backtest muestra un profit factor > 3 o win rate > 75%, probablemente hay overfitting</li>
+<li><strong>Ejemplo clásico:</strong> "EMA de 23 períodos con RSI de 13 funciona perfecto en EUR/USD de enero a junio 2024" — estos números mágicos solo funcionan en ese período específico</li>
+</ul>
+</div>
+
+<h3>Walk-Forward Optimization: El Estándar de Oro</h3>
+<p>La Walk-Forward Optimization (WFO) es la técnica más confiable para optimizar sin overfitting. Simula <strong>exactamente lo que harías en la vida real</strong>: optimizar con datos pasados y luego operar con datos nuevos.</p>
+
+<div class="strategy-box">
+<h4>Cómo Funciona el Walk-Forward</h4>
+<ol>
+<li><strong>Divide tus datos en ventanas:</strong>
+  <ul>
+  <li>Ventana de optimización (In-Sample): 70-80% de los datos — aquí optimizas los parámetros</li>
+  <li>Ventana de validación (Out-of-Sample): 20-30% de los datos — aquí pruebas sin tocar nada</li>
+  </ul>
+</li>
+<li><strong>Desliza la ventana hacia adelante:</strong>
+  <ul>
+  <li>Período 1: Optimiza en Ene-Jun, valida en Jul-Ago</li>
+  <li>Período 2: Optimiza en Mar-Ago, valida en Sep-Oct</li>
+  <li>Período 3: Optimiza en May-Oct, valida en Nov-Dic</li>
+  </ul>
+</li>
+<li><strong>Evalúa los resultados Out-of-Sample:</strong> Si el rendimiento es consistente en TODAS las ventanas de validación, tu estrategia es robusta</li>
+</ol>
+</div>
+
+<div class="code-block"><pre><code># Walk-Forward Optimization en Python
+import pandas as pd
+import numpy as np
+
+def walk_forward_optimization(data, in_sample_pct=0.7, n_windows=5):
+    """
+    Walk-Forward Optimization para validar estrategias de trading.
+    Divide los datos en ventanas deslizantes de optimización y validación.
+    """
+    total_len = len(data)
+    window_size = total_len // n_windows
+    results = []
+
+    for i in range(n_windows):
+        start = i * window_size
+        end = start + window_size
+        if end > total_len:
+            break
+
+        # Dividir en in-sample y out-of-sample
+        split = start + int(window_size * in_sample_pct)
+        in_sample  = data.iloc[start:split]
+        out_sample = data.iloc[split:end]
+
+        # Optimizar parámetros en in-sample
+        best_params = optimize_strategy(in_sample)
+
+        # Validar con esos parámetros en out-of-sample
+        oos_result = backtest_strategy(out_sample, best_params)
+
+        results.append({
+            'window': i + 1,
+            'in_sample_start': in_sample.index[0],
+            'in_sample_end': in_sample.index[-1],
+            'out_sample_start': out_sample.index[0],
+            'out_sample_end': out_sample.index[-1],
+            'best_params': best_params,
+            'oos_profit_factor': oos_result['profit_factor'],
+            'oos_win_rate': oos_result['win_rate'],
+            'oos_return': oos_result['total_return']
+        })
+
+    return pd.DataFrame(results)
+
+def optimize_strategy(data, ema_range=range(10, 60, 5),
+                      rsi_range=range(10, 25, 2)):
+    """Encuentra los mejores parámetros en los datos in-sample"""
+    best_pf = 0
+    best_params = {}
+
+    for ema_len in ema_range:
+        for rsi_len in rsi_range:
+            result = backtest_strategy(data,
+                         {'ema': ema_len, 'rsi': rsi_len})
+            if result['profit_factor'] > best_pf:
+                best_pf = result['profit_factor']
+                best_params = {'ema': ema_len, 'rsi': rsi_len}
+
+    return best_params
+
+# Ejemplo de uso:
+# results = walk_forward_optimization(price_data, n_windows=6)
+# print(results[['window', 'best_params',
+#                 'oos_profit_factor', 'oos_win_rate']])</code></pre></div>
+
+<h3>Simulación Monte Carlo: ¿Suerte o Habilidad?</h3>
+<p>La simulación Monte Carlo responde a la pregunta más importante del trading: <strong>"¿Mis resultados son por habilidad o por suerte?"</strong>. Genera miles de escenarios aleatorios reordenando tus trades para ver el rango de resultados posibles.</p>
+
+<div class="highlight-box green">
+<h4>¿Qué te Dice Monte Carlo?</h4>
+<ul>
+<li><strong>Drawdown máximo esperado:</strong> En el peor 5% de escenarios, ¿cuánto puedes perder?</li>
+<li><strong>Probabilidad de ruina:</strong> ¿Cuál es la probabilidad de perder el 50% de tu cuenta?</li>
+<li><strong>Rango de retornos:</strong> Tu retorno esperado no es un número fijo, es un RANGO</li>
+<li><strong>Confianza en tu edge:</strong> Si el 95% de simulaciones son rentables, tu estrategia es robusta</li>
+</ul>
+</div>
+
+<div class="code-block"><pre><code># Simulación Monte Carlo para Trading
+import numpy as np
+
+def monte_carlo_simulation(trades_pnl, n_simulations=10000,
+                           initial_balance=10000):
+    """
+    Ejecuta simulación Monte Carlo reordenando los trades.
+    trades_pnl: lista de P&L de cada trade (en USD o pips)
+    """
+    results = []
+    max_drawdowns = []
+
+    for _ in range(n_simulations):
+        # Reordenar trades aleatoriamente
+        shuffled = np.random.permutation(trades_pnl)
+
+        # Calcular curva de equity
+        equity = [initial_balance]
+        for pnl in shuffled:
+            equity.append(equity[-1] + pnl)
+
+        equity = np.array(equity)
+        final_balance = equity[-1]
+        results.append(final_balance)
+
+        # Calcular max drawdown
+        peak = np.maximum.accumulate(equity)
+        drawdown = (peak - equity) / peak * 100
+        max_drawdowns.append(drawdown.max())
+
+    results = np.array(results)
+    max_drawdowns = np.array(max_drawdowns)
+
+    return {
+        'media_retorno': np.mean(results) - initial_balance,
+        'mediana_retorno': np.median(results) - initial_balance,
+        'peor_5pct': np.percentile(results, 5) - initial_balance,
+        'mejor_5pct': np.percentile(results, 95) - initial_balance,
+        'prob_rentable': (results > initial_balance).mean() * 100,
+        'prob_ruina_50pct': (results < initial_balance * 0.5).mean() * 100,
+        'max_dd_promedio': np.mean(max_drawdowns),
+        'max_dd_peor_5pct': np.percentile(max_drawdowns, 95),
+    }
+
+# Ejemplo de uso:
+# mis_trades = [50, -30, 80, -25, 60, -40, 45, -20, ...]
+# resultado = monte_carlo_simulation(mis_trades, n_simulations=10000)
+# print(f"Probabilidad de ser rentable: {resultado['prob_rentable']:.1f}%")
+# print(f"Max Drawdown esperado (peor 5%): {resultado['max_dd_peor_5pct']:.1f}%")</code></pre></div>
+
+<h3>Análisis de Sensibilidad de Parámetros</h3>
+<p>Una estrategia robusta debe funcionar bien con <strong>un rango amplio de parámetros</strong>, no solo con valores exactos. Si cambiar la EMA de 21 a 23 destruye tus resultados, hay overfitting.</p>
+
+<div class="strategy-box">
+<h4>Test de Robustez de Parámetros</h4>
+<p>Para cada parámetro de tu estrategia, prueba variaciones de ±20% y verifica que los resultados se mantengan estables:</p>
+<ul>
+<li><strong>EMA 21:</strong> Prueba con 17, 19, 21, 23, 25. Si todos son rentables, el parámetro es robusto</li>
+<li><strong>RSI 14:</strong> Prueba con 11, 12, 14, 16, 17. Si solo RSI=14 funciona, hay overfitting</li>
+<li><strong>Stop Loss 1.5%:</strong> Prueba con 1.0%, 1.3%, 1.5%, 1.8%, 2.0%. Debe haber un "meseta" de rentabilidad</li>
+</ul>
+<p><strong>Regla de oro:</strong> Si una variación de ±20% en cualquier parámetro convierte tu estrategia de ganadora en perdedora, NO es una estrategia robusta.</p>
+</div>
+
+<h3>Tamaños de Muestra Mínimos</h3>
+<div class="calculation-box">
+<h4>¿Cuántos Trades Necesitas para Validar una Estrategia?</h4>
+<table>
+<tr><th>Métrica</th><th>Mínimo Recomendado</th><th>Ideal</th></tr>
+<tr><td>Número total de trades</td><td>100</td><td>200+</td></tr>
+<tr><td>Trades ganadores</td><td>30+</td><td>60+</td></tr>
+<tr><td>Trades perdedores</td><td>30+</td><td>60+</td></tr>
+<tr><td>Período de tiempo</td><td>2 años</td><td>5+ años</td></tr>
+<tr><td>Ciclos de mercado cubiertos</td><td>1 alcista + 1 bajista</td><td>2+ de cada uno</td></tr>
+</table>
+<p><strong>IMPORTANTE:</strong> 30 trades NO es suficiente para validar nada estadísticamente. Necesitas al menos 100 para que el win rate tenga un margen de error aceptable.</p>
+</div>
+
+<h3>Significancia Estadística en Trading</h3>
+<div class="highlight-box blue">
+<h4>¿Cuándo Puedes Confiar en tus Resultados?</h4>
+<p>Para saber si tu estrategia tiene un edge REAL y no es solo suerte, necesitas verificar la <strong>significancia estadística</strong>:</p>
+<ul>
+<li><strong>t-test del retorno medio:</strong> ¿Es el retorno promedio por trade significativamente diferente de cero? Si p-value > 0.05, tus resultados podrían ser pura suerte</li>
+<li><strong>Monte Carlo al 95%:</strong> Si el 95% de las simulaciones son rentables, tienes confianza estadística</li>
+<li><strong>Profit Factor en Out-of-Sample > 1.2:</strong> No basta con ser > 1.0, necesitas margen para comisiones y slippage</li>
+<li><strong>Ratio de Sharpe > 1.0:</strong> Indica que el retorno justifica el riesgo asumido</li>
+</ul>
+</div>
+
+<h3>Errores Comunes del Backtesting que DEBES Evitar</h3>
+<div class="warning-box">
+<h4>Las 7 Trampas Mortales del Backtesting</h4>
+<ol>
+<li><strong>Look-ahead bias:</strong> Usar información del futuro para tomar decisiones del presente (ej: usar datos de cierre para decidir entrar al inicio de la misma vela)</li>
+<li><strong>Survivorship bias:</strong> Solo testear acciones/pares que existen HOY, ignorando las que quebraron o fueron deslistadas</li>
+<li><strong>Ignorar costes:</strong> No incluir comisiones, spread, slippage y swap en el backtest — pueden destruir una estrategia rentable</li>
+<li><strong>Over-optimization:</strong> Probar 1000 combinaciones de parámetros hasta encontrar la "perfecta" — es fitting al ruido</li>
+<li><strong>Período demasiado corto:</strong> Backtestear solo 6 meses no cubre diferentes condiciones de mercado</li>
+<li><strong>Ignorar drawdown:</strong> Una estrategia con +200% de retorno pero -60% de drawdown es prácticamente inutilizable psicológicamente</li>
+<li><strong>No validar Out-of-Sample:</strong> Si usas el 100% de datos para optimizar, NO tienes validación real. Siempre reserva datos sin tocar</li>
+</ol>
+</div>
+
+<div class="highlight-box green">
+<h4>Checklist Final: ¿Tu Estrategia es Robusta?</h4>
+<div class="grid-cards">
+<div class="card">
+<h5>Walk-Forward</h5>
+<p>Rendimiento consistente en todas las ventanas out-of-sample, no solo en una.</p>
+</div>
+<div class="card">
+<h5>Monte Carlo</h5>
+<p>95%+ de simulaciones rentables. Probabilidad de ruina menor al 5%.</p>
+</div>
+<div class="card">
+<h5>Sensibilidad</h5>
+<p>Variaciones de ±20% en parámetros no destruyen los resultados.</p>
+</div>
+<div class="card">
+<h5>Muestra</h5>
+<p>100+ trades, 2+ años, cubriendo mercados alcistas y bajistas.</p>
+</div>
+</div>
+</div>`,
+          keyPoints: [
+            "El overfitting es el enemigo número uno del backtesting: la estrategia se ajusta al ruido histórico y falla con datos nuevos — si tu backtest es demasiado perfecto, desconfía",
+            "Walk-Forward Optimization es el estándar de oro: optimiza en datos pasados (in-sample) y valida en datos futuros (out-of-sample) con ventanas deslizantes",
+            "La simulación Monte Carlo te dice si tus resultados son por habilidad o suerte — reordena tus trades miles de veces para ver el rango real de resultados posibles",
+            "Una estrategia robusta funciona con variaciones de ±20% en sus parámetros — si solo funciona con valores exactos, es overfitting al ruido",
+            "Necesitas mínimo 100 trades y 2 años de datos para validar estadísticamente cualquier estrategia — 30 trades NO es suficiente para ninguna conclusión confiable"
+          ],
+          quiz: [
+            { question: "¿Qué es el overfitting en el contexto del backtesting de trading?", options: ["Usar demasiados indicadores en el gráfico", "Cuando la estrategia se ajusta tanto a los datos históricos que pierde capacidad predictiva en datos nuevos", "Cuando el backtest tiene pocas operaciones", "Cuando usas un timeframe demasiado pequeño"], correctIndex: 1, explanation: "El overfitting ocurre cuando optimizas excesivamente los parámetros para que encajen perfectamente con datos pasados. Como memorizar las respuestas de un examen: funciona en ese examen específico, pero falla en cualquier otro." },
+            { question: "¿Cuál es el propósito principal de la simulación Monte Carlo en trading?", options: ["Predecir el precio futuro con exactitud", "Generar miles de escenarios reordenando trades para determinar si los resultados son por habilidad o suerte", "Calcular el tamaño de posición óptimo", "Optimizar los parámetros de la estrategia"], correctIndex: 1, explanation: "Monte Carlo reordena tus trades aleatoriamente miles de veces para mostrarte el rango real de resultados posibles, ayudándote a distinguir si tu edge es real o fue casualidad del orden específico en que ocurrieron tus operaciones." },
+            { question: "¿Cuántos trades mínimos se necesitan para validar una estrategia estadísticamente?", options: ["10-20 trades son suficientes", "30 trades", "Al menos 100 trades con 2+ años de datos cubriendo diferentes condiciones de mercado", "500 trades mínimo obligatorio"], correctIndex: 2, explanation: "Con menos de 100 trades, el margen de error estadístico es demasiado alto para sacar conclusiones confiables. Necesitas suficientes datos para cubrir mercados alcistas, bajistas y laterales." }
+          ]
+        }
+      ]
     }
   ]
 };
