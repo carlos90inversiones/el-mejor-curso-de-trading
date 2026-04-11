@@ -1,5 +1,6 @@
 "use client";
 import { useMemo } from "react";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -11,6 +12,7 @@ import { useBookmarks } from "@/components/BookmarkButton";
 import { useProgress } from "@/lib/useProgress";
 
 export default function CursoPage() {
+  const router = useRouter();
   const progress = useProgress();
   const gamification = useGamification();
   const { bookmarks } = useBookmarks();
@@ -33,7 +35,7 @@ export default function CursoPage() {
               completed={progress.completed}
               quizScores={progress.quizScores}
               bookmarks={bookmarks}
-              onGoToLesson={() => {}}
+              onGoToLesson={(pId, mId, lId) => router.push(`/leccion/${lId}`)}
             />
           </div>
           <div className="space-y-4">

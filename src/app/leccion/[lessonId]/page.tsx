@@ -2,6 +2,7 @@
 import { use } from "react";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import { COURSE_DATA, getAllLessonIds } from "@/lib/courseData";
 import { useProgress } from "@/lib/useProgress";
 import { useGamification } from "@/components/GamificationSystem";
@@ -143,6 +144,7 @@ export default function LeccionPage({ params }: { params: Promise<{ lessonId: st
           </div>
         </div>
       </main>
+      <Footer />
     </div>
   );
 }
