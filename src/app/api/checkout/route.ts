@@ -25,9 +25,13 @@ export async function POST() {
       cancel_url: `${process.env.NEXT_PUBLIC_SITE_URL || "https://marsof.vercel.app"}/`,
     });
 
+    if (!session.url) {
+      return NextResponse.json({ error: "Stripe no devolvió URL de checkout" }, { status: 500 });
+    }
+
     return NextResponse.json({ url: session.url });
   } catch (error: unknown) {
-    const message = error instanceof Error ? error.message : "Unknown error";
+    const message = error instanceof Error ? error.message : String(error);
     console.error("Checkout error:", message);
     return NextResponse.json({ error: message }, { status: 500 });
   }
