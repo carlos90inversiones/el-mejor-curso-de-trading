@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { COURSE_DATA, getTotalLessons } from "@/lib/courseData";
 import { ThemeToggle } from "@/components/ThemeProvider";
+import { useAuth } from "@/components/AuthProvider";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -13,6 +14,7 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [progressPct, setProgressPct] = useState(0);
   const [nextLessonId, setNextLessonId] = useState<string | null>("1-1-1");
+  const { user, logout } = useAuth();
 
   // Read progress from localStorage
   useEffect(() => {
@@ -115,9 +117,20 @@ export default function Navbar() {
               </div>
             )}
             <ThemeToggle />
-            <Link href={nextLessonId ? `/leccion/${nextLessonId}` : "/curso"} className="bg-gradient-to-r from-blue-600 to-purple-600 text-white text-xs px-3 py-1.5 rounded-lg hover:opacity-90 transition font-medium ml-1">
-              {nextLessonId ? "Continuar" : "Curso"}
-            </Link>
+            {user ? (
+              <>
+                <Link href={nextLessonId ? `/leccion/${nextLessonId}` : "/curso"} className="bg-gradient-to-r from-blue-600 to-purple-600 text-white text-xs px-3 py-1.5 rounded-lg hover:opacity-90 transition font-medium ml-1">
+                  {nextLessonId ? "Continuar" : "Curso"}
+                </Link>
+                <button onClick={logout} className="text-xs text-[#555] hover:text-[#a0a0b8] transition ml-1" title="Cerrar sesión">
+                  Salir
+                </button>
+              </>
+            ) : (
+              <Link href="/login" className="bg-gradient-to-r from-blue-600 to-purple-600 text-white text-xs px-3 py-1.5 rounded-lg hover:opacity-90 transition font-medium ml-1">
+                Acceder
+              </Link>
+            )}
           </div>
 
           {/* Mobile hamburger */}

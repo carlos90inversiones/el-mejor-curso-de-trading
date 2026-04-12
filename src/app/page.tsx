@@ -1,10 +1,31 @@
 "use client";
+import { useState } from "react";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { ScrollReveal, AnimatedCounter, Float } from "@/components/Animations";
 
 export default function LandingPage() {
+  const [buyEmail, setBuyEmail] = useState("");
+  const [buyLoading, setBuyLoading] = useState(false);
+
+  const handleBuy = async () => {
+    if (!buyEmail) return;
+    setBuyLoading(true);
+    try {
+      const res = await fetch("/api/checkout", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email: buyEmail }),
+      });
+      const data = await res.json();
+      if (data.url) window.location.href = data.url;
+    } catch {
+      alert("Error al procesar el pago. Inténtalo de nuevo.");
+    }
+    setBuyLoading(false);
+  };
+
   return (
     <div className="min-h-screen">
       <Navbar />
@@ -25,11 +46,11 @@ export default function LandingPage() {
             <strong className="text-white">Gratis. Para siempre.</strong>
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/curso" className="bg-gradient-to-r from-blue-600 to-purple-600 text-white text-lg px-10 py-4 rounded-xl hover:opacity-90 transition font-bold shadow-lg shadow-blue-500/25 hover-lift">
-              Empezar Ahora →
+            <Link href="#comprar" className="bg-gradient-to-r from-blue-600 to-purple-600 text-white text-lg px-10 py-4 rounded-xl hover:opacity-90 transition font-bold shadow-lg shadow-blue-500/25 hover-lift">
+              Comprar Curso — 149€ →
             </Link>
-            <Link href="/herramientas" className="bg-[#1a1a2e] border border-[#2a2a40] text-white text-lg px-10 py-4 rounded-xl hover:bg-[#222240] transition font-medium">
-              Ver Herramientas
+            <Link href="/login" className="bg-[#1a1a2e] border border-[#2a2a40] text-white text-lg px-10 py-4 rounded-xl hover:bg-[#222240] transition font-medium">
+              Ya tengo cuenta
             </Link>
           </div>
         </div>
@@ -161,16 +182,32 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* CTA Final - Simple */}
-      <section className="max-w-3xl mx-auto px-4 pb-20">
+      {/* CTA Final - Compra */}
+      <section id="comprar" className="max-w-3xl mx-auto px-4 pb-20">
         <ScrollReveal>
           <div className="text-center bg-gradient-to-r from-blue-900/20 to-purple-900/20 border border-blue-800/30 rounded-2xl p-10">
-            <h2 className="text-2xl font-bold text-white mb-3">¿Listo para empezar?</h2>
+            <div className="text-4xl mb-4">🚀</div>
+            <h2 className="text-2xl font-bold text-white mb-2">Accede al Curso Completo</h2>
+            <div className="flex items-center justify-center gap-2 mb-4">
+              <span className="text-4xl font-extrabold text-white">149€</span>
+              <span className="text-[#555] text-sm line-through">299€</span>
+              <span className="bg-green-900/50 text-green-400 text-xs px-2 py-1 rounded-full font-bold">-50%</span>
+            </div>
             <p className="text-[#a0a0b8] mb-6 text-sm">
-              Sin registro, sin tarjeta de crédito. Empieza a aprender ahora.
+              Pago único. Acceso de por vida. 88 lecciones + 319 quizzes + 15 herramientas.
             </p>
-            <Link href="/curso" className="inline-block bg-gradient-to-r from-blue-600 to-purple-600 text-white text-lg px-10 py-4 rounded-xl hover:opacity-90 transition font-bold shadow-lg shadow-blue-500/20">
-              Empezar Gratis →
+            <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+              <input type="email" value={buyEmail} onChange={e => setBuyEmail(e.target.value)}
+                placeholder="Tu email"
+                className="flex-1 bg-[#0d0d15] border border-[#2a2a40] rounded-xl px-4 py-3 text-white placeholder-[#555] outline-none focus:border-blue-500/50 transition" />
+              <button onClick={handleBuy} disabled={buyLoading || !buyEmail}
+                className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-3 rounded-xl font-bold hover:opacity-90 transition disabled:opacity-50 shadow-lg shadow-blue-500/20 whitespace-nowrap">
+                {buyLoading ? "Procesando..." : "Comprar Ahora"}
+              </button>
+            </div>
+            <p className="text-[#555] text-xs mt-4">Pago seguro con tarjeta de crédito/débito vía Stripe</p>
+            <Link href="/login" className="text-blue-400 text-xs hover:text-blue-300 transition mt-2 inline-block">
+              ¿Ya tienes cuenta? Inicia sesión
             </Link>
           </div>
         </ScrollReveal>

@@ -5,6 +5,7 @@ import ScrollToTopClient from "@/components/ScrollToTop";
 import BackToTop from "@/components/BackToTop";
 import KeyboardShortcuts from "@/components/KeyboardShortcuts";
 import ThemeProvider from "@/components/ThemeProvider";
+import AuthProvider from "@/components/AuthProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -63,11 +64,13 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col" style={{ background: "var(--body-bg)", color: "var(--text-primary)" }}>
         <ThemeProvider>
+        <AuthProvider>
         <ScrollToTopClient />
         {children}
         <BackToTop />
         <KeyboardShortcuts />
         <script dangerouslySetInnerHTML={{ __html: `if(window.speechSynthesis){window.speechSynthesis.getVoices();window.speechSynthesis.addEventListener('voiceschanged',function(){window.speechSynthesis.getVoices()})}` }} />
+        </AuthProvider>
         </ThemeProvider>
       </body>
     </html>
