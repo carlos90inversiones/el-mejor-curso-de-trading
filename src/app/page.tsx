@@ -6,20 +6,15 @@ import Footer from "@/components/Footer";
 import { ScrollReveal, AnimatedCounter, Float } from "@/components/Animations";
 
 export default function LandingPage() {
-  const [buyEmail, setBuyEmail] = useState("");
   const [buyLoading, setBuyLoading] = useState(false);
 
   const handleBuy = async () => {
-    if (!buyEmail) return;
     setBuyLoading(true);
     try {
-      const res = await fetch("/api/checkout", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email: buyEmail }),
-      });
+      const res = await fetch("/api/checkout", { method: "POST" });
       const data = await res.json();
       if (data.url) window.location.href = data.url;
+      else alert("Error al crear la sesión de pago");
     } catch {
       alert("Error al procesar el pago. Inténtalo de nuevo.");
     }
@@ -196,16 +191,11 @@ export default function LandingPage() {
             <p className="text-[#a0a0b8] mb-6 text-sm">
               Pago único. Acceso de por vida. 88 lecciones + 319 quizzes + 15 herramientas.
             </p>
-            <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
-              <input type="email" value={buyEmail} onChange={e => setBuyEmail(e.target.value)}
-                placeholder="Tu email"
-                className="flex-1 bg-[#0d0d15] border border-[#2a2a40] rounded-xl px-4 py-3 text-white placeholder-[#555] outline-none focus:border-blue-500/50 transition" />
-              <button onClick={handleBuy} disabled={buyLoading || !buyEmail}
-                className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-3 rounded-xl font-bold hover:opacity-90 transition disabled:opacity-50 shadow-lg shadow-blue-500/20 whitespace-nowrap">
-                {buyLoading ? "Procesando..." : "Comprar Ahora"}
-              </button>
-            </div>
-            <p className="text-[#555] text-xs mt-4">Pago seguro con tarjeta de crédito/débito vía Stripe</p>
+            <button onClick={handleBuy} disabled={buyLoading}
+              className="bg-gradient-to-r from-blue-600 to-purple-600 text-white text-lg px-12 py-4 rounded-xl font-bold hover:opacity-90 transition disabled:opacity-50 shadow-lg shadow-blue-500/20">
+              {buyLoading ? "Redirigiendo a Stripe..." : "Comprar Ahora — 149€"}
+            </button>
+            <p className="text-[#555] text-xs mt-4">Pago seguro con tarjeta de crédito/débito vía Stripe. El email se introduce en la página de pago.</p>
             <Link href="/login" className="text-blue-400 text-xs hover:text-blue-300 transition mt-2 inline-block">
               ¿Ya tienes cuenta? Inicia sesión
             </Link>
