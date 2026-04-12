@@ -1,12 +1,13 @@
 @import "tailwindcss";
 
-:root {
+:root, [data-theme="dark"] {
   --bg-primary: #0f1120;
   --bg-secondary: #161830;
   --bg-card: #1c1f3a;
   --bg-card-hover: #252850;
   --text-primary: #f0f0f5;
   --text-secondary: #a0a0b8;
+  --text-muted: #555;
   --accent-blue: #3b82f6;
   --accent-purple: #8b5cf6;
   --accent-green: #10b981;
@@ -14,6 +15,31 @@
   --accent-amber: #f59e0b;
   --accent-pink: #ec4899;
   --border-color: #2a2a40;
+  --nav-bg: rgba(12, 14, 26, 0.95);
+  --card: #1a1a2e;
+  --card-inner: #0d0d15;
+  --body-bg: #0c0e1a;
+}
+
+[data-theme="light"] {
+  --bg-primary: #f5f7fa;
+  --bg-secondary: #e8ecf1;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f0f4f8;
+  --text-primary: #1a1a2e;
+  --text-secondary: #555;
+  --text-muted: #888;
+  --accent-blue: #2563eb;
+  --accent-purple: #7c3aed;
+  --accent-green: #059669;
+  --accent-red: #dc2626;
+  --accent-amber: #d97706;
+  --accent-pink: #db2777;
+  --border-color: #d1d5db;
+  --nav-bg: rgba(255, 255, 255, 0.95);
+  --card: #ffffff;
+  --card-inner: #f3f4f6;
+  --body-bg: #f5f7fa;
 }
 
 * {
@@ -287,6 +313,60 @@ body {
   .tabs-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
   .tabs-scroll::-webkit-scrollbar { display: none; }
 }
+
+/* =============================================
+   LIGHT THEME OVERRIDES
+   ============================================= */
+[data-theme="light"] body { background: var(--body-bg) !important; color: var(--text-primary) !important; }
+[data-theme="light"] nav { background: var(--nav-bg) !important; border-color: var(--border-color) !important; }
+[data-theme="light"] footer { border-color: var(--border-color) !important; }
+
+/* Cards and containers */
+[data-theme="light"] [class*="bg-[#1a1a2e]"],
+[data-theme="light"] [class*="bg-[#12142a]"],
+[data-theme="light"] [class*="bg-[#0c0e1a]"] { background: var(--card) !important; }
+[data-theme="light"] [class*="bg-[#0d0d15]"] { background: var(--card-inner) !important; }
+[data-theme="light"] [class*="bg-[#0a0c16]"] { background: var(--bg-secondary) !important; }
+[data-theme="light"] [class*="bg-[#222240]"] { background: var(--bg-card-hover) !important; }
+
+/* Borders */
+[data-theme="light"] [class*="border-[#2a2a40]"] { border-color: var(--border-color) !important; }
+
+/* Text colors */
+[data-theme="light"] .text-white { color: var(--text-primary) !important; }
+[data-theme="light"] [class*="text-[#a0a0b8]"] { color: var(--text-secondary) !important; }
+[data-theme="light"] [class*="text-[#555]"] { color: var(--text-muted) !important; }
+[data-theme="light"] [class*="text-[#444]"] { color: var(--text-muted) !important; }
+[data-theme="light"] [class*="text-[#777]"] { color: var(--text-muted) !important; }
+
+/* Scrollbar */
+[data-theme="light"] ::-webkit-scrollbar-track { background: var(--bg-secondary); }
+[data-theme="light"] ::-webkit-scrollbar-thumb { background: #bbb; }
+[data-theme="light"] ::-webkit-scrollbar-thumb:hover { background: #999; }
+
+/* Selection */
+[data-theme="light"] ::selection { background: #3b82f644; color: #1a1a2e; }
+
+/* Lesson content */
+[data-theme="light"] .lesson-content h2 { color: var(--text-primary) !important; }
+[data-theme="light"] .lesson-content h3,
+[data-theme="light"] .lesson-content h4 { color: #333 !important; }
+[data-theme="light"] .lesson-content p { color: var(--text-secondary) !important; }
+[data-theme="light"] .lesson-content strong { color: var(--text-primary) !important; }
+[data-theme="light"] .lesson-content ul, [data-theme="light"] .lesson-content ol { color: var(--text-secondary) !important; }
+[data-theme="light"] .lesson-content .card,
+[data-theme="light"] .lesson-content .vocab-card,
+[data-theme="light"] .lesson-content .pattern-card,
+[data-theme="light"] .lesson-content .concept-card,
+[data-theme="light"] .lesson-content .indicator-card,
+[data-theme="light"] .lesson-content .market-card,
+[data-theme="light"] .lesson-content .psychology-card,
+[data-theme="light"] .lesson-content .metric-card,
+[data-theme="light"] .lesson-content .rules-table .rule,
+[data-theme="light"] .lesson-content .step-by-step .step,
+[data-theme="light"] .lesson-content .comparison-col { background: var(--card-inner) !important; border-color: var(--border-color) !important; }
+[data-theme="light"] .lesson-content .code-block { background: #f5f5f5 !important; border-color: #ddd !important; }
+[data-theme="light"] .lesson-content .code-block code { color: #333 !important; }
 
 /* Print styles */
 @media print {

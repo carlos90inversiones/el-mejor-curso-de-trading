@@ -107,6 +107,9 @@ export default function CursoPage() {
                 <div className="text-3xl mb-2">🏆</div>
                 <div className="text-xl font-bold text-white">¡Curso Completado!</div>
                 <div className="text-sm text-amber-400 mt-1">Has terminado las {totalLessons} lecciones. Ahora sigue practicando.</div>
+                <Link href="/examen-final" className="inline-block mt-3 bg-gradient-to-r from-amber-600 to-yellow-600 text-white text-sm px-6 py-2 rounded-xl font-bold hover:opacity-90 transition">
+                  🎓 Hacer Examen Final
+                </Link>
               </div>
             );
           }

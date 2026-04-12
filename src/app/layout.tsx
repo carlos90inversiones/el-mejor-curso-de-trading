@@ -4,6 +4,7 @@ import "./globals.css";
 import ScrollToTopClient from "@/components/ScrollToTop";
 import BackToTop from "@/components/BackToTop";
 import KeyboardShortcuts from "@/components/KeyboardShortcuts";
+import ThemeProvider from "@/components/ThemeProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -60,12 +61,14 @@ export default function RootLayout({
       lang="es"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col" style={{ background: "#0c0e1a", color: "#f0f0f5" }}>
+      <body className="min-h-full flex flex-col" style={{ background: "var(--body-bg)", color: "var(--text-primary)" }}>
+        <ThemeProvider>
         <ScrollToTopClient />
         {children}
         <BackToTop />
         <KeyboardShortcuts />
         <script dangerouslySetInnerHTML={{ __html: `if(window.speechSynthesis){window.speechSynthesis.getVoices();window.speechSynthesis.addEventListener('voiceschanged',function(){window.speechSynthesis.getVoices()})}` }} />
+        </ThemeProvider>
       </body>
     </html>
   );

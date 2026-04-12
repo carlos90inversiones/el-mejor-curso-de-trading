@@ -26,8 +26,8 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-bold text-sm mb-3">Contenido</h4>
             <p className="text-sm text-[#555]">88 lecciones | 319 quizzes | 98 diagramas</p>
-            <p className="text-sm text-[#555]">12 herramientas | 10 video-lecciones</p>
-            <p className="text-sm text-[#555]">102 términos | 30 flashcards</p>
+            <p className="text-sm text-[#555]">15 herramientas | 10 video-lecciones</p>
+            <p className="text-sm text-[#555]">102 términos | 72 flashcards</p>
           </div>
         </div>
         <div className="border-t border-[#2a2a40] pt-4 text-center">

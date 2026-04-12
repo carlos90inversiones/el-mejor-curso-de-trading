@@ -12,6 +12,10 @@ const CandlePractice = dynamic(() => import("@/components/CandlePractice"), { lo
 const PracticalProjects = dynamic(() => import("@/components/PracticalProjects"), { loading: () => <LoadingPlaceholder /> });
 const Glossary = dynamic(() => import("@/components/Glossary"), { loading: () => <LoadingPlaceholder /> });
 const Flashcards = dynamic(() => import("@/components/Flashcards"), { loading: () => <LoadingPlaceholder /> });
+const DailyChecklist = dynamic(() => import("@/components/DailyChecklist"), { loading: () => <LoadingPlaceholder /> });
+const StudyPlan = dynamic(() => import("@/components/StudyPlan"), { loading: () => <LoadingPlaceholder /> });
+const QuickReview = dynamic(() => import("@/components/QuickReview"), { loading: () => <LoadingPlaceholder /> });
+const BrokerComparator = dynamic(() => import("@/components/BrokerComparator"), { loading: () => <LoadingPlaceholder /> });
 
 import { DIAGRAMS } from "@/components/CandleDiagrams";
 import { REALISTIC_CHARTS } from "@/components/RealisticCharts";
@@ -30,7 +34,7 @@ function LoadingPlaceholder() {
   );
 }
 
-type Tab = "simulator" | "calculator" | "journal" | "candles" | "diagrams" | "charts" | "cheatsheets" | "projects" | "glossary" | "flashcards" | "videos";
+type Tab = "simulator" | "calculator" | "journal" | "candles" | "diagrams" | "charts" | "cheatsheets" | "projects" | "glossary" | "flashcards" | "videos" | "checklist" | "studyplan" | "review" | "brokers";
 
 export default function HerramientasPage() {
   const [tab, setTab] = useState<Tab>("simulator");
@@ -47,6 +51,10 @@ export default function HerramientasPage() {
     { id: "glossary", label: "Glosario", icon: "📖" },
     { id: "flashcards", label: "Flashcards", icon: "🃏" },
     { id: "videos", label: "Videos", icon: "🎬" },
+    { id: "checklist", label: "Checklist", icon: "✅" },
+    { id: "studyplan", label: "Plan Estudio", icon: "📅" },
+    { id: "review", label: "Repaso", icon: "⚡" },
+    { id: "brokers", label: "Brokers", icon: "🏦" },
   ];
 
   return (
@@ -106,6 +114,10 @@ export default function HerramientasPage() {
             </div>
           </div>
         )}
+        {tab === "checklist" && <DailyChecklist />}
+        {tab === "studyplan" && <StudyPlan />}
+        {tab === "review" && <QuickReview />}
+        {tab === "brokers" && <BrokerComparator />}
       </main>
       <Footer />
     </div>

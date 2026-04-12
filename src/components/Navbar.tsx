@@ -3,6 +3,7 @@ import { useState, useMemo, useEffect } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { COURSE_DATA, getTotalLessons } from "@/lib/courseData";
+import { ThemeToggle } from "@/components/ThemeProvider";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -76,12 +77,13 @@ export default function Navbar() {
           </Link>
 
           {/* Search - Desktop */}
-          <div className="hidden md:block relative flex-1 max-w-xs mx-4">
+          <div className="hidden md:block relative flex-1 max-w-sm mx-6">
             <input value={searchQuery} onChange={e => { setSearchQuery(e.target.value); setSearchOpen(true); }}
               onFocus={() => setSearchOpen(true)} onBlur={() => setTimeout(() => setSearchOpen(false), 200)}
-              placeholder="Buscar lecciones..."
-              className="w-full bg-[#1a1a2e] border border-[#2a2a40] rounded-lg pl-8 pr-3 py-1.5 text-sm text-white placeholder-[#555] outline-none focus:border-blue-500/50 transition" />
-            <span className="absolute left-2.5 top-1/2 -translate-y-1/2 text-[#555] text-xs">🔍</span>
+              placeholder="Buscar en 88 lecciones... (Ctrl+K)"
+              className="w-full bg-[#1a1a2e] border border-[#2a2a40] rounded-xl pl-9 pr-10 py-2 text-sm text-white placeholder-[#555] outline-none focus:border-blue-500/50 focus:ring-1 focus:ring-blue-500/30 transition" />
+            <span className="absolute left-3 top-1/2 -translate-y-1/2 text-[#555]">🔍</span>
+            <kbd className="absolute right-2.5 top-1/2 -translate-y-1/2 text-[9px] text-[#555] bg-[#0d0d15] border border-[#2a2a40] px-1.5 py-0.5 rounded">⌘K</kbd>
             {searchOpen && searchResults.length > 0 && (
               <div className="absolute top-full mt-1 left-0 right-0 bg-[#1a1a2e] border border-[#2a2a40] rounded-lg shadow-2xl shadow-black/50 z-50 max-h-72 overflow-y-auto">
                 {searchResults.map(r => (
@@ -112,6 +114,7 @@ export default function Navbar() {
                 <span className="text-[10px] text-[#a0a0b8]">{progressPct}%</span>
               </div>
             )}
+            <ThemeToggle />
             <Link href={nextLessonId ? `/leccion/${nextLessonId}` : "/curso"} className="bg-gradient-to-r from-blue-600 to-purple-600 text-white text-xs px-3 py-1.5 rounded-lg hover:opacity-90 transition font-medium ml-1">
               {nextLessonId ? "Continuar" : "Curso"}
             </Link>
