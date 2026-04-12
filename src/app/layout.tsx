@@ -27,12 +27,12 @@ export const metadata: Metadata = {
     default: "Trading Pro | El Mejor Curso de Trading del Mundo",
     template: "%s | Trading Pro",
   },
-  description: "Trading Pro: El mejor curso de trading del mundo. 76 lecciones interactivas, 282 quizzes, simulador con datos reales, Smart Money Concepts, ICT, prop firms, Python, preparación CMT. De cero absoluto a trader profesional.",
+  description: "Trading Pro: El mejor curso de trading del mundo. 88 lecciones interactivas, 319 quizzes, simulador con datos reales, Smart Money Concepts, ICT, prop firms, Python, preparación CMT. De cero absoluto a trader profesional.",
   keywords: ["trading pro", "curso trading", "forex", "trading en español", "smart money", "ICT", "prop firms", "cuentas fondeadas", "análisis técnico", "curso trading", "el mejor curso de trading", "CMT"],
   authors: [{ name: "Trading Pro" }],
   openGraph: {
     title: "Trading Pro | El Mejor Curso de Trading del Mundo",
-    description: "76 lecciones, 282 quizzes, simulador, 74 diagramas, video-lecciones, gamificación. 9 fases.",
+    description: "88 lecciones, 319 quizzes, simulador, 98 diagramas, video-lecciones, gamificación. 9 fases.",
     type: "website",
     locale: "es_ES",
     siteName: "Trading Pro",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Trading Pro | El Mejor Curso de Trading del Mundo",
-    description: "De cero a trader experto. El curso de trading mas completo del mundo. GRATIS.",
+    description: "De cero a trader experto. El curso de trading más completo del mundo. GRATIS.",
   },
   manifest: "/manifest.json",
   other: {

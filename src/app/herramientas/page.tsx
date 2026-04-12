@@ -41,7 +41,7 @@ export default function HerramientasPage() {
     { id: "journal", label: "Diario", icon: "📓" },
     { id: "candles", label: "Practica Velas", icon: "🕯️" },
     { id: "diagrams", label: "Diagramas", icon: "📐" },
-    { id: "charts", label: "Graficos", icon: "📊" },
+    { id: "charts", label: "Gráficos", icon: "📊" },
     { id: "cheatsheets", label: "Cheat Sheets", icon: "📋" },
     { id: "projects", label: "Proyectos", icon: "🎯" },
     { id: "glossary", label: "Glosario", icon: "📖" },
@@ -80,7 +80,7 @@ export default function HerramientasPage() {
         )}
         {tab === "charts" && (
           <div>
-            <h3 className="text-xl font-bold text-white mb-6">Graficos Realistas Anotados</h3>
+            <h3 className="text-xl font-bold text-white mb-6">Gráficos Realistas Anotados</h3>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
               {Object.entries(REALISTIC_CHARTS).map(([key, Chart]) => <Chart key={key} />)}
             </div>
@@ -100,7 +100,7 @@ export default function HerramientasPage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-10">
               {INSTRUCTOR_CLIPS.map(clip => <InstructorPresenter key={clip.id} {...clip} />)}
             </div>
-            <h3 className="text-xl font-bold text-white mb-6">Video-Lecciones con Graficos Animados</h3>
+            <h3 className="text-xl font-bold text-white mb-6">Video-Lecciones con Gráficos Animados</h3>
             <div className="space-y-8">
               {Object.entries(VIDEO_LESSONS).map(([key, lesson]) => <VideoLesson key={key} {...lesson} />)}
             </div>

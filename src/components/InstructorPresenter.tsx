@@ -118,7 +118,7 @@ export default function InstructorPresenter({ narration, title, subtitle }: Pres
           <div className="flex gap-3">
             {!isSpeaking ? (
               <button onClick={speak} className="bg-gradient-to-r from-blue-600 to-purple-600 hover:opacity-90 text-white px-6 py-2.5 rounded-xl text-sm font-medium flex items-center gap-2 transition">
-                <span>&#9654;</span> Escuchar Explicacion
+                <span>&#9654;</span> Escuchar explicación
               </button>
             ) : (
               <button onClick={stop} className="bg-[#2a2a50] hover:bg-[#333366] text-white px-6 py-2.5 rounded-xl text-sm font-medium flex items-center gap-2 transition">
@@ -169,6 +169,6 @@ export const INSTRUCTOR_CLIPS = [
     id: "final-message",
     title: "Mensaje Final",
     subtitle: "El Secreto del Éxito",
-    narration: "Has llegado al final del curso. Ahora tienes más conocimiento que el 95 por ciento de los traders del mundo. Pero el conocimiento sin acción no vale nada. El secreto que separa a los traders exitosos del resto es simple: NO SE RINDIERON. Pasaron por rachas perdedoras, challenges fallidos, momentos de duda. Pero siguieron adelante. Ajustaron. Aprendieron. Y eventualmente llegaron. Tú también puedes. Empieza en demo, sigue tu plan, gestiona el riesgo, y sé disciplinado. El trading no es dinero fácil. Pero para el que se lo toma en serio, es una de las mejores profesiones del mundo. Ahora ve y hazlo. Te espero al otro lado.",
+    narration: "Has llegado al final del curso. Ahora tienes más conocimiento que el 95 por ciento de los traders del mundo. Pero el conocimiento sin acción no vale nada. El secreto que separa a los traders éxitosos del resto es simple: NO SE RINDIERON. Pasaron por rachas perdedoras, challenges fallidos, momentos de duda. Pero siguieron adelante. Ajustaron. Aprendieron. Y eventualmente llegaron. Tú también puedes. Empieza en demo, sigue tu plan, gestiona el riesgo, y sé disciplinado. El trading no es dinero fácil. Pero para el que se lo toma en serio, es una de las mejores profesiones del mundo. Ahora ve y hazlo. Te espero al otro lado.",
   },
 ];

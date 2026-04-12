@@ -12,7 +12,7 @@ export default function SobrePage() {
         <ScrollReveal>
           <div className="text-center mb-12">
             <h1 className="text-4xl font-extrabold text-white mb-4">Sobre Trading Pro</h1>
-            <p className="text-lg text-[#a0a0b8]">La mision detras del mejor curso de trading del mundo</p>
+            <p className="text-lg text-[#a0a0b8]">La misión detrás del mejor curso de trading del mundo</p>
           </div>
         </ScrollReveal>
 
@@ -26,13 +26,13 @@ export default function SobrePage() {
             <div>
               <h2 className="text-2xl font-bold text-white mb-2">Tu Instructor</h2>
               <p className="text-[#a0a0b8] leading-relaxed mb-4">
-                Trader profesional con experiencia en Forex, indices y criptomonedas. Especializado en Smart Money Concepts,
-                ICT methodology, y trading algoritmico con Python. Ha pasado multiples challenges de prop firms y opera
+                Trader profesional con experiencia en Forex, índices y criptomonedas. Especializado en Smart Money Concepts,
+                ICT methodology, y trading algorítmico con Python. Ha pasado múltiples challenges de prop firms y opera
                 cuentas fondeadas de forma consistente.
               </p>
               <p className="text-[#a0a0b8] leading-relaxed">
-                Su mision: democratizar la educacion en trading haciendo el mejor contenido del mundo accesible a TODOS,
-                sin importar su presupuesto. Por eso este curso es y siempre sera 100% gratuito.
+                Su misión: democratizar la educación en trading haciendo el mejor contenido del mundo accesible a TODOS,
+                sin importar su presupuesto. Por eso este curso es y siempre será 100% gratuito.
               </p>
             </div>
           </div>
@@ -41,33 +41,33 @@ export default function SobrePage() {
         {/* Mision */}
         <ScrollReveal delay={0.2}>
           <div className="bg-gradient-to-r from-blue-900/20 to-purple-900/20 border border-blue-800/30 rounded-2xl p-8 mb-8">
-            <h2 className="text-2xl font-bold text-white mb-4">Nuestra Mision</h2>
+            <h2 className="text-2xl font-bold text-white mb-4">Nuestra Misión</h2>
             <p className="text-[#a0a0b8] leading-relaxed mb-4">
-              El 70-90% de los traders pierden dinero. No porque no sean inteligentes, sino porque nadie les enseno correctamente.
-              Los cursos de calidad cuestan 500-2000 euros, dejando fuera a la mayoria.
+              El 70-90% de los traders pierden dinero. No porque no sean inteligentes, sino porque nadie les enseñó correctamente.
+              Los cursos de calidad cuestan 500-2000 euros, dejando fuera a la mayoría.
             </p>
             <p className="text-[#a0a0b8] leading-relaxed mb-4">
-              Trading Pro nacio para cambiar eso. Creemos que la educacion financiera de calidad deberia ser un derecho,
-              no un privilegio. Por eso construimos el curso mas completo, interactivo y profesional del mundo — y lo
+              Trading Pro nació para cambiar eso. Creemos que la educación financiera de calidad debería ser un derecho,
+              no un privilegio. Por eso construimos el curso más completo, interactivo y profesional del mundo — y lo
               hicimos completamente gratuito.
             </p>
             <p className="text-white font-medium">
-              Si este curso te ayuda a convertirte en un trader rentable, nuestra mision esta cumplida.
+              Si este curso te ayuda a convertirte en un trader rentable, nuestra misión está cumplida.
             </p>
           </div>
         </ScrollReveal>
 
         {/* Numbers */}
         <ScrollReveal delay={0.3}>
-          <h2 className="text-2xl font-bold text-white mb-6 text-center">Trading Pro en Numeros</h2>
+          <h2 className="text-2xl font-bold text-white mb-6 text-center">Trading Pro en Números</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
             {[
-              { value: "76", label: "Lecciones" },
-              { value: "282", label: "Preguntas Quiz" },
-              { value: "43", label: "Diagramas SVG" },
+              { value: "88", label: "Lecciones" },
+              { value: "319", label: "Preguntas Quiz" },
+              { value: "98", label: "Diagramas SVG" },
               { value: "9", label: "Fases" },
               { value: "10", label: "Video-Lecciones" },
-              { value: "102", label: "Terminos Glosario" },
+              { value: "102", label: "Términos Glosario" },
               { value: "30", label: "Flashcards" },
               { value: "12", label: "Herramientas" },
             ].map(s => (

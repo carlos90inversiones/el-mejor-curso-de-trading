@@ -43,7 +43,7 @@ export function CandlePatternsCheatSheet() {
   return (
     <div className="bg-[#1a1a2e] border border-[#2a2a40] rounded-xl p-5">
       <div className="flex items-center justify-between mb-4">
-        <h3 className="text-white font-bold">Cheat Sheet: Patrones de Velas</h3>
+        <h3 className="text-white font-bold">Cheat Sheet: patrónes de Velas</h3>
         <button onClick={() => ref.current && downloadSvgAsImage(ref.current, "cheatsheet-velas.png")}
           className="text-xs bg-blue-600 text-white px-3 py-1.5 rounded-lg hover:bg-blue-700 transition">
           Descargar PNG
@@ -51,7 +51,7 @@ export function CandlePatternsCheatSheet() {
       </div>
       <svg ref={ref} viewBox="0 0 600 800" className="w-full max-w-[600px] mx-auto">
         <rect width="600" height="800" fill="#0c0e1a" rx="12" />
-        <text x="300" y="40" fill="white" fontSize="20" fontWeight="bold" textAnchor="middle" fontFamily="Inter, sans-serif">PATRONES DE VELAS JAPONESAS</text>
+        <text x="300" y="40" fill="white" fontSize="20" fontWeight="bold" textAnchor="middle" fontFamily="Inter, sans-serif">patrónES DE VELAS JAPONESAS</text>
         <text x="300" y="60" fill="#a0a0b8" fontSize="11" textAnchor="middle" fontFamily="Inter, sans-serif">El Mejor Curso de Trading del Mundo</text>
         {patterns.map((p, i) => {
           const y = 85 + i * 70;
@@ -66,7 +66,7 @@ export function CandlePatternsCheatSheet() {
             </g>
           );
         })}
-        <text x="300" y="790" fill="#555" fontSize="9" textAnchor="middle" fontFamily="Inter, sans-serif">Recuerda: Un patron SOLO es valido en un nivel importante (S/R, OB, Fibonacci)</text>
+        <text x="300" y="790" fill="#555" fontSize="9" textAnchor="middle" fontFamily="Inter, sans-serif">Recuerda: Un patrón SOLO es valido en un nivel importante (S/R, OB, Fibonacci)</text>
       </svg>
     </div>
   );
@@ -77,9 +77,9 @@ export function RiskManagementCheatSheet() {
   const rules = [
     { rule: "Max 1-2% riesgo por trade", detail: "Cuenta 10K = max 100-200$ por trade", color: "#ef4444" },
     { rule: "SIEMPRE usa Stop Loss", detail: "Sin excepciones. Es tu cinturon de seguridad", color: "#ef4444" },
-    { rule: "Ratio R:R minimo 1:2", detail: "Con 1:2 solo necesitas 34% de acierto", color: "#f59e0b" },
-    { rule: "Max 2-3 trades al dia", detail: "Mas trades = mas comisiones + peores decisiones", color: "#f59e0b" },
-    { rule: "NUNCA promedies perdidas", detail: "Si va en tu contra, acepta la perdida", color: "#ef4444" },
+    { rule: "Ratio R:R mínimo 1:2", detail: "Con 1:2 solo necesitas 34% de acierto", color: "#f59e0b" },
+    { rule: "Max 2-3 trades al dia", detail: "Más trades = más comisiones + peores decisiones", color: "#f59e0b" },
+    { rule: "NUNCA promedies pérdidas", detail: "Si va en tu contra, acepta la pérdida", color: "#ef4444" },
     { rule: "Si pierdes 2 seguidas, PARA", detail: "Vuelve manana con mente fresca", color: "#8b5cf6" },
     { rule: "Position Size = Riesgo$ / (SL pips x Valor pip)", detail: "Calcula ANTES de cada trade", color: "#3b82f6" },
   ];
@@ -118,14 +118,14 @@ export function RiskManagementCheatSheet() {
 export function SMCCheatSheet() {
   const ref = useRef<SVGSVGElement>(null);
   const concepts = [
-    { name: "Liquidez (BSL/SSL)", desc: "Stop Loss acumulados encima de maximos y debajo de minimos", color: "#f59e0b" },
+    { name: "Liquidez (BSL/SSL)", desc: "Stop Loss acumulados encima de máximos y debajo de mínimos", color: "#f59e0b" },
     { name: "Liquidity Grab", desc: "El precio caza SL antes de girarse en la direccion real", color: "#f59e0b" },
     { name: "Order Block (OB)", desc: "Ultima vela opuesta antes de un movimiento fuerte", color: "#3b82f6" },
     { name: "Fair Value Gap (FVG)", desc: "Hueco de 3 velas que el precio tiende a rellenar", color: "#8b5cf6" },
-    { name: "Break of Structure", desc: "Ruptura de un maximo/minimo anterior = cambio de tendencia", color: "#10b981" },
+    { name: "Break of Structure", desc: "Ruptura de un máximo/mínimo anterior = cambio de tendencia", color: "#10b981" },
     { name: "Premium/Discount", desc: "Arriba del 50% = caro (vende). Abajo del 50% = barato (compra)", color: "#ec4899" },
     { name: "Power of 3 (AMD)", desc: "Asia acumula → London manipula → NY distribuye", color: "#6366f1" },
-    { name: "Killzones", desc: "London 08-11 UTC | NY 13-16 UTC = maxima volatilidad", color: "#14b8a6" },
+    { name: "Killzones", desc: "London 08-11 UTC | NY 13-16 UTC = maxima volátilidad", color: "#14b8a6" },
   ];
 
   return (
@@ -174,11 +174,11 @@ export function PropFirmCheatSheet() {
         <rect width="600" height="550" fill="#0c0e1a" rx="12" />
         <text x="300" y="40" fill="white" fontSize="20" fontWeight="bold" textAnchor="middle" fontFamily="Inter, sans-serif">10 MANDAMIENTOS DE PROP FIRMS</text>
         {[
-          "NUNCA arriesgues mas del 1% por operacion",
+          "NUNCA arriesgues más del 1% por operación",
           "Revisa las reglas ANTES de operar cada dia",
           "Monitorea tu drawdown diario CONSTANTEMENTE",
           "No operes noticias de alto impacto",
-          "Cierra operaciones ANTES del limite diario",
+          "Cierra operaciones ANTES del límite diario",
           "No dejes trades abiertos el viernes noche",
           "Usa los MISMOS pares que practicaste en demo",
           "No cambies de estrategia a mitad del challenge",
@@ -196,7 +196,7 @@ export function PropFirmCheatSheet() {
             </g>
           );
         })}
-        <text x="300" y="535" fill="#f59e0b" fontSize="11" fontWeight="bold" textAnchor="middle" fontFamily="Inter, sans-serif">Objetivo semanal: 2% | Riesgo: 0.5% | R:R minimo: 1:2</text>
+        <text x="300" y="535" fill="#f59e0b" fontSize="11" fontWeight="bold" textAnchor="middle" fontFamily="Inter, sans-serif">Objetivo semanal: 2% | Riesgo: 0.5% | R:R mínimo: 1:2</text>
       </svg>
     </div>
   );

@@ -10,9 +10,9 @@ interface CandlePattern {
 }
 
 const PATTERNS: CandlePattern[] = [
-  { name: "Martillo (Hammer)", description: "Cuerpo pequeno arriba, mecha inferior larga. Senal de rechazo de precios bajos.", signal: "ALCISTA",
+  { name: "Martillo (Hammer)", description: "Cuerpo pequeno arriba, mecha inferior larga. Señal de rechazo de precios bajos.", signal: "ALCISTA",
     candles: [{ open: 50, close: 55, high: 57, low: 20 }], context: "Aparece en soporte/zona de demanda" },
-  { name: "Estrella Fugaz (Shooting Star)", description: "Cuerpo pequeno abajo, mecha superior larga. Senal de rechazo de precios altos.", signal: "BAJISTA",
+  { name: "Estrella Fugaz (Shooting Star)", description: "Cuerpo pequeno abajo, mecha superior larga. Señal de rechazo de precios altos.", signal: "BAJISTA",
     candles: [{ open: 50, close: 45, high: 80, low: 43 }], context: "Aparece en resistencia/zona de oferta" },
   { name: "Doji", description: "Apertura y cierre casi iguales. Indecision del mercado.", signal: "NEUTRAL",
     candles: [{ open: 50, close: 51, high: 65, low: 35 }], context: "Tras tendencia fuerte puede indicar giro" },
@@ -30,9 +30,9 @@ const PATTERNS: CandlePattern[] = [
     candles: [{ open: 48, close: 45, high: 78, low: 43 }], context: "En resistencia + confluencia = setup A+" },
   { name: "Inside Bar", description: "Vela contenida dentro del rango de la anterior. Consolidacion antes de movimiento.", signal: "NEUTRAL",
     candles: [{ open: 30, close: 70, high: 75, low: 25 }, { open: 45, close: 55, high: 60, low: 40 }], context: "Esperar ruptura de la vela madre para direccion" },
-  { name: "Three White Soldiers", description: "3 velas verdes grandes consecutivas cerrando cada vez mas alto.", signal: "ALCISTA",
+  { name: "Three White Soldiers", description: "3 velas verdes grandes consecutivas cerrando cada vez más alto.", signal: "ALCISTA",
     candles: [{ open: 30, close: 42, high: 44, low: 28 }, { open: 43, close: 55, high: 57, low: 41 }, { open: 56, close: 68, high: 70, low: 54 }], context: "Fuerte momentum comprador" },
-  { name: "Three Black Crows", description: "3 velas rojas grandes consecutivas cerrando cada vez mas bajo.", signal: "BAJISTA",
+  { name: "Three Black Crows", description: "3 velas rojas grandes consecutivas cerrando cada vez más bajo.", signal: "BAJISTA",
     candles: [{ open: 70, close: 58, high: 72, low: 56 }, { open: 57, close: 45, high: 59, low: 43 }, { open: 44, close: 32, high: 46, low: 30 }], context: "Fuerte momentum vendedor" },
 ];
 
@@ -88,7 +88,7 @@ export default function CandlePractice() {
       <div className="flex items-center justify-between mb-6">
         <div>
           <h3 className="text-xl font-bold text-white">Practica de Velas Japonesas</h3>
-          <p className="text-sm text-[#a0a0b8]">Identifica el patron de velas</p>
+          <p className="text-sm text-[#a0a0b8]">Identifica el patrón de velas</p>
         </div>
         <div className="text-right">
           <p className="text-sm text-[#a0a0b8]">Puntuacion</p>
@@ -104,7 +104,7 @@ export default function CandlePractice() {
       </div>
 
       {/* Question */}
-      <p className="text-white font-medium mb-4 text-center">Que patron de vela es este?</p>
+      <p className="text-white font-medium mb-4 text-center">Que patrón de vela es este?</p>
 
       {/* Options */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-4">
@@ -130,7 +130,7 @@ export default function CandlePractice() {
           <p className="text-sm text-[#a0a0b8] mb-1">{pattern.description}</p>
           <p className="text-sm">
             <span className={`font-bold ${pattern.signal === "ALCISTA" ? "text-green-400" : pattern.signal === "BAJISTA" ? "text-red-400" : "text-amber-400"}`}>
-              Senal: {pattern.signal}
+              Señal: {pattern.signal}
             </span>
           </p>
           <p className="text-xs text-[#777] mt-1">Contexto: {pattern.context}</p>

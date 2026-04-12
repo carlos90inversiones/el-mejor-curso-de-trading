@@ -14,11 +14,11 @@ export default function PositionCalculator() {
   return (
     <div className="bg-[#1a1a2e] border border-[#2a2a40] rounded-2xl p-6">
       <h3 className="text-xl font-bold text-white mb-1">Calculadora de Position Sizing</h3>
-      <p className="text-sm text-[#a0a0b8] mb-6">Calcula el tamano exacto de tu posicion para cada trade</p>
+      <p className="text-sm text-[#a0a0b8] mb-6">Calcula el tamaño exacto de tu posición para cada trade</p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
         <div>
-          <label className="block text-sm text-[#a0a0b8] mb-1">Tamano de Cuenta ($)</label>
+          <label className="block text-sm text-[#a0a0b8] mb-1">tamaño de Cuenta ($)</label>
           <input type="number" value={accountSize} onChange={e => setAccountSize(+e.target.value)}
             className="w-full bg-[#0d0d15] border border-[#2a2a40] rounded-lg px-4 py-2.5 text-white focus:border-blue-500 outline-none" />
         </div>
@@ -52,12 +52,12 @@ export default function PositionCalculator() {
           <p className="text-2xl font-bold text-white">${riskAmount.toFixed(2)}</p>
         </div>
         <div className="bg-gradient-to-br from-green-900/30 to-green-800/10 border border-green-800/30 rounded-xl p-4 text-center">
-          <p className="text-sm text-green-400 mb-1">Tamano de Posicion</p>
+          <p className="text-sm text-green-400 mb-1">tamaño de posición</p>
           <p className="text-2xl font-bold text-white">{lotSize.toFixed(2)} lotes</p>
           <p className="text-xs text-[#a0a0b8]">{(lotSize * 10).toFixed(1)} mini | {(lotSize * 100).toFixed(0)} micro</p>
         </div>
         <div className="bg-gradient-to-br from-red-900/30 to-red-800/10 border border-red-800/30 rounded-xl p-4 text-center">
-          <p className="text-sm text-red-400 mb-1">Perdida Maxima</p>
+          <p className="text-sm text-red-400 mb-1">pérdida Maxima</p>
           <p className="text-2xl font-bold text-white">-${potentialLoss.toFixed(2)}</p>
         </div>
       </div>
@@ -68,7 +68,7 @@ export default function PositionCalculator() {
         <div className="grid grid-cols-4 gap-2 text-center text-sm">
           <div className="text-[#a0a0b8]">R:R</div>
           <div className="text-[#a0a0b8]">TP (pips)</div>
-          <div className="text-[#a0a0b8]">Ganancia</div>
+          <div className="text-[#a0a0b8]">ganancia</div>
           <div className="text-[#a0a0b8]">Win% min</div>
           {[1, 1.5, 2, 3, 5].map(rr => (
             <div key={rr} className="contents">

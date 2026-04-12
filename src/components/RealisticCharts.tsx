@@ -345,7 +345,7 @@ export function TrendStructureChart() {
   return (
     <div className="bg-[#1a1a2e] border border-[#2a2a40] rounded-xl p-4">
       <h4 className="text-white text-sm font-bold mb-1">EUR/USD H4 - Estructura Alcista (HH/HL)</h4>
-      <p className="text-xs text-[#787b86] mb-3">Maximos mas altos (HH) y minimos mas altos (HL) confirman tendencia alcista.</p>
+      <p className="text-xs text-[#787b86] mb-3">máximos más altos (HH) y mínimos más altos (HL) confirman tendencia alcista.</p>
       <CandlestickSVG candles={candles} W={W} H={H} pad={pad} annotations={annotations} />
     </div>
   );

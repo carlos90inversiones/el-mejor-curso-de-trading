@@ -39,7 +39,7 @@ export default function LessonNotes({ lessonId }: { lessonId: string }) {
       <textarea
         value={notes}
         onChange={e => setNotes(e.target.value)}
-        placeholder="Escribe tus notas sobre esta leccion aqui... (se guardan localmente)"
+        placeholder="Escribe tus notas sobre esta leccion aquí... (se guardan localmente)"
         className="w-full bg-[#0d0d15] border border-[#2a2a40] rounded-lg p-3 text-sm text-[#a0a0b8] outline-none focus:border-blue-500/50 resize-none min-h-[80px]"
         rows={4}
       />

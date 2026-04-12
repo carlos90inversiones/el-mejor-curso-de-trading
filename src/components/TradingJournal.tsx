@@ -79,7 +79,7 @@ export default function TradingJournal() {
       <div className="flex items-center justify-between mb-6">
         <div>
           <h3 className="text-xl font-bold text-white">Diario de Trading</h3>
-          <p className="text-sm text-[#a0a0b8]">Registra y analiza cada operacion</p>
+          <p className="text-sm text-[#a0a0b8]">Registra y analiza cada operación</p>
         </div>
         <button onClick={() => setShowForm(!showForm)}
           className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition">
@@ -110,7 +110,7 @@ export default function TradingJournal() {
       {/* Form */}
       {showForm && (
         <div className="bg-[#0d0d15] rounded-xl p-5 mb-6 border border-[#2a2a40]">
-          <h4 className="text-white font-bold mb-4">Nueva Operacion</h4>
+          <h4 className="text-white font-bold mb-4">Nueva operación</h4>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-4">
             <div>
               <label className="text-xs text-[#a0a0b8]">Fecha</label>
@@ -148,7 +148,7 @@ export default function TradingJournal() {
               <label className="text-xs text-[#a0a0b8]">Resultado</label>
               <select value={form.result} onChange={e => setForm({ ...form, result: e.target.value as JournalEntry["result"] })}
                 className="w-full bg-[#1a1a2e] border border-[#2a2a40] rounded-lg px-3 py-2 text-white text-sm outline-none focus:border-blue-500">
-                <option value="OPEN">Abierta</option><option value="WIN">Ganancia</option><option value="LOSS">Perdida</option><option value="BE">Break Even</option>
+                <option value="OPEN">Abierta</option><option value="WIN">ganancia</option><option value="LOSS">pérdida</option><option value="BE">Break Even</option>
               </select>
             </div>
             <div>
@@ -177,7 +177,7 @@ export default function TradingJournal() {
             </div>
           </div>
           <div className="mb-4">
-            <label className="text-xs text-[#a0a0b8]">Notas / Analisis</label>
+            <label className="text-xs text-[#a0a0b8]">Notas / análisis</label>
             <textarea value={form.notes} onChange={e => setForm({ ...form, notes: e.target.value })} rows={2} placeholder="Que viste, por que entraste, que aprendiste..."
               className="w-full bg-[#1a1a2e] border border-[#2a2a40] rounded-lg px-3 py-2 text-white text-sm outline-none focus:border-blue-500 resize-none" />
           </div>

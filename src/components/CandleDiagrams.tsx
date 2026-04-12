@@ -87,12 +87,12 @@ export function HammerDiagram() {
       <svg viewBox="0 0 200 280" className="w-full max-w-[200px] mx-auto">
         <ArrowDef />
         <Candle x={80} open={85} close={90} high={95} low={40} width={40} delay={0.2} />
-        <Label x={165} y={38} text="Maximo" size={9} />
+        <Label x={165} y={38} text="máximo" size={9} />
         <Label x={165} y={145} text="Cuerpo" size={9} color="#10b981" />
         <Label x={165} y={230} text="Rechazo" size={9} color="#f59e0b" />
         {/* Annotations */}
         <line x1={130} y1={155} x2={130} y2={225} stroke="#f59e0b" strokeWidth={2} strokeDasharray="4,3" style={{ animation: "pulse 2s infinite" }} />
-        <Label x={100} y={270} text="SENAL ALCISTA" color="#10b981" size={11} />
+        <Label x={100} y={270} text="Señal ALCISTA" color="#10b981" size={11} />
       </svg>
     </div>
   );
@@ -108,7 +108,7 @@ export function ShootingStarDiagram() {
         <Label x={165} y={55} text="Rechazo" size={9} color="#f59e0b" />
         <Label x={165} y={175} text="Cuerpo" size={9} color="#ef4444" />
         <line x1={130} y1={30} x2={130} y2={135} stroke="#f59e0b" strokeWidth={2} strokeDasharray="4,3" style={{ animation: "pulse 2s infinite" }} />
-        <Label x={100} y={270} text="SENAL BAJISTA" color="#ef4444" size={11} />
+        <Label x={100} y={270} text="Señal BAJISTA" color="#ef4444" size={11} />
       </svg>
     </div>
   );
@@ -123,7 +123,7 @@ export function EngulfingDiagram() {
         <Candle x={50} open={75} close={60} high={80} low={55} width={35} delay={0.1} />
         <Candle x={100} open={55} close={85} high={90} low={50} width={45} delay={0.4} />
         <rect x={95} y={55} width={55} height={115} fill="none" stroke="#10b981" strokeWidth={1.5} strokeDasharray="5,3" rx={5} style={{ animation: "pulse 2s infinite" }} />
-        <Label x={110} y={270} text="SENAL ALCISTA" color="#10b981" size={11} />
+        <Label x={110} y={270} text="Señal ALCISTA" color="#10b981" size={11} />
       </svg>
     </div>
   );
@@ -194,7 +194,7 @@ export function UptrendDiagram() {
         <Label x={120} y={172} text="HL" color="#3b82f6" size={10} />
         <Label x={210} y={142} text="HL" color="#3b82f6" size={10} />
         <Label x={310} y={107} text="HL" color="#3b82f6" size={10} />
-        <Label x={200} y={210} text="Maximos y Minimos Cada Vez MAS ALTOS" color="#10b981" size={11} />
+        <Label x={200} y={210} text="máximos y mínimos Cada Vez MAS ALTOS" color="#10b981" size={11} />
       </svg>
     </div>
   );
@@ -221,7 +221,7 @@ export function DowntrendDiagram() {
         <Label x={120} y={47} text="LH" color="#f59e0b" size={10} />
         <Label x={210} y={77} text="LH" color="#f59e0b" size={10} />
         <Label x={310} y={112} text="LH" color="#f59e0b" size={10} />
-        <Label x={200} y={210} text="Maximos y Minimos Cada Vez MAS BAJOS" color="#ef4444" size={11} />
+        <Label x={200} y={210} text="máximos y mínimos Cada Vez MAS BAJOS" color="#ef4444" size={11} />
       </svg>
     </div>
   );

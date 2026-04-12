@@ -33,7 +33,7 @@ const CHANGELOG = [
     "Simulador de trading con datos reales + modo Challenge",
     "Calculadora de position sizing",
     "Diario de trading interactivo",
-    "Práctica de velas japonesas (12 patrones)",
+    "Práctica de velas japonesas (12 patrónes)",
     "30 flashcards de memorización",
     "30 tips diarios rotativos",
     "Glosario con 102 términos",

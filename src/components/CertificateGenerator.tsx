@@ -107,7 +107,7 @@ export default function CertificateGenerator({ phaseName, phaseNumber, score, da
     // Date
     ctx.fillStyle = "#a0a0b8";
     ctx.font = "16px Inter, sans-serif";
-    ctx.fillText(`Fecha de certificacion: ${date}`, W / 2, 680);
+    ctx.fillText(`Fecha de certificación: ${date}`, W / 2, 680);
 
     // Bottom decoration
     ctx.fillStyle = color + "22";

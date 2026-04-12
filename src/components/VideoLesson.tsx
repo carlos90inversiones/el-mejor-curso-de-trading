@@ -293,7 +293,7 @@ export const VIDEO_LESSONS = {
           { type: "zone" as const, price: 1.0895, price2: 1.0882, color: "#ef5350" },
           { type: "label" as const, price: 1.0898, text: "RESISTENCIA", color: "#ef5350" },
         ],
-        narration: "Aqui vemos como el precio llega a la zona de 1.0890 y es RECHAZADO. Las velas empiezan a tener mechas superiores y luego aparecen velas rojas. Esta zona se convierte en RESISTENCIA. El precio no puede superarla.",
+        narration: "aquí vemos como el precio llega a la zona de 1.0890 y es RECHAZADO. Las velas empiezan a tener mechas superiores y luego aparecen velas rojas. Esta zona se convierte en RESISTENCIA. El precio no puede superarla.",
         duration: 7,
       },
       {
@@ -313,7 +313,7 @@ export const VIDEO_LESSONS = {
           { type: "label" as const, price: 1.0832, text: "SOPORTE", color: "#26a69a", x: 15 },
           { type: "circle" as const, price: 1.0842, color: "#26a69a", x: 175 },
         ],
-        narration: "El precio cae hasta la zona de 1.0835 a 1.0850 y aqui REBOTA. Esta es la zona de SOPORTE. Los compradores defienden este nivel. Fijate en la vela con mecha inferior larga: es un martillo, senal de rechazo. El precio rebota hacia arriba desde el soporte.",
+        narration: "El precio cae hasta la zona de 1.0835 a 1.0850 y aquí REBOTA. Esta es la zona de SOPORTE. Los compradores defienden este nivel. Fijate en la vela con mecha inferior larga: es un martillo, Señal de rechazo. El precio rebota hacia arriba desde el soporte.",
         duration: 8,
       },
       {
@@ -335,13 +335,13 @@ export const VIDEO_LESSONS = {
           { type: "label" as const, price: 1.0832, text: "SOPORTE", color: "#26a69a", x: 15 },
           { type: "circle" as const, price: 1.0892, color: "#ff9800", x: 240 },
         ],
-        narration: "Y aqui viene lo mas importante: el precio vuelve a subir y esta vez ROMPE la resistencia con fuerza. Cuando una resistencia se rompe, se convierte en SOPORTE. Esto se llama CAMBIO DE POLARIDAD. Ahora la zona de 1.0885 a 1.0895 que antes frenaba la subida, ahora la sostiene. Este concepto es fundamental en todo el trading.",
+        narration: "Y aquí viene lo más importante: el precio vuelve a subir y esta vez ROMPE la resistencia con fuerza. Cuando una resistencia se rompe, se convierte en SOPORTE. Esto se llama CAMBIO DE POLARIDAD. Ahora la zona de 1.0885 a 1.0895 que antes frenaba la subida, ahora la sostiene. Este concepto es fundamental en todo el trading.",
         duration: 10,
       },
     ],
   },
   orderBlockTrade: {
-    title: "Operacion con Order Block (Setup Completo)",
+    title: "operación con Order Block (Setup Completo)",
     pair: "EUR/USD",
     timeframe: "H1",
     steps: [
@@ -370,7 +370,7 @@ export const VIDEO_LESSONS = {
           { type: "zone" as const, price: 1.0858, price2: 1.0838, color: "#2962ff" },
           { type: "label" as const, price: 1.0835, text: "ORDER BLOCK (ultima roja antes del movimiento)", color: "#2962ff", x: 15 },
         ],
-        narration: "Atencion! Mira esta vela roja grande. Es la ULTIMA vela bajista antes de un movimiento alcista explosivo. Esto es un ORDER BLOCK. Las instituciones acumularon posiciones de compra aqui. Las 3 velas verdes grandes que siguen son el DISPLACEMENT: movimiento agresivo que confirma la intencion real del mercado.",
+        narration: "Atencion! Mira esta vela roja grande. Es la ULTIMA vela bajista antes de un movimiento alcista explosivo. Esto es un ORDER BLOCK. Las instituciones acumularon posiciones de compra aquí. Las 3 velas verdes grandes que siguen son el DISPLACEMENT: movimiento agresivo que confirma la intencion real del mercado.",
         duration: 8,
       },
       {
@@ -390,7 +390,7 @@ export const VIDEO_LESSONS = {
           { type: "circle" as const, price: 1.0848, color: "#26a69a", x: 210 },
           { type: "label" as const, price: 1.0860, text: "Precio retorna al OB → ENTRADA LONG", color: "#26a69a", x: 220 },
         ],
-        narration: "Ahora el precio retrocede. Baja vela a vela hasta llegar exactamente a la zona del Order Block. Mira como la ultima vela tiene una mecha inferior que toca el OB y luego cierra con rechazo. ESTE es el momento de entrar en LONG. Stop Loss debajo del Order Block, Take Profit en el maximo anterior o mas alla.",
+        narration: "Ahora el precio retrocede. Baja vela a vela hasta llegar exactamente a la zona del Order Block. Mira como la ultima vela tiene una mecha inferior que toca el OB y luego cierra con rechazo. ESTE es el momento de entrar en LONG. Stop Loss debajo del Order Block, Take Profit en el máximo anterior o más alla.",
         duration: 8,
       },
       {
@@ -411,7 +411,7 @@ export const VIDEO_LESSONS = {
           { type: "label" as const, price: 1.0948, text: "TP alcanzado: +100 pips", color: "#26a69a", x: 250 },
           { type: "label" as const, price: 1.0835, text: "SL: -15 pips | R:R = 1:6.7", color: "#ef5350", x: 15 },
         ],
-        narration: "Y aqui tienes el resultado. El precio reboto perfectamente desde el Order Block y subio con fuerza. Si entraste en la zona del OB con un Stop Loss de 15 pips y el precio subio 100 pips, tu ratio riesgo beneficio fue de 1 a 6.7. Excelente. Este es el poder de operar con Smart Money Concepts: entradas precisas con ratios de riesgo beneficio muy favorables.",
+        narration: "Y aquí tienes el resultado. El precio reboto perfectamente desde el Order Block y subio con fuerza. Si entraste en la zona del OB con un Stop Loss de 15 pips y el precio subio 100 pips, tu ratio riesgo beneficio fue de 1 a 6.7. Excelente. Este es el poder de operar con Smart Money Concepts: entradas precisas con ratios de riesgo beneficio muy favorables.",
         duration: 9,
       },
     ],
@@ -419,7 +419,7 @@ export const VIDEO_LESSONS = {
 
   // VIDEO 3: Candle Patterns
   candlePatterns: {
-    title: "Patrones de Velas en Accion",
+    title: "patrónes de Velas en Accion",
     pair: "GBP/USD", timeframe: "H4",
     steps: [
       {
@@ -446,7 +446,7 @@ export const VIDEO_LESSONS = {
           { type: "circle" as const, price: 1.2618, color: "#ff9800", x: 100 },
           { type: "label" as const, price: 1.2625, text: "MARTILLO! Mecha larga inferior = rechazo", color: "#ff9800", x: 110 },
         ],
-        narration: "Mira esta vela. Tiene un cuerpo pequeno arriba y una mecha inferior MUY larga. Esto es un MARTILLO. Los vendedores empujaron el precio hacia abajo pero los compradores lo devolvieron con fuerza. La mecha larga muestra RECHAZO del soporte. Esta es una senal alcista clasica.",
+        narration: "Mira esta vela. Tiene un cuerpo pequeno arriba y una mecha inferior MUY larga. Esto es un MARTILLO. Los vendedores empujaron el precio hacia abajo pero los compradores lo devolvieron con fuerza. La mecha larga muestra RECHAZO del soporte. Esta es una Señal alcista clasica.",
         duration: 8,
       },
       {
@@ -462,7 +462,7 @@ export const VIDEO_LESSONS = {
           { type: "circle" as const, price: 1.2652, color: "#26a69a", x: 115 },
           { type: "label" as const, price: 1.2660, text: "ENVOLVENTE ALCISTA! Verde grande envuelve roja", color: "#26a69a", x: 120 },
         ],
-        narration: "Y ahora viene la confirmacion definitiva: una vela verde GRANDE que envuelve completamente a la roja anterior. Esto es un patron ENVOLVENTE ALCISTA. Martillo mas envolvente en soporte es un combo extremadamente poderoso. Las probabilidades de subida son muy altas.",
+        narration: "Y ahora viene la confirmacion definitiva: una vela verde GRANDE que envuelve completamente a la roja anterior. Esto es un patrón ENVOLVENTE ALCISTA. Martillo más envolvente en soporte es un combo extremadamente poderoso. Las probabilidades de subida son muy altas.",
         duration: 7,
       },
       {
@@ -477,7 +477,7 @@ export const VIDEO_LESSONS = {
         annotations: [
           { type: "label" as const, price: 1.2718, text: "Rally de +100 pips tras la confirmacion", color: "#26a69a", x: 150 },
         ],
-        narration: "Resultado: el precio subio 100 pips desde la zona de soporte. La leccion clave es que los patrones de velas SOLO son fiables cuando aparecen en un nivel importante, como un soporte fuerte. Un martillo en medio de la nada no significa nada. Un martillo en soporte con envolvente de confirmacion es una senal de alta probabilidad.",
+        narration: "Resultado: el precio subio 100 pips desde la zona de soporte. La leccion clave es que los patrónes de velas SOLO son fiables cuando aparecen en un nivel importante, como un soporte fuerte. Un martillo en medio de la nada no significa nada. Un martillo en soporte con envolvente de confirmacion es una Señal de alta probabilidad.",
         duration: 8,
       },
     ],
@@ -485,7 +485,7 @@ export const VIDEO_LESSONS = {
 
   // VIDEO 4: Liquidity Sweep
   liquiditySweep: {
-    title: "Caza de Liquidez: Asi te Roban tu Stop Loss",
+    title: "Caza de Liquidez: Así te Roban tu Stop Loss",
     pair: "EUR/USD", timeframe: "M15",
     steps: [
       {
@@ -498,7 +498,7 @@ export const VIDEO_LESSONS = {
           { type: "zone" as const, price: 1.0850, price2: 1.0842, color: "#ff9800" },
           { type: "label" as const, price: 1.0839, text: "Equal Lows = LIQUIDEZ acumulada (SL de traders retail)", color: "#ff9800", x: 15 },
         ],
-        narration: "Observa estos minimos iguales. El precio toca 1.0842 a 1.0845 tres veces sin romper. Los traders retail ven un soporte fuerte y ponen sus Stop Loss justo debajo, en 1.0835 a 1.0840. Esto crea una PISCINA DE LIQUIDEZ. Las instituciones ven esos Stop Loss como combustible.",
+        narration: "Observa estos mínimos iguales. El precio toca 1.0842 a 1.0845 tres veces sin romper. Los traders retail ven un soporte fuerte y ponen sus Stop Loss justo debajo, en 1.0835 a 1.0840. Esto crea una PISCINA DE LIQUIDEZ. Las instituciones ven esos Stop Loss como combustible.",
         duration: 8,
       },
       {
@@ -515,7 +515,7 @@ export const VIDEO_LESSONS = {
           { type: "circle" as const, price: 1.0818, color: "#ef5350", x: 130 },
           { type: "label" as const, price: 1.0815, text: "SWEEP! El precio barre todos los Stop Loss", color: "#ef5350", x: 15 },
         ],
-        narration: "Y aqui viene la caza. El precio cae BRUSCAMENTE por debajo de los equal lows. Activa TODOS los Stop Loss de los traders que estaban en long. Esos SL son ordenes de venta que les dan a las instituciones la liquidez que necesitan para sus ordenes de compra masivas. Fijate: la caida es rapida y agresiva.",
+        narration: "Y aquí viene la caza. El precio cae BRUSCAMENTE por debajo de los equal lows. Activa TODOS los Stop Loss de los traders que estaban en long. Esos SL son ordenes de venta que les dan a las instituciones la liquidez que necesitan para sus ordenes de compra masivas. Fijate: la caida es rapida y agresiva.",
         duration: 8,
       },
       {
@@ -533,7 +533,7 @@ export const VIDEO_LESSONS = {
         annotations: [
           { type: "circle" as const, price: 1.0855, color: "#26a69a", x: 140 },
           { type: "label" as const, price: 1.0938, text: "Rally de +115 pips tras el sweep", color: "#26a69a", x: 180 },
-          { type: "label" as const, price: 1.0810, text: "El que entendio el sweep, compro aqui", color: "#ff9800", x: 15 },
+          { type: "label" as const, price: 1.0810, text: "El que entendio el sweep, compro aquí", color: "#ff9800", x: 15 },
         ],
         narration: "Y mira lo que pasa inmediatamente despues. Vela de reversal gigante: martillo con mecha larga que muestra rechazo total de los precios bajos. Luego tres velas verdes grandes. El precio sube 115 pips. Los traders retail perdieron sus posiciones en el sweep. El trader que entiende Smart Money vio el sweep, espero la confirmacion, entro en long, y gano. Esta es la diferencia entre operar como retail y operar como institucional.",
         duration: 10,
@@ -543,7 +543,7 @@ export const VIDEO_LESSONS = {
 
   // VIDEO 5: Power of 3 (AMD)
   powerOf3: {
-    title: "Power of 3: Asi se Mueve el Mercado CADA DIA",
+    title: "Power of 3: Así se Mueve el Mercado CADA DIA",
     pair: "EUR/USD", timeframe: "M15",
     steps: [
       {
@@ -574,7 +574,7 @@ export const VIDEO_LESSONS = {
           { type: "circle" as const, price: 1.0828, color: "#ef5350", x: 130 },
           { type: "label" as const, price: 1.0825, text: "LONDON: Rompe Asia Low = MANIPULACION", color: "#ef5350", x: 15 },
         ],
-        narration: "Son las 8 de la manana. Abre la sesion de Londres. El precio cae BRUSCAMENTE y rompe el minimo del rango asiatico. Los traders retail que compraron en Asia ven sus Stop Loss activados. Esta es la fase de MANIPULACION. London esta cazando liquidez debajo del rango de Asia. NO sigas esta ruptura, es una TRAMPA.",
+        narration: "Son las 8 de la manana. Abre la sesion de Londres. El precio cae BRUSCAMENTE y rompe el mínimo del rango asiatico. Los traders retail que compraron en Asia ven sus Stop Loss activados. Esta es la fase de MANIPULACION. London esta cazando liquidez debajo del rango de Asia. NO sigas esta ruptura, es una TRAMPA.",
         duration: 9,
       },
       {
@@ -593,9 +593,9 @@ export const VIDEO_LESSONS = {
         annotations: [
           { type: "zone" as const, price: 1.0860, price2: 1.0845, color: "#6366f1" },
           { type: "label" as const, price: 1.0945, text: "NY: DISTRIBUCION - movimiento REAL del dia (+115 pips)", color: "#26a69a", x: 100 },
-          { type: "label" as const, price: 1.0825, text: "Entrada aqui tras ver el sweep + reversal", color: "#ff9800", x: 15 },
+          { type: "label" as const, price: 1.0825, text: "Entrada aquí tras ver el sweep + reversal", color: "#ff9800", x: 15 },
         ],
-        narration: "Y aqui viene la verdad. Despues de la caza de liquidez, el precio se GIRA completamente. Vela de reversal gigante, y luego la sesion de Nueva York impulsa el precio hacia arriba con fuerza. El movimiento real del dia es ALCISTA, contrario a la manipulacion de London. 115 pips de subida. Este patron se repite CADA DIA. Acumulacion en Asia, manipulacion en London, distribucion en Nueva York. Una vez que lo ves, no puedes dejar de verlo.",
+        narration: "Y aquí viene la verdad. Despues de la caza de liquidez, el precio se GIRA completamente. Vela de reversal gigante, y luego la sesion de Nueva York impulsa el precio hacia arriba con fuerza. El movimiento real del dia es ALCISTA, contrario a la manipulacion de London. 115 pips de subida. Este patrón se repite CADA DIA. Acumulacion en Asia, manipulacion en London, distribucion en Nueva York. Una vez que lo ves, no puedes dejar de verlo.",
         duration: 10,
       },
     ],
@@ -603,7 +603,7 @@ export const VIDEO_LESSONS = {
 
   // VIDEO 6: RSI Divergence
   rsiDivergence: {
-    title: "Divergencia del RSI: La Senal que Predice Giros",
+    title: "Divergencia del RSI: La Señal que Predice Giros",
     pair: "EUR/USD", timeframe: "H4",
     steps: [
       {
@@ -616,9 +616,9 @@ export const VIDEO_LESSONS = {
         ],
         annotations: [
           { type: "circle" as const, price: 1.0910, color: "#2962ff", x: 115 },
-          { type: "label" as const, price: 1.0915, text: "Maximo 1: 1.0910 | RSI: 78", color: "#2962ff", x: 120 },
+          { type: "label" as const, price: 1.0915, text: "máximo 1: 1.0910 | RSI: 78", color: "#2962ff", x: 120 },
         ],
-        narration: "El precio sube con fuerza hasta 1.0910. El RSI esta en 78, en zona de sobrecompra. Esto por si solo NO es senal de venta. El RSI puede quedarse en sobrecompra mucho tiempo en tendencia fuerte. La clave es lo que pasa despues.",
+        narration: "El precio sube con fuerza hasta 1.0910. El RSI esta en 78, en zona de sobrecompra. Esto por si solo NO es Señal de venta. El RSI puede quedarse en sobrecompra mucho tiempo en tendencia fuerte. La clave es lo que pasa despues.",
         duration: 7,
       },
       {
@@ -635,11 +635,11 @@ export const VIDEO_LESSONS = {
         ],
         annotations: [
           { type: "circle" as const, price: 1.0910, color: "#2962ff", x: 115 },
-          { type: "label" as const, price: 1.0912, text: "Maximo 1: RSI 78", color: "#2962ff", x: 120 },
+          { type: "label" as const, price: 1.0912, text: "máximo 1: RSI 78", color: "#2962ff", x: 120 },
           { type: "circle" as const, price: 1.0920, color: "#ef5350", x: 195 },
-          { type: "label" as const, price: 1.0925, text: "Maximo 2: precio MAS ALTO pero RSI solo 68", color: "#ef5350", x: 15 },
+          { type: "label" as const, price: 1.0925, text: "máximo 2: precio MAS ALTO pero RSI solo 68", color: "#ef5350", x: 15 },
         ],
-        narration: "Ahora el precio sube AUN MAS hasta 1.0920, un maximo mas alto. PERO mira el RSI: solo marca 68. Antes marco 78 con un precio menor. El precio sube pero el RSI BAJA. Esto es una DIVERGENCIA BAJISTA. El momentum se esta agotando. El precio sigue subiendo por inercia pero la fuerza detras ya no esta.",
+        narration: "Ahora el precio sube AUN MAS hasta 1.0920, un máximo más alto. PERO mira el RSI: solo marca 68. Antes marco 78 con un precio menor. El precio sube pero el RSI BAJA. Esto es una DIVERGENCIA BAJISTA. El momentum se esta agotando. El precio sigue subiendo por inercia pero la fuerza detras ya no esta.",
         duration: 9,
       },
       {
@@ -657,7 +657,7 @@ export const VIDEO_LESSONS = {
         annotations: [
           { type: "label" as const, price: 1.0835, text: "Caida de 80 pips tras la divergencia bajista", color: "#ef5350", x: 200 },
         ],
-        narration: "Y mira el resultado. Despues de la divergencia, el precio cae 80 pips. La divergencia del RSI predijo correctamente el giro. Recuerda: la divergencia es una ADVERTENCIA de que el momentum se agota. No es senal de entrada directa. Necesitas confirmacion: un BOS, un patron de vela de rechazo, o un Order Block que coincida. La divergencia mas estructura es un combo mortal.",
+        narration: "Y mira el resultado. Despues de la divergencia, el precio cae 80 pips. La divergencia del RSI predijo correctamente el giro. Recuerda: la divergencia es una ADVERTENCIA de que el momentum se agota. No es Señal de entrada directa. Necesitas confirmacion: un BOS, un patrón de vela de rechazo, o un Order Block que coincida. La divergencia más estructura es un combo mortal.",
         duration: 9,
       },
     ],
@@ -679,7 +679,7 @@ export const VIDEO_LESSONS = {
           { type: "label" as const, price: 1.0775, text: "Swing Low: 1.0775", color: "#42a5f5", x: 15 },
           { type: "label" as const, price: 1.0915, text: "Swing High: 1.0912", color: "#26a69a", x: 100 },
         ],
-        narration: "Tenemos un movimiento impulsivo alcista de 1.0775 a 1.0912. Son 137 pips de impulso. Ahora aplicamos Fibonacci desde el minimo al maximo para encontrar la zona de retroceso optima. Los niveles clave son 38.2 por ciento, 50 por ciento, y la zona OTE entre 61.8 y 78.6 por ciento.",
+        narration: "Tenemos un movimiento impulsivo alcista de 1.0775 a 1.0912. Son 137 pips de impulso. Ahora aplicamos Fibonacci desde el mínimo al máximo para encontrar la zona de retroceso optima. Los niveles clave son 38.2 por ciento, 50 por ciento, y la zona OTE entre 61.8 y 78.6 por ciento.",
         duration: 7,
       },
       {
@@ -719,7 +719,7 @@ export const VIDEO_LESSONS = {
           { type: "label" as const, price: 1.0828, text: "Pin Bar en OTE = ENTRADA LONG | SL: 1.0828 | TP: 1.0955", color: "#26a69a", x: 15 },
           { type: "label" as const, price: 1.0960, text: "R:R = 1:3.4 | +127 pips", color: "#26a69a", x: 200 },
         ],
-        narration: "El precio llega a la zona OTE y forma un PIN BAR con mecha inferior larga. Rechazo perfecto del nivel 61.8 de Fibonacci. Entramos LONG con Stop Loss debajo de la zona OTE en 1.0828 y Take Profit en 1.0955. Resultado: 127 pips de ganancia con un ratio riesgo beneficio de 1 a 3.4. Este setup de Fibonacci mas OTE mas patron de rechazo es uno de los mas rentables y fiables que existen.",
+        narration: "El precio llega a la zona OTE y forma un PIN BAR con mecha inferior larga. Rechazo perfecto del nivel 61.8 de Fibonacci. Entramos LONG con Stop Loss debajo de la zona OTE en 1.0828 y Take Profit en 1.0955. Resultado: 127 pips de ganancia con un ratio riesgo beneficio de 1 a 3.4. Este setup de Fibonacci más OTE más patrón de rechazo es uno de los más rentables y fiables que existen.",
         duration: 10,
       },
     ],
@@ -727,7 +727,7 @@ export const VIDEO_LESSONS = {
 
   // VIDEO 8: Risk Management in Action
   riskManagement: {
-    title: "Gestion de Riesgo: Asi Sobrevives en Trading",
+    title: "Gestion de Riesgo: Así Sobrevives en Trading",
     pair: "EUR/USD", timeframe: "H1",
     steps: [
       {
@@ -738,7 +738,7 @@ export const VIDEO_LESSONS = {
           { type: "label" as const, price: 1.0875, text: "Cuenta: 10,000$ | Riesgo: 1% = 100$", color: "#d1d4dc", x: 15 },
           { type: "label" as const, price: 1.0840, text: "SL: 30 pips | Lotes: 100$ / (30 x 10$) = 0.33", color: "#ff9800", x: 15 },
         ],
-        narration: "Tienes una cuenta de 10,000 dolares. Tu regla es arriesgar el 1 por ciento por trade, es decir 100 dolares. Tu Stop Loss esta a 30 pips. El calculo de position sizing es: 100 dolares dividido entre 30 pips por 10 dolares por pip, igual a 0.33 lotes. SIEMPRE calcula esto ANTES de cada trade.",
+        narration: "Tienes una cuenta de 10,000 dolares. Tu regla es arriesgar el 1 por ciento por trade, es decir 100 dolares. Tu Stop Loss esta a 30 pips. El cálculo de position sizing es: 100 dolares dividido entre 30 pips por 10 dolares por pip, igual a 0.33 lotes. SIEMPRE calcula esto ANTES de cada trade.",
         duration: 8,
       },
       {
@@ -748,9 +748,9 @@ export const VIDEO_LESSONS = {
           {o:1.0848,h:1.0852,l:1.0832,c:1.0835},
         ],
         annotations: [
-          { type: "label" as const, price: 1.0830, text: "Trade 1: PERDIDA -100$ | Balance: 9,900$", color: "#ef5350", x: 15 },
+          { type: "label" as const, price: 1.0830, text: "Trade 1: pérdida -100$ | Balance: 9,900$", color: "#ef5350", x: 15 },
         ],
-        narration: "Primer trade: PERDIDA. El Stop Loss se activo. Perdiste exactamente 100 dolares, el 1 por ciento de tu cuenta. Balance queda en 9,900. Esto es NORMAL. Es parte del juego. La clave es que la perdida esta CONTROLADA. No destruyo tu cuenta.",
+        narration: "Primer trade: pérdida. El Stop Loss se activo. Perdiste exactamente 100 dolares, el 1 por ciento de tu cuenta. Balance queda en 9,900. Esto es NORMAL. Es parte del juego. La clave es que la pérdida esta CONTROLADA. No destruyo tu cuenta.",
         duration: 7,
       },
       {
@@ -762,10 +762,10 @@ export const VIDEO_LESSONS = {
           {o:1.0882,h:1.0912,l:1.0880,c:1.0908},
         ],
         annotations: [
-          { type: "label" as const, price: 1.0915, text: "Trade 2: GANANCIA +200$ (R:R 1:2) | Balance: 10,100$", color: "#26a69a", x: 15 },
-          { type: "label" as const, price: 1.0825, text: "1 perdida + 1 ganancia con R:R 1:2 = BENEFICIO NETO +100$", color: "#ff9800", x: 15 },
+          { type: "label" as const, price: 1.0915, text: "Trade 2: ganancia +200$ (R:R 1:2) | Balance: 10,100$", color: "#26a69a", x: 15 },
+          { type: "label" as const, price: 1.0825, text: "1 pérdida + 1 ganancia con R:R 1:2 = BENEFICIO NETO +100$", color: "#ff9800", x: 15 },
         ],
-        narration: "Segundo trade: GANANCIA. Con ratio 1:2, ganaste 200 dolares. Balance ahora es 10,100 dolares. Fijate: perdiste 1 trade y ganaste 1 trade. Resultado neto: mas 100 dolares de beneficio. Con ratio 1:2, solo necesitas ganar 1 de cada 3 para ser rentable. ESTO es el poder de la gestion de riesgo. No se trata de acertar siempre. Se trata de que cuando aciertas, ganes mas de lo que pierdes cuando fallas.",
+        narration: "Segundo trade: ganancia. Con ratio 1:2, ganaste 200 dolares. Balance ahora es 10,100 dolares. Fijate: perdiste 1 trade y ganaste 1 trade. Resultado neto: más 100 dolares de beneficio. Con ratio 1:2, solo necesitas ganar 1 de cada 3 para ser rentable. ESTO es el poder de la gestion de riesgo. No se trata de acertar siempre. Se trata de que cuando aciertas, ganes más de lo que pierdes cuando fallas.",
         duration: 10,
       },
     ],
@@ -784,9 +784,9 @@ export const VIDEO_LESSONS = {
         ],
         annotations: [
           { type: "label" as const, price: 1.0898, text: "Challenge 100K FTMO | Objetivo: +8,000$ | DD max: 5,000$/dia", color: "#ff9800", x: 15 },
-          { type: "label" as const, price: 1.0863, text: "Riesgo por trade: 0.5% = 500$ | R:R: 1:2 minimo", color: "#d1d4dc", x: 15 },
+          { type: "label" as const, price: 1.0863, text: "Riesgo por trade: 0.5% = 500$ | R:R: 1:2 mínimo", color: "#d1d4dc", x: 15 },
         ],
-        narration: "Estas en un challenge de FTMO de 100,000 dolares. Objetivo: ganar 8,000 dolares. Drawdown maximo diario: 5,000 dolares. Tu riesgo por trade: 0.5 por ciento, es decir 500 dolares. Con ratio 1:2, cada ganadora te da 1,000 dolares. Solo necesitas 8 trades ganadores netos para pasar. En 4 semanas, eso es 2 por semana. Totalmente alcanzable con disciplina.",
+        narration: "Estas en un challenge de FTMO de 100,000 dolares. Objetivo: ganar 8,000 dolares. Drawdown máximo diario: 5,000 dolares. Tu riesgo por trade: 0.5 por ciento, es decir 500 dolares. Con ratio 1:2, cada ganadora te da 1,000 dolares. Solo necesitas 8 trades ganadores netos para pasar. En 4 semanas, eso es 2 por semana. Totalmente alcanzable con disciplina.",
         duration: 9,
       },
       {
@@ -805,7 +805,7 @@ export const VIDEO_LESSONS = {
           { type: "label" as const, price: 1.0845, text: "OB alcista | Entry: 1.0852 | SL: 1.0840 | TP: 1.0876", color: "#2962ff", x: 15 },
           { type: "label" as const, price: 1.0920, text: "WIN +1,000$ | Balance: 101,000$ (+1%)", color: "#26a69a", x: 150 },
         ],
-        narration: "Esperas pacientemente a que el precio retroceda a un Order Block en zona discount. Entras en 1.0852, Stop Loss en 1.0840 que son 12 pips, y Take Profit en 1.0876 que son 24 pips, ratio 1:2. El trade gana. Plus 1,000 dolares. Balance: 101,000. Ya llevas el 1 por ciento del objetivo en UN solo trade bien ejecutado. Asi se pasa un challenge: trades selectivos con buena gestion de riesgo.",
+        narration: "Esperas pacientemente a que el precio retroceda a un Order Block en zona discount. Entras en 1.0852, Stop Loss en 1.0840 que son 12 pips, y Take Profit en 1.0876 que son 24 pips, ratio 1:2. El trade gana. Plus 1,000 dolares. Balance: 101,000. Ya llevas el 1 por ciento del objetivo en UN solo trade bien ejecutado. Así se pasa un challenge: trades selectivos con buena gestion de riesgo.",
         duration: 10,
       },
       {
@@ -822,7 +822,7 @@ export const VIDEO_LESSONS = {
           { type: "label" as const, price: 1.0885, text: "Semana 4: reduce riesgo a 0.25% para PROTEGER ganancias", color: "#ff9800", x: 15 },
           { type: "label" as const, price: 1.0848, text: "RESULTADO: +8,500$ en 4 semanas = CHALLENGE PASADO!", color: "#26a69a", x: 100 },
         ],
-        narration: "Asi se ve un challenge exitoso: semana 1 ganas 2,500, semana 2 ganas 2,000, ya llevas 4,500. En semana 3 sumas 2,000 mas y llevas 6,500. En semana 4 REDUCES el riesgo a 0.25 por ciento porque solo necesitas 1,500 mas. Proteges lo ganado. Terminas con 8,500 dolares de beneficio. Challenge PASADO. Nunca superaste el drawdown diario. Todo con disciplina, paciencia, y gestion de riesgo. Asi se hace.",
+        narration: "Así se ve un challenge éxitoso: semana 1 ganas 2,500, semana 2 ganas 2,000, ya llevas 4,500. En semana 3 sumas 2,000 más y llevas 6,500. En semana 4 REDUCES el riesgo a 0.25 por ciento porque solo necesitas 1,500 más. Proteges lo ganado. Terminas con 8,500 dolares de beneficio. Challenge PASADO. Nunca superaste el drawdown diario. Todo con disciplina, paciencia, y gestion de riesgo. Así se hace.",
         duration: 10,
       },
     ],

@@ -271,7 +271,7 @@ export default function AdvancedSimulator() {
         <div className="bg-gradient-to-r from-red-900/30 to-rose-900/30 border border-red-600 rounded-xl p-5 text-center">
           <div className="text-4xl mb-2">💥</div>
           <h3 className="text-2xl font-bold text-red-400">CHALLENGE FALLIDO</h3>
-          <p className="text-red-300">Has superado el drawdown maximo de {challenge.maxTotalDD}%.</p>
+          <p className="text-red-300">Has superado el drawdown máximo de {challenge.maxTotalDD}%.</p>
           <button onClick={startChallenge} className="mt-3 bg-gradient-to-r from-amber-600 to-orange-600 text-white px-6 py-2 rounded-lg">Reintentar</button>
         </div>
       )}
@@ -345,7 +345,7 @@ export default function AdvancedSimulator() {
                   <span className={`text-lg font-bold ${openPnl >= 0 ? "text-green-400" : "text-red-400"}`}>{openPnl >= 0 ? "+" : ""}{openPnl.toFixed(2)}$</span>
                 </div>
                 <button onClick={closeTrade} className="w-full py-2 bg-[#2a2a40] text-white rounded-lg hover:bg-[#333] transition font-medium text-sm">
-                  Cerrar Posicion al Mercado
+                  Cerrar posición al Mercado
                 </button>
               </div>
             )}

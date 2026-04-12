@@ -35,13 +35,13 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* TRUST BAR - Numeros rapidos sin saturar */}
+      {/* TRUST BAR - números rápidos sin saturar */}
       <section className="border-y border-[#2a2a40] bg-[#0a0c16]">
         <div className="max-w-5xl mx-auto px-4 py-6">
           <div className="grid grid-cols-4 gap-4 text-center">
             {[
-              { value: 76, label: "Lecciones" },
-              { value: 282, label: "Preguntas" },
+              { value: 88, label: "Lecciones" },
+              { value: 319, label: "Preguntas" },
               { value: 9, label: "Fases" },
               { value: 12, label: "Herramientas" },
             ].map(s => (
@@ -63,7 +63,7 @@ export default function LandingPage() {
         </ScrollReveal>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {[
-            { step: "1", icon: "📚", title: "Aprende", desc: "76 lecciones con explicaciones claras, diagramas visuales y analogías simples. Desde cero absoluto." },
+            { step: "1", icon: "📚", title: "Aprende", desc: "88 lecciones con explicaciones claras, diagramas visuales y analogías simples. Desde cero absoluto." },
             { step: "2", icon: "🎯", title: "Practica", desc: "Simulador con datos reales, quizzes interactivos, flashcards y proyectos prácticos guiados." },
             { step: "3", icon: "💰", title: "Opera", desc: "Estrategias profesionales, preparación para cuentas fondeadas y trading algorítmico con Python." },
           ].map((s, i) => (
@@ -91,9 +91,9 @@ export default function LandingPage() {
           </ScrollReveal>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {[
-              { icon: "📚", title: "78 Lecciones", desc: "De cero absoluto a nivel profesional" },
-              { icon: "✅", title: "288 Preguntas", desc: "Quiz al final de cada lección" },
-              { icon: "📊", title: "86 Diagramas", desc: "SVGs + capturas reales TradingView" },
+              { icon: "📚", title: "88 Lecciones", desc: "De cero absoluto a nivel profesional" },
+              { icon: "✅", title: "319 Preguntas", desc: "Quiz al final de cada lección" },
+              { icon: "📊", title: "98 Diagramas", desc: "SVGs + capturas reales TradingView" },
               { icon: "📈", title: "Simulador", desc: "Datos reales + modo Challenge prop firm" },
               { icon: "🎬", title: "Video-Lecciones", desc: "Gráficos animados con narración" },
               { icon: "🏆", title: "Gamificación", desc: "XP, niveles, badges, certificados" },
@@ -110,7 +110,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* TESTIMONIALS - Solo 3, mas limpio */}
+      {/* TESTIMONIALS - Solo 3, más limpio */}
       <section className="bg-[#0a0c16] border-y border-[#2a2a40]">
         <div className="max-w-5xl mx-auto px-4 py-20">
           <ScrollReveal>
@@ -143,9 +143,9 @@ export default function LandingPage() {
         </ScrollReveal>
         <div className="space-y-3">
           {[
-            { q: "¿Es realmente 100% gratis?", a: "Sí. No hay pagos ocultos, no hay versión premium. Todo el contenido (76 lecciones, 282 quizzes, simulador, herramientas) está disponible sin pagar nada." },
+            { q: "¿Es realmente 100% gratis?", a: "Sí. No hay pagos ocultos, no hay versión premium. Todo el contenido (88 lecciones, 319 quizzes, simulador, herramientas) está disponible sin pagar nada." },
             { q: "¿Necesito saber algo de finanzas?", a: "No. El curso empieza desde CERO absoluto. La Fase 1 te explica qué es el trading desde cero absoluto. No necesitas conocimientos previos." },
-            { q: "¿Cuánto tiempo necesito?", a: "Dedicando 1-2 horas al día, puedes completar las 76 lecciones en 4-6 semanas. Recomendamos 3-6 meses de práctica en demo antes de dinero real." },
+            { q: "¿Cuánto tiempo necesito?", a: "Dedicando 1-2 horas al día, puedes completar las 88 lecciones en 6-8 semanas. Recomendamos 3-6 meses de práctica en demo antes de dinero real." },
             { q: "¿Puedo vivir del trading?", a: "Sí, pero requiere educación, práctica (3-6 meses demo) y disciplina. Con cuentas fondeadas de 100K+ al 3% mensual, puede ser un ingreso serio." },
           ].map((faq, i) => (
             <ScrollReveal key={i} delay={i * 0.05}>
