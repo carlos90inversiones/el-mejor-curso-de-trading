@@ -6,6 +6,7 @@ import BackToTop from "@/components/BackToTop";
 import KeyboardShortcuts from "@/components/KeyboardShortcuts";
 import ThemeProvider from "@/components/ThemeProvider";
 import AuthProvider from "@/components/AuthProvider";
+import ImageLightbox from "@/components/ImageLightbox";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -69,6 +70,7 @@ export default function RootLayout({
         {children}
         <BackToTop />
         <KeyboardShortcuts />
+        <ImageLightbox />
         <script dangerouslySetInnerHTML={{ __html: `if(window.speechSynthesis){window.speechSynthesis.getVoices();window.speechSynthesis.addEventListener('voiceschanged',function(){window.speechSynthesis.getVoices()})}` }} />
         </AuthProvider>
         </ThemeProvider>

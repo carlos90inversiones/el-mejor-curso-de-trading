@@ -368,6 +368,12 @@ body {
 [data-theme="light"] .lesson-content .code-block { background: #f5f5f5 !important; border-color: #ddd !important; }
 [data-theme="light"] .lesson-content .code-block code { color: #333 !important; }
 
+/* Clickable images in lesson content */
+.lesson-content img { cursor: zoom-in; transition: opacity 0.2s; border-radius: 8px; }
+.lesson-content img:hover { opacity: 0.85; }
+.lesson-content svg { cursor: zoom-in; }
+.lesson-content svg:hover { opacity: 0.9; }
+
 /* Print styles */
 @media print {
   nav, footer, .no-print, button, [class*="sticky"] {
