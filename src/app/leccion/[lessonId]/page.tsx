@@ -11,6 +11,7 @@ import ShareButtons from "@/components/ShareButtons";
 import PrintButton from "@/components/PrintButton";
 import ReadingProgress from "@/components/ReadingProgress";
 import ReadingTime from "@/components/ReadingTime";
+import PracticalExerciseBlock from "@/components/PracticalExerciseBlock";
 
 function findLesson(lessonId: string) {
   for (const phase of COURSE_DATA) {
@@ -88,10 +89,7 @@ export default function LeccionPage({ params }: { params: Promise<{ lessonId: st
               </div>
 
               {lesson.practicalExercise && (
-                <div className="mt-6 bg-gradient-to-r from-green-900/20 to-emerald-900/20 border border-green-800/30 rounded-xl p-5">
-                  <h3 className="text-lg font-bold text-white mb-2">Ejercicio Practico</h3>
-                  <p className="text-[#a0a0b8]">{lesson.practicalExercise}</p>
-                </div>
+                <PracticalExerciseBlock exercise={lesson.practicalExercise} modelAnswer={lesson.modelAnswer} />
               )}
 
               <div className="mt-6">

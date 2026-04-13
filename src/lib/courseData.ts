@@ -17,6 +17,7 @@ export interface Lesson {
   keyPoints: string[];
   quiz: Quiz[];
   practicalExercise?: string;
+  modelAnswer?: string;
 }
 
 export interface Module {
@@ -39,6 +40,7 @@ export interface Phase {
   modules: Module[];
 }
 
+import { MODEL_ANSWERS } from "./modelAnswers";
 import { PHASE_1 } from "./phases/phase1";
 import { PHASE_2 } from "./phases/phase2";
 import { PHASE_3 } from "./phases/phase3";
@@ -49,7 +51,21 @@ import { PHASE_7 } from "./phases/phase7";
 import { PHASE_8 } from "./phases/phase8";
 import { PHASE_9 } from "./phases/phase9";
 
-export const COURSE_DATA: Phase[] = [
+// Inject model answers into lessons
+function injectModelAnswers(phases: Phase[]): Phase[] {
+  return phases.map(phase => ({
+    ...phase,
+    modules: phase.modules.map(mod => ({
+      ...mod,
+      lessons: mod.lessons.map(lesson => ({
+        ...lesson,
+        modelAnswer: MODEL_ANSWERS[lesson.id] || undefined,
+      })),
+    })),
+  }));
+}
+
+export const COURSE_DATA: Phase[] = injectModelAnswers([
   PHASE_1,
   PHASE_2,
   PHASE_3,
@@ -59,7 +75,7 @@ export const COURSE_DATA: Phase[] = [
   PHASE_7,
   PHASE_8,
   PHASE_9,
-];
+]);
 
 export function getTotalLessons(): number {
   return COURSE_DATA.reduce((total, phase) =>
