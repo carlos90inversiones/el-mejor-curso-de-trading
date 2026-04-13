@@ -35,6 +35,7 @@ export default function AuthProvider({ children }: { children: ReactNode }) {
   }, []);
 
   // Verify session is still active (anti-sharing check)
+  // Only checks periodically, not on first load (to avoid redirect loops)
   useEffect(() => {
     if (!user) return;
 
@@ -43,14 +44,18 @@ export default function AuthProvider({ children }: { children: ReactNode }) {
         const res = await fetch("/api/verify-session");
         const data = await res.json();
         if (!data.valid && data.reason === "session_replaced") {
-          window.location.href = "/login?reason=session_replaced";
+          // Only redirect if we're not already on the login page
+          if (!window.location.pathname.startsWith("/login")) {
+            window.location.href = "/login?reason=session_replaced";
+          }
         }
       } catch {/* */}
     };
 
-    checkSession();
-    const interval = setInterval(checkSession, 5 * 60 * 1000); // Check every 5 minutes
-    return () => clearInterval(interval);
+    // Don't check immediately — wait 30 seconds after page load
+    const timeout = setTimeout(checkSession, 30000);
+    const interval = setInterval(checkSession, 5 * 60 * 1000);
+    return () => { clearTimeout(timeout); clearInterval(interval); };
   }, [user]);
 
   const logout = async () => {
