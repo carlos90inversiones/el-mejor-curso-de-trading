@@ -105,6 +105,12 @@ export const PHASE_1: Phase = {
 </div>
 </div>
 <p style="text-align:center;color:#555;font-size:11px;margin-bottom:16px">Capturas reales de TradingView - Abril 2026</p>
+<div class="highlight-box blue"><h4>Antes de ver los mercados, 3 conceptos rápidos:</h4>
+<ul>
+<li><strong>Apalancamiento:</strong> Es como un "préstamo" del broker. Si tienes 1:30 significa que con 1.000€ puedes controlar 30.000€ en el mercado. Más apalancamiento = más ganancia potencial PERO también más riesgo. Profundizaremos en esto en la Fase 3.</li>
+<li><strong>Cuentas fondeadas (Prop Firms):</strong> Son empresas que te dan SU dinero para que tú operes. Si demuestras que eres rentable, te dejan usar cuentas de 100.000€ o más. Tú no arriesgas tu dinero. Lo veremos en detalle en la Fase 5.</li>
+<li><strong>Volatilidad:</strong> Cuánto se mueve el precio. Alta volatilidad = el precio sube y baja mucho en poco tiempo.</li>
+</ul></div>
 <div class="market-card forex"><h4>1. FOREX (Foreign Exchange) - Divisas</h4><div class="stats"><span>Volumen diario: 7.5 BILLONES $</span><span>24h Lunes a Viernes</span><span>Apalancamiento: 1:30 a 1:500</span></div><p>El mercado más grande del mundo. Compras/vendes monedas: EUR/USD, GBP/USD, USD/JPY. <strong>Ideal para principiantes y cuentas fondeadas.</strong></p>
 <div class="highlight-box blue"><h4>Pares Principales (Majors) - Los más tradeados</h4><ul><li><strong>EUR/USD</strong> - Euro vs Dolar (el más liquido del mundo)</li><li><strong>GBP/USD</strong> - Libra vs Dolar (muy volatil)</li><li><strong>USD/JPY</strong> - Dolar vs Yen (movido por Bank of Japan)</li><li><strong>USD/CHF</strong> - Dolar vs Franco Suizo (refugio seguro)</li><li><strong>AUD/USD, NZD/USD, USD/CAD</strong> - Pares de commodities</li></ul></div></div>
 <div class="market-card indices"><h4>2. Índices Bursátiles</h4><div class="stats"><span>Principales: S&P 500, NASDAQ, DAX</span><span>Horario: 9:30-16:00 ET + futuros</span></div><p>Un índice es una "canasta" de acciones. El S&P 500 = las 500 empresas más grandes de EE.UU. Si la economía va bien, sube. <strong>Muy popular en prop firms.</strong></p>
@@ -270,13 +276,14 @@ export const PHASE_1: Phase = {
 <div class="step"><h4>Paso 2: Abrir un Grafico</h4><p>Busca: <strong>EURUSD</strong> (Euro/Dolar), <strong>BTCUSD</strong> (Bitcoin), <strong>US500</strong> (S&P 500), <strong>XAUUSD</strong> (Oro)</p></div>
 <div class="step"><h4>Paso 3: Temporalidad</h4><p>Empieza con: <strong>D (diario)</strong> para tendencia general, <strong>H4</strong> para análisis, <strong>H1</strong> para entradas.</p></div>
 <div class="step"><h4>Paso 4: Tipo de Grafico</h4><p>Selecciona <strong>"Velas Japonesas"</strong> (Candlestick). Es el único que usaremos.</p></div>
-<div class="step"><h4>Paso 5: Herramientas de Dibujo</h4><p>Panel izquierdo: Linea horizontal (soportes/resistencias), Linea de tendencia, Rectangulo (zonas), Fibonacci.</p></div>
+<div class="step"><h4>Paso 5: Herramientas de Dibujo</h4><p>Panel izquierdo: Linea horizontal (para marcar niveles importantes), Linea de tendencia, Rectangulo (para marcar zonas). Más herramientas las irás añadiendo conforme avances en el curso.</p></div>
 <div class="step"><h4>Paso 6: Configurar Layout</h4><p>Crea un layout con múltiples temporalidades: pon D1, H4 y H1 del mismo par lado a lado.</p></div>
 </div>
 <h3>MetaTrader 4/5: Donde Ejecutas</h3>
 <div class="highlight-box blue"><h4>Diferencia Clave</h4><p><strong>TradingView</strong> = Donde analizas (laboratorio)</p><p><strong>MetaTrader</strong> = Donde ejecutas operaciones (sala de trading)</p><p>Muchos traders usan ambas a la vez.</p></div>
 <h3>Indicadores Iniciales Recomendados</h3>
-<div class="strategy-box"><h4>Setup Minimalista para Empezar</h4><ol><li><strong>EMA 21</strong> y <strong>EMA 50</strong> - Para ver tendencia</li><li><strong>RSI (14)</strong> - Para momentum y divergencias</li><li><strong>Volumen</strong> - Para confirmar movimientos</li></ol><p>NO uses más de 3 indicadores. Menos es más.</p></div>
+<div class="highlight-box blue"><h4>¿Qué son los indicadores?</h4><p>Son herramientas matemáticas que se dibujan sobre el gráfico para ayudarte a ver cosas que a simple vista son difíciles de detectar. Piensa en ellos como "gafas especiales" para el gráfico. Hay cientos, pero solo necesitas 3 para empezar:</p></div>
+<div class="strategy-box"><h4>Setup Minimalista para Empezar</h4><ol><li><strong>EMA 21 y EMA 50</strong> (Media Móvil Exponencial) — Son líneas que siguen el precio suavizado. Si el precio está POR ENCIMA de la línea = tendencia alcista. Si está POR DEBAJO = tendencia bajista. La 21 es rápida, la 50 es lenta.</li><li><strong>RSI 14</strong> (Índice de Fuerza Relativa) — Un número del 0 al 100. Si pasa de 70 = el precio ha subido "demasiado" y podría bajar. Si baja de 30 = ha bajado "demasiado" y podría subir.</li><li><strong>Volumen</strong> — Las barras de abajo del gráfico. Muestran CUÁNTA gente está comprando/vendiendo. Volumen alto = movimiento importante. Volumen bajo = movimiento débil.</li></ol><p>NO uses más de 3 indicadores. Los estudiaremos a fondo en la Fase 2.</p></div>
 <h3>Cuenta Demo: Tu Campo de Entrenamiento</h3>
 <div class="highlight-box green"><h4>REGLA CRITICA</h4><p>NUNCA pongas dinero real hasta completar al menos las Fases 1-4 y haber practicado MINIMO 3 meses en demo con resultados positivos consistentes. Sin excepciones.</p></div>`,
           keyPoints: [
@@ -357,6 +364,12 @@ export const PHASE_1: Phase = {
           content: `
 <h2>Las Velas Japonesas: El ABC del Trader</h2>
 <div class="analogy-box"><h3>El Resumen de un Partido</h3><p>Cada vela es como el resumen de un partido de futbol: como empezo (apertura), que paso durante el partido (max/min), y como término (cierre). El color dice quien gano: compradores (verde) o vendedores (rojo).</p></div>
+<div class="highlight-box blue"><h4>Concepto previo: Soporte y Resistencia</h4><p>Antes de ver los patrones de velas, necesitas entender dos conceptos básicos que usaremos mucho:</p>
+<ul>
+<li><strong>Soporte:</strong> Un nivel de precio donde el mercado ha "rebotado hacia arriba" varias veces. Es como un suelo — el precio llega ahí y los compradores lo empujan hacia arriba.</li>
+<li><strong>Resistencia:</strong> Un nivel de precio donde el mercado ha sido "rechazado hacia abajo" varias veces. Es como un techo — el precio llega ahí y los vendedores lo empujan hacia abajo.</li>
+</ul>
+<p>Los patrones de velas son MUCHO más fiables cuando aparecen en estos niveles. Los estudiaremos a fondo en la Fase 2, pero con esta idea básica ya puedes entender por qué el CONTEXTO importa.</p></div>
 
 <h3>Anatomia de una Vela</h3>
 <p>Cada vela tiene 4 datos. Mira esta imagen:</p>
@@ -507,7 +520,7 @@ export const PHASE_1: Phase = {
 <li><strong>Doji en extremo de tendencia</strong></li>
 <li><strong>Martillo/Estrella Fugaz aislados</strong> - Menos fiable sola</li>
 </ol></div>
-<div class="highlight-box green"><h4>LA REGLA DE ORO de las Velas</h4><p>Un patrón de velas SOLO es válido si aparece en un NIVEL IMPORTANTE (soporte, resistencia, order block, fibonacci). Un martillo en medio de la nada no significa nada. Un martillo en un soporte fuerte con confluencia = entrada de alta probabilidad.</p></div>`,
+<div class="highlight-box green"><h4>LA REGLA DE ORO de las Velas</h4><p>Un patrón de velas SOLO es válido si aparece en un NIVEL IMPORTANTE (soporte o resistencia). Un martillo en medio de la nada no significa nada. Un martillo en un soporte fuerte = señal de alta probabilidad. En las próximas fases aprenderás más herramientas para confirmar estas zonas.</p></div>`,
           keyPoints: [
             "Morning/Evening Star son de los patrones más fiables",
             "Inside Bar = consolidación antes de movimiento explosivo",
@@ -518,7 +531,7 @@ export const PHASE_1: Phase = {
           quiz: [
             { question: "¿Qué es un Morning Star?", options: ["Una vela verde sola", "Patrón de 3 velas: roja grande, vela pequeña, verde grande = giro alcista", "Un indicador técnico", "El gap de apertura"], correctIndex: 1, explanation: "Morning Star es un patrón de 3 velas de giro alcista: bajista grande → indecisión → alcista grande." },
             { question: "¿Qué significa un Inside Bar?", options: ["El precio se mueve muy rápido", "Consolidacion antes de un movimiento explosivo", "Final de la tendencia", "Error en el gráfico"], correctIndex: 1, explanation: "Inside Bar indica que el mercado esta comprimiendo energia (consolidando) antes de un movimiento fuerte." },
-            { question: "¿Un martillo en medio de una tendencia sin ningún soporte cerca es...", options: ["Señal de compra fuerte", "Señal poco fiable - necesita contexto/nivel importante", "Señal de venta", "Momento de cerrar todo"], correctIndex: 1, explanation: "Los patrones de velas SOLO son fiables cuando aparecen en niveles importantes (soporte, resistencia, order block, etc.)." }
+            { question: "¿Un martillo en medio de una tendencia sin ningún soporte cerca es...", options: ["Señal de compra fuerte", "Señal poco fiable - necesita contexto/nivel importante", "Señal de venta", "Momento de cerrar todo"], correctIndex: 1, explanation: "Los patrones de velas SOLO son fiables cuando aparecen en niveles importantes como soportes o resistencias." }
           ],
           practicalExercise: "En EUR/USD H4, identifica al menos: 2 Morning Star, 2 Inside Bar, 1 Three White Soldiers. Marca cada patron con la herramienta de texto. Observa que paso DESPUES de cada patron y anotalo."
         }
