@@ -1,18 +1,25 @@
-import { NextResponse } from "next/server";
-import { createClient } from "@/lib/supabase/server";
-import { createClient as createAdminSupabase } from "@supabase/supabase-js";
+import { NextRequest, NextResponse } from "next/server";
+import { createClient } from "@supabase/supabase-js";
 
-const supabaseAdmin = createAdminSupabase(
+const supabaseAdmin = createClient(
   process.env.NEXT_PUBLIC_SUPABASE_URL!,
   process.env.SUPABASE_SERVICE_ROLE_KEY!
 );
 
-export async function POST() {
+export async function POST(req: NextRequest) {
   try {
-    const supabase = await createClient();
-    const { data: { user } } = await supabase.auth.getUser();
+    // Get user from Authorization header token
+    const authHeader = req.headers.get("authorization");
+    const token = authHeader?.replace("Bearer ", "");
 
-    if (!user) {
+    let userId: string | null = null;
+
+    if (token) {
+      const { data: { user } } = await supabaseAdmin.auth.getUser(token);
+      userId = user?.id || null;
+    }
+
+    if (!userId) {
       return NextResponse.json({ error: "No autenticado" }, { status: 401 });
     }
 
@@ -20,18 +27,13 @@ export async function POST() {
     const sessionToken = crypto.randomUUID();
 
     // Upsert — replaces any existing session (enforces 1 session per user)
-    const { error } = await supabaseAdmin
+    await supabaseAdmin
       .from("active_sessions")
       .upsert({
-        user_id: user.id,
+        user_id: userId,
         session_token: sessionToken,
         created_at: new Date().toISOString(),
       }, { onConflict: "user_id" });
-
-    if (error) {
-      console.error("Session creation error:", error);
-      return NextResponse.json({ error: "Error al crear sesión" }, { status: 500 });
-    }
 
     // Set session token cookie
     const response = NextResponse.json({ success: true });
@@ -39,7 +41,7 @@ export async function POST() {
       httpOnly: true,
       secure: true,
       sameSite: "lax",
-      maxAge: 60 * 60 * 24 * 30, // 30 days
+      maxAge: 60 * 60 * 24 * 30,
       path: "/",
     });
 

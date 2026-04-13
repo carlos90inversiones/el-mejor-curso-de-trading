@@ -32,7 +32,7 @@ function LoginForm() {
     setLoading(true);
     setError("");
 
-    const { error: authError } = await supabase.auth.signInWithPassword({ email, password });
+    const { data, error: authError } = await supabase.auth.signInWithPassword({ email, password });
 
     if (authError) {
       setError("Email o contraseña incorrectos");
@@ -40,11 +40,17 @@ function LoginForm() {
       return;
     }
 
-    // Create session token (anti-sharing) — don't block login if it fails
+    // Create session token (anti-sharing)
     try {
-      await fetch("/api/create-session", { method: "POST" }).catch(() => {});
+      await fetch("/api/create-session", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Authorization": `Bearer ${data.session?.access_token}`,
+        },
+      }).catch(() => {});
     } catch {
-      // Non-critical — login still works
+      // Non-critical
     }
 
     window.location.href = redirect;
