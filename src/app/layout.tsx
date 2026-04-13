@@ -71,7 +71,6 @@ export default function RootLayout({
         <BackToTop />
         <KeyboardShortcuts />
         <ImageLightbox />
-        <script dangerouslySetInnerHTML={{ __html: `if(window.speechSynthesis){window.speechSynthesis.getVoices();window.speechSynthesis.addEventListener('voiceschanged',function(){window.speechSynthesis.getVoices()})}` }} />
         </AuthProvider>
         </ThemeProvider>
       </body>
