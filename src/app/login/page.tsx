@@ -40,10 +40,14 @@ function LoginForm() {
       return;
     }
 
-    // Create session token (enforces 1 session per user)
-    await fetch("/api/create-session", { method: "POST" });
+    // Create session token (anti-sharing) — don't block login if it fails
+    try {
+      await fetch("/api/create-session", { method: "POST" }).catch(() => {});
+    } catch {
+      // Non-critical — login still works
+    }
 
-    router.push(redirect);
+    window.location.href = redirect;
   };
 
   const handleReset = async (e: React.FormEvent) => {
