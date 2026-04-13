@@ -1620,10 +1620,11 @@ export const PHASE_4: Phase = {
 </div>
 </div>
 
-<h3>Backtesting: Probando tu Sistema</h3>
+<h3>Backtesting Manual: Probando tu Sistema</h3>
+<div class="highlight-box blue"><h4>¿Qué es el backtesting?</h4><p>Es probar tu estrategia con datos del PASADO antes de arriesgar dinero real. Avanzas vela por vela en TradingView (modo Replay) y aplicas tus reglas como si estuvieras en tiempo real. Si funciona en 50+ trades históricos, probablemente funcione en real. En la Fase 6 aprenderás a automatizar esto con Python, pero por ahora lo hacemos manualmente.</p></div>
 
 <div class="strategy-box">
-<h4>Protocolo de Backtesting (OBLIGATORIO antes de tradear con dinero real)</h4>
+<h4>Protocolo de Backtesting Manual (OBLIGATORIO antes de tradear con dinero real)</h4>
 <ol>
 <li><strong>Elige UN par:</strong> EUR/USD o GBP/USD. No más de uno al principio.</li>
 <li><strong>Elige UN timeframe de análisis:</strong> H1 o H4.</li>
@@ -2711,6 +2712,8 @@ export const PHASE_4: Phase = {
           content: `
 <h2>Mean Reversion: El Precio Siempre Vuelve a su Media</h2>
 
+<div class="highlight-box blue"><h4>¿Por qué aprender esto ahora?</h4><p>Hasta ahora has aprendido estrategias de <strong>tendencia</strong> (seguir la dirección del mercado). Mean Reversion es lo contrario: operas CONTRA la tendencia cuando el precio se ha alejado demasiado de su promedio. Es una estrategia complementaria que funciona especialmente bien en mercados laterales (sin tendencia clara). Usa los indicadores que ya conoces: Bandas de Bollinger y RSI.</p></div>
+
 <div class="analogy-box">
 <h3>La Analogía de la Liga Elástica</h3>
 <p>Imagina una liga elástica atada a un poste (la media). Puedes estirarla hacia arriba o hacia abajo, pero cuanto más la estiras, <strong>más fuerza hace para volver al centro</strong>. Si la estiras demasiado, SNAP — regresa violentamente. Los precios se comportan igual: pueden alejarse de su media (SMA 20, SMA 50), pero estadísticamente <strong>tienden a volver</strong>. Cuanto más lejos están, más probable es el regreso. Eso es <strong>mean reversion</strong>.</p>
@@ -2907,6 +2910,8 @@ export const PHASE_4: Phase = {
           duration: "25 min",
           content: `
 <h2>Trading Estacional: Usa el Calendario como Ventaja</h2>
+
+<div class="highlight-box blue"><h4>¿Por qué aprender esto ahora?</h4><p>El trading estacional NO es una estrategia independiente — es un <strong>filtro adicional</strong> para las estrategias que ya aprendiste (SMC, ICT, Price Action). Si tu análisis técnico dice COMPRAR y además la estacionalidad dice que históricamente ese mes es alcista, tu trade tiene más probabilidad de funcionar. Piénsalo como un viento a favor.</p></div>
 
 <div class="analogy-box">
 <h3>La Analogía de las Estaciones del Año</h3>
