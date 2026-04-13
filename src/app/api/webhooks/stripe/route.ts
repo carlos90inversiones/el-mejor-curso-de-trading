@@ -2,15 +2,13 @@ import { NextRequest, NextResponse } from "next/server";
 import Stripe from "stripe";
 import { createClient } from "@supabase/supabase-js";
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!);
-
-// Admin client for creating users (not using cookies)
-const supabaseAdmin = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.SUPABASE_SERVICE_ROLE_KEY!
-);
-
 export async function POST(req: NextRequest) {
+  const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!);
+  const supabaseAdmin = createClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.SUPABASE_SERVICE_ROLE_KEY!
+  );
+
   const body = await req.text();
   const sig = req.headers.get("stripe-signature")!;
 
@@ -25,11 +23,29 @@ export async function POST(req: NextRequest) {
 
   if (event.type === "checkout.session.completed") {
     const session = event.data.object as Stripe.Checkout.Session;
-    const email = session.customer_email;
+
+    // Get email from session or from the Stripe customer
+    let email = session.customer_email;
+
+    if (!email && session.customer) {
+      try {
+        const customer = await stripe.customers.retrieve(session.customer as string);
+        if ('email' in customer && customer.email) {
+          email = customer.email;
+        }
+      } catch (e) {
+        console.error("Error fetching customer:", e);
+      }
+    }
+
+    // Last resort: get from customer_details
+    if (!email && session.customer_details?.email) {
+      email = session.customer_details.email;
+    }
 
     if (!email) {
-      console.error("No email found in session");
-      return NextResponse.json({ error: "No email" }, { status: 400 });
+      console.error("No email found in session:", session.id);
+      return NextResponse.json({ error: "No email found" }, { status: 400 });
     }
 
     try {
@@ -58,14 +74,19 @@ export async function POST(req: NextRequest) {
         userId = newUser.user.id;
 
         // Send password reset email so user can set their own password
-        await supabaseAdmin.auth.admin.generateLink({
+        const { data: linkData } = await supabaseAdmin.auth.admin.generateLink({
           type: "recovery",
           email,
+          options: {
+            redirectTo: `${process.env.NEXT_PUBLIC_SITE_URL || "https://marsof.vercel.app"}/login`,
+          },
         });
+
+        console.log("Recovery link generated for:", email, linkData?.properties?.action_link ? "OK" : "FAILED");
       }
 
       // Record the purchase
-      await supabaseAdmin.from("purchases").insert({
+      const { error: insertError } = await supabaseAdmin.from("purchases").insert({
         user_id: userId,
         stripe_session_id: session.id,
         stripe_customer_id: session.customer as string,
@@ -73,6 +94,12 @@ export async function POST(req: NextRequest) {
         currency: session.currency || "eur",
         status: "completed",
       });
+
+      if (insertError) {
+        console.error("Error inserting purchase:", insertError);
+      }
+
+      console.log("Webhook processed successfully for:", email);
 
     } catch (err) {
       console.error("Error processing webhook:", err);

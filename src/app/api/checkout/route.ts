@@ -3,11 +3,8 @@ import Stripe from "stripe";
 
 export async function POST() {
   try {
-    if (!process.env.STRIPE_SECRET_KEY) {
-      return NextResponse.json({ error: "STRIPE_SECRET_KEY not configured" }, { status: 500 });
-    }
-    if (!process.env.STRIPE_PRICE_ID) {
-      return NextResponse.json({ error: "STRIPE_PRICE_ID not configured" }, { status: 500 });
+    if (!process.env.STRIPE_SECRET_KEY || !process.env.STRIPE_PRICE_ID) {
+      return NextResponse.json({ error: "Stripe not configured" }, { status: 500 });
     }
 
     const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
@@ -21,6 +18,7 @@ export async function POST() {
           quantity: 1,
         },
       ],
+      customer_creation: "always",
       success_url: `${process.env.NEXT_PUBLIC_SITE_URL || "https://marsof.vercel.app"}/pago-exitoso?session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: `${process.env.NEXT_PUBLIC_SITE_URL || "https://marsof.vercel.app"}/`,
     });
