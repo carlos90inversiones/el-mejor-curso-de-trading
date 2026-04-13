@@ -38,7 +38,7 @@ export default function LandingPage() {
           <p className="text-xl md:text-2xl text-[#a0a0b8] max-w-2xl mx-auto mb-10 leading-relaxed">
             Aprende trading desde cero hasta nivel profesional.
             <br className="hidden sm:block" />
-            <strong className="text-white">Gratis. Para siempre.</strong>
+            <strong className="text-white">El curso más completo del mundo.</strong>
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="#comprar" className="bg-gradient-to-r from-blue-600 to-purple-600 text-white text-lg px-10 py-4 rounded-xl hover:opacity-90 transition font-bold shadow-lg shadow-blue-500/25 hover-lift">
@@ -159,7 +159,7 @@ export default function LandingPage() {
         </ScrollReveal>
         <div className="space-y-3">
           {[
-            { q: "¿Es realmente 100% gratis?", a: "Sí. No hay pagos ocultos, no hay versión premium. Todo el contenido (88 lecciones, 319 quizzes, simulador, herramientas) está disponible sin pagar nada." },
+            { q: "¿Qué incluye el curso por 149€?", a: "Acceso de por vida a 88 lecciones, 319 quizzes, simulador con datos reales, 15 herramientas interactivas, examen final, video-lecciones, gamificación completa y todas las actualizaciones futuras." },
             { q: "¿Necesito saber algo de finanzas?", a: "No. El curso empieza desde CERO absoluto. La Fase 1 te explica qué es el trading desde cero absoluto. No necesitas conocimientos previos." },
             { q: "¿Cuánto tiempo necesito?", a: "Dedicando 1-2 horas al día, puedes completar las 88 lecciones en 6-8 semanas. Recomendamos 3-6 meses de práctica en demo antes de dinero real." },
             { q: "¿Puedo vivir del trading?", a: "Sí, pero requiere educación, práctica (3-6 meses demo) y disciplina. Con cuentas fondeadas de 100K+ al 3% mensual, puede ser un ingreso serio." },
