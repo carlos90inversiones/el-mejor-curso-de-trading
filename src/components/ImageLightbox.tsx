@@ -2,13 +2,14 @@
 import { useEffect, useState, useCallback } from "react";
 
 export default function ImageLightbox() {
-  const [src, setSrc] = useState<string | null>(null);
+  const [content, setContent] = useState<{ type: "img"; src: string } | { type: "svg"; html: string } | null>(null);
 
-  const close = useCallback(() => setSrc(null), []);
+  const close = useCallback(() => setContent(null), []);
 
   useEffect(() => {
     const handleClick = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
+
       // Match <img> inside lesson content or chart containers
       if (target.tagName === "IMG" && (
         target.closest(".lesson-content") ||
@@ -18,17 +19,30 @@ export default function ImageLightbox() {
         const imgSrc = (target as HTMLImageElement).src;
         if (imgSrc) {
           e.preventDefault();
-          setSrc(imgSrc);
+          e.stopPropagation();
+          setContent({ type: "img", src: imgSrc });
         }
+        return;
       }
-      // Also match <svg> inside lesson content (inline diagrams)
+
+      // Match <svg> inside lesson content (inline diagrams)
       const svg = target.closest("svg");
       if (svg && svg.closest(".lesson-content")) {
         e.preventDefault();
+        e.stopPropagation();
+        // Clone the SVG and remove fixed dimensions so it scales
+        const clone = svg.cloneNode(true) as SVGElement;
+        clone.removeAttribute("width");
+        clone.removeAttribute("height");
+        clone.setAttribute("style", "width:100%;height:100%;");
+        // Preserve viewBox for proper scaling
+        if (!clone.getAttribute("viewBox")) {
+          const w = svg.getAttribute("width") || "400";
+          const h = svg.getAttribute("height") || "200";
+          clone.setAttribute("viewBox", `0 0 ${w} ${h}`);
+        }
         const serializer = new XMLSerializer();
-        const svgStr = serializer.serializeToString(svg);
-        const blob = new Blob([svgStr], { type: "image/svg+xml" });
-        setSrc(URL.createObjectURL(blob));
+        setContent({ type: "svg", html: serializer.serializeToString(clone) });
       }
     };
 
@@ -37,7 +51,7 @@ export default function ImageLightbox() {
   }, []);
 
   useEffect(() => {
-    if (!src) return;
+    if (!content) return;
     const handleKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") close();
     };
@@ -47,16 +61,29 @@ export default function ImageLightbox() {
       document.removeEventListener("keydown", handleKey);
       document.body.style.overflow = "";
     };
-  }, [src, close]);
+  }, [content, close]);
 
-  if (!src) return null;
+  if (!content) return null;
 
   return (
-    <div onClick={close} className="fixed inset-0 z-[9999] bg-black/90 flex items-center justify-center p-4 cursor-zoom-out animate-fade">
-      <button onClick={close} className="absolute top-4 right-4 text-white text-3xl hover:text-[#a0a0b8] transition z-10">
+    <div onClick={close} className="fixed inset-0 z-[9999] bg-black/95 flex items-center justify-center p-6 cursor-zoom-out animate-fade">
+      <button onClick={close} className="absolute top-4 right-4 text-white text-3xl hover:text-[#a0a0b8] transition z-10 bg-black/50 w-10 h-10 rounded-full flex items-center justify-center">
         ✕
       </button>
-      <img src={src} alt="Ampliada" className="max-w-full max-h-[90vh] object-contain rounded-lg shadow-2xl" />
+      {content.type === "img" ? (
+        <img src={content.src} alt="Ampliada" className="max-w-[95vw] max-h-[90vh] object-contain rounded-lg shadow-2xl" />
+      ) : (
+        <div
+          className="w-full max-w-[95vw] max-h-[90vh] flex items-center justify-center"
+          style={{ background: "#131722", borderRadius: 12, padding: 24 }}
+          onClick={e => e.stopPropagation()}
+        >
+          <div
+            dangerouslySetInnerHTML={{ __html: content.html }}
+            className="w-full h-full flex items-center justify-center [&>svg]:w-full [&>svg]:h-auto [&>svg]:max-h-[80vh]"
+          />
+        </div>
+      )}
     </div>
   );
 }
