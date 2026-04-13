@@ -32,7 +32,7 @@ export default function SobrePage() {
               </p>
               <p className="text-[#a0a0b8] leading-relaxed">
                 Su misión: democratizar la educación en trading haciendo el mejor contenido del mundo accesible a TODOS,
-                sin importar su presupuesto. Por eso este curso es y siempre será 100% gratuito.
+                sin importar su nivel. Por eso este curso es el más completo y accesible del mercado.
               </p>
             </div>
           </div>
@@ -49,7 +49,7 @@ export default function SobrePage() {
             <p className="text-[#a0a0b8] leading-relaxed mb-4">
               Trading Pro nació para cambiar eso. Creemos que la educación financiera de calidad debería ser un derecho,
               no un privilegio. Por eso construimos el curso más completo, interactivo y profesional del mundo — y lo
-              hicimos completamente gratuito.
+              hicimos accesible para todos.
             </p>
             <p className="text-white font-medium">
               Si este curso te ayuda a convertirte en un trader rentable, nuestra misión está cumplida.
@@ -83,7 +83,7 @@ export default function SobrePage() {
         <ScrollReveal delay={0.4}>
           <div className="text-center">
             <Link href="/curso" className="inline-block bg-gradient-to-r from-blue-600 to-purple-600 text-white text-lg px-10 py-4 rounded-xl hover:opacity-90 transition font-bold">
-              Empezar el Curso Gratis →
+              Acceder al Curso →
             </Link>
           </div>
         </ScrollReveal>

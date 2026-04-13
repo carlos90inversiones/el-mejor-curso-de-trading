@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Trading Pro | El Mejor Curso de Trading del Mundo",
-    description: "De cero a trader experto. El curso de trading más completo del mundo. GRATIS.",
+    description: "De cero a trader experto. El curso de trading más completo del mundo.",
   },
   manifest: "/manifest.json",
   other: {

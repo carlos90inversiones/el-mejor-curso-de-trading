@@ -136,7 +136,7 @@ export default function LandingPage() {
           </ScrollReveal>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { name: "Carlos M.", text: "Después de gastar 1,500€ en otros cursos, encontré este GRATIS y tiene MÁS contenido que todos juntos." },
+              { name: "Carlos M.", text: "Después de probar 5 cursos de pago, este tiene MÁS contenido y mejor estructura que todos juntos." },
               { name: "Miguel R.", text: "Pasé mi primer challenge de FTMO gracias a la Fase 5. Las lecciones de prop firms valen más que cualquier curso de pago." },
               { name: "Ana P.", text: "No sabía NADA de trading. Empecé desde cero y en 3 meses ya operaba en demo con resultados positivos." },
             ].map((t, i) => (

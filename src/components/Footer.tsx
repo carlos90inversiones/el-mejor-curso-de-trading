@@ -11,7 +11,7 @@ export default function Footer() {
               <span className="text-xl">📈</span>
               <span className="text-white font-bold">Trading Pro</span>
             </div>
-            <p className="text-sm text-[#555]">El Mejor Curso de Trading del Mundo. De cero absoluto a trader profesional. 100% gratuito.</p>
+            <p className="text-sm text-[#555]">El Mejor Curso de Trading del Mundo. De cero absoluto a trader profesional.</p>
           </div>
           <div>
             <h4 className="text-white font-bold text-sm mb-3">Curso</h4>

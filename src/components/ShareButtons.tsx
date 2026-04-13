@@ -2,7 +2,7 @@
 
 export default function ShareButtons({ title, lessonId }: { title: string; lessonId: string }) {
   const url = `https://curso-trading-pro.vercel.app/leccion/${lessonId}`;
-  const text = `Estoy aprendiendo trading con Trading Pro: "${title}" - El Mejor Curso de Trading del Mundo (GRATIS)`;
+  const text = `Estoy aprendiendo trading con Trading Pro: "${title}" - El Mejor Curso de Trading del Mundo`;
 
   return (
     <div className="flex items-center gap-2 flex-wrap">
