@@ -32,7 +32,7 @@ export default function PracticalExerciseBlock({ exercise, modelAnswer }: { exer
                 <span className="text-blue-400 text-lg">📋</span>
                 <h4 className="text-blue-400 font-bold text-sm">Respuesta Modelo — Así lo haría un profesional</h4>
               </div>
-              <div className="text-[#a0a0b8] text-sm leading-relaxed whitespace-pre-line">{modelAnswer}</div>
+              <div className="text-[#a0a0b8] text-sm leading-relaxed lesson-content" dangerouslySetInnerHTML={{ __html: modelAnswer }} />
               <div className="mt-4 bg-amber-900/15 border border-amber-700/20 rounded-lg p-3">
                 <p className="text-amber-400 text-xs font-bold mb-1">Compara tu resultado:</p>
                 <p className="text-[#777] text-xs">¿Tu análisis se parece al modelo? ¿Qué diferencias ves? Las diferencias son los puntos que debes reforzar.</p>
