@@ -1271,7 +1271,7 @@ export const PHASE_2: Phase = {
 
 <div class="highlight-box green">
 <h4>La Zona de Entrada Optima: 61.8% - 78.6%</h4>
-<p>Los traders de Smart Money Concepts (ICT) llaman a la zona entre el <strong>61.8% y 78.6%</strong> de Fibonacci la "OTE Zone" (Optimal Trade Entry). Es la zona donde las instituciones prefieren entrar porque ofrece el mejor ratio riesgo/recompensa.</p>
+<p>La zona entre el <strong>61.8% y 78.6%</strong> de Fibonacci se conoce como la "Zona Óptima de Entrada" (OTE). Es donde muchos traders profesionales prefieren entrar porque ofrece el mejor ratio riesgo/recompensa. En la Fase 4 aprenderás cómo las instituciones usan esta zona con técnicas avanzadas.</p>
 <p><strong>Por que funciona:</strong> Un retroceso al 61.8-78.6% te permite entrar con un stop loss corto (debajo del 100%) y un target largo (extension del 127.2% o 161.8%). Esto da ratios R:R de 3:1 o mejores.</p>
 </div>
 

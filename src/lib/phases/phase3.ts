@@ -1543,7 +1543,7 @@ Tamaño de Posición = Riesgo en $ / (Distancia SL en pips x Valor por pip)
 <div class="strategy-box"><h4>Checklist Matutina</h4><ol>
 <li><strong>Revisa Forex Factory:</strong> Identifica noticias de alto impacto del dia. Marca las horas en tu calendario.</li>
 <li><strong>Analisis Top-Down:</strong> Abre D1 → H4 → H1 de tus pares. Identifica tendencia, niveles clave, y zonas de interes.</li>
-<li><strong>Marca tus zonas:</strong> Dibuja soportes, resistencias, OBs, FVGs en tu gráfico.</li>
+<li><strong>Marca tus zonas:</strong> Dibuja soportes, resistencias y niveles de Fibonacci en tu gráfico. En la Fase 4 añadirás herramientas avanzadas como Order Blocks y Fair Value Gaps.</li>
 <li><strong>Define tu sesgo:</strong> Para cada par: LONG, SHORT, o NO OPERAR.</li>
 <li><strong>Revisa tu plan:</strong> Lee tus reglas de riesgo y emocionales.</li>
 <li><strong>Check emocional:</strong> Del 1 al 5, como estas de calma, confianza, paciencia? Si < 3 en cualquiera, NO operes.</li>
