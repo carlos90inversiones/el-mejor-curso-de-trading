@@ -500,17 +500,18 @@ export const PHASE_1: Phase = {
 <h2>Patrones de Velas Avanzados</h2>
 <p>Ahora que conoces los patrones básicos, vamos con los patrones de múltiples velas y combinaciones que usan los profesionales.</p>
 <h3>Patrones de 2-3 Velas</h3>
-<div class="pattern-card"><h4>MORNING STAR (Estrella de la Mañana)</h4><p>Patrón de 3 velas ALCISTA:</p><ol><li>Vela roja grande (bajistas dominan)</li><li>Vela pequeña (doji o cuerpo chico) = indecisión</li><li>Vela verde grande (alcistas toman control)</li></ol><p><strong>Aparece en suelos/soportes. Señal de giro alcista MUY fiable.</strong></p></div>
-<div class="pattern-card"><h4>EVENING STAR (Estrella de la Tarde)</h4><p>Patrón de 3 velas BAJISTA (inverso del Morning Star):</p><ol><li>Vela verde grande</li><li>Vela pequeña (indecisión)</li><li>Vela roja grande</li></ol><p><strong>Aparece en techos/resistencias. Señal de giro bajista.</strong></p></div>
-<div class="pattern-card"><h4>THREE WHITE SOLDIERS (Tres Soldados Blancos)</h4><p>3 velas verdes consecutivas, cada una cerrando más alto. Cuerpos grandes, mechas pequeñas.</p><p><strong>Señal alcista MUY fuerte.</strong> Indica momentum comprador sostenido.</p></div>
-<div class="pattern-card"><h4>THREE BLACK CROWS (Tres Cuervos Negros)</h4><p>3 velas rojas consecutivas, cada una cerrando más bajo.</p><p><strong>Señal bajista MUY fuerte.</strong> Inverso de los Tres Soldados.</p></div>
-<div class="pattern-card"><h4>TWEEZER TOP / BOTTOM</h4><p><strong>Tweezer Top:</strong> Dos velas con maximos casi identicos en resistencia = BAJISTA</p><p><strong>Tweezer Bottom:</strong> Dos velas con minimos casi identicos en soporte = ALCISTA</p><p>Muestra que el mercado RECHAZO el mismo nivel dos veces.</p></div>
-<div class="pattern-card"><h4>INSIDE BAR (Barra Interior)</h4><p>Una vela completamente contenida dentro del rango de la vela anterior. La segunda vela es más pequeña.</p><p><strong>Significado:</strong> CONSOLIDACION antes de un movimiento explosivo. Espera la ruptura de la vela madre.</p><p><strong>Setup:</strong> Entrada cuando el precio rompe el máximo (LONG) o mínimo (SHORT) de la vela madre.</p></div>
+<div class="pattern-card"><h4>MORNING STAR (Estrella de la Mañana)</h4><p>Patrón de 3 velas ALCISTA:</p><ol><li>Vela roja grande (bajistas dominan)</li><li>Vela pequeña (doji o cuerpo chico) = indecisión</li><li>Vela verde grande (alcistas toman control)</li></ol><p><strong>Aparece en suelos/soportes. Señal de giro alcista MUY fiable.</strong></p><img src="/velas/01_morning_star.png" alt="Morning Star" class="pattern-diagram" /></div>
+<div class="pattern-card"><h4>EVENING STAR (Estrella de la Tarde)</h4><p>Patrón de 3 velas BAJISTA (inverso del Morning Star):</p><ol><li>Vela verde grande</li><li>Vela pequeña (indecisión)</li><li>Vela roja grande</li></ol><p><strong>Aparece en techos/resistencias. Señal de giro bajista.</strong></p><img src="/velas/02_evening_star.png" alt="Evening Star" class="pattern-diagram" /></div>
+<div class="pattern-card"><h4>THREE WHITE SOLDIERS (Tres Soldados Blancos)</h4><p>3 velas verdes consecutivas, cada una cerrando más alto. Cuerpos grandes, mechas pequeñas.</p><p><strong>Señal alcista MUY fuerte.</strong> Indica momentum comprador sostenido.</p><img src="/velas/03_three_white_soldiers.png" alt="Three White Soldiers" class="pattern-diagram" /></div>
+<div class="pattern-card"><h4>THREE BLACK CROWS (Tres Cuervos Negros)</h4><p>3 velas rojas consecutivas, cada una cerrando más bajo.</p><p><strong>Señal bajista MUY fuerte.</strong> Inverso de los Tres Soldados.</p><img src="/velas/04_three_black_crows.png" alt="Three Black Crows" class="pattern-diagram" /></div>
+<div class="pattern-card"><h4>TWEEZER TOP / BOTTOM</h4><p><strong>Tweezer Top:</strong> Dos velas con maximos casi identicos en resistencia = BAJISTA</p><p><strong>Tweezer Bottom:</strong> Dos velas con minimos casi identicos en soporte = ALCISTA</p><p>Muestra que el mercado RECHAZO el mismo nivel dos veces.</p><img src="/velas/05_tweezer.png" alt="Tweezer Top Bottom" class="pattern-diagram" /></div>
+<div class="pattern-card"><h4>INSIDE BAR (Barra Interior)</h4><p>Una vela completamente contenida dentro del rango de la vela anterior. La segunda vela es más pequeña.</p><p><strong>Significado:</strong> CONSOLIDACION antes de un movimiento explosivo. Espera la ruptura de la vela madre.</p><p><strong>Setup:</strong> Entrada cuando el precio rompe el máximo (LONG) o mínimo (SHORT) de la vela madre.</p><img src="/velas/06_inside_bar.png" alt="Inside Bar" class="pattern-diagram" /></div>
 <h3>Patrones de Continuacion</h3>
 <div class="grid-cards">
 <div class="card"><h4>Rising Three Methods</h4><p>En tendencia alcista: vela verde grande → 3 velas rojas pequeñas → vela verde grande. La tendencia continua.</p></div>
 <div class="card"><h4>Falling Three Methods</h4><p>En tendencia bajista: vela roja grande → 3 velas verdes pequeñas → vela roja grande. La caída continua.</p></div>
 </div>
+<img src="/velas/07_three_methods.png" alt="Rising y Falling Three Methods" class="pattern-diagram" style="margin-top:1rem" />
 <h3>La Jerarquia de Fiabilidad</h3>
 <div class="highlight-box blue"><h4>De MAS a MENOS fiable</h4><ol>
 <li><strong>Envolvente en soporte/resistencia clave</strong> - La más fiable</li>
@@ -519,7 +520,7 @@ export const PHASE_1: Phase = {
 <li><strong>Inside Bar breakout con tendencia</strong></li>
 <li><strong>Doji en extremo de tendencia</strong></li>
 <li><strong>Martillo/Estrella Fugaz aislados</strong> - Menos fiable sola</li>
-</ol></div>
+</ol><img src="/velas/08_jerarquia.png" alt="Jerarquia de fiabilidad" class="pattern-diagram" style="margin-top:1rem" /></div>
 <div class="highlight-box green"><h4>LA REGLA DE ORO de las Velas</h4><p>Un patrón de velas SOLO es válido si aparece en un NIVEL IMPORTANTE (soporte o resistencia). Un martillo en medio de la nada no significa nada. Un martillo en un soporte fuerte = señal de alta probabilidad. En las próximas fases aprenderás más herramientas para confirmar estas zonas.</p></div>`,
           keyPoints: [
             "Morning/Evening Star son de los patrones más fiables",
